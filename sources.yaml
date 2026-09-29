@@ -52,3 +52,18 @@ sources:
     url: https://worldofwarcraft.blizzard.com/en-us/news
     url_prefix: https://worldofwarcraft.blizzard.com/en-us
     # ping_role: "1554600863081959464"
+
+  - id: hots-news
+    name: Heroes of the Storm News
+    type: json
+    # The /feed/ page is a JS-rendered shell with no article data; this is the API behind it.
+    url: https://news.blizzard.com/en-us/api/feed/heroes-of-the-storm?offset=0
+    webhook: HOTS
+    items_path: contentItems
+    fields:
+      id: properties.newsId
+      url: properties.newsUrl
+      title: properties.title
+      summary: properties.summary
+      date: properties.lastUpdated
+      image: properties.staticAsset.imageUrl
