@@ -1,0 +1,10 @@
+# This branch only holds tracker output. Everything else is ignored, so leftovers
+# from the source branch (trigger/, *.pem, __pycache__/) can't be committed here.
+# If the tracker starts writing a new kind of file, ist must be allowed below.
+*
+!.gitignore
+!_health.json
+!*/
+!*/state.json
+!*/items/
+!*/items/*.md
