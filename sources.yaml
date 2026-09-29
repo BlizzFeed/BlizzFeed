@@ -11,6 +11,11 @@
 #   url_prefix    Optional (html). Prepended to article links that start with "/".
 #   item_selector (html) CSS selector matching each article.
 #   items_path    (json) Dotted path to the list of articles.
+#   offset_param  (json) Query parameter for paging, e.g. offset. Leave out for a single request.
+#   page_size     (json) Articles per page, used to step the offset.
+#   pages         (json) Most pages read on a normal run. Paging stops early once a page
+#                 ends on an article we already have, so a normal run is usually one request.
+#   baseline_pages (json) Pages read on a source's first run, to record older articles too.
 #   fields        How to read id, url, title, summary, date and image from one article.
 #
 # Field specs
@@ -22,62 +27,40 @@
 defaults:
   failures_before_alert: 3   # consecutive failed runs before a "source failing" message
 
-# Shared settings, reused below with "<<: *wow-news-page".
+# Shared settings for news.blizzard.com, reused below with "<<: *blizzard-news-api".
+# The feed is sorted by last update, newest first, 15 articles per page.
 templates:
-  wow-news-page: &wow-news-page
-    type: html
-    webhook: WOW
-    item_selector: "article.NewsBlog"
+  blizzard-news-api: &blizzard-news-api
+    type: json
+    items_path: contentItems
+    offset_param: offset
+    page_size: 15
+    pages: 2
+    baseline_pages: 10
     fields:
-      id: { selector: "a.NewsBlog-link", attr: href, regex: "/news/(\\d+)" }
-      url: { selector: "a.NewsBlog-link", attr: href }
-      title: ".NewsBlog-title"
-      summary: ".NewsBlog-desc"
-      # The visible date is relative ("2 hours ago") and would cause a change
-      # on every run, so read the fixed ISO date from the data-props JSON.
-      date: { selector: ".NewsBlog-date", attr: data-props, json_key: iso8601 }
-      image: { selector: "img.NewsBlog-image", attr: data-src }
+      id: properties.newsId
+      url: properties.newsUrl
+      title: properties.title
+      summary: properties.summary
+      date: properties.lastUpdated
+      image: properties.staticAsset.imageUrl
 
 sources:
-  - <<: *wow-news-page
+  - <<: *blizzard-news-api
     id: wow-news
-    name: World of Warcraft News (EU)
-    url: https://worldofwarcraft.blizzard.com/en-gb/news
-    url_prefix: https://worldofwarcraft.blizzard.com/en-gb   # article links on the page have no locale
+    name: World of Warcraft News
+    url: https://news.blizzard.com/en-gb/api/feed/world-of-warcraft
+    webhook: WOW
     # ping_role: "1554600863081959464"
 
-  - <<: *wow-news-page
-    id: wow-news-us
-    name: World of Warcraft News (US)
-    url: https://worldofwarcraft.blizzard.com/en-us/news
-    url_prefix: https://worldofwarcraft.blizzard.com/en-us
-    # ping_role: "1554600863081959464"
-
-  - id: hots-news
+  - <<: *blizzard-news-api
+    id: hots-news
     name: Heroes of the Storm News
-    type: json
-    # The /feed/ page is a JS-rendered shell with no article data; this is the API behind it.
-    url: https://news.blizzard.com/en-gb/api/feed/heroes-of-the-storm?offset=0
+    url: https://news.blizzard.com/en-gb/api/feed/heroes-of-the-storm
     webhook: HOTS
-    items_path: contentItems
-    fields:
-      id: properties.newsId
-      url: properties.newsUrl
-      title: properties.title
-      summary: properties.summary
-      date: properties.lastUpdated
-      image: properties.staticAsset.imageUrl
 
-  - id: hearthstone-news
+  - <<: *blizzard-news-api
+    id: hearthstone-news
     name: Hearthstone News
-    type: json
-    url: https://news.blizzard.com/en-gb/api/feed/hearthstone?offset=0
+    url: https://news.blizzard.com/en-gb/api/feed/hearthstone
     webhook: HEARTHSTONE
-    items_path: contentItems
-    fields:
-      id: properties.newsId
-      url: properties.newsUrl
-      title: properties.title
-      summary: properties.summary
-      date: properties.lastUpdated
-      image: properties.staticAsset.imageUrl

@@ -1,25 +1,24 @@
 # BlizzFeed
 
-Watches Blizzard news pages every ~5 minutes on GitHub Actions. When a new article appears, it saves it to the `data` branch and posts it to Discord with its title, summary, thumbnail, link and post time, plus a link to the commit that recorded it.
+Watches the Blizzard news feeds (news.blizzard.com, en-gb) every ~5 minutes on GitHub Actions. When a new article appears, it saves it to the `data` branch and posts it to Discord with its title, summary, thumbnail, link and post time, plus a link to the commit that recorded it.
 
 ## Sources
-| Source | Type | Webhook secret |
-| --- | --- | --- |
-| World of Warcraft News (EU) | html | `DISCORD_WEBHOOK_WOW` |
-| World of Warcraft News (US) | html | `DISCORD_WEBHOOK_WOW` |
-| Heroes of the Storm News | json | `DISCORD_WEBHOOK_HOTS` |
-| Hearthstone News | json | `DISCORD_WEBHOOK_HEARTHSTONE` |
+| Source | Webhook secret |
+| --- | --- |
+| World of Warcraft News | `DISCORD_WEBHOOK_WOW` |
+| Heroes of the Storm News | `DISCORD_WEBHOOK_HOTS` |
+| Hearthstone News | `DISCORD_WEBHOOK_HEARTHSTONE` |
 
 More Blizzard products can be added by putting another entry in `sources.yaml`.
 
 ## How it works
-- Each run reads the article list on each page and compares it with the saved state.
-- New articles are committed to the `data` branch (one commit per source) and announced on Discord. Edited articles are announced too, in orange.
-- The first run for a source only saves what's there, without posting anything.
+- Each run reads the newest articles from each feed and compares them with the saved state. The feed is sorted by last update, so it stops as soon as it reaches articles it already has. Usually that's one request per source.
+- New articles are committed to the `data` branch (one commit per source) and announced on Discord. Articles with a changed title, summary, image or link are announced too, in orange. If only the date changed, the saved copy is updated without a post.
+- The first run for a source saves the last 150 articles without posting anything, so old articles that get edited later aren't mistaken for new ones.
 - If a source fails 3 runs in a row, Discord gets a "failing" message, and a "recovered" one when it works again.
 
 ## Files
-- `sources.yaml`: the pages to watch. Add a page here to track it.
+- `sources.yaml`: the feeds to watch. Add an entry here to track another one.
 - `main.py`: the steps (`--scrape`, `--commit`, `--notify`).
 - `.github/workflows/tracker.yaml`: the schedule.
 
