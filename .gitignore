@@ -1,6 +1,25 @@
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
 venv/
 .venv/
+
+# Tracker output: local checkout of the data branch and the per-run hand-off file
 /data/
 diff.json
+
+# Secrets (webhook URLs must only live in GitHub Actions secrets)
+.env
+.env.*
+
+# Notes and docs kept out of the repo
+Docs/
+
+# Tooling and editors
+.claude/
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
