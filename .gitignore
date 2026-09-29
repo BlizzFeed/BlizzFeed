@@ -11,9 +11,11 @@ diff.json
 # Secrets (webhook URLs must only live in GitHub Actions secrets)
 .env
 .env.*
+*.pem
 
 # Notes and docs kept out of the repo
 Docs/
+trigger/
 
 # Tooling and editors
 .claude/
