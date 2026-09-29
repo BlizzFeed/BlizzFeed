@@ -1,9 +1,9 @@
 name: Check Blizzard News
 
 on:
-  schedule:
-    - cron: '2-59/5 * * * *'   # every 5 min, off the top of the hour
   workflow_dispatch:
+  # Sent every 5 minutes by an external trigger.
+  # There is no cron here, as Github can't promise exact runs.
   repository_dispatch:
     types: [trigger-scraping]
   push:

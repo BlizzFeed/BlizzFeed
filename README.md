@@ -1,6 +1,6 @@
 # BlizzFeed
 
-Watches the Blizzard news feeds (news.blizzard.com, en-gb) every ~5 minutes on GitHub Actions. When a new article appears, it saves it to the `data` branch and posts it to Discord with its title, summary, thumbnail, link and post time, plus a link to the commit that recorded it.
+Watches the Blizzard news feeds (news.blizzard.com, en-gb) every ~5 minutes on GitHub Actions, started by an external trigger. When a new article appears, it saves it to the `data` branch and posts it to Discord with its title, summary, thumbnail, link and post time, plus a link to the commit that recorded it.
 
 ## Sources
 | Source | Webhook secret |
@@ -20,12 +20,12 @@ More Blizzard products can be added by putting another entry in `sources.yaml`.
 ## Files
 - `sources.yaml`: the feeds to watch. Add an entry here to track another one.
 - `main.py`: the steps (`--scrape`, `--commit`, `--notify`).
-- `.github/workflows/tracker.yaml`: the schedule.
+- `.github/workflows/tracker.yaml`: the workflow. It runs on a `repository_dispatch` event (`trigger-scraping`), a manual run, or a push to `source`. It has no cron of its own.
 
 ## Setup
 1. Push to the `source` branch (the default) and create an empty `data` branch.
 2. Add the secrets `DISCORD_WEBHOOK_WOW`, `DISCORD_WEBHOOK_HOTS` and `DISCORD_WEBHOOK_HEARTHSTONE` under Settings → Secrets and variables → Actions.
-3. Run the workflow once manually, then let the schedule take over.
+3. Run the workflow once manually, then have something send the `trigger-scraping` dispatch every 5 minutes.
 
 ## Credits
 The idea and overall design (a scheduled Actions job, separate `source` and `data` branches, commit links in Discord messages) come from [Wumpus-Central/blog-tracker](https://github.com/Wumpus-Central/blog-tracker).
