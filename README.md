@@ -8,6 +8,7 @@ Watches Blizzard news pages every ~5 minutes on GitHub Actions. When a new artic
 | World of Warcraft News (EU) | html | `DISCORD_WEBHOOK_WOW` |
 | World of Warcraft News (US) | html | `DISCORD_WEBHOOK_WOW` |
 | Heroes of the Storm News | json | `DISCORD_WEBHOOK_HOTS` |
+| Hearthstone News | json | `DISCORD_WEBHOOK_HEARTHSTONE` |
 
 More Blizzard products can be added by putting another entry in `sources.yaml`.
 
@@ -24,7 +25,7 @@ More Blizzard products can be added by putting another entry in `sources.yaml`.
 
 ## Setup
 1. Push to the `source` branch (the default) and create an empty `data` branch.
-2. Add the secrets `DISCORD_WEBHOOK_WOW` and `DISCORD_WEBHOOK_HOTS` under Settings → Secrets and variables → Actions.
+2. Add the secrets `DISCORD_WEBHOOK_WOW`, `DISCORD_WEBHOOK_HOTS` and `DISCORD_WEBHOOK_HEARTHSTONE` under Settings → Secrets and variables → Actions.
 3. Run the workflow once manually, then let the schedule take over.
 
 ## Credits

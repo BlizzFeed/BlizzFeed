@@ -68,6 +68,7 @@ jobs:
           ACTIONS_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           DISCORD_WEBHOOK_WOW: ${{ secrets.DISCORD_WEBHOOK_WOW }}
           DISCORD_WEBHOOK_HOTS: ${{ secrets.DISCORD_WEBHOOK_HOTS }}
+          DISCORD_WEBHOOK_HEARTHSTONE: ${{ secrets.DISCORD_WEBHOOK_HEARTHSTONE }}
         run: python code/main.py --notify
 
       # If Discord failed after the commit landed, keep the diff so the alert can be replayed.

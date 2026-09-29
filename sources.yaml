@@ -57,8 +57,22 @@ sources:
     name: Heroes of the Storm News
     type: json
     # The /feed/ page is a JS-rendered shell with no article data; this is the API behind it.
-    url: https://news.blizzard.com/en-us/api/feed/heroes-of-the-storm?offset=0
+    url: https://news.blizzard.com/en-gb/api/feed/heroes-of-the-storm?offset=0
     webhook: HOTS
+    items_path: contentItems
+    fields:
+      id: properties.newsId
+      url: properties.newsUrl
+      title: properties.title
+      summary: properties.summary
+      date: properties.lastUpdated
+      image: properties.staticAsset.imageUrl
+
+  - id: hearthstone-news
+    name: Hearthstone News
+    type: json
+    url: https://news.blizzard.com/en-gb/api/feed/hearthstone?offset=0
+    webhook: HEARTHSTONE
     items_path: contentItems
     fields:
       id: properties.newsId
