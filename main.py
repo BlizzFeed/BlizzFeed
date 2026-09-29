@@ -20,10 +20,10 @@ DIFF_FILE = os.environ.get("DIFF_FILE", "diff.json")
 SOURCES_FILE = os.environ.get("SOURCES_FILE", os.path.join(os.path.dirname(__file__), "sources.yaml"))
 
 
-def fetch_with_retry(source):
+def fetch_with_retry(source, known):
     for attempt in range(1, MAX_FETCH_ATTEMPTS + 1):
         try:
-            items = PROVIDERS[source.type](source)
+            items = PROVIDERS[source.type](source, known)
             if items:
                 return items
             raise RuntimeError("fetch returned no items (markup or API changed?)")
@@ -49,23 +49,25 @@ def scrape():
     diff = {"sources": {}, "alerts": []}
 
     for source in load_sources(SOURCES_FILE):
+        old_state = differ.load_state(DATA_DIR, source.id)
+        baseline = old_state is None
+        known = None if baseline else {i["id"]: i["date"] for i in old_state}
         try:
-            items = fetch_with_retry(source)
+            items = fetch_with_retry(source, known)
         except Exception as e:
             logger.error(f"[{source.id}] failed: {e}")
             alert = health.record_failure(state, source, str(e))
         else:
             alert = health.record_success(state, source)
-            old_state = differ.load_state(DATA_DIR, source.id)
-            baseline = old_state is None
-            added, updated = differ.compute(old_state, items)
-            differ.write_source(DATA_DIR, source.id, differ.merge(old_state, items), added + updated)
+            added, updated, redated = differ.compute(old_state, items)
+            differ.write_source(DATA_DIR, source.id, differ.merge(old_state, items),
+                                added + updated + redated)
             # A baseline writes everything but announces nothing.
             diff["sources"][source.id] = {"baseline": baseline,
                                           "added": [] if baseline else added,
                                           "updated": updated}
-            logger.success(f"[{source.id}] {len(items)} items, +{len(added)} new, {len(updated)} updated"
-                           f"{' (baseline, no notifications)' if baseline else ''}")
+            logger.success(f"[{source.id}] {len(items)} items, +{len(added)} new, {len(updated)} updated, "
+                           f"{len(redated)} date-only{' (baseline, no notifications)' if baseline else ''}")
         if alert:
             diff["alerts"].append(alert)
 

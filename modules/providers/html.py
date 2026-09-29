@@ -25,7 +25,7 @@ def _extract(el, spec):
     return value
 
 
-def fetch(source):
+def fetch(source, known=None):  # known is unused: a page has no paging
     soup = BeautifulSoup(http.get(source.url).text, "html.parser")
     prefix = source.raw.get("url_prefix")
     items = []

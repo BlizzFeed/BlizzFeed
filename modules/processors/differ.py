@@ -1,7 +1,7 @@
 import json
 import os
 
-COMPARED = ("title", "url", "summary", "date", "image")
+ANNOUNCED = ("title", "url", "summary", "image")  # a change here posts "updated"; a date-only change is saved quietly
 
 
 def state_path(data_dir, source_id):
@@ -21,16 +21,21 @@ def load_state(data_dir, source_id):
 
 
 def compute(old_state, items):
-    """Append-only diff by id. Items missing from the fetch are never reported as removed."""
+    """Append-only diff by id. Items missing from the fetch are never reported as removed.
+
+    Returns (added, updated, redated); redated items only have a newer date.
+    """
     old = {i["id"]: i for i in (old_state or [])}
-    added, updated = [], []
+    added, updated, redated = [], [], []
     for item in items:
         prev = old.get(item["id"])
         if prev is None:
             added.append(item)
-        elif any(prev.get(k, "") != item[k] for k in COMPARED):
+        elif any(prev.get(k, "") != item[k] for k in ANNOUNCED):
             updated.append(item)
-    return added, updated
+        elif prev.get("date", "") != item["date"]:
+            redated.append(item)
+    return added, updated, redated
 
 
 def merge(old_state, items):
