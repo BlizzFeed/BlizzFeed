@@ -3,8 +3,10 @@ from datetime import datetime, timezone
 
 import requests
 from loguru import logger
+from urllib3.exceptions import NewConnectionError
 
 SEND_DELAY_SECONDS = 2
+POST_ATTEMPTS = 3
 COLORS = {"added": 0x57F287, "updated": 0xFAA61A, "down": 0xED4245, "recovered": 0x57F287}
 IS_COMPONENTS_V2 = 1 << 15  # message flag: content/embeds are disabled, components only
 DIVIDER = {"type": 14, "divider": True, "spacing": 1}
@@ -86,20 +88,39 @@ def _retry_delay(response):
         return 2
 
 
+def _never_sent(error):
+    """True when the request can't have reached Discord, so retrying can't post twice.
+    A read timeout or a reset mid-response may already have been accepted, so those aren't retried."""
+    if isinstance(error, requests.ConnectTimeout):
+        return True
+    return (isinstance(error, requests.ConnectionError) and error.args
+            and isinstance(getattr(error.args[0], "reason", None), NewConnectionError))
+
+
 def post(webhook_url, payload):
-    for _ in range(3):
+    """POST a message. Retries a 429 (after Discord's retry_after), a 5xx and a failed connect
+    (with backoff). Any other 4xx or error fails at once."""
+    for attempt in range(1, POST_ATTEMPTS + 1):
         try:
             response = requests.post(webhook_url, params={"with_components": "true"},
                                      json=payload, timeout=10)
         except requests.RequestException as e:
+            if _never_sent(e) and attempt < POST_ATTEMPTS:
+                logger.warning(f"Discord connect failed (attempt {attempt}/{POST_ATTEMPTS}): {e}")
+                time.sleep(2 ** attempt)
+                continue
             logger.error(f"Discord request failed: {e}")
             return False
         if response.status_code in (200, 204):
             return True
-        if response.status_code != 429:
+        if response.status_code == 429:
+            time.sleep(_retry_delay(response))
+        elif response.status_code >= 500 and attempt < POST_ATTEMPTS:
+            logger.warning(f"Discord returned {response.status_code} (attempt {attempt}/{POST_ATTEMPTS})")
+            time.sleep(2 ** attempt)
+        else:
             logger.error(f"Discord returned {response.status_code}: {response.text[:200]}")
             return False
-        time.sleep(_retry_delay(response))
     return False
 
 
