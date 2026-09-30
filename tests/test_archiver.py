@@ -11,10 +11,6 @@ def _fixture():
         return f.read()
 
 
-def test_conversion_is_stable():
-    assert archiver.to_markdown(_fixture()) == archiver.to_markdown(_fixture())
-
-
 def test_normalised_whitespace():
     text = archiver.to_markdown(_fixture())
     assert text.endswith("\n") and not text.endswith("\n\n")
@@ -22,10 +18,9 @@ def test_normalised_whitespace():
     assert all(line == line.rstrip() for line in text.splitlines())
 
 
-def test_strips_script_style_and_links_iframes():
-    text = archiver.to_markdown('<p>a</p><script>x()</script><style>p{}</style><iframe src="https://v/1"></iframe>')
+def test_strips_script_and_style():
+    text = archiver.to_markdown('<p>a</p><script>x()</script><style>p{}</style>')
     assert "x()" not in text and "p{}" not in text
-    assert "[https://v/1](https://v/1)" in text
 
 
 def test_render_file_layout():

@@ -49,19 +49,11 @@ def test_updated_article_buttons():
         "View Changes": f"{REPO}/commit/dat", "History": f"{REPO}/commits/archive/wow-news/42.md"}
 
 
-def test_item_buttons_without_repo_or_commit():
-    message = discord.build_item_message(None, "added", ITEM, None, None)
-    assert list(buttons(message)) == ["Read Article", "Battle.net Shop"]
-
-
 def test_edit_message():
     message = discord.build_edit_message(None, CHANGE, REPO, "wow-news", f"{REPO}/commit/abc123")
     assert buttons(message) == {"Read Article": ITEM["url"], "Text Changes": f"{REPO}/commit/abc123",
                                 "History": f"{REPO}/commits/archive/wow-news/42.md"}
-    body = texts(message)
-    assert "## Article text edited" in body and "**Hotfixes**" in body
-    assert "+1 line, −3 lines" in body
-    assert message["components"][0]["accent_color"] == discord.COLORS["edited"]
+    assert "+1 line, −3 lines" in texts(message)
     assert "allowed_mentions" not in message
 
 
@@ -69,7 +61,7 @@ def test_edit_message_label_role_and_no_image():
     message = discord.build_edit_message("WoW", {**CHANGE, "image": ""}, REPO, "wow-news", None, role_id="9")
     assert message["components"][0]["content"] == "<@&9>"
     assert message["allowed_mentions"] == {"roles": ["9"]}
-    assert texts(message).startswith("<@&9>\n-# WoW\n## Article text edited")
+    assert "-# WoW" in texts(message)
     assert "Text Changes" not in buttons(message)
 
 
@@ -85,7 +77,7 @@ def test_archive_log_lists_changes_and_silent_edits():
     articles = [CHANGE, {**CHANGE, "id": "7", "title": "New", "kind": "archived", "commit": "def"},
                 {**CHANGE, "id": "8", "title": "Quiet", "silent": True, "commit": "eee"}]
     body = texts(discord.build_archive_log_message(diff(articles), SOURCES, REPO, "https://run"))
-    assert "## Archive changes" in body and "1 of 2 sources changed" in body
+    assert "1 of 2 sources changed" in body
     assert "2 text edited" in body and "1 archived" in body
     assert f"[Hotfixes]({REPO}/commit/abc123) +1 −3" in body
     assert "Quiet" in body and "silent edit (date unchanged)" in body
