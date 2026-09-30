@@ -29,14 +29,14 @@ def _trim(text, limit):
 
 
 def _discord_time(iso, relative_only=False):
-    """'<t:ts:f> (<t:ts:R>)' renders in each reader's local time, e.g.
-    'September 29, 2026 10:31 PM (1 minute ago)'. relative_only keeps just the '1 minute ago',
+    """'<t:ts:s> (<t:ts:R>)' renders in each reader's local time, e.g.
+    '09/29/2026 10:31 PM (1 minute ago)'. relative_only keeps just the '1 minute ago',
     with the full date on hover. Falls back to the raw text."""
     try:
         ts = int(datetime.fromisoformat(iso.replace("Z", "+00:00")).timestamp())
     except ValueError:
         return iso
-    return f"<t:{ts}:R>" if relative_only else f"<t:{ts}:f> (<t:{ts}:R>)"
+    return f"<t:{ts}:R>" if relative_only else f"<t:{ts}:s> (<t:{ts}:R>)"
 
 
 def _code_block(text):
