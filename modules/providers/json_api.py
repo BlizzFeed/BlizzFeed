@@ -14,6 +14,15 @@ def _path(obj, dotted):
     return "" if obj is None else str(obj)
 
 
+def _matches(entry, where):
+    """True when each dotted path equals its value, or one of its values when given a list."""
+    for path, wanted in where.items():
+        options = wanted if isinstance(wanted, list) else [wanted]
+        if _path(entry, path) not in [str(value) for value in options]:
+            return False
+    return True
+
+
 def _entries(source, offset):
     params = {source.raw["offset_param"]: offset} if "offset_param" in source.raw else None
     data = http.get(source.url, headers={"Accept": "application/json"}, params=params).json()
@@ -40,7 +49,7 @@ def fetch(source, known=None):
             time.sleep(PAGE_DELAY_SECONDS)
         entries = _entries(source, page * page_size)
         for entry in entries:
-            if any(_path(entry, path) != str(value) for path, value in where.items()):
+            if not _matches(entry, where):
                 continue
             raw = {name: _path(entry, spec) for name, spec in fields.items()}
             item = finish_item(raw, source.url)

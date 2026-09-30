@@ -18,8 +18,9 @@
 #   pages         (json) Most pages read on a normal run. Paging stops early once a page
 #                 ends on an article we already have, so a normal run is usually one request.
 #   baseline_pages (json) Pages read on a source's first run, to record older articles too.
-#   where         (json) Only keep articles where each dotted path equals the given value.
-#                 Needed on the news API's small-game feeds, which pad with other games' posts.
+#   where         (json) Only keep articles where each dotted path equals the given value, or one
+#                 of the values when given a list. The news API tags a post with several games,
+#                 so this keeps each post to the one game it's filed under.
 #   fields        How to read id, url, title, summary, date and image from one article.
 #
 # Field specs
@@ -136,11 +137,11 @@ sources:
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/bltcb2f4875bcae607a/6aa58d463ad392082b6f90f6/WC3_FK_Icon_Vector.svg
     where: {properties.cxpProduct.segment: warcraft-3}
 
-  # Company-wide posts (BlizzCon, announcements). The blizzcon feed is all "blizzard" segment, so game posts aren't repeated.
+  # Company-wide posts (BlizzCon, announcements), filed under Blizzard or BlizzCon, so game posts aren't repeated.
   - <<: *blizzard-news-api
     id: blizzard-news
     name: Blizzard News
     url: https://news.blizzard.com/en-gb/api/feed/blizzcon
     webhook: BLIZZARD
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/bltbd6b3637d77c60f0/6a3d7018a8099b0ba5c31b21/Blizz.svg
-    where: {properties.cxpProduct.segment: blizzard}
+    where: {properties.cxpProduct.segment: [blizzard, blizzcon]}
