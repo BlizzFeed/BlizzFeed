@@ -31,14 +31,20 @@ def _slug(text):
 
 
 def _fix_anchors(soup):
-    """Point in-page links at GitHub's heading anchors. Blizzard's ids (item1) don't exist in Markdown."""
-    targets, seen = {}, {}
+    """Point in-page links at GitHub's heading anchors. Blizzard's ids (item1) don't exist in Markdown.
+
+    An id on a section (a tab pane, say) points at the first heading inside it."""
+    anchors, seen = {}, {}
     for heading in soup.find_all(re.compile(r"^h[1-6]$")):
         slug = _slug(heading.get_text())
         n = seen.get(slug, 0)
         seen[slug] = n + 1
-        if heading.get("id"):
-            targets[heading["id"]] = slug if n == 0 else f"{slug}-{n}"
+        anchors[heading] = slug if n == 0 else f"{slug}-{n}"
+    targets = {}
+    for el in soup.find_all(id=True):
+        heading = el if el in anchors else el.find(re.compile(r"^h[1-6]$"))
+        if heading is not None:
+            targets[el["id"]] = anchors[heading]
     for a in soup.find_all("a", href=True):
         m = re.fullmatch(r"(?:/news/\d+)?#(.+)", a["href"])
         if m and m.group(1) in targets:
