@@ -19,6 +19,7 @@ class Source:
             "failures_before_alert",
             defaults.get("failures_before_alert", DEFAULT_FAILURES_BEFORE_ALERT),
         )
+        self.username = raw.get("username")
         avatar = raw.get("avatar")
         self.avatar_url = AVATAR_PROXY + quote(avatar, safe="") if avatar else None
         labels = raw.get("webhook") or []
