@@ -54,7 +54,7 @@ def build_item_message(name, action, item, commit_url, repo_url, role_id=None):
     when = datetime.now(timezone.utc).isoformat() if updated else item["date"]
     posted = f"{'Updated' if updated else 'Posted'} {_discord_time(when)} · " if when else ""
     site = f"[BlizzFeed]({repo_url})" if repo_url else "BlizzFeed"
-    inner.append(_text(f"-# {posted}{site}"))
+    inner += [DIVIDER, _text(f"-# {posted}{site}")]
 
     message = {"flags": IS_COMPONENTS_V2,
                "components": [{"type": 17, "accent_color": COLORS[action], "components": inner}]}
