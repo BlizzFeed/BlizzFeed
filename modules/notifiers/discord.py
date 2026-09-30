@@ -16,14 +16,20 @@ def _trim(text, limit):
     return text if len(text) <= limit else text[: limit - 1] + "…"
 
 
-def _discord_time(iso):
+def _discord_time(iso, relative_only=False):
     """'<t:ts:f> (<t:ts:R>)' renders in each reader's local time, e.g.
-    'September 29, 2026 10:31 PM (1 minute ago)'. Falls back to the raw text."""
+    'September 29, 2026 10:31 PM (1 minute ago)'. relative_only keeps just the '1 minute ago',
+    with the full date on hover. Falls back to the raw text."""
     try:
         ts = int(datetime.fromisoformat(iso.replace("Z", "+00:00")).timestamp())
     except ValueError:
         return iso
-    return f"<t:{ts}:f> (<t:{ts}:R>)"
+    return f"<t:{ts}:R>" if relative_only else f"<t:{ts}:f> (<t:{ts}:R>)"
+
+
+def _code_block(text):
+    """Fenced block for log-like text; a ``` inside it would close the block early."""
+    return f"```\n{text.replace('```', chr(39) * 3)}\n```"
 
 
 def _text(content):
@@ -69,12 +75,12 @@ def build_item_message(name, action, item, commit_url, repo_url, role_id=None):
 def build_alert_message(name, alert, run_url):
     if alert["kind"] == "down":
         title = f"{name} - source failing"
-        desc = f"Failing since {alert['since']}.\n`{alert['error']}`"
+        desc = f"Failing since {_discord_time(alert['since'], relative_only=True)}.\n{_code_block(alert['error'])}"
         if run_url:
             desc += f"\n[Run logs]({run_url})"
     else:
         title = f"{name} - source recovered"
-        desc = f"Back to normal (was failing since {alert['since']})."
+        desc = f"Back to normal (was failing since {_discord_time(alert['since'], relative_only=True)})."
     return {"flags": IS_COMPONENTS_V2, "components": [{
         "type": 17, "accent_color": COLORS[alert["kind"]],
         "components": [_text(_trim(f"## {title}\n{desc}", 3000))]}]}
