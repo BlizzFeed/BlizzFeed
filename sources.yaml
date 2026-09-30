@@ -24,6 +24,8 @@
 #                 so this keeps each post to the one game it's filed under.
 #   url_template  Optional (json). Article link built from dotted paths in {braces}, e.g. the game's own
 #                 news site instead of news.blizzard.com. Falls back to fields.url if a path is empty.
+#   shop_path     Optional (json). Path to a list of call-to-action objects; the first "shopLinks" entry
+#                 with a url becomes a shop button on the message.
 #   allow_empty   Optional. An empty feed isn't treated as a failure (for games with no posts yet).
 #   fields        How to read id, url, title, summary, date and image from one article.
 #
@@ -52,6 +54,7 @@ templates:
     page_size: 15
     pages: 2
     baseline_pages: 10
+    shop_path: properties.cardActions
     fields:
       id: properties.newsId
       url: properties.newsUrl

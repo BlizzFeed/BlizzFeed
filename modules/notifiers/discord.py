@@ -46,6 +46,7 @@ def build_item_message(name, action, item, commit_url, repo_url, role_id=None):
     updated = action == "updated"
     buttons = [_link_button(label, url)
                for label, url in (("Read Article", item["url"]),
+                                  ("Battle.net Shop", item.get("shop_url")),
                                   ("View Changes" if updated else "View Commit", commit_url)) if url]
     if buttons:
         inner += [DIVIDER, {"type": 1, "components": buttons}]

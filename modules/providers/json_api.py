@@ -24,6 +24,17 @@ def _matches(entry, where):
     return True
 
 
+def _shop_url(entry, path):
+    """The first shopLinks call to action with a url, from the list at `path`. "" if none."""
+    obj = entry
+    for part in path.split("."):
+        obj = obj.get(part) if isinstance(obj, dict) else None
+    for action in obj if isinstance(obj, list) else []:
+        if isinstance(action, dict) and action.get("type") == "shopLinks" and action.get("url"):
+            return str(action["url"])
+    return ""
+
+
 def _fill(template, entry):
     """Replace each {dotted.path} with its value. Returns "" if any of them is empty."""
     values = {path: _path(entry, path) for path in re.findall(r"\{([^}]+)\}", template)}
@@ -53,6 +64,7 @@ def fetch(source, known=None):
     fields = source.raw["fields"]
     where = source.raw.get("where", {})
     url_template = source.raw.get("url_template")
+    shop_path = source.raw.get("shop_path")
     items, seen = [], set()
     for page in range(pages):
         if page:
@@ -64,6 +76,8 @@ def fetch(source, known=None):
             raw = {name: _path(entry, spec) for name, spec in fields.items()}
             if url_template:
                 raw["url"] = _fill(url_template, entry) or raw.get("url", "")
+            if shop_path:
+                raw["shop_url"] = _shop_url(entry, shop_path)
             item = finish_item(raw, source.url)
             # A post published between two page requests shifts the list, so skip repeats.
             if item and item["id"] not in seen:

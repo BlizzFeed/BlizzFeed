@@ -2,7 +2,7 @@ import json
 import os
 
 ANNOUNCED = ("title", "summary", "image")  # a change here posts "updated"
-QUIET = ("date", "url")  # a change only here is saved without a message (a retitle changes the slug too)
+QUIET = ("date", "url", "shop_url")  # a change only here is saved without a message (a retitle changes the slug too)
 
 
 def state_path(data_dir, source_id):
@@ -34,7 +34,7 @@ def compute(old_state, items):
             added.append(item)
         elif any(prev.get(k, "") != item[k] for k in ANNOUNCED):
             updated.append(item)
-        elif any(prev.get(k, "") != item[k] for k in QUIET):
+        elif any(prev.get(k, "") != item.get(k, "") for k in QUIET):
             quiet.append(item)
     return added, updated, quiet
 
