@@ -15,13 +15,13 @@ def _trim(text, limit):
 
 
 def _discord_time(iso):
-    """'<t:ts:F> (<t:ts:R>)' renders in each reader's local time, e.g.
-    'Tuesday, September 29, 2026 10:31 PM (1 minute ago)'. Falls back to the raw text."""
+    """'<t:ts:f> (<t:ts:R>)' renders in each reader's local time, e.g.
+    'September 29, 2026 10:31 PM (1 minute ago)'. Falls back to the raw text."""
     try:
         ts = int(datetime.fromisoformat(iso.replace("Z", "+00:00")).timestamp())
     except ValueError:
         return iso
-    return f"<t:{ts}:F> (<t:{ts}:R>)"
+    return f"<t:{ts}:f> (<t:{ts}:R>)"
 
 
 def _text(content):
@@ -35,9 +35,8 @@ def _link_button(label, url):
 def build_item_message(name, action, item, commit_url, repo_url, role_id=None):
     """Container > Section(text + thumbnail), link buttons, Posted subtext."""
     title = _trim(item["title"], 256)
-    heading = f"## [{title}]({item['url']})" if item["url"] else f"## {title}"
     label = f"-# {name}\n" if name else ""
-    text = _text(_trim(f"{label}{heading}\n{_trim(item['summary'], 600)}", 3000))
+    text = _text(_trim(f"{label}## {title}\n{_trim(item['summary'], 600)}", 3000))
 
     if item["image"]:
         inner = [{"type": 9, "components": [text],
@@ -45,11 +44,12 @@ def build_item_message(name, action, item, commit_url, repo_url, role_id=None):
     else:
         inner = [text]
     buttons = [_link_button(label, url)
-               for label, url in (("View Commit", commit_url), ("BlizzFeed", repo_url)) if url]
+               for label, url in (("Read Article", item["url"]), ("View Commit", commit_url)) if url]
     if buttons:
         inner += [DIVIDER, {"type": 1, "components": buttons}]
     posted = f"Posted {_discord_time(item['date'])} · " if item["date"] else ""
-    inner += [DIVIDER, _text(f"-# {posted}BlizzFeed")]
+    site = f"[BlizzFeed]({repo_url})" if repo_url else "BlizzFeed"
+    inner.append(_text(f"-# {posted}{site}"))
 
     message = {"flags": IS_COMPONENTS_V2,
                "components": [{"type": 17, "accent_color": COLORS[action], "components": inner}]}
