@@ -1,7 +1,7 @@
 import time
 import requests
 
-USER_AGENT = "BlizzFeed/1.0 (+https://github.com/BlizzWatch/BlizzFeed; news change tracker)"
+USER_AGENT = "BlizzFeed/1.0 (+https://github.com/BlizzFeed/BlizzFeed; news change tracker)"
 DEFAULT_RETRY_SECONDS = 5
 MAX_RETRY_SECONDS = 30
 

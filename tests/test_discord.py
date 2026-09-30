@@ -2,7 +2,7 @@ from types import SimpleNamespace
 
 from modules.notifiers import discord
 
-REPO = "https://github.com/BlizzWatch/BlizzFeed"
+REPO = "https://github.com/BlizzFeed/BlizzFeed"
 ITEM = {"id": "42", "title": "Hotfixes", "url": "https://news.blizzard.com/en-gb/article/42", "summary": "Card text.",
         "image": "https://x/i.png", "date": "2026-09-30T10:00:00Z", "shop_url": "https://shop.battle.net/p"}
 CHANGE = {"id": "42", "title": "Hotfixes", "kind": "text", "url": ITEM["url"], "image": ITEM["image"],
