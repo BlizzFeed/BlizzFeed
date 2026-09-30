@@ -36,7 +36,7 @@ More Blizzard products can be added by putting another entry in `sources.yaml`.
 - Each run reads the newest articles from each feed and compares them with the saved state. The feed is sorted by last update, so it stops as soon as it reaches articles it already has. Usually that's one request per source.
 - New articles are committed to the `data` branch (one commit per source) and announced on Discord. Articles with a changed title, summary, image or link are announced too, in orange. If only the date changed, the saved copy is updated without a post.
 - The first run for a source saves the last 150 articles without posting anything, so old articles that get edited later aren't mistaken for new ones.
-- If a source fails 3 runs in a row, Discord gets a "failing" message, and a "recovered" one when it works again.
+- If a source fails 12 runs in a row (about 12 minutes), Discord gets a "failing" message, and a "recovered" one when it works again.
 
 ## Article archive
 The feeds only carry the short version of each article: title, summary and thumbnail. Blizzard also edits the article text quietly (hotfix lists grow, patch notes get corrected), so the archive keeps the text too.
