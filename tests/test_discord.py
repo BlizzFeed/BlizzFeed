@@ -94,3 +94,12 @@ def test_archive_alerts_go_to_log_with_archive_wording():
     recovered = {"source": "wow-news", "kind": "recovered", "since": "2026-09-30T09:00:00Z"}
     body = texts(discord.build_archive_log_message(diff([], [recovered]), SOURCES, REPO, None))
     assert "recovered" in body
+
+
+def test_long_archive_log_is_cut_between_lines_not_inside_a_link():
+    articles = [{**CHANGE, "id": str(i), "title": f"A rather long article title number {i}", "kind": "archived",
+                 "commit": f"{i:040d}"} for i in range(30)]
+    body = texts(discord.build_archive_log_message(diff(articles), SOURCES, REPO, None))
+    lines = [line for line in body.splitlines() if line.startswith("- ")]
+    assert lines and all(line.endswith(")") for line in lines)
+    assert f"-# …and {30 - len(lines)} more" in body

@@ -192,16 +192,30 @@ def _log_payload(containers):
             "components": containers}
 
 
+def _fit_lines(block, limit):
+    """Cut a block at a line end, so a link is never cut in half, and say how many lines were left out."""
+    if len(block) <= limit:
+        return block
+    lines, kept, size = block.split("\n"), [], 0
+    for line in lines:
+        if kept and size + len(line) + 1 > limit - 30:  # room for the note
+            break
+        kept.append(line)
+        size += len(line) + 1
+    return "\n".join(kept + [f"-# …and {len(lines) - len(kept)} more"])
+
+
 def _log_container(heading, blocks, total, run_url):
     """The blurple summary container: a block per changed source, trimmed to fit, then an unchanged count."""
     shown, used = [], 0
     for block in blocks:
         if shown and used + len(block) > LOG_TEXT_BUDGET:
             break
-        shown.append(_trim(block, LOG_TEXT_BUDGET))
+        shown.append(_fit_lines(block, LOG_TEXT_BUDGET))
         used += len(block) + 2
     if len(shown) < len(blocks):
-        shown.append(f"-# …and {len(blocks) - len(shown)} more")
+        more = len(blocks) - len(shown)
+        shown.append(f"-# …and {more} more source{'s' if more != 1 else ''}")
     now = _discord_time(datetime.now(timezone.utc).isoformat())
     inner = [_text(f"## {heading}\n-# {now} · {len(blocks)} of {total} sources changed"),
              DIVIDER, _text("\n\n".join(shown))]
