@@ -89,6 +89,11 @@ def post(webhook_url, payload):
     return False
 
 
+def _set_avatar(message, source):
+    if source.avatar_url:
+        message["avatar_url"] = source.avatar_url
+
+
 def send_all(diff, sources, repo_url, run_url):
     """sources: {source_id: Source}. Returns the number of failed sends."""
     failures, pinged = 0, set()
@@ -109,13 +114,16 @@ def send_all(diff, sources, repo_url, run_url):
                     role = None if channel["url"] in pinged else channel["role"]
                     pinged.add(channel["url"])
                     message = build_item_message(source.name, action, item, commit_url, repo_url, role)
+                    _set_avatar(message, source)
                     if not post(channel["url"], message):
                         failures += 1
                     time.sleep(SEND_DELAY_SECONDS)
 
     for alert in diff["alerts"]:
         source = sources.get(alert["source"])
-        if source and source.channels and \
-                not post(source.channels[0]["url"], build_alert_message(source.name, alert, run_url)):
-            failures += 1
+        if source and source.channels:
+            message = build_alert_message(source.name, alert, run_url)
+            _set_avatar(message, source)
+            if not post(source.channels[0]["url"], message):
+                failures += 1
     return failures

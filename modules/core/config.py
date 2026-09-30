@@ -1,7 +1,11 @@
 import os
+from urllib.parse import quote
+
 import yaml
 
 DEFAULT_FAILURES_BEFORE_ALERT = 3
+# Discord doesn't show SVG avatars, so logos go through this free proxy, which returns a PNG.
+AVATAR_PROXY = "https://wsrv.nl/?output=png&w=256&h=256&fit=contain&url="
 
 
 class Source:
@@ -15,6 +19,8 @@ class Source:
             "failures_before_alert",
             defaults.get("failures_before_alert", DEFAULT_FAILURES_BEFORE_ALERT),
         )
+        avatar = raw.get("avatar")
+        self.avatar_url = AVATAR_PROXY + quote(avatar, safe="") if avatar else None
         labels = raw.get("webhook") or []
         if isinstance(labels, str):
             labels = [labels]

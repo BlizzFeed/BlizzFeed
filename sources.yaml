@@ -9,6 +9,7 @@
 #                 Can be a list to post to several channels, e.g. [DIABLO4, DIABLO]. The first is
 #                 the source's own channel and the only one that gets failure alerts.
 #                 A new label also needs its secret listed in the workflow's Notify step.
+#   avatar        Optional. Logo (SVG or image URL) shown as the webhook's avatar on this source's messages.
 #   url_prefix    Optional (html). Prepended to article links that start with "/".
 #   item_selector (html) CSS selector matching each article.
 #   items_path    (json) Dotted path to the list of articles.
@@ -60,24 +61,28 @@ sources:
     name: World of Warcraft News
     url: https://news.blizzard.com/en-gb/api/feed/world-of-warcraft
     webhook: WOW
+    avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt637a995645d7e161/5d48a388a58fc57f3dafd9f1/world-of-warcraft.svg
 
   - <<: *blizzard-news-api
     id: hots-news
     name: Heroes of the Storm News
     url: https://news.blizzard.com/en-gb/api/feed/heroes-of-the-storm
     webhook: HOTS
+    avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt338ef9c751599624/5d48a37e0927f67fc054705f/heroes-of-the-storm.svg
 
   - <<: *blizzard-news-api
     id: hearthstone-news
     name: Hearthstone News
     url: https://news.blizzard.com/en-gb/api/feed/hearthstone
     webhook: HEARTHSTONE
+    avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt05905fb295358316/5d48a37efbf0e17fc6dafd3c/hearthstone.svg
 
   - <<: *blizzard-news-api
     id: diablo-4-news
     name: Diablo IV News
     url: https://news.blizzard.com/en-gb/api/feed/diablo-4
     webhook: [DIABLO4, DIABLO]
+    avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt95aebf4d119210f5/5e543f7e8dc1e51c53168b7a/games-d4-colored.svg
     where: {properties.cxpProduct.segment: diablo-4}
 
   - <<: *blizzard-news-api
@@ -85,6 +90,7 @@ sources:
     name: Diablo Immortal News
     url: https://news.blizzard.com/en-gb/api/feed/diablo-immortal
     webhook: [DIABLOIMMORTAL, DIABLO]
+    avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt989ffb415ea874fa/6081aad335bb4d0cbd9c064b/D_Immortal_Icon.svg
     where: {properties.cxpProduct.segment: diablo-immortal}
 
   - <<: *blizzard-news-api
@@ -92,6 +98,7 @@ sources:
     name: Diablo II Resurrected News
     url: https://news.blizzard.com/en-gb/api/feed/diablo-2-resurrected
     webhook: [DIABLO2, DIABLO]
+    avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/bltf882f8af9e033fe4/60300f72c6713d4e7a4d4b59/diablo2.svg
     where: {properties.cxpProduct.segment: diablo-2-resurrected}
 
   - <<: *blizzard-news-api
@@ -99,6 +106,7 @@ sources:
     name: Diablo III News
     url: https://news.blizzard.com/en-gb/api/feed/diablo-3
     webhook: [DIABLO3, DIABLO]
+    avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt698e0e08ea20d402/5d48a37e50ff33032597c101/diablo-iii.svg
     where: {properties.cxpProduct.segment: diablo-3}
 
   - <<: *blizzard-news-api
@@ -106,6 +114,7 @@ sources:
     name: Overwatch News
     url: https://news.blizzard.com/en-gb/api/feed/overwatch
     webhook: OVERWATCH
+    avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt648969725f01df34/622a3969f2c2644f956a8934/Overwatch2.svg
     where: {properties.cxpProduct.segment: overwatch}
 
   - <<: *blizzard-news-api
@@ -113,6 +122,7 @@ sources:
     name: StarCraft II News
     url: https://news.blizzard.com/en-gb/api/feed/starcraft-2
     webhook: STARCRAFT2
+    avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt9651ec7eb6d443ff/5d48a3880927f67fc0547065/starcraft-ii.svg
     where: {properties.cxpProduct.segment: starcraft-2}
 
   - <<: *blizzard-news-api
@@ -120,6 +130,7 @@ sources:
     name: Warcraft III News
     url: https://news.blizzard.com/en-gb/api/feed/warcraft-3
     webhook: WARCRAFT3
+    avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/bltcb2f4875bcae607a/6aa58d463ad392082b6f90f6/WC3_FK_Icon_Vector.svg
     where: {properties.cxpProduct.segment: warcraft-3}
 
   # Company-wide posts (BlizzCon, announcements). The blizzcon feed is all "blizzard" segment, so game posts aren't repeated.
@@ -128,4 +139,5 @@ sources:
     name: Blizzard News
     url: https://news.blizzard.com/en-gb/api/feed/blizzcon
     webhook: BLIZZARD
+    avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/bltbd6b3637d77c60f0/6a3d7018a8099b0ba5c31b21/Blizz.svg
     where: {properties.cxpProduct.segment: blizzard}
