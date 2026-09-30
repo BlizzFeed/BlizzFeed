@@ -33,12 +33,15 @@ def fetch(source, known=None):
     pages = source.raw.get("pages", 1) if known is not None else source.raw.get("baseline_pages", 1)
     page_size = source.raw.get("page_size", 0)
     fields = source.raw["fields"]
+    where = source.raw.get("where", {})
     items, seen = [], set()
     for page in range(pages):
         if page:
             time.sleep(PAGE_DELAY_SECONDS)
         entries = _entries(source, page * page_size)
         for entry in entries:
+            if any(_path(entry, path) != str(value) for path, value in where.items()):
+                continue
             raw = {name: _path(entry, spec) for name, spec in fields.items()}
             item = finish_item(raw, source.url)
             # A post published between two page requests shifts the list, so skip repeats.

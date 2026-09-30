@@ -16,6 +16,8 @@
 #   pages         (json) Most pages read on a normal run. Paging stops early once a page
 #                 ends on an article we already have, so a normal run is usually one request.
 #   baseline_pages (json) Pages read on a source's first run, to record older articles too.
+#   where         (json) Only keep articles where each dotted path equals the given value.
+#                 Needed on the news API's small-game feeds, which pad with other games' posts.
 #   fields        How to read id, url, title, summary, date and image from one article.
 #
 # Field specs
@@ -64,3 +66,60 @@ sources:
     name: Hearthstone News
     url: https://news.blizzard.com/en-gb/api/feed/hearthstone
     webhook: HEARTHSTONE
+
+  - <<: *blizzard-news-api
+    id: diablo-4-news
+    name: Diablo IV News
+    url: https://news.blizzard.com/en-gb/api/feed/diablo-4
+    webhook: DIABLO4
+    where: {properties.cxpProduct.segment: diablo-4}
+
+  - <<: *blizzard-news-api
+    id: diablo-immortal-news
+    name: Diablo Immortal News
+    url: https://news.blizzard.com/en-gb/api/feed/diablo-immortal
+    webhook: DIABLOIMMORTAL
+    where: {properties.cxpProduct.segment: diablo-immortal}
+
+  - <<: *blizzard-news-api
+    id: diablo-2-resurrected-news
+    name: Diablo II Resurrected News
+    url: https://news.blizzard.com/en-gb/api/feed/diablo-2-resurrected
+    webhook: DIABLO2
+    where: {properties.cxpProduct.segment: diablo-2-resurrected}
+
+  - <<: *blizzard-news-api
+    id: diablo-3-news
+    name: Diablo III News
+    url: https://news.blizzard.com/en-gb/api/feed/diablo-3
+    webhook: DIABLO3
+    where: {properties.cxpProduct.segment: diablo-3}
+
+  - <<: *blizzard-news-api
+    id: overwatch-news
+    name: Overwatch News
+    url: https://news.blizzard.com/en-gb/api/feed/overwatch
+    webhook: OVERWATCH
+    where: {properties.cxpProduct.segment: overwatch}
+
+  - <<: *blizzard-news-api
+    id: starcraft-2-news
+    name: StarCraft II News
+    url: https://news.blizzard.com/en-gb/api/feed/starcraft-2
+    webhook: STARCRAFT2
+    where: {properties.cxpProduct.segment: starcraft-2}
+
+  - <<: *blizzard-news-api
+    id: warcraft-3-news
+    name: Warcraft III News
+    url: https://news.blizzard.com/en-gb/api/feed/warcraft-3
+    webhook: WARCRAFT3
+    where: {properties.cxpProduct.segment: warcraft-3}
+
+  # Company-wide posts (BlizzCon, announcements). The blizzcon feed is all "blizzard" segment, so game posts aren't repeated.
+  - <<: *blizzard-news-api
+    id: blizzard-news
+    name: Blizzard News
+    url: https://news.blizzard.com/en-gb/api/feed/blizzcon
+    webhook: BLIZZARD
+    where: {properties.cxpProduct.segment: blizzard}

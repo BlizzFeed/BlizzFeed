@@ -8,6 +8,14 @@ Watches the Blizzard news feeds (news.blizzard.com, en-gb) every ~5 minutes on G
 | World of Warcraft News | `DISCORD_WEBHOOK_WOW` |
 | Heroes of the Storm News | `DISCORD_WEBHOOK_HOTS` |
 | Hearthstone News | `DISCORD_WEBHOOK_HEARTHSTONE` |
+| Diablo IV News | `DISCORD_WEBHOOK_DIABLO4` |
+| Diablo Immortal News | `DISCORD_WEBHOOK_DIABLOIMMORTAL` |
+| Diablo II Resurrected News | `DISCORD_WEBHOOK_DIABLO2` |
+| Diablo III News | `DISCORD_WEBHOOK_DIABLO3` |
+| Overwatch News | `DISCORD_WEBHOOK_OVERWATCH` |
+| StarCraft II News | `DISCORD_WEBHOOK_STARCRAFT2` |
+| Warcraft III News | `DISCORD_WEBHOOK_WARCRAFT3` |
+| Blizzard News (BlizzCon, company) | `DISCORD_WEBHOOK_BLIZZARD` |
 
 More Blizzard products can be added by putting another entry in `sources.yaml`.
 
@@ -24,7 +32,7 @@ More Blizzard products can be added by putting another entry in `sources.yaml`.
 
 ## Setup
 1. Push to the `source` branch (the default) and create an empty `data` branch.
-2. Add the secrets `DISCORD_WEBHOOK_WOW`, `DISCORD_WEBHOOK_HOTS` and `DISCORD_WEBHOOK_HEARTHSTONE` under Settings → Secrets and variables → Actions.
+2. Add one `DISCORD_WEBHOOK_*` secret per source in the table above under Settings → Secrets and variables → Actions.
 3. Run the workflow once manually, then have something send the `trigger-scraping` dispatch every 5 minutes.
 
 ## Credits
