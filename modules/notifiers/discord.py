@@ -44,11 +44,11 @@ def build_item_message(name, action, item, commit_url, repo_url, role_id=None):
     else:
         inner = [text]
     buttons = [_link_button(label, url)
-               for label, url in (("View Commit", commit_url), ("Repository", repo_url)) if url]
+               for label, url in (("View Commit", commit_url), ("BlizzFeed", repo_url)) if url]
     if buttons:
         inner += [DIVIDER, {"type": 1, "components": buttons}]
-    if item["date"]:
-        inner += [DIVIDER, _text(f"-# Posted {_discord_time(item['date'])}")]
+    posted = f"Posted {_discord_time(item['date'])} · " if item["date"] else ""
+    inner += [DIVIDER, _text(f"-# {posted}BlizzFeed")]
 
     message = {"flags": IS_COMPONENTS_V2,
                "components": [{"type": 17, "accent_color": COLORS[action], "components": inner}]}
