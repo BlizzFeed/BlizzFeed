@@ -1,24 +1,17 @@
 import os
 import time
 from datetime import datetime, timezone
-from urllib.parse import quote
 
 import requests
 from loguru import logger
 from urllib3.exceptions import NewConnectionError
-
-from modules.core.config import AVATAR_PROXY
 
 SEND_DELAY_SECONDS = 2
 POST_ATTEMPTS = 3
 COLORS = {"added": 0x57F287, "updated": 0xFAA61A, "down": 0xED4245, "recovered": 0x57F287, "log": 0x5865F2,
           "edited": 0x9B59B6}
 LOG_USERNAME = "BlizzFeed Log"
-LOG_AVATAR_SVG = (
-    "https://blz-contentstack-images.akamaized.net/v3/"
-    "assets/blt286175c11a6b3f4c/blta8332c202f63da84/60f74b93ef929764f0bb4e96/nexus-color.svg"
-)
-LOG_AVATAR = AVATAR_PROXY + quote(LOG_AVATAR_SVG, safe="")  # Discord doesn't show SVG avatars
+LOG_AVATAR = "https://raw.githubusercontent.com/BlizzWatch/BlizzFeed/source/logos/BlizzFeed_ServerIcon_512.png"
 LOG_TEXT_BUDGET = 3000  # Discord allows 4000 characters of text per message; the rest is header and footer
 IS_COMPONENTS_V2 = 1 << 15  # message flag: content/embeds are disabled, components only
 DIVIDER = {"type": 14, "divider": True, "spacing": 1}
