@@ -251,7 +251,8 @@ def build_archive_log_message(diff, sources, repo_url, run_url):
         return None
     containers = []
     if blocks:
-        containers.append(_log_container("Archive changes", blocks, len(diff["sources"]), run_url))
+        # diff only has the sources fetched this run, so count from all of them.
+        containers.append(_log_container("Archive changes", blocks, len(sources), run_url))
     for alert in down:
         source = sources.get(alert["source"])
         containers += build_alert_message(source.name if source else alert["source"], alert, run_url,
