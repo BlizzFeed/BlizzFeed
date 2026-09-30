@@ -83,7 +83,8 @@ jobs:
           DISCORD_WEBHOOK_BLIZZARD: ${{ secrets.DISCORD_WEBHOOK_BLIZZARD }}
         run: python code/main.py --notify
 
-      # If Discord failed after the commit landed, keep the diff so the alert can be replayed.
+      # If Discord failed after the commit landed, keep the diff so the alert can be replayed by hand
+      # (download it and run main.py --notify). Nothing replays it automatically.
       - name: Keep diff on failure
         if: failure()
         uses: actions/upload-artifact@v7
@@ -91,3 +92,4 @@ jobs:
           name: diff-${{ github.run_id }}
           path: diff.json
           if-no-files-found: ignore
+          retention-days: 7
