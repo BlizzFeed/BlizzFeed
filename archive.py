@@ -19,7 +19,8 @@ ARCHIVE_DIR = os.environ.get("ARCHIVE_DIR", "archive")
 DIFF_FILE = os.environ.get("ARCHIVE_DIFF_FILE", "archive-diff.json")
 SOURCES_FILE = os.environ.get("SOURCES_FILE", os.path.join(os.path.dirname(__file__), "sources.yaml"))
 
-COMMIT_VERBS = {"archived": "archived", "text": "text edited:", "card": "summary changed:"}
+COMMIT_VERBS = {"archived": "archived", "text": "text edited:", "card": "summary changed:",
+                "reformatted": "reformatted:"}
 
 
 def read_diff():
@@ -32,7 +33,7 @@ def write_diff(diff):
         json.dump(diff, f, indent=2, ensure_ascii=False)
 
 
-def archive_one(source, item, index, cfg):
+def archive_one(source, item, index, cfg, reformat):
     """Fetch and save one article. Returns its change entry, or None when nothing changed.
 
     Raises ArticleGone for a 404 or 410, and anything else for a failed fetch. Never writes a bad file.
@@ -43,6 +44,8 @@ def archive_one(source, item, index, cfg):
     kind = archiver.classify(old, content)
     if kind is None:
         return None
+    if kind == "text" and reformat:
+        kind = "reformatted"  # most likely our converter changed, not the article, so it isn't posted
     archiver.write_article(ARCHIVE_DIR, source.id, item["id"], content)
     entry = {"id": item["id"], "title": item["title"], "kind": kind, "url": item["url"],
              "image": item["image"], "path": archiver.article_path(source.id, item["id"])}
@@ -58,7 +61,10 @@ def fetch():
     cfg = load_archive_config(SOURCES_FILE)
     now = datetime.now(timezone.utc)
     archive_state = archiver.load_archive_state(ARCHIVE_DIR)
-    sweep = archiver.sweep_due(archive_state, cfg["sweep_minutes"], now)
+    # A new converter version re-checks the whole window at once, so no old-format file is left to
+    # show up as an edit later.
+    reformat = archive_state.get("converter") != archiver.CONVERTER_VERSION
+    sweep = reformat or archiver.sweep_due(archive_state, cfg["sweep_minutes"], now)
 
     indexes, candidates = {}, []
     for source in load_sources(SOURCES_FILE):
@@ -78,7 +84,7 @@ def fetch():
             time.sleep(cfg["fetch_delay_seconds"])
         entry = diff["sources"].setdefault(source.id, {"articles": [], "gone": [], "failed": 0})
         try:
-            change = archive_one(source, item, indexes[source.id], cfg)
+            change = archive_one(source, item, indexes[source.id], cfg, reformat)
         except article.ArticleGone:
             logger.warning(f"[{source.id}] {item['id']} is gone (404/410), keeping the saved file")
             entry["gone"].append(item["id"])
@@ -104,6 +110,9 @@ def fetch():
             diff["alerts"].append(alert)
     if sweep:
         archive_state["last_sweep"] = archiver.now_iso(now)
+    # Only once everything due was fetched; otherwise the next run carries on reformatting.
+    if len(selected) == len(candidates) and not any(e["failed"] for e in diff["sources"].values()):
+        archive_state["converter"] = archiver.CONVERTER_VERSION
     archiver.save_archive_state(ARCHIVE_DIR, archive_state)
     health.save(ARCHIVE_DIR, health_state)
     write_diff(diff)

@@ -7,6 +7,10 @@ from datetime import datetime, timedelta, timezone
 from bs4 import BeautifulSoup
 from markdownify import MarkdownConverter
 
+# Bump when a change here alters the saved Markdown. The next runs then commit the new format as
+# "reformatted" without posting, instead of reporting every recent article as edited.
+CONVERTER_VERSION = 1
+
 YOUTUBE_ID = re.compile(r"(?:youtube\.com|youtube-nocookie\.com)/embed/([\w-]+)")
 # 1280x720 is YouTube's largest thumbnail; GitHub shrinks it to fit the column. The service adds the play button.
 YOUTUBE_THUMBNAIL = "https://markdown-videos-api.jorgenkh.no/youtube/{id}?width=1280&height=720"

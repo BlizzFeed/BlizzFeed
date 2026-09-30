@@ -212,8 +212,9 @@ def _log_container(heading, blocks, total, run_url):
     return {"type": 17, "accent_color": COLORS["log"], "components": inner}
 
 
-ARCHIVE_EMOJI = {"archived": "📦", "text": "📝", "card": "🎴"}
-ARCHIVE_LABEL = {"archived": "archived", "text": "text edited", "card": "summary changed"}
+ARCHIVE_EMOJI = {"archived": "📦", "text": "📝", "card": "🎴", "reformatted": "🔧"}
+ARCHIVE_LABEL = {"archived": "archived", "text": "text edited", "card": "summary changed",
+                 "reformatted": "reformatted"}
 
 
 def _archive_log_entry(name, entry, repo_url, recovered_since):
