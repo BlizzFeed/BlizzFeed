@@ -75,10 +75,12 @@ def scrape():
             added, updated, quiet = differ.compute(old_state, items)
             differ.write_source(DATA_DIR, source.id, differ.merge(old_state, items),
                                 added + updated + quiet)
-            # A baseline writes everything but announces nothing.
+            # A baseline writes everything but announces nothing. Quiet items are saved but never announced.
             diff["sources"][source.id] = {"baseline": baseline,
+                                          "items": len(items),
                                           "added": [] if baseline else added,
-                                          "updated": updated}
+                                          "updated": updated,
+                                          "quiet": len(quiet)}
             logger.success(f"[{source.id}] {len(items)} items, +{len(added)} new, {len(updated)} updated, "
                            f"{len(quiet)} quiet{' (baseline, no notifications)' if baseline else ''}")
         if alert:
