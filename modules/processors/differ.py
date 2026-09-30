@@ -1,7 +1,8 @@
 import json
 import os
 
-ANNOUNCED = ("title", "url", "summary", "image")  # a change here posts "updated"; a date-only change is saved quietly
+ANNOUNCED = ("title", "summary", "image")  # a change here posts "updated"
+QUIET = ("date", "url")  # a change only here is saved without a message (a retitle changes the slug too)
 
 
 def state_path(data_dir, source_id):
@@ -23,19 +24,19 @@ def load_state(data_dir, source_id):
 def compute(old_state, items):
     """Append-only diff by id. Items missing from the fetch are never reported as removed.
 
-    Returns (added, updated, redated); redated items only have a newer date.
+    Returns (added, updated, quiet); quiet items only changed their date or url.
     """
     old = {i["id"]: i for i in (old_state or [])}
-    added, updated, redated = [], [], []
+    added, updated, quiet = [], [], []
     for item in items:
         prev = old.get(item["id"])
         if prev is None:
             added.append(item)
         elif any(prev.get(k, "") != item[k] for k in ANNOUNCED):
             updated.append(item)
-        elif prev.get("date", "") != item["date"]:
-            redated.append(item)
-    return added, updated, redated
+        elif any(prev.get(k, "") != item[k] for k in QUIET):
+            quiet.append(item)
+    return added, updated, quiet
 
 
 def merge(old_state, items):

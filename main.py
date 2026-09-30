@@ -59,15 +59,15 @@ def scrape():
             alert = health.record_failure(state, source, str(e))
         else:
             alert = health.record_success(state, source)
-            added, updated, redated = differ.compute(old_state, items)
+            added, updated, quiet = differ.compute(old_state, items)
             differ.write_source(DATA_DIR, source.id, differ.merge(old_state, items),
-                                added + updated + redated)
+                                added + updated + quiet)
             # A baseline writes everything but announces nothing.
             diff["sources"][source.id] = {"baseline": baseline,
                                           "added": [] if baseline else added,
                                           "updated": updated}
             logger.success(f"[{source.id}] {len(items)} items, +{len(added)} new, {len(updated)} updated, "
-                           f"{len(redated)} date-only{' (baseline, no notifications)' if baseline else ''}")
+                           f"{len(quiet)} quiet{' (baseline, no notifications)' if baseline else ''}")
         if alert:
             diff["alerts"].append(alert)
 

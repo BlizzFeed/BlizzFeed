@@ -1,3 +1,4 @@
+import re
 import time
 
 from modules.providers import http
@@ -23,6 +24,14 @@ def _matches(entry, where):
     return True
 
 
+def _fill(template, entry):
+    """Replace each {dotted.path} with its value. Returns "" if any of them is empty."""
+    values = {path: _path(entry, path) for path in re.findall(r"\{([^}]+)\}", template)}
+    if not all(values.values()):
+        return ""
+    return re.sub(r"\{([^}]+)\}", lambda m: values[m.group(1)], template)
+
+
 def _entries(source, offset):
     params = {source.raw["offset_param"]: offset} if "offset_param" in source.raw else None
     data = http.get(source.url, headers={"Accept": "application/json"}, params=params).json()
@@ -43,6 +52,7 @@ def fetch(source, known=None):
     page_size = source.raw.get("page_size", 0)
     fields = source.raw["fields"]
     where = source.raw.get("where", {})
+    url_template = source.raw.get("url_template")
     items, seen = [], set()
     for page in range(pages):
         if page:
@@ -52,6 +62,8 @@ def fetch(source, known=None):
             if not _matches(entry, where):
                 continue
             raw = {name: _path(entry, spec) for name, spec in fields.items()}
+            if url_template:
+                raw["url"] = _fill(url_template, entry) or raw.get("url", "")
             item = finish_item(raw, source.url)
             # A post published between two page requests shifts the list, so skip repeats.
             if item and item["id"] not in seen:

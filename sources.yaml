@@ -22,6 +22,8 @@
 #   where         (json) Only keep articles where each dotted path equals the given value, or one
 #                 of the values when given a list. The news API tags a post with several games,
 #                 so this keeps each post to the one game it's filed under.
+#   url_template  Optional (json). Article link built from dotted paths in {braces}, e.g. the game's own
+#                 news site instead of news.blizzard.com. Falls back to fields.url if a path is empty.
 #   allow_empty   Optional. An empty feed isn't treated as a failure (for games with no posts yet).
 #   fields        How to read id, url, title, summary, date and image from one article.
 #
@@ -67,6 +69,7 @@ sources:
     webhook: WOW
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt637a995645d7e161/5d48a388a58fc57f3dafd9f1/world-of-warcraft.svg
     where: {properties.cxpProduct.segment: world-of-warcraft}
+    url_template: https://worldofwarcraft.blizzard.com/en-gb/news/{properties.newsId}/{properties.newsSlug}
 
   - <<: *blizzard-news-api
     id: hots-news
@@ -85,6 +88,7 @@ sources:
     webhook: HEARTHSTONE
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt05905fb295358316/5d48a37efbf0e17fc6dafd3c/hearthstone.svg
     where: {properties.cxpProduct.segment: hearthstone}
+    url_template: https://hearthstone.blizzard.com/en-gb/news/{properties.newsId}/{properties.newsSlug}
 
   - <<: *blizzard-news-api
     id: diablo-4-news
@@ -140,6 +144,7 @@ sources:
     webhook: OVERWATCH
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt648969725f01df34/622a3969f2c2644f956a8934/Overwatch2.svg
     where: {properties.cxpProduct.segment: overwatch}
+    url_template: https://overwatch.blizzard.com/en-gb/news/{properties.newsId}/{properties.newsSlug}
 
   - <<: *blizzard-news-api
     id: starcraft-news
