@@ -49,7 +49,7 @@ def merge(old_state, items):
 def render_markdown(item):
     lines = [f"# {item['title']}", "", f"- URL: {item['url']}", f"- Date: {item['date']}"]
     if item["image"]:
-        lines.append(f"- Image: {item['image']}")
+        lines.append(f"![]({item['image']})")  # an image, not a link, so GitHub's preview shows it
     lines += ["", item["summary"], ""]
     return "\n".join(lines)
 

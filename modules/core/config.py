@@ -30,7 +30,7 @@ class Source:
         # The first channel is the source's own, any others are shared. Labels whose secret isn't set are skipped.
         self.missing_labels = [label for label in labels if not os.environ.get(f"DISCORD_WEBHOOK_{label}")]
         self.channels = [
-            {"url": url, "role": ping_roles.get(label)}
+            {"url": url, "role": ping_roles.get(label), "label": label}
             for label in labels
             if (url := os.environ.get(f"DISCORD_WEBHOOK_{label}"))
         ]

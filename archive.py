@@ -10,6 +10,7 @@ from loguru import logger
 
 from modules.core import gitops, health
 from modules.core.config import load_archive_config, load_sources
+from modules.notifiers import discord
 from modules.processors import archiver, differ
 from modules.providers import article
 
@@ -43,8 +44,8 @@ def archive_one(source, item, index, cfg):
     if kind is None:
         return None
     archiver.write_article(ARCHIVE_DIR, source.id, item["id"], content)
-    entry = {"id": item["id"], "title": item["title"], "kind": kind,
-             "path": archiver.article_path(source.id, item["id"])}
+    entry = {"id": item["id"], "title": item["title"], "kind": kind, "url": item["url"],
+             "image": item["image"], "path": archiver.article_path(source.id, item["id"])}
     if kind == "text":
         entry["added"], entry["removed"] = archiver.line_changes(archiver.split_file(old)[1],
                                                                   archiver.split_file(content)[1])
@@ -122,20 +123,36 @@ def commit():
     write_diff(diff)
 
 
+def notify():
+    sources = {s.id: s for s in load_sources(SOURCES_FILE)}
+    repo = os.environ.get("GITHUB_REPOSITORY")
+    repo_url = f"https://github.com/{repo}" if repo else None
+    diff, run_url = read_diff(), os.environ.get("ACTIONS_RUN_URL")
+    failures = discord.send_archive(diff, sources, repo_url, load_archive_config(SOURCES_FILE))
+    discord.send_archive_log(diff, sources, repo_url, run_url)
+    if failures:
+        logger.error(f"{failures} Discord send(s) failed.")
+        sys.exit(1)
+    logger.success("Notify complete.")
+
+
 def main():
     logger.remove()
     logger.add(sys.stderr, level="INFO",
                format="<green>{time:YYYY-MM-DD HH:mm:ss}</green> | <level>{level: <8}</level> | <cyan>{message}</cyan>")
-    parser = argparse.ArgumentParser(description="Article archive: fetch -> commit")
+    parser = argparse.ArgumentParser(description="Article archive: fetch -> commit -> notify")
     parser.add_argument("--fetch", action="store_true", help="fetch due articles, write files + archive-diff.json")
     parser.add_argument("--commit", action="store_true", help="commit per article, push, record SHAs in archive-diff.json")
+    parser.add_argument("--notify", action="store_true", help="send Discord messages from archive-diff.json")
     args = parser.parse_args()
-    if not (args.fetch or args.commit):
+    if not (args.fetch or args.commit or args.notify):
         parser.print_help()
     if args.fetch:
         fetch()
     if args.commit:
         commit()
+    if args.notify:
+        notify()
 
 
 if __name__ == "__main__":
