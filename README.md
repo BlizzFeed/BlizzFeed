@@ -36,7 +36,7 @@ More Blizzard products can be added by putting another entry in `sources.yaml`.
 
 ## Setup
 1. Push to the `source` branch (the default) and create an empty `data` branch.
-2. Add one `DISCORD_WEBHOOK_*` secret per source in the table above under Settings → Secrets and variables → Actions.
+2. Add every `DISCORD_WEBHOOK_*` secret listed in the table above under Settings → Secrets and variables → Actions.
 3. Run the workflow once manually, then have something send the `trigger-scraping` dispatch every 5 minutes.
 
 ## Credits

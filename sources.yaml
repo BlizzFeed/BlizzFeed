@@ -33,7 +33,7 @@ defaults:
 
 # Discord role to ping in a channel, by webhook label (a role only works in its own server).
 # A channel pings its role once per run, on its first new message. No entry means no ping.
-ping_roles: {}
+ping_roles:
 #  WOW: "1554600863081959464"
 #  DIABLO: "123456789"       # one @diablo for the shared Diablo channel
 
@@ -62,6 +62,7 @@ sources:
     url: https://news.blizzard.com/en-gb/api/feed/world-of-warcraft
     webhook: WOW
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt637a995645d7e161/5d48a388a58fc57f3dafd9f1/world-of-warcraft.svg
+    where: {properties.cxpProduct.segment: world-of-warcraft}
 
   - <<: *blizzard-news-api
     id: hots-news
@@ -69,6 +70,7 @@ sources:
     url: https://news.blizzard.com/en-gb/api/feed/heroes-of-the-storm
     webhook: HOTS
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt338ef9c751599624/5d48a37e0927f67fc054705f/heroes-of-the-storm.svg
+    where: {properties.cxpProduct.segment: heroes-of-the-storm}
 
   - <<: *blizzard-news-api
     id: hearthstone-news
@@ -76,6 +78,7 @@ sources:
     url: https://news.blizzard.com/en-gb/api/feed/hearthstone
     webhook: HEARTHSTONE
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt05905fb295358316/5d48a37efbf0e17fc6dafd3c/hearthstone.svg
+    where: {properties.cxpProduct.segment: hearthstone}
 
   - <<: *blizzard-news-api
     id: diablo-4-news
