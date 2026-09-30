@@ -6,8 +6,9 @@
 #   type          html (CSS selectors) or json (dotted paths into an API response).
 #   url           The page to poll.
 #   webhook       Label for the Discord webhook: "WOW" reads the secret DISCORD_WEBHOOK_WOW.
+#                 Can be a list to post to several channels, e.g. [DIABLO4, DIABLO]. The first is
+#                 the source's own channel and the only one that gets failure alerts.
 #                 A new label also needs its secret listed in the workflow's Notify step.
-#   ping_role     Optional. Role ID to ping, on the first message of a run only.
 #   url_prefix    Optional (html). Prepended to article links that start with "/".
 #   item_selector (html) CSS selector matching each article.
 #   items_path    (json) Dotted path to the list of articles.
@@ -28,6 +29,12 @@
 
 defaults:
   failures_before_alert: 3   # consecutive failed runs before a "source failing" message
+
+# Discord role to ping in a channel, by webhook label (a role only works in its own server).
+# A channel pings its role once per run, on its first new message. No entry means no ping.
+ping_roles: {}
+#  WOW: "1554600863081959464"
+#  DIABLO: "123456789"       # one @diablo for the shared Diablo channel
 
 # Shared settings for news.blizzard.com, reused below with "<<: *blizzard-news-api".
 # The feed is sorted by last update, newest first, 15 articles per page.
@@ -53,7 +60,6 @@ sources:
     name: World of Warcraft News
     url: https://news.blizzard.com/en-gb/api/feed/world-of-warcraft
     webhook: WOW
-    # ping_role: "1554600863081959464"
 
   - <<: *blizzard-news-api
     id: hots-news
@@ -71,28 +77,28 @@ sources:
     id: diablo-4-news
     name: Diablo IV News
     url: https://news.blizzard.com/en-gb/api/feed/diablo-4
-    webhook: DIABLO4
+    webhook: [DIABLO4, DIABLO]
     where: {properties.cxpProduct.segment: diablo-4}
 
   - <<: *blizzard-news-api
     id: diablo-immortal-news
     name: Diablo Immortal News
     url: https://news.blizzard.com/en-gb/api/feed/diablo-immortal
-    webhook: DIABLOIMMORTAL
+    webhook: [DIABLOIMMORTAL, DIABLO]
     where: {properties.cxpProduct.segment: diablo-immortal}
 
   - <<: *blizzard-news-api
     id: diablo-2-resurrected-news
     name: Diablo II Resurrected News
     url: https://news.blizzard.com/en-gb/api/feed/diablo-2-resurrected
-    webhook: DIABLO2
+    webhook: [DIABLO2, DIABLO]
     where: {properties.cxpProduct.segment: diablo-2-resurrected}
 
   - <<: *blizzard-news-api
     id: diablo-3-news
     name: Diablo III News
     url: https://news.blizzard.com/en-gb/api/feed/diablo-3
-    webhook: DIABLO3
+    webhook: [DIABLO3, DIABLO]
     where: {properties.cxpProduct.segment: diablo-3}
 
   - <<: *blizzard-news-api

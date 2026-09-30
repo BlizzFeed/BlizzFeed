@@ -8,14 +8,18 @@ Watches the Blizzard news feeds (news.blizzard.com, en-gb) every ~5 minutes on G
 | World of Warcraft News | `DISCORD_WEBHOOK_WOW` |
 | Heroes of the Storm News | `DISCORD_WEBHOOK_HOTS` |
 | Hearthstone News | `DISCORD_WEBHOOK_HEARTHSTONE` |
-| Diablo IV News | `DISCORD_WEBHOOK_DIABLO4` |
-| Diablo Immortal News | `DISCORD_WEBHOOK_DIABLOIMMORTAL` |
-| Diablo II Resurrected News | `DISCORD_WEBHOOK_DIABLO2` |
-| Diablo III News | `DISCORD_WEBHOOK_DIABLO3` |
+| Diablo IV News | `DISCORD_WEBHOOK_DIABLO4` and `DISCORD_WEBHOOK_DIABLO` |
+| Diablo Immortal News | `DISCORD_WEBHOOK_DIABLOIMMORTAL` and `DISCORD_WEBHOOK_DIABLO` |
+| Diablo II Resurrected News | `DISCORD_WEBHOOK_DIABLO2` and `DISCORD_WEBHOOK_DIABLO` |
+| Diablo III News | `DISCORD_WEBHOOK_DIABLO3` and `DISCORD_WEBHOOK_DIABLO` |
 | Overwatch News | `DISCORD_WEBHOOK_OVERWATCH` |
 | StarCraft II News | `DISCORD_WEBHOOK_STARCRAFT2` |
 | Warcraft III News | `DISCORD_WEBHOOK_WARCRAFT3` |
 | Blizzard News (BlizzCon, company) | `DISCORD_WEBHOOK_BLIZZARD` |
+
+Each Diablo game posts to its own channel and also to one shared Diablo channel (`DISCORD_WEBHOOK_DIABLO`). A source can list more than one webhook. The first is its own channel, and only that one gets the "source failing" alerts. Any secret you don't set is simply skipped.
+
+To ping a role, add the webhook label and the role ID under `ping_roles` in `sources.yaml` (for example `DIABLO: "123456789"` for an @diablo in the shared channel). Each channel pings its role once per run, and channels without an entry never ping.
 
 More Blizzard products can be added by putting another entry in `sources.yaml`.
 

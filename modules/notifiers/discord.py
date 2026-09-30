@@ -91,26 +91,31 @@ def post(webhook_url, payload):
 
 def send_all(diff, sources, repo_url, run_url):
     """sources: {source_id: Source}. Returns the number of failed sends."""
-    failures, ping_remaining = 0, True
+    failures, pinged = 0, set()
     for source_id, entry in diff["sources"].items():
+        if not (entry["added"] or entry["updated"]):
+            continue
         source = sources[source_id]
-        if not source.webhook_url:
+        for label in source.missing_labels:
+            logger.warning(f"{source_id}: secret DISCORD_WEBHOOK_{label} isn't set; skipping that channel.")
+        if not source.channels:
             logger.warning(f"No webhook configured for {source_id}; skipping.")
             continue
         commit_url = f"{repo_url}/commit/{entry['commit']}" if repo_url and entry.get("commit") else None
         for action in ("added", "updated"):
             for item in entry[action]:
-                role = source.ping_role if ping_remaining else None
-                if role:
-                    ping_remaining = False
-                if not post(source.webhook_url,
-                            build_item_message(source.name, action, item, commit_url, repo_url, role)):
-                    failures += 1
-                time.sleep(SEND_DELAY_SECONDS)
+                for channel in source.channels:
+                    # Each channel pings its role once per run, on its first message.
+                    role = None if channel["url"] in pinged else channel["role"]
+                    pinged.add(channel["url"])
+                    message = build_item_message(source.name, action, item, commit_url, repo_url, role)
+                    if not post(channel["url"], message):
+                        failures += 1
+                    time.sleep(SEND_DELAY_SECONDS)
 
     for alert in diff["alerts"]:
         source = sources.get(alert["source"])
-        if source and source.webhook_url and \
-                not post(source.webhook_url, build_alert_message(source.name, alert, run_url)):
+        if source and source.channels and \
+                not post(source.channels[0]["url"], build_alert_message(source.name, alert, run_url)):
             failures += 1
     return failures
