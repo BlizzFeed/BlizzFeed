@@ -73,6 +73,14 @@ def build_alert_message(name, alert, run_url):
         "components": [_text(_trim(f"## {title}\n{desc}", 3000))]}]}
 
 
+def _retry_delay(response):
+    """Seconds to wait after a 429, from Discord's JSON body. Falls back to 2 if it isn't readable."""
+    try:
+        return min(max(float(response.json()["retry_after"]), 0), 30)
+    except (ValueError, KeyError, TypeError):
+        return 2
+
+
 def post(webhook_url, payload):
     for _ in range(3):
         try:
@@ -86,7 +94,7 @@ def post(webhook_url, payload):
         if response.status_code != 429:
             logger.error(f"Discord returned {response.status_code}: {response.text[:200]}")
             return False
-        time.sleep(min(float(response.json().get("retry_after", 2)), 30))
+        time.sleep(_retry_delay(response))
     return False
 
 
