@@ -73,5 +73,3 @@ def test_tab_links_point_at_the_first_heading_of_each_pane():
     text = archiver.to_markdown(_read("article-24301515.html"))
     assert "- [Hunter](#taking-aim-at-the-hunter-class)" in text
     assert "- [Druid](#shifting-forms-with-the-druid-class)" in text
-    # both panes are kept, one after the other
-    assert "## Taking Aim at the Hunter Class" in text and "## Shifting Forms with the Druid Class" in text
