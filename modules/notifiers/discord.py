@@ -1,5 +1,5 @@
 import time
-from datetime import datetime
+from datetime import datetime, timezone
 
 import requests
 from loguru import logger
@@ -43,11 +43,15 @@ def build_item_message(name, action, item, commit_url, repo_url, role_id=None):
                   "accessory": {"type": 11, "media": {"url": item["image"]}, "description": title[:1024]}}]
     else:
         inner = [text]
+    updated = action == "updated"
     buttons = [_link_button(label, url)
-               for label, url in (("Read Article", item["url"]), ("View Commit", commit_url)) if url]
+               for label, url in (("Read Article", item["url"]),
+                                  ("View Changes" if updated else "View Commit", commit_url)) if url]
     if buttons:
         inner += [DIVIDER, {"type": 1, "components": buttons}]
-    posted = f"Posted {_discord_time(item['date'])} · " if item["date"] else ""
+    # An update keeps the article's original date, so it's stamped with when we noticed the change.
+    when = datetime.now(timezone.utc).isoformat() if updated else item["date"]
+    posted = f"{'Updated' if updated else 'Posted'} {_discord_time(when)} · " if when else ""
     site = f"[BlizzFeed]({repo_url})" if repo_url else "BlizzFeed"
     inner.append(_text(f"-# {posted}{site}"))
 
