@@ -1,0 +1,104 @@
+from types import SimpleNamespace
+
+from modules.notifiers import discord
+
+REPO = "https://github.com/BlizzWatch/BlizzFeed"
+ITEM = {"id": "42", "title": "Hotfixes", "url": "https://news.blizzard.com/en-gb/article/42", "summary": "Card text.",
+        "image": "https://x/i.png", "date": "2026-09-30T10:00:00Z", "shop_url": "https://shop.battle.net/p"}
+CHANGE = {"id": "42", "title": "Hotfixes", "kind": "text", "url": ITEM["url"], "image": ITEM["image"],
+          "added": 1, "removed": 3, "commit": "abc123", "silent": False}
+
+
+def buttons(message):
+    container = message["components"][-1]
+    row = next(c for c in container["components"] if c["type"] == 1)
+    return {b["label"]: b["url"] for b in row["components"]}
+
+
+def texts(message):
+    out = []
+
+    def walk(node):
+        if node.get("type") == 10:
+            out.append(node["content"])
+        for child in node.get("components", []):
+            walk(child)
+        if "accessory" in node:
+            walk(node["accessory"])
+    for c in message["components"]:
+        walk(c)
+    return "\n".join(out)
+
+
+def item_message(action):
+    return discord.build_item_message(
+        None, action, ITEM, f"{REPO}/commit/dat", REPO, None,
+        discord.preview_url(REPO, "dat", "wow-news", "42"), discord.history_url(REPO, "wow-news", "42"))
+
+
+def test_new_article_buttons():
+    assert buttons(item_message("added")) == {
+        "Read Article": ITEM["url"], "Battle.net Shop": ITEM["shop_url"],
+        "Preview": f"{REPO}/blob/dat/wow-news/items/42.md",
+        "History": f"{REPO}/commits/archive/wow-news/42.md"}
+
+
+def test_updated_article_buttons():
+    assert buttons(item_message("updated")) == {
+        "Read Article": ITEM["url"], "Battle.net Shop": ITEM["shop_url"],
+        "View Changes": f"{REPO}/commit/dat", "History": f"{REPO}/commits/archive/wow-news/42.md"}
+
+
+def test_item_buttons_without_repo_or_commit():
+    message = discord.build_item_message(None, "added", ITEM, None, None)
+    assert list(buttons(message)) == ["Read Article", "Battle.net Shop"]
+
+
+def test_edit_message():
+    message = discord.build_edit_message(None, CHANGE, REPO, "wow-news", f"{REPO}/commit/abc123")
+    assert buttons(message) == {"Read Article": ITEM["url"], "Text Changes": f"{REPO}/commit/abc123",
+                                "History": f"{REPO}/commits/archive/wow-news/42.md"}
+    body = texts(message)
+    assert "## Article text edited" in body and "**Hotfixes**" in body
+    assert "+1 line, −3 lines" in body
+    assert message["components"][0]["accent_color"] == discord.COLORS["edited"]
+    assert "allowed_mentions" not in message
+
+
+def test_edit_message_label_role_and_no_image():
+    message = discord.build_edit_message("WoW", {**CHANGE, "image": ""}, REPO, "wow-news", None, role_id="9")
+    assert message["components"][0]["content"] == "<@&9>"
+    assert message["allowed_mentions"] == {"roles": ["9"]}
+    assert texts(message).startswith("<@&9>\n-# WoW\n## Article text edited")
+    assert "Text Changes" not in buttons(message)
+
+
+def diff(articles, alerts=()):
+    return {"sweep": True, "alerts": list(alerts),
+            "sources": {"wow-news": {"articles": articles, "gone": [], "failed": 0}, "other": {"articles": [], "gone": [], "failed": 0}}}
+
+
+SOURCES = {"wow-news": SimpleNamespace(id="wow-news", name="WoW"), "other": SimpleNamespace(id="other", name="Other")}
+
+
+def test_archive_log_lists_changes_and_silent_edits():
+    articles = [CHANGE, {**CHANGE, "id": "7", "title": "New", "kind": "archived", "commit": "def"},
+                {**CHANGE, "id": "8", "title": "Quiet", "silent": True, "commit": "eee"}]
+    body = texts(discord.build_archive_log_message(diff(articles), SOURCES, REPO, "https://run"))
+    assert "## Archive changes" in body and "1 of 2 sources changed" in body
+    assert "2 text edited" in body and "1 archived" in body
+    assert f"[Hotfixes]({REPO}/commit/abc123) +1 −3" in body
+    assert "Quiet" in body and "silent edit (date unchanged)" in body
+
+
+def test_archive_log_skipped_when_nothing_changed():
+    assert discord.build_archive_log_message(diff([]), SOURCES, REPO, None) is None
+
+
+def test_archive_alerts_go_to_log_with_archive_wording():
+    down = {"source": "wow-news", "kind": "down", "error": "boom", "since": "2026-09-30T09:00:00Z"}
+    body = texts(discord.build_archive_log_message(diff([], [down]), SOURCES, REPO, None))
+    assert "WoW - archive failing" in body
+    recovered = {"source": "wow-news", "kind": "recovered", "since": "2026-09-30T09:00:00Z"}
+    body = texts(discord.build_archive_log_message(diff([], [recovered]), SOURCES, REPO, None))
+    assert "recovered" in body
