@@ -216,9 +216,12 @@ def _set_poster(message, source):
 def send_log(diff, sources, repo_url, run_url):
     """Post the run summary to DISCORD_WEBHOOK_LOG. Skipped when it isn't set, and it never fails the run."""
     url = os.environ.get("DISCORD_WEBHOOK_LOG")
-    message = build_log_message(diff, sources, repo_url, run_url) if url else None
-    if message:
-        post(url, message)
+    if not url:
+        logger.info("DISCORD_WEBHOOK_LOG isn't set; skipping the run log.")
+        return
+    message = build_log_message(diff, sources, repo_url, run_url)
+    if message and post(url, message):
+        logger.info("Posted the run log.")
 
 
 def send_all(diff, sources, repo_url, run_url):
