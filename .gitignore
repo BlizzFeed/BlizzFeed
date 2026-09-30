@@ -30,3 +30,7 @@ resources/
 # OS
 .DS_Store
 Thumbs.db
+
+# Article archive: local checkout of the archive branch
+/archive/
+archive-diff.json

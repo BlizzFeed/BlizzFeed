@@ -44,6 +44,21 @@ ping_roles:
 #  WOW: "1554600863081959464"
 #  DIABLO: "123456789"       # one @diablo for the shared Diablo channel
 
+# Article archive (archive.py): saves each article's card and full text as Markdown on the archive branch.
+archive:
+  window_days: 7          # re-check articles updated this recently, to catch edits that don't bump the date
+  sweep_minutes: 55       # that re-check runs at most this often
+  max_fetches: 60         # article page fetches per run; the rest carry over to the next run
+  fetch_delay_seconds: 2
+  body_selector: "article.Content section.blog"
+  failures_before_alert: 3   # consecutive failed archive runs per source before a log alert
+  baseline_days: 30       # a source's first archive run saves articles updated this recently (no posts)
+  # Role to ping on "Article text edited" posts, by webhook label. Off for now: hotfix posts
+  # are edited several times a day, so it would be noisy.
+  # ping_roles:
+  #   WOW: "1554600863081959464"
+  #   DIABLO: "123456789"
+
 # Shared settings for news.blizzard.com, reused below with "<<: *blizzard-news-api".
 # The feed is sorted by last update, newest first, 15 articles per page.
 templates:
