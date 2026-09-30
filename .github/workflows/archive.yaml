@@ -1,23 +1,21 @@
-name: Check Blizzard News
+name: Archive Blizzard Articles
 
 on:
-  # Sent every minute by an external trigger (trigger/dispatch.py).
-  # There is no cron here, as Github can't promise exact runs.
+  # Started by the tracker when it saves a change, and hourly by trigger/dispatch.py. No cron.
   workflow_dispatch:
-  push:
-    branches: [source]
 
+# Its own group: sharing the tracker's would let each cancel the other's queued run.
+# A queued run replaced by a newer dispatch loses nothing, as every run does the same work.
 concurrency:
-  group: tracker
+  group: archive
   cancel-in-progress: false
 
 jobs:
-  track:
+  archive:
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    timeout-minutes: 20
     permissions:
       contents: write
-      actions: write  # to start the archive workflow
 
     steps:
       - name: Checkout source branch (code) into ./code
@@ -26,11 +24,19 @@ jobs:
           ref: source
           path: code
 
+      # Read only, never pushed.
       - name: Checkout data branch into ./data
         uses: actions/checkout@v7
         with:
           ref: data
           path: data
+          persist-credentials: false
+
+      - name: Checkout archive branch into ./archive
+        uses: actions/checkout@v7
+        with:
+          ref: archive
+          path: archive
 
       - uses: actions/setup-python@v7
         with:
@@ -41,43 +47,28 @@ jobs:
       - run: pip install --disable-pip-version-check -r code/requirements.txt
 
       - name: Configure git identity
-        working-directory: data
+        working-directory: archive
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Scrape
+      - name: Fetch articles
         env:
-          OUTPUT_DIR: data
-          DIFF_FILE: diff.json
-        run: python code/main.py --scrape
+          DATA_DIR: data
+          ARCHIVE_DIR: archive
+          ARCHIVE_DIFF_FILE: archive-diff.json
+        run: python code/archive.py --fetch
 
-      # Commits per source and pushes. Notify only runs if this succeeded, so
-      # an embed never links a commit that was not pushed.
+      # Notify only runs if this succeeded, so a post never links an unpushed commit.
       - name: Commit and push
         env:
-          OUTPUT_DIR: data
-          DIFF_FILE: diff.json
-        run: python code/main.py --commit
-
-      # Start an archive run when anything was added, updated or quiet (a date bump is often a text edit).
-      # A failed dispatch doesn't fail this run: the hourly archive run catches up.
-      - name: Start archive run
-        continue-on-error: true
-        env:
-          GH_TOKEN: ${{ github.token }}
-          GH_REPO: ${{ github.repository }}
-        run: |
-          if python -c "import json, sys; d = json.load(open('diff.json')); sys.exit(not any(e['added'] or e['updated'] or e['quiet'] for e in d['sources'].values()))"; then
-            gh workflow run archive.yaml --ref source
-          else
-            echo "No changes, no archive run needed."
-          fi
+          ARCHIVE_DIR: archive
+          ARCHIVE_DIFF_FILE: archive-diff.json
+        run: python code/archive.py --commit
 
       - name: Notify Discord
         env:
-          OUTPUT_DIR: data
-          DIFF_FILE: diff.json
+          ARCHIVE_DIFF_FILE: archive-diff.json
           ACTIONS_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           DISCORD_WEBHOOK_WOW: ${{ secrets.DISCORD_WEBHOOK_WOW }}
           DISCORD_WEBHOOK_WOW_US: ${{ secrets.DISCORD_WEBHOOK_WOW_US }}
@@ -97,15 +88,15 @@ jobs:
           DISCORD_WEBHOOK_WARCRAFTRUMBLE: ${{ secrets.DISCORD_WEBHOOK_WARCRAFTRUMBLE }}
           DISCORD_WEBHOOK_BLIZZARD: ${{ secrets.DISCORD_WEBHOOK_BLIZZARD }}
           DISCORD_WEBHOOK_LOG: ${{ secrets.DISCORD_WEBHOOK_LOG }}
-        run: python code/main.py --notify
+        run: python code/archive.py --notify
 
-      # If Discord failed after the commit landed, keep the diff so the alert can be replayed by hand
-      # (download it and run main.py --notify). Nothing replays it automatically.
+      # If Discord failed after the commit landed, keep the diff so the posts can be replayed by hand
+      # (download it and run archive.py --notify).
       - name: Keep diff on failure
         if: failure()
         uses: actions/upload-artifact@v7
         with:
-          name: diff-${{ github.run_id }}
-          path: diff.json
+          name: archive-diff-${{ github.run_id }}
+          path: archive-diff.json
           if-no-files-found: ignore
           retention-days: 7
