@@ -64,6 +64,7 @@ Preview shows the saved title, summary and thumbnail. View Changes and Text Chan
 - `archive.py`: the archive steps (`--fetch`, `--commit`, `--notify`).
 - `.github/workflows/tracker.yaml`: the tracker workflow. It runs on a `workflow_dispatch` event, a manual run, or a push to `source`. It has no cron of its own.
 - `.github/workflows/archive.yaml`: the archive workflow. It runs on a `workflow_dispatch` event or a manual run.
+- `logos/`: the BlizzFeed logo, exported at the sizes Discord uses (server icon, emoji, sticker, app icon, role icon).
 - `tests/`: run `pip install -r requirements-dev.txt`, then `pytest`.
 
 ## Setup
@@ -71,6 +72,11 @@ Preview shows the saved title, summary and thumbnail. View Changes and Text Chan
 2. Add every `DISCORD_WEBHOOK_*` secret listed in the table above under Settings → Secrets and variables → Actions.
 3. Run `tracker.yaml` once manually, then have something send its `workflow_dispatch` every minute, and `archive.yaml`'s once an hour.
 4. Run `archive.yaml` manually twice to save the first 30 days of articles. It posts nothing.
+
+## Logos and trademarks
+BlizzFeed is an unofficial fan project. It isn't affiliated with, endorsed by or sponsored by Blizzard Entertainment, Inc.
+
+All game and company names, logos and icons are trademarks or registered trademarks of Blizzard Entertainment, Inc., and belong to their owners. That includes the icons used as webhook avatars and the BlizzFeed logo in `logos/`, which is a combination of parts of the World of Warcraft, Diablo IV, Overwatch 2 and StarCraft II icons. They're used here only to identify the news they belong to, and no ownership is claimed.
 
 ## Credits
 The idea and overall design (a scheduled Actions job, separate `source` and `data` branches, commit links in Discord messages) come from [Wumpus-Central/blog-tracker](https://github.com/Wumpus-Central/blog-tracker).
