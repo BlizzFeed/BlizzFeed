@@ -13,7 +13,7 @@ concurrency:
 
 jobs:
   track:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 10
     permissions:
       contents: write
@@ -37,7 +37,7 @@ jobs:
           cache: 'pip'
           cache-dependency-path: code/requirements.txt
 
-      - run: pip install -r code/requirements.txt
+      - run: pip install --disable-pip-version-check -r code/requirements.txt
 
       - name: Configure git identity
         working-directory: data
