@@ -213,7 +213,7 @@ def _log_container(heading, blocks, total, run_url):
 
 
 ARCHIVE_EMOJI = {"archived": "📦", "text": "📝", "card": "🎴"}
-ARCHIVE_LABEL = {"archived": "archived", "text": "text edited", "card": "card changed"}
+ARCHIVE_LABEL = {"archived": "archived", "text": "text edited", "card": "summary changed"}
 
 
 def _archive_log_entry(name, entry, repo_url, recovered_since):

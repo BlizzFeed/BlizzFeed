@@ -19,7 +19,7 @@ ARCHIVE_DIR = os.environ.get("ARCHIVE_DIR", "archive")
 DIFF_FILE = os.environ.get("ARCHIVE_DIFF_FILE", "archive-diff.json")
 SOURCES_FILE = os.environ.get("SOURCES_FILE", os.path.join(os.path.dirname(__file__), "sources.yaml"))
 
-COMMIT_VERBS = {"archived": "archived", "text": "text edited:", "card": "card changed:"}
+COMMIT_VERBS = {"archived": "archived", "text": "text edited:", "card": "summary changed:"}
 
 
 def read_diff():
