@@ -28,7 +28,7 @@ Each Diablo game posts to its own channel and also to one shared Diablo channel 
 
 To ping a role, add the webhook label and the role ID under `ping_roles` in `sources.yaml` (for example `DIABLO: "123456789"` for an @diablo in the shared channel). Each channel pings its role once per run, and channels without an entry never ping.
 
-Optionally, `DISCORD_WEBHOOK_LOG` points at a private dev channel. After a run where something changed (new, updated, date/url-only, a baseline, or a source failing or recovering) it gets one summary message linking each source's commit. Runs with no changes post nothing, and a failed log post never fails the run.
+Optionally, `DISCORD_WEBHOOK_LOG` points at a private dev channel. After a run where something changed (new, updated, date/url-only, a baseline, or a source failing or recovering) it gets one summary message linking each source's commit. Runs with no changes post nothing, and a failed log post never fails the run. The archive posts its own summary there too.
 
 More Blizzard products can be added by putting another entry in `sources.yaml`.
 
@@ -38,15 +38,39 @@ More Blizzard products can be added by putting another entry in `sources.yaml`.
 - The first run for a source saves the last 150 articles without posting anything, so old articles that get edited later aren't mistaken for new ones.
 - If a source fails 3 runs in a row, Discord gets a "failing" message, and a "recovered" one when it works again.
 
+## Article archive
+The feeds only carry the short version of each article: title, summary and thumbnail. Blizzard also edits the article text quietly (hotfix lists grow, patch notes get corrected), so the archive keeps the text too.
+
+- Each article is saved as a Markdown file on the `archive` branch, with one commit per change. GitHub's diff then shows exactly what was edited.
+- An article is saved again whenever its update date changes, however old it is. Once an hour, articles from the last 7 days are also re-checked in case an edit didn't change the date. The log channel notes when that happens.
+- The first run for a source saves the last 30 days of articles without posting. The archive reads the article pages, not the feeds, at most 60 per run, and continues on the next run.
+- When the text of an article changes, Discord gets an "Article text edited" post (purple) with the number of lines added and removed. It pings no role unless you add one under `archive` in `sources.yaml`. Changes to only the title, summary or image are saved without a post, since they're announced already.
+- If the archive keeps failing for a source, the alert goes to `DISCORD_WEBHOOK_LOG` only, never to a game's channel.
+- The archive runs whenever the tracker finds a change, and once an hour.
+
+Discord posts have these buttons:
+
+| Post | Buttons |
+| --- | --- |
+| New article (green) | Read Article, Battle.net Shop, Preview, History |
+| Summary changed (orange) | Read Article, Battle.net Shop, View Changes, History |
+| Article text edited (purple) | Read Article, Text Changes, History |
+
+Preview shows the saved title, summary and thumbnail. View Changes and Text Changes show what changed, and History lists every saved version.
+
 ## Files
-- `sources.yaml`: the feeds to watch. Add an entry here to track another one.
-- `main.py`: the steps (`--scrape`, `--commit`, `--notify`).
-- `.github/workflows/tracker.yaml`: the workflow. It runs on a `repository_dispatch` event (`trigger-scraping`), a manual run, or a push to `source`. It has no cron of its own.
+- `sources.yaml`: the feeds to watch, and the archive settings. Add an entry here to track another one.
+- `main.py`: the tracker steps (`--scrape`, `--commit`, `--notify`).
+- `archive.py`: the archive steps (`--fetch`, `--commit`, `--notify`).
+- `.github/workflows/tracker.yaml`: the tracker workflow. It runs on a `workflow_dispatch` event, a manual run, or a push to `source`. It has no cron of its own.
+- `.github/workflows/archive.yaml`: the archive workflow. It runs on a `workflow_dispatch` event or a manual run.
+- `tests/`: run `pip install -r requirements-dev.txt`, then `pytest`.
 
 ## Setup
-1. Push to the `source` branch (the default) and create an empty `data` branch.
+1. Push to the `source` branch (the default) and create empty `data` and `archive` branches.
 2. Add every `DISCORD_WEBHOOK_*` secret listed in the table above under Settings → Secrets and variables → Actions.
-3. Run the workflow once manually, then have something send the `trigger-scraping` dispatch every minute.
+3. Run `tracker.yaml` once manually, then have something send its `workflow_dispatch` every minute, and `archive.yaml`'s once an hour.
+4. Run `archive.yaml` manually twice to save the first 30 days of articles. It posts nothing.
 
 ## Credits
 The idea and overall design (a scheduled Actions job, separate `source` and `data` branches, commit links in Discord messages) come from [Wumpus-Central/blog-tracker](https://github.com/Wumpus-Central/blog-tracker).
