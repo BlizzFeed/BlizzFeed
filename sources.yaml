@@ -66,13 +66,25 @@ templates:
 sources:
   - <<: *blizzard-news-api
     id: wow-news
-    name: World of Warcraft News
+    name: World of Warcraft (EU) News
     url: https://news.blizzard.com/en-gb/api/feed/world-of-warcraft
-    username: "World of Warcraft"
+    username: "World of Warcraft (EU)"
     webhook: WOW
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt637a995645d7e161/5d48a388a58fc57f3dafd9f1/world-of-warcraft.svg
     where: {properties.cxpProduct.segment: world-of-warcraft}
     url_template: https://worldofwarcraft.blizzard.com/en-gb/news/{properties.newsId}/{properties.newsSlug}
+
+  # The en-us feed words some titles and dates differently (e.g. "October 13" vs "14 October"),
+  # so it gets its own channel rather than posting the same article twice into one.
+  - <<: *blizzard-news-api
+    id: wow-news-us
+    name: World of Warcraft (US) News
+    url: https://news.blizzard.com/en-us/api/feed/world-of-warcraft
+    username: "World of Warcraft (US)"
+    webhook: WOW_US
+    avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt637a995645d7e161/5d48a388a58fc57f3dafd9f1/world-of-warcraft.svg
+    where: {properties.cxpProduct.segment: world-of-warcraft}
+    url_template: https://worldofwarcraft.blizzard.com/en-us/news/{properties.newsId}/{properties.newsSlug}
 
   - <<: *blizzard-news-api
     id: hots-news

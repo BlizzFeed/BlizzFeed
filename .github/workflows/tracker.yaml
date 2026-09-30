@@ -67,6 +67,7 @@ jobs:
           DIFF_FILE: diff.json
           ACTIONS_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           DISCORD_WEBHOOK_WOW: ${{ secrets.DISCORD_WEBHOOK_WOW }}
+          DISCORD_WEBHOOK_WOW_US: ${{ secrets.DISCORD_WEBHOOK_WOW_US }}
           DISCORD_WEBHOOK_HOTS: ${{ secrets.DISCORD_WEBHOOK_HOTS }}
           DISCORD_WEBHOOK_HEARTHSTONE: ${{ secrets.DISCORD_WEBHOOK_HEARTHSTONE }}
           DISCORD_WEBHOOK_DIABLO5: ${{ secrets.DISCORD_WEBHOOK_DIABLO5 }}

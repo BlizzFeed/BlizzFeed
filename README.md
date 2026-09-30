@@ -5,7 +5,8 @@ Watches the Blizzard news feeds (news.blizzard.com, en-gb) every ~5 minutes on G
 ## Sources
 | Source | Webhook secret |
 | --- | --- |
-| World of Warcraft | `DISCORD_WEBHOOK_WOW` |
+| World of Warcraft (EU) | `DISCORD_WEBHOOK_WOW` |
+| World of Warcraft (US) | `DISCORD_WEBHOOK_WOW_US` |
 | Heroes of the Storm | `DISCORD_WEBHOOK_HOTS` |
 | Hearthstone | `DISCORD_WEBHOOK_HEARTHSTONE` |
 | Diablo V | `DISCORD_WEBHOOK_DIABLO5` and `DISCORD_WEBHOOK_DIABLO` |
@@ -20,6 +21,8 @@ Watches the Blizzard news feeds (news.blizzard.com, en-gb) every ~5 minutes on G
 | Warcraft III | `DISCORD_WEBHOOK_WARCRAFT3` |
 | Warcraft Rumble | `DISCORD_WEBHOOK_WARCRAFTRUMBLE` |
 | Blizzard (BlizzCon, company) | `DISCORD_WEBHOOK_BLIZZARD` |
+
+World of Warcraft is also read from the en-us feed, which words some titles and dates differently, and posts to its own channel. Every other game uses the en-gb feed only.
 
 Each Diablo game posts to its own channel and also to one shared Diablo channel (`DISCORD_WEBHOOK_DIABLO`). A source can list more than one webhook. The first is its own channel, and only that one gets the "source failing" alerts. Any secret you don't set is simply skipped.
 
