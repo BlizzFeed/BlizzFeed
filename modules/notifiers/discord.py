@@ -36,7 +36,8 @@ def build_item_message(name, action, item, commit_url, repo_url, role_id=None):
     """Container > Section(text + thumbnail), link buttons, Posted subtext."""
     title = _trim(item["title"], 256)
     heading = f"## [{title}]({item['url']})" if item["url"] else f"## {title}"
-    text = _text(_trim(f"-# {name}\n{heading}\n{_trim(item['summary'], 600)}", 3000))
+    label = f"-# {name}\n" if name else ""
+    text = _text(_trim(f"{label}{heading}\n{_trim(item['summary'], 600)}", 3000))
 
     if item["image"]:
         inner = [{"type": 9, "components": [text],
@@ -116,7 +117,9 @@ def send_all(diff, sources, repo_url, run_url):
                     # Each channel pings its role once per run, on its first message.
                     role = None if channel["url"] in pinged else channel["role"]
                     pinged.add(channel["url"])
-                    message = build_item_message(source.name, action, item, commit_url, repo_url, role)
+                    # A source that posts under the game's name doesn't need it repeated in the message.
+                    label = None if source.username else source.name
+                    message = build_item_message(label, action, item, commit_url, repo_url, role)
                     _set_poster(message, source)
                     if not post(channel["url"], message):
                         failures += 1
