@@ -28,6 +28,8 @@ Each Diablo game posts to its own channel and also to one shared Diablo channel 
 
 To ping a role, add the webhook label and the role ID under `ping_roles` in `sources.yaml` (for example `DIABLO: "123456789"` for an @diablo in the shared channel). Each channel pings its role once per run, and channels without an entry never ping.
 
+Optionally, `DISCORD_WEBHOOK_LOG` points at a private dev channel. After a run where something changed (new, updated, date/url-only, a baseline, or a source failing or recovering) it gets one summary message linking each source's commit. Runs with no changes post nothing, and a failed log post never fails the run.
+
 More Blizzard products can be added by putting another entry in `sources.yaml`.
 
 ## How it works

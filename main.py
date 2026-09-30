@@ -106,7 +106,9 @@ def notify():
     sources = {s.id: s for s in load_sources(SOURCES_FILE)}
     repo = os.environ.get("GITHUB_REPOSITORY")
     repo_url = f"https://github.com/{repo}" if repo else None
-    failures = discord.send_all(read_diff(), sources, repo_url, os.environ.get("ACTIONS_RUN_URL"))
+    diff, run_url = read_diff(), os.environ.get("ACTIONS_RUN_URL")
+    failures = discord.send_all(diff, sources, repo_url, run_url)
+    discord.send_log(diff, sources, repo_url, run_url)
     if failures:
         logger.error(f"{failures} Discord send(s) failed.")
         sys.exit(1)

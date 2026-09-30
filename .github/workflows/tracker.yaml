@@ -81,6 +81,7 @@ jobs:
           DISCORD_WEBHOOK_WARCRAFT3: ${{ secrets.DISCORD_WEBHOOK_WARCRAFT3 }}
           DISCORD_WEBHOOK_WARCRAFTRUMBLE: ${{ secrets.DISCORD_WEBHOOK_WARCRAFTRUMBLE }}
           DISCORD_WEBHOOK_BLIZZARD: ${{ secrets.DISCORD_WEBHOOK_BLIZZARD }}
+          DISCORD_WEBHOOK_LOG: ${{ secrets.DISCORD_WEBHOOK_LOG }}
         run: python code/main.py --notify
 
       # If Discord failed after the commit landed, keep the diff so the alert can be replayed by hand

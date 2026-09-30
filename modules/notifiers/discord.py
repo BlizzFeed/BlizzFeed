@@ -1,3 +1,4 @@
+import os
 import time
 from datetime import datetime, timezone
 
@@ -7,7 +8,9 @@ from urllib3.exceptions import NewConnectionError
 
 SEND_DELAY_SECONDS = 2
 POST_ATTEMPTS = 3
-COLORS = {"added": 0x57F287, "updated": 0xFAA61A, "down": 0xED4245, "recovered": 0x57F287}
+COLORS = {"added": 0x57F287, "updated": 0xFAA61A, "down": 0xED4245, "recovered": 0x57F287, "log": 0x5865F2}
+LOG_USERNAME = "BlizzFeed Log"
+LOG_TEXT_BUDGET = 3000  # Discord allows 4000 characters of text per message; the rest is header and footer
 IS_COMPONENTS_V2 = 1 << 15  # message flag: content/embeds are disabled, components only
 DIVIDER = {"type": 14, "divider": True, "spacing": 1}
 
@@ -86,6 +89,69 @@ def build_alert_message(name, alert, run_url):
         "components": [_text(_trim(f"## {title}\n{desc}", 3000))]}]}
 
 
+def _log_entry(name, entry, repo_url, recovered_since):
+    """One source's part of the log: a counts line (linked to its commit), then a line per announced item."""
+    commit = entry.get("commit")
+    title = f"[{name}]({repo_url}/commit/{commit})" if repo_url and commit else name
+    if entry["baseline"]:
+        parts = [f"🆕 baseline, {entry['items']} items stored, no notifications"]
+    else:
+        parts = []
+        if entry["added"]:
+            parts.append(f"+{len(entry['added'])} new")
+        if entry["updated"]:
+            parts.append(f"{len(entry['updated'])} updated")
+        if entry["quiet"]:
+            parts.append(f"{entry['quiet']} quiet" + ("" if parts else " (date/url only, nothing announced)"))
+    if recovered_since:
+        parts.append(f"✅ recovered (was failing since {_discord_time(recovered_since, relative_only=True)})")
+    lines = [f"**{title}** · {', '.join(parts)}"]
+    for emoji, action in (("🟢", "added"), ("🟠", "updated")):
+        for item in entry[action]:
+            label = _trim(item["title"], 100).replace("[", "(").replace("]", ")")
+            lines.append(f"- {emoji} [{label}]({item['url']})")
+    return "\n".join(lines)
+
+
+def build_log_message(diff, sources, repo_url, run_url):
+    """Dev/debug summary of a run, or None when nothing changed. A source that is failing
+    gets its own red container; one that recovered is listed with the changes."""
+    recovered = {a["source"]: a["since"] for a in diff["alerts"] if a["kind"] == "recovered"}
+    blocks = []
+    for source_id, entry in diff["sources"].items():
+        if entry["baseline"] or entry["added"] or entry["updated"] or entry["quiet"] or source_id in recovered:
+            source = sources.get(source_id)
+            blocks.append(_log_entry(source.name if source else source_id, entry, repo_url,
+                                     recovered.get(source_id)))
+    down = [a for a in diff["alerts"] if a["kind"] == "down"]
+    if not blocks and not down:
+        return None
+
+    containers = []
+    if blocks:
+        shown, used = [], 0
+        for block in blocks:
+            if shown and used + len(block) > LOG_TEXT_BUDGET:
+                break
+            shown.append(_trim(block, LOG_TEXT_BUDGET))
+            used += len(block) + 2
+        if len(shown) < len(blocks):
+            shown.append(f"-# …and {len(blocks) - len(shown)} more")
+        total = len(diff["sources"])
+        now = _discord_time(datetime.now(timezone.utc).isoformat())
+        inner = [_text(f"## Changes detected\n-# {now} · {len(blocks)} of {total} sources changed"),
+                 DIVIDER, _text("\n\n".join(shown))]
+        if total > len(blocks):
+            inner += [DIVIDER, _text(f"-# Unchanged: {total - len(blocks)} source{'s' if total - len(blocks) != 1 else ''}")]
+        if run_url:
+            inner.append({"type": 1, "components": [_link_button("View run", run_url)]})
+        containers.append({"type": 17, "accent_color": COLORS["log"], "components": inner})
+    for alert in down:
+        source = sources.get(alert["source"])
+        containers += build_alert_message(source.name if source else alert["source"], alert, run_url)["components"]
+    return {"flags": IS_COMPONENTS_V2, "username": LOG_USERNAME, "components": containers}
+
+
 def _retry_delay(response):
     """Seconds to wait after a 429, from Discord's JSON body. Falls back to 2 if it isn't readable."""
     try:
@@ -136,6 +202,14 @@ def _set_poster(message, source):
         message["username"] = source.username
     if source.avatar_url:
         message["avatar_url"] = source.avatar_url
+
+
+def send_log(diff, sources, repo_url, run_url):
+    """Post the run summary to DISCORD_WEBHOOK_LOG. Skipped when it isn't set, and it never fails the run."""
+    url = os.environ.get("DISCORD_WEBHOOK_LOG")
+    message = build_log_message(diff, sources, repo_url, run_url) if url else None
+    if message:
+        post(url, message)
 
 
 def send_all(diff, sources, repo_url, run_url):
