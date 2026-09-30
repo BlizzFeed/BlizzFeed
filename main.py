@@ -3,6 +3,7 @@ import json
 import os
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor
 
 from loguru import logger
 
@@ -14,6 +15,7 @@ from modules.providers import html as html_provider, json_api as json_provider
 
 PROVIDERS = {"html": html_provider.fetch, "json": json_provider.fetch}
 MAX_FETCH_ATTEMPTS = 3
+FETCH_WORKERS = 4  # sources fetched at once; kept small to not get in trouble with Blizzard
 
 DATA_DIR = os.environ.get("OUTPUT_DIR", "data")
 DIFF_FILE = os.environ.get("DIFF_FILE", "diff.json")
@@ -44,19 +46,30 @@ def write_diff(diff):
         json.dump(diff, f, indent=2, ensure_ascii=False)
 
 
+def fetch_source(source, old_state):
+    """(items, None) on success, (None, error) on failure, so one source can't stop the others."""
+    known = None if old_state is None else {i["id"]: i["date"] for i in old_state}
+    try:
+        return fetch_with_retry(source, known), None
+    except Exception as e:
+        return None, e
+
+
 def scrape():
     state = health.load(DATA_DIR)
     diff = {"sources": {}, "alerts": []}
 
-    for source in load_sources(SOURCES_FILE):
-        old_state = differ.load_state(DATA_DIR, source.id)
+    # Fetch a few sources at once, then handle the results in sources.yaml order as before.
+    sources = load_sources(SOURCES_FILE)
+    old_states = [differ.load_state(DATA_DIR, source.id) for source in sources]
+    with ThreadPoolExecutor(max_workers=FETCH_WORKERS) as pool:
+        results = list(pool.map(fetch_source, sources, old_states))
+
+    for source, old_state, (items, error) in zip(sources, old_states, results):
         baseline = old_state is None
-        known = None if baseline else {i["id"]: i["date"] for i in old_state}
-        try:
-            items = fetch_with_retry(source, known)
-        except Exception as e:
-            logger.error(f"[{source.id}] failed: {e}")
-            alert = health.record_failure(state, source, str(e))
+        if error is not None:
+            logger.error(f"[{source.id}] failed: {error}")
+            alert = health.record_failure(state, source, str(error))
         else:
             alert = health.record_success(state, source)
             added, updated, quiet = differ.compute(old_state, items)
