@@ -23,10 +23,11 @@ def fake_get(response):
     return get
 
 
-def test_returns_body_html(monkeypatch):
-    page = '<article class="Content"><section class="blog"><p>Hi</p></section></article>'
+@pytest.mark.parametrize("body", ["<p>Hi</p>", '<iframe src="https://v/1"></iframe>', '<img src="https://i/1.png"/>'])
+def test_returns_body_html(monkeypatch, body):
+    page = f'<article class="Content"><section class="blog">{body}</section></article>'
     monkeypatch.setattr(article.http, "get", fake_get(FakeResponse(text=page)))
-    assert article.fetch_body("en-gb", "1", SELECTOR) == '<section class="blog"><p>Hi</p></section>'
+    assert article.fetch_body("en-gb", "1", SELECTOR) == f'<section class="blog">{body}</section>'
 
 
 @pytest.mark.parametrize("status", [404, 410])

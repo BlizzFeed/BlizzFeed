@@ -27,7 +27,7 @@ class _Converter(MarkdownConverter):
 
 def _slug(text):
     """GitHub's heading anchor: lowercase, punctuation dropped, spaces to hyphens."""
-    return re.sub(r"[^\w\- ]", "", text.strip().lower()).replace(" ", "-")
+    return re.sub(r"[^\w\- ]", "", " ".join(text.split()).lower()).replace(" ", "-")
 
 
 def _fix_anchors(soup):

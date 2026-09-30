@@ -60,6 +60,11 @@ def test_duplicate_headings_get_numbered_anchors():
     assert "[x](#same)" in text and "[y](#same-1)" in text
 
 
+def test_anchor_of_a_heading_split_over_lines():
+    text = archiver.to_markdown('<a href="#x">jump</a><h2 id="x">Patch\nNotes</h2>')
+    assert "[jump](#patch-notes)" in text
+
+
 def test_iframe_variants():
     nocookie = archiver.to_markdown('<iframe src="https://www.youtube-nocookie.com/embed/ab_-12"></iframe>')
     assert "youtube/ab_-12?width=1280&height=720" in nocookie and "watch?v=ab_-12)" in nocookie

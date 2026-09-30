@@ -8,7 +8,7 @@ class ArticleGone(Exception):
 
 
 class BodyNotFound(Exception):
-    """The page loaded but the body selector matched nothing, or matched an empty element."""
+    """The page loaded but the body selector matched nothing, or an element with no text or media."""
 
 
 def article_url(locale, article_id):
@@ -25,6 +25,7 @@ def fetch_body(locale, article_id, selector):
             raise ArticleGone(article_id) from e
         raise
     body = BeautifulSoup(response.text, "html.parser").select_one(selector)
-    if body is None or not body.get_text(strip=True):
+    # A trailer or screenshot post can be only a video or images, with no text.
+    if body is None or not (body.get_text(strip=True) or body.find(["img", "iframe", "video"])):
         raise BodyNotFound(f"{article_id}: '{selector}' matched nothing usable")
     return str(body)
