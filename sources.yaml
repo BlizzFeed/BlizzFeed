@@ -36,7 +36,7 @@
 #   json: a dotted path, e.g. properties.title
 
 defaults:
-  failures_before_alert: 3   # consecutive failed runs before a "source failing" message
+  failures_before_alert: 12  # consecutive failed runs (about a minute each) before a "source failing" message
 
 # Discord role to ping in a channel, by webhook label (a role only works in its own server).
 # A channel pings its role once per run, on its first new message. No entry means no ping.

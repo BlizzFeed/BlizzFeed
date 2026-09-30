@@ -1,6 +1,6 @@
 # BlizzFeed
 
-Watches the Blizzard news feeds (news.blizzard.com, en-gb) every ~5 minutes on GitHub Actions, started by an external trigger. When a new article appears, it saves it to the `data` branch and posts it to Discord with its title, summary, thumbnail, link and post time, plus a link to the commit that recorded it.
+Watches the Blizzard news feeds (news.blizzard.com, en-gb) every minute on GitHub Actions, started by an external trigger. When a new article appears, it saves it to the `data` branch and posts it to Discord with its title, summary, thumbnail, link and post time, plus a link to the commit that recorded it.
 
 ## Sources
 | Source | Webhook secret |
@@ -44,7 +44,7 @@ More Blizzard products can be added by putting another entry in `sources.yaml`.
 ## Setup
 1. Push to the `source` branch (the default) and create an empty `data` branch.
 2. Add every `DISCORD_WEBHOOK_*` secret listed in the table above under Settings → Secrets and variables → Actions.
-3. Run the workflow once manually, then have something send the `trigger-scraping` dispatch every 5 minutes.
+3. Run the workflow once manually, then have something send the `trigger-scraping` dispatch every minute.
 
 ## Credits
 The idea and overall design (a scheduled Actions job, separate `source` and `data` branches, commit links in Discord messages) come from [Wumpus-Central/blog-tracker](https://github.com/Wumpus-Central/blog-tracker).
