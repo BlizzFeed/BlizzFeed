@@ -5,21 +5,21 @@ Watches the Blizzard news feeds (news.blizzard.com, en-gb) every ~5 minutes on G
 ## Sources
 | Source | Webhook secret |
 | --- | --- |
-| World of Warcraft News | `DISCORD_WEBHOOK_WOW` |
-| Heroes of the Storm News | `DISCORD_WEBHOOK_HOTS` |
-| Hearthstone News | `DISCORD_WEBHOOK_HEARTHSTONE` |
-| Diablo V News | `DISCORD_WEBHOOK_DIABLO5` and `DISCORD_WEBHOOK_DIABLO` |
-| Diablo IV News | `DISCORD_WEBHOOK_DIABLO4` and `DISCORD_WEBHOOK_DIABLO` |
-| Diablo Immortal News | `DISCORD_WEBHOOK_DIABLOIMMORTAL` and `DISCORD_WEBHOOK_DIABLO` |
-| Diablo II Resurrected News | `DISCORD_WEBHOOK_DIABLO2` and `DISCORD_WEBHOOK_DIABLO` |
-| Diablo III News | `DISCORD_WEBHOOK_DIABLO3` and `DISCORD_WEBHOOK_DIABLO` |
-| Overwatch News | `DISCORD_WEBHOOK_OVERWATCH` |
-| STARCRAFT News | `DISCORD_WEBHOOK_STARCRAFT` |
-| StarCraft Remastered News | `DISCORD_WEBHOOK_STARCRAFTREMASTERED` |
-| StarCraft II News | `DISCORD_WEBHOOK_STARCRAFT2` |
-| Warcraft III News | `DISCORD_WEBHOOK_WARCRAFT3` |
-| Warcraft Rumble News | `DISCORD_WEBHOOK_WARCRAFTRUMBLE` |
-| Blizzard News (BlizzCon, company) | `DISCORD_WEBHOOK_BLIZZARD` |
+| World of Warcraft | `DISCORD_WEBHOOK_WOW` |
+| Heroes of the Storm | `DISCORD_WEBHOOK_HOTS` |
+| Hearthstone | `DISCORD_WEBHOOK_HEARTHSTONE` |
+| Diablo V | `DISCORD_WEBHOOK_DIABLO5` and `DISCORD_WEBHOOK_DIABLO` |
+| Diablo IV | `DISCORD_WEBHOOK_DIABLO4` and `DISCORD_WEBHOOK_DIABLO` |
+| Diablo Immortal | `DISCORD_WEBHOOK_DIABLOIMMORTAL` and `DISCORD_WEBHOOK_DIABLO` |
+| Diablo II Resurrected | `DISCORD_WEBHOOK_DIABLO2` and `DISCORD_WEBHOOK_DIABLO` |
+| Diablo III | `DISCORD_WEBHOOK_DIABLO3` and `DISCORD_WEBHOOK_DIABLO` |
+| Overwatch | `DISCORD_WEBHOOK_OVERWATCH` |
+| STARCRAFT | `DISCORD_WEBHOOK_STARCRAFT` |
+| StarCraft Remastered | `DISCORD_WEBHOOK_STARCRAFTREMASTERED` |
+| StarCraft II | `DISCORD_WEBHOOK_STARCRAFT2` |
+| Warcraft III | `DISCORD_WEBHOOK_WARCRAFT3` |
+| Warcraft Rumble | `DISCORD_WEBHOOK_WARCRAFTRUMBLE` |
+| Blizzard (BlizzCon, company) | `DISCORD_WEBHOOK_BLIZZARD` |
 
 Each Diablo game posts to its own channel and also to one shared Diablo channel (`DISCORD_WEBHOOK_DIABLO`). A source can list more than one webhook. The first is its own channel, and only that one gets the "source failing" alerts. Any secret you don't set is simply skipped.
 
