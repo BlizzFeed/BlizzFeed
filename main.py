@@ -24,7 +24,7 @@ def fetch_with_retry(source, known):
     for attempt in range(1, MAX_FETCH_ATTEMPTS + 1):
         try:
             items = PROVIDERS[source.type](source, known)
-            if items:
+            if items or source.raw.get("allow_empty"):
                 return items
             raise RuntimeError("fetch returned no items (markup or API changed?)")
         except Exception as e:

@@ -21,6 +21,7 @@
 #   where         (json) Only keep articles where each dotted path equals the given value, or one
 #                 of the values when given a list. The news API tags a post with several games,
 #                 so this keeps each post to the one game it's filed under.
+#   allow_empty   Optional. An empty feed isn't treated as a failure (for games with no posts yet).
 #   fields        How to read id, url, title, summary, date and image from one article.
 #
 # Field specs
@@ -90,6 +91,15 @@ sources:
     where: {properties.cxpProduct.segment: diablo-4}
 
   - <<: *blizzard-news-api
+    id: diablo-5-news
+    name: Diablo V News
+    url: https://news.blizzard.com/en-gb/api/feed/diablo-5
+    webhook: [DIABLO5, DIABLO]
+    avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt868ccd02787caac8/6aa589dac751e10c130c5334/blizzard_news_icon_phobos.svg
+    where: {properties.cxpProduct.segment: diablo-5}
+    allow_empty: true   # no posts filed under Diablo V yet
+
+  - <<: *blizzard-news-api
     id: diablo-immortal-news
     name: Diablo Immortal News
     url: https://news.blizzard.com/en-gb/api/feed/diablo-immortal
@@ -122,6 +132,23 @@ sources:
     where: {properties.cxpProduct.segment: overwatch}
 
   - <<: *blizzard-news-api
+    id: starcraft-news
+    name: STARCRAFT News
+    url: https://news.blizzard.com/en-gb/api/feed/polaris
+    webhook: STARCRAFT
+    avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt26c9cd63bc83f7a1/6aa58844dee8841b67cbacb7/icon_polaris.svg
+    where: {properties.cxpProduct.segment: polaris}
+    allow_empty: true   # the new STARCRAFT, no posts yet
+
+  - <<: *blizzard-news-api
+    id: starcraft-remastered-news
+    name: StarCraft Remastered News
+    url: https://news.blizzard.com/en-gb/api/feed/starcraft
+    webhook: STARCRAFTREMASTERED
+    avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt814775fcad06bb1d/5d48a38875a5f07f3806d539/starcraft-remastered.svg
+    where: {properties.cxpProduct.segment: starcraft}
+
+  - <<: *blizzard-news-api
     id: starcraft-2-news
     name: StarCraft II News
     url: https://news.blizzard.com/en-gb/api/feed/starcraft-2
@@ -136,6 +163,14 @@ sources:
     webhook: WARCRAFT3
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/bltcb2f4875bcae607a/6aa58d463ad392082b6f90f6/WC3_FK_Icon_Vector.svg
     where: {properties.cxpProduct.segment: warcraft-3}
+
+  - <<: *blizzard-news-api
+    id: warcraft-rumble-news
+    name: Warcraft Rumble News
+    url: https://news.blizzard.com/en-gb/api/feed/warcraft-rumble
+    webhook: WARCRAFTRUMBLE
+    avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt525d15ad994c2bd2/6268715f3dc3652316810f4e/warcraft-arclight-rumble.svg
+    where: {properties.cxpProduct.segment: warcraft-rumble}
 
   # Company-wide posts (BlizzCon, announcements), filed under Blizzard or BlizzCon, so game posts aren't repeated.
   - <<: *blizzard-news-api
