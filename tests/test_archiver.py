@@ -55,9 +55,11 @@ def test_in_page_links_use_github_anchors():
 
 
 def test_duplicate_headings_get_numbered_anchors():
-    html = '<h2 id="a">Same</h2><h2 id="b">Same</h2><a href="#a">x</a><a href="#b">y</a>'
+    # identical headings under two tabs, so the tags themselves compare equal
+    html = ('<a href="#a">x</a><a href="#b">y</a>'
+            '<div id="a"><h3>Talents</h3></div><div id="b"><h3>Talents</h3></div>')
     text = archiver.to_markdown(html)
-    assert "[x](#same)" in text and "[y](#same-1)" in text
+    assert "[x](#talents)" in text and "[y](#talents-1)" in text
 
 
 def test_anchor_of_a_heading_split_over_lines():
