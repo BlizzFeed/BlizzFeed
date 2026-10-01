@@ -104,7 +104,7 @@ def build_item_message(action, item, commit_url, repo_url, preview=None, history
         inner.append(block)
     if before and item["image"]:
         # Old and new side by side instead of a thumbnail, which would only repeat the new one.
-        inner += [_text("-# Before  ·  After"),
+        inner += [_text("**Before** (left)  ·  **After** (right)"),
                   {"type": 12, "items": [{"media": {"url": before}, "description": "Before"},
                                          {"media": {"url": item["image"]}, "description": "After"}]}]
     buttons = [_link_button(label, url)
