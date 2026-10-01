@@ -129,3 +129,68 @@ def test_long_archive_log_is_cut_between_lines_not_inside_a_link():
     lines = [line for line in body.splitlines() if line.startswith("- ")]
     assert lines and all(line.endswith(")") for line in lines)
     assert f"-# …and {30 - len(lines)} more" in body
+
+
+def tracker_log(extra_alerts=()):
+    entry = {"baseline": False, "items": 5, "added": [{"title": "Patch", "url": "https://x/patch"}],
+             "updated": [], "quiet": 0, "commit": "aaa"}
+    return discord.build_log_message({"alerts": list(extra_alerts), "sources": {"wow-news": entry, "other": {**entry, "added": []}}},
+                                     SOURCES, REPO, "https://run/data")
+
+
+def read_back(message):
+    """A fetched message: the same components, each with an id."""
+    def add_ids(node, counter=iter(range(1, 1000))):
+        if isinstance(node, list):
+            return [add_ids(n) for n in node]
+        if isinstance(node, dict):
+            return {**{k: add_ids(v) for k, v in node.items()}, "id": next(counter)}
+        return node
+    return {"components": add_ids(message["components"])}
+
+
+def button_urls(message):
+    return [b["url"] for c in message["components"] for row in c["components"] if row["type"] == 1
+            for b in row["components"]]
+
+
+def test_archive_log_is_folded_into_the_tracker_post():
+    archive = discord.build_archive_log_message(diff([{**CHANGE, "kind": "archived"}]), SOURCES, REPO, "https://run/archive")
+    merged = discord.merge_archive_log(read_back(tracker_log()), archive)
+    assert len(merged["components"]) == 1
+    body = texts(merged)
+    assert body.index("Patch") < body.index(f"{REPO}/commit/abc123") < body.index("Unchanged")
+    assert button_urls(merged) == ["https://run/data", "https://run/archive"]
+    assert not any("id" in c for c in merged["components"][0]["components"])
+
+
+def test_archive_alerts_stay_their_own_container_when_folded():
+    down = {"source": "wow-news", "kind": "down", "error": "boom", "since": "2026-09-30T09:00:00Z"}
+    archive = discord.build_archive_log_message(diff([CHANGE], [down]), SOURCES, REPO, "https://run/archive")
+    merged = discord.merge_archive_log(read_back(tracker_log()), archive)
+    assert len(merged["components"]) == 2
+    assert "archive failing" in texts({"components": merged["components"][1:]})
+
+
+def test_archive_alerts_alone_are_added_below_the_tracker_post():
+    down = {"source": "wow-news", "kind": "down", "error": "boom", "since": "2026-09-30T09:00:00Z"}
+    archive = discord.build_archive_log_message(diff([], [down]), SOURCES, REPO, None)
+    merged = discord.merge_archive_log(read_back(tracker_log()), archive)
+    assert len(merged["components"]) == 2 and button_urls(merged) == ["https://run/data"]
+
+
+def test_archive_log_is_not_folded_into_something_else():
+    archive = discord.build_archive_log_message(diff([CHANGE]), SOURCES, REPO, "https://run/archive")
+    folded = discord.merge_archive_log(read_back(tracker_log()), archive)
+    assert discord.merge_archive_log(read_back(folded), archive) is None  # already has its archive part
+    assert discord.merge_archive_log({"components": []}, archive) is None  # a message with nothing readable
+    assert discord.merge_archive_log(read_back(archive), archive) is None  # not a tracker post
+
+
+def test_archive_log_is_not_folded_when_the_post_would_get_too_long():
+    long_run = {**CHANGE, "kind": "archived"}
+    archive = discord.build_archive_log_message(diff([{**long_run, "id": str(i), "title": f"Article number {i}"} for i in range(30)]),
+                                                SOURCES, REPO, "https://run/archive")
+    tracker = tracker_log()
+    tracker["components"][0]["components"][2]["content"] += "x" * 1500
+    assert discord.merge_archive_log(read_back(tracker), archive) is None
