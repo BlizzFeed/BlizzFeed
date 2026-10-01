@@ -50,7 +50,7 @@ The feeds only carry the short version of each article: title, summary and thumb
 - Each article is saved as a Markdown file on the `archive` branch, with one commit per change. GitHub's diff then shows exactly what was edited.
 - An article is saved again whenever its update date changes, however old it is. Once an hour, articles from the last 7 days are also re-checked in case an edit didn't change the date. The log channel notes when that happens.
 - The first run for a source saves the last 30 days of articles without posting. The archive reads the article pages, not the feeds, at most 60 per run, and continues on the next run.
-- When the text of an article changes, an "Article text edited" post (purple) with the number of lines added and removed goes to the bot. Changes to only the title, summary or image are saved without a post, since they're announced already.
+- When the text of an article changes, an "Updated" post (orange) with the number of lines added, changed and removed goes to the bot. Changes to only the title, summary or image are saved without a post, since they're announced already.
 - If the archive keeps failing for a source, the alert goes to `DISCORD_WEBHOOK_LOG` only.
 - The archive runs whenever the tracker finds a change, and once an hour.
 
@@ -62,10 +62,12 @@ Discord posts have these buttons:
 | Post | Buttons |
 | --- | --- |
 | New article (green) | Read Article, Battle.net Shop, Preview, History |
-| Summary changed (orange) | Read Article, Battle.net Shop, View Changes, History |
-| Article text edited (purple) | Read Article, Text Changes, History |
+| Card updated (orange) | Read Article, Battle.net Shop, View Changes, History |
+| Article text edited (orange) | Read Article, Text Changes, History |
 
 Preview shows the saved title, summary and thumbnail. View Changes and Text Changes show what changed, and History lists every saved version.
+
+Both kinds of update look the same, with a diff block saying what changed: the old and new title and whether the summary or image changed for a card, or how many lines were added, changed and removed for the article text.
 
 ## Files
 - `sources.yaml`: the feeds to watch, and the archive settings. Add an entry here to track another one.
