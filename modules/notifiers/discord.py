@@ -55,13 +55,12 @@ def preview_url(repo_url, commit, source_id, item_id):
     return f"{repo_url}/blob/{commit}/{source_id}/items/{item_id}.md" if repo_url and commit else None
 
 
-def build_item_message(name, action, item, commit_url, repo_url, preview=None, history=None):
+def build_item_message(action, item, commit_url, repo_url, preview=None, history=None):
     """Container > Section(text + thumbnail), link buttons, Posted subtext.
 
     A new article links its Preview, an updated one its card diff (View Changes). Both link the History."""
     title = _trim(item["title"], 256)
-    label = f"-# {name}\n" if name else ""
-    text = _text(_trim(f"{label}## {title}\n{_trim(item['summary'], 600)}", 3000))
+    text = _text(_trim(f"## {title}\n{_trim(item['summary'], 600)}", 3000))
 
     if item["image"]:
         inner = [{"type": 9, "components": [text],
@@ -87,13 +86,12 @@ def build_item_message(name, action, item, commit_url, repo_url, preview=None, h
     return message
 
 
-def build_edit_message(name, change, repo_url, source_id, commit_url):
+def build_edit_message(change, repo_url, source_id, commit_url):
     """'Article text edited': title, line counts, thumbnail, and Read Article / Text Changes / History buttons."""
     title = _trim(change["title"], 256)
-    label = f"-# {name}\n" if name else ""
     added, removed = change.get("added", 0), change.get("removed", 0)
     counts = f"+{added} line{'s' if added != 1 else ''}, −{removed} line{'s' if removed != 1 else ''}"
-    text = _text(_trim(f"{label}## Article text edited\n**{title}**\n{counts}", 3000))
+    text = _text(_trim(f"## Article text edited\n**{title}**\n{counts}", 3000))
     if change.get("image"):
         inner = [{"type": 9, "components": [text],
                   "accessory": {"type": 11, "media": {"url": change["image"]}, "description": title[:1024]}}]

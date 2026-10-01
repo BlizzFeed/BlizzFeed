@@ -32,7 +32,7 @@ def texts(message):
 
 def item_message(action):
     return discord.build_item_message(
-        None, action, ITEM, f"{REPO}/commit/dat", REPO,
+        action, ITEM, f"{REPO}/commit/dat", REPO,
         discord.preview_url(REPO, "dat", "wow-news", "42"), discord.history_url(REPO, "wow-news", "42"))
 
 
@@ -50,16 +50,15 @@ def test_updated_article_buttons():
 
 
 def test_edit_message():
-    message = discord.build_edit_message(None, CHANGE, REPO, "wow-news", f"{REPO}/commit/abc123")
+    message = discord.build_edit_message(CHANGE, REPO, "wow-news", f"{REPO}/commit/abc123")
     assert buttons(message) == {"Read Article": ITEM["url"], "Text Changes": f"{REPO}/commit/abc123",
                                 "History": f"{REPO}/commits/archive/wow-news/42.md"}
     assert "+1 line, −3 lines" in texts(message)
     assert "allowed_mentions" not in message
 
 
-def test_edit_message_label_and_no_image():
-    message = discord.build_edit_message("WoW", {**CHANGE, "image": ""}, REPO, "wow-news", None)
-    assert "-# WoW" in texts(message)
+def test_edit_message_without_image():
+    message = discord.build_edit_message({**CHANGE, "image": ""}, REPO, "wow-news", None)
     assert "Text Changes" not in buttons(message)
 
 
