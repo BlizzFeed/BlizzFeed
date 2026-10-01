@@ -53,8 +53,21 @@ def test_edit_message():
     message = discord.build_edit_message(CHANGE, REPO, "wow-news", f"{REPO}/commit/abc123")
     assert buttons(message) == {"Read Article": ITEM["url"], "Text Changes": f"{REPO}/commit/abc123",
                                 "History": f"{REPO}/commits/archive/wow-news/42.md"}
-    assert "+1 line, −3 lines" in texts(message)
+    assert "+ 1 line added\n~ 2 lines changed\n- 3 lines removed" in texts(message)
     assert "allowed_mentions" not in message
+
+
+def test_edit_message_leaves_out_zero_counts():
+    message = discord.build_edit_message({**CHANGE, "added": 8, "changed": 0, "removed": 0}, REPO, "wow-news", None)
+    assert "+ 8 lines added" in texts(message)
+    assert "changed" not in texts(message) and "removed" not in texts(message)
+
+
+def test_updated_card_lists_what_changed():
+    item = {**ITEM, "title": "New", "changed": ["title", "image"], "previous_title": "Old"}
+    body = texts(discord.build_item_message("updated", item, None, REPO))
+    assert "- Old\n+ New\n+ Image changed" in body
+    assert "Summary" not in body.split("```diff")[1]
 
 
 def test_edit_message_without_image():

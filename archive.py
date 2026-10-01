@@ -49,7 +49,7 @@ def archive_one(source, item, index, cfg, reformat):
         kind = "reformatted"  # most likely our converter changed, not the article, so it isn't posted
     archiver.write_article(ARCHIVE_DIR, source.id, item["id"], content)
     entry = {"id": item["id"], "title": item["title"], "kind": kind, "url": item["url"],
-             "image": item["image"], "path": archiver.article_path(source.id, item["id"])}
+             "summary": item["summary"], "image": item["image"], "path": archiver.article_path(source.id, item["id"])}
     if kind == "text":
         entry["added"], entry["changed"], entry["removed"] = archiver.line_changes(
             archiver.split_file(old)[1], archiver.split_file(content)[1])

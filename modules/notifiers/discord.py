@@ -7,8 +7,7 @@ from loguru import logger
 from urllib3.exceptions import NewConnectionError
 
 POST_ATTEMPTS = 3
-COLORS = {"added": 0x57F287, "updated": 0xFAA61A, "down": 0xED4245, "recovered": 0x57F287, "log": 0x5865F2,
-          "edited": 0x9B59B6}
+COLORS = {"added": 0x57F287, "updated": 0xFAA61A, "down": 0xED4245, "recovered": 0x57F287, "log": 0x5865F2}
 LOG_USERNAME = "BlizzFeed Log"
 LOG_AVATAR = "https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/BlizzFeed_ServerIcon_512.png"
 LOG_TEXT_BUDGET = 3000  # Discord allows 4000 characters of text per message; the rest is header and footer
@@ -55,10 +54,42 @@ def preview_url(repo_url, commit, source_id, item_id):
     return f"{repo_url}/blob/{commit}/{source_id}/items/{item_id}.md" if repo_url and commit else None
 
 
+def _diff_block(lines):
+    """A ```diff block, which Discord colours green for + and red for -. None when there's nothing to show."""
+    if not lines:
+        return None
+    body = "\n".join(lines).replace("`", "'")  # a backtick in a title would end the block
+    return _text(f"```diff\n{body}\n```")
+
+
+def _card_diff_lines(item):
+    """What changed on an updated card: the old and new title, and whether the summary or image changed."""
+    changed = item.get("changed", [])
+    lines = []
+    if "title" in changed:
+        lines += [f"- {_trim(item.get('previous_title', ''), 100)}", f"+ {_trim(item['title'], 100)}"]
+    if "summary" in changed:
+        lines.append("+ Summary changed")
+    if "image" in changed:
+        lines.append("+ Image changed")
+    return lines
+
+
+def _line_count_lines(change):
+    """The + / ~ / - lines of an edited article's text, leaving out what is zero."""
+    lines = []
+    for sign, key, word in (("+", "added", "added"), ("~", "changed", "changed"), ("-", "removed", "removed")):
+        n = change.get(key, 0)
+        if n:
+            lines.append(f"{sign} {n} line{'s' if n != 1 else ''} {word}")
+    return lines
+
+
 def build_item_message(action, item, commit_url, repo_url, preview=None, history=None):
     """Container > Section(text + thumbnail), link buttons, Posted subtext.
 
-    A new article links its Preview, an updated one its card diff (View Changes). Both link the History."""
+    A new article links its Preview, an updated one its card diff (View Changes). Both link the History.
+    An updated one also lists what changed on the card, when we know."""
     title = _trim(item["title"], 256)
     text = _text(_trim(f"## {title}\n{_trim(item['summary'], 600)}", 3000))
 
@@ -68,6 +99,8 @@ def build_item_message(action, item, commit_url, repo_url, preview=None, history
     else:
         inner = [text]
     updated = action == "updated"
+    if updated and (block := _diff_block(_card_diff_lines(item))):
+        inner.append(block)
     buttons = [_link_button(label, url)
                for label, url in (("Read Article", item["url"]),
                                   ("Battle.net Shop", item.get("shop_url")),
@@ -87,16 +120,17 @@ def build_item_message(action, item, commit_url, repo_url, preview=None, history
 
 
 def build_edit_message(change, repo_url, source_id, commit_url):
-    """'Article text edited': title, line counts, thumbnail, and Read Article / Text Changes / History buttons."""
+    """An article whose text was edited: title, summary, thumbnail, the line counts, and
+    Read Article / Text Changes / History buttons. It looks like an update and has the same colour."""
     title = _trim(change["title"], 256)
-    added, removed = change.get("added", 0), change.get("removed", 0)
-    counts = f"+{added} line{'s' if added != 1 else ''}, −{removed} line{'s' if removed != 1 else ''}"
-    text = _text(_trim(f"## Article text edited\n**{title}**\n{counts}", 3000))
+    text = _text(_trim(f"## {title}\n{_trim(change.get('summary', ''), 600)}".rstrip(), 3000))
     if change.get("image"):
         inner = [{"type": 9, "components": [text],
                   "accessory": {"type": 11, "media": {"url": change["image"]}, "description": title[:1024]}}]
     else:
         inner = [text]
+    if block := _diff_block(_line_count_lines(change)):
+        inner.append(block)
     buttons = [_link_button(label, url)
                for label, url in (("Read Article", change.get("url")),
                                   ("Text Changes", commit_url),
@@ -104,9 +138,9 @@ def build_edit_message(change, repo_url, source_id, commit_url):
     if buttons:
         inner += [DIVIDER, {"type": 1, "components": buttons}]
     site = f"[BlizzFeed]({repo_url})" if repo_url else "BlizzFeed"
-    inner += [DIVIDER, _text(f"-# Edited {_discord_time(datetime.now(timezone.utc).isoformat())} · {site}")]
+    inner += [DIVIDER, _text(f"-# Updated {_discord_time(datetime.now(timezone.utc).isoformat())} · {site}")]
     message = {"flags": IS_COMPONENTS_V2,
-               "components": [{"type": 17, "accent_color": COLORS["edited"], "components": inner}]}
+               "components": [{"type": 17, "accent_color": COLORS["updated"], "components": inner}]}
     return message
 
 
