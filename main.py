@@ -56,6 +56,13 @@ def fetch_source(source, old_state):
         return None, e
 
 
+def with_changes(old_state, item):
+    """An updated item for diff.json, with the fields that changed and the title it had before.
+    The state file keeps the plain item."""
+    prev = next(i for i in old_state if i["id"] == item["id"])
+    return {**item, "changed": differ.changed_fields(prev, item), "previous_title": prev["title"]}
+
+
 def scrape():
     state = health.load(DATA_DIR)
     diff = {"sources": {}, "alerts": []}
@@ -80,7 +87,7 @@ def scrape():
             diff["sources"][source.id] = {"baseline": baseline,
                                           "items": len(items),
                                           "added": [] if baseline else added,
-                                          "updated": updated,
+                                          "updated": [with_changes(old_state, item) for item in updated],
                                           "quiet": len(quiet)}
             logger.success(f"[{source.id}] {len(items)} items, +{len(added)} new, {len(updated)} updated, "
                            f"{len(quiet)} quiet{' (baseline, no notifications)' if baseline else ''}")

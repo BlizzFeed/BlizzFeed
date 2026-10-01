@@ -21,6 +21,11 @@ def load_state(data_dir, source_id):
         return json.load(f)
 
 
+def changed_fields(prev, item):
+    """Which of the announced fields (title, summary, image) differ from the saved item."""
+    return [k for k in ANNOUNCED if prev.get(k, "") != item[k]]
+
+
 def compute(old_state, items):
     """Append-only diff by id. Items missing from the fetch are never reported as removed.
 
@@ -32,7 +37,7 @@ def compute(old_state, items):
         prev = old.get(item["id"])
         if prev is None:
             added.append(item)
-        elif any(prev.get(k, "") != item[k] for k in ANNOUNCED):
+        elif changed_fields(prev, item):
             updated.append(item)
         elif any(prev.get(k, "") != item.get(k, "") for k in QUIET):
             quiet.append(item)
