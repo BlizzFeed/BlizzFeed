@@ -60,10 +60,8 @@ jobs:
           DIFF_FILE: diff.json
         run: python code/main.py --commit
 
-      # For BlizzFeedBot. Before Notify Discord, so a webhook failure can't block it, and allowed to
-      # fail, so it can't block Notify Discord either while the webhooks still post.
+      # For BlizzFeedBot, the only way posts reach Discord. A failure here is a missed post, so it fails the run.
       - name: Write outbox
-        continue-on-error: true
         env:
           DIFF_FILE: diff.json
           GITHUB_RUN_ID: ${{ github.run_id }}
@@ -71,7 +69,6 @@ jobs:
         run: python code/main.py --outbox
 
       - name: Upload outbox
-        continue-on-error: true
         uses: actions/upload-artifact@v7
         with:
           name: outbox
@@ -94,27 +91,11 @@ jobs:
           fi
 
       - name: Notify Discord
+        if: always()
         env:
           OUTPUT_DIR: data
           DIFF_FILE: diff.json
           ACTIONS_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
-          DISCORD_WEBHOOK_WOW: ${{ secrets.DISCORD_WEBHOOK_WOW }}
-          DISCORD_WEBHOOK_WOW_US: ${{ secrets.DISCORD_WEBHOOK_WOW_US }}
-          DISCORD_WEBHOOK_HOTS: ${{ secrets.DISCORD_WEBHOOK_HOTS }}
-          DISCORD_WEBHOOK_HEARTHSTONE: ${{ secrets.DISCORD_WEBHOOK_HEARTHSTONE }}
-          DISCORD_WEBHOOK_DIABLO5: ${{ secrets.DISCORD_WEBHOOK_DIABLO5 }}
-          DISCORD_WEBHOOK_DIABLO4: ${{ secrets.DISCORD_WEBHOOK_DIABLO4 }}
-          DISCORD_WEBHOOK_DIABLOIMMORTAL: ${{ secrets.DISCORD_WEBHOOK_DIABLOIMMORTAL }}
-          DISCORD_WEBHOOK_DIABLO2: ${{ secrets.DISCORD_WEBHOOK_DIABLO2 }}
-          DISCORD_WEBHOOK_DIABLO3: ${{ secrets.DISCORD_WEBHOOK_DIABLO3 }}
-          DISCORD_WEBHOOK_DIABLO: ${{ secrets.DISCORD_WEBHOOK_DIABLO }}
-          DISCORD_WEBHOOK_OVERWATCH: ${{ secrets.DISCORD_WEBHOOK_OVERWATCH }}
-          DISCORD_WEBHOOK_STARCRAFT: ${{ secrets.DISCORD_WEBHOOK_STARCRAFT }}
-          DISCORD_WEBHOOK_STARCRAFTREMASTERED: ${{ secrets.DISCORD_WEBHOOK_STARCRAFTREMASTERED }}
-          DISCORD_WEBHOOK_STARCRAFT2: ${{ secrets.DISCORD_WEBHOOK_STARCRAFT2 }}
-          DISCORD_WEBHOOK_WARCRAFT3: ${{ secrets.DISCORD_WEBHOOK_WARCRAFT3 }}
-          DISCORD_WEBHOOK_WARCRAFTRUMBLE: ${{ secrets.DISCORD_WEBHOOK_WARCRAFTRUMBLE }}
-          DISCORD_WEBHOOK_BLIZZARD: ${{ secrets.DISCORD_WEBHOOK_BLIZZARD }}
           DISCORD_WEBHOOK_LOG: ${{ secrets.DISCORD_WEBHOOK_LOG }}
         run: python code/main.py --notify
 
