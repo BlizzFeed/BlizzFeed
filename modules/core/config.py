@@ -4,12 +4,13 @@ from urllib.parse import quote, urlparse
 import yaml
 
 DEFAULT_FAILURES_BEFORE_ALERT = 3
+TIERS = ("all", "new", "updated")
 # Discord doesn't show SVG avatars, so logos go through this free proxy, which returns a PNG.
 AVATAR_PROXY = "https://wsrv.nl/?output=png&w=256&h=256&fit=contain&url="
 
 
 class Source:
-    def __init__(self, raw, defaults, ping_roles):
+    def __init__(self, raw, defaults, ping_roles, channel_ids=None):
         self.raw = raw
         self.id = raw["id"]
         self.name = raw.get("name", self.id)
@@ -34,6 +35,19 @@ class Source:
             for label in labels
             if (url := os.environ.get(f"DISCORD_WEBHOOK_{label}"))
         ]
+        # Bot channel IDs per tier. Labels without an ID are listed in unset_channels.
+        channel_labels = raw.get("channels") or []
+        if isinstance(channel_labels, str):
+            channel_labels = [channel_labels]
+        channel_ids = channel_ids or {}
+        self.tier_channels = {tier: [] for tier in TIERS}
+        self.unset_channels = []
+        for label in channel_labels:
+            for tier in TIERS:
+                if channel_id := channel_ids.get(label, {}).get(tier):
+                    self.tier_channels[tier].append(channel_id)
+                else:
+                    self.unset_channels.append(f"{label}/{tier}")
 
 
 def load_sources(path):
@@ -41,7 +55,9 @@ def load_sources(path):
         cfg = yaml.safe_load(f)
     defaults = cfg.get("defaults") or {}
     ping_roles = {str(label): str(role) for label, role in (cfg.get("ping_roles") or {}).items()}
-    return [Source(s, defaults, ping_roles) for s in cfg["sources"]]
+    channel_ids = {str(label): {tier: str(ids[tier]) for tier in TIERS if ids.get(tier)}
+                   for label, ids in (cfg.get("channels") or {}).items()}
+    return [Source(s, defaults, ping_roles, channel_ids) for s in cfg["sources"]]
 
 
 ARCHIVE_DEFAULTS = {

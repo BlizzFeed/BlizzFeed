@@ -9,6 +9,7 @@
 #                 Can be a list to post to several channels, e.g. [DIABLO4, DIABLO]. The first is
 #                 the source's own channel and the only one that gets failure alerts.
 #                 A new label also needs its secret listed in the workflow's Notify step.
+#   channels      Label(s) for BlizzFeedBot, looked up in the channels: block below.
 #   username      Optional. Name shown as the poster of this source's messages (the game's title).
 #   avatar        Optional. Logo (SVG or image URL) shown as the webhook's avatar on this source's messages.
 #   url_prefix    Optional (html). Prepended to article links that start with "/".
@@ -43,6 +44,27 @@ defaults:
 ping_roles:
 #  WOW: "1554600863081959464"
 #  DIABLO: "123456789"       # one @diablo for the shared Diablo channel
+
+# Discord channel IDs for BlizzFeedBot, by label and tier: all (new + updated), new, updated.
+# An empty ID is skipped with a warning.
+channels:
+  BLIZZARD:             {all: "", new: "", updated: ""}
+  DIABLO:               {all: "", new: "", updated: ""}
+  DIABLO2:              {all: "", new: "", updated: ""}
+  DIABLO3:              {all: "", new: "", updated: ""}
+  DIABLO4:              {all: "", new: "", updated: ""}
+  DIABLO5:              {all: "", new: "", updated: ""}
+  DIABLOIMMORTAL:       {all: "", new: "", updated: ""}
+  HEARTHSTONE:          {all: "", new: "", updated: ""}
+  HOTS:                 {all: "", new: "", updated: ""}
+  OVERWATCH:            {all: "", new: "", updated: ""}
+  STARCRAFT:            {all: "", new: "", updated: ""}
+  STARCRAFT2:           {all: "", new: "", updated: ""}
+  STARCRAFTREMASTERED:  {all: "", new: "", updated: ""}
+  WARCRAFT3:            {all: "", new: "", updated: ""}
+  WARCRAFTRUMBLE:       {all: "", new: "", updated: ""}
+  WOW:                  {all: "", new: "", updated: ""}
+  WOW_US:               {all: "", new: "", updated: ""}
 
 # Article archive (archive.py): saves each article's card and full text as Markdown on the archive branch.
 archive:
@@ -85,6 +107,7 @@ sources:
     url: https://news.blizzard.com/en-gb/api/feed/world-of-warcraft
     username: "World of Warcraft (EU)"
     webhook: WOW
+    channels: WOW
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt637a995645d7e161/5d48a388a58fc57f3dafd9f1/world-of-warcraft.svg
     where: {properties.cxpProduct.segment: world-of-warcraft}
     url_template: https://worldofwarcraft.blizzard.com/en-gb/news/{properties.newsId}/{properties.newsSlug}
@@ -97,6 +120,7 @@ sources:
     url: https://news.blizzard.com/en-us/api/feed/world-of-warcraft
     username: "World of Warcraft (US)"
     webhook: WOW_US
+    channels: WOW_US
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt637a995645d7e161/5d48a388a58fc57f3dafd9f1/world-of-warcraft.svg
     where: {properties.cxpProduct.segment: world-of-warcraft}
     url_template: https://worldofwarcraft.blizzard.com/en-us/news/{properties.newsId}/{properties.newsSlug}
@@ -107,6 +131,7 @@ sources:
     url: https://news.blizzard.com/en-gb/api/feed/heroes-of-the-storm
     username: "Heroes of the Storm"
     webhook: HOTS
+    channels: HOTS
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt338ef9c751599624/5d48a37e0927f67fc054705f/heroes-of-the-storm.svg
     where: {properties.cxpProduct.segment: heroes-of-the-storm}
 
@@ -116,6 +141,7 @@ sources:
     url: https://news.blizzard.com/en-gb/api/feed/hearthstone
     username: "Hearthstone"
     webhook: HEARTHSTONE
+    channels: HEARTHSTONE
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt05905fb295358316/5d48a37efbf0e17fc6dafd3c/hearthstone.svg
     where: {properties.cxpProduct.segment: hearthstone}
     url_template: https://hearthstone.blizzard.com/en-gb/news/{properties.newsId}/{properties.newsSlug}
@@ -126,6 +152,7 @@ sources:
     url: https://news.blizzard.com/en-gb/api/feed/diablo-4
     username: "Diablo IV"
     webhook: [DIABLO4, DIABLO]
+    channels: [DIABLO4, DIABLO]
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt95aebf4d119210f5/5e543f7e8dc1e51c53168b7a/games-d4-colored.svg
     where: {properties.cxpProduct.segment: diablo-4}
 
@@ -135,6 +162,7 @@ sources:
     url: https://news.blizzard.com/en-gb/api/feed/diablo-5
     username: "Diablo V"
     webhook: [DIABLO5, DIABLO]
+    channels: [DIABLO5, DIABLO]
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt868ccd02787caac8/6aa589dac751e10c130c5334/blizzard_news_icon_phobos.svg
     where: {properties.cxpProduct.segment: diablo-5}
     allow_empty: true   # no posts filed under Diablo V yet
@@ -145,6 +173,7 @@ sources:
     url: https://news.blizzard.com/en-gb/api/feed/diablo-immortal
     username: "Diablo Immortal"
     webhook: [DIABLOIMMORTAL, DIABLO]
+    channels: [DIABLOIMMORTAL, DIABLO]
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt989ffb415ea874fa/6081aad335bb4d0cbd9c064b/D_Immortal_Icon.svg
     where: {properties.cxpProduct.segment: diablo-immortal}
 
@@ -154,6 +183,7 @@ sources:
     url: https://news.blizzard.com/en-gb/api/feed/diablo-2-resurrected
     username: "Diablo II: Resurrected"
     webhook: [DIABLO2, DIABLO]
+    channels: [DIABLO2, DIABLO]
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/bltf882f8af9e033fe4/60300f72c6713d4e7a4d4b59/diablo2.svg
     where: {properties.cxpProduct.segment: diablo-2-resurrected}
 
@@ -163,6 +193,7 @@ sources:
     url: https://news.blizzard.com/en-gb/api/feed/diablo-3
     username: "Diablo III"
     webhook: [DIABLO3, DIABLO]
+    channels: [DIABLO3, DIABLO]
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt698e0e08ea20d402/5d48a37e50ff33032597c101/diablo-iii.svg
     where: {properties.cxpProduct.segment: diablo-3}
 
@@ -172,6 +203,7 @@ sources:
     url: https://news.blizzard.com/en-gb/api/feed/overwatch
     username: "Overwatch"
     webhook: OVERWATCH
+    channels: OVERWATCH
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt648969725f01df34/622a3969f2c2644f956a8934/Overwatch2.svg
     where: {properties.cxpProduct.segment: overwatch}
     url_template: https://overwatch.blizzard.com/en-gb/news/{properties.newsId}/{properties.newsSlug}
@@ -182,6 +214,7 @@ sources:
     url: https://news.blizzard.com/en-gb/api/feed/polaris
     username: "STARCRAFT"
     webhook: STARCRAFT
+    channels: STARCRAFT
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt26c9cd63bc83f7a1/6aa58844dee8841b67cbacb7/icon_polaris.svg
     where: {properties.cxpProduct.segment: polaris}
     allow_empty: true   # the new STARCRAFT, no posts yet
@@ -192,6 +225,7 @@ sources:
     url: https://news.blizzard.com/en-gb/api/feed/starcraft
     username: "StarCraft Remastered"
     webhook: STARCRAFTREMASTERED
+    channels: STARCRAFTREMASTERED
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt814775fcad06bb1d/5d48a38875a5f07f3806d539/starcraft-remastered.svg
     where: {properties.cxpProduct.segment: starcraft}
 
@@ -201,6 +235,7 @@ sources:
     url: https://news.blizzard.com/en-gb/api/feed/starcraft-2
     username: "StarCraft II"
     webhook: STARCRAFT2
+    channels: STARCRAFT2
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt9651ec7eb6d443ff/5d48a3880927f67fc0547065/starcraft-ii.svg
     where: {properties.cxpProduct.segment: starcraft-2}
 
@@ -210,6 +245,7 @@ sources:
     url: https://news.blizzard.com/en-gb/api/feed/warcraft-3
     username: "Warcraft 3: Reforged"
     webhook: WARCRAFT3
+    channels: WARCRAFT3
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/bltcb2f4875bcae607a/6aa58d463ad392082b6f90f6/WC3_FK_Icon_Vector.svg
     where: {properties.cxpProduct.segment: warcraft-3}
 
@@ -219,6 +255,7 @@ sources:
     url: https://news.blizzard.com/en-gb/api/feed/warcraft-rumble
     username: "Warcraft Rumble"
     webhook: WARCRAFTRUMBLE
+    channels: WARCRAFTRUMBLE
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/blt525d15ad994c2bd2/6268715f3dc3652316810f4e/warcraft-arclight-rumble.svg
     where: {properties.cxpProduct.segment: warcraft-rumble}
 
@@ -229,5 +266,6 @@ sources:
     url: https://news.blizzard.com/en-gb/api/feed/blizzcon
     username: "Blizzard"
     webhook: BLIZZARD
+    channels: BLIZZARD
     avatar: https://blz-contentstack-images.akamaized.net/v3/assets/blt286175c11a6b3f4c/bltbd6b3637d77c60f0/6a3d7018a8099b0ba5c31b21/Blizz.svg
     where: {properties.cxpProduct.segment: [blizzard, blizzcon]}
