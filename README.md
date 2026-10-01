@@ -64,7 +64,7 @@ Preview shows the saved title, summary and thumbnail. View Changes and Text Chan
 - `archive.py`: the archive steps (`--fetch`, `--commit`, `--notify`).
 - `.github/workflows/tracker.yaml`: the tracker workflow. It runs on a `workflow_dispatch` event, a manual run, or a push to `source`. It has no cron of its own.
 - `.github/workflows/archive.yaml`: the archive workflow. It runs on a `workflow_dispatch` event or a manual run.
-- `logos/`: the BlizzFeed logo, exported at the sizes Discord (server icon, emoji, sticker, app icon, role icon) and GitHub (social preview, app logo) use, plus the Discord banner, invite background and a plain banner.
+- `logos/`: the BlizzFeed logo, exported at the sizes Discord (server, bot and app images, emoji, sticker) and GitHub (social preview, app logo) use, each with a dark background and a transparent `-nobg` version.
 - `tests/`: run `pip install -r requirements-dev.txt`, then `pytest`.
 
 ## Setup
