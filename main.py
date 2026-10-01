@@ -116,11 +116,7 @@ def notify():
     repo = os.environ.get("GITHUB_REPOSITORY")
     repo_url = f"https://github.com/{repo}" if repo else None
     diff, run_url = read_diff(), os.environ.get("ACTIONS_RUN_URL")
-    failures = discord.send_all(diff, sources, repo_url, run_url)
     discord.send_log(diff, sources, repo_url, run_url)
-    if failures:
-        logger.error(f"{failures} Discord send(s) failed.")
-        sys.exit(1)
     logger.success("Notify complete.")
 
 
@@ -132,7 +128,7 @@ def main():
     parser.add_argument("--scrape", action="store_true", help="fetch sources, write files + diff.json")
     parser.add_argument("--commit", action="store_true", help="commit per source, push, record SHAs in diff.json")
     parser.add_argument("--outbox", action="store_true", help="write outbox.json from diff.json, for the bot")
-    parser.add_argument("--notify", action="store_true", help="send Discord messages from diff.json")
+    parser.add_argument("--notify", action="store_true", help="post the run summary to the log channel")
     args = parser.parse_args()
     if not (args.scrape or args.commit or args.outbox or args.notify):
         parser.print_help()

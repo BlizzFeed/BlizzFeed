@@ -32,7 +32,7 @@ def texts(message):
 
 def item_message(action):
     return discord.build_item_message(
-        None, action, ITEM, f"{REPO}/commit/dat", REPO, None,
+        None, action, ITEM, f"{REPO}/commit/dat", REPO,
         discord.preview_url(REPO, "dat", "wow-news", "42"), discord.history_url(REPO, "wow-news", "42"))
 
 
@@ -57,10 +57,8 @@ def test_edit_message():
     assert "allowed_mentions" not in message
 
 
-def test_edit_message_label_role_and_no_image():
-    message = discord.build_edit_message("WoW", {**CHANGE, "image": ""}, REPO, "wow-news", None, role_id="9")
-    assert message["components"][0]["content"] == "<@&9>"
-    assert message["allowed_mentions"] == {"roles": ["9"]}
+def test_edit_message_label_and_no_image():
+    message = discord.build_edit_message("WoW", {**CHANGE, "image": ""}, REPO, "wow-news", None)
     assert "-# WoW" in texts(message)
     assert "Text Changes" not in buttons(message)
 

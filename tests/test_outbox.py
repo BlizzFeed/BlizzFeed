@@ -9,7 +9,7 @@ ITEM = {"id": "42", "title": "Hotfixes", "url": "https://x/42", "summary": "s", 
 
 def source(labels, ids=IDS):
     return {"d4": Source({"id": "d4", "name": "Diablo IV News", "type": "json", "url": "https://x/en-gb/f",
-                          "channels": labels}, {}, {}, ids)}
+                          "channels": labels}, {}, ids)}
 
 
 def channels(entries):

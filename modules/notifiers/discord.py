@@ -6,7 +6,6 @@ import requests
 from loguru import logger
 from urllib3.exceptions import NewConnectionError
 
-SEND_DELAY_SECONDS = 2
 POST_ATTEMPTS = 3
 COLORS = {"added": 0x57F287, "updated": 0xFAA61A, "down": 0xED4245, "recovered": 0x57F287, "log": 0x5865F2,
           "edited": 0x9B59B6}
@@ -56,7 +55,7 @@ def preview_url(repo_url, commit, source_id, item_id):
     return f"{repo_url}/blob/{commit}/{source_id}/items/{item_id}.md" if repo_url and commit else None
 
 
-def build_item_message(name, action, item, commit_url, repo_url, role_id=None, preview=None, history=None):
+def build_item_message(name, action, item, commit_url, repo_url, preview=None, history=None):
     """Container > Section(text + thumbnail), link buttons, Posted subtext.
 
     A new article links its Preview, an updated one its card diff (View Changes). Both link the History."""
@@ -85,13 +84,10 @@ def build_item_message(name, action, item, commit_url, repo_url, role_id=None, p
 
     message = {"flags": IS_COMPONENTS_V2,
                "components": [{"type": 17, "accent_color": COLORS[action], "components": inner}]}
-    if role_id:
-        message["components"].insert(0, _text(f"<@&{role_id}>"))
-        message["allowed_mentions"] = {"roles": [str(role_id)]}
     return message
 
 
-def build_edit_message(name, change, repo_url, source_id, commit_url, role_id=None):
+def build_edit_message(name, change, repo_url, source_id, commit_url):
     """'Article text edited': title, line counts, thumbnail, and Read Article / Text Changes / History buttons."""
     title = _trim(change["title"], 256)
     label = f"-# {name}\n" if name else ""
@@ -113,9 +109,6 @@ def build_edit_message(name, change, repo_url, source_id, commit_url, role_id=No
     inner += [DIVIDER, _text(f"-# Edited {_discord_time(datetime.now(timezone.utc).isoformat())} · {site}")]
     message = {"flags": IS_COMPONENTS_V2,
                "components": [{"type": 17, "accent_color": COLORS["edited"], "components": inner}]}
-    if role_id:
-        message["components"].insert(0, _text(f"<@&{role_id}>"))
-        message["allowed_mentions"] = {"roles": [str(role_id)]}
     return message
 
 
@@ -312,14 +305,6 @@ def post(webhook_url, payload):
     return False
 
 
-def _set_poster(message, source):
-    """Post as the game: its title as the name and its logo as the avatar."""
-    if source.username:
-        message["username"] = source.username
-    if source.avatar_url:
-        message["avatar_url"] = source.avatar_url
-
-
 def send_log(diff, sources, repo_url, run_url):
     """Post the run summary to DISCORD_WEBHOOK_LOG. Skipped when it isn't set, and it never fails the run."""
     url = os.environ.get("DISCORD_WEBHOOK_LOG")
@@ -329,74 +314,6 @@ def send_log(diff, sources, repo_url, run_url):
     message = build_log_message(diff, sources, repo_url, run_url)
     if message and post(url, message):
         logger.info("Posted the run log.")
-
-
-def send_all(diff, sources, repo_url, run_url):
-    """sources: {source_id: Source}. Returns the number of failed sends."""
-    failures, pinged = 0, set()
-    for source_id, entry in diff["sources"].items():
-        if not (entry["added"] or entry["updated"]):
-            continue
-        source = sources[source_id]
-        for label in source.missing_labels:
-            logger.warning(f"{source_id}: secret DISCORD_WEBHOOK_{label} isn't set; skipping that channel.")
-        if not source.channels:
-            logger.warning(f"No webhook configured for {source_id}; skipping.")
-            continue
-        commit_url = f"{repo_url}/commit/{entry['commit']}" if repo_url and entry.get("commit") else None
-        for action in ("added", "updated"):
-            for item in entry[action]:
-                preview = preview_url(repo_url, entry.get("commit"), source_id, item["id"])
-                history = history_url(repo_url, source_id, item["id"])
-                for channel in source.channels:
-                    # Each channel pings its role once per run, on its first message.
-                    role = None if channel["url"] in pinged else channel["role"]
-                    pinged.add(channel["url"])
-                    # A source that posts under the game's name doesn't need it repeated in the message.
-                    label = None if source.username else source.name
-                    message = build_item_message(label, action, item, commit_url, repo_url, role, preview, history)
-                    _set_poster(message, source)
-                    if not post(channel["url"], message):
-                        failures += 1
-                    time.sleep(SEND_DELAY_SECONDS)
-
-    for alert in diff["alerts"]:
-        source = sources.get(alert["source"])
-        if source and source.channels:
-            message = build_alert_message(source.name, alert, run_url)
-            _set_poster(message, source)
-            if not post(source.channels[0]["url"], message):
-                failures += 1
-    return failures
-
-
-def send_archive(diff, sources, repo_url, archive_cfg):
-    """'Article text edited' posts, to all of a source's channels. Returns the number of failed sends.
-
-    Each channel pings its archive.ping_roles role once per run; by default no role is pinged."""
-    failures, pinged = 0, set()
-    for source_id, entry in diff["sources"].items():
-        source = sources[source_id]
-        edits = [c for c in entry["articles"] if c["kind"] == "text"]
-        if not edits:
-            continue
-        for label in source.missing_labels:
-            logger.warning(f"{source_id}: secret DISCORD_WEBHOOK_{label} isn't set; skipping that channel.")
-        if not source.channels:
-            logger.warning(f"No webhook configured for {source_id}; skipping.")
-            continue
-        for change in edits:
-            commit_url = f"{repo_url}/commit/{change['commit']}" if repo_url and change.get("commit") else None
-            for channel in source.channels:
-                role = None if channel["url"] in pinged else archive_cfg["ping_roles"].get(channel["label"])
-                pinged.add(channel["url"])
-                label = None if source.username else source.name
-                message = build_edit_message(label, change, repo_url, source_id, commit_url, role)
-                _set_poster(message, source)
-                if not post(channel["url"], message):
-                    failures += 1
-                time.sleep(SEND_DELAY_SECONDS)
-    return failures
 
 
 def send_archive_log(diff, sources, repo_url, run_url):
