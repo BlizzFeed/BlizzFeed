@@ -36,4 +36,4 @@ Thumbs.db
 archive-diff.json
 
 # Local tooling (setup scripts, not part of the repo)
-tools/
+/tools/
