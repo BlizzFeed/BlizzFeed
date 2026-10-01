@@ -57,10 +57,11 @@ def fetch_source(source, old_state):
 
 
 def with_changes(old_state, item):
-    """An updated item for diff.json, with the fields that changed and the title it had before.
+    """An updated item for diff.json, with the fields that changed and the title and image it had before.
     The state file keeps the plain item."""
     prev = next(i for i in old_state if i["id"] == item["id"])
-    return {**item, "changed": differ.changed_fields(prev, item), "previous_title": prev["title"]}
+    return {**item, "changed": differ.changed_fields(prev, item), "previous_title": prev["title"],
+            "previous_image": prev.get("image", "")}
 
 
 def scrape():
