@@ -34,3 +34,6 @@ Thumbs.db
 # Article archive: local checkout of the archive branch
 /archive/
 archive-diff.json
+
+# Local tooling (setup scripts, not part of the repo)
+tools/
