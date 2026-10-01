@@ -63,6 +63,22 @@ def test_edit_message_leaves_out_zero_counts():
     assert "changed" not in texts(message) and "removed" not in texts(message)
 
 
+def test_image_change_shows_before_and_after_instead_of_a_thumbnail():
+    item = {**ITEM, "image": "https://x/new.png", "changed": ["image"], "previous_title": "Hotfixes",
+            "previous_image": "https://x/old.png"}
+    inner = discord.build_item_message("updated", item, None, REPO)["components"][0]["components"]
+    gallery = next(c for c in inner if c["type"] == 12)
+    assert [i["media"]["url"] for i in gallery["items"]] == ["https://x/old.png", "https://x/new.png"]
+    assert not any("accessory" in c for c in inner)
+
+
+def test_other_updates_keep_the_thumbnail():
+    item = {**ITEM, "changed": ["summary"], "previous_image": "https://x/old.png"}
+    inner = discord.build_item_message("updated", item, None, REPO)["components"][0]["components"]
+    assert inner[0]["accessory"]["media"]["url"] == ITEM["image"]
+    assert not any(c["type"] == 12 for c in inner)
+
+
 def test_updated_card_lists_what_changed():
     item = {**ITEM, "title": "New", "changed": ["title", "image"], "previous_title": "Old"}
     body = texts(discord.build_item_message("updated", item, None, REPO))

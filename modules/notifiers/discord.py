@@ -93,14 +93,20 @@ def build_item_message(action, item, commit_url, repo_url, preview=None, history
     title = _trim(item["title"], 256)
     text = _text(_trim(f"## {title}\n{_trim(item['summary'], 600)}", 3000))
 
-    if item["image"]:
+    updated = action == "updated"
+    before = item.get("previous_image") if updated and "image" in item.get("changed", []) else ""
+    if item["image"] and not before:
         inner = [{"type": 9, "components": [text],
                   "accessory": {"type": 11, "media": {"url": item["image"]}, "description": title[:1024]}}]
     else:
         inner = [text]
-    updated = action == "updated"
     if updated and (block := _diff_block(_card_diff_lines(item))):
         inner.append(block)
+    if before and item["image"]:
+        # Old and new side by side instead of a thumbnail, which would only repeat the new one.
+        inner += [_text("-# Before  ·  After"),
+                  {"type": 12, "items": [{"media": {"url": before}, "description": "Before"},
+                                         {"media": {"url": item["image"]}, "description": "After"}]}]
     buttons = [_link_button(label, url)
                for label, url in (("Read Article", item["url"]),
                                   ("Battle.net Shop", item.get("shop_url")),
