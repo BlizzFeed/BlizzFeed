@@ -3,6 +3,11 @@ name: Archive Blizzard Articles
 on:
   # Started by the tracker when it saves a change, and hourly by trigger/dispatch.py. No cron.
   workflow_dispatch:
+    inputs:
+      log_message:
+        description: The tracker run's log post, which this run adds its summary to
+        required: false
+        type: string
 
 # Its own group: sharing the tracker's would let each cancel the other's queued run.
 # A queued run replaced by a newer dispatch loses nothing, as every run does the same work.
@@ -88,6 +93,7 @@ jobs:
           ARCHIVE_DIFF_FILE: archive-diff.json
           ACTIONS_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           DISCORD_WEBHOOK_LOG: ${{ secrets.DISCORD_WEBHOOK_LOG }}
+          LOG_MESSAGE: ${{ inputs.log_message }}
         run: python code/archive.py --notify
 
       # If Discord failed after the commit landed, keep the diff so the posts can be replayed by hand

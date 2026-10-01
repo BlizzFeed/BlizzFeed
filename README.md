@@ -34,7 +34,7 @@ Each label has three Discord announcement channels, listed under `channels:` in 
 
 Servers can follow whichever of these they want. Each Diablo game posts to its own channels and also to the shared `DIABLO` ones. A source can list more than one label. A label or tier without a channel ID is skipped with a warning.
 
-Optionally, `DISCORD_WEBHOOK_LOG` points at a private dev channel. After a run where something changed (new, updated, date/url-only, a baseline, or a source failing or recovering) it gets one summary message linking each source's commit. Runs with no changes post nothing, and a failed log post never fails the run. The archive posts its own summary there too. This is the only Discord webhook the workflows use.
+Optionally, `DISCORD_WEBHOOK_LOG` points at a private dev channel. After a run where something changed (new, updated, date/url-only, a baseline, or a source failing or recovering) it gets one summary message linking each source's commit. Runs with no changes post nothing, and a failed log post never fails the run. The archive run the tracker starts adds its summary to that same message, with a second run button; the hourly archive run posts its own. This is the only Discord webhook the workflows use.
 
 More Blizzard products can be added by putting another entry in `sources.yaml`.
 

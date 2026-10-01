@@ -146,7 +146,7 @@ def notify():
     repo = os.environ.get("GITHUB_REPOSITORY")
     repo_url = f"https://github.com/{repo}" if repo else None
     diff, run_url = read_diff(), os.environ.get("ACTIONS_RUN_URL")
-    discord.send_archive_log(diff, sources, repo_url, run_url)
+    discord.send_archive_log(diff, sources, repo_url, run_url, os.environ.get("LOG_MESSAGE"))
     logger.success("Notify complete.")
 
 

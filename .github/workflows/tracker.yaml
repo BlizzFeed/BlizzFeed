@@ -76,21 +76,8 @@ jobs:
           if-no-files-found: ignore
           retention-days: 7
 
-      # Start an archive run when anything was added, updated or quiet (a date bump is often a text edit).
-      # A failed dispatch doesn't fail this run: the hourly archive run catches up.
-      - name: Start archive run
-        continue-on-error: true
-        env:
-          GH_TOKEN: ${{ github.token }}
-          GH_REPO: ${{ github.repository }}
-        run: |
-          if python -c "import json, sys; d = json.load(open('diff.json')); sys.exit(not any(e['added'] or e['updated'] or e['quiet'] for e in d['sources'].values()))"; then
-            gh workflow run archive.yaml --ref source
-          else
-            echo "No changes, no archive run needed."
-          fi
-
       - name: Notify Discord
+        id: notify
         if: always()
         env:
           OUTPUT_DIR: data
@@ -98,6 +85,22 @@ jobs:
           ACTIONS_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
           DISCORD_WEBHOOK_LOG: ${{ secrets.DISCORD_WEBHOOK_LOG }}
         run: python code/main.py --notify
+
+      # Start an archive run when anything was added, updated or quiet (a date bump is often a text edit).
+      # It gets the log post's id, so its summary is added to that post.
+      # A failed dispatch doesn't fail this run: the hourly archive run catches up.
+      - name: Start archive run
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          LOG_MESSAGE: ${{ steps.notify.outputs.log_message }}
+        run: |
+          if python -c "import json, sys; d = json.load(open('diff.json')); sys.exit(not any(e['added'] or e['updated'] or e['quiet'] for e in d['sources'].values()))"; then
+            gh workflow run archive.yaml --ref source ${LOG_MESSAGE:+-f log_message=$LOG_MESSAGE}
+          else
+            echo "No changes, no archive run needed."
+          fi
 
       # If Discord failed after the commit landed, keep the diff so the alert can be replayed by hand
       # (download it and run main.py --notify). Nothing replays it automatically.

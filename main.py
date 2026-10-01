@@ -124,7 +124,10 @@ def notify():
     repo = os.environ.get("GITHUB_REPOSITORY")
     repo_url = f"https://github.com/{repo}" if repo else None
     diff, run_url = read_diff(), os.environ.get("ACTIONS_RUN_URL")
-    discord.send_log(diff, sources, repo_url, run_url)
+    message_id = discord.send_log(diff, sources, repo_url, run_url)
+    if message_id and os.environ.get("GITHUB_OUTPUT"):  # for the archive run the workflow starts next
+        with open(os.environ["GITHUB_OUTPUT"], "a") as f:
+            f.write(f"log_message={message_id}\n")
     logger.success("Notify complete.")
 
 
