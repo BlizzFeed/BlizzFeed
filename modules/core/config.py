@@ -55,7 +55,8 @@ def load_sources(path):
         cfg = yaml.safe_load(f)
     defaults = cfg.get("defaults") or {}
     ping_roles = {str(label): str(role) for label, role in (cfg.get("ping_roles") or {}).items()}
-    channel_ids = {str(label): {tier: str(ids[tier]) for tier in TIERS if ids.get(tier)}
+    # A label left empty (WOW:) has no IDs, so its sources warn and skip it like an empty ID.
+    channel_ids = {str(label): {tier: str(ids[tier]) for tier in TIERS if (ids or {}).get(tier)}
                    for label, ids in (cfg.get("channels") or {}).items()}
     return [Source(s, defaults, ping_roles, channel_ids) for s in cfg["sources"]]
 
