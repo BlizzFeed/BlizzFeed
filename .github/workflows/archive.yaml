@@ -66,6 +66,22 @@ jobs:
           ARCHIVE_DIFF_FILE: archive-diff.json
         run: python code/archive.py --commit
 
+      # For BlizzFeedBot. Before Notify Discord, so a webhook failure can't block it.
+      - name: Write outbox
+        env:
+          ARCHIVE_DIFF_FILE: archive-diff.json
+          GITHUB_RUN_ID: ${{ github.run_id }}
+          ACTIONS_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python code/archive.py --outbox
+
+      - name: Upload outbox
+        uses: actions/upload-artifact@v7
+        with:
+          name: outbox
+          path: outbox.json
+          if-no-files-found: ignore
+          retention-days: 7
+
       - name: Notify Discord
         env:
           ARCHIVE_DIFF_FILE: archive-diff.json

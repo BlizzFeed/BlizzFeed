@@ -10,13 +10,14 @@ from loguru import logger
 
 from modules.core import gitops, health
 from modules.core.config import load_archive_config, load_sources
-from modules.notifiers import discord
+from modules.notifiers import discord, outbox
 from modules.processors import archiver, differ
 from modules.providers import article
 
 DATA_DIR = os.environ.get("DATA_DIR", "data")
 ARCHIVE_DIR = os.environ.get("ARCHIVE_DIR", "archive")
 DIFF_FILE = os.environ.get("ARCHIVE_DIFF_FILE", "archive-diff.json")
+OUTBOX_FILE = os.environ.get("OUTBOX_FILE", "outbox.json")
 SOURCES_FILE = os.environ.get("SOURCES_FILE", os.path.join(os.path.dirname(__file__), "sources.yaml"))
 
 COMMIT_VERBS = {"archived": "archived", "text": "text edited:", "card": "summary changed:",
@@ -132,6 +133,14 @@ def commit():
     write_diff(diff)
 
 
+def write_outbox():
+    sources = {s.id: s for s in load_sources(SOURCES_FILE)}
+    repo = os.environ.get("GITHUB_REPOSITORY")
+    repo_url = f"https://github.com/{repo}" if repo else None
+    entries = outbox.build_archive_entries(read_diff(), sources, repo_url, outbox.now_iso())
+    outbox.write(OUTBOX_FILE, "archive", entries, os.environ.get("ACTIONS_RUN_URL"))
+
+
 def notify():
     sources = {s.id: s for s in load_sources(SOURCES_FILE)}
     repo = os.environ.get("GITHUB_REPOSITORY")
@@ -152,14 +161,17 @@ def main():
     parser = argparse.ArgumentParser(description="Article archive: fetch -> commit -> notify")
     parser.add_argument("--fetch", action="store_true", help="fetch due articles, write files + archive-diff.json")
     parser.add_argument("--commit", action="store_true", help="commit per article, push, record SHAs in archive-diff.json")
+    parser.add_argument("--outbox", action="store_true", help="write outbox.json from archive-diff.json, for the bot")
     parser.add_argument("--notify", action="store_true", help="send Discord messages from archive-diff.json")
     args = parser.parse_args()
-    if not (args.fetch or args.commit or args.notify):
+    if not (args.fetch or args.commit or args.outbox or args.notify):
         parser.print_help()
     if args.fetch:
         fetch()
     if args.commit:
         commit()
+    if args.outbox:
+        write_outbox()
     if args.notify:
         notify()
 

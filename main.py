@@ -9,7 +9,7 @@ from loguru import logger
 
 from modules.core import gitops, health
 from modules.core.config import load_sources
-from modules.notifiers import discord
+from modules.notifiers import discord, outbox
 from modules.processors import differ
 from modules.providers import html as html_provider, json_api as json_provider
 
@@ -19,6 +19,7 @@ FETCH_WORKERS = 4  # sources fetched at once; kept small to not get in trouble w
 
 DATA_DIR = os.environ.get("OUTPUT_DIR", "data")
 DIFF_FILE = os.environ.get("DIFF_FILE", "diff.json")
+OUTBOX_FILE = os.environ.get("OUTBOX_FILE", "outbox.json")
 SOURCES_FILE = os.environ.get("SOURCES_FILE", os.path.join(os.path.dirname(__file__), "sources.yaml"))
 
 
@@ -102,6 +103,14 @@ def commit():
     write_diff(diff)
 
 
+def write_outbox():
+    sources = {s.id: s for s in load_sources(SOURCES_FILE)}
+    repo = os.environ.get("GITHUB_REPOSITORY")
+    repo_url = f"https://github.com/{repo}" if repo else None
+    entries = outbox.build_tracker_entries(read_diff(), sources, repo_url, outbox.now_iso())
+    outbox.write(OUTBOX_FILE, "tracker", entries, os.environ.get("ACTIONS_RUN_URL"))
+
+
 def notify():
     sources = {s.id: s for s in load_sources(SOURCES_FILE)}
     repo = os.environ.get("GITHUB_REPOSITORY")
@@ -122,14 +131,17 @@ def main():
     parser = argparse.ArgumentParser(description="Page tracker: scrape -> commit -> notify")
     parser.add_argument("--scrape", action="store_true", help="fetch sources, write files + diff.json")
     parser.add_argument("--commit", action="store_true", help="commit per source, push, record SHAs in diff.json")
+    parser.add_argument("--outbox", action="store_true", help="write outbox.json from diff.json, for the bot")
     parser.add_argument("--notify", action="store_true", help="send Discord messages from diff.json")
     args = parser.parse_args()
-    if not (args.scrape or args.commit or args.notify):
+    if not (args.scrape or args.commit or args.outbox or args.notify):
         parser.print_help()
     if args.scrape:
         scrape()
     if args.commit:
         commit()
+    if args.outbox:
+        write_outbox()
     if args.notify:
         notify()
 

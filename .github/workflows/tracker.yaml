@@ -60,6 +60,22 @@ jobs:
           DIFF_FILE: diff.json
         run: python code/main.py --commit
 
+      # For BlizzFeedBot. Before Notify Discord, so a webhook failure can't block it.
+      - name: Write outbox
+        env:
+          DIFF_FILE: diff.json
+          GITHUB_RUN_ID: ${{ github.run_id }}
+          ACTIONS_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python code/main.py --outbox
+
+      - name: Upload outbox
+        uses: actions/upload-artifact@v7
+        with:
+          name: outbox
+          path: outbox.json
+          if-no-files-found: ignore
+          retention-days: 7
+
       # Start an archive run when anything was added, updated or quiet (a date bump is often a text edit).
       # A failed dispatch doesn't fail this run: the hourly archive run catches up.
       - name: Start archive run
