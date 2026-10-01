@@ -57,7 +57,8 @@ def test_classify_and_line_changes():
     assert archiver.classify(old, old) is None
     assert archiver.classify(old, same_text_new_card) == "card"
     assert archiver.classify(old, edited) == "text"
-    assert archiver.line_changes(archiver.split_file(old)[1], archiver.split_file(edited)[1]) == (2, 1)
+    assert archiver.line_changes(archiver.split_file(old)[1], archiver.split_file(edited)[1]) == (1, 1, 0)
+    assert archiver.line_changes("a\nb\nc\nd\n", "a\nX\n") == (0, 1, 2)  # 3 lines became 1: one changed, two removed
 
 
 def test_summary_newlines_cannot_break_the_card_split():

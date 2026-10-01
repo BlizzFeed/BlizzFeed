@@ -226,7 +226,7 @@ def _archive_log_entry(name, entry, repo_url, recovered_since):
     lines = [f"**{name}** · {', '.join(parts)}"]
     for change in entry["articles"]:
         label = _trim(change["title"], 100).replace("[", "(").replace("]", ")")
-        detail = f" +{change['added']} −{change['removed']}" if change["kind"] == "text" else ""
+        detail = f" +{change['added']} ~{change['changed']} −{change['removed']}" if change["kind"] == "text" else ""
         # Only the window sweep finds these, so they show whether it's worth widening.
         detail += " · silent edit (date unchanged)" if change.get("silent") else ""
         commit = change.get("commit")

@@ -51,8 +51,8 @@ def archive_one(source, item, index, cfg, reformat):
     entry = {"id": item["id"], "title": item["title"], "kind": kind, "url": item["url"],
              "image": item["image"], "path": archiver.article_path(source.id, item["id"])}
     if kind == "text":
-        entry["added"], entry["removed"] = archiver.line_changes(archiver.split_file(old)[1],
-                                                                  archiver.split_file(content)[1])
+        entry["added"], entry["changed"], entry["removed"] = archiver.line_changes(
+            archiver.split_file(old)[1], archiver.split_file(content)[1])
         # The date didn't move, so only the window sweep could have found this edit.
         entry["silent"] = index.get(item["id"]) == item["date"]
     return entry

@@ -6,7 +6,7 @@ REPO = "https://github.com/BlizzFeed/BlizzFeed"
 ITEM = {"id": "42", "title": "Hotfixes", "url": "https://news.blizzard.com/en-gb/article/42", "summary": "Card text.",
         "image": "https://x/i.png", "date": "2026-09-30T10:00:00Z", "shop_url": "https://shop.battle.net/p"}
 CHANGE = {"id": "42", "title": "Hotfixes", "kind": "text", "url": ITEM["url"], "image": ITEM["image"],
-          "added": 1, "removed": 3, "commit": "abc123", "silent": False}
+          "added": 1, "changed": 2, "removed": 3, "commit": "abc123", "silent": False}
 
 
 def buttons(message):
@@ -76,7 +76,7 @@ def test_archive_log_lists_changes_and_silent_edits():
     body = texts(discord.build_archive_log_message(diff(articles), SOURCES, REPO, "https://run"))
     assert "1 of 2 sources changed" in body
     assert "2 text edited" in body and "1 archived" in body
-    assert f"[Hotfixes]({REPO}/commit/abc123) +1 −3" in body
+    assert f"[Hotfixes]({REPO}/commit/abc123) +1 ~2 −3" in body
     assert "Quiet" in body and "silent edit (date unchanged)" in body
 
 

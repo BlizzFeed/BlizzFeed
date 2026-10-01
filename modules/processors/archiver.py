@@ -137,15 +137,23 @@ def split_file(content):
 
 
 def line_changes(old_text, new_text):
-    """(added, removed) line counts between two texts."""
+    """(added, changed, removed) line counts between two texts.
+
+    A block of lines replaced by another counts as changed lines, as many as the shorter side has;
+    what the longer side has over is added or removed."""
     old, new = old_text.splitlines(), new_text.splitlines()
-    added = removed = 0
+    added = changed = removed = 0
     for tag, i1, i2, j1, j2 in difflib.SequenceMatcher(None, old, new, autojunk=False).get_opcodes():
-        if tag in ("replace", "delete"):
-            removed += i2 - i1
-        if tag in ("replace", "insert"):
+        if tag == "insert":
             added += j2 - j1
-    return added, removed
+        elif tag == "delete":
+            removed += i2 - i1
+        elif tag == "replace":
+            before, after = i2 - i1, j2 - j1
+            changed += min(before, after)
+            added += max(after - before, 0)
+            removed += max(before - after, 0)
+    return added, changed, removed
 
 
 def classify(old_content, new_content):
