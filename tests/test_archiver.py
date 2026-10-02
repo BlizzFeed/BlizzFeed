@@ -73,3 +73,8 @@ def test_tab_links_point_at_the_first_heading_of_each_pane():
     text = archiver.to_markdown(_read("article-24301515.html"))
     assert "- [Hunter](#taking-aim-at-the-hunter-class)" in text
     assert "- [Druid](#shifting-forms-with-the-druid-class)" in text
+
+
+def test_a_line_break_ending_a_paragraph_leaves_no_backslash():
+    text = archiver.to_markdown("<p>one<br/>\r\n\xa0</p><p>two<br/>three</p>")
+    assert text == "one\n\ntwo\\\nthree\n"

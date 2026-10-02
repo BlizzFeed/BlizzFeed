@@ -9,7 +9,7 @@ from markdownify import MarkdownConverter
 
 # Bump when a change here alters the saved Markdown. The next runs then commit the new format as
 # "reformatted" without posting, instead of reporting every recent article as edited.
-CONVERTER_VERSION = 1
+CONVERTER_VERSION = 2
 
 YOUTUBE_ID = re.compile(r"(?:youtube\.com|youtube-nocookie\.com)/embed/([\w-]+)")
 # 1280x720 is YouTube's largest thumbnail; GitHub shrinks it to fit the column. The service adds the play button.
@@ -56,12 +56,20 @@ def _fix_anchors(soup):
             a["href"] = "#" + targets[m.group(1)]
 
 
+def _drop_trailing_breaks(soup):
+    """Remove a <br> that ends its block (only whitespace or nbsp after it): it would render as a stray backslash."""
+    for br in soup.find_all("br"):
+        if all(not str(sib).replace(" ", "").strip() for sib in br.next_siblings if not getattr(sib, "name", None) == "br"):
+            br.decompose()
+
+
 def to_markdown(body_html):
     """Article body HTML to normalised Markdown, one block per line so diffs stay line-level."""
     soup = BeautifulSoup(body_html, "html.parser")
     for el in soup(["script", "style"]):
         el.decompose()
     _fix_anchors(soup)
+    _drop_trailing_breaks(soup)
     text = _Converter(heading_style="ATX", bullets="-", wrap=False, newline_style="backslash").convert_soup(soup)
     text = "\n".join(line.rstrip() for line in text.splitlines())
     text = re.sub(r"^(#+) \*\*(.+)\*\*$", r"\1 \2", text, flags=re.M)  # bold inside a heading adds nothing
