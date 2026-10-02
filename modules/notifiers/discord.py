@@ -17,6 +17,8 @@ LOG_HEADING = "Changes detected"
 ARCHIVE_LOG_HEADING = "Archive changes"
 ARCHIVE_SECTION = "### 📦 Archive"
 LOG_TOTAL_TEXT = 4000  # Discord's limit for the text of one message
+# Component ids the bot looks for when it merges two posts (same numbers in the bot's merge.py)
+DIFF_ID, BUTTONS_ID, FOOTER_ID = 100, 101, 102
 
 
 def _trim(text, limit):
@@ -39,8 +41,8 @@ def _code_block(text):
     return f"```\n{text.replace('```', chr(39) * 3)}\n```"
 
 
-def _text(content):
-    return {"type": 10, "content": content}
+def _text(content, id=None):
+    return {"type": 10, "content": content} if id is None else {"type": 10, "id": id, "content": content}
 
 
 def _link_button(label, url):
@@ -117,12 +119,12 @@ def build_item_message(action, item, commit_url, repo_url, preview=None, history
                                   ("View Changes", commit_url) if updated else ("Preview", preview),
                                   ("History", history)) if url]
     if buttons:
-        inner += [DIVIDER, {"type": 1, "components": buttons}]
+        inner += [DIVIDER, {"type": 1, "id": BUTTONS_ID, "components": buttons}]
     # An update keeps the article's original date, so it's stamped with when we noticed the change.
     when = datetime.now(timezone.utc).isoformat() if updated else item["date"]
     posted = f"{'Updated' if updated else 'Posted'} {_discord_time(when)} · " if when else ""
     site = f"[BlizzFeed]({repo_url})" if repo_url else "BlizzFeed"
-    inner += [DIVIDER, _text(f"-# {posted}{site}")]
+    inner += [DIVIDER, _text(f"-# {posted}{site}", FOOTER_ID)]
 
     message = {"flags": IS_COMPONENTS_V2,
                "components": [{"type": 17, "accent_color": COLORS[action], "components": inner}]}
@@ -146,9 +148,9 @@ def build_edit_message(change, repo_url, source_id, commit_url):
                                   ("Text Changes", commit_url),
                                   ("History", history_url(repo_url, source_id, change["id"]))) if url]
     if buttons:
-        inner += [DIVIDER, {"type": 1, "components": buttons}]
+        inner += [DIVIDER, {"type": 1, "id": BUTTONS_ID, "components": buttons}]
     site = f"[BlizzFeed]({repo_url})" if repo_url else "BlizzFeed"
-    inner += [DIVIDER, _text(f"-# Updated {_discord_time(datetime.now(timezone.utc).isoformat())} · {site}")]
+    inner += [DIVIDER, _text(f"-# Updated {_discord_time(datetime.now(timezone.utc).isoformat())} · {site}", FOOTER_ID)]
     message = {"flags": IS_COMPONENTS_V2,
                "components": [{"type": 17, "accent_color": COLORS["updated"], "components": inner}]}
     return message
