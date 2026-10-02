@@ -36,6 +36,8 @@ Servers can follow whichever of these they want. Each Diablo game posts to its o
 
 Optionally, `DISCORD_WEBHOOK_LOG` points at a private dev channel. After a run where something changed (new, updated, date/url-only, a baseline, or a source failing or recovering) it gets one summary message linking each source's commit. Runs with no changes post nothing, and a failed log post never fails the run. The archive run the tracker starts adds its summary to that same message, with a second run button; the hourly archive run posts its own. This is the only Discord webhook the workflows use.
 
+Each source also has a `logo:` in `sources.yaml`, the game's icon as a PNG in `logos/games/`. A post's thumbnail is the article's image, or that logo when the article has none. When an update changes the image, the post shows the old and new images side by side and puts the logo beside the title.
+
 More Blizzard products can be added by putting another entry in `sources.yaml`.
 
 ## How it works
@@ -76,6 +78,7 @@ Both kinds of update look the same, with a diff block saying what changed: the o
 - `.github/workflows/tracker.yaml`: the tracker workflow. It runs on a `workflow_dispatch` event, a manual run, or a push to `source`. It has no cron of its own.
 - `.github/workflows/archive.yaml`: the archive workflow. It runs on a `workflow_dispatch` event or a manual run.
 - `logos/`: the BlizzFeed logo, exported at the sizes Discord (server, bot and app images, emoji, sticker) and GitHub (social preview, app logo) use, each with a dark background and a transparent `-nobg` version.
+- `logos/games/`: each game's icon (Blizzard's, see Logos and trademarks), the thumbnail of a post whose article has no image.
 - `tests/`: run `pip install -r requirements-dev.txt`, then `pytest`.
 
 ## Setup
