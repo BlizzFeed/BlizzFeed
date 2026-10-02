@@ -55,7 +55,12 @@ def history_url(repo_url, source_id, item_id):
     return f"{repo_url}/commits/archive/{source_id}/{item_id}.md" if repo_url else None
 
 
-def preview_url(repo_url, commit, source_id, item_id):
+def archive_url(repo_url, source_id, item_id):
+    """The article's saved copy on the archive branch. It 404s until the archive run has written it."""
+    return f"{repo_url}/blob/archive/{source_id}/{item_id}.md" if repo_url else None
+
+
+def summary_url(repo_url, commit, source_id, item_id):
     """The card's Markdown file at the commit that wrote it, which GitHub renders as a page."""
     return f"{repo_url}/blob/{commit}/{source_id}/items/{item_id}.md" if repo_url and commit else None
 
@@ -91,10 +96,11 @@ def _line_count_lines(change):
     return lines
 
 
-def build_item_message(action, item, commit_url, repo_url, preview=None, history=None):
+def build_item_message(action, item, commit_url, repo_url, summary=None, archived=None, history=None):
     """Container > Section(text + thumbnail), link buttons, Posted subtext.
 
-    A new article links its Preview, an updated one its card diff (Summary Changes). Both link the History.
+    A new article links its Summary (the card) and Archived Copy (the full text), an updated one its card
+    diff (Summary Changes). Both link the History.
     An updated one also lists what changed on the card, when we know."""
     title = _trim(item["title"], 256)
     text = _text(_trim(f"## {title}\n{_trim(item['summary'], 600)}", 3000))
@@ -116,7 +122,8 @@ def build_item_message(action, item, commit_url, repo_url, preview=None, history
     buttons = [_link_button(label, url)
                for label, url in (("Read Article", item["url"]),
                                   ("Battle.net Shop", item.get("shop_url")),
-                                  ("Summary Changes", commit_url) if updated else ("Preview", preview),
+                                  ("Summary Changes", commit_url) if updated else ("Summary", summary),
+                                  ("Archived Copy", None if updated else archived),
                                   ("History", history)) if url]
     if buttons:
         inner += [DIVIDER, {"type": 1, "id": BUTTONS_ID, "components": buttons}]

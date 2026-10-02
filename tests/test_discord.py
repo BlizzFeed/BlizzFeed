@@ -33,7 +33,8 @@ def texts(message):
 def item_message(action):
     return discord.build_item_message(
         action, ITEM, f"{REPO}/commit/dat", REPO,
-        discord.preview_url(REPO, "dat", "wow-news", "42"), discord.history_url(REPO, "wow-news", "42"))
+        discord.summary_url(REPO, "dat", "wow-news", "42"), discord.archive_url(REPO, "wow-news", "42"),
+        discord.history_url(REPO, "wow-news", "42"))
 
 
 def test_update_and_edit_messages_carry_the_ids_the_bot_merges_by():
@@ -54,7 +55,8 @@ def test_update_and_edit_messages_carry_the_ids_the_bot_merges_by():
 def test_new_article_buttons():
     assert buttons(item_message("added")) == {
         "Read Article": ITEM["url"], "Battle.net Shop": ITEM["shop_url"],
-        "Preview": f"{REPO}/blob/dat/wow-news/items/42.md",
+        "Summary": f"{REPO}/blob/dat/wow-news/items/42.md",
+        "Archived Copy": f"{REPO}/blob/archive/wow-news/42.md",
         "History": f"{REPO}/commits/archive/wow-news/42.md"}
 
 

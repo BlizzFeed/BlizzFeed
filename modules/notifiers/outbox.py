@@ -44,10 +44,11 @@ def build_tracker_entries(diff, sources, repo_url, detected):
         commit_url = f"{repo_url}/commit/{entry['commit']}" if repo_url and entry.get("commit") else None
         for kind in ("added", "updated"):
             for item in entry[kind]:
-                preview = discord.preview_url(repo_url, entry.get("commit"), source_id, item["id"])
+                summary = discord.summary_url(repo_url, entry.get("commit"), source_id, item["id"])
+                archived = discord.archive_url(repo_url, source_id, item["id"])
                 history = discord.history_url(repo_url, source_id, item["id"])
                 message = discord.build_item_message(kind, item, commit_url, repo_url,
-                                                     preview=preview, history=history)
+                                                     summary=summary, archived=archived, history=history)
                 entries += _entries(source, kind, item, message, detected)
     return entries
 
