@@ -1,7 +1,7 @@
 name: Check Blizzard News
 
 on:
-  # Sent every minute by an external trigger (trigger/dispatch.py).
+  # Sent every minute by an external trigger (dispatch.py).
   # There is no cron here, as Github can't promise exact runs.
   workflow_dispatch:
   push:

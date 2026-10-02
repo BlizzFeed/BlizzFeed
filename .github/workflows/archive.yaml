@@ -1,7 +1,7 @@
 name: Archive Blizzard Articles
 
 on:
-  # Started by the tracker when it saves a change, and hourly by trigger/dispatch.py. No cron.
+  # Started by the tracker when it saves a change, and hourly by dispatch.py. No cron.
   workflow_dispatch:
     inputs:
       log_message:
