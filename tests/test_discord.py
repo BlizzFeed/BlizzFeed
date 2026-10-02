@@ -36,6 +36,21 @@ def item_message(action):
         discord.preview_url(REPO, "dat", "wow-news", "42"), discord.history_url(REPO, "wow-news", "42"))
 
 
+def test_update_and_edit_messages_carry_the_ids_the_bot_merges_by():
+    updated = {**ITEM, "changed": ["title"], "previous_title": "Old"}
+    for message in (discord.build_item_message("updated", updated, f"{REPO}/commit/dat", REPO),
+                    discord.build_edit_message(CHANGE, REPO, "wow-news", f"{REPO}/commit/arc")):
+        ids = set()
+
+        def walk(node):
+            ids.add(node.get("id"))
+            for child in node.get("components", []):
+                walk(child)
+        for c in message["components"]:
+            walk(c)
+        assert {discord.DIFF_ID, discord.BUTTONS_ID, discord.FOOTER_ID} <= ids
+
+
 def test_new_article_buttons():
     assert buttons(item_message("added")) == {
         "Read Article": ITEM["url"], "Battle.net Shop": ITEM["shop_url"],

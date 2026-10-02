@@ -65,7 +65,7 @@ def _diff_block(lines):
     if not lines:
         return None
     body = "\n".join(lines).replace("`", "'")  # a backtick in a title would end the block
-    return _text(f"```diff\n{body}\n```")
+    return _text(f"```diff\n{body}\n```", DIFF_ID)
 
 
 def _card_diff_lines(item):
