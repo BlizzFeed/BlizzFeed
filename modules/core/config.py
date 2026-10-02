@@ -11,6 +11,7 @@ class Source:
         self.raw = raw
         self.id = raw["id"]
         self.name = raw.get("name", self.id)
+        self.logo = raw.get("logo")
         self.type = raw["type"]
         self.url = raw["url"]
         self.failures_before_alert = raw.get(

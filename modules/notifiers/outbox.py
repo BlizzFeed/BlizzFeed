@@ -48,7 +48,8 @@ def build_tracker_entries(diff, sources, repo_url, detected):
                 archived = discord.archive_url(repo_url, source_id, item["id"])
                 history = discord.history_url(repo_url, source_id, item["id"])
                 message = discord.build_item_message(kind, item, commit_url, repo_url,
-                                                     summary=summary, archived=archived, history=history)
+                                                     summary=summary, archived=archived, history=history,
+                                                     logo=source.logo)
                 entries += _entries(source, kind, item, message, detected)
     return entries
 
@@ -63,7 +64,7 @@ def build_archive_entries(diff, sources, repo_url, detected):
         _warn_unset(source)
         for change in edits:
             commit_url = f"{repo_url}/commit/{change['commit']}" if repo_url and change.get("commit") else None
-            message = discord.build_edit_message(change, repo_url, source_id, commit_url)
+            message = discord.build_edit_message(change, repo_url, source_id, commit_url, logo=source.logo)
             entries += _entries(source, "edited", change, message, detected)
     return entries
 

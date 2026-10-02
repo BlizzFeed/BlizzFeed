@@ -96,6 +96,18 @@ def test_other_updates_keep_the_thumbnail():
     assert not any(c["type"] == 12 for c in inner)
 
 
+def test_the_games_logo_is_the_thumbnail_only_where_the_article_has_no_picture_to_show():
+    logo = "https://x/game.png"
+    build = lambda item, action="added": discord.build_item_message(action, item, None, REPO, logo=logo)["components"][0]["components"]
+    assert build({**ITEM, "image": ""})[0]["accessory"]["media"]["url"] == logo
+    assert build(ITEM)[0]["accessory"]["media"]["url"] == ITEM["image"]
+    changed = {**ITEM, "changed": ["image"], "previous_image": "https://x/old.png"}
+    inner = build(changed, "updated")  # Before / After pair: the logo sits beside the title instead
+    assert inner[0]["accessory"]["media"]["url"] == logo and any(c["type"] == 12 for c in inner)
+    edit = discord.build_edit_message({**CHANGE, "image": ""}, REPO, "wow-news", None, logo=logo)
+    assert edit["components"][0]["components"][0]["accessory"]["media"]["url"] == logo
+
+
 def test_updated_card_lists_what_changed():
     item = {**ITEM, "title": "New", "changed": ["title", "image"], "previous_title": "Old"}
     body = texts(discord.build_item_message("updated", item, None, REPO))

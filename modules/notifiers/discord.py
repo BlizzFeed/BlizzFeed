@@ -10,7 +10,8 @@ POST_ATTEMPTS = 3
 COLORS = {"added": 0x57F287, "updated": 0xFAA61A, "down": 0xED4245, "recovered": 0x57F287, "log": 0x5865F2}
 LOG_USERNAME = "BlizzFeed Log"
 LOG_AVATAR = "https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/BlizzFeed_ServerIcon_512.png"
-LOG_TEXT_BUDGET = 3000  # Discord allows 4000 characters of text per message; the rest is header and footer
+LOGO = "https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/BlizzFeed_AppLogo_200-nobg.png"
+LOG_TEXT_BUDGET = 3000 # Discord allows 4000 characters of text per message; the rest is header and footer
 IS_COMPONENTS_V2 = 1 << 15  # message flag: content/embeds are disabled, components only
 DIVIDER = {"type": 14, "divider": True, "spacing": 1}
 LOG_HEADING = "Changes detected"
@@ -43,6 +44,11 @@ def _code_block(text):
 
 def _text(content, id=None):
     return {"type": 10, "content": content} if id is None else {"type": 10, "id": id, "content": content}
+
+
+def _with_logo(content):
+    """A text with the BlizzFeed logo as its thumbnail: a thumbnail is the accessory of a section."""
+    return {"type": 9, "components": [_text(content)], "accessory": {"type": 11, "media": {"url": LOGO}}}
 
 
 def _link_button(label, url):
@@ -96,22 +102,28 @@ def _line_count_lines(change):
     return lines
 
 
-def build_item_message(action, item, commit_url, repo_url, summary=None, archived=None, history=None):
+def _top(text, thumbnail, title):
+    """The title text, in a section with the thumbnail beside it when there is one."""
+    if not thumbnail:
+        return [text]
+    return [{"type": 9, "components": [text],
+             "accessory": {"type": 11, "media": {"url": thumbnail}, "description": title[:1024]}}]
+
+
+def build_item_message(action, item, commit_url, repo_url, summary=None, archived=None, history=None, logo=None):
     """Container > Section(text + thumbnail), link buttons, Posted subtext.
 
     A new article links its Summary (the card) and Archived Copy (the full text), an updated one its card
     diff (Summary Changes). Both link the History.
-    An updated one also lists what changed on the card, when we know."""
+    An updated one also lists what changed on the card, when we know.
+    The thumbnail is the article's image, else the game's logo."""
     title = _trim(item["title"], 256)
     text = _text(_trim(f"## {title}\n{_trim(item['summary'], 600)}", 3000))
 
     updated = action == "updated"
     before = item.get("previous_image") if updated and "image" in item.get("changed", []) else ""
-    if item["image"] and not before:
-        inner = [{"type": 9, "components": [text],
-                  "accessory": {"type": 11, "media": {"url": item["image"]}, "description": title[:1024]}}]
-    else:
-        inner = [text]
+    # With a Before / After pair the new image would only repeat, so the game's logo goes there instead.
+    inner = _top(text, logo if before else item["image"] or logo, title)
     if updated and (block := _diff_block(_card_diff_lines(item))):
         inner.append(block)
     if before and item["image"]:
@@ -138,16 +150,13 @@ def build_item_message(action, item, commit_url, repo_url, summary=None, archive
     return message
 
 
-def build_edit_message(change, repo_url, source_id, commit_url):
-    """An article whose text was edited: title, summary, thumbnail, the line counts, and
-    Read Article / Article Changes / History buttons. It looks like an update and has the same colour."""
+def build_edit_message(change, repo_url, source_id, commit_url, logo=None):
+    """An article whose text was edited: title, summary, thumbnail (the article's image, else the game's
+    logo), the line counts, and Read Article / Article Changes / History buttons. It looks like an update
+    and has the same colour."""
     title = _trim(change["title"], 256)
     text = _text(_trim(f"## {title}\n{_trim(change.get('summary', ''), 600)}".rstrip(), 3000))
-    if change.get("image"):
-        inner = [{"type": 9, "components": [text],
-                  "accessory": {"type": 11, "media": {"url": change["image"]}, "description": title[:1024]}}]
-    else:
-        inner = [text]
+    inner = _top(text, change.get("image") or logo, title)
     if block := _diff_block(_line_count_lines(change)):
         inner.append(block)
     buttons = [_link_button(label, url)
@@ -174,7 +183,7 @@ def build_alert_message(name, alert, run_url, what="source"):
         desc = f"Back to normal (was failing since {_discord_time(alert['since'], relative_only=True)})."
     return {"flags": IS_COMPONENTS_V2, "components": [{
         "type": 17, "accent_color": COLORS[alert["kind"]],
-        "components": [_text(_trim(f"## {title}\n{desc}", 3000))]}]}
+        "components": [_with_logo(_trim(f"## {title}\n{desc}", 3000))]}]}
 
 
 def _log_entry(name, entry, repo_url, recovered_since):
@@ -254,7 +263,7 @@ def _log_container(heading, blocks, total, run_url, run_label):
         more = len(blocks) - len(shown)
         shown.append(f"-# …and {more} more source{'s' if more != 1 else ''}")
     now = _discord_time(datetime.now(timezone.utc).isoformat())
-    inner = [_text(f"## {heading}\n-# {now} · {len(blocks)} of {total} sources changed"),
+    inner = [_with_logo(f"## {heading}\n-# {now} · {len(blocks)} of {total} sources changed"),
              DIVIDER, _text("\n\n".join(shown))]
     if total > len(blocks):
         inner += [DIVIDER, _text(f"-# Unchanged: {total - len(blocks)} source{'s' if total - len(blocks) != 1 else ''}")]
@@ -322,8 +331,10 @@ def _without_ids(node):
 
 
 def _heading(container):
-    first = next((c for c in container.get("components", []) if c.get("type") == 10), None)
-    return first["content"].split("\n")[0] if first else None
+    first = container.get("components", [None])[0]
+    if first and first.get("type") == 9:  # the heading sits in a section, beside the logo
+        first = first["components"][0]
+    return first["content"].split("\n")[0] if first and first.get("type") == 10 else None
 
 
 def _text_length(node):
