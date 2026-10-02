@@ -62,10 +62,10 @@ Discord posts have these buttons:
 | Post | Buttons |
 | --- | --- |
 | New article (green) | Read Article, Battle.net Shop, Preview, History |
-| Card updated (orange) | Read Article, Battle.net Shop, View Changes, History |
-| Article text edited (orange) | Read Article, Text Changes, History |
+| Card updated (orange) | Read Article, Battle.net Shop, Summary Changes, History |
+| Article text edited (orange) | Read Article, Article Changes, History |
 
-Preview shows the saved title, summary and thumbnail. View Changes and Text Changes show what changed, and History lists every saved version.
+Preview shows the saved title, summary and thumbnail. Summary Changes and Article Changes show what changed, and History lists every saved version.
 
 Both kinds of update look the same, with a diff block saying what changed: the old and new title and whether the summary or image changed for a card, or how many lines were added, changed and removed for the article text.
 

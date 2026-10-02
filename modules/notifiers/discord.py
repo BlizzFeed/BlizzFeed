@@ -94,7 +94,7 @@ def _line_count_lines(change):
 def build_item_message(action, item, commit_url, repo_url, preview=None, history=None):
     """Container > Section(text + thumbnail), link buttons, Posted subtext.
 
-    A new article links its Preview, an updated one its card diff (View Changes). Both link the History.
+    A new article links its Preview, an updated one its card diff (Summary Changes). Both link the History.
     An updated one also lists what changed on the card, when we know."""
     title = _trim(item["title"], 256)
     text = _text(_trim(f"## {title}\n{_trim(item['summary'], 600)}", 3000))
@@ -116,7 +116,7 @@ def build_item_message(action, item, commit_url, repo_url, preview=None, history
     buttons = [_link_button(label, url)
                for label, url in (("Read Article", item["url"]),
                                   ("Battle.net Shop", item.get("shop_url")),
-                                  ("View Changes", commit_url) if updated else ("Preview", preview),
+                                  ("Summary Changes", commit_url) if updated else ("Preview", preview),
                                   ("History", history)) if url]
     if buttons:
         inner += [DIVIDER, {"type": 1, "id": BUTTONS_ID, "components": buttons}]
@@ -133,7 +133,7 @@ def build_item_message(action, item, commit_url, repo_url, preview=None, history
 
 def build_edit_message(change, repo_url, source_id, commit_url):
     """An article whose text was edited: title, summary, thumbnail, the line counts, and
-    Read Article / Text Changes / History buttons. It looks like an update and has the same colour."""
+    Read Article / Article Changes / History buttons. It looks like an update and has the same colour."""
     title = _trim(change["title"], 256)
     text = _text(_trim(f"## {title}\n{_trim(change.get('summary', ''), 600)}".rstrip(), 3000))
     if change.get("image"):
@@ -145,7 +145,7 @@ def build_edit_message(change, repo_url, source_id, commit_url):
         inner.append(block)
     buttons = [_link_button(label, url)
                for label, url in (("Read Article", change.get("url")),
-                                  ("Text Changes", commit_url),
+                                  ("Article Changes", commit_url),
                                   ("History", history_url(repo_url, source_id, change["id"]))) if url]
     if buttons:
         inner += [DIVIDER, {"type": 1, "id": BUTTONS_ID, "components": buttons}]

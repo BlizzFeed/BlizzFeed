@@ -61,12 +61,12 @@ def test_new_article_buttons():
 def test_updated_article_buttons():
     assert buttons(item_message("updated")) == {
         "Read Article": ITEM["url"], "Battle.net Shop": ITEM["shop_url"],
-        "View Changes": f"{REPO}/commit/dat", "History": f"{REPO}/commits/archive/wow-news/42.md"}
+        "Summary Changes": f"{REPO}/commit/dat", "History": f"{REPO}/commits/archive/wow-news/42.md"}
 
 
 def test_edit_message():
     message = discord.build_edit_message(CHANGE, REPO, "wow-news", f"{REPO}/commit/abc123")
-    assert buttons(message) == {"Read Article": ITEM["url"], "Text Changes": f"{REPO}/commit/abc123",
+    assert buttons(message) == {"Read Article": ITEM["url"], "Article Changes": f"{REPO}/commit/abc123",
                                 "History": f"{REPO}/commits/archive/wow-news/42.md"}
     assert "+ 1 line added\n~ 2 lines changed\n- 3 lines removed" in texts(message)
     assert "allowed_mentions" not in message
@@ -103,7 +103,7 @@ def test_updated_card_lists_what_changed():
 
 def test_edit_message_without_image():
     message = discord.build_edit_message({**CHANGE, "image": ""}, REPO, "wow-news", None)
-    assert "Text Changes" not in buttons(message)
+    assert "Article Changes" not in buttons(message)
 
 
 def diff(articles, alerts=()):
