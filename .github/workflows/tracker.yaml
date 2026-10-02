@@ -102,6 +102,19 @@ jobs:
             echo "No changes, no archive run needed."
           fi
 
+      # Tells healthchecks.io a run got all the way through, so an outside check alerts when runs stop
+      # finishing (Actions down, or every run failing). Best effort: it never fails the run.
+      - name: Heartbeat
+        continue-on-error: true
+        env:
+          HEARTBEAT_URL: ${{ secrets.TRACKER_HEARTBEAT_URL }}
+        run: |
+          if [ -n "$HEARTBEAT_URL" ]; then
+            curl -fsS -m 10 --retry 2 -o /dev/null "$HEARTBEAT_URL" || echo "Heartbeat ping failed."
+          else
+            echo "TRACKER_HEARTBEAT_URL isn't set, no heartbeat."
+          fi
+
       # If Discord failed after the commit landed, keep the diff so the alert can be replayed by hand
       # (download it and run main.py --notify). Nothing replays it automatically.
       - name: Keep diff on failure
