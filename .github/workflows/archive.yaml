@@ -8,6 +8,15 @@ on:
         description: The tracker run's log post, which this run adds its summary to
         required: false
         type: string
+      backfill:
+        description: Save articles never archived before, newest first, up to the run limit. Run again for more.
+        required: false
+        type: boolean
+        default: false
+      source:
+        description: Only this source id (e.g. wow-news). Empty for all.
+        required: false
+        type: string
 
 # Its own group: sharing the tracker's would let each cancel the other's queued run.
 # A queued run replaced by a newer dispatch loses nothing, as every run does the same work.
@@ -62,7 +71,13 @@ jobs:
           DATA_DIR: data
           ARCHIVE_DIR: archive
           ARCHIVE_DIFF_FILE: archive-diff.json
-        run: python code/archive.py --fetch
+          BACKFILL: ${{ inputs.backfill }}
+          BACKFILL_SOURCE: ${{ inputs.source }}
+        run: |
+          args=()
+          if [ "$BACKFILL" = "true" ]; then args+=(--backfill); fi
+          if [ -n "$BACKFILL_SOURCE" ]; then args+=(--source "$BACKFILL_SOURCE"); fi
+          python code/archive.py --fetch "${args[@]}"
 
       # Notify only runs if this succeeded, so a post never links an unpushed commit.
       - name: Commit and push

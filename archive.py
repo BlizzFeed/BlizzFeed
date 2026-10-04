@@ -58,27 +58,38 @@ def archive_one(source, item, index, cfg, reformat):
     return entry
 
 
-def fetch():
+def fetch(backfill=False, only_source=None):
+    """backfill: only articles the archive has never seen, and stop at the first failed fetch."""
     cfg = load_archive_config(SOURCES_FILE)
     now = datetime.now(timezone.utc)
     archive_state = archiver.load_archive_state(ARCHIVE_DIR)
     # A new converter version re-checks the whole window at once, so no old-format file is left to
     # show up as an edit later.
-    reformat = archive_state.get("converter") != archiver.CONVERTER_VERSION
-    sweep = reformat or archiver.sweep_due(archive_state, cfg["sweep_minutes"], now)
+    reformat = not backfill and archive_state.get("converter") != archiver.CONVERTER_VERSION
+    sweep = not backfill and (reformat or archiver.sweep_due(archive_state, cfg["sweep_minutes"], now))
 
+    sources = load_sources(SOURCES_FILE)
+    if only_source:
+        sources = [s for s in sources if s.id == only_source]
+        if not sources:
+            sys.exit(f"Unknown source: {only_source}")
     indexes, candidates = {}, []
-    for source in load_sources(SOURCES_FILE):
+    for source in sources:
         items = differ.load_state(DATA_DIR, source.id)
         if items is None:
             continue
         indexes[source.id] = archiver.load_index(ARCHIVE_DIR, source.id)
-        candidates += [(source, item, reason)
-                       for item, reason in archiver.plan(items, indexes[source.id], now, cfg, sweep)]
+        if backfill:
+            candidates += [(source, item, "backfill") for item in archiver.plan_backfill(items, indexes[source.id])]
+        else:
+            candidates += [(source, item, reason)
+                           for item, reason in archiver.plan(items, indexes[source.id], now, cfg, sweep)]
     selected = archiver.select(candidates, cfg["max_fetches"])
     logger.info(f"{len(candidates)} article(s) due, fetching {len(selected)}"
                 f"{' (window sweep included)' if sweep else ''}")
 
+    # Old pages can have other markup, so in a backfill an unreadable body is skipped like a 404/410.
+    skip = (article.ArticleGone, article.BodyNotFound) if backfill else article.ArticleGone
     diff = {"sweep": sweep, "sources": {}, "alerts": []}
     for n, (source, item, reason) in enumerate(selected):
         if n:
@@ -86,13 +97,15 @@ def fetch():
         entry = diff["sources"].setdefault(source.id, {"articles": [], "gone": [], "failed": 0})
         try:
             change = archive_one(source, item, indexes[source.id], cfg, reformat)
-        except article.ArticleGone:
-            logger.warning(f"[{source.id}] {item['id']} is gone (404/410), keeping the saved file")
+        except skip as e:
+            logger.warning(f"[{source.id}] {item['id']} can't be archived ({type(e).__name__}), skipping it")
             entry["gone"].append(item["id"])
         except Exception as e:
             logger.error(f"[{source.id}] {item['id']} failed: {e}")
             entry["failed"] += 1
             entry.setdefault("error", str(e))
+            if backfill:
+                break
             continue  # left out of the index, so the next run tries it again
         else:
             if change:
@@ -112,7 +125,7 @@ def fetch():
     if sweep:
         archive_state["last_sweep"] = archiver.now_iso(now)
     # Only once everything due was fetched; otherwise the next run carries on reformatting.
-    if len(selected) == len(candidates) and not any(e["failed"] for e in diff["sources"].values()):
+    if not backfill and len(selected) == len(candidates) and not any(e["failed"] for e in diff["sources"].values()):
         archive_state["converter"] = archiver.CONVERTER_VERSION
     archiver.save_archive_state(ARCHIVE_DIR, archive_state)
     health.save(ARCHIVE_DIR, health_state)
@@ -159,11 +172,13 @@ def main():
     parser.add_argument("--commit", action="store_true", help="commit per article, push, record SHAs in archive-diff.json")
     parser.add_argument("--outbox", action="store_true", help="write outbox.json from archive-diff.json, for the bot")
     parser.add_argument("--notify", action="store_true", help="post the run summary to the log channel")
+    parser.add_argument("--backfill", action="store_true", help="with --fetch: only articles never archived, newest first")
+    parser.add_argument("--source", help="with --fetch: only this source id")
     args = parser.parse_args()
     if not (args.fetch or args.commit or args.outbox or args.notify):
         parser.print_help()
     if args.fetch:
-        fetch()
+        fetch(args.backfill, args.source)
     if args.commit:
         commit()
     if args.outbox:

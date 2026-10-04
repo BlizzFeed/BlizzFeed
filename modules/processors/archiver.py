@@ -128,6 +128,11 @@ def plan(items, index, now, cfg, sweep):
     return chosen
 
 
+def plan_backfill(items, index):
+    """Articles of one source not in the archive yet, whatever their age."""
+    return [i for i in items if i["id"] not in index]
+
+
 def select(candidates, max_fetches):
     """Cap the run's (source, item, reason) candidates: changed before sweep, newest first within each.
 
