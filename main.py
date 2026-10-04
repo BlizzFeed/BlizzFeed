@@ -15,6 +15,7 @@ from modules.providers import html as html_provider, json_api as json_provider
 
 PROVIDERS = {"html": html_provider.fetch, "json": json_provider.fetch}
 MAX_FETCH_ATTEMPTS = 3
+MAX_DEEPEN_PAGES = 20
 FETCH_WORKERS = 4  # sources fetched at once; kept small to not get in trouble with Blizzard
 
 DATA_DIR = os.environ.get("OUTPUT_DIR", "data")
@@ -99,6 +100,25 @@ def scrape():
     write_diff(diff)
 
 
+def deepen(source_id, from_page, pages):
+    """Store older articles from deeper feed pages, announcing nothing. One pass, no retries."""
+    if from_page < 0 or not 1 <= pages <= MAX_DEEPEN_PAGES:
+        sys.exit(f"--from-page must be 0 or more, and --pages 1 to {MAX_DEEPEN_PAGES}")
+    source = next((s for s in load_sources(SOURCES_FILE) if s.id == source_id), None)
+    if source is None:
+        sys.exit(f"Unknown source: {source_id}")
+    old_state = differ.load_state(DATA_DIR, source.id)
+    if old_state is None:
+        sys.exit(f"{source.id} has no saved state yet; let the tracker run first")
+    known = {i["id"] for i in old_state}
+    older = [i for i in json_provider.fetch(source, start=from_page, pages=pages) if i["id"] not in known]
+    differ.write_source(DATA_DIR, source.id, differ.merge(old_state, older), older)
+    # A baseline, so nothing is announced.
+    write_diff({"sources": {source.id: {"baseline": True, "items": len(older), "added": [], "updated": [],
+                                        "quiet": 0}}, "alerts": []})
+    logger.success(f"[{source.id}] {len(older)} older items stored. Next: --from-page {from_page + pages}")
+
+
 def commit():
     """One commit per changed source, then a single push. Records each SHA in diff.json."""
     diff = read_diff()
@@ -137,14 +157,21 @@ def main():
                format="<green>{time:YYYY-MM-DD HH:mm:ss}</green> | <level>{level: <8}</level> | <cyan>{message}</cyan>")
     parser = argparse.ArgumentParser(description="Page tracker: scrape -> commit -> notify")
     parser.add_argument("--scrape", action="store_true", help="fetch sources, write files + diff.json")
+    parser.add_argument("--deepen", action="store_true",
+                        help="store older articles from deeper feed pages, announcing nothing")
+    parser.add_argument("--source", help="with --deepen: the source id")
+    parser.add_argument("--from-page", type=int, default=10, help="with --deepen: first page to read")
+    parser.add_argument("--pages", type=int, default=10, help="with --deepen: how many pages to read")
     parser.add_argument("--commit", action="store_true", help="commit per source, push, record SHAs in diff.json")
     parser.add_argument("--outbox", action="store_true", help="write outbox.json from diff.json, for the bot")
     parser.add_argument("--notify", action="store_true", help="post the run summary to the log channel")
     args = parser.parse_args()
-    if not (args.scrape or args.commit or args.outbox or args.notify):
+    if not (args.scrape or args.deepen or args.commit or args.outbox or args.notify):
         parser.print_help()
     if args.scrape:
         scrape()
+    if args.deepen:
+        deepen(args.source, args.from_page, args.pages)
     if args.commit:
         commit()
     if args.outbox:

@@ -4,6 +4,26 @@ on:
   # Sent every minute by an external trigger (dispatch.py).
   # There is no cron here, as Github can't promise exact runs.
   workflow_dispatch:
+    inputs:
+      deepen:
+        description: Store older articles from deeper feed pages instead of a normal run. Announces nothing.
+        required: false
+        type: boolean
+        default: false
+      source:
+        description: With deepen, the source id (e.g. wow-news).
+        required: false
+        type: string
+      from_page:
+        description: With deepen, the first page to read. A first run read pages 0 to 9.
+        required: false
+        type: string
+        default: "10"
+      pages:
+        description: With deepen, how many pages to read (1 to 20).
+        required: false
+        type: string
+        default: "10"
   push:
     branches: [source]
 
@@ -50,7 +70,16 @@ jobs:
         env:
           OUTPUT_DIR: data
           DIFF_FILE: diff.json
-        run: python code/main.py --scrape
+          DEEPEN: ${{ inputs.deepen }}
+          DEEPEN_SOURCE: ${{ inputs.source }}
+          DEEPEN_FROM_PAGE: ${{ inputs.from_page }}
+          DEEPEN_PAGES: ${{ inputs.pages }}
+        run: |
+          if [ "$DEEPEN" = "true" ]; then
+            python code/main.py --deepen --source "$DEEPEN_SOURCE" --from-page "$DEEPEN_FROM_PAGE" --pages "$DEEPEN_PAGES"
+          else
+            python code/main.py --scrape
+          fi
 
       # Commits per source and pushes. Notify only runs if this succeeded, so
       # an embed never links a commit that was not pushed.

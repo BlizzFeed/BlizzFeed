@@ -52,22 +52,23 @@ def _entries(source, offset):
     return data
 
 
-def fetch(source, known=None):
+def fetch(source, known=None, start=0, pages=None):
     """known: {id: date} from the saved state, or None on a source's first run.
 
     The feed is sorted newest update first, so once a page ends on an article we
     already have with the same date, everything after it is old and the next page
     is skipped. A normal run is one request; `pages` caps it, `baseline_pages` on a first run.
+    start and pages pick the range of pages instead (main.deepen).
     """
-    pages = source.raw.get("pages", 1) if known is not None else source.raw.get("baseline_pages", 1)
+    pages = pages or (source.raw.get("pages", 1) if known is not None else source.raw.get("baseline_pages", 1))
     page_size = source.raw.get("page_size", 0)
     fields = source.raw["fields"]
     where = source.raw.get("where", {})
     url_template = source.raw.get("url_template")
     shop_path = source.raw.get("shop_path")
     items, seen = [], set()
-    for page in range(pages):
-        if page:
+    for page in range(start, start + pages):
+        if page > start:
             time.sleep(PAGE_DELAY_SECONDS)
         entries = _entries(source, page * page_size)
         for entry in entries:
