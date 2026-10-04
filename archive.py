@@ -3,6 +3,7 @@ import json
 import os
 import sys
 import time
+from collections import Counter
 from datetime import datetime, timezone
 from types import SimpleNamespace
 
@@ -112,6 +113,11 @@ def fetch(backfill=False, only_source=None):
                 entry["articles"].append(change)
                 logger.success(f"[{source.id}] {change['kind']}: {item['title']}")
         indexes[source.id][item["id"]] = item["date"]
+
+    if backfill:
+        left = Counter(s.id for s, item, _ in candidates if item["id"] not in indexes[s.id])
+        for source_id, entry in diff["sources"].items():
+            entry["left"] = left[source_id]
 
     health_state = health.load(ARCHIVE_DIR)
     for source_id, entry in diff["sources"].items():
