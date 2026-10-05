@@ -16,7 +16,7 @@
 #   page_size     (json) Articles per page, used to step the offset.
 #   pages         (json) Most pages read on a normal run. Paging stops early once a page
 #                 ends on an article we already have, so a normal run is usually one request.
-#   baseline_pages (json) Pages read on a source's first run, to record older articles too.
+#   baseline_pages (json) Pages read on a source's first run, to record older articles too. A manual deepen run reads further.
 #   where         (json) Only keep articles where each dotted path equals the given value, or one
 #                 of the values when given a list. The news API tags a post with several games,
 #                 so this keeps each post to the one game it's filed under.
@@ -65,7 +65,7 @@ archive:
   fetch_delay_seconds: 2
   body_selector: "article.Content section.blog"
   failures_before_alert: 3   # consecutive failed archive runs per source before a log alert
-  baseline_days: 30       # a source's first archive run saves articles updated this recently (no posts)
+  baseline_days: 30       # a source's first archive run saves articles updated this recently (no posts). Older ones: backfill
 
 # Shared settings for news.blizzard.com, reused below with "<<: *blizzard-news-api".
 # The feed is sorted by last update, newest first, 15 articles per page.

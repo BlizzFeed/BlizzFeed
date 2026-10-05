@@ -53,6 +53,8 @@ The feeds only carry the short version of each article: title, summary and thumb
 - An article is saved again whenever its update date changes, however old it is. Once an hour, articles from the last 7 days are also re-checked in case an edit didn't change the date. The log channel notes when that happens.
 - The first run for a source saves the last 30 days of articles without posting. The archive reads the article pages, not the feeds, at most 60 per run, and continues on the next run.
 - Older articles can be added by hand: run `archive.yaml` with `backfill` ticked (optionally with a `source` id). It saves up to 60 articles the archive hasn't seen, newest first, from those the feeds already list, and posts nothing. Run it again for the next 60. It stops at the first failed fetch, and skips pages that are gone or have no readable body.
+- The feeds list only the newest articles (a first run reads 10 pages of 15). To go further back, run `tracker.yaml` with `deepen` ticked, a `source`, a `from_page` (10 first, then 20, and so on) and `pages` (up to 20). It stores the older articles it finds on the `data` branch without announcing anything, and the archive backfill then saves their text. It reads feed pages one request at a time, and any failure ends the run.
+- The log post of a backfill run lists counts per source and how many articles are left, not each article.
 - When the text of an article changes, an "Updated" post (orange) with the number of lines added, changed and removed goes to the bot. Changes to only the title, summary or image are saved without a post, since they're announced already.
 - If the archive keeps failing for a source, the alert goes to `DISCORD_WEBHOOK_LOG` only.
 - The archive runs whenever the tracker finds a change, and once an hour.
@@ -74,8 +76,8 @@ Both kinds of update look the same, with a diff block saying what changed: the o
 
 ## Files
 - `sources.yaml`: the feeds to watch, and the archive settings. Add an entry here to track another one.
-- `main.py`: the tracker steps (`--scrape`, `--commit`, `--outbox`, `--notify`).
-- `archive.py`: the archive steps (`--fetch`, `--commit`, `--outbox`, `--notify`). `--notify` only posts the run summary to the log channel.
+- `main.py`: the tracker steps (`--scrape`, `--commit`, `--outbox`, `--notify`), and `--deepen`, a manual run that stores older articles.
+- `archive.py`: the archive steps (`--fetch`, `--commit`, `--outbox`, `--notify`). `--notify` only posts the run summary to the log channel. `--fetch --backfill` is the manual backfill.
 - `.github/workflows/tracker.yaml`: the tracker workflow. It runs on a `workflow_dispatch` event, a manual run, or a push to `source`. It has no cron of its own.
 - `.github/workflows/archive.yaml`: the archive workflow. It runs on a `workflow_dispatch` event or a manual run.
 - `logos/`: the BlizzFeed logo, exported at the sizes Discord (server, bot and app images, emoji, sticker) and GitHub (social preview, app logo) use, each with a dark background and a transparent `-nobg` version.
