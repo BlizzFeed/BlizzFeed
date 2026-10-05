@@ -283,12 +283,13 @@ def _archive_log_entry(name, entry, repo_url, recovered_since):
     for change in entry["articles"]:
         counts[change["kind"]] = counts.get(change["kind"], 0) + 1
     parts = [f"{counts[kind]} {ARCHIVE_LABEL[kind]}" for kind in ARCHIVE_LABEL if kind in counts]
-    if "left" in entry:  # a backfill run
+    backfill = "left" in entry  # only a backfill run has it; its article lines would fill the message
+    if backfill:
         parts.append(f"{entry['left']} left to backfill" if entry["left"] else "backfill complete")
     if recovered_since:
         parts.append(f"✅ recovered (was failing since {_discord_time(recovered_since, relative_only=True)})")
     lines = [f"**{name}** · {', '.join(parts)}"]
-    for change in entry["articles"]:
+    for change in [] if backfill else entry["articles"]:
         label = _trim(change["title"], 100).replace("[", "(").replace("]", ")")
         detail = f" +{change['added']} ~{change['changed']} −{change['removed']}" if change["kind"] == "text" else ""
         # Only the window sweep finds these, so they show whether it's worth widening.
