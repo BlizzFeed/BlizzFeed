@@ -12,13 +12,13 @@ Watches the Blizzard news feeds (news.blizzard.com, en-gb) every minute on GitHu
 | Diablo V | `DIABLO5` and `DIABLO` |
 | Diablo IV | `DIABLO4` and `DIABLO` |
 | Diablo Immortal | `DIABLOIMMORTAL` and `DIABLO` |
-| Diablo II Resurrected | `DIABLO2` and `DIABLO` |
+| Diablo II: Resurrected | `DIABLO2` and `DIABLO` |
 | Diablo III | `DIABLO3` and `DIABLO` |
 | Overwatch | `OVERWATCH` |
-| STARCRAFT | `STARCRAFT` |
+| STARCRAFT (2030) | `STARCRAFT` |
 | StarCraft Remastered | `STARCRAFTREMASTERED` |
 | StarCraft II | `STARCRAFT2` |
-| Warcraft III | `WARCRAFT3` |
+| Warcraft 3: Reforged | `WARCRAFT3` |
 | Warcraft Rumble | `WARCRAFTRUMBLE` |
 | Blizzard (BlizzCon, company) | `BLIZZARD` |
 

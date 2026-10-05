@@ -151,7 +151,7 @@ sources:
 
   - <<: *blizzard-news-api
     id: diablo-2-resurrected-news
-    name: Diablo II Resurrected News
+    name: Diablo II: Resurrected News
     logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/games/diablo-2-resurrected.png
     url: https://news.blizzard.com/en-gb/api/feed/diablo-2-resurrected
     channels: [DIABLO2, DIABLO]
@@ -176,7 +176,7 @@ sources:
 
   - <<: *blizzard-news-api
     id: starcraft-news
-    name: STARCRAFT News
+    name: STARCRAFT (2030) News
     logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/games/starcraft.png
     url: https://news.blizzard.com/en-gb/api/feed/polaris
     channels: STARCRAFT
@@ -201,7 +201,7 @@ sources:
 
   - <<: *blizzard-news-api
     id: warcraft-3-news
-    name: Warcraft III News
+    name: Warcraft 3: Reforged News
     logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/games/warcraft-3.png
     url: https://news.blizzard.com/en-gb/api/feed/warcraft-3
     channels: WARCRAFT3
