@@ -37,10 +37,11 @@ defaults:
   failures_before_alert: 12  # consecutive failed runs (about a minute each) before a "source failing" message
 
 # Discord channel IDs the bot posts to, by label and tier: all (new + updated), new, updated.
+# A label shared by several sources (DIABLO) has a name: its display name for the bot; any other label is named after its one source.
 # An empty ID is skipped with a warning.
 channels:
   BLIZZARD:             {all: "1554678793585696768", new: "1555101959097286656", updated: "1555101996950884352"}
-  DIABLO:               {all: "1554678992110362704", new: "1555101960762294343", updated: "1555101998393589820"}
+  DIABLO:               {name: "Diablo (All Games)", all: "1554678992110362704", new: "1555101960762294343", updated: "1555101998393589820"}
   DIABLO2:              {all: "1554679027019681862", new: "1555101963241127987", updated: "1555101999488442418"}
   DIABLO3:              {all: "1554679068740292739", new: "1555101964906528828", updated: "1555102000839139340"}
   DIABLO4:              {all: "1554679084385312778", new: "1555101966051311636", updated: "1555102002587897876"}
@@ -151,7 +152,7 @@ sources:
 
   - <<: *blizzard-news-api
     id: diablo-2-resurrected-news
-    name: Diablo II: Resurrected News
+    name: "Diablo II: Resurrected News"
     logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/games/diablo-2-resurrected.png
     url: https://news.blizzard.com/en-gb/api/feed/diablo-2-resurrected
     channels: [DIABLO2, DIABLO]
@@ -201,7 +202,7 @@ sources:
 
   - <<: *blizzard-news-api
     id: warcraft-3-news
-    name: Warcraft 3: Reforged News
+    name: "Warcraft 3: Reforged News"
     logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/games/warcraft-3.png
     url: https://news.blizzard.com/en-gb/api/feed/warcraft-3
     channels: WARCRAFT3
