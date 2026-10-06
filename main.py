@@ -59,10 +59,11 @@ def fetch_source(source, old_state):
 
 def with_changes(old_state, item):
     """An updated item for diff.json, with the fields that changed and the title and image it had before.
+    awaits_text: the date moved too, so the archive run this one starts re-checks the article text.
     The state file keeps the plain item."""
     prev = next(i for i in old_state if i["id"] == item["id"])
     return {**item, "changed": differ.changed_fields(prev, item), "previous_title": prev["title"],
-            "previous_image": prev.get("image", "")}
+            "previous_image": prev.get("image", ""), "awaits_text": prev["date"] != item["date"]}
 
 
 def scrape():

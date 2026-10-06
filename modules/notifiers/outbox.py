@@ -23,10 +23,13 @@ def _channels(source, kind):
 
 
 def _entries(source, kind, item, message, detected):
-    """One entry per channel."""
-    return [{"channel": channel, "source": source.id, "source_name": source.name, "article": item["id"],
-             "kind": kind, "detected": detected, "title": item["title"], "url": item["url"], "message": message}
-            for channel in _channels(source, kind)]
+    """One entry per channel. awaits_text: the message has the text-check note, which the bot removes when the
+    archive run reports the article checked or edited."""
+    entry = {"source": source.id, "source_name": source.name, "article": item["id"], "kind": kind,
+             "detected": detected, "title": item["title"], "url": item["url"], "message": message}
+    if item.get("awaits_text"):
+        entry["awaits_text"] = True
+    return [{"channel": channel, **entry} for channel in _channels(source, kind)]
 
 
 def _warn_unset(source):
@@ -69,14 +72,24 @@ def build_archive_entries(diff, sources, repo_url, detected):
     return entries
 
 
-def write(path, workflow, entries, run_url):
+def build_archive_checked(diff):
+    """The articles whose text this archive run re-checked without finding an edit, so the bot can remove the
+    text-check note from their updated posts."""
+    return [{"source": source_id, "article": article}
+            for source_id, entry in diff["sources"].items() for article in entry.get("checked", [])]
+
+
+def write(path, workflow, entries, run_url, checked=()):
     """Writes nothing when empty, so no artifact is uploaded."""
-    if not entries:
+    if not entries and not checked:
         logger.info("Nothing for the outbox.")
         return
     run_id = os.environ.get("GITHUB_RUN_ID")
     outbox = {"version": OUTBOX_VERSION, "workflow": workflow, "run_id": int(run_id) if run_id else None,
               "run_url": run_url, "created": now_iso(), "entries": entries}
+    if checked:
+        outbox["checked"] = list(checked)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(outbox, f, indent=2, ensure_ascii=False)
-    logger.success(f"Outbox: {len(entries)} entr{'y' if len(entries) == 1 else 'ies'}.")
+    logger.success(f"Outbox: {len(entries)} entr{'y' if len(entries) == 1 else 'ies'}"
+                   f"{f', {len(checked)} checked' if checked else ''}.")

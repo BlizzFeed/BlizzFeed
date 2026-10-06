@@ -19,7 +19,8 @@ ARCHIVE_LOG_HEADING = "Archive changes"
 ARCHIVE_SECTION = "### 📦 Archive"
 LOG_TOTAL_TEXT = 4000  # Discord's limit for the text of one message
 # Component ids the bot looks for when it merges two posts (same numbers in the bot's merge.py)
-DIFF_ID, BUTTONS_ID, FOOTER_ID = 100, 101, 102
+DIFF_ID, BUTTONS_ID, FOOTER_ID, NOTE_ID = 100, 101, 102, 103
+TEXT_CHECK_NOTE = "-# ⏳ Checking the article text for changes…"
 
 
 def _trim(text, limit):
@@ -115,7 +116,8 @@ def build_item_message(action, item, commit_url, repo_url, summary=None, archive
 
     A new article links its Summary (the card) and Archived Copy (the full text), an updated one its card
     diff (Summary Changes). Both link the History.
-    An updated one also lists what changed on the card, when we know.
+    An updated one also lists what changed on the card, when we know, and a note under the footer while the
+    archive re-checks the article text (the bot removes it once that is done).
     The thumbnail is the article's image, else the game's logo."""
     title = _trim(item["title"], 256)
     text = _text(_trim(f"## {title}\n{_trim(item['summary'], 600)}", 3000))
@@ -144,6 +146,8 @@ def build_item_message(action, item, commit_url, repo_url, summary=None, archive
     posted = f"{'Updated' if updated else 'Posted'} {_discord_time(when)} · " if when else ""
     site = f"[BlizzFeed]({repo_url})" if repo_url else "BlizzFeed"
     inner += [DIVIDER, _text(f"-# {posted}{site}", FOOTER_ID)]
+    if updated and item.get("awaits_text"):
+        inner.append(_text(TEXT_CHECK_NOTE, NOTE_ID))
 
     message = {"flags": IS_COMPONENTS_V2,
                "components": [{"type": 17, "accent_color": COLORS[action], "components": inner}]}

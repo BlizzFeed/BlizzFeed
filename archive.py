@@ -97,12 +97,13 @@ def fetch(backfill=False, only_source=None):
     for n, (source, item, reason) in enumerate(selected):
         if n:
             time.sleep(delay)
-        entry = diff["sources"].setdefault(source.id, {"articles": [], "gone": [], "failed": 0})
+        entry = diff["sources"].setdefault(source.id, {"articles": [], "gone": [], "failed": 0, "checked": []})
         try:
             change = archive_one(source, item, indexes[source.id], cfg, reformat)
         except skip as e:
             logger.warning(f"[{source.id}] {item['id']} can't be archived ({type(e).__name__}), skipping it")
             entry["gone"].append(item["id"])
+            change = None
         except Exception as e:
             logger.error(f"[{source.id}] {item['id']} failed: {e}")
             entry["failed"] += 1
@@ -114,6 +115,9 @@ def fetch(backfill=False, only_source=None):
             if change:
                 entry["articles"].append(change)
                 logger.success(f"[{source.id}] {change['kind']}: {item['title']}")
+        # A date bump the tracker may have posted with the text-check note, and no text edit to follow it.
+        if reason == "changed" and not (change and change["kind"] == "text"):
+            entry["checked"].append(item["id"])
         indexes[source.id][item["id"]] = item["date"]
 
     if backfill:
@@ -158,8 +162,9 @@ def write_outbox():
     sources = {s.id: s for s in load_sources(SOURCES_FILE)}
     repo = os.environ.get("GITHUB_REPOSITORY")
     repo_url = f"https://github.com/{repo}" if repo else None
-    entries = outbox.build_archive_entries(read_diff(), sources, repo_url, outbox.now_iso())
-    outbox.write(OUTBOX_FILE, "archive", entries, os.environ.get("ACTIONS_RUN_URL"))
+    diff = read_diff()
+    entries = outbox.build_archive_entries(diff, sources, repo_url, outbox.now_iso())
+    outbox.write(OUTBOX_FILE, "archive", entries, os.environ.get("ACTIONS_RUN_URL"), outbox.build_archive_checked(diff))
 
 
 def notify():
