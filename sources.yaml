@@ -64,6 +64,8 @@ archive:
   sweep_minutes: 55       # that re-check runs at most this often
   max_fetches: 60         # article page fetches per run; the rest carry over to the next run
   fetch_delay_seconds: 2
+  backfill_max_fetches: 150       # the same two for a manual backfill run: bigger batches, so fewer runs to start.
+  backfill_delay_seconds: 1       # No 429s seen at 2 s; go back to 2 if one shows up
   body_selector: "article.Content section.blog"
   failures_before_alert: 3   # consecutive failed archive runs per source before a log alert
   baseline_days: 30       # a source's first archive run saves articles updated this recently (no posts). Older ones: backfill

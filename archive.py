@@ -85,7 +85,9 @@ def fetch(backfill=False, only_source=None):
         else:
             candidates += [(source, item, reason)
                            for item, reason in archiver.plan(items, indexes[source.id], now, cfg, sweep)]
-    selected = archiver.select(candidates, cfg["max_fetches"])
+    limit, delay = ((cfg["backfill_max_fetches"], cfg["backfill_delay_seconds"]) if backfill
+                    else (cfg["max_fetches"], cfg["fetch_delay_seconds"]))
+    selected = archiver.select(candidates, limit)
     logger.info(f"{len(candidates)} article(s) due, fetching {len(selected)}"
                 f"{' (window sweep included)' if sweep else ''}")
 
@@ -94,7 +96,7 @@ def fetch(backfill=False, only_source=None):
     diff = {"sweep": sweep, "sources": {}, "alerts": []}
     for n, (source, item, reason) in enumerate(selected):
         if n:
-            time.sleep(cfg["fetch_delay_seconds"])
+            time.sleep(delay)
         entry = diff["sources"].setdefault(source.id, {"articles": [], "gone": [], "failed": 0})
         try:
             change = archive_one(source, item, indexes[source.id], cfg, reformat)

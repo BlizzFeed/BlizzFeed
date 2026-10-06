@@ -50,6 +50,8 @@ ARCHIVE_DEFAULTS = {
     "sweep_minutes": 55,
     "max_fetches": 60,
     "fetch_delay_seconds": 2,
+    "backfill_max_fetches": 150,
+    "backfill_delay_seconds": 1,
     "body_selector": "article.Content section.blog",
     "failures_before_alert": 3,
     "baseline_days": 30,
