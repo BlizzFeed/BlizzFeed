@@ -1838,5 +1838,13 @@
     "date": "2026-09-30T17:14:33Z",
     "summary": "New patch is released in PTR, which rolls back the balance changes made in 5.0.16 while retaining the updated map pool and bugfixes.",
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ga/GAJZKEC09RPX1554829654442.jpg"
+  },
+  {
+    "id": "24309308",
+    "title": "StarCraft II 5.0.17 Patch Notes",
+    "url": "https://news.blizzard.com/en-gb/article/24309308/starcraft-ii-5-0-17-patch-notes",
+    "date": "2026-10-07T20:05:34Z",
+    "summary": "Based on feedback, we have rolled back most balance changes to the live release of StarCraft II from patch 5.0.16 to 5.0.15.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ga/GAJZKEC09RPX1554829654442.jpg"
   }
 ]
