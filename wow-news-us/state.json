@@ -24,12 +24,36 @@
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/m9/M9HLB9LDRTR01474908433487.jpg"
   },
   {
+    "id": "20307313",
+    "title": "Weekly Bonus Event: World Quests",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/20307313/weekly-bonus-event-world-quests",
+    "date": "2018-07-03T16:00:00Z",
+    "summary": "This week’s Bonus Event is underway with a focus on World Quests.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/nz/NZDT89KDZYJZ1475553553416.jpg"
+  },
+  {
     "id": "20324475",
     "title": "Weekly Bonus Event: Battlegrounds",
     "url": "https://worldofwarcraft.blizzard.com/en-us/news/20324475/weekly-bonus-event-battlegrounds",
     "date": "2022-06-07T16:30:00Z",
     "summary": "This week’s Battleground Bonus Event is underway.",
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/37/37SKAIACMELY1636766925562.jpg"
+  },
+  {
+    "id": "20344423",
+    "title": "Weekly Bonus Event: Legion Dungeons",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/20344423/weekly-bonus-event-legion-dungeons",
+    "date": "2018-07-24T16:30:00Z",
+    "summary": "This week’s Bonus Event is underway, and we’re setting our sights on Legion Dungeons.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/lh/LHT2MJ96KYPN1477353648398.jpg"
+  },
+  {
+    "id": "20351398",
+    "title": "The Pet Battle Bonus Event is Here!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/20351398/the-pet-battle-bonus-event-is-here",
+    "date": "2018-07-31T16:00:00Z",
+    "summary": "This week’s Bonus Event is underway and we’re bringing out our best companions for fierce battle.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/fs/FSLOXZ18Y0HL1459880062933.jpg"
   },
   {
     "id": "20391096",
@@ -64,6 +88,14 @@
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/0b/0B32STNTHFAB1671497596872.jpg"
   },
   {
+    "id": "21365424",
+    "title": "Hotfixes: June 26",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21365424/hotfixes-june-26",
+    "date": "2018-06-26T19:32:19Z",
+    "summary": "​Here you'll find a list of hotfixes that address various issues related to World of Warcraft: Legion.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/mv/MVKK5EJOGPU61470421579108.jpg"
+  },
+  {
     "id": "21636890",
     "title": "Noblegarden Springs to Life This Week!",
     "url": "https://worldofwarcraft.blizzard.com/en-us/news/21636890/noblegarden-springs-to-life-this-week",
@@ -72,12 +104,484 @@
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ek/EKGNP0SSCOXJ1492180562338.jpg"
   },
   {
+    "id": "21867379",
+    "title": "The Move Run North America",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21867379/the-move-run-north-america",
+    "date": "2018-06-19T18:01:00Z",
+    "summary": "The field is set for the Summer Finals. Read on to see who made the cut from North America.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/20/205TD0YPVZOX1529358072322.jpg"
+  },
+  {
+    "id": "21881585",
+    "title": "Battle for Azeroth Preview: “Before the Storm” Main Title Music",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21881585/battle-for-azeroth-preview-before-the-storm-main-title-music",
+    "date": "2018-06-15T00:00:00Z",
+    "summary": "With every expansion, our musical mages reach deep down into their souls and summon a veritable tableau of sound to accompany your next adventure. We are pleased to share with you the new main title for Battle for Azeroth, “Before the Storm.”",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/pp/PPPV324HH2ZP1528986911521.jpg"
+  },
+  {
+    "id": "21881586",
+    "title": "Tune In June 16–17 for the WoW Arena World Championship: North American Qualifier Cup 3",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21881586/tune-in-june-1617-for-the-wow-arena-world-championship-north-american-qualifier-cup-3",
+    "date": "2018-06-14T21:00:00Z",
+    "summary": "The WoW Arena World Championship Summer Season qualifier cups conclude this weekend with the North American Cup Qualifier #3.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/su/SUBTM8VGVPZ91528219470713.jpg"
+  },
+  {
+    "id": "21881587",
+    "title": "Dev Watercooler: World of Warcraft Classic",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21881587/dev-watercooler-world-of-warcraft-classic",
+    "date": "2018-06-15T19:00:00Z",
+    "summary": "Take a look behind the scenes as the World of Warcraft Classic team give us an update on how they are recreating WoW history. In this Dev Watercooler, the team share core decisions, current thinking, and some of the technical challenges and solutions they’re working on.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ym/YM5OO0A50O6H1529015384656.jpg"
+  },
+  {
+    "id": "21881588",
+    "title": "Battle for Azeroth Preview: PvP Rating Updates",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21881588/battle-for-azeroth-preview-pvp-rating-updates",
+    "date": "2018-06-21T21:00:00Z",
+    "summary": "With the upcoming Battle for Azeroth expansion, we’re overhauling the game’s PvP progression and reward systems. Read on to learn more about the upcoming Rated PvP updates.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/d4/D4I4BE45ROGK1529515728985.jpg"
+  },
+  {
+    "id": "21881589",
+    "title": "Play With Fire During the Midsummer Fire Festival – June 21–July 5",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21881589/play-with-fire-during-the-midsummer-fire-festival-june-21july-5",
+    "date": "2018-06-21T17:00:00Z",
+    "summary": "It’s time to light your (bon) fire during Azeroth’s hottest season of the year, the Midsummer Fire Festival!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ke/KEBLX1ATXDZL1498065728287.jpg"
+  },
+  {
+    "id": "21881590",
+    "title": "Watch the Mythic Dungeon Invitational Global Finals Take Place June 22–24",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21881590/watch-the-mythic-dungeon-invitational-global-finals-take-place-june-2224",
+    "date": "2018-06-21T19:00:00Z",
+    "summary": "The top two teams from the Americas, Europe, Asia-Pacific, and China will take the stage at the Mythic Dungeon Invitational Global Finals this weekend beginning Friday, June 22!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/UUL49DREHIUV1527721456748.jpg"
+  },
+  {
+    "id": "21900197",
+    "title": "Upcoming Australian Dollar (AUD) Price Changes for Select World of Warcraft Services",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21900197/upcoming-australian-dollar-aud-price-changes-for-select-world-of-warcraft-services",
+    "date": "2018-06-21T15:00:00Z",
+    "summary": "We’re making some adjustments to Australian Dollar (AUD) pricing for select optional World of Warcraft services. Read on to learn more.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/di/DILTN5MM6PIG1527786985289.jpg"
+  },
+  {
+    "id": "21900198",
+    "title": "Get 25% Off Select Game Services During Welcome Back Weekend",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21900198/get-25-off-select-game-services-during-welcome-back-weekend",
+    "date": "2018-06-21T19:01:00Z",
+    "summary": "This weekend only, enjoy 25% off select game services such as Appearance Changes, Character Transfers, and Faction Changes. We’re also offering returning World of Warcraft players access to all their characters—without a subscription—until June 24 so you can prepare for Battle for Azeroth™ together. Call your friends, rally your comrades, and get everyone back in the fight!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/r9/R9Y8OI41SOEC1529519699693.jpg"
+  },
+  {
+    "id": "21901628",
+    "title": "Mythic Dungeon Invitational Global Finalists, Explained",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21901628/mythic-dungeon-invitational-global-finalists-explained",
+    "date": "2018-06-22T01:00:00Z",
+    "summary": "With the regional group stage behind them, the top eight teams meet in Columbus, Ohio for the first-ever live MDI event.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/WX9NQG92C7E21527721456603.jpg"
+  },
+  {
+    "id": "21901726",
+    "title": "The WoW Mobile Armory App Support Ending",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21901726/the-wow-mobile-armory-app-support-ending",
+    "date": "2018-06-22T15:00:00Z",
+    "summary": "The World of Warcraft Mobile Armory app is retiring and will no longer be supported after July 11, 2018. But don’t worry—we have an updated app coming your way with Battle for Azeroth. Read on to learn more.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/nr/NRN8VQGHU31B1529538230091.jpg"
+  },
+  {
+    "id": "21901728",
+    "title": "It’s Time: Heed the Speaker’s Call",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21901728/its-time-heed-the-speakers-call",
+    "date": "2018-06-26T19:00:00Z",
+    "summary": "Things are heating up in Silithus, and it won’t be long before the Battle for Azeroth takes center stage consumes the world. It’s time to heed the Speaker’s Call and spend some time wrapping up any loose ends before the opportunity passes you by.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/9n/9NCX086PXDHR1529698116963.jpg"
+  },
+  {
+    "id": "21901729",
+    "title": "Battle for Azeroth Preview: War Mode, PvP Talents, and More",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21901729/battle-for-azeroth-preview-war-mode-pvp-talents-and-more",
+    "date": "2018-06-28T21:00:00Z",
+    "summary": "Many PvP additions and updates are coming with Battle for Azeroth, including changes to PvP Talents, the introduction of War Mode, Bounties, and a new Dueler’s Guild. Read on to learn more.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/34/3494G7LZNO8D1530034696631.jpg"
+  },
+  {
+    "id": "21918050",
+    "title": "From Group Finder to Grand Champions: MDI Global Finals",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21918050/from-group-finder-to-grand-champions-mdi-global-finals",
+    "date": "2018-06-26T21:00:00Z",
+    "summary": "Kjell’s Angels punched their ticket to BlizzCon and MDI All-Stars with their win at the Mythic Dungeon Invitational Global Finals this past weekend.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/oe/OE3H49E6HI5V1530037475155.jpeg"
+  },
+  {
+    "id": "21921944",
+    "title": "Tips to Complete your Legion Checklist",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21921944/tips-to-complete-your-legion-checklist",
+    "date": "2018-06-28T18:00:00Z",
+    "summary": "Pssst! There’s some great community resources out there to unlock the Ahead of the Curve achievement, get your Violet Spellwing mount, complete the Mage Tower challenge for that exclusive artifact appearance, and get Mythic mount drops while they are still guaranteed – and more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/e7/E712TEYLHCCW1530142287738.jpg"
+  },
+  {
+    "id": "21931802",
+    "title": "Legion PvP Season 7 Ending Soon—Get Ready for the Post-Season!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21931802/legion-pvp-season-7-ending-soonget-ready-for-the-post-season",
+    "date": "2018-07-05T17:00:00Z",
+    "summary": "One gate closes soon with the end of Legion PvP Season 7, but another will open for a special post-season.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/oh/OHW7VE0NRXUN1520277282766.jpg"
+  },
+  {
+    "id": "21936123",
+    "title": "Battle for Azeroth PvP Preview: Dueler’s Guild",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21936123/battle-for-azeroth-pvp-preview-duelers-guild",
+    "date": "2018-07-05T17:00:00Z",
+    "summary": "Test your PvP prowess one-on-one in the new Dueler’s Guild! Read on to learn more.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ui/UI3WTUE47X4T1530547670149.jpg"
+  },
+  {
+    "id": "21936124",
+    "title": "Take Part in the Battle for Azeroth Beta Giveaway!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21936124/take-part-in-the-battle-for-azeroth-beta-giveaway",
+    "date": "2018-07-05T19:00:00Z",
+    "summary": "The Battle for Azeroth beta is in full swing and if you’re not in yet, here’s your chance! Read on to learn how you can jump in.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/wv/WVYZFNH262141530634284263.jpg"
+  },
+  {
+    "id": "21936840",
+    "title": "WoW Arena World Championship Summer Finals Viewer's Guide",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21936840/wow-arena-world-championship-summer-finals-viewer-s-guide",
+    "date": "2018-07-09T21:00:00Z",
+    "summary": "There's a spot at BlizzCon on the line in this second seasonal championship event of the year.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/mw/MWLEZXAW8HJJ1531171183234.jpg"
+  },
+  {
+    "id": "21944208",
+    "title": "Midgame Moves: To Heal, or to Fight?",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21944208/midgame-moves-to-heal-or-to-fight",
+    "date": "2018-07-09T17:00:00Z",
+    "summary": "In the midgame of an Arena match, whether or not a team’s healer hangs back or dives into the fray has a great affect on the outcome.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/p0/P09921RTZGFM1530838897025.jpg"
+  },
+  {
+    "id": "21952448",
+    "title": "Midgame Moves: For Light’s Sake, Stay Alive",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21952448/midgame-moves-for-lights-sake-stay-alive",
+    "date": "2018-07-10T17:01:00Z",
+    "summary": "If you don’t survive, there is no offense: some strategies for not dying.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/57/57ITDOSAJW0K1531174664671.jpg"
+  },
+  {
+    "id": "21952450",
+    "title": "Midgame Moves: Is Time on Your Side?",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21952450/midgame-moves-is-time-on-your-side",
+    "date": "2018-07-11T17:00:00Z",
+    "summary": "From the moment the gates open, the race is on—against each other and the clock.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/t5/T5UIGBLKCUAZ1531264041315.jpg"
+  },
+  {
+    "id": "21952451",
+    "title": "Midgame Moves: Adapt, Survive, and Thrive",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21952451/midgame-moves-adapt-survive-and-thrive",
+    "date": "2018-07-12T17:00:00Z",
+    "summary": "The ability to adapt on the fly is crucial to keeping yourself and your teammates alive.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/rq/RQY9ZH3OJBWX1531264247408.jpg"
+  },
+  {
+    "id": "21952452",
+    "title": "Midgame Moves: Recover, Learn, and Grow",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21952452/midgame-moves-recover-learn-and-grow",
+    "date": "2018-07-13T17:00:00Z",
+    "summary": "It’s often said that insanity is repeating the same mistakes and expecting different results.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/kh/KHBRHUNH64O01531264509112.jpg"
+  },
+  {
+    "id": "21952590",
+    "title": "Battle for Azeroth Preview: World of Warcraft Communities",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21952590/battle-for-azeroth-preview-world-of-warcraft-communities",
+    "date": "2018-07-11T17:30:00Z",
+    "summary": "We’re adding a new feature that will help you bring your friends and family together no matter where they may roam. Read on to learn more about Communities!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ya/YAMA0FDVCMDF1531325198183.jpg"
+  },
+  {
+    "id": "21952591",
+    "title": "The Battle for Azeroth Pre-Patch is Now Live!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21952591/the-battle-for-azeroth-pre-patch-is-now-live",
+    "date": "2018-07-17T18:00:00Z",
+    "summary": "Tensions are escalating between the Horde and the Alliance, and soon the Battle for Azeroth will begin in earnest. Read on to learn more about what the pre-expansion patch has in store.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/98/982HQKQ5AD871531441928169.jpg"
+  },
+  {
     "id": "21952595",
     "title": "Battle for Azeroth: Tiragarde Sound Visitor’s Guide",
     "url": "https://worldofwarcraft.blizzard.com/en-us/news/21952595/battle-for-azeroth-tiragarde-sound-visitors-guide",
     "date": "2023-09-13T16:00:00Z",
     "summary": "Untangle a web of betrayal and dark magic in the seafaring kingdom of Kul Tiras, a land dominated by four major houses, including House Proudmoore in Tiragarde Sound, House Waycrest in Drustvar, and House Stormsong in Stormsong Valley. Join us as we take you on a brief tour of Tiragarde Sound and the capital city of Boralus.",
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/xn/XNOHJFN4GOM21531938906466.jpg"
+  },
+  {
+    "id": "21952596",
+    "title": "Watch the Live Q&A VoD with Ion Hazzikostas Here!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21952596/watch-the-live-q-a-vod-with-ion-hazzikostas-here",
+    "date": "2018-07-19T19:06:00Z",
+    "summary": "Miss the latest Q&A with Game Director Ion Hazzikostas? Then, watch the VoD now to catch up on the latest.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ka/KA2027C9AMRR1531762255970.jpg"
+  },
+  {
+    "id": "21952597",
+    "title": "Subscribe to WoW and Play Every Expansion Through Legion!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21952597/subscribe-to-wow-and-play-every-expansion-through-legion",
+    "date": "2018-07-18T01:00:00Z",
+    "summary": "The Battle for Azeroth pre-patch is here, and with this update we’re making some exciting changes to the way players access to World of Warcraft. Starting today, you just need a subscription to play every expansion up through Legion. Read on to learn more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/cr/CRQ7D2RGL01L1531527123729.jpg"
+  },
+  {
+    "id": "21959894",
+    "title": "Battle for Azeroth Patch Notes",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21959894/battle-for-azeroth-patch-notes",
+    "date": "2018-08-13T21:46:44Z",
+    "summary": "Battle Is Coming! Join your allies and champion your faction’s cause.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/o3/O3GQPHTTSXDA1470421619936.jpg"
+  },
+  {
+    "id": "21964415",
+    "title": "New Trailer: Warbringers Animated Shorts Are Coming",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21964415/new-trailer-warbringers-animated-shorts-are-coming",
+    "date": "2018-07-16T18:00:00Z",
+    "summary": "Take the plunge into the lives of three iconic leaders from across Azeroth with our upcoming series of animated shorts. Watch the trailer to get a taste of what’s to come.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ex/EXFY1FWL6VBI1531507141891.jpg"
+  },
+  {
+    "id": "21964418",
+    "title": "Watch Warbringers: Jaina Animated Short",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21964418/watch-warbringers-jaina-animated-short",
+    "date": "2018-07-23T17:00:00Z",
+    "summary": "Jaina Proudmoore is no stranger to making difficult decisions. In this animated short, the choices of her past continue to influence her future.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ie/IEC5QRJVN3201531945481028.jpg"
+  },
+  {
+    "id": "21964419",
+    "title": "Experience the War of the Thorns—Chapter 1 Now Live!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21964419/experience-the-war-of-the-thornschapter-1-now-live",
+    "date": "2018-07-24T17:00:00Z",
+    "summary": "Tensions are rising between the Horde and the Alliance, and all signs point toward conflict in Darnassus as Sylvanas trains her sights on Teldrassil.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/8m/8MRNUDP5RGLQ1532378633814.jpg"
+  },
+  {
+    "id": "21964421",
+    "title": "Experience the War of the Thorns: Chapter 2 — Now Live!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21964421/experience-the-war-of-the-thorns-chapter-2-now-live",
+    "date": "2018-07-31T17:00:00Z",
+    "summary": "The Horde have pushed through Ashenvale, leaving a trail of destruction in their wake. Now, the Alliance can only hope to hold off the Horde’s continued march through Darkshore to reach Teldrassil.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/dd/DDUAMLFZ7ZYN1532706248573.jpg"
+  },
+  {
+    "id": "21964422",
+    "title": "Watch Warbringers: Sylvanas",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21964422/watch-warbringers-sylvanas",
+    "date": "2018-07-31T15:26:00Z",
+    "summary": "In war, nothing is certain. In just one moment, a single action can determine victory or defeat. For Sylvanas Windrunner, warchief of the Horde, war has led her to many such moments—including one that will change the course of history on Azeroth.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/4p/4P5E7R0H760O1532715375866.jpg"
+  },
+  {
+    "id": "21964423",
+    "title": "Mark Your Calendars—The Battle Is On!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21964423/mark-your-calendarsthe-battle-is-on",
+    "date": "2018-08-01T01:00:00Z",
+    "summary": "The launch of Battle for Azeroth is just the beginning. To help you in your endeavor to dominate the opposing faction, we’ve put together a schedule of upcoming content.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/xo/XO4N5B75V6Z61533057633113.jpg"
+  },
+  {
+    "id": "21965463",
+    "title": "The Rivalries and Surprises of the Summer Finals",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21965463/the-rivalries-and-surprises-of-the-summer-finals",
+    "date": "2018-07-17T01:00:00Z",
+    "summary": "The best teams rose to the top but the fun was in how they got there.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ik/IK8R773ZQWIZ1531776994408.png"
+  },
+  {
+    "id": "21973195",
+    "title": "Hotfixes: November 27, 2018",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/21973195/hotfixes-november-27-2018",
+    "date": "2018-11-28T01:35:00Z",
+    "summary": "​Here you'll find a list of hotfixes that address various issues related to World of Warcraft:Battle For Azeroth.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/mv/MVKK5EJOGPU61470421579108.jpg"
+  },
+  {
+    "id": "22010728",
+    "title": "Battle for Azeroth Preview: Closer to the Heart of Azeroth",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22010728/battle-for-azeroth-preview-closer-to-the-heart-of-azeroth",
+    "date": "2018-08-02T17:00:00Z",
+    "summary": "The road to healing Azeroth is a long one and will require a powerful new Artifact — the Heart of Azeroth. Read on to learn more about this item and the new Azerite Armor System.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/up/UPTOYNCSFS4Z1533137307691.jpg"
+  },
+  {
+    "id": "22010729",
+    "title": "A Tale of Two Factions: Elegy and A Good War Now Available!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22010729/a-tale-of-two-factions-elegy-and-a-good-war-now-available",
+    "date": "2018-08-06T17:43:00Z",
+    "summary": "There are two sides to every story. Read Elegy and A Good War now to explore a fateful event in the battle for Azeroth from both the Horde and Alliance perspectives.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/if/IFXSZRZBOXJH1533234433074.jpg"
+  },
+  {
+    "id": "22010730",
+    "title": "Watch the New Cinematic: “Old Soldier”",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22010730/watch-the-new-cinematic-old-soldier",
+    "date": "2018-08-09T19:30:00Z",
+    "summary": "War has a way of wearing down the most weathered soldiers. For legendary Horde warrior Varok Saurfang, this one could very well be his last.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/uz/UZNYJ4GEVZU51533263927278.jpg"
+  },
+  {
+    "id": "22010731",
+    "title": "Battle for Azeroth: Vol’dun Visitor’s Guide",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22010731/battle-for-azeroth-voldun-visitors-guide",
+    "date": "2018-08-06T21:00:00Z",
+    "summary": "Once a vibrant jungle and hub of the troll empire, Vol’dun is now a wasteland that serves as a death sentence for those who have been exiled from the city. It is a vast and deadly desert with dunes virtually uninhabitable to all, except the fox-like vulpera and the snake-people known as sethrak. Journey with us for a short tour of this forbidding land.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/tp/TPW2VJLHKTBL1533245907659.jpg"
+  },
+  {
+    "id": "22012461",
+    "title": "Battle for Azeroth: The Music of Warbringers",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22012461/battle-for-azeroth-the-music-of-warbringers",
+    "date": "2018-08-13T17:00:00Z",
+    "summary": "The Warbringers animated shorts present the tales of iconic leaders Jaina Proudmoore and Sylvanas Windrunner during pivotal times in their lives. Now you can relive these moments with their haunting musical compositions.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ex/EXFY1FWL6VBI1531507141891.jpg"
+  },
+  {
+    "id": "22021363",
+    "title": "The Siege of Lordaeron Has Begun!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22021363/the-siege-of-lordaeron-has-begun",
+    "date": "2018-08-07T17:00:00Z",
+    "summary": "The consequences of the events in Teldrassil continue to send shockwaves through Azeroth. Now, the Alliance has set their sights on the Undercity and Sylvanas Windrunner, warchief of the Horde, determined to take her to task for the devastation she has wrought.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/l3/L3WBMJY4EPX81533330385481.jpg"
+  },
+  {
+    "id": "22021368",
+    "title": "Battle for Azeroth Preview: Stormsong Valley Visitor’s Guide",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22021368/battle-for-azeroth-preview-stormsong-valley-visitors-guide",
+    "date": "2018-08-09T17:00:00Z",
+    "summary": "The song of the sea flows through the veins of those who dwell within Stormsong Valley. Ruled by House Stormsong, the land is gripped by an undercurrent of darkness that seems tied to the disappearance of the Kul Tiran fleet. Join us as we take you on a brief tour of Stormsong Valley.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ig/IGK8KGXHIDLG1533694449754.jpg"
+  },
+  {
+    "id": "22021369",
+    "title": "World of Warcraft: Battle for Azeroth™ Is Now Live!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22021369/world-of-warcraft-battle-for-azerothtm-is-now-live",
+    "date": "2018-08-13T22:00:00Z",
+    "summary": "Lines have been drawn between the Horde and Alliance, loyalties tested, and the war between the factions has begun in earnest. The race is on to recruit new allies and gather a new powerful resource – Azerite. Will you heed the call of battle? Read on to learn more about the expansion.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/wu/WUVNNWHYQX5S1534196963030.jpg"
+  },
+  {
+    "id": "22265420",
+    "title": "SPOILERS INSIDE!!! Battle for Azeroth: The Story So Far – Week 1",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22265420/spoilers-inside-battle-for-azeroth-the-story-so-far-week-1",
+    "date": "2018-08-16T17:00:00Z",
+    "summary": "The Battle for Azeroth has begun, and for those interested in the latest story developments, we’ve curated the in-game cinematics from the Siege of Lordaeron event through the first arrival of the Horde in Zandalar and the Alliance in Kul Tiras. Be warned—there are SPOILERS INSIDE!!!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/1o/1OWL5HBMDNSL1534273476476.jpg"
+  },
+  {
+    "id": "22265421",
+    "title": "Learn About Battle for Azeroth™ Class Trials",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22265421/learn-about-battle-for-azerothtm-class-trials",
+    "date": "2018-08-16T21:00:00Z",
+    "summary": "With the launch of World of Warcraft: Battle for Azeroth, we’ve updated Class Trials for level-110 characters. Now you can try a class in the expansion before you boost!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ks/KSN8DZREXBA41534275168402.jpg"
+  },
+  {
+    "id": "22265422",
+    "title": "SPOILERS INSIDE!!! Battle for Azeroth: The Story So Far – Week 2",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22265422/spoilers-inside-battle-for-azeroth-the-story-so-far-week-2",
+    "date": "2018-08-23T17:00:00Z",
+    "summary": "The Battle for Azeroth continues, and for those interested in the latest story developments, we’ve curated several in-game cinematics—including the culmination of current events in Kul Tiras and Zandalar. Be warned . . . there are SPOILERS INSIDE!!!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/qc/QC12RN9L9T9Y1534284555576.jpg"
+  },
+  {
+    "id": "22308737",
+    "title": "Watch the Live Q&A VoD with Ion Hazzikostas Here!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22308737/watch-the-live-q-a-vod-with-ion-hazzikostas-here",
+    "date": "2018-08-23T19:05:00Z",
+    "summary": "Miss the latest Q&A with Game Director Ion Hazzikostas? Watch the VoD now to catch up on the latest.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/st/STG8JSDAR25I1534462635999.jpg"
+  },
+  {
+    "id": "22308738",
+    "title": "Announcing the 2018 Arena World Championship Fall Season",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22308738/announcing-the-2018-arena-world-championship-fall-season",
+    "date": "2018-08-17T20:03:00Z",
+    "summary": "As conflict burns in the Battle for Azeroth, the power of the greatest Horde and Alliance heroes ignites. If you think you have what it takes to prove your PvP skills are among the best in the world, signups are now open for the first Cup of the Fall Season of the 2018 Arena World Championship (AWC).",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/1z/1Z6ND6TU7QKK1534446208368.jpg"
+  },
+  {
+    "id": "22327253",
+    "title": "Battle for Azeroth: The Music of Warbringers – Azshara",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22327253/battle-for-azeroth-the-music-of-warbringers-azshara",
+    "date": "2018-08-30T23:00:00Z",
+    "summary": "The Warbringers animated shorts present the tales of iconic leaders Jaina Proudmoore, Sylvanas Windrunner, and Queen Azshara during pivotal times in their lives. Now you can relive the moments from the recently released Azshara piece with the epic music from the short.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ex/EXFY1FWL6VBI1531507141891.jpg"
+  },
+  {
+    "id": "22327255",
+    "title": "New Allied Races Ready to Recruit",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22327255/new-allied-races-ready-to-recruit",
+    "date": "2018-08-30T17:00:00Z",
+    "summary": "The war between the Horde and the Alliance is in full swing, and every ally matters if you hope to secure victory. Earn the loyalty of two new Allied Races—the Mag’har orcs and Dark Iron dwarves—to help tip the scales. Read on to learn how.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ks/KSFLT33K9P3V1535577861619.jpg"
+  },
+  {
+    "id": "22358468",
+    "title": "Warbringers: Azshara",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22358468/warbringers-azshara",
+    "date": "2018-08-24T17:00:00Z",
+    "summary": "What would you do to save a people? For the great queen Azshara, it is within the deeps that she finds what she needs most: opportunity.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/w0/W0V0SCX8QN9E1534776806055.jpg"
+  },
+  {
+    "id": "22461362",
+    "title": "The Gates Are Open and New Challenges Await!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22461362/the-gates-are-open-and-new-challenges-await",
+    "date": "2018-09-04T19:00:00Z",
+    "summary": "The time is at hand to take on new challenges across Azeroth! Get ready for Normal and Heroic raiding in Uldir, new world bosses, and the first season of Rated PvP and Mythic Keystone dungeons. Which will you take on first?",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/wk/WKDGLE6Z5W5U1536083664850.jpg"
+  },
+  {
+    "id": "22461364",
+    "title": "Warfronts Are Rolling In – Will You Weather the Storm?",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22461364/warfronts-are-rolling-in-will-you-weather-the-storm",
+    "date": "2018-09-04T17:00:00Z",
+    "summary": "Are you ready to Battle for Stromgarde? Read on to learn about Warfronts.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/3v/3V3HWZHWTI691535670593652.jpg"
+  },
+  {
+    "id": "22481154",
+    "title": "Trinkets Usher in a New Meta",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22481154/trinkets-usher-in-a-new-meta",
+    "date": "2018-09-17T21:02:00Z",
+    "summary": "There was a method to the madness in the first Arena World Championship Cups of the Fall Season.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/94/942CBCNOVIM11536678562698.jpg"
+  },
+  {
+    "id": "22483122",
+    "title": "Uldir Mythic and Raid Finder Wing 1 Available!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22483122/uldir-mythic-and-raid-finder-wing-1-available",
+    "date": "2018-09-11T17:00:00Z",
+    "summary": "Uldir Mythic difficulty and Raid Finder Wing 1: The Halls of Containment are now available! Read on to learn more.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/0v/0VHMJQRIG3291536675122945.jpg"
+  },
+  {
+    "id": "22483123",
+    "title": "The Asia-Pacific Finalists are Coming to Sydney!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22483123/the-asia-pacific-finalists-are-coming-to-sydney",
+    "date": "2018-09-12T08:00:00Z",
+    "summary": "The World of Warcraft Arena World Championship Asia-Pacific Regional Finals are bringing the best of the region to Sydney.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/nl/NLSM4O0GRZIZ1527087413785.jpg"
+  },
+  {
+    "id": "22483124",
+    "title": "Watch the Developer Live Stream VoD",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22483124/watch-the-developer-live-stream-vod",
+    "date": "2018-09-18T18:34:00Z",
+    "summary": "If you missed the developer live stream, don’t worry – we have you covered.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/qi/QI0WCJ7NMYFB1536696054719.jpg"
   },
   {
     "id": "22483125",
@@ -96,6 +600,14 @@
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/w7/W7T997ZL9ZKL1536878111869.jpg"
   },
   {
+    "id": "22483127",
+    "title": "WoW is Better with Friends: Recruit-A-Friend Today!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22483127/wow-is-better-with-friends-recruit-a-friend-today",
+    "date": "2018-09-17T17:00:00Z",
+    "summary": "Adventures in Azeroth are meant to be shared. Take some company on your epic journeys with Recruit-A-Friend.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/eq/EQP1QSGK9K421536878470232.jpg"
+  },
+  {
     "id": "22483128",
     "title": "Jump Aboard the Pirate’s Day Celebration– September 19!",
     "url": "https://worldofwarcraft.blizzard.com/en-us/news/22483128/jump-aboard-the-pirates-day-celebration-september-19",
@@ -104,12 +616,44 @@
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/mp/MP7XPMLNC60A1537279874676.jpg"
   },
   {
+    "id": "22483129",
+    "title": "Bring Out the Wolpertingers! Brewfest is Here",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22483129/bring-out-the-wolpertingers-brewfest-is-here",
+    "date": "2018-09-20T17:00:00Z",
+    "summary": "Do you love eating delicious faire food, drinking bountiful beverages, and riding rams around barrels of apples? Brewfest has arrived and you can do all that and more from September 20–October 6.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/xp/XPMUVL2E1PIU1505775806437.jpg"
+  },
+  {
+    "id": "22483130",
+    "title": "Tune in September 14-16 for the Fall Arena World Championship Cup #1",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22483130/tune-in-september-14-16-for-the-fall-arena-world-championship-cup-1",
+    "date": "2018-09-14T17:00:00Z",
+    "summary": "Tune in this weekend for the Fall Arena World Championship Cup #1! We’ve got all the information you need on where to watch.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ik/IK8R773ZQWIZ1531776994408.png"
+  },
+  {
     "id": "22514559",
     "title": "The Pet Battle Bonus Event Has Begun!",
     "url": "https://worldofwarcraft.blizzard.com/en-us/news/22514559/the-pet-battle-bonus-event-has-begun",
     "date": "2022-05-10T16:00:00Z",
     "summary": "Bring out your most stalwart companions for battle, because this week’s Bonus Event is underway.",
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/pf/PFAUDAZFKMWP1553877540445.jpg"
+  },
+  {
+    "id": "22514561",
+    "title": "Celebrate International Talk Like A Pirate Day in Style!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22514561/celebrate-international-talk-like-a-pirate-day-in-style",
+    "date": "2018-09-19T18:38:00Z",
+    "summary": "Just in time for International Talk Like a Pirate Day–we’re celebrating all things pirate with an epic new mount!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/so/SO10YQCSD6GC1537318788813.jpg"
+  },
+  {
+    "id": "22537790",
+    "title": "Uldir Raid Finder Wing 2 Now Available!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22537790/uldir-raid-finder-wing-2-now-available",
+    "date": "2018-09-25T17:00:00Z",
+    "summary": "The second Raid Finder wing of Uldir is now available! Read on to learn more.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/6h/6HF4YYYD0IJG1537889884007.jpg"
   },
   {
     "id": "22548000",
@@ -128,6 +672,126 @@
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/hu/HURRV1SQ3AH21697562691903.png"
   },
   {
+    "id": "22548003",
+    "title": "World of Warcraft Student Art Contest 2018",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22548003/world-of-warcraft-student-art-contest-2018",
+    "date": "2018-10-15T17:00:00Z",
+    "summary": "Students, get ready to show off your talents: The World of Warcraft Student Art Contest has returned!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/se/SEJP90W5074R1522084623905.jpg"
+  },
+  {
+    "id": "22548005",
+    "title": "Dev Watercooler: Inside the World of Warcraft Classic BlizzCon Demo",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22548005/dev-watercooler-inside-the-world-of-warcraft-classic-blizzcon-demo",
+    "date": "2018-10-22T16:00:00Z",
+    "summary": "Get a sneak preview of what BlizzCon attendees and Virtual Ticket holders can expect from the upcoming World of Warcraft Classic demo we’re crafting for the convention.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/yx/YXK82AA7RHSF1539968948750.jpg"
+  },
+  {
+    "id": "22551243",
+    "title": "Bring Home the BlizzCon® WoW® Classic Demo With the Virtual Ticket",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22551243/bring-home-the-blizzcon-wow-classic-demo-with-the-virtual-ticket",
+    "date": "2018-09-26T17:29:00Z",
+    "summary": "The BlizzCon 2018 Virtual Ticket is now available for purchase, and if you’re a World of Warcraft player, you won’t want to miss a moment—or the WoW extras that come with it, including epic in-game goodies and access to the BlizzCon WoW Classic demo at home!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/2z/2Z2B995R11WW1537971318596.jpg"
+  },
+  {
+    "id": "22551244",
+    "title": "Watch the Arena World Championship Fall Cup 2 Friday 9/28 and Saturday 9/29!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22551244/watch-the-arena-world-championship-fall-cup-2-friday-9-28-and-saturday-9-29",
+    "date": "2018-09-28T16:00:00Z",
+    "summary": "Tune in beginning Friday, September 28 to catch all the Arena World Championship action live as the top 8 teams from Europe and top 8 teams from North America go head-to-head for a coveted spot at BlizzCon 2018!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ab/ABLURMS3YETC1538143936446.jpg"
+  },
+  {
+    "id": "22552053",
+    "title": "The NA/EU Fall Cup #2 Finalizes BlizzCon Representatives",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22552053/the-na-eu-fall-cup-2-finalizes-blizzcon-representatives",
+    "date": "2018-10-02T22:00:00Z",
+    "summary": "Two down, one to go! Before we head into the final Cups of the Fall Season, let's look back at the tournament that locked in the final representatives who'll be battling it out in Anaheim.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/94/942CBCNOVIM11536678562698.jpg"
+  },
+  {
+    "id": "22552054",
+    "title": "The AWC Fall Finale Starts Friday",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22552054/the-awc-fall-finale-starts-friday",
+    "date": "2018-10-04T16:00:00Z",
+    "summary": "With BlizzCon on the horizon, the final NA/EU Cup of the Fall Season is up for grabs.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/aa/AA0BGH6X5M751538627372684.jpg"
+  },
+  {
+    "id": "22568646",
+    "title": "Fall Concludes as AWC Teams Lock BlizzCon Seeds",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22568646/fall-concludes-as-awc-teams-lock-blizzcon-seeds",
+    "date": "2018-10-08T21:13:00Z",
+    "summary": "XRB to the Moon impresses, and Method Orange locks in No. 1 seed in NA.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/aa/AA0BGH6X5M751538627372684.jpg"
+  },
+  {
+    "id": "22568650",
+    "title": "Arena World Championship at BlizzCon: A Viewer’s Guide",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22568650/arena-world-championship-at-blizzcon-a-viewers-guide",
+    "date": "2018-10-15T16:00:00Z",
+    "summary": "Everything you need to know as we step into the biggest arena of the year.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/iy/IYX0C62YIAXR1539626777364.jpg"
+  },
+  {
+    "id": "22568654",
+    "title": "MDI All Stars at BlizzCon: A Viewer’s Guide",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22568654/mdi-all-stars-at-blizzcon-a-viewers-guide",
+    "date": "2018-10-24T16:00:00Z",
+    "summary": "Everything you need to know about our most high-pressure race of the year!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/wd/WDJI42T76B4K1540230846380.jpg"
+  },
+  {
+    "id": "22574035",
+    "title": "Watch the Live Q&A VoD with Ion Hazzikostas Here!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22574035/watch-the-live-q-a-vod-with-ion-hazzikostas-here",
+    "date": "2018-10-11T19:07:00Z",
+    "summary": "Miss the latest Q&A with Game Director Ion Hazzikostas? Watch the VoD now to catch up on the latest.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/jf/JF79HJ6DZCAI1538764925249.jpg"
+  },
+  {
+    "id": "22574036",
+    "title": "Uldir Raid Finder Wing 3 Now Available!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22574036/uldir-raid-finder-wing-3-now-available",
+    "date": "2018-10-09T17:00:00Z",
+    "summary": "The third and final Raid Finder wing of Uldir is now available! Read on to learn more.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/r3/R3TU1OULK2L61538777440217.jpg"
+  },
+  {
+    "id": "22636916",
+    "title": "Mighty Mouse Does BlizzCon—and Arena World Championship",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22636916/mighty-mouse-does-blizzconand-arena-world-championship",
+    "date": "2018-11-03T07:57:00Z",
+    "summary": "MMA for the Horde!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/j5/J5UVTT9L7AAP1541216182133.jpg"
+  },
+  {
+    "id": "22636921",
+    "title": "Inside a Methodical AWC 2018 Championship",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22636921/inside-a-methodical-awc-2018-championship",
+    "date": "2018-11-04T20:07:54Z",
+    "summary": "In an all-North American finals, two very different World of Warcraft Arena strategic philosophies were put to the test.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/z5/Z5FYV7WBKY9E1541299400624.jpg"
+  },
+  {
+    "id": "22639852",
+    "title": "5 Things We Learned from AWC Opening Week",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22639852/5-things-we-learned-from-awc-opening-week",
+    "date": "2018-11-01T03:30:00Z",
+    "summary": "From upsets and air travel, to Allied Races and sage advice, AWC’s initial day set the stage for a thrilling BlizzCon.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/vp/VP8H1MPGLSA31541040522635.jpg"
+  },
+  {
+    "id": "22640190",
+    "title": "Participate in the World of Warcraft Q&A at BlizzCon 2018",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22640190/participate-in-the-world-of-warcraft-q-a-at-blizzcon-2018",
+    "date": "2018-10-29T17:00:00Z",
+    "summary": "Do you have World of Warcraft questions you want to ask during BlizzCon? We’ve got you covered. Read on to learn more.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/9f/9FXS9RAZ4X761508877329865.jpg"
+  },
+  {
     "id": "22646756",
     "title": "Celebrate with the Dead During Day of the Dead!",
     "url": "https://worldofwarcraft.blizzard.com/en-us/news/22646756/celebrate-with-the-dead-during-day-of-the-dead",
@@ -136,12 +800,204 @@
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/q3/Q31EWZIXTZEZ1477972664809.jpg"
   },
   {
+    "id": "22646757",
+    "title": "World of Warcraft at BlizzCon® 2018",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22646757/world-of-warcraft-at-blizzcon-2018",
+    "date": "2018-11-03T21:26:00Z",
+    "summary": "BlizzCon 2018 is a wrap! Learn more about what’s ahead for World of Warcraft.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/bs/BSAUJF7UJLIW1540944459810.jpg"
+  },
+  {
+    "id": "22646758",
+    "title": "World of Warcraft: What's Next Panel Recap",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22646758/world-of-warcraft-what-s-next-panel-recap",
+    "date": "2018-11-02T23:15:00Z",
+    "summary": "The Battle for Azeroth has begun and there’s more story to be told and adventures to be had. To provide you a look at what’s next, Game Director Ion Hazzikostas along with designers Jeremy Feasel, and Ryan Shwayder took to the stage.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/hr/HRJFNZIKF2Q21540950438663.jpg"
+  },
+  {
+    "id": "22646759",
+    "title": "Restoring History: Creating WoW Classic Panel Recap",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22646759/restoring-history-creating-wow-classic-panel-recap",
+    "date": "2018-11-03T21:17:00Z",
+    "summary": "During the Restoring History: Creating WoW Classic panel, software engineers Brian Birmingham and Omar Gonzalez and Game Director Ion Hazzikostas provided insights into bringing the World of Warcraft Classic experience to life.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/8e/8E7VIEZPZVX71540950696738.jpg"
+  },
+  {
+    "id": "22646760",
+    "title": "Support Code.org by Bringing Whomper Home!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22646760/support-code-org-by-bringing-whomper-home",
+    "date": "2018-11-02T18:51:00Z",
+    "summary": "Adopt Whomper the baby yeti in-game, or purchase the plushie to support Code.org.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/j7/J76GCBRSKA0A1541113708826.jpg"
+  },
+  {
+    "id": "22757604",
+    "title": "BlizzCon Q&A Additional Questions",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22757604/blizzcon-q-a-additional-questions",
+    "date": "2018-11-16T19:00:00Z",
+    "summary": "Here are the BlizzCon Q&A questions that didn’t make it in time, along with our answers to each.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/9f/9FXS9RAZ4X761508877329865.jpg"
+  },
+  {
+    "id": "22758508",
+    "title": "AWC and MDI Competitive Rulings",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22758508/awc-and-mdi-competitive-rulings",
+    "date": "2018-12-15T01:05:00Z",
+    "summary": "Comprehensive source of rulings and actions in WoW esports.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/7t/7T17KTM0FH8Y1602719307495.jpg"
+  },
+  {
+    "id": "22770319",
+    "title": "Celebrate 14 Years of World of Warcraft!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22770319/celebrate-14-years-of-world-of-warcraft",
+    "date": "2018-11-16T18:00:00Z",
+    "summary": "Celebrate 14 years of World of Warcraft with us! Log in between now and November 30 to earn the WoW’s 14th Anniversary achievement, then check your mail for a special Anniversary Gift Package.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/bj/BJBIWIW01VM11542153776675.jpg"
+  },
+  {
     "id": "22770321",
     "title": "Join the Feast During Pilgrim’s Bounty",
     "url": "https://worldofwarcraft.blizzard.com/en-us/news/22770321/join-the-feast-during-pilgrims-bounty",
     "date": "2022-11-20T18:00:00Z",
     "summary": "Set aside all thoughts of conflict and strife and celebrate with the bountiful feast of Pilgrim's Bounty.",
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/5p/5PUZES5L60CV1636768092626.jpg"
+  },
+  {
+    "id": "22770322",
+    "title": "Preview: Set Sail for Two New Islands",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22770322/preview-set-sail-for-two-new-islands",
+    "date": "2018-11-21T18:00:00Z",
+    "summary": "In Tides of Vengeance, we’re adding two new islands to Island Expeditions. Weigh anchor and prepare to set sail for more adventure.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/nn/NN7L1O1MJ29K1542763731964.jpg"
+  },
+  {
+    "id": "22805739",
+    "title": "Show Your Pride with New Blood Elf and Dwarf Heritage Armor",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22805739/show-your-pride-with-new-blood-elf-and-dwarf-heritage-armor",
+    "date": "2018-11-28T18:00:00Z",
+    "summary": "With the Tides of Vengeance content update, we’re adding Heritage Armor for blood elves and dwarves.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/9v/9V8CAKXANQ541543261033211.jpg"
+  },
+  {
+    "id": "22808930",
+    "title": "New Pet Battle Dungeon: Gnomeregan",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22808930/new-pet-battle-dungeon-gnomeregan",
+    "date": "2018-12-03T18:00:00Z",
+    "summary": "Ready your best battle pets for a new challenge. We’re introducing a new pet battle dungeon—Gnomeregan!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/7l/7LP8I4X5I5V51543441642638.jpg"
+  },
+  {
+    "id": "22820908",
+    "title": "Preview: New Warfront — Battle for Darkshore",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22820908/preview-new-warfront-battle-for-darkshore",
+    "date": "2018-12-20T17:00:00Z",
+    "summary": "In the ashen shadow of Teldrassil, hostilities between the Horde and the Alliance ramp up once more along the western coast of Kalimdor. With the release of Tides of Vengeance on December 11, prepare to clash in an all-new Warfront: The Battle for Darkshore.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/k9/K9AWT0Q4ZMQ31543857095630.jpg"
+  },
+  {
+    "id": "22820909",
+    "title": "Tides of Vengeance Preview: Faction Assaults",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22820909/tides-of-vengeance-preview-faction-assaults",
+    "date": "2018-12-05T18:00:00Z",
+    "summary": "The push and pull between the Horde and the Alliance in Kul Tiras and Zandalar continues as both factions race to gain control of Azerite. With the release of Tides of Vengeance, each side will begin launching Faction Assaults in a bid to achieve supremacy.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/d3/D3HV3JXBITRA1543857950134.jpg"
+  },
+  {
+    "id": "22820910",
+    "title": "Tides of Vengeance Now Live",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22820910/tides-of-vengeance-now-live",
+    "date": "2018-12-11T22:00:00Z",
+    "summary": "Prepare for Tides of Vengeance by learning more about the new content ahead including a new Warfront — Battle for Darkshore, new dwarf and blood elf Heritage armor, Faction Assaults, and more.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/od/ODPQGI4NN71N1544053040567.jpg"
+  },
+  {
+    "id": "22820911",
+    "title": "Watch the Live Q&A VoD with Ion Hazzikostas Here!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22820911/watch-the-live-q-a-vod-with-ion-hazzikostas-here",
+    "date": "2018-12-14T20:05:00Z",
+    "summary": "Miss the latest Q&A with Game Director Ion Hazzikostas? Watch the VoD now to catch up on the latest.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/99/99739LGWORV81544033902432.jpg"
+  },
+  {
+    "id": "22820913",
+    "title": "New Mount: Vulpine Familiar",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22820913/new-mount-vulpine-familiar",
+    "date": "2018-12-13T18:30:00Z",
+    "summary": "It’s hard to resist the charm of the newest mount to grace the Blizzard Shop and in-game shop—the Vulpine Familiar.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/nx/NXPLYCRS22C41544721424456.jpg"
+  },
+  {
+    "id": "22820914",
+    "title": "Don Your Holiday Apparel—The Feast of Winter Veil Has Begun!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22820914/don-your-holiday-apparelthe-feast-of-winter-veil-has-begun",
+    "date": "2018-12-16T18:00:00Z",
+    "summary": "It’s time once more to don your finest finery, drink a little egg nog, and embrace the spirit of giving (the Smokywood Pastures way). The Feast of Winter Veil has begun!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/cf/CFRBA8KZS1DC1512596527788.jpg"
+  },
+  {
+    "id": "22820918",
+    "title": "Reap the Bounty in Tides of Vengeance",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22820918/reap-the-bounty-in-tides-of-vengeance",
+    "date": "2018-12-21T18:00:00Z",
+    "summary": "Tides of Vengeance introduced a multitude of new mounts, pets, toys, and gear to earn and collect. We’ve rounded up a selection of what’s been added.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/k0/K04VVYKEM42U1545340096069.jpg"
+  },
+  {
+    "id": "22824892",
+    "title": "Tides of Vengeance Update Notes",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22824892/tides-of-vengeance-update-notes",
+    "date": "2019-01-22T17:59:00Z",
+    "summary": "The war raging across Azeroth between Alliance and Horde has intensified. As the Alliance lays plans to retake Darkshore and regain a foothold in Kalimdor, both factions have redoubled their attacks across the zones of Kul Tiras and Zandalar.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/o3/O3GQPHTTSXDA1470421619936.jpg"
+  },
+  {
+    "id": "22824893",
+    "title": "Hotfixes: March 13, 2019",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22824893/hotfixes-march-13-2019",
+    "date": "2019-03-14T02:30:00Z",
+    "summary": "​Here you'll find a list of hotfixes that address various issues related to World of Warcraft:Battle For Azeroth.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/mv/MVKK5EJOGPU61470421579108.jpg"
+  },
+  {
+    "id": "22838223",
+    "title": "Endgame Moves: What Pros Learned This Year",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22838223/endgame-moves-what-pros-learned-this-year",
+    "date": "2018-12-24T17:00:00Z",
+    "summary": "Top Arena World Championship competitors—and champions!—on what 2018 taught them.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/jl/JL7LPNS243L71545422939678.jpg"
+  },
+  {
+    "id": "22838224",
+    "title": "Endgame Moves: Gotta Go Fast",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22838224/endgame-moves-gotta-go-fast",
+    "date": "2018-12-25T17:00:00Z",
+    "summary": "Victory is in sight, but the timer is ticking down. Here are some ways to beat the clock.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/9KYZ3XUNHSAL1545163394572.jpg"
+  },
+  {
+    "id": "22838225",
+    "title": "Endgame Moves: Getting to Go",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22838225/endgame-moves-getting-to-go",
+    "date": "2018-12-26T17:00:00Z",
+    "summary": "Arena World Championship pro players share what to focus on when the endgame is in sight.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/5u/5UDFP5QM6NBQ1545423193446.jpg"
+  },
+  {
+    "id": "22838226",
+    "title": "Endgame Moves: Comps and Combos",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22838226/endgame-moves-comps-and-combos",
+    "date": "2018-12-27T17:00:00Z",
+    "summary": "Arena professionals let us know what you can try at home to secure your victory.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/LN1QKOD0AMP91545163394361.jpg"
+  },
+  {
+    "id": "22838227",
+    "title": "Endgame Moves: The Moonkin Tank (A Tale from Tol Dagor)",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22838227/endgame-moves-the-moonkin-tank-a-tale-from-tol-dagor",
+    "date": "2018-12-28T17:00:00Z",
+    "summary": "When Mythic Dungeon disaster leads to success.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/jp/JPS105ESFCXI1545423082258.jpg"
   },
   {
     "id": "22839052",
@@ -160,12 +1016,244 @@
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/n9/N91OADNTWP0P1513179804676.jpg"
   },
   {
+    "id": "22839054",
+    "title": "Save Big on Pets, Mounts, Helms, and More During Our Holiday Sale",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22839054/save-big-on-pets-mounts-helms-and-more-during-our-holiday-sale",
+    "date": "2018-12-20T19:12:00Z",
+    "summary": "Winter Veil has arrived! Find your new favorites and celebrate in style.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/l0/L09KWACPIVDE1545248198574.png"
+  },
+  {
+    "id": "22839055",
+    "title": "Watch the Story and Lore Developer Live Stream VoD",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22839055/watch-the-story-and-lore-developer-live-stream-vod",
+    "date": "2019-01-10T20:05:00Z",
+    "summary": "If you missed the story and lore developer live stream, don’t worry – we have you covered.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/d3/D39KEEBDN3I81546879452183.jpg"
+  },
+  {
+    "id": "22839056",
+    "title": "Battle of Dazar’alor Raid Preview and Schedule",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22839056/battle-of-dazaralor-raid-preview-and-schedule",
+    "date": "2019-01-03T18:00:00Z",
+    "summary": "The Battle of Dazar’alor provides unique encounters for both the Horde and the Alliance—and lets you participate in the conflict from your enemy’s perspective—as the war makes its way to the heart of the Zandalari empire.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/l5/L5M8P16AVVS21545343997447.jpg"
+  },
+  {
+    "id": "22862590",
+    "title": "WoW Esports in 2019",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22862590/wow-esports-in-2019",
+    "date": "2019-01-17T20:00:00Z",
+    "summary": "The launch of the Mythic Dungeon International, Arena returns, and we heard you like toys.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/9m/9MVBLPSW55TL1547682890881.jpg"
+  },
+  {
+    "id": "22864557",
+    "title": "Battle for Azeroth PvP Season 2 Has Begun",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22864557/battle-for-azeroth-pvp-season-2-has-begun",
+    "date": "2019-01-22T18:00:00Z",
+    "summary": "Learn more about the PvP changes in the latest Tides of Vengeance content update and prepare to leap into Battle for Azeroth PvP Season 2.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/cw/CW3FDOGMJMW71547598035044.jpg"
+  },
+  {
+    "id": "22864558",
+    "title": "Tides of Vengeance Part 2: Azerite Armor Updates & Changes",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22864558/tides-of-vengeance-part-2-azerite-armor-updates-changes",
+    "date": "2019-01-17T16:00:00Z",
+    "summary": "With the arrival of the second part of the Tides of Vengeance content update and start of Season 2 on January 22, some new Azerite armor changes will go live.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/mn/MN23KZ5RIOZ61547573018592.jpg"
+  },
+  {
+    "id": "22864559",
+    "title": "Tides of Vengeance Part 2 Now Live!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22864559/tides-of-vengeance-part-2-now-live",
+    "date": "2019-01-22T18:02:00Z",
+    "summary": "The Tides of Vengeance Part 2 content update is now live. Find out what to expect when the new season begins.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/n6/N6I8XHTY8SXX1547601636773.jpg"
+  },
+  {
+    "id": "22864560",
+    "title": "Watch the Live Q&A VoD with Ion Hazzikostas Here!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22864560/watch-the-live-q-a-vod-with-ion-hazzikostas-here",
+    "date": "2019-01-24T20:08:00Z",
+    "summary": "Miss the latest Q&A with Game Director Ion Hazzikostas? Watch the VoD now to catch up on the latest.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/dx/DXX2FKXBLJ4T1547674594115.jpg"
+  },
+  {
+    "id": "22864561",
+    "title": "Battle of Dazar’alor Normal and Heroic Raid Dungeon Now Open",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22864561/battle-of-dazaralor-normal-and-heroic-raid-dungeon-now-open",
+    "date": "2019-01-22T18:00:00Z",
+    "summary": "The Alliance sends forth an invasion force to strike at the heart of Zandalari empire—while the defenders of the Horde rallies to their new allies’ defense—in an epic new raid, Battle of Dazar’alor.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/vq/VQBSC7P4AQQI1548173630978.jpg"
+  },
+  {
+    "id": "22864562",
+    "title": "Mythic Keystone Dungeon Season 2 Has Begun!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22864562/mythic-keystone-dungeon-season-2-has-begun",
+    "date": "2019-01-22T18:00:00Z",
+    "summary": "Get ready for new rewards and a new challenge in the form of this season’s Mythic Keystone dungeon affix: Reaping.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/0y/0YW7663W90VZ1548170586181.jpg"
+  },
+  {
+    "id": "22864565",
+    "title": "Battle of Dazar’alor Mythic and Raid Finder Wing 1 Available!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22864565/battle-of-dazaralor-mythic-and-raid-finder-wing-1-available",
+    "date": "2019-01-29T18:00:00Z",
+    "summary": "Battle of Dazar’alor Mythic difficulty and Raid Finder Wing 1: Defense of Dazar’alor (for Horde players) and Siege of Dazar’alor (for Alliance) are now available!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/0s/0SAJF54NYLVI1548696940868.jpg"
+  },
+  {
+    "id": "22864566",
+    "title": "The Not So Secret Life of the Hivemind",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22864566/the-not-so-secret-life-of-the-hivemind",
+    "date": "2019-01-29T22:00:00Z",
+    "summary": "Introduced in Tides of Vengeance was yet another series of puzzles from the Mind-Seekers, again drawing players from around the world to work together to find the elusive mount to add to their collections—and earn some bragging rights for unraveling the machinations of the minds behind the madness.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/lw/LW8E01UYZADB1548716834759.jpg"
+  },
+  {
+    "id": "22882885",
+    "title": "Battle of Dazar’alor Raid Finder Wing 2 Available!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22882885/battle-of-dazaralor-raid-finder-wing-2-available",
+    "date": "2019-02-12T18:00:00Z",
+    "summary": "Battle of Dazar’alor Raid Finder Wing 2: Death’s Bargain (for Horde players) and Empire’s Fall (for Alliance) are now available!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/g5/G5H5EEZH71PQ1549474353548.jpg"
+  },
+  {
+    "id": "22882887",
+    "title": "Inside the Art of WoW: Watch the VoD",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22882887/inside-the-art-of-wow-watch-the-vod",
+    "date": "2019-02-28T20:04:00Z",
+    "summary": "If you missed our live peek inside World of Warcraft art development and animation, don’t worry—we’ve got you covered.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/9j/9JCL6OCIX9YZ1551122663408.jpg"
+  },
+  {
+    "id": "22882888",
+    "title": "New Allied Races Ahead! Kul Tiran Humans and Zandalari Trolls",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22882888/new-allied-races-ahead-kul-tiran-humans-and-zandalari-trolls",
+    "date": "2019-02-19T18:00:00Z",
+    "summary": "Two new playable Allied Races—the Kul Tiran humans and Zandalari trolls—join the Battle for Azeroth in the next content update.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/84/845TX028O2831550589427936.jpg"
+  },
+  {
+    "id": "22884136",
+    "title": "New Mount: Hogrus, Swine of Good Fortune!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22884136/new-mount-hogrus-swine-of-good-fortune",
+    "date": "2019-01-30T20:34:00Z",
+    "summary": "Good luck awaits in the Lunar New Year with a brand-new mount: Hogrus, Swine of Good Fortune—now available in the Blizzard Shop and World of Warcraft in-game shop.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/3b/3B3X5BEN787J1548958164070.jpg"
+  },
+  {
+    "id": "22891044",
+    "title": "Arena World Championship Spring Season: A Viewer’s Guide",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22891044/arena-world-championship-spring-season-a-viewers-guide",
+    "date": "2019-02-06T20:00:00Z",
+    "summary": "Tune in from February 8 for the world’s best PvP.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/uh/UHNYKWZA8YJ01549405961367.png"
+  },
+  {
+    "id": "22906917",
+    "title": "Battle of Dazar’alor Raid Finder Wing 3 Available!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22906917/battle-of-dazaralor-raid-finder-wing-3-available",
+    "date": "2019-02-26T19:00:00Z",
+    "summary": "Battle of Dazar’alor Raid Finder Wing 3: Victory or Death (for Horde players) and Might of the Alliance (for Alliance) are now available!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/4z/4ZIXKW7ZPDX51550702370943.jpg"
+  },
+  {
+    "id": "22909228",
+    "title": "Welcome to the Proving Grounds",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22909228/welcome-to-the-proving-grounds",
+    "date": "2019-02-23T01:51:00Z",
+    "summary": "Run five level 14 Mythic Keystone Dungeons for Tournament Realm access.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/5l/5LMZRNW8E8UW1550880369057.jpg"
+  },
+  {
+    "id": "22911515",
+    "title": "Meet the Gladiators: Smexxin",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22911515/meet-the-gladiators-smexxin",
+    "date": "2019-02-23T03:00:00Z",
+    "summary": "Get to know your Arena World Championship competitors as we kick off Cup 3 today!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/pq/PQGVK7UQJ5051550878431493.jpg"
+  },
+  {
+    "id": "22921316",
+    "title": "Your Brawler’s Guild Invitation Is on Its Way",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22921316/your-brawlers-guild-invitation-is-on-its-way",
+    "date": "2019-03-06T18:00:00Z",
+    "summary": "The Brawler’s Guild will soon be reopening its doors for a new round of rumbling. Get ready to go toe-to-toe with some of their most skilled and scrappy fighters—and uncover a mystery lurking in the shadows.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/dc/DC56DI4I3FSJ1481334055433.jpg"
+  },
+  {
+    "id": "22921317",
+    "title": "Professions Preview: Wield the Tools of the Trade",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22921317/professions-preview-wield-the-tools-of-the-trade",
+    "date": "2019-03-05T18:00:00Z",
+    "summary": "Take your profession to the next level with new Tools of the Trade—coming in the next Battle for Azeroth content update on March 12.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/tm/TMC2O48YYQ891551398925171.jpg"
+  },
+  {
+    "id": "22926354",
+    "title": "Tides of Vengeance Content Update Notes",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22926354/tides-of-vengeance-content-update-notes",
+    "date": "2019-03-11T21:00:00Z",
+    "summary": "The official update notes for the March 12 content update to Tides of Vengeance are here.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/o3/O3GQPHTTSXDA1470421619936.jpg"
+  },
+  {
+    "id": "22927091",
+    "title": "New Allied Races and More Now Live!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22927091/new-allied-races-and-more-now-live",
+    "date": "2019-03-12T18:12:00Z",
+    "summary": "New Allied Races—Kul Tiran humans and Zandalari trolls–and more now live. Learn more.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/yr/YR0XXQ14QEU11551980971963.jpg"
+  },
+  {
+    "id": "22927092",
+    "title": "Save on World of Warcraft® and Select Game Services",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22927092/save-on-world-of-warcraft-and-select-game-services",
+    "date": "2019-03-11T17:30:00Z",
+    "summary": "Celebrate the arrival of the Kul Tiran humans and Zandalari trolls with savings on the World of Warcraft® Complete Collection, Battle for Azeroth™, and select game services.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/id/IDR6HBB810DJ1552073135570.jpg"
+  },
+  {
+    "id": "22933274",
+    "title": "Support WoW Esports With Your Toy Purchase",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22933274/support-wow-esports-with-your-toy-purchase",
+    "date": "2019-03-19T17:43:00Z",
+    "summary": "You can help support World of Warcraft esports by purchasing two new in-game toys!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/rs/RSFVKLB69HY11552938250539.jpg"
+  },
+  {
+    "id": "22933275",
+    "title": "Watch the Live Q&A VoD with Ion Hazzikostas Here!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22933275/watch-the-live-q-a-vod-with-ion-hazzikostas-here",
+    "date": "2019-03-21T21:30:00Z",
+    "summary": "Miss the latest Q&A with Game Director Ion Hazzikostas? Watch the VoD now to catch up on the latest.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/lw/LWBO221EMSMP1552596783945.jpg"
+  },
+  {
     "id": "22933417",
     "title": "Hotfixes: June 10, 2019",
     "url": "https://worldofwarcraft.blizzard.com/en-us/news/22933417/hotfixes-june-10-2019",
     "date": "2019-06-11T02:40:56Z",
     "summary": "​Here you'll find a list of hotfixes that address various issues related to World of Warcraft: Battle For Azeroth.",
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/mv/MVKK5EJOGPU61470421579108.jpg"
+  },
+  {
+    "id": "22933715",
+    "title": "Keep Azeroth Close With the WoW Companion App",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22933715/keep-azeroth-close-with-the-wow-companion-app",
+    "date": "2019-04-16T21:00:00Z",
+    "summary": "Download the WoW Companion App and take a piece of Azeroth with you wherever you go.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/7j/7JCSSX3Q3WL91555368719480.jpg"
+  },
+  {
+    "id": "22933716",
+    "title": "Unlocking Flying in Battle for Azeroth: Part 1",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22933716/unlocking-flying-in-battle-for-azeroth-part-1",
+    "date": "2019-04-18T17:00:00Z",
+    "summary": "The skies of Kul Tiras and Zandalar can be decidedly unfriendly to the uninitiated. To help you on the first part of your journey, we’ve put together a brief guide.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/xx/XXCVCPEKPU411555553283262.jpg"
   },
   {
     "id": "22933717",
@@ -176,12 +1264,36 @@
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/bo/BOEKTTHKBADW1555971320806.jpg"
   },
   {
+    "id": "22936364",
+    "title": "The Mythic Dungeon International Time Trial Guide",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22936364/the-mythic-dungeon-international-time-trial-guide",
+    "date": "2019-03-18T20:00:00Z",
+    "summary": "Time to warm up!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/gh/GH4UOEL7NZU51552689424123.png"
+  },
+  {
     "id": "22937756",
     "title": "Watch the New Rise of Azshara Cinematic: “Safe Haven”",
     "url": "https://worldofwarcraft.blizzard.com/en-us/news/22937756/watch-the-new-rise-of-azshara-cinematic-safe-haven",
     "date": "2019-05-15T15:00:00Z",
     "summary": "Where do you find safe haven in a world torn apart by war and strife? Varok Saurfang may just have the answer.",
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/0u/0U61ZXG7TM7A1557859122200.jpg"
+  },
+  {
+    "id": "22938498",
+    "title": "Join the Welcome Back Weekend March 21–24",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22938498/join-the-welcome-back-weekend-march-2124",
+    "date": "2019-03-18T20:30:00Z",
+    "summary": "This event has concluded.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/9b/9B5LTURW5VZB1552938986536.jpg"
+  },
+  {
+    "id": "22938507",
+    "title": "Crucible of Storms Raid Finder and Mythic Difficulties Now Available",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22938507/crucible-of-storms-raid-finder-and-mythic-difficulties-now-available",
+    "date": "2019-04-23T17:00:00Z",
+    "summary": "Beginning the week of April 16, assemble your raid and face the fearsome servants of N’Zoth in two new epic boss encounters.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/wk/WK45QESWDDC51554914246974.jpg"
   },
   {
     "id": "22938871",
@@ -192,6 +1304,22 @@
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/m9/M94XIJ2YW7KN1557355375382.jpg"
   },
   {
+    "id": "22938940",
+    "title": "Welcome to the Darkmoon Faire!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22938940/welcome-to-the-darkmoon-faire",
+    "date": "2019-04-04T17:00:00Z",
+    "summary": "The Darkmoon Faire returns with a brand-new roller coaster ride, new balloon-themed pets, and the latest haute couture fashion accessories: severed fish heads!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/tr/TRIZHKNS9P0C1554180046164.jpg"
+  },
+  {
+    "id": "22940238",
+    "title": "Watch the Rise of Azshara Content Preview VoD!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22940238/watch-the-rise-of-azshara-content-preview-vod",
+    "date": "2019-04-11T19:02:00Z",
+    "summary": "Watch the VoD of the Rise of Azhara Content Preview with Senior Game Designer Jeremy Feasel.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/35/35APU91UN8HK1554752944223.jpg"
+  },
+  {
     "id": "22940617",
     "title": "Welcome Back to BlizzCon®!",
     "url": "https://worldofwarcraft.blizzard.com/en-us/news/22940617/welcome-back-to-blizzcon",
@@ -200,12 +1328,44 @@
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/lb/LBGVH59QWCP31556171909679.jpg"
   },
   {
+    "id": "22940764",
+    "title": "Warcraft: Orcs & Humans and Warcraft II Battle.net Edition Now Available on GOG.COM",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22940764/warcraft-orcs-humans-and-warcraft-ii-battle-net-edition-now-available-on-gog-com",
+    "date": "2019-03-28T14:01:00Z",
+    "summary": "In anticipation of the upcoming 25th anniversary of Warcraft, we’ve partnered with GOG.COM to rerelease the classics that started it all—Warcraft: Orcs &#38 Humans and Warcraft II Battle.net Edition.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/am/AMX36IN3PO6J1553703933618.jpg"
+  },
+  {
+    "id": "22945351",
+    "title": "Asia-Pacific Enters the Arena",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22945351/asia-pacific-enters-the-arena",
+    "date": "2019-03-29T01:00:00Z",
+    "summary": "AWC Cup signups for ANZ now live, Korea and Taiwan to come!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/fn/FNSN8SRIRO0M1553798927866.png"
+  },
+  {
+    "id": "22945352",
+    "title": "Viewer’s Guide: Mythic Dungeon International Spring Season",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22945352/viewers-guide-mythic-dungeon-international-spring-season",
+    "date": "2019-03-28T18:00:00Z",
+    "summary": "WoW esports is off to the races with the MDI!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/i5/I5K5CZZN8Z9T1553714368989.png"
+  },
+  {
     "id": "22945359",
     "title": "WoW Esports at BlizzCon 2019",
     "url": "https://worldofwarcraft.blizzard.com/en-us/news/22945359/wow-esports-at-blizzcon-2019",
     "date": "2019-04-25T14:16:10Z",
     "summary": "Arena and the Mythic Dungeon International will share the stage in Anaheim.",
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/fz/FZTYUIQPHTBS1556130240669.jpg"
+  },
+  {
+    "id": "22956186",
+    "title": "Announcing the Blizzard Entertainment Student Art Contest 2018-2019 Winners!",
+    "url": "https://worldofwarcraft.blizzard.com/en-us/news/22956186/announcing-the-blizzard-entertainment-student-art-contest-2018-2019-winners",
+    "date": "2019-04-12T22:00:00Z",
+    "summary": "The 2018-2019 Student Art Contest has come to an end, and after intense scrutiny and some impassioned deliberation, we’ve identified this year’s winners.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/wr/WR9GGZZV43BF1555104471062.jpg"
   },
   {
     "id": "22956187",
