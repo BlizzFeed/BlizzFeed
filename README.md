@@ -42,7 +42,7 @@ More Blizzard products can be added by putting another entry in `sources.yaml`.
 
 ## How it works
 - Each run reads the newest articles from each feed and compares them with the saved state. The feed is sorted by last update, so it stops as soon as it reaches articles it already has. Usually that's one request per source.
-- New articles are committed to the `data` branch (one commit per source) and put in the outbox for the bot to announce. Articles with a changed title, summary, image or link are announced too, in orange. If only the date changed, the saved copy is updated without a post.
+- New articles are committed to the `data` branch (one commit per source) and put in the outbox for the bot to announce. Articles with a changed title, summary, image or link are announced too, in orange. If only the date changed, the saved copy is updated without a post. When the date moved along with the change, the post gets a note ("Checking the article text for changes…") while the archive re-checks the text; the bot removes it once that's done.
 - The first run for a source saves the last 150 articles without posting anything, so old articles that get edited later aren't mistaken for new ones.
 - If a source fails 12 runs in a row (about 12 minutes), the log channel gets a "failing" message, and a "recovered" one when it works again.
 
@@ -60,7 +60,7 @@ The feeds only carry the short version of each article: title, summary and thumb
 - The archive runs whenever the tracker finds a change, and once an hour.
 
 ## The outbox
-After each run that has something to post, `main.py --outbox` and `archive.py --outbox` write `outbox.json`, and the workflow uploads it as an artifact named `outbox` (kept for 7 days). It holds one finished Discord message per channel, so the bot only has to deliver them. Runs with nothing to post upload nothing. The bot polls the repo's artifacts, paces its posts so Discord's publish limit isn't hit, and merges repeated updates to the same article.
+After each run that has something to post, `main.py --outbox` and `archive.py --outbox` write `outbox.json`, and the workflow uploads it as an artifact named `outbox` (kept for 7 days). It holds one finished Discord message per channel, so the bot only has to deliver them. Runs with nothing to post upload nothing. An archive run also lists the articles it re-checked without finding a text edit (`checked`), so the bot can remove the text-check note; it uploads an outbox for those alone too. The bot polls the repo's artifacts, paces its posts so Discord's publish limit isn't hit, and merges repeated updates to the same article.
 
 Discord posts have these buttons:
 
