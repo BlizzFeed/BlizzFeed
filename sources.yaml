@@ -70,6 +70,32 @@ archive:
   failures_before_alert: 3   # consecutive failed archive runs per source before a log alert
   baseline_days: 30       # a source's first archive run saves articles updated this recently (no posts). Older ones: backfill
 
+# Battle.net Shop tracking (main.py --shop): what each game's shop page lists, and when it changes.
+shop:
+  regions:                       # one session per region (cookies don't carry over between them)
+    eu: https://eu.shop.battle.net/en-gb
+    us: https://us.shop.battle.net/en-us
+  sweep_minutes: 5
+  fetch_delay_seconds: 1
+  gone_after_misses: 3           # consecutive sweeps an item must be missing before it counts as gone
+  failures_before_alert: 3
+  retry_minutes: [2, 5, 15, 30]  # re-checks while a product an article links to isn't on the page yet
+  family_check_hours: 24         # how often the shop's home page is read for families we don't track
+  families:                      # shop family slug -> feed source ids. Only these are tracked.
+    world-of-warcraft: [wow-news, wow-news-us]
+    world-of-warcraft-classic: [wow-news, wow-news-us]
+    warcraft-rts: [warcraft-3-news]
+    warcraft-rumble: [warcraft-rumble-news]
+    diablo-ii: [diablo-2-resurrected-news]
+    diablo-iii: [diablo-3-news]
+    diablo-iv: [diablo-4-news]
+    diablo-immortal: [diablo-immortal-news]
+    hearthstone: [hearthstone-news]
+    heroes-of-the-storm: [hots-news]
+    overwatch: [overwatch-news]
+    starcraft-ii: [starcraft-2-news]
+    starcraft-remastered: [starcraft-remastered-news]
+
 # Shared settings for news.blizzard.com, reused below with "<<: *blizzard-news-api".
 # The feed is sorted by last update, newest first, 15 articles per page.
 templates:

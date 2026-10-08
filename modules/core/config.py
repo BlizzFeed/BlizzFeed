@@ -63,3 +63,22 @@ def load_archive_config(path):
     with open(path, "r", encoding="utf-8") as f:
         cfg = yaml.safe_load(f)
     return {**ARCHIVE_DEFAULTS, **(cfg.get("archive") or {})}
+
+
+SHOP_DEFAULTS = {
+    "regions": {},
+    "sweep_minutes": 5,
+    "fetch_delay_seconds": 1,
+    "gone_after_misses": 3,
+    "failures_before_alert": 3,
+    "retry_minutes": [2, 5, 15, 30],
+    "family_check_hours": 24,
+    "families": {},
+}
+
+
+def load_shop_config(path):
+    """The shop: block of sources.yaml over the defaults."""
+    with open(path, "r", encoding="utf-8") as f:
+        cfg = yaml.safe_load(f)
+    return {**SHOP_DEFAULTS, **(cfg.get("shop") or {})}
