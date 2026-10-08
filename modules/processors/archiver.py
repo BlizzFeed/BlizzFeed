@@ -77,6 +77,15 @@ def to_markdown(body_html):
     return re.sub(r"\n{3,}", "\n\n", text).strip() + "\n"
 
 
+SHOP_LINK = re.compile(r"\]\((https://shop\.battle\.net/[^)\s]*/items/[^)\s]*)\)")
+
+
+def find_shop_url(text):
+    """The first Battle.net Shop item link in the text, or "". The first is the main one (a collection comes before its bundles)."""
+    m = SHOP_LINK.search(text)
+    return m.group(1) if m else ""
+
+
 def render_file(item, text):
     """The archived file: the card, then a separator, then the article text. lastUpdated is left out on purpose."""
     summary = " ".join(item["summary"].split())  # one line, so the separator below can't appear inside the card

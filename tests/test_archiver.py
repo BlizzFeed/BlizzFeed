@@ -78,3 +78,10 @@ def test_tab_links_point_at_the_first_heading_of_each_pane():
 def test_line_breaks_use_trailing_spaces_and_one_ending_a_paragraph_is_dropped():
     text = archiver.to_markdown("<p>one<br/>\r\n\xa0</p><p>two<br/>three</p>")
     assert text == "one\n\ntwo  \nthree\n"
+
+
+def test_the_shop_link_is_the_first_item_link_and_never_the_shop_homepage():
+    text = ("[Shop](https://shop.battle.net/) [Get the Collection](https://shop.battle.net/family/wow/items/1)\n"
+            "[Pack](https://shop.battle.net/family/wow/items/2)")
+    assert archiver.find_shop_url(text) == "https://shop.battle.net/family/wow/items/1"
+    assert archiver.find_shop_url("[Shop](https://shop.battle.net/) and https://example.com") == ""

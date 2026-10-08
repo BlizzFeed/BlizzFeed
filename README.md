@@ -60,7 +60,7 @@ The feeds only carry the short version of each article: title, summary and thumb
 - The archive runs whenever the tracker finds a change, and once an hour.
 
 ## The outbox
-After each run that has something to post, `main.py --outbox` and `archive.py --outbox` write `outbox.json`, and the workflow uploads it as an artifact named `outbox` (kept for 7 days). It holds one finished Discord message per channel, so the bot only has to deliver them. Runs with nothing to post upload nothing. An archive run also lists the articles it re-checked without finding a text edit (`checked`), so the bot can remove the text-check note; it uploads an outbox for those alone too. The bot polls the repo's artifacts, paces its posts so Discord's publish limit isn't hit, and merges repeated updates to the same article.
+After each run that has something to post, `main.py --outbox` and `archive.py --outbox` write `outbox.json`, and the workflow uploads it as an artifact named `outbox` (kept for 7 days). It holds one finished Discord message per channel, so the bot only has to deliver them. Runs with nothing to post upload nothing. An archive run also lists the articles it re-checked without finding a text edit (`checked`), so the bot can remove the text-check note, and the Battle.net Shop link it found in the text of an article whose feed card had none (`shops`, the first `shop.battle.net/.../items/...` link), so the bot can add the shop button; it uploads an outbox for those alone too. The bot polls the repo's artifacts, paces its posts so Discord's publish limit isn't hit, and merges repeated updates to the same article.
 
 Discord posts have these buttons:
 
@@ -68,6 +68,8 @@ Discord posts have these buttons:
 | --- | --- |
 | New article (green) | Read Article, Battle.net Shop, Summary, Archived Copy, History |
 | Card updated (orange) | Read Article, Battle.net Shop, Summary Changes, History |
+
+Battle.net Shop is on the post when the feed's card has the link. When it doesn't, the archive run that follows reads the link from the article text and the bot adds the button to the post a minute or so later.
 | Article text edited (orange) | Read Article, Article Changes, History |
 
 Summary shows the saved title, summary and thumbnail, and Archived Copy the article's saved full text (it can take a minute to appear). Summary Changes and Article Changes show what changed, and History lists every saved version.

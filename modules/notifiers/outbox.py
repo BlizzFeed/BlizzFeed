@@ -79,9 +79,15 @@ def build_archive_checked(diff):
             for source_id, entry in diff["sources"].items() for article in entry.get("checked", [])]
 
 
-def write(path, workflow, entries, run_url, checked=()):
+def build_archive_shops(diff):
+    """The shop links found in the text of articles whose feed card had none, for the bot to add the button."""
+    return [{"source": source_id, "article": shop["id"], "url": shop["url"]}
+            for source_id, entry in diff["sources"].items() for shop in entry.get("shops", [])]
+
+
+def write(path, workflow, entries, run_url, checked=(), shops=()):
     """Writes nothing when empty, so no artifact is uploaded."""
-    if not entries and not checked:
+    if not entries and not checked and not shops:
         logger.info("Nothing for the outbox.")
         return
     run_id = os.environ.get("GITHUB_RUN_ID")
@@ -89,7 +95,9 @@ def write(path, workflow, entries, run_url, checked=()):
               "run_url": run_url, "created": now_iso(), "entries": entries}
     if checked:
         outbox["checked"] = list(checked)
+    if shops:
+        outbox["shops"] = list(shops)
     with open(path, "w", encoding="utf-8") as f:
         json.dump(outbox, f, indent=2, ensure_ascii=False)
     logger.success(f"Outbox: {len(entries)} entr{'y' if len(entries) == 1 else 'ies'}"
-                   f"{f', {len(checked)} checked' if checked else ''}.")
+                   f"{f', {len(checked)} checked' if checked else ''}{f', {len(shops)} shop link(s)' if shops else ''}.")

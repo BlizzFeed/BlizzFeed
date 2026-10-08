@@ -36,16 +36,17 @@ def write_diff(diff):
 
 
 def archive_one(source, item, index, cfg, reformat):
-    """Fetch and save one article. Returns its change entry, or None when nothing changed.
+    """Fetch and save one article. Returns (its change entry or None when nothing changed, its text's shop link or "").
 
     Raises ArticleGone for a 404 or 410, and anything else for a failed fetch. Never writes a bad file.
     """
     text = archiver.to_markdown(article.fetch_body(source.locale, item["id"], cfg["body_selector"]))
     content = archiver.render_file(item, text)
     old = archiver.read_article(ARCHIVE_DIR, source.id, item["id"])
+    shop = archiver.find_shop_url(text)
     kind = archiver.classify(old, content)
     if kind is None:
-        return None
+        return None, shop
     if kind == "text" and reformat:
         kind = "reformatted"  # most likely our converter changed, not the article, so it isn't posted
     archiver.write_article(ARCHIVE_DIR, source.id, item["id"], content)
@@ -56,7 +57,7 @@ def archive_one(source, item, index, cfg, reformat):
             archiver.split_file(old)[1], archiver.split_file(content)[1])
         # The date didn't move, so only the window sweep could have found this edit.
         entry["silent"] = index.get(item["id"]) == item["date"]
-    return entry
+    return entry, shop
 
 
 def fetch(backfill=False, only_source=None):
@@ -97,13 +98,13 @@ def fetch(backfill=False, only_source=None):
     for n, (source, item, reason) in enumerate(selected):
         if n:
             time.sleep(delay)
-        entry = diff["sources"].setdefault(source.id, {"articles": [], "gone": [], "failed": 0, "checked": []})
+        entry = diff["sources"].setdefault(source.id, {"articles": [], "gone": [], "failed": 0, "checked": [], "shops": []})
         try:
-            change = archive_one(source, item, indexes[source.id], cfg, reformat)
+            change, shop = archive_one(source, item, indexes[source.id], cfg, reformat)
         except skip as e:
             logger.warning(f"[{source.id}] {item['id']} can't be archived ({type(e).__name__}), skipping it")
             entry["gone"].append(item["id"])
-            change = None
+            change, shop = None, ""
         except Exception as e:
             logger.error(f"[{source.id}] {item['id']} failed: {e}")
             entry["failed"] += 1
@@ -115,6 +116,8 @@ def fetch(backfill=False, only_source=None):
             if change:
                 entry["articles"].append(change)
                 logger.success(f"[{source.id}] {change['kind']}: {item['title']}")
+        if shop and reason == "changed" and not item.get("shop_url"):
+            entry["shops"].append({"id": item["id"], "url": shop})
         # A date bump the tracker may have posted with the text-check note, and no text edit to follow it.
         if reason == "changed" and not (change and change["kind"] == "text"):
             entry["checked"].append(item["id"])
@@ -164,7 +167,8 @@ def write_outbox():
     repo_url = f"https://github.com/{repo}" if repo else None
     diff = read_diff()
     entries = outbox.build_archive_entries(diff, sources, repo_url, outbox.now_iso())
-    outbox.write(OUTBOX_FILE, "archive", entries, os.environ.get("ACTIONS_RUN_URL"), outbox.build_archive_checked(diff))
+    outbox.write(OUTBOX_FILE, "archive", entries, os.environ.get("ACTIONS_RUN_URL"), outbox.build_archive_checked(diff),
+                 outbox.build_archive_shops(diff))
 
 
 def notify():
