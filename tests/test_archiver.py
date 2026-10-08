@@ -39,7 +39,7 @@ def _read(name):
 def test_line_breaks_survive_whitespace_stripping():
     text = archiver.to_markdown(_read("article-24244888.html"))
     # a <br> must survive the trailing-whitespace strip, or the two lines merge into one paragraph
-    assert "**Luminous Sporeglider Mount**\\\n*This mount is earned" in text
+    assert "**Luminous Sporeglider Mount**  \n*This mount is earned" in text
 
 
 def test_in_page_links_use_github_anchors():
@@ -75,6 +75,6 @@ def test_tab_links_point_at_the_first_heading_of_each_pane():
     assert "- [Druid](#shifting-forms-with-the-druid-class)" in text
 
 
-def test_a_line_break_ending_a_paragraph_leaves_no_backslash():
+def test_line_breaks_use_trailing_spaces_and_one_ending_a_paragraph_is_dropped():
     text = archiver.to_markdown("<p>one<br/>\r\n\xa0</p><p>two<br/>three</p>")
-    assert text == "one\n\ntwo\\\nthree\n"
+    assert text == "one\n\ntwo  \nthree\n"

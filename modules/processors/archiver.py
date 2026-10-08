@@ -9,7 +9,7 @@ from markdownify import MarkdownConverter
 
 # Bump when a change here alters the saved Markdown. The next runs then commit the new format as
 # "reformatted" without posting, instead of reporting every recent article as edited.
-CONVERTER_VERSION = 2
+CONVERTER_VERSION = 3
 
 YOUTUBE_ID = re.compile(r"(?:youtube\.com|youtube-nocookie\.com)/embed/([\w-]+)")
 # 1280x720 is YouTube's largest thumbnail; GitHub shrinks it to fit the column. The service adds the play button.
@@ -70,8 +70,9 @@ def to_markdown(body_html):
         el.decompose()
     _fix_anchors(soup)
     _drop_trailing_breaks(soup)
-    text = _Converter(heading_style="ATX", bullets="-", wrap=False, newline_style="backslash").convert_soup(soup)
-    text = "\n".join(line.rstrip() for line in text.splitlines())
+    text = _Converter(heading_style="ATX", bullets="-", wrap=False, newline_style="spaces").convert_soup(soup)
+    # Two trailing spaces are the invisible hard line break; everything else is trimmed.
+    text = "\n".join(line.rstrip() + ("  " if line.endswith("  ") and line.strip() else "") for line in text.splitlines())
     text = re.sub(r"^(#+) \*\*(.+)\*\*$", r"\1 \2", text, flags=re.M)  # bold inside a heading adds nothing
     return re.sub(r"\n{3,}", "\n\n", text).strip() + "\n"
 
