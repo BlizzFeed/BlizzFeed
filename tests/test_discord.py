@@ -134,7 +134,7 @@ def test_archive_log_lists_changes_and_silent_edits():
     body = texts(discord.build_archive_log_message(diff(articles), SOURCES, REPO, "https://run"))
     assert "1 of 2 sources changed" in body
     assert "2 text edited" in body and "1 archived" in body
-    assert f"[Hotfixes]({REPO}/commit/abc123) +1 ~2 −3" in body
+    assert f"[Hotfixes]({REPO}/commit/abc123)\n  -# +1 ~2 −3" in body
     assert "Quiet" in body and "silent edit (date unchanged)" in body
 
 
