@@ -1,0 +1,74 @@
+name: Track Battle.net Shop
+
+on:
+  # Started by the tracker when the last run is sweep_minutes old (sources.yaml). No cron.
+  workflow_dispatch:
+
+# A queued run replaced by a newer dispatch loses nothing, as every run does the same work.
+concurrency:
+  group: shop
+  cancel-in-progress: false
+
+jobs:
+  shop:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout source branch (code) into ./code
+        uses: actions/checkout@v7
+        with:
+          ref: source
+          path: code
+
+      - name: Checkout shop branch into ./shop
+        uses: actions/checkout@v7
+        with:
+          ref: shop
+          path: shop
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.13'
+          cache: 'pip'
+          cache-dependency-path: code/requirements.txt
+
+      - run: pip install --disable-pip-version-check -r code/requirements.txt
+
+      - name: Configure git identity
+        working-directory: shop
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch the shop
+        env:
+          SHOP_DIR: shop
+          SHOP_DIFF_FILE: shop-diff.json
+        run: python code/main.py --shop
+
+      - name: Commit and push
+        env:
+          SHOP_DIR: shop
+          SHOP_DIFF_FILE: shop-diff.json
+        run: python code/main.py --shop-commit
+
+      - name: Notify Discord
+        if: always()
+        env:
+          SHOP_DIFF_FILE: shop-diff.json
+          ACTIONS_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          DISCORD_WEBHOOK_LOG: ${{ secrets.DISCORD_WEBHOOK_LOG }}
+        run: python code/main.py --shop-notify
+
+      # Kept in case the commit landed but a later step failed.
+      - name: Keep diff on failure
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: shop-diff-${{ github.run_id }}
+          path: shop-diff.json
+          if-no-files-found: ignore
+          retention-days: 7

@@ -37,7 +37,7 @@ jobs:
     timeout-minutes: 10
     permissions:
       contents: write
-      actions: write  # to start the archive workflow
+      actions: write  # to start the archive and shop workflows
 
     steps:
       - name: Checkout source branch (code) into ./code
@@ -59,6 +59,20 @@ jobs:
           cache-dependency-path: code/requirements.txt
 
       - run: pip install --disable-pip-version-check -r code/requirements.txt
+
+      # Start a shop run when the last one is sweep_minutes old. A failed dispatch doesn't fail this run:
+      # the next minute tries again.
+      - name: Start shop run
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          minutes=$(PYTHONPATH=code python -c "from modules.core.config import load_shop_config; print(load_shop_config('code/sources.yaml')['sweep_minutes'])")
+          last=$(gh run list --workflow shop.yaml --limit 1 --json createdAt --jq '.[0].createdAt // empty')
+          if [ -z "$last" ] || [ $(( $(date +%s) - $(date -d "$last" +%s) )) -ge $(( minutes * 60 )) ]; then
+            gh workflow run shop.yaml --ref source
+          fi
 
       - name: Configure git identity
         working-directory: data
