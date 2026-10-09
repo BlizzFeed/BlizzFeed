@@ -8,10 +8,10 @@ from concurrent.futures import ThreadPoolExecutor
 from loguru import logger
 
 from modules.core import gitops, health
-from modules.core.config import load_sources
+from modules.core.config import load_shop_config, load_sources
 from modules.notifiers import discord, outbox
 from modules.processors import differ
-from modules.providers import html as html_provider, json_api as json_provider
+from modules.providers import html as html_provider, json_api as json_provider, shop
 
 PROVIDERS = {"html": html_provider.fetch, "json": json_provider.fetch}
 MAX_FETCH_ATTEMPTS = 3
@@ -152,6 +152,29 @@ def notify():
     logger.success("Notify complete.")
 
 
+def shop_dry_run(region, family):
+    """Print what each shop page lists, by section. Saves nothing."""
+    config = load_shop_config(SOURCES_FILE)
+    regions = {r: base for r, base in config["regions"].items() if region in (None, r)}
+    families = [f for f in config["families"] if family in (None, f)]
+    if not regions or not families:
+        sys.exit(f"Nothing to fetch: regions {list(config['regions'])}, families {list(config['families'])}")
+    for name, base in regions.items():
+        session = shop.open_session()
+        for slug in families:
+            items = shop.parse_items(shop.fetch_family(session, base, slug))
+            sections = {}
+            for item in items.values():
+                for section in item["sections"]:
+                    sections.setdefault(section, []).append(item)
+            print(f"\n== {name} / {slug}: {len(items)} items ==")
+            for section, members in sections.items():
+                print(f"  {section} ({len(members)})")
+                for item in members:
+                    print(f"    - {shop.describe(item)}")
+            time.sleep(config["fetch_delay_seconds"])
+
+
 def main():
     logger.remove()
     logger.add(sys.stderr, level="INFO",
@@ -165,9 +188,13 @@ def main():
     parser.add_argument("--pages", type=int, default=10, help="with --deepen: how many pages to read")
     parser.add_argument("--commit", action="store_true", help="commit per source, push, record SHAs in diff.json")
     parser.add_argument("--outbox", action="store_true", help="write outbox.json from diff.json, for the bot")
+    parser.add_argument("--shop", action="store_true", help="Battle.net Shop tracking (so far only with --dry-run)")
+    parser.add_argument("--dry-run", action="store_true", help="with --shop: print what the shop lists")
+    parser.add_argument("--region", help="with --shop: only this region (eu or us)")
+    parser.add_argument("--family", help="with --shop: only this shop family slug")
     parser.add_argument("--notify", action="store_true", help="post the run summary to the log channel")
     args = parser.parse_args()
-    if not (args.scrape or args.deepen or args.commit or args.outbox or args.notify):
+    if not (args.scrape or args.deepen or args.commit or args.outbox or args.notify or args.shop):
         parser.print_help()
     if args.scrape:
         scrape()
@@ -179,6 +206,10 @@ def main():
         write_outbox()
     if args.notify:
         notify()
+    if args.shop:
+        if not args.dry_run:
+            sys.exit("--shop only supports --dry-run so far")
+        shop_dry_run(args.region, args.family)
 
 
 if __name__ == "__main__":
