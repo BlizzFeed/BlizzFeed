@@ -63,6 +63,19 @@ jobs:
           DISCORD_WEBHOOK_LOG: ${{ secrets.DISCORD_WEBHOOK_LOG }}
         run: python code/main.py --shop-notify
 
+      # Like the tracker's: tells healthchecks.io the run got through, so a check alerts when shop runs stop
+      # finishing. Best effort: it never fails the run.
+      - name: Heartbeat
+        continue-on-error: true
+        env:
+          HEARTBEAT_URL: ${{ secrets.SHOP_HEARTBEAT_URL }}
+        run: |
+          if [ -n "$HEARTBEAT_URL" ]; then
+            curl -fsS -m 10 --retry 2 -o /dev/null "$HEARTBEAT_URL" || echo "Heartbeat ping failed."
+          else
+            echo "SHOP_HEARTBEAT_URL isn't set, no heartbeat."
+          fi
+
       # Kept in case the commit landed but a later step failed.
       - name: Keep diff on failure
         if: failure()
