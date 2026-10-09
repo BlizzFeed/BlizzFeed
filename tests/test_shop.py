@@ -94,6 +94,12 @@ def test_a_banner_only_product_is_reached_through_its_banner(wow):
 
 # --- parsing rules ---------------------------------------------------------------------------------------
 
+def test_the_doubled_dollar_sign_of_the_us_shop_is_cleaned():
+    payload = stream({"title": "Shop", "cards": [card(price={"fullAmount": "$$29.99", "discountAmount": "$$9.99"})]})
+    price = shop.parse_items(payload)["p:1"]["price"]
+    assert (price["fullAmount"], price["discountAmount"]) == ("$29.99", "$9.99")
+
+
 def test_cache_metadata_never_shows_up_as_a_change():
     def payload(age):
         return stream({"title": "Shop", "cards": [card(cacheMetaData={"serverTimeMs": age}, price={"raw": 5})]})

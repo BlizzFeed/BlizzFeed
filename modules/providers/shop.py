@@ -128,7 +128,11 @@ def _price(price):
     if not price:
         return None
     keys = ("fullAmount", "discountAmount", "discountPercentage", "currency", "raw", "labelFormat")
-    return {k: price.get(k) for k in keys}
+    cleaned = {k: price.get(k) for k in keys}
+    for key in ("fullAmount", "discountAmount"):
+        if cleaned[key]:
+            cleaned[key] = cleaned[key].replace("$$", "$")  # the US shop doubles the dollar sign
+    return cleaned
 
 
 def _item(obj):
