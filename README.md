@@ -59,6 +59,21 @@ The feeds only carry the short version of each article: title, summary and thumb
 - If the archive keeps failing for a source, the alert goes to `DISCORD_WEBHOOK_LOG` only.
 - The archive runs whenever the tracker finds a change, and once an hour.
 
+## Battle.net Shop
+Besides articles, BlizzFeed watches what the Battle.net Shop lists for each game and when it changes. There is no shop API, so it reads the shop's own pages.
+
+- `shop.yaml` runs about every 5 minutes (the tracker starts it, it has no cron). It reads each game's shop page in both regions, EU (`en-gb`, euro) and US (`en-us`, dollar), 13 pages each, and compares them with the saved state on the `shop` branch.
+- The first run for a page saves everything without posting. After that it records what is new, back, gone, changed in price, on sale or no longer on sale, given a badge, or changed in title, description, image or sections, plus header banners.
+- An item only counts as gone after it has been missing for 3 sweeps and its own page shows no price. A fetch that fails, or that loses more than a quarter of a page's items at once, is held until the next one agrees.
+- The `shop` branch keeps `<region>/<family>/state.json`, a Markdown card per item (so GitHub's history shows each change), and `changes.jsonl`, an append-only log of every change. `posted.json` lists recent posts.
+- The log channel gets a summary of each run that had changes, and an alert when a page keeps failing. `SHOP_HEARTBEAT_URL` (optional secret) is pinged after each good run.
+
+**What is posted.** A game's feed gets new and back items in its `all` and `new` channels, and price, sale and badge changes in its `all` and `updated` channels. The shop channel (`channel:` under `shop:`) gets every change, including removals, sales ending, banners and detail edits. WoW's EU changes go to the EU feed and its US changes to the US feed; other games have only an EU feed, so a US-only change for them goes to the shop channel alone.
+
+- A change is posted when one region sees it, with the prices both regions have. If the other region's matching change arrives within 30 minutes, the bot edits the post instead of adding one.
+- Three or more changes of one type for a game in one run become a single digest, and a game gets at most 5 posts per run, the rest folded into one.
+- The shop entries are part of the same outbox (`kind: shop`, with a `ref` and `edit`).
+
 ## The outbox
 After each run that has something to post, `main.py --outbox` and `archive.py --outbox` write `outbox.json`, and the workflow uploads it as an artifact named `outbox` (kept for 7 days). It holds one finished Discord message per channel, so the bot only has to deliver them. Runs with nothing to post upload nothing. An archive run also lists the articles it re-checked without finding a text edit (`checked`), so the bot can remove the text-check note, and the Battle.net Shop link it found in the text of an article whose feed card had none (`shops`, the first `shop.battle.net/.../items/...` link), so the bot can add the shop button; it uploads an outbox for those alone too. The bot polls the repo's artifacts, paces its posts so Discord's publish limit isn't hit, and merges repeated updates to the same article.
 
@@ -78,16 +93,17 @@ Both kinds of update look the same, with a diff block saying what changed: the o
 
 ## Files
 - `sources.yaml`: the feeds to watch, and the archive settings. Add an entry here to track another one.
-- `main.py`: the tracker steps (`--scrape`, `--commit`, `--outbox`, `--notify`), and `--deepen`, a manual run that stores older articles.
+- `main.py`: the tracker steps (`--scrape`, `--commit`, `--outbox`, `--notify`), and `--deepen`, a manual run that stores older articles. The shop steps are `--shop` (`--dry-run` prints what the shop lists), `--shop-commit`, `--shop-outbox` and `--shop-notify`.
 - `archive.py`: the archive steps (`--fetch`, `--commit`, `--outbox`, `--notify`). `--notify` only posts the run summary to the log channel. `--fetch --backfill` is the manual backfill.
 - `.github/workflows/tracker.yaml`: the tracker workflow. It runs on a `workflow_dispatch` event, a manual run, or a push to `source`. It has no cron of its own.
+- `.github/workflows/shop.yaml`: the shop workflow, started by the tracker when the last run is 5 minutes old.
 - `.github/workflows/archive.yaml`: the archive workflow. It runs on a `workflow_dispatch` event or a manual run.
 - `logos/`: the BlizzFeed logo, exported at the sizes Discord (server, bot and app images, emoji, sticker) and GitHub (social preview, app logo) use, each with a dark background and a transparent `-nobg` version.
 - `logos/games/`: each game's icon (Blizzard's, see Logos and trademarks), the thumbnail of a post whose article has no image.
 - `tests/`: run `pip install -r requirements-dev.txt`, then `pytest`.
 
 ## Setup
-1. Push to the `source` branch (the default) and create empty `data` and `archive` branches.
+1. Push to the `source` branch (the default) and create empty `data`, `archive` and `shop` branches.
 2. In Discord, create the announcement channels (three per label, see Sources) and put their IDs under `channels:` in `sources.yaml`.
 3. Optionally add the `DISCORD_WEBHOOK_LOG` secret under Settings → Secrets and variables → Actions.
 4. Run `tracker.yaml` once manually, then have something send its `workflow_dispatch` every minute, and `archive.yaml`'s once an hour.

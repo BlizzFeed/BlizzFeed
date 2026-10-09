@@ -71,6 +71,12 @@ archive:
   baseline_days: 30       # a source's first archive run saves articles updated this recently (no posts). Older ones: backfill
 
 # Battle.net Shop tracking (main.py --shop): what each game's shop page lists, and when it changes.
+# Battle.net Shop (main.py --shop): what each game's shop page lists, and when it changes. Saved on the shop branch.
+#   regions                Shop host per region, each with its own session. The host sets the currency.
+#   sweep_minutes          How often the tracker starts shop.yaml.
+#   gone_after_misses      Sweeps an item must be missing before it counts as gone.
+#   channel                The shop channel, which gets every change. Not under channels: it isn't a feed.
+#   families               Shop family -> name and feed sources: the first is the EU feed, the second (WoW) the US feed.
 shop:
   regions:                       # one session per region (cookies don't carry over between them)
     eu: https://eu.shop.battle.net/en-gb
