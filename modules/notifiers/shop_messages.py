@@ -10,7 +10,7 @@ DIGEST = {"new": "{n} new items in the shop", "back": "{n} items back in the sho
           "gone": "{n} items removed from the shop", "banner": "{n} banner changes",
           "details": "{n} items with changed details", None: "{n} more changes"}
 COLOR = {"new": "added", "back": "added", "gone": "down", "banner": "log", "details": "log"}  # the rest is orange
-MAX_LINES, MAX_IMAGES = 12, 4
+MAX_LINES, MAX_IMAGES = 12, 10  # 10 is the most a gallery holds
 
 
 def _url(destination):
@@ -181,9 +181,9 @@ def build_digest(post, states, logo, repo_url, commit, now, channel):
         if len(lines) > MAX_LINES:
             shown.append(f"-# …and {len(lines) - MAX_LINES} more")
         inner = d._top(d._text(f"## {heading}\n" + "\n".join(shown)), logo, heading)
-    images = [{"media": {"url": _image(i["image"])}} for e in events if (i := _art_item(states, e)).get("image")]
-    if images:
-        inner.append({"type": 12, "items": images[:MAX_IMAGES]})
+    art = [_image(i["image"]) for e in events[:MAX_LINES] if (i := _art_item(states, e)).get("image")]
+    if art := list(dict.fromkeys(art))[:MAX_IMAGES]:  # the listed items' art, shared art once
+        inner.append({"type": 12, "items": [{"media": {"url": url}} for url in art]})
     family = events[0]["family"]
     inner += [d.DIVIDER, _buttons(f"{SHOP_URL}/family/{family}", repo_url, commit, f"eu/{family}/changes.jsonl", channel),
               d.DIVIDER, _footer("Posted", now, repo_url)]

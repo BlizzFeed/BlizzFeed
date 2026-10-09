@@ -53,6 +53,17 @@ def test_details_digest_shows_one_diff_block_per_kind_of_change_with_unique_ids(
     assert len({b["id"] for b in blocks}) == 2
 
 
+def test_digest_gallery_shows_shared_art_once_and_only_from_the_listed_items():
+    def new(key):
+        return {**event("new"), "key": key}
+    keys = [f"k{i}" for i in range(14)]
+    items = {k: {**item("1"), "image": "//x/shared.png" if i < 2 else f"//x/{i}.png"} for i, k in enumerate(keys)}
+    post = {"type": "new", "events": [new(k) for k in keys]}
+    parts = m.build_digest(post, {("eu", "f"): {"items": items}}, None, None, None, NOW, "feed")["components"][0]["components"]
+    urls = [i["media"]["url"] for i in next(c for c in parts if c["type"] == 12)["items"]]
+    assert urls == ["https://x/shared.png"] + [f"https://x/{i}.png" for i in range(2, 12)][:9]
+
+
 def test_a_removed_banner_has_no_price_to_show():
     e = event("gone")
     assert m._price_text(e, {}) is None
