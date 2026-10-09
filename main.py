@@ -221,6 +221,13 @@ def shop_sweep(region, family):
         json.dump(diff, f, indent=2, ensure_ascii=False)
 
 
+def shop_notify():
+    with open(SHOP_DIFF_FILE, "r", encoding="utf-8") as f:
+        diff = json.load(f)
+    discord.send_shop_alerts(diff, os.environ.get("ACTIONS_RUN_URL"))
+    logger.success("Notify complete.")
+
+
 def shop_commit():
     """One commit per changed family, then a single push. Records each SHA in shop-diff.json."""
     with open(SHOP_DIFF_FILE, "r", encoding="utf-8") as f:
@@ -252,11 +259,12 @@ def main():
     parser.add_argument("--shop", action="store_true", help="Battle.net Shop tracking: fetch, write changes + shop-diff.json")
     parser.add_argument("--dry-run", action="store_true", help="with --shop: print what the shop lists, save nothing")
     parser.add_argument("--shop-commit", action="store_true", help="commit the shop run per family, push, record SHAs in shop-diff.json")
+    parser.add_argument("--shop-notify", action="store_true", help="post the shop run's failing and recovered pages to the log channel")
     parser.add_argument("--region", help="with --shop: only this region (eu or us)")
     parser.add_argument("--family", help="with --shop: only this shop family slug")
     parser.add_argument("--notify", action="store_true", help="post the run summary to the log channel")
     args = parser.parse_args()
-    if not (args.scrape or args.deepen or args.commit or args.outbox or args.notify or args.shop or args.shop_commit):
+    if not (args.scrape or args.deepen or args.commit or args.outbox or args.notify or args.shop or args.shop_commit or args.shop_notify):
         parser.print_help()
     if args.scrape:
         scrape()
@@ -272,6 +280,8 @@ def main():
         (shop_dry_run if args.dry_run else shop_sweep)(args.region, args.family)
     if args.shop_commit:
         shop_commit()
+    if args.shop_notify:
+        shop_notify()
 
 
 if __name__ == "__main__":

@@ -223,3 +223,11 @@ def test_archive_log_is_not_folded_when_the_post_would_get_too_long():
     tracker = tracker_log()
     tracker["components"][0]["components"][2]["content"] += "x" * 1500
     assert discord.merge_archive_log(read_back(tracker), archive) is None
+
+
+def test_shop_alerts_for_a_whole_region_stay_in_one_message_within_the_text_limit():
+    down = [{"source": f"eu/family-{n}", "kind": "down", "error": "x" * 300, "since": "2026-09-30T09:00:00Z"}
+            for n in range(13)]
+    message = discord.build_shop_alert_message(down, "https://run")
+    body = texts(message)
+    assert len(message["components"]) == 1 and len(body) <= discord.LOG_TOTAL_TEXT and "more" in body

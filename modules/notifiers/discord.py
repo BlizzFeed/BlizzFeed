@@ -237,6 +237,27 @@ def build_log_message(diff, sources, repo_url, run_url):
     return _log_payload(containers)
 
 
+def build_shop_alert_message(alerts, run_url):
+    """Shop pages that started or stopped failing, in one container however many there are."""
+    blocks = []
+    down = [a for a in alerts if a["kind"] == "down"]
+    if down:
+        blocks.append("## Shop pages failing\n" + "\n".join(
+            f"- `{a['source']}` since {_discord_time(a['since'], relative_only=True)}: {_trim(a['error'], 100)}"
+            for a in down))
+    recovered = [a for a in alerts if a["kind"] == "recovered"]
+    if recovered:
+        blocks.append("## Shop pages recovered\n" + "\n".join(
+            f"- `{a['source']}` (was failing since {_discord_time(a['since'], relative_only=True)})"
+            for a in recovered))
+    if not blocks:
+        return None
+    inner = [_text("\n\n".join(_fit_lines(block, LOG_TEXT_BUDGET // 2) for block in blocks))]
+    if run_url:
+        inner.append({"type": 1, "components": [_link_button("Run logs", run_url)]})
+    return _log_payload([{"type": 17, "accent_color": COLORS["down" if down else "recovered"], "components": inner}])
+
+
 def _log_payload(containers):
     return {"flags": IS_COMPONENTS_V2, "username": LOG_USERNAME, "avatar_url": LOG_AVATAR,
             "components": containers}
@@ -458,6 +479,17 @@ def send_log(diff, sources, repo_url, run_url):
     if message_id:
         logger.info("Posted the run log.")
     return message_id
+
+
+def send_shop_alerts(diff, run_url):
+    """Post the shop run's failing and recovered alerts to DISCORD_WEBHOOK_LOG. Never fails the run."""
+    url = os.environ.get("DISCORD_WEBHOOK_LOG")
+    if not url:
+        logger.info("DISCORD_WEBHOOK_LOG isn't set; skipping the shop alerts.")
+        return
+    message = build_shop_alert_message(diff["alerts"], run_url)
+    if message and post(url, message):
+        logger.info("Posted the shop alerts.")
 
 
 def send_archive_log(diff, sources, repo_url, run_url, log_message=None):
