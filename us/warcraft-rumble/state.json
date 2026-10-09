@@ -1,0 +1,339 @@
+{
+  "items": {
+    "blt4a6316a5f50ddd74": {
+      "key": "blt4a6316a5f50ddd74",
+      "kind": "banner",
+      "cmsId": "blt4a6316a5f50ddd74",
+      "slug": "warcraft-rumble",
+      "itemId": null,
+      "title": "Warcraft Rumble™",
+      "productPageName": "Warcraft Rumble™",
+      "headline": "",
+      "subHeadline": "Now Available on PC! Play Warcraft Rumble on PC Today",
+      "buttonText": "Play Now",
+      "destination": "/product/warcraft-rumble",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt849129376db3db8d/68b761041a62074bc9fd3049/GRY_Announce_HeaderA_Desktop-1600x500.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt38780dba04babc8e": {
+      "key": "blt38780dba04babc8e",
+      "kind": "banner",
+      "cmsId": "blt38780dba04babc8e",
+      "slug": "warcraft-rumble-kickstart-packs",
+      "itemId": null,
+      "title": "Warcraft Rumble™: Kickstart P.A.C.K.s",
+      "productPageName": "Warcraft Rumble™: Kickstart P.A.C.K.s",
+      "headline": "",
+      "subHeadline": "Buy Deluxe Digital Items for PC!",
+      "buttonText": "Shop Now",
+      "destination": "/product/warcraft-rumble-kickstart-packs",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltaf141249c83510e9/68b75bcbc843b6d80d36bf87/WR_PCBundleProductPage_ChickenPC_BattleNet_ShopHomepage_Desktop_1600x500.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt74d2ebd3e2ae5576": {
+      "key": "blt74d2ebd3e2ae5576",
+      "kind": "item",
+      "cmsId": "blt74d2ebd3e2ae5576",
+      "slug": "warcraft-rumble",
+      "title": "Warcraft Rumble™",
+      "description": "Action Strategy",
+      "categoryId": "action-strategy",
+      "itemId": null,
+      "productIds": [
+        924393
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/warcraft-rumble?p=924393",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt45000a78b228a0cc/6319138dbe2fcf0db5eea474/ARC_00_ShopAssets_Battlenet_PRODUCT-THUMB-960x540_JL01a.jpg",
+      "sections": [
+        "Game"
+      ],
+      "badge": "Beta",
+      "price": {
+        "fullAmount": null,
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": null,
+        "raw": 0,
+        "labelFormat": "Play For Free"
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt8402d2b03e0e569c": {
+      "key": "blt8402d2b03e0e569c",
+      "kind": "item",
+      "cmsId": "blt8402d2b03e0e569c",
+      "slug": "warcraft-rumble-kickstart-packs",
+      "title": "Warcraft Rumble™: Kickstart P.A.C.K.s",
+      "description": "Bundles",
+      "categoryId": "bundles",
+      "itemId": null,
+      "productIds": [
+        1888918,
+        1890174
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/warcraft-rumble-kickstart-packs",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blta211a45aa5351f02/674f6c927fca7cd0405c57ef/WR_PCBundleProductPage_ChickenPC-GOLD_BattleNet_ShopBrowsingCard_1920x1080.png",
+      "sections": [
+        "Bundles"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$39.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 39.99,
+        "labelFormat": "From {0}"
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "bltd51f3d98f4f1e331": {
+      "key": "bltd51f3d98f4f1e331",
+      "kind": "item",
+      "cmsId": "bltd51f3d98f4f1e331",
+      "slug": "warcraft-rumble-coin-packs",
+      "title": "12600 Coins",
+      "description": "In-Game Content",
+      "categoryId": "in-game-content",
+      "itemId": null,
+      "productIds": [
+        1599689
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/warcraft-rumble-coin-packs?p=1599689",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt14d6ff22f9412140/66074cd89f4212432ef6137e/WR_Coins_BNET_ChestLarge.png",
+      "sections": [
+        "Coin Packs"
+      ],
+      "badge": "Great Deal",
+      "price": {
+        "fullAmount": "$99.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 99.99,
+        "labelFormat": "From {0}"
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt236393c7dfd616ed": {
+      "key": "blt236393c7dfd616ed",
+      "kind": "item",
+      "cmsId": "blt236393c7dfd616ed",
+      "slug": "warcraft-rumble-coin-packs",
+      "title": "6300 Coins",
+      "description": "In-Game Content",
+      "categoryId": "in-game-content",
+      "itemId": null,
+      "productIds": [
+        1599690
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/warcraft-rumble-coin-packs?p=1599690",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt8bd9ef7778318d4d/66074cd82829dd724ce9cff4/WR_Coins_BNET_ChestSmall.png",
+      "sections": [
+        "Coin Packs"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$49.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 49.99,
+        "labelFormat": "From {0}"
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blta09df630b0615aaf": {
+      "key": "blta09df630b0615aaf",
+      "kind": "item",
+      "cmsId": "blta09df630b0615aaf",
+      "slug": "warcraft-rumble-coin-packs",
+      "title": "3150 Coins",
+      "description": "In-Game Content",
+      "categoryId": "in-game-content",
+      "itemId": null,
+      "productIds": [
+        1599692
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/warcraft-rumble-coin-packs?p=1599692",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt9eaebaa17b42195f/66074cd8bbb7f02c5dbcf278/WR_Coins_BNET_BagLargeCoins.png",
+      "sections": [
+        "Coin Packs"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$24.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 24.99,
+        "labelFormat": "From {0}"
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt1a25bc503c9f0301": {
+      "key": "blt1a25bc503c9f0301",
+      "kind": "item",
+      "cmsId": "blt1a25bc503c9f0301",
+      "slug": "warcraft-rumble-coin-packs",
+      "title": "1260 Coins",
+      "description": "In-Game Content",
+      "categoryId": "in-game-content",
+      "itemId": null,
+      "productIds": [
+        1599688
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/warcraft-rumble-coin-packs?p=1599688",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt896715e0dbe6349d/66074cd8022c723e1f87fee6/WR_Coins_BNET_BagLarge.png",
+      "sections": [
+        "Coin Packs"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$9.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 9.99,
+        "labelFormat": "From {0}"
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "bltde4253a11d02e53b": {
+      "key": "bltde4253a11d02e53b",
+      "kind": "item",
+      "cmsId": "bltde4253a11d02e53b",
+      "slug": "warcraft-rumble-coin-packs",
+      "title": "525 Coins",
+      "description": "In-Game Content",
+      "categoryId": "in-game-content",
+      "itemId": null,
+      "productIds": [
+        1599687
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/warcraft-rumble-coin-packs?p=1599687",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt20a76df343d2cffd/66074cd8f3b26a60b52a7e14/WR_Coins_BNET_BagMed.png",
+      "sections": [
+        "Coin Packs"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$4.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 4.99,
+        "labelFormat": "From {0}"
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blta6a7736ea2bea722": {
+      "key": "blta6a7736ea2bea722",
+      "kind": "item",
+      "cmsId": "blta6a7736ea2bea722",
+      "slug": "warcraft-rumble-coin-packs",
+      "title": "95 Coins",
+      "description": "In-Game Content",
+      "categoryId": "in-game-content",
+      "itemId": null,
+      "productIds": [
+        1599691
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/warcraft-rumble-coin-packs?p=1599691",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt56c1eaf57be49804/66074cd839a9b335bbf86c0e/WR_Coins_BNET_BagSmall.png",
+      "sections": [
+        "Coin Packs"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$0.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 0.99,
+        "labelFormat": "From {0}"
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blta8464c6e8d080df8": {
+      "key": "blta8464c6e8d080df8",
+      "kind": "item",
+      "cmsId": "blta8464c6e8d080df8",
+      "slug": "warcraft-rumble-coin-packs",
+      "title": "Coin Packs",
+      "description": "In-Game Content",
+      "categoryId": "in-game-content",
+      "itemId": null,
+      "productIds": [
+        1599691,
+        1599687,
+        1599688,
+        1599692,
+        1599690,
+        1599689
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/warcraft-rumble-coin-packs",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltdcb5971bfe3885c3/65399595a4897a462cfe98f8/WR_BNET_VC_Shop_Header_1920x1080.png",
+      "sections": [
+        "Coin Packs"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$0.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 0.99,
+        "labelFormat": "From {0}"
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    }
+  },
+  "suspect": false
+}
