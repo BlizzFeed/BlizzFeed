@@ -14,6 +14,7 @@ RECORD = re.compile(r"^([0-9a-f]+):(.*)$")
 BANNER_SECTION = "Banner"
 PRODUCT_PATH = re.compile(r"/product/([^/?#]+)")
 ITEM_PATH = re.compile(r"/items/(\d+)")
+FAMILY_PATH = re.compile(r"/family/([a-z0-9-]+)")
 UNTITLED_SECTION = "(untitled)"
 
 
@@ -52,6 +53,11 @@ def _payload(response):
 def fetch_family(session, base, family):
     """The family page's data payload (the Next.js RSC stream)."""
     return _payload(_get(session, f"{base}/family/{family}"))
+
+
+def home_families(session, base):
+    """The family slugs the shop's home page links to."""
+    return set(FAMILY_PATH.findall(_payload(_get(session, base))))
 
 
 def item_page_url(base, family, item):

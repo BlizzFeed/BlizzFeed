@@ -66,7 +66,7 @@ Besides articles, BlizzFeed watches what the Battle.net Shop lists for each game
 - The first run for a page saves everything without posting. After that it records what is new, back, gone, changed in price, on sale or no longer on sale, given a badge, or changed in title, description, image or sections, plus header banners.
 - An item only counts as gone after it has been missing for 3 sweeps and its own page shows no price. A fetch that fails, or that loses more than a quarter of a page's items at once, is held until the next one agrees.
 - The `shop` branch keeps `<region>/<family>/state.json`, a Markdown card per item (so GitHub's history shows each change), and `changes.jsonl`, an append-only log of every change. `posted.json` lists recent posts.
-- The log channel gets a summary of each run that had changes, and an alert when a page keeps failing. `SHOP_HEARTBEAT_URL` (optional secret) is pinged after each good run.
+- The log channel gets a summary of each run that had changes, an alert when a page keeps failing, and a note once a day when the shop's home page links to a family that isn't in `sources.yaml`. `SHOP_HEARTBEAT_URL` (optional secret) is pinged after each good run.
 
 **What is posted.** A game's feed gets new and back items in its `all` and `new` channels, and price, sale and badge changes in its `all` and `updated` channels. The shop channel (`channel:` under `shop:`) gets every change, including removals, sales ending, banners and detail edits. WoW's EU changes go to the EU feed and its US changes to the US feed; other games have only an EU feed, so a US-only change for them goes to the shop channel alone.
 

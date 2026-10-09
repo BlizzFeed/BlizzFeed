@@ -49,6 +49,14 @@ jobs:
           SHOP_DIFF_FILE: shop-diff.json
         run: python code/main.py --shop
 
+      # Once a day; it never fails the run.
+      - name: Check for new shop families
+        continue-on-error: true
+        env:
+          SHOP_DIR: shop
+          DISCORD_WEBHOOK_LOG: ${{ secrets.DISCORD_WEBHOOK_LOG }}
+        run: python code/main.py --shop-families
+
       - name: Commit and push
         env:
           SHOP_DIR: shop

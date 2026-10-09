@@ -5,6 +5,7 @@ import sys
 import time
 from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
+from datetime import datetime, timedelta
 from types import SimpleNamespace
 
 from loguru import logger
@@ -232,6 +233,33 @@ def shop_notify():
     logger.success("Notify complete.")
 
 
+def shop_families():
+    """Once a day, tells the log channel about shop families that aren't in sources.yaml."""
+    config = load_shop_config(SOURCES_FILE)
+    path = os.path.join(SHOP_DIR, shop_differ.META_FILE)
+    meta = {}
+    if os.path.exists(path):
+        with open(path, "r", encoding="utf-8") as f:
+            meta = json.load(f)
+    now = outbox.now_iso()
+    last = meta.get("last_family_check")
+    if last and datetime.fromisoformat(now) - datetime.fromisoformat(last) < timedelta(hours=config["family_check_hours"]):
+        return
+    base = next(iter(config["regions"].values()))
+    try:
+        slugs = shop.home_families(shop.open_session(), base)
+    except Exception as e:
+        logger.warning(f"Couldn't read the shop's home page: {e}")
+        return
+    new, meta = shop_differ.family_check(meta, slugs, config["families"], now)
+    if new and not discord.send_new_families(new, base):
+        return  # reported again next run
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
+        json.dump(meta, f, indent=2)
+        f.write("\n")
+    logger.success(f"Shop families checked: {len(new)} new.")
+
+
 def shop_commit():
     """One commit per changed family, then a single push. Records each SHA in shop-diff.json."""
     with open(SHOP_DIFF_FILE, "r", encoding="utf-8") as f:
@@ -242,6 +270,7 @@ def shop_commit():
                                   ", ".join(f"{n} {kind}" for kind, n in counts.items()) or "state")
         entry["commit"] = gitops.commit_paths(SHOP_DIR, [label], message)
     gitops.commit_paths(SHOP_DIR, [health.HEALTH_FILE], "health state")
+    gitops.commit_paths(SHOP_DIR, [shop_differ.META_FILE], "family check")
     gitops.push(SHOP_DIR)
     with open(SHOP_DIFF_FILE, "w", encoding="utf-8") as f:
         json.dump(diff, f, indent=2, ensure_ascii=False)
@@ -285,13 +314,14 @@ def main():
     parser.add_argument("--shop", action="store_true", help="Battle.net Shop tracking: fetch, write changes + shop-diff.json")
     parser.add_argument("--dry-run", action="store_true", help="with --shop: print what the shop lists, save nothing")
     parser.add_argument("--shop-commit", action="store_true", help="commit the shop run per family, push, record SHAs in shop-diff.json")
+    parser.add_argument("--shop-families", action="store_true", help="once a day, report shop families that aren't in sources.yaml")
     parser.add_argument("--shop-outbox", action="store_true", help="write outbox.json from shop-diff.json, for the bot")
     parser.add_argument("--shop-notify", action="store_true", help="post the shop run summary to the log channel")
     parser.add_argument("--region", help="with --shop: only this region (eu or us)")
     parser.add_argument("--family", help="with --shop: only this shop family slug")
     parser.add_argument("--notify", action="store_true", help="post the run summary to the log channel")
     args = parser.parse_args()
-    if not (args.scrape or args.deepen or args.commit or args.outbox or args.notify or args.shop or args.shop_commit or args.shop_outbox or args.shop_notify):
+    if not (args.scrape or args.deepen or args.commit or args.outbox or args.notify or args.shop or args.shop_commit or args.shop_families or args.shop_outbox or args.shop_notify):
         parser.print_help()
     if args.scrape:
         scrape()
@@ -305,6 +335,8 @@ def main():
         notify()
     if args.shop:
         (shop_dry_run if args.dry_run else shop_sweep)(args.region, args.family)
+    if args.shop_families:
+        shop_families()
     if args.shop_commit:
         shop_commit()
     if args.shop_outbox:

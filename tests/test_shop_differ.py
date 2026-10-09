@@ -182,3 +182,12 @@ def test_a_product_only_item_that_gains_a_card_is_the_same_item():
     assert changes == [] and "p:5" not in state["items"] and state["items"]["blt1"]["first_seen"] == T0
     state, changes = run(state, page(item("blt1", itemId=5, title="X", price={"fullAmount": "7.99", "discountAmount": None}), *STABLE))
     assert types(changes) == ["price"]
+
+
+def test_a_new_shop_family_is_reported_once_and_the_first_check_reports_nothing():
+    new, meta = sd.family_check({}, ["a", "b", "c"], ["a"], T0)
+    assert new == []
+    new, meta = sd.family_check(meta, ["a", "b", "c", "d"], ["a"], T1)
+    assert new == ["d"]
+    new, _ = sd.family_check(meta, ["a", "b", "c", "d"], ["a"], LATER)
+    assert new == []

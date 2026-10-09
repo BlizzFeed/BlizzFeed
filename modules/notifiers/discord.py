@@ -313,6 +313,13 @@ def build_shop_log_message(diff, families, regions, repo_url, run_url):
                                         "Shop run", noun="shop page")])
 
 
+def build_new_families_message(slugs, base):
+    """Shop families the home page links to that aren't in sources.yaml, for the log channel."""
+    lines = "\n".join(f"- [{slug}]({base}/family/{slug})" for slug in slugs)
+    text = f"## New shop families\n{lines}\n-# Not tracked. Add them under shop: families in sources.yaml to follow them."
+    return _log_payload([{"type": 17, "accent_color": COLORS["log"], "components": [_with_logo(text)]}])
+
+
 def build_shop_alert_message(alerts, run_url):
     """Shop pages that started or stopped failing, in one container however many there are."""
     blocks = []
@@ -568,6 +575,15 @@ def send_shop_log(diff, families, regions, repo_url, run_url):
                     build_shop_alert_message(diff["alerts"], run_url)):
         if message and post(url, message):
             logger.info("Posted the shop log.")
+
+
+def send_new_families(slugs, base):
+    """Posts new shop families to DISCORD_WEBHOOK_LOG. True when it went out."""
+    url = os.environ.get("DISCORD_WEBHOOK_LOG")
+    if not url:
+        logger.info("DISCORD_WEBHOOK_LOG isn't set; skipping the new families.")
+        return False
+    return bool(post(url, build_new_families_message(slugs, base)))
 
 
 def send_archive_log(diff, sources, repo_url, run_url, log_message=None):

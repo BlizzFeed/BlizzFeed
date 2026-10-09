@@ -3,6 +3,7 @@ import os
 from datetime import datetime, timedelta
 
 SUSPECT_DROP = 0.25  # a fetch losing more than this share of the listed items is held for a second look
+META_FILE = "meta.json"
 UNLISTED_RECHECK = timedelta(hours=24)
 DETAIL_FIELDS = ("title", "description", "image", "sections")
 BANNER_FIELDS = ("headline", "subHeadline", "buttonText", "destination")
@@ -22,6 +23,13 @@ def load_state(shop_dir, region, family):
         return None
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
+
+
+def family_check(meta, slugs, tracked, now):
+    """(families to report, new meta). The first check reports nothing."""
+    reported = set(meta.get("reported", []))
+    new = sorted(set(slugs) - set(tracked) - reported) if "last_family_check" in meta else []
+    return new, {"last_family_check": now, "reported": sorted(reported | set(slugs) - set(tracked))}
 
 
 def card_name(key):
