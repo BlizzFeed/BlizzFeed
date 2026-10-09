@@ -82,6 +82,13 @@ def sweep(old, fetched, now, misses_needed, confirm):
     if len(vanished) > SUSPECT_DROP * len(listed) and not old.get("suspect"):
         return {**old, "suspect": True}, []  # believed if the next fetch agrees
 
+    for key, item in fetched.items():  # a product-only item that gained a card keeps its history under the new key
+        if key not in items and item["kind"] == "item" and item["itemId"]:
+            old = next((k for k, i in items.items() if k not in fetched and i["kind"] == "item"
+                        and i["status"] != "gone" and i["itemId"] == item["itemId"]), None)
+            if old:
+                items[key] = items.pop(old)
+
     changes = []
 
     def log(kind, item, **extra):

@@ -174,3 +174,11 @@ def test_a_big_drop_that_recovers_is_forgotten():
     held, _ = run(state, page(item("k")))
     state, changes = run(held, page(item("k"), item("d")))
     assert changes == [] and state["suspect"] is False and state["items"]["d"]["misses"] == 0
+
+
+def test_a_product_only_item_that_gains_a_card_is_the_same_item():
+    state = baseline(item("p:5", itemId=5, title="X"))
+    state, changes = run(state, page(item("blt1", itemId=5, title="X"), *STABLE))
+    assert changes == [] and "p:5" not in state["items"] and state["items"]["blt1"]["first_seen"] == T0
+    state, changes = run(state, page(item("blt1", itemId=5, title="X", price={"fullAmount": "7.99", "discountAmount": None}), *STABLE))
+    assert types(changes) == ["price"]
