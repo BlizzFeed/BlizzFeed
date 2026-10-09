@@ -270,7 +270,7 @@ def _shop_line(change, base):
     if change["type"] == "banner" and change.get("product"):
         text = f"{change['button']} · {change['product']}"
     else:
-        text = change["title"].strip()
+        text = (change["title"] or change["key"]).strip()
     label = _trim(text, 80).replace("[", "(").replace("]", ")")
     destination = change.get("destination") or ""
     url = base + destination if destination.startswith("/") else destination  # the Gear cards link off-site
@@ -298,8 +298,8 @@ def _shop_entry(name, entry, base, repo_url, recovered_since):
 
 
 def build_shop_log_message(diff, families, regions, repo_url, run_url):
-    """Summary of a shop run for the log channel, or None when nothing happened. Shop pages that fail
-    get their own red container; one that recovered is listed with the changes."""
+    """Summary of a shop run for the log channel, or None when nothing happened. A page that recovered
+    is listed with the changes; failing pages are a message of their own (build_shop_alert_message)."""
     recovered = {a["source"]: a["since"] for a in diff["alerts"] if a["kind"] == "recovered"}
     blocks = []
     for label, entry in diff["families"].items():
@@ -307,13 +307,10 @@ def build_shop_log_message(diff, families, regions, repo_url, run_url):
             region, family = label.split("/")
             blocks.append(_shop_entry(f"{families[family]['name']} · {region.upper()}", entry, regions[region],
                                       repo_url, recovered.get(label)))
-    containers = []
-    if blocks:
-        containers.append(_log_container(SHOP_LOG_HEADING, blocks, len(families) * len(regions), run_url, "Shop run",
-                                         noun="shop page"))
-    if alerts := build_shop_alert_message(diff["alerts"], run_url):
-        containers += alerts["components"]
-    return _log_payload(containers) if containers else None
+    if not blocks:
+        return None
+    return _log_payload([_log_container(SHOP_LOG_HEADING, blocks, len(families) * len(regions), run_url,
+                                        "Shop run", noun="shop page")])
 
 
 def build_shop_alert_message(alerts, run_url):
@@ -561,14 +558,16 @@ def send_log(diff, sources, repo_url, run_url):
 
 
 def send_shop_log(diff, families, regions, repo_url, run_url):
-    """Post the shop run's summary and failing or recovered pages to DISCORD_WEBHOOK_LOG. Never fails the run."""
+    """Post the shop run's summary, then its failing or recovered pages, to DISCORD_WEBHOOK_LOG. Two messages,
+    so a long summary and many alerts can't pass Discord's text limit together. Never fails the run."""
     url = os.environ.get("DISCORD_WEBHOOK_LOG")
     if not url:
         logger.info("DISCORD_WEBHOOK_LOG isn't set; skipping the shop log.")
         return
-    message = build_shop_log_message(diff, families, regions, repo_url, run_url)
-    if message and post(url, message):
-        logger.info("Posted the shop log.")
+    for message in (build_shop_log_message(diff, families, regions, repo_url, run_url),
+                    build_shop_alert_message(diff["alerts"], run_url)):
+        if message and post(url, message):
+            logger.info("Posted the shop log.")
 
 
 def send_archive_log(diff, sources, repo_url, run_url, log_message=None):
