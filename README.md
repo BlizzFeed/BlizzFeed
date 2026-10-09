@@ -1,0 +1,1 @@
+Frozen game logos. Old Discord posts link to `.../source/logos/...`, so don't change or delete this branch. The code is on `main`.
