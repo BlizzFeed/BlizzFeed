@@ -185,6 +185,8 @@ def parse_items(payload):
 def describe(item):
     """One line for the dry run."""
     price = item.get("price") or {}
-    cost = f"{price['raw']} (sale)" if price.get("discountAmount") else price.get("raw", "-")
+    cost = price["raw"] if price.get("fullAmount") else price.get("labelFormat") or "-"
+    if price.get("discountAmount"):
+        cost = f"{cost} (sale)"
     badge = f" [{item['badge']}]" if item.get("badge") else ""
     return f"{item['title']}{badge}  {cost}  <{item['key']}>"
