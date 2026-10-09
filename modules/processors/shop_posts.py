@@ -99,29 +99,39 @@ def audiences(event, sources, regions=None):
     return list(dict.fromkeys(out)) + [("shop", None)]
 
 
+def _singles(events):
+    """A post per item, so an item with several changes in a run is one post."""
+    items = {}
+    for event in sorted(events, key=lambda e: ORDER.index(e["type"])):
+        items.setdefault((event["family"], event["key"]), []).append(event)
+    return [{"kind": "single", "type": item[0]["type"], "events": item} for item in items.values()]
+
+
+def _announced(event):
+    """A price change that only made the sale price the list price isn't news; the sale ending is."""
+    return not (event["type"] == "price" and any(c.get("sale_kept") for c in event["changes"].values()))
+
+
 def plan(events, families):
     """The posts of a run: {destination, game (the family's first feed), kind (single, digest or more), type,
     edit, events}. Edits go to destinations the event was already posted to; the rest are digested and capped."""
     groups, posts = {}, []
-    for event in events:
+    for event in filter(_announced, events):
         sources = families[event["family"]]["sources"]
         before = audiences(event, sources, event["was"]) if "was" in event else []
         for destination in audiences(event, sources):
-            if destination in before:
-                posts.append({"destination": destination, "game": sources[0], "kind": "single",
-                              "type": event["type"], "edit": True, "events": [event]})
-            else:
-                groups.setdefault((destination, sources[0]), []).append(event)
-    for (destination, game), members in groups.items():
-        by_type = {t: [e for e in members if e["type"] == t] for t in ORDER}
-        built = []
-        for kind, same in by_type.items():
-            if len(same) >= DIGEST_AT:
-                built.append({"kind": "digest", "type": kind, "events": same})
-            else:
-                built += [{"kind": "single", "type": kind, "events": [e]} for e in same]
-        if len(built) > MAX_POSTS:
-            rest = [e for p in built[MAX_POSTS - 1:] for e in p["events"]]
-            built = built[:MAX_POSTS - 1] + [{"kind": "more", "type": None, "events": rest}]
-        posts += [{"destination": destination, "game": game, "edit": False, **p} for p in built]
+            groups.setdefault((destination, sources[0], destination in before), []).append(event)
+    for (destination, game, edit), members in groups.items():
+        if edit:
+            built = _singles(members)
+        else:
+            by_type = {t: [e for e in members if e["type"] == t] for t in ORDER}
+            built = [{"kind": "digest", "type": t, "events": same}
+                     for t, same in by_type.items() if len(same) >= DIGEST_AT]
+            digested = {id(e) for p in built for e in p["events"]}
+            built += _singles([e for e in members if id(e) not in digested])
+            if len(built) > MAX_POSTS:
+                rest = [e for p in built[MAX_POSTS - 1:] for e in p["events"]]
+                built = built[:MAX_POSTS - 1] + [{"kind": "more", "type": None, "events": rest}]
+        posts += [{"destination": destination, "game": game, "edit": edit, **p} for p in built]
     return posts

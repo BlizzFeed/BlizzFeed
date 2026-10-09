@@ -96,15 +96,16 @@ def build_shop_entries(posts, states, sources, shop_channel, repo_url, detected)
         changes = list(events[0]["changes"].values())
         commit = changes[-1].get("commit")
         if post["kind"] == "single":
-            message = shop_messages.build_single(events[0], states, source.logo, repo_url, commit, detected, kind)
+            message = shop_messages.build_single(events, states, source.logo, repo_url, commit, detected, kind)
             title = changes[0]["title"] or events[0]["key"]
         else:
             message = shop_messages.build_digest(post, states, source.logo, repo_url, commit, detected, kind)
             title = shop_messages.DIGEST[post["type"]].format(n=len(events))
         if kind == "feed":
             feed = sources[source_id]
-            tiers = shop_posts.FEED_TIERS.get(post["type"], ("all",))  # a mix of types only goes to "all"
-            channels = [c for tier in tiers for c in feed.tier_channels[tier]]
+            types = [post["type"]] if post["kind"] == "digest" else [e["type"] for e in events]
+            tiers = {t for kind in types for t in shop_posts.FEED_TIERS.get(kind, ("all",))}  # a mix goes only to "all"
+            channels = [c for tier in sorted(tiers) for c in feed.tier_channels[tier]]
             name = feed.name
         else:
             channels, name = [shop_channel] if shop_channel else [], "Battle.net Shop"

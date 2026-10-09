@@ -78,6 +78,15 @@ def test_price_sale_badge_and_details_changes():
     assert types(changes) == ["sale_end"]
 
 
+def test_a_sale_ending_at_its_own_price_is_marked_so_the_price_change_isnt_announced():
+    sale = item("a", price={"fullAmount": "26.00", "discountAmount": "24.00"})
+    state = baseline(sale)
+    _, changes = run(state, page(item("a", price={"fullAmount": "24.00", "discountAmount": None}), *STABLE))
+    assert types(changes) == ["price", "sale_end"] and all(c["sale_kept"] for c in changes)
+    _, changes = run(state, page(item("a", price={"fullAmount": "20.00", "discountAmount": None}), *STABLE))
+    assert not any(c.get("sale_kept") for c in changes)
+
+
 def test_a_details_change_keeps_the_old_and_new_values():
     state = baseline(item("a"))
     _, changes = run(state, page(item("a", title="Renamed", sections=["Mounts", "Featured"]), *STABLE))

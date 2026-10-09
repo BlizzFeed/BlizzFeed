@@ -64,10 +64,13 @@ def _compare(prev, item):
         return [("banner", {"what": "changed", **differing})] if differing["changed"] else []
     changes = []
     old, new = prev.get("price") or {}, item.get("price") or {}
+    # A sale that ends by making its price the list price costs buyers nothing, so posts skip the price change.
+    ended = old.get("discountAmount") and not new.get("discountAmount")
+    kept = {"sale_kept": True} if ended and old["discountAmount"] == new.get("fullAmount") else {}
     if old.get("fullAmount") != new.get("fullAmount"):
-        changes.append(("price", {"from": old.get("fullAmount"), "to": new.get("fullAmount")}))
+        changes.append(("price", {"from": old.get("fullAmount"), "to": new.get("fullAmount"), **kept}))
     if bool(old.get("discountAmount")) != bool(new.get("discountAmount")):
-        changes.append(("sale_start" if new.get("discountAmount") else "sale_end", {}))
+        changes.append(("sale_start" if new.get("discountAmount") else "sale_end", kept))
     if prev.get("badge") != item.get("badge"):
         changes.append(("badge", {"from": prev.get("badge"), "to": item.get("badge"),
                                   "maybe_new": item.get("badge") == "New"}))

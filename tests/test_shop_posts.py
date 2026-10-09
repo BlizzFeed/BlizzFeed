@@ -18,6 +18,24 @@ def event(kind, regions, family="overwatch", key="c-1"):
             "changes": {r: change(kind, key) for r in regions}}
 
 
+def item_event(kind, key="c-1", **extra):
+    return {"type": kind, "family": "overwatch", "key": key, "slug": "s", "seen": NOW,
+            "changes": {"eu": {**change(kind, key), **extra}}}
+
+
+def test_one_items_changes_in_a_run_are_one_post_per_destination():
+    posts = sp.plan([item_event("sale_end"), item_event("price")], FAMILIES)
+    shop = [p for p in posts if p["destination"] == ("shop", None)]
+    assert len(shop) == 1 and [e["type"] for e in shop[0]["events"]] == ["price", "sale_end"]
+    feed = [p for p in posts if p["destination"][0] == "feed"]
+    assert [[e["type"] for e in p["events"]] for p in feed] == [["price"]]  # sale_end isn't a feed type
+
+
+def test_a_sale_that_became_the_regular_price_goes_to_the_shop_channel_as_a_sale_end_only():
+    posts = sp.plan([item_event("price", sale_kept=True), item_event("sale_end", sale_kept=True)], FAMILIES)
+    assert [(p["destination"], [e["type"] for e in p["events"]]) for p in posts] == [(("shop", None), ["sale_end"])]
+
+
 def test_same_sweep_in_both_regions_is_one_event():
     events, ledger = sp.resolve([], [fresh("eu"), fresh("us")], NOW)
     assert len(events) == 1 and set(events[0]["changes"]) == {"eu", "us"} and "was" not in events[0]

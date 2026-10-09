@@ -62,6 +62,8 @@ def _price_text(event, states):
         return _join(_sale(i["price"]) for i in _listed(states, event) if i["price"].get("discountAmount"))
     if kind == "sale_end":
         text = _join(f"**{p}**" for i in _listed(states, event) if (p := _shown(i["price"])))
+        if text and any(c.get("sale_kept") for c in changes):
+            return f"{text} is now the regular price"
         return f"back to {text}" if text else None
     if kind == "price":
         return _join(f"{c['from'] or '–'} → **{c['to'] or '–'}**" for c in changes)
@@ -116,32 +118,40 @@ def _buttons(shop_url, repo_url, commit, history, channel):
     return {"type": 1, "components": row}
 
 
-def build_single(event, states, logo, repo_url, commit, now, channel):
+def _status_line(event, states):
+    line = _status(event)
+    if price := _price_text(event, states) if event["type"] != "badge" else None:
+        line += f" · {price}"
+    return line
+
+
+def build_single(events, states, logo, repo_url, commit, now, channel):
+    """An item's changes in a run, one status line each."""
+    event = events[0]
     region, change = next(iter(event["changes"].items()))
     kind = event["type"]
     item = _art_item(states, event)
     title = (change["title"] or event["key"]).strip()
-    text = f"## {d._trim(title, 256)}\n{_status(event)}"
-    if price := _price_text(event, states) if kind != "badge" else None:
-        text += f" · {price}"
+    text = f"## {d._trim(title, 256)}\n" + "\n".join(_status_line(e, states) for e in events)
     note = item.get("subHeadline") if kind == "banner" else None if kind == "details" else item.get("description")
     if note:
         text += f"\n{d._trim(note, 200)}"
     inner = d._top(d._text(text), logo, title)
     art = [{"media": {"url": _image(item.get("image"))}}] if item.get("image") else []
-    if kind == "details":
-        if block := d._diff_block(_detail_lines(change)):
+    if edited := next((e for e in events if e["type"] == "details"), None):
+        detail = next(iter(edited["changes"].values()))
+        if block := d._diff_block(_detail_lines(detail)):
             inner.append(block)
-        if "image" in change["changed"]:
+        if "image" in detail["changed"]:
             inner.append(d._text("**Before** (left)  ·  **After** (right)"))
-            art = [{"media": {"url": _image(change["from"]["image"])}, "description": "Before"},
-                   {"media": {"url": _image(change["to"]["image"])}, "description": "After"}]
+            art = [{"media": {"url": _image(detail["from"]["image"])}, "description": "Before"},
+                   {"media": {"url": _image(detail["to"]["image"])}, "description": "After"}]
     if art:
         inner.append({"type": 12, "items": art})
     shop_url = None if kind == "gone" else _url(change["destination"])
     history = f"{region}/{event['family']}/items/{shop_differ.card_name(event['key'])}.md"
     inner += [d.DIVIDER, _buttons(shop_url, repo_url, commit, history, channel), d.DIVIDER,
-              _footer("Updated" if kind == "details" else "Posted", now, repo_url)]
+              _footer("Updated" if all(e["type"] == "details" for e in events) else "Posted", now, repo_url)]
     return _payload(kind, inner)
 
 

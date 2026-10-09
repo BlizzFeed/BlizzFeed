@@ -36,7 +36,7 @@ def test_details_post_shows_old_and_new_text_and_before_after_images():
               "to": {"title": "B", "image": "//x/b.png"}}
     e = event("details", **change)
     assert m._detail_lines(e["changes"]["eu"]) == ["- A", "+ B", "+ Image changed"]
-    parts = m.build_single(e, {}, None, None, None, NOW, "shop")["components"][0]["components"]
+    parts = m.build_single([e], {}, None, None, None, NOW, "shop")["components"][0]["components"]
     gallery = next(c for c in parts if c["type"] == 12)
     assert [i["description"] for i in gallery["items"]] == ["Before", "After"]
 
@@ -64,7 +64,17 @@ def test_digest_gallery_shows_shared_art_once_and_only_from_the_listed_items():
     assert urls == ["https://x/shared.png"] + [f"https://x/{i}.png" for i in range(2, 12)][:9]
 
 
+def test_one_post_for_an_item_lists_each_of_its_changes_and_a_kept_sale_price_says_so():
+    price = event("price", **{"from": "2,600 Coins", "to": "2,400 Coins"})
+    end = event("sale_end", sale_kept=True)
+    state = {("eu", "f"): {"items": {"c-1": item("2,400 Coins")}}}
+    parts = m.build_single([price, end], state, None, None, None, NOW, "shop")["components"][0]["components"]
+    text = parts[0]["content"].split("\n")
+    assert text[1:] == ["💵 **Price changed** · 2,600 Coins → **2,400 Coins**",
+                        "⌛ **Sale ended** · **2,400 Coins** is now the regular price"]
+
+
 def test_a_removed_banner_has_no_price_to_show():
     e = event("gone")
     assert m._price_text(e, {}) is None
-    assert m.build_single(e, {}, None, None, None, NOW, "shop")
+    assert m.build_single([e], {}, None, None, None, NOW, "shop")
