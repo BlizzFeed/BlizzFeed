@@ -34,3 +34,7 @@ archive-diff.json
 
 # Local tooling (setup scripts, not part of the repo)
 /tools/
+
+# Shop tracking: local checkout of the shop branch and the per-run hand-off file
+/shop/
+shop-diff.json

@@ -3,14 +3,16 @@ import json
 import os
 import sys
 import time
+from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
+from types import SimpleNamespace
 
 from loguru import logger
 
 from modules.core import gitops, health
 from modules.core.config import load_shop_config, load_sources
 from modules.notifiers import discord, outbox
-from modules.processors import differ
+from modules.processors import differ, shop_differ
 from modules.providers import html as html_provider, json_api as json_provider, shop
 
 PROVIDERS = {"html": html_provider.fetch, "json": json_provider.fetch}
@@ -21,6 +23,8 @@ FETCH_WORKERS = 4  # sources fetched at once; kept small to not get in trouble w
 DATA_DIR = os.environ.get("OUTPUT_DIR", "data")
 DIFF_FILE = os.environ.get("DIFF_FILE", "diff.json")
 OUTBOX_FILE = os.environ.get("OUTBOX_FILE", "outbox.json")
+SHOP_DIR = os.environ.get("SHOP_DIR", "shop")
+SHOP_DIFF_FILE = os.environ.get("SHOP_DIFF_FILE", "shop-diff.json")
 SOURCES_FILE = os.environ.get("SOURCES_FILE", os.path.join(os.path.dirname(__file__), "sources.yaml"))
 
 
@@ -152,13 +156,19 @@ def notify():
     logger.success("Notify complete.")
 
 
-def shop_dry_run(region, family):
-    """Print what each shop page lists, by section. Saves nothing."""
+def shop_targets(region, family):
+    """The shop config, regions and families, narrowed by --region and --family."""
     config = load_shop_config(SOURCES_FILE)
     regions = {r: base for r, base in config["regions"].items() if region in (None, r)}
     families = [f for f in config["families"] if family in (None, f)]
     if not regions or not families:
         sys.exit(f"Nothing to fetch: regions {list(config['regions'])}, families {list(config['families'])}")
+    return config, regions, families
+
+
+def shop_dry_run(region, family):
+    """Print what each shop page lists, by section. Saves nothing."""
+    config, regions, families = shop_targets(region, family)
     for name, base in regions.items():
         session = shop.open_session()
         for slug in families:
@@ -175,6 +185,57 @@ def shop_dry_run(region, family):
             time.sleep(config["fetch_delay_seconds"])
 
 
+def shop_sweep(region, family):
+    """Fetch the shop pages, write the changes under SHOP_DIR and list them in shop-diff.json."""
+    config, regions, families = shop_targets(region, family)
+    state = health.load(SHOP_DIR)
+    diff = {"families": {}, "alerts": []}
+    now = outbox.now_iso()
+    for name, base in regions.items():
+        session = shop.open_session()
+        for n, slug in enumerate(families):
+            if n:
+                time.sleep(config["fetch_delay_seconds"])
+            label = shop_differ.family_dir(name, slug)
+            watched = SimpleNamespace(id=label, failures_before_alert=config["failures_before_alert"])
+            try:
+                items = shop.parse_items(shop.fetch_family(session, base, slug))
+                if not items:
+                    raise RuntimeError("no items (page changed?)")
+            except Exception as e:
+                logger.error(f"[{label}] failed: {e}")
+                if alert := health.record_failure(state, watched, str(e)):
+                    diff["alerts"].append(alert)
+                continue
+            if alert := health.record_success(state, watched):
+                diff["alerts"].append(alert)
+            old = shop_differ.load_state(SHOP_DIR, name, slug)
+            new, changes = shop_differ.sweep(old, items, now, config["gone_after_misses"],
+                                             lambda item: shop.item_on_sale(session, base, slug, item))
+            shop_differ.write_family(SHOP_DIR, name, slug, new, changes, baseline=old is None)
+            diff["families"][label] = {"baseline": old is None, "changes": changes}
+            logger.success(f"[{label}] {len(items)} items, {len(changes)} change(s)"
+                           f"{' (baseline, nothing reported)' if old is None else ''}")
+    health.save(SHOP_DIR, state)
+    with open(SHOP_DIFF_FILE, "w", encoding="utf-8") as f:
+        json.dump(diff, f, indent=2, ensure_ascii=False)
+
+
+def shop_commit():
+    """One commit per changed family, then a single push. Records each SHA in shop-diff.json."""
+    with open(SHOP_DIFF_FILE, "r", encoding="utf-8") as f:
+        diff = json.load(f)
+    for label, entry in diff["families"].items():
+        counts = Counter(c["type"].replace("_", " ") for c in entry["changes"])
+        message = f"{label}: " + ("baseline" if entry["baseline"] else
+                                  ", ".join(f"{n} {kind}" for kind, n in counts.items()) or "state")
+        entry["commit"] = gitops.commit_paths(SHOP_DIR, [label], message)
+    gitops.commit_paths(SHOP_DIR, [health.HEALTH_FILE], "health state")
+    gitops.push(SHOP_DIR)
+    with open(SHOP_DIFF_FILE, "w", encoding="utf-8") as f:
+        json.dump(diff, f, indent=2, ensure_ascii=False)
+
+
 def main():
     logger.remove()
     logger.add(sys.stderr, level="INFO",
@@ -188,13 +249,14 @@ def main():
     parser.add_argument("--pages", type=int, default=10, help="with --deepen: how many pages to read")
     parser.add_argument("--commit", action="store_true", help="commit per source, push, record SHAs in diff.json")
     parser.add_argument("--outbox", action="store_true", help="write outbox.json from diff.json, for the bot")
-    parser.add_argument("--shop", action="store_true", help="Battle.net Shop tracking (so far only with --dry-run)")
-    parser.add_argument("--dry-run", action="store_true", help="with --shop: print what the shop lists")
+    parser.add_argument("--shop", action="store_true", help="Battle.net Shop tracking: fetch, write changes + shop-diff.json")
+    parser.add_argument("--dry-run", action="store_true", help="with --shop: print what the shop lists, save nothing")
+    parser.add_argument("--shop-commit", action="store_true", help="commit the shop run per family, push, record SHAs in shop-diff.json")
     parser.add_argument("--region", help="with --shop: only this region (eu or us)")
     parser.add_argument("--family", help="with --shop: only this shop family slug")
     parser.add_argument("--notify", action="store_true", help="post the run summary to the log channel")
     args = parser.parse_args()
-    if not (args.scrape or args.deepen or args.commit or args.outbox or args.notify or args.shop):
+    if not (args.scrape or args.deepen or args.commit or args.outbox or args.notify or args.shop or args.shop_commit):
         parser.print_help()
     if args.scrape:
         scrape()
@@ -207,9 +269,9 @@ def main():
     if args.notify:
         notify()
     if args.shop:
-        if not args.dry_run:
-            sys.exit("--shop only supports --dry-run so far")
-        shop_dry_run(args.region, args.family)
+        (shop_dry_run if args.dry_run else shop_sweep)(args.region, args.family)
+    if args.shop_commit:
+        shop_commit()
 
 
 if __name__ == "__main__":
