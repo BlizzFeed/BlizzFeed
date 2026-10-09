@@ -57,7 +57,6 @@ channels:
   WARCRAFTRUMBLE:       {all: "1554679737433980948", new: "1555101992421040201", updated: "1555102014940381184"}
   WOW:                  {all: "1554679773450731610", new: "1555101994450948169", updated: "1555102016081104936"}
   WOW_US:               {all: "1554679797916106752", new: "1555101995595997264", updated: "1555102017230209044"}
-  SHOP:                 {name: "Battle.net Shop", all: "1557956587790934078"}  # shop posts only; not a source label
 
 # Article archive (archive.py): saves each article's card and full text as Markdown on the archive branch.
 archive:
@@ -81,6 +80,7 @@ shop:
   gone_after_misses: 3           # consecutive sweeps an item must be missing before it counts as gone
   failures_before_alert: 3
   retry_minutes: [2, 5, 15, 30]  # re-checks while a product an article links to isn't on the page yet
+  channel: "1557956587790934078"   # the shop channel, which gets every change; the feeds get the main ones
   family_check_hours: 24         # how often the shop's home page is read for families we don't track
   families:                      # shop family slug -> its name and feed sources. Only these are tracked.
     world-of-warcraft: {name: World of Warcraft, sources: [wow-news, wow-news-us]}

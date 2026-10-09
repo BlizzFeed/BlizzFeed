@@ -74,6 +74,7 @@ SHOP_DEFAULTS = {
     "retry_minutes": [2, 5, 15, 30],
     "family_check_hours": 24,
     "families": {},
+    "channel": None,
 }
 
 
@@ -81,5 +82,4 @@ def load_shop_config(path):
     """The shop: block of sources.yaml over the defaults."""
     with open(path, "r", encoding="utf-8") as f:
         cfg = yaml.safe_load(f)
-    channel = ((cfg.get("channels") or {}).get("SHOP") or {}).get("all")
-    return {**SHOP_DEFAULTS, **(cfg.get("shop") or {}), "channel": str(channel) if channel else None}
+    return {**SHOP_DEFAULTS, **(cfg.get("shop") or {})}

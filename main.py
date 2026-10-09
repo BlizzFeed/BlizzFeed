@@ -259,7 +259,8 @@ def shop_outbox():
              for label, entry in diff["families"].items() for change in entry["changes"]]
     events, ledger = shop_posts.resolve(shop_posts.load_ledger(SHOP_DIR), fresh, now)
     posts = shop_posts.plan(events, config["families"])
-    states = {(r, f): shop_differ.load_state(SHOP_DIR, r, f) for r in config["regions"] for f in config["families"]}
+    states = {(r, f): shop_differ.load_state(SHOP_DIR, r, f)
+              for r in config["regions"] for f in {e["family"] for e in events}} if posts else {}
     entries = outbox.build_shop_entries(posts, states, sources, config["channel"], repo_url, now)
     outbox.write(OUTBOX_FILE, "shop", entries, os.environ.get("ACTIONS_RUN_URL"))
     shop_posts.save_ledger(SHOP_DIR, shop_posts.remember(ledger, posts, now))

@@ -39,3 +39,9 @@ def test_details_post_shows_old_and_new_text_and_before_after_images():
     parts = m.build_single(e, {}, None, None, None, NOW, "shop")["components"][0]["components"]
     gallery = next(c for c in parts if c["type"] == 12)
     assert [i["description"] for i in gallery["items"]] == ["Before", "After"]
+
+
+def test_a_removed_banner_has_no_price_to_show():
+    e = event("gone")
+    assert m._price_text(e, {}) is None
+    assert m.build_single(e, {}, None, None, None, NOW, "shop")

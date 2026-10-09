@@ -61,11 +61,13 @@ def _price_text(event, states):
     if kind == "sale_start":
         return _join(_sale(i["price"]) for i in _listed(states, event) if i["price"].get("discountAmount"))
     if kind == "sale_end":
-        return "back to " + _join(f"**{i['price']['fullAmount']}**" for i in _listed(states, event))
+        text = _join(f"**{p}**" for i in _listed(states, event) if (p := _shown(i["price"])))
+        return f"back to {text}" if text else None
     if kind == "price":
         return _join(f"{c['from'] or '–'} → **{c['to'] or '–'}**" for c in changes)
     if kind == "gone":
-        return "was " + _join(f"**{p}**" for c in changes if (p := _shown(c["price"])))
+        text = _join(f"**{p}**" for c in changes if (p := _shown(c.get("price"))))  # a banner has no price
+        return f"was {text}" if text else None
     if kind == "banner":
         return changes[0].get("button")
     return None
