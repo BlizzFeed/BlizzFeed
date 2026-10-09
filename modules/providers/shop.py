@@ -158,6 +158,7 @@ def _banner(obj):
         "key": obj.get("cmsId") or "b:" + (destination or ""), "kind": "banner", "cmsId": obj.get("cmsId"),
         "slug": slug, "itemId": item_id(destination),
         "title": cta.get("headline") or cta.get("productPageName") or cta.get("subHeadline"),
+        "productPageName": (cta.get("productPageName") or "").strip() or None,
         "headline": cta.get("headline"), "subHeadline": cta.get("subHeadline"),
         "buttonText": cta.get("buttonText"), "destination": destination,
         "image": (obj.get("backgroundImageDesktop") or {}).get("url"), "sections": [],

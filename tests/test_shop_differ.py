@@ -7,14 +7,15 @@ NEEDED = 3
 
 
 def item(key="a", **fields):
-    base = {"key": key, "kind": "item", "slug": key, "title": key.upper(), "description": "d", "image": "i.png",
+    base = {"key": key, "kind": "item", "slug": key, "itemId": None, "destination": f"/product/{key}",
+            "title": key.upper(), "description": "d", "image": "i.png",
             "sections": ["Mounts"], "badge": None, "price": {"fullAmount": "9.99", "discountAmount": None}}
     return {**base, **fields}
 
 
 def banner(key="b", **fields):
     return {**item(key), "kind": "banner", "price": None, "headline": "H", "subHeadline": "S",
-            "buttonText": "Buy", "destination": "/product/x", **fields}
+            "buttonText": "Buy", "productPageName": None, "destination": "/product/x", **fields}
 
 
 STABLE = [item(f"z{n}") for n in range(8)]  # so one or two items leaving is under the suspicious-drop share
@@ -75,6 +76,22 @@ def test_price_sale_badge_and_details_changes():
     _, changes = run(state, page(item("a", price={"fullAmount": "19.99", "discountAmount": None}, badge="New",
                                  title="Renamed"), *STABLE))
     assert types(changes) == ["sale_end"]
+
+
+def test_a_details_change_keeps_the_old_and_new_values():
+    state = baseline(item("a"))
+    _, changes = run(state, page(item("a", title="Renamed", sections=["Mounts", "Featured"]), *STABLE))
+    assert changes[0]["from"] == {"title": "A", "sections": ["Mounts"]}
+    assert changes[0]["to"] == {"title": "Renamed", "sections": ["Mounts", "Featured"]}
+
+
+def test_a_banners_product_is_its_own_name_else_the_card_it_links_to():
+    named = banner("n", productPageName="Forever", slug="forever")
+    unnamed = banner("u", slug="card-slug", itemId=7)
+    card = item("c", slug="card-slug", itemId=7, title="The Card")
+    _, changes = run(baseline(item("a")), page(item("a"), named, unnamed, card, *STABLE))
+    products = {c["key"]: c["product"] for c in changes if c["type"] == "banner"}
+    assert products == {"n": "Forever", "u": "The Card"}
 
 
 def test_banners_report_added_and_changed_never_price_or_details():

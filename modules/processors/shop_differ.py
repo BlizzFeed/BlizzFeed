@@ -28,11 +28,28 @@ def _priced(item):
     return item["kind"] == "item" and bool((item.get("price") or {}).get("fullAmount"))
 
 
+def _differing(prev, item, fields):
+    """The fields that differ, with their old and new values."""
+    changed = [k for k in fields if prev.get(k) != item.get(k)]
+    return {"changed": changed, "from": {k: prev.get(k) for k in changed}, "to": {k: item.get(k) for k in changed}}
+
+
+def _product(banner, fetched):
+    """A banner's product name: its own, else the title of the item card it links to."""
+    if banner.get("productPageName"):
+        return banner["productPageName"]
+    for item in fetched.values():
+        if item["kind"] == "item" and ((item["itemId"] and item["itemId"] == banner["itemId"])
+                                       or (item["slug"] and item["slug"] == banner["slug"])):
+            return item["title"]
+    return None
+
+
 def _compare(prev, item):
     """(type, extra) for each way the fetched item differs from the saved one."""
     if item["kind"] == "banner":
-        changed = [k for k in BANNER_FIELDS if prev.get(k) != item.get(k)]
-        return [("banner", {"what": "changed", "changed": changed})] if changed else []
+        differing = _differing(prev, item, BANNER_FIELDS)
+        return [("banner", {"what": "changed", **differing})] if differing["changed"] else []
     changes = []
     old, new = prev.get("price") or {}, item.get("price") or {}
     if old.get("fullAmount") != new.get("fullAmount"):
@@ -42,9 +59,9 @@ def _compare(prev, item):
     if prev.get("badge") != item.get("badge"):
         changes.append(("badge", {"from": prev.get("badge"), "to": item.get("badge"),
                                   "maybe_new": item.get("badge") == "New"}))
-    changed = [k for k in DETAIL_FIELDS if prev.get(k) != item.get(k)]
-    if changed:
-        changes.append(("details", {"changed": changed}))
+    differing = _differing(prev, item, DETAIL_FIELDS)
+    if differing["changed"]:
+        changes.append(("details", differing))
     return changes
 
 
@@ -64,8 +81,13 @@ def sweep(old, fetched, now, misses_needed, confirm):
     changes = []
 
     def log(kind, item, **extra):
-        changes.append({"type": kind, "key": item["key"], "kind": item["kind"], "slug": item["slug"],
-                        "title": item["title"], "seen": now, **extra})
+        record = {"type": kind, "key": item["key"], "kind": item["kind"], "slug": item["slug"],
+                  "title": item["title"], "destination": item["destination"], "seen": now}
+        if item["kind"] == "banner":
+            record.update(button=item["buttonText"], product=_product(item, fetched))
+        else:
+            record["price"] = item["price"]
+        changes.append({**record, **extra})
 
     for key, item in fetched.items():
         prev = items.get(key)
