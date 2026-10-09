@@ -1740,9 +1740,9 @@
       ],
       "badge": null,
       "price": {
-        "fullAmount": "2,600 Coins",
-        "discountAmount": "2,400 Coins",
-        "discountPercentage": 7,
+        "fullAmount": "2,400 Coins",
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "XWC",
         "raw": 2400,
         "labelFormat": null
