@@ -644,7 +644,7 @@
       "destination": "/family/overwatch/items/2129813/shadow-monarch-mega-bundle",
       "image": "//catalog.blzstatic.com//3e/715bde0b86f78740fabeae849c41a1ff-Web_1920x1080_S25_Alone_Megabundle_Base.png",
       "sections": [
-        "(untitled)"
+        "Featured"
       ],
       "badge": null,
       "price": {
@@ -681,7 +681,7 @@
       "destination": "/family/overwatch/items/2130310/cha-hae-in-anran-bundle",
       "image": "//catalog.blzstatic.com//f84/9e39e9f3a3441196a42445633c425b2d-Web_1920x1080_S25_Alone_Anran_Base.png",
       "sections": [
-        "(untitled)"
+        "Featured"
       ],
       "badge": null,
       "price": {
@@ -721,7 +721,7 @@
       "destination": "/family/overwatch/items/2130312/sung-jinwoo-genji-bundle",
       "image": "//catalog.blzstatic.com//6b/b187bf23dcdec0c8ba2861b3ee5fa7ec-Web_1920x1080_S25_Alone_Genji_Base.png",
       "sections": [
-        "(untitled)"
+        "Featured"
       ],
       "badge": null,
       "price": {
@@ -758,7 +758,7 @@
       "destination": "/family/overwatch/items/2130315/choi-jong-in-lifeweaver-bundle",
       "image": "//catalog.blzstatic.com//9/5265315117852c9159d61857180fce68-Web_1920x1080_S25_Alone_Lifeweaver_Base.png",
       "sections": [
-        "(untitled)"
+        "Featured"
       ],
       "badge": null,
       "price": {
@@ -795,7 +795,7 @@
       "destination": "/family/overwatch/items/2130318/iron-reinhardt-bundle",
       "image": "//catalog.blzstatic.com//f9d/5329215686128775b2ea4860f191b802-Web_1920x1080_S25_Alone_Reinhardt_Base.png",
       "sections": [
-        "(untitled)"
+        "Featured"
       ],
       "badge": null,
       "price": {
@@ -832,7 +832,7 @@
       "destination": "/family/overwatch/items/2130316/igris-reaper-bundle",
       "image": "//catalog.blzstatic.com//23/a22ba01d09be8ec36bd8e08107b867f4-Web_1920x1080_S25_Alone_Reaper_Base.png",
       "sections": [
-        "(untitled)"
+        "Featured"
       ],
       "badge": null,
       "price": {
@@ -877,7 +877,7 @@
       "destination": "/family/overwatch/items/2131866/prestige-influence-mega-bundle",
       "image": "//catalog.blzstatic.com//49/8a2e7e56b3ec739a1d395d3eae519ebf-Web_1920x1080_S25_JapaneseGang_Megabundle.png",
       "sections": [
-        "(untitled)"
+        "Featured"
       ],
       "badge": null,
       "price": {
@@ -915,7 +915,7 @@
       "destination": "/family/overwatch/items/2131868/prestige-influence-ashe-bundle",
       "image": "//catalog.blzstatic.com//58/cf9b748fc8d32d7cb606c104346886ac-Web_1920x1080_S25_JapaneseGang_Ashe.png",
       "sections": [
-        "(untitled)"
+        "Featured"
       ],
       "badge": null,
       "price": {
@@ -953,7 +953,7 @@
       "destination": "/family/overwatch/items/2131867/prestige-influence-cassidy-bundle",
       "image": "//catalog.blzstatic.com//f96/0b799a9625629cd9c23f9762b0813646-Web_1920x1080_S25_JapaneseGang_Cassidy.png",
       "sections": [
-        "(untitled)"
+        "Featured"
       ],
       "badge": null,
       "price": {
@@ -1003,7 +1003,7 @@
       "destination": "/family/overwatch/items/2044425/voidwalker-mega-bundle",
       "image": "//catalog.blzstatic.com//9/78e43030f059b0797a50a0a057312bd6-Web_1920x1080_S21_VoidwalkerMegaBundle.png",
       "sections": [
-        "(untitled)"
+        "Featured"
       ],
       "badge": null,
       "price": {
@@ -1590,6 +1590,229 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2131874": {
+      "key": "p:2131874",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-tech-witch-mega-bundle",
+      "title": "Tech Witch Mega Bundle",
+      "description": "Legendary | Bundle (22 items)",
+      "categoryId": null,
+      "itemId": 2131874,
+      "productIds": [
+        2126033,
+        2126620,
+        2128747,
+        2128748,
+        2126624,
+        2126037,
+        2126619,
+        2129311,
+        2128710,
+        2128707,
+        2129279,
+        2129272,
+        2128749,
+        2128709,
+        2128717,
+        2128716,
+        2129271,
+        2129268,
+        2129278,
+        2126631,
+        2126630,
+        2126039
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2131874/tech-witch-mega-bundle",
+      "image": "//catalog.blzstatic.com//55/da6744c372f9f147296a2b8f4c30a98b-S25_1920x1080_TechWitches_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "13,600 Coins",
+        "discountAmount": "6,900 Coins",
+        "discountPercentage": 49,
+        "currency": "XWC",
+        "raw": 6900,
+        "labelFormat": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T18:01:34Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2131875": {
+      "key": "p:2131875",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-tech-witch-dmon-bundle",
+      "title": "Tech Witch D.Mon Bundle",
+      "description": "Legendary | Bundle (4 items)",
+      "categoryId": null,
+      "itemId": 2131875,
+      "productIds": [
+        2129268,
+        2126624,
+        2128749,
+        2128707
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2131875/tech-witch-dmon-bundle",
+      "image": "//catalog.blzstatic.com//fa5/5d4d2af45e7463abc4fb57423cc03b6e-S25_1920x1080_TechWitches_Dmon_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "2,400 Coins",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XWC",
+        "raw": 2400,
+        "labelFormat": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T18:01:34Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2132882": {
+      "key": "p:2132882",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-tech-witch-jetpack-cat-bundle",
+      "title": "Tech Witch Jetpack Cat Bundle",
+      "description": "Legendary | Bundle (5 items)",
+      "categoryId": null,
+      "itemId": 2132882,
+      "productIds": [
+        2129272,
+        2126039,
+        2126619,
+        2128747,
+        2128710
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2132882/tech-witch-jetpack-cat-bundle",
+      "image": "//catalog.blzstatic.com//fc2/0be890f4933c8b4bd729589547aa1ac0-S25_1920x1080_TechWitches_JPC_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "3,100 Coins",
+        "discountAmount": "2,600 Coins",
+        "discountPercentage": 16,
+        "currency": "XWC",
+        "raw": 2600,
+        "labelFormat": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T18:01:34Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2131876": {
+      "key": "p:2131876",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-tech-witch-shion-bundle",
+      "title": "Tech Witch Shion Bundle",
+      "description": "Legendary | Bundle (4 items)",
+      "categoryId": null,
+      "itemId": 2131876,
+      "productIds": [
+        2129271,
+        2126037,
+        2126033,
+        2128709
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2131876/tech-witch-shion-bundle",
+      "image": "//catalog.blzstatic.com//23/e1838a358dce5399e88354035c3bab49-S25_1920x1080_TechWitches_Shion_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "2,600 Coins",
+        "discountAmount": "2,400 Coins",
+        "discountPercentage": 7,
+        "currency": "XWC",
+        "raw": 2400,
+        "labelFormat": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T18:01:34Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2126630": {
+      "key": "p:2126630",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-tech-witch",
+      "title": "Tech Witch",
+      "description": "Legendary | Skins | Juno",
+      "categoryId": null,
+      "itemId": 2126630,
+      "productIds": [
+        2126630
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2126630/tech-witch",
+      "image": "//catalog.blzstatic.com//6a/0231bbc5f34ce8337b9bbd03406165b1-S25_1920x1080_TechWitches_Juno_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,900 Coins",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XWC",
+        "raw": 1900,
+        "labelFormat": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T18:01:34Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2126631": {
+      "key": "p:2126631",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-tech-witch",
+      "title": "Tech Witch",
+      "description": "Legendary | Skins | Sierra",
+      "categoryId": null,
+      "itemId": 2126631,
+      "productIds": [
+        2126631
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2126631/tech-witch",
+      "image": "//catalog.blzstatic.com//f88/1ba2bf6241a9d0c387b0feb3f451aa1d-S25_1920x1080_TechWitches_Sierra_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,900 Coins",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XWC",
+        "raw": 1900,
+        "labelFormat": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T18:01:34Z",
       "status": "listed",
       "misses": 0
     }
