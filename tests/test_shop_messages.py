@@ -41,6 +41,18 @@ def test_details_post_shows_old_and_new_text_and_before_after_images():
     assert [i["description"] for i in gallery["items"]] == ["Before", "After"]
 
 
+def test_details_digest_shows_one_diff_block_per_kind_of_change_with_unique_ids():
+    def moved(key, old, new):
+        e = event("details", changed=["sections"], **{"from": {"sections": old}, "to": {"sections": new}})
+        return {**e, "key": key}
+    events = [moved("a", [], ["Featured"]), moved("b", [], ["Featured"]), moved("c", ["Featured"], [])]
+    post = {"type": "details", "events": events}
+    parts = m.build_digest(post, {}, None, None, None, NOW, "shop")["components"][0]["components"]
+    blocks = [c for c in parts if c["type"] == 10 and c["content"].startswith("```diff")]
+    assert [b["content"].split("\n")[1:-1] for b in blocks] == [["- ", "+ Featured"], ["- Featured", "+ "]]
+    assert len({b["id"] for b in blocks}) == 2
+
+
 def test_a_removed_banner_has_no_price_to_show():
     e = event("gone")
     assert m._price_text(e, {}) is None

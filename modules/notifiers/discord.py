@@ -254,6 +254,14 @@ def _shop_counts(changes):
                      for kind in SHOP_LABEL if kind in counts)
 
 
+def _shop_field(change, field):
+    """One changed field: sections show their old and new values, the rest just say they changed."""
+    if field != "sections" or change["type"] != "details":
+        return f"{field} changed"
+    old, new = (", ".join(change[side]["sections"]) or "none" for side in ("from", "to"))
+    return f"sections: {old} → {new}"
+
+
 def _shop_detail(change):
     """The small line under a change, if it needs one."""
     if change["type"] == "price":
@@ -261,7 +269,7 @@ def _shop_detail(change):
     if change["type"] == "badge":
         return f"{change['from'] or 'no badge'} → {change['to'] or 'no badge'}"
     if change["type"] in ("details", "banner") and change.get("changed"):
-        return f"{', '.join(change['changed'])} changed"
+        return " · ".join(_shop_field(change, field) for field in change["changed"])
     return "back" if change.get("what") == "back" else None
 
 

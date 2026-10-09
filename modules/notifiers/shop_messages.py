@@ -155,14 +155,32 @@ def _line(event, states, emoji=False):
     return line
 
 
+def _details_body(events, states):
+    """A details digest: one diff block per kind of change, each followed by the items it applies to."""
+    groups = {}
+    for event in events[:MAX_LINES]:
+        change = next(iter(event["changes"].values()))
+        groups.setdefault(tuple(_detail_lines(change)), []).append(_line(event, states))
+    body = []
+    for n, (lines, items) in enumerate(groups.items()):
+        block = d._diff_block(list(lines))
+        body += [{**block, "id": block["id"] + n}, d._text("\n".join(items))]  # every id must be unique
+    if len(events) > MAX_LINES:
+        body.append(d._text(f"-# …and {len(events) - MAX_LINES} more"))
+    return body
+
+
 def build_digest(post, states, logo, repo_url, commit, now, channel):
     events, kind = post["events"], post["type"]
-    lines = [_line(e, states, emoji=kind is None) for e in events]  # no type means a mix, folded past the cap
-    shown = lines[:MAX_LINES]
-    if len(lines) > MAX_LINES:
-        shown.append(f"-# …and {len(lines) - MAX_LINES} more")
     heading = DIGEST[kind].format(n=len(events))
-    inner = d._top(d._text(f"## {heading}\n" + "\n".join(shown)), logo, heading)
+    if kind == "details":
+        inner = d._top(d._text(f"## {heading}"), logo, heading) + _details_body(events, states)
+    else:
+        lines = [_line(e, states, emoji=kind is None) for e in events]  # no type means a mix, folded past the cap
+        shown = lines[:MAX_LINES]
+        if len(lines) > MAX_LINES:
+            shown.append(f"-# …and {len(lines) - MAX_LINES} more")
+        inner = d._top(d._text(f"## {heading}\n" + "\n".join(shown)), logo, heading)
     images = [{"media": {"url": _image(i["image"])}} for e in events if (i := _art_item(states, e)).get("image")]
     if images:
         inner.append({"type": 12, "items": images[:MAX_IMAGES]})
