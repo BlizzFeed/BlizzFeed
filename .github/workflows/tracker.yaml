@@ -103,6 +103,17 @@ jobs:
           DIFF_FILE: diff.json
         run: python code/main.py --commit
 
+      # An article with a new shop link: check the shop now rather than at the next sweep.
+      - name: Start shop run for a new shop link
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          if jq -e '[.sources[].shop_links // 0] | add > 0' diff.json > /dev/null; then
+            gh workflow run shop.yaml --ref source
+          fi
+
       # For BlizzFeedBot, the only way posts reach Discord. A failure here is a missed post, so it fails the run.
       - name: Write outbox
         env:

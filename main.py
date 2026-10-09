@@ -95,7 +95,8 @@ def scrape():
                                           "items": len(items),
                                           "added": [] if baseline else added,
                                           "updated": [with_changes(old_state, item) for item in updated],
-                                          "quiet": len(quiet)}
+                                          "quiet": len(quiet),
+                                          "shop_links": len(differ.new_shop_links(old_state, items))}
             logger.success(f"[{source.id}] {len(items)} items, +{len(added)} new, {len(updated)} updated, "
                            f"{len(quiet)} quiet{' (baseline, no notifications)' if baseline else ''}")
         if alert:

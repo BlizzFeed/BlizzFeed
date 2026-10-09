@@ -44,6 +44,12 @@ def compute(old_state, items):
     return added, updated, quiet
 
 
+def new_shop_links(old_state, items):
+    """Items with a shop link their saved copy lacked. None on a source's first run."""
+    old = {i["id"]: i.get("shop_url") for i in old_state or []}
+    return [i for i in items if old_state and i.get("shop_url") and i["shop_url"] != old.get(i["id"])]
+
+
 def merge(old_state, items):
     merged = {i["id"]: i for i in (old_state or [])}
     for item in items:
