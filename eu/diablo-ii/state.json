@@ -1,0 +1,183 @@
+{
+  "items": {
+    "bltf33244d318692b63": {
+      "key": "bltf33244d318692b63",
+      "kind": "banner",
+      "cmsId": "bltf33244d318692b63",
+      "slug": null,
+      "itemId": null,
+      "title": "Banner",
+      "productPageName": null,
+      "headline": "",
+      "subHeadline": "",
+      "buttonText": null,
+      "destination": null,
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt2118e553311b8872/697040172575e186754165ea/DIA_DIV_Garden_Bundle_Bnet_Product_Page_Banners_Bnet_Desktop-1600x500_GG01.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt440c88521abbd787": {
+      "key": "blt440c88521abbd787",
+      "kind": "item",
+      "cmsId": "blt440c88521abbd787",
+      "slug": "diablo_ii_resurrected",
+      "title": "Diablo II: Resurrected™ – Infernal Edition ",
+      "description": "Action RPG",
+      "categoryId": "action-rpg",
+      "itemId": null,
+      "productIds": [
+        2030425
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/diablo_ii_resurrected?p=2030425",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt6285eb7b8a26d2de/697000296abeed0d05871928/DIA_DIV_Garden_Bundle_PHX-Franchise-Card_1920x1080_GG01.png",
+      "sections": [
+        "Games"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€39.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 39.99,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "bltb4b9a9494b1b49ef": {
+      "key": "bltb4b9a9494b1b49ef",
+      "kind": "item",
+      "cmsId": "bltb4b9a9494b1b49ef",
+      "slug": "diablo_ii_resurrected_reign_of_the_warlock",
+      "title": "Diablo II: Resurrected™ – Reign of the Warlock",
+      "description": "Action RPG",
+      "categoryId": "action-rpg",
+      "itemId": null,
+      "productIds": [
+        2030375
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/diablo_ii_resurrected_reign_of_the_warlock?p=2030375",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltdb24c1bf571f6b48/697000296da530380007b64c/DIA_DIV_Garden_PHX-Franchise-Card_1920x1080_GG01.png",
+      "sections": [
+        "Games"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€24.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 24.99,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt2bc131ca61ff739f": {
+      "key": "blt2bc131ca61ff739f",
+      "kind": "item",
+      "cmsId": "blt2bc131ca61ff739f",
+      "slug": "diablo-ii-lord-of-destruction",
+      "title": "Diablo® II Lord of Destruction® (2001)",
+      "description": "Action RPG",
+      "categoryId": "action-rpg",
+      "itemId": null,
+      "productIds": [
+        462
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/diablo-ii-lord-of-destruction?p=462",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltbd17609fc36dbb0d/612557fcc8655d21a20dc9b8/253-462.png",
+      "sections": [
+        "Classic Games"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€9.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 9.99,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt9d13e9720c51fec7": {
+      "key": "blt9d13e9720c51fec7",
+      "kind": "item",
+      "cmsId": "blt9d13e9720c51fec7",
+      "slug": "diablo-ii",
+      "title": "Diablo® II (2000)",
+      "description": "Action RPG",
+      "categoryId": "action-rpg",
+      "itemId": null,
+      "productIds": [
+        461
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/diablo-ii?p=461",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt4c1e1c8199df0ab2/612557c619b5613c6defc707/252-461.png",
+      "sections": [
+        "Classic Games"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€9.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 9.99,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt53a37c5a0638be72": {
+      "key": "blt53a37c5a0638be72",
+      "kind": "item",
+      "cmsId": "blt53a37c5a0638be72",
+      "slug": "diablo-iv-merchandise",
+      "title": "Diablo Gear",
+      "description": "Gear",
+      "categoryId": "gear",
+      "itemId": null,
+      "productIds": [],
+      "subscriptionIds": [],
+      "destination": "https://gear.blizzard.com/collections/diablo-iv-merchandise?utm_source=Partner&utm_medium=Battlenet&utm_campaign=BGS_Battlenet_DIV&utm_id=BGS_Battlenet_DIV ",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blte752ff8dbe87a681/69fe4a7b80db441fdc775cc8/D4Gear.jpg",
+      "sections": [
+        "Gear"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": null,
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": null,
+        "raw": 0,
+        "labelFormat": "Learn More"
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    }
+  },
+  "suspect": false
+}
