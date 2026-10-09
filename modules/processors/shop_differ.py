@@ -24,6 +24,10 @@ def load_state(shop_dir, region, family):
         return json.load(f)
 
 
+def card_name(key):
+    return key.replace(":", "-").replace(",", "_")
+
+
 def _priced(item):
     return item["kind"] == "item" and bool((item.get("price") or {}).get("fullAmount"))
 
@@ -150,8 +154,7 @@ def write_family(shop_dir, region, family, state, changes, baseline):
     os.makedirs(os.path.join(root, "items"), exist_ok=True)
     touched = state["items"].keys() if baseline else {c["key"] for c in changes}
     for key in touched:
-        name = key.replace(":", "-").replace(",", "_")
-        with open(os.path.join(root, "items", f"{name}.md"), "w", encoding="utf-8", newline="\n") as f:
+        with open(os.path.join(root, "items", f"{card_name(key)}.md"), "w", encoding="utf-8", newline="\n") as f:
             f.write(render_markdown(state["items"][key]))
     if changes:
         with open(os.path.join(root, "changes.jsonl"), "a", encoding="utf-8", newline="\n") as f:

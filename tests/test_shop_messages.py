@@ -1,0 +1,41 @@
+from modules.notifiers import shop_messages as m
+
+NOW = "2026-10-10T10:00:00+00:00"
+
+
+def item(amount, discount=None):
+    return {"status": "listed", "price": {"fullAmount": amount, "discountAmount": discount}}
+
+
+def event(kind, **extra):
+    change = {"type": kind, "title": "T", "destination": "/x", "seen": NOW, **extra}
+    return {"type": kind, "family": "f", "key": "c-1", "slug": "s", "changes": {"eu": change}}
+
+
+def states(eu, us):
+    return {("eu", "f"): {"items": {"c-1": eu}}, ("us", "f"): {"items": {"c-1": us}}}
+
+
+def test_new_shows_each_regions_price_and_a_shared_currency_once():
+    assert m._price_text(event("new"), states(item("€25.00"), item("$25.00"))) == "**€25.00** / **$25.00**"
+    assert m._price_text(event("new"), states(item("500 Coins"), item("500 Coins"))) == "**500 Coins**"
+
+
+def test_new_in_one_region_shows_only_that_price():
+    assert m._price_text(event("new"), {("eu", "f"): {"items": {"c-1": item("€25.00")}}}) == "**€25.00**"
+
+
+def test_price_change_lists_each_changed_region():
+    e = event("price", **{"from": "€59.99", "to": "€49.99"})
+    e["changes"]["us"] = {**e["changes"]["eu"], "from": "$59.99", "to": "$49.99"}
+    assert m._price_text(e, {}) == "€59.99 → **€49.99** / $59.99 → **$49.99**"
+
+
+def test_details_post_shows_old_and_new_text_and_before_after_images():
+    change = {"changed": ["title", "image"], "from": {"title": "A", "image": "//x/a.png"},
+              "to": {"title": "B", "image": "//x/b.png"}}
+    e = event("details", **change)
+    assert m._detail_lines(e["changes"]["eu"]) == ["- A", "+ B", "+ Image changed"]
+    parts = m.build_single(e, {}, None, None, None, NOW, "shop")["components"][0]["components"]
+    gallery = next(c for c in parts if c["type"] == 12)
+    assert [i["description"] for i in gallery["items"]] == ["Before", "After"]
