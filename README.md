@@ -95,7 +95,7 @@ Both kinds of update look the same, with a diff block saying what changed: the o
 - `sources.yaml`: the feeds to watch, and the archive settings. Add an entry here to track another one.
 - `main.py`: the tracker steps (`--scrape`, `--commit`, `--outbox`, `--notify`), and `--deepen`, a manual run that stores older articles. The shop steps are `--shop` (`--dry-run` prints what the shop lists), `--shop-commit`, `--shop-outbox` and `--shop-notify`.
 - `archive.py`: the archive steps (`--fetch`, `--commit`, `--outbox`, `--notify`). `--notify` only posts the run summary to the log channel. `--fetch --backfill` is the manual backfill.
-- `.github/workflows/tracker.yaml`: the tracker workflow. It runs on a `workflow_dispatch` event, a manual run, or a push to `source`. It has no cron of its own.
+- `.github/workflows/tracker.yaml`: the tracker workflow. It runs on a `workflow_dispatch` event, a manual run, or a push to `main`. It has no cron of its own.
 - `.github/workflows/shop.yaml`: the shop workflow, started by the tracker when the last run is 5 minutes old.
 - `.github/workflows/archive.yaml`: the archive workflow. It runs on a `workflow_dispatch` event or a manual run.
 - `logos/`: the BlizzFeed logo, exported at the sizes Discord (server, bot and app images, emoji, sticker) and GitHub (social preview, app logo) use, each with a dark background and a transparent `-nobg` version.
@@ -103,7 +103,7 @@ Both kinds of update look the same, with a diff block saying what changed: the o
 - `tests/`: run `pip install -r requirements-dev.txt`, then `pytest`.
 
 ## Setup
-1. Push to the `source` branch (the default) and create empty `data`, `archive` and `shop` branches.
+1. Push to the `main` branch (the default) and create empty `data`, `archive` and `shop` branches.
 2. In Discord, create the announcement channels (three per label, see Sources) and put their IDs under `channels:` in `sources.yaml`.
 3. Optionally add the `DISCORD_WEBHOOK_LOG` secret under Settings → Secrets and variables → Actions.
 4. Run `tracker.yaml` once manually, then have something send its `workflow_dispatch` every minute, and `archive.yaml`'s once an hour.
@@ -116,4 +116,4 @@ BlizzFeed is an unofficial fan project. It isn't affiliated with, endorsed by or
 All game and company names, logos and icons are trademarks or registered trademarks of Blizzard Entertainment, Inc., and belong to their owners. That includes the game logos in `logos/games/`, which are Blizzard's own game icons, and the BlizzFeed logo in `logos/`, which is a combination of parts of the World of Warcraft, Diablo IV, Overwatch 2 and StarCraft II icons. They're used here only to identify the news they belong to, and no ownership is claimed.
 
 ## Credits
-The idea and overall design (a scheduled Actions job, separate `source` and `data` branches, commit links in Discord messages) come from [Wumpus-Central/blog-tracker](https://github.com/Wumpus-Central/blog-tracker).
+The idea and overall design (a scheduled Actions job, separate `main` and `data` branches, commit links in Discord messages) come from [Wumpus-Central/blog-tracker](https://github.com/Wumpus-Central/blog-tracker).

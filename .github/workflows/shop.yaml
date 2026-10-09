@@ -17,10 +17,10 @@ jobs:
       contents: write
 
     steps:
-      - name: Checkout source branch (code) into ./code
+      - name: Checkout main branch (code) into ./code
         uses: actions/checkout@v7
         with:
-          ref: source
+          ref: main
           path: code
 
       - name: Checkout shop branch into ./shop

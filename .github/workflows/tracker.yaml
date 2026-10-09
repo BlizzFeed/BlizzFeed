@@ -25,7 +25,7 @@ on:
         type: string
         default: "10"
   push:
-    branches: [source]
+    branches: [main]
 
 concurrency:
   group: tracker
@@ -40,10 +40,10 @@ jobs:
       actions: write  # to start the archive and shop workflows
 
     steps:
-      - name: Checkout source branch (code) into ./code
+      - name: Checkout main branch (code) into ./code
         uses: actions/checkout@v7
         with:
-          ref: source
+          ref: main
           path: code
 
       - name: Checkout data branch into ./data
@@ -71,7 +71,7 @@ jobs:
           minutes=$(PYTHONPATH=code python -c "from modules.core.config import load_shop_config; print(load_shop_config('code/sources.yaml')['sweep_minutes'])")
           last=$(gh run list --workflow shop.yaml --limit 1 --json createdAt --jq '.[0].createdAt // empty')
           if [ -z "$last" ] || [ $(( $(date +%s) - $(date -d "$last" +%s) )) -ge $(( minutes * 60 )) ]; then
-            gh workflow run shop.yaml --ref source
+            gh workflow run shop.yaml --ref main
           fi
 
       - name: Configure git identity
@@ -111,7 +111,7 @@ jobs:
           GH_REPO: ${{ github.repository }}
         run: |
           if jq -e '[.sources[].shop_links // 0] | add > 0' diff.json > /dev/null; then
-            gh workflow run shop.yaml --ref source
+            gh workflow run shop.yaml --ref main
           fi
 
       # For BlizzFeedBot, the only way posts reach Discord. A failure here is a missed post, so it fails the run.
@@ -151,7 +151,7 @@ jobs:
           LOG_MESSAGE: ${{ steps.notify.outputs.log_message }}
         run: |
           if python -c "import json, sys; d = json.load(open('diff.json')); sys.exit(not any(e['added'] or e['updated'] or e['quiet'] for e in d['sources'].values()))"; then
-            gh workflow run archive.yaml --ref source ${LOG_MESSAGE:+-f log_message=$LOG_MESSAGE}
+            gh workflow run archive.yaml --ref main ${LOG_MESSAGE:+-f log_message=$LOG_MESSAGE}
           else
             echo "No changes, no archive run needed."
           fi

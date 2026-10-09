@@ -9,8 +9,8 @@ from urllib3.exceptions import NewConnectionError
 POST_ATTEMPTS = 3
 COLORS = {"added": 0x57F287, "updated": 0xFAA61A, "down": 0xED4245, "recovered": 0x57F287, "log": 0x5865F2}
 LOG_USERNAME = "BlizzFeed Log"
-LOG_AVATAR = "https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/BlizzFeed_ServerIcon_512.png"
-LOGO = "https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/BlizzFeed_AppLogo_200-nobg.png"
+LOG_AVATAR = "https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/main/logos/BlizzFeed_ServerIcon_512.png"
+LOGO = "https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/main/logos/BlizzFeed_AppLogo_200-nobg.png"
 LOG_TEXT_BUDGET = 3000 # Discord allows 4000 characters of text per message; the rest is header and footer
 IS_COMPONENTS_V2 = 1 << 15  # message flag: content/embeds are disabled, components only
 DIVIDER = {"type": 14, "divider": True, "spacing": 1}

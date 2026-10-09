@@ -126,7 +126,7 @@ sources:
   - <<: *blizzard-news-api
     id: wow-news
     name: World of Warcraft (EU) News
-    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/games/world-of-warcraft.png
+    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/main/logos/games/world-of-warcraft.png
     url: https://news.blizzard.com/en-gb/api/feed/world-of-warcraft
     channels: WOW
     where: {properties.cxpProduct.segment: world-of-warcraft}
@@ -137,7 +137,7 @@ sources:
   - <<: *blizzard-news-api
     id: wow-news-us
     name: World of Warcraft (US) News
-    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/games/world-of-warcraft.png
+    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/main/logos/games/world-of-warcraft.png
     url: https://news.blizzard.com/en-us/api/feed/world-of-warcraft
     channels: WOW_US
     where: {properties.cxpProduct.segment: world-of-warcraft}
@@ -146,7 +146,7 @@ sources:
   - <<: *blizzard-news-api
     id: hots-news
     name: Heroes of the Storm News
-    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/games/heroes-of-the-storm.png
+    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/main/logos/games/heroes-of-the-storm.png
     url: https://news.blizzard.com/en-gb/api/feed/heroes-of-the-storm
     channels: HOTS
     where: {properties.cxpProduct.segment: heroes-of-the-storm}
@@ -154,7 +154,7 @@ sources:
   - <<: *blizzard-news-api
     id: hearthstone-news
     name: Hearthstone News
-    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/games/hearthstone.png
+    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/main/logos/games/hearthstone.png
     url: https://news.blizzard.com/en-gb/api/feed/hearthstone
     channels: HEARTHSTONE
     where: {properties.cxpProduct.segment: hearthstone}
@@ -163,7 +163,7 @@ sources:
   - <<: *blizzard-news-api
     id: diablo-4-news
     name: Diablo IV News
-    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/games/diablo-4.png
+    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/main/logos/games/diablo-4.png
     url: https://news.blizzard.com/en-gb/api/feed/diablo-4
     channels: [DIABLO4, DIABLO]
     where: {properties.cxpProduct.segment: diablo-4}
@@ -171,7 +171,7 @@ sources:
   - <<: *blizzard-news-api
     id: diablo-5-news
     name: Diablo V News
-    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/games/diablo-5.png
+    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/main/logos/games/diablo-5.png
     url: https://news.blizzard.com/en-gb/api/feed/diablo-5
     channels: [DIABLO5, DIABLO]
     where: {properties.cxpProduct.segment: diablo-5}
@@ -180,7 +180,7 @@ sources:
   - <<: *blizzard-news-api
     id: diablo-immortal-news
     name: Diablo Immortal News
-    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/games/diablo-immortal.png
+    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/main/logos/games/diablo-immortal.png
     url: https://news.blizzard.com/en-gb/api/feed/diablo-immortal
     channels: [DIABLOIMMORTAL, DIABLO]
     where: {properties.cxpProduct.segment: diablo-immortal}
@@ -188,7 +188,7 @@ sources:
   - <<: *blizzard-news-api
     id: diablo-2-resurrected-news
     name: "Diablo II: Resurrected News"
-    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/games/diablo-2-resurrected.png
+    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/main/logos/games/diablo-2-resurrected.png
     url: https://news.blizzard.com/en-gb/api/feed/diablo-2-resurrected
     channels: [DIABLO2, DIABLO]
     where: {properties.cxpProduct.segment: diablo-2-resurrected}
@@ -196,7 +196,7 @@ sources:
   - <<: *blizzard-news-api
     id: diablo-3-news
     name: Diablo III News
-    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/games/diablo-3.png
+    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/main/logos/games/diablo-3.png
     url: https://news.blizzard.com/en-gb/api/feed/diablo-3
     channels: [DIABLO3, DIABLO]
     where: {properties.cxpProduct.segment: diablo-3}
@@ -204,7 +204,7 @@ sources:
   - <<: *blizzard-news-api
     id: overwatch-news
     name: Overwatch News
-    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/games/overwatch.png
+    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/main/logos/games/overwatch.png
     url: https://news.blizzard.com/en-gb/api/feed/overwatch
     channels: OVERWATCH
     where: {properties.cxpProduct.segment: overwatch}
@@ -213,7 +213,7 @@ sources:
   - <<: *blizzard-news-api
     id: starcraft-news
     name: STARCRAFT (2030) News
-    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/games/starcraft.png
+    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/main/logos/games/starcraft.png
     url: https://news.blizzard.com/en-gb/api/feed/polaris
     channels: STARCRAFT
     where: {properties.cxpProduct.segment: polaris}
@@ -222,7 +222,7 @@ sources:
   - <<: *blizzard-news-api
     id: starcraft-remastered-news
     name: StarCraft Remastered News
-    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/games/starcraft-remastered.png
+    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/main/logos/games/starcraft-remastered.png
     url: https://news.blizzard.com/en-gb/api/feed/starcraft
     channels: STARCRAFTREMASTERED
     where: {properties.cxpProduct.segment: starcraft}
@@ -230,7 +230,7 @@ sources:
   - <<: *blizzard-news-api
     id: starcraft-2-news
     name: StarCraft II News
-    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/games/starcraft-2.png
+    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/main/logos/games/starcraft-2.png
     url: https://news.blizzard.com/en-gb/api/feed/starcraft-2
     channels: STARCRAFT2
     where: {properties.cxpProduct.segment: starcraft-2}
@@ -238,7 +238,7 @@ sources:
   - <<: *blizzard-news-api
     id: warcraft-3-news
     name: "Warcraft 3: Reforged News"
-    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/games/warcraft-3.png
+    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/main/logos/games/warcraft-3.png
     url: https://news.blizzard.com/en-gb/api/feed/warcraft-3
     channels: WARCRAFT3
     where: {properties.cxpProduct.segment: warcraft-3}
@@ -246,7 +246,7 @@ sources:
   - <<: *blizzard-news-api
     id: warcraft-rumble-news
     name: Warcraft Rumble News
-    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/games/warcraft-rumble.png
+    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/main/logos/games/warcraft-rumble.png
     url: https://news.blizzard.com/en-gb/api/feed/warcraft-rumble
     channels: WARCRAFTRUMBLE
     where: {properties.cxpProduct.segment: warcraft-rumble}
@@ -255,7 +255,7 @@ sources:
   - <<: *blizzard-news-api
     id: blizzard-news
     name: Blizzard News
-    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/source/logos/games/blizzard.png
+    logo: https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/main/logos/games/blizzard.png
     url: https://news.blizzard.com/en-gb/api/feed/blizzcon
     channels: BLIZZARD
     where: {properties.cxpProduct.segment: [blizzard, blizzcon]}
