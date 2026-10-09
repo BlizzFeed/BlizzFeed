@@ -88,6 +88,7 @@ def scrape():
             alert = health.record_failure(state, source, str(error))
         else:
             alert = health.record_success(state, source)
+            differ.keep_shop_urls(old_state, items)
             added, updated, quiet = differ.compute(old_state, items)
             differ.write_source(DATA_DIR, source.id, differ.merge(old_state, items),
                                 added + updated + quiet)

@@ -60,6 +60,19 @@ def archive_one(source, item, index, cfg, reformat):
     return entry, shop
 
 
+def fill_shop_urls(items, source_id):
+    """Sets shop_url on the items without one from the first shop link in their saved text. Returns how many."""
+    saved = 0
+    for item in items:
+        if item.get("shop_url"):
+            continue
+        content = archiver.read_article(ARCHIVE_DIR, source_id, item["id"])
+        if content and (url := archiver.find_shop_url(archiver.split_file(content)[1])):
+            item["shop_url"] = url
+            saved += 1
+    return saved
+
+
 def fetch(backfill=False, only_source=None):
     """backfill: only articles the archive has never seen, and stop at the first failed fetch."""
     cfg = load_archive_config(SOURCES_FILE)
@@ -75,11 +88,12 @@ def fetch(backfill=False, only_source=None):
         sources = [s for s in sources if s.id == only_source]
         if not sources:
             sys.exit(f"Unknown source: {only_source}")
-    indexes, candidates = {}, []
+    indexes, candidates, states = {}, [], {}
     for source in sources:
         items = differ.load_state(DATA_DIR, source.id)
         if items is None:
             continue
+        states[source.id] = items
         indexes[source.id] = archiver.load_index(ARCHIVE_DIR, source.id)
         if backfill:
             candidates += [(source, item, "backfill") for item in archiver.plan_backfill(items, indexes[source.id])]
@@ -123,6 +137,12 @@ def fetch(backfill=False, only_source=None):
             entry["checked"].append(item["id"])
         indexes[source.id][item["id"]] = item["date"]
 
+    # After the fetches, so a file written this run counts.
+    for source_id, items in states.items():
+        if saved := fill_shop_urls(items, source_id):
+            differ.write_source(DATA_DIR, source_id, items, [])
+            diff.setdefault("shop_urls", {})[source_id] = saved
+
     if backfill:
         left = Counter(s.id for s, item, _ in candidates if item["id"] not in indexes[s.id])
         for source_id, entry in diff["sources"].items():
@@ -158,7 +178,21 @@ def commit():
     gitops.commit_paths(ARCHIVE_DIR, state_paths + [archiver.ARCHIVE_STATE_FILE, health.HEALTH_FILE],
                         "archive state")
     gitops.push(ARCHIVE_DIR)  # a no-op when nothing was committed
+    save_shop_urls(diff)
     write_diff(diff)
+
+
+def save_shop_urls(diff):
+    """Commit and push the links fetch() saved. A rejected push (the tracker pushed first) is only logged: posts
+    must not wait for it, and the next run finds the links again."""
+    if not diff.get("shop_urls"):
+        return
+    for source_id, saved in diff["shop_urls"].items():
+        gitops.commit_paths(DATA_DIR, [f"{source_id}/state.json"], f"{source_id}: {saved} shop links saved")
+    try:
+        gitops.push(DATA_DIR)
+    except RuntimeError as e:
+        logger.warning(f"Shop links not saved to the data branch this run: {e}")
 
 
 def write_outbox():

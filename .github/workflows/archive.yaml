@@ -38,13 +38,12 @@ jobs:
           ref: source
           path: code
 
-      # Read only, never pushed.
+      # Only the shop links found in article text are pushed to it.
       - name: Checkout data branch into ./data
         uses: actions/checkout@v7
         with:
           ref: data
           path: data
-          persist-credentials: false
 
       - name: Checkout archive branch into ./archive
         uses: actions/checkout@v7
@@ -61,10 +60,11 @@ jobs:
       - run: pip install --disable-pip-version-check -r code/requirements.txt
 
       - name: Configure git identity
-        working-directory: archive
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          for dir in archive data; do
+            git -C "$dir" config user.name "github-actions[bot]"
+            git -C "$dir" config user.email "github-actions[bot]@users.noreply.github.com"
+          done
 
       - name: Fetch articles
         env:
@@ -82,6 +82,7 @@ jobs:
       # Notify only runs if this succeeded, so a post never links an unpushed commit.
       - name: Commit and push
         env:
+          DATA_DIR: data
           ARCHIVE_DIR: archive
           ARCHIVE_DIFF_FILE: archive-diff.json
         run: python code/archive.py --commit

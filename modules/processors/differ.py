@@ -50,6 +50,14 @@ def new_shop_links(old_state, items):
     return [i for i in items if old_state and i.get("shop_url") and i["shop_url"] != old.get(i["id"])]
 
 
+def keep_shop_urls(old_state, items):
+    """Keeps the saved shop link (found in the article text) when the feed's card has none. A card link wins."""
+    saved = {i["id"]: i["shop_url"] for i in old_state or [] if i.get("shop_url")}
+    for item in items:
+        if not item.get("shop_url") and item["id"] in saved:
+            item["shop_url"] = saved[item["id"]]
+
+
 def merge(old_state, items):
     merged = {i["id"]: i for i in (old_state or [])}
     for item in items:

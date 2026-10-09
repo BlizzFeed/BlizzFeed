@@ -85,3 +85,16 @@ def test_the_shop_link_is_the_first_item_link_and_never_the_shop_homepage():
             "[Pack](https://shop.battle.net/family/wow/items/2)")
     assert archiver.find_shop_url(text) == "https://shop.battle.net/family/wow/items/1"
     assert archiver.find_shop_url("[Shop](https://shop.battle.net/) and https://example.com") == ""
+
+
+def test_fill_shop_urls_uses_the_saved_text_and_leaves_an_existing_link_alone(tmp_path, monkeypatch):
+    import archive
+    monkeypatch.setattr(archive, "ARCHIVE_DIR", str(tmp_path))
+    item = {"title": "T", "url": "u", "image": "", "summary": "s"}
+    shop = "https://shop.battle.net/family/world-of-warcraft/items/1"
+    for article_id, text in (("1", f"See [the shop](https://shop.battle.net/) and [it]({shop})\n"), ("2", "No link\n"),
+                             ("3", f"[it]({shop})\n")):
+        archiver.write_article(str(tmp_path), "s", article_id, archiver.render_file({**item, "id": article_id}, text))
+    items = [{"id": "1"}, {"id": "2"}, {"id": "3", "shop_url": "card"}, {"id": "4"}]  # 4 was never archived
+    assert archive.fill_shop_urls(items, "s") == 1
+    assert [i.get("shop_url") for i in items] == [shop, None, "card", None]

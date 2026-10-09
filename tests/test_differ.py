@@ -19,3 +19,11 @@ def test_new_shop_links_are_an_added_or_changed_link_but_not_a_first_run():
              {**OLD, "id": "4"}]
     assert [i["id"] for i in differ.new_shop_links(old, items)] == ["2", "3"]
     assert differ.new_shop_links(None, items) == []
+
+
+def test_a_saved_shop_link_survives_a_feed_card_without_one_but_a_card_link_wins():
+    old = [{**OLD, "shop_url": "saved"}, {**OLD, "id": "2", "shop_url": "saved"}, {**OLD, "id": "3"}]
+    items = [{**OLD}, {**OLD, "id": "2", "shop_url": "card"}, {**OLD, "id": "3"}, {**OLD, "id": "4"}]
+    differ.keep_shop_urls(old, items)
+    assert [i.get("shop_url") for i in items] == ["saved", "card", None, None]
+    assert differ.compute(old, [{**OLD, "shop_url": "saved"}]) == ([], [], [])

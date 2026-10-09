@@ -84,7 +84,7 @@ Discord posts have these buttons:
 | New article (green) | Read Article, Shop, Summary, Archive, History |
 | Card updated (orange) | Read Article, Shop, Summary Changes, History |
 
-The Shop button is on the post when the feed's card has the link. When it doesn't, the archive run that follows reads the link from the article text and the bot adds the button to the post a minute or so later.
+The Shop button is on the post when the feed's card has the link. When it doesn't, the archive run that follows reads the link from the article text and the bot adds the button to the post a minute or so later. Each archive run also saves the first shop item link in an article's text as its `shop_url` on the `data` branch when the card had none (the tracker keeps it), so `/history` can show the button for every article that has one.
 | Article text edited (orange) | Read Article, Article Changes, History |
 
 Summary shows the saved title, summary and thumbnail, and Archive the article's saved full text (it can take a minute to appear). Summary Changes and Article Changes show what changed, and History lists every saved version.
