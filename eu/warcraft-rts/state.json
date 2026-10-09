@@ -1,0 +1,282 @@
+{
+  "items": {
+    "bltd12b1d9110eb1545": {
+      "key": "bltd12b1d9110eb1545",
+      "kind": "banner",
+      "cmsId": "bltd12b1d9110eb1545",
+      "slug": "warcraft-3-reforged",
+      "itemId": null,
+      "title": "Warcraft® III Reforged: Forsaken Kingdom ",
+      "productPageName": "Warcraft® III Reforged: Forsaken Kingdom",
+      "headline": "",
+      "subHeadline": "Command the armies of Azeroth in an all-new campaign",
+      "buttonText": "Buy Now",
+      "destination": "/product/warcraft-3-reforged",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt943549aaff09f0c5/6a91e113ad920923d95625a3/WC_Rebirth_Announce_BnetShop_HeaderDesktop_1600x500.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "bltda1db874a4b01c8f": {
+      "key": "bltda1db874a4b01c8f",
+      "kind": "item",
+      "cmsId": "bltda1db874a4b01c8f",
+      "slug": "warcraft-3-reforged",
+      "title": "Warcraft® III Reforged: Forsaken Kingdom",
+      "description": "Real-time Strategy",
+      "categoryId": "real-time-strategy",
+      "itemId": null,
+      "productIds": [
+        2122611,
+        2102975
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/warcraft-3-reforged",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt8764a62ff9336d99/6a88c027ad9209e18d5624d4/WC_Rebirth_Announce_BnetShop_ProductAssetGallery_1920x1080_Rebirth.png",
+      "sections": [
+        "Campaigns"
+      ],
+      "badge": "New",
+      "price": {
+        "fullAmount": "€29.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 29.99,
+        "labelFormat": "From {0}"
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt086f572c5880c3f0": {
+      "key": "blt086f572c5880c3f0",
+      "kind": "item",
+      "cmsId": "blt086f572c5880c3f0",
+      "slug": "warcraft-remastered-battle-chest",
+      "title": "Warcraft® Remastered Battle Chest®",
+      "description": "Real-time Strategy",
+      "categoryId": "real-time-strategy",
+      "itemId": null,
+      "productIds": [
+        1863680
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/warcraft-remastered-battle-chest?p=1863680",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt1e83563dc57a20d3/6725556ad3be08302f8e0f5e/WC_Remastered_BattleChest_BnetShop_BrowsingCard_1920x1080.png",
+      "sections": [
+        "Battle Chest"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€39.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 39.99,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt4730791f8da2b23e": {
+      "key": "blt4730791f8da2b23e",
+      "kind": "item",
+      "cmsId": "blt4730791f8da2b23e",
+      "slug": "warcraft-1-remastered",
+      "title": "Warcraft® I: Remastered",
+      "description": "Real-time Strategy",
+      "categoryId": "real-time-strategy",
+      "itemId": null,
+      "productIds": [
+        1849794
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/warcraft-1-remastered?p=1849794",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt045eca7c5911893c/672d599e651b68d6dab1e48b/WC_Remastered_BattleChest_BnetShop_FeatureImage-WC1_1920x1080.png",
+      "sections": [
+        "Remastered Games"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€9.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 9.99,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "bltc92190aeff435540": {
+      "key": "bltc92190aeff435540",
+      "kind": "item",
+      "cmsId": "bltc92190aeff435540",
+      "slug": "warcraft-2-remastered",
+      "title": "Warcraft® II: Remastered",
+      "description": "Real-time Strategy",
+      "categoryId": "real-time-strategy",
+      "itemId": null,
+      "productIds": [
+        1849795
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/warcraft-2-remastered?p=1849795",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt00ac1e4d573ce7a4/672d592a7e4dc1e4082fce6e/WC_Remastered_BattleChest_BnetShop_FeatureImage-WC2_1920x1080.png",
+      "sections": [
+        "Remastered Games"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€14.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 14.99,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blte989e97b1521f561": {
+      "key": "blte989e97b1521f561",
+      "kind": "item",
+      "cmsId": "blte989e97b1521f561",
+      "slug": "warcraft-3-reforged",
+      "title": "Warcraft® III: Reforged",
+      "description": "Real-time Strategy",
+      "categoryId": "real-time-strategy",
+      "itemId": null,
+      "productIds": [
+        44414
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/warcraft-3-reforged?p=44414",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt1953c897e611639b/67325d79d32591b8409e778b/Feature1_Reforged_20_Patch.png",
+      "sections": [
+        "Remastered Games"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€29.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 29.99,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt3bd54d48e60e463c": {
+      "key": "blt3bd54d48e60e463c",
+      "kind": "item",
+      "cmsId": "blt3bd54d48e60e463c",
+      "slug": "warcraft-orcs-and-humans",
+      "title": "Warcraft®: Orcs & Humans",
+      "description": "Real-time Strategy",
+      "categoryId": "real-time-strategy",
+      "itemId": null,
+      "productIds": [
+        1652738
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/warcraft-orcs-and-humans?p=1652738",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt20214ec16801085a/65a07418cd72b186912c1fac/blizzard_warcraft1_launch_desktop_shopproductasset_bchbnet_stat_enus_1920x1080_EE01.png",
+      "sections": [
+        "Classic Games"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€5.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 5.99,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "bltf107586b1424d7bc": {
+      "key": "bltf107586b1424d7bc",
+      "kind": "item",
+      "cmsId": "bltf107586b1424d7bc",
+      "slug": "warcraft-2-battle-net-edition",
+      "title": "Warcraft® II: Battle.net® Edition",
+      "description": "Real-time Strategy",
+      "categoryId": "real-time-strategy",
+      "itemId": null,
+      "productIds": [
+        1652739
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/warcraft-2-battle-net-edition?p=1652739",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt45a874eacd7a27e4/65a08bf2db6bb9361a1fbc63/blizzard_warcraft2_launch_desktop_shopproductasset_bchbnet_stat_enus_1920x1080_EE01.png",
+      "sections": [
+        "Classic Games"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€9.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 9.99,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt60db945abf42ddf5": {
+      "key": "blt60db945abf42ddf5",
+      "kind": "item",
+      "cmsId": "blt60db945abf42ddf5",
+      "slug": "world-of-warcraft",
+      "title": "Warcraft Gear",
+      "description": "Gear",
+      "categoryId": "gear",
+      "itemId": null,
+      "productIds": [
+        32013
+      ],
+      "subscriptionIds": [],
+      "destination": "https://gear.blizzard.com/collections/world-of-warcraft",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltdf04b9709e863904/615b679119501a1ef1912182/WoW_Gear_Browsing_Card.png",
+      "sections": [
+        "Gear"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": null,
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": null,
+        "raw": 0,
+        "labelFormat": "Learn More"
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    }
+  },
+  "suspect": false
+}
