@@ -108,7 +108,7 @@ def _payload(kind, inner):
 
 
 def _buttons(shop_url, repo_url, commit, history, channel):
-    row = [d._link_button("Battle.net Shop", shop_url)] if shop_url else []
+    row = [d._link_button("Shop", shop_url)] if shop_url else []
     if channel == "shop" and repo_url:
         if commit:
             row.append(d._link_button("Shop Changes", f"{repo_url}/commit/{commit}"))

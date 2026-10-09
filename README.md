@@ -81,13 +81,13 @@ Discord posts have these buttons:
 
 | Post | Buttons |
 | --- | --- |
-| New article (green) | Read Article, Battle.net Shop, Summary, Archived Copy, History |
-| Card updated (orange) | Read Article, Battle.net Shop, Summary Changes, History |
+| New article (green) | Read Article, Shop, Summary, Archive, History |
+| Card updated (orange) | Read Article, Shop, Summary Changes, History |
 
-Battle.net Shop is on the post when the feed's card has the link. When it doesn't, the archive run that follows reads the link from the article text and the bot adds the button to the post a minute or so later.
+The Shop button is on the post when the feed's card has the link. When it doesn't, the archive run that follows reads the link from the article text and the bot adds the button to the post a minute or so later.
 | Article text edited (orange) | Read Article, Article Changes, History |
 
-Summary shows the saved title, summary and thumbnail, and Archived Copy the article's saved full text (it can take a minute to appear). Summary Changes and Article Changes show what changed, and History lists every saved version.
+Summary shows the saved title, summary and thumbnail, and Archive the article's saved full text (it can take a minute to appear). Summary Changes and Article Changes show what changed, and History lists every saved version.
 
 Both kinds of update look the same, with a diff block saying what changed: the old and new title and whether the summary or image changed for a card, or how many lines were added, changed and removed for the article text.
 

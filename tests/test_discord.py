@@ -54,15 +54,15 @@ def test_update_and_edit_messages_carry_the_ids_the_bot_merges_by():
 
 def test_new_article_buttons():
     assert buttons(item_message("added")) == {
-        "Read Article": ITEM["url"], "Battle.net Shop": ITEM["shop_url"],
+        "Read Article": ITEM["url"], "Shop": ITEM["shop_url"],
         "Summary": f"{REPO}/blob/dat/wow-news/items/42.md",
-        "Archived Copy": f"{REPO}/blob/archive/wow-news/42.md",
+        "Archive": f"{REPO}/blob/archive/wow-news/42.md",
         "History": f"{REPO}/commits/archive/wow-news/42.md"}
 
 
 def test_updated_article_buttons():
     assert buttons(item_message("updated")) == {
-        "Read Article": ITEM["url"], "Battle.net Shop": ITEM["shop_url"],
+        "Read Article": ITEM["url"], "Shop": ITEM["shop_url"],
         "Summary Changes": f"{REPO}/commit/dat", "History": f"{REPO}/commits/archive/wow-news/42.md"}
 
 

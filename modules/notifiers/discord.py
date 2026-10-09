@@ -115,7 +115,7 @@ def _top(text, thumbnail, title):
 def build_item_message(action, item, commit_url, repo_url, summary=None, archived=None, history=None, logo=None):
     """Container > Section(text + thumbnail), link buttons, Posted subtext.
 
-    A new article links its Summary (the card) and Archived Copy (the full text), an updated one its card
+    A new article links its Summary (the card) and Archive (the full text), an updated one its card
     diff (Summary Changes). Both link the History.
     An updated one also lists what changed on the card, when we know, and a note under the footer while the
     archive re-checks the article text (the bot removes it once that is done).
@@ -136,9 +136,9 @@ def build_item_message(action, item, commit_url, repo_url, summary=None, archive
                                          {"media": {"url": item["image"]}, "description": "After"}]}]
     buttons = [_link_button(label, url)
                for label, url in (("Read Article", item["url"]),
-                                  ("Battle.net Shop", item.get("shop_url")),
+                                  ("Shop", item.get("shop_url")),
                                   ("Summary Changes", commit_url) if updated else ("Summary", summary),
-                                  ("Archived Copy", None if updated else archived),
+                                  ("Archive", None if updated else archived),
                                   ("History", history)) if url]
     if buttons:
         inner += [DIVIDER, {"type": 1, "id": BUTTONS_ID, "components": buttons}]
