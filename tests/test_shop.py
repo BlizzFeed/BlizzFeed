@@ -36,8 +36,8 @@ def card(**fields):
 
 
 class FakeResponse:
-    def __init__(self, content, content_type="text/x-component", status=200):
-        self.content, self.status_code, self.url = content, status, "https://shop/x"
+    def __init__(self, content, content_type="text/x-component", status=200, url=None):
+        self.content, self.status_code, self.url = content, status, url
         self.headers = {"Content-Type": content_type}
 
     def raise_for_status(self):
@@ -49,7 +49,9 @@ class FakeSession:
         self.response, self.requested = response, []
 
     def get(self, url, timeout):
+        """Answers at the URL asked for, unless the response says it was redirected."""
         self.requested.append(url)
+        self.response.url = self.response.url or url
         return self.response
 
 
@@ -63,7 +65,7 @@ def test_wow_finds_curated_cards_product_only_items_and_banners(wow):
 
 def test_an_item_in_several_sections_is_one_entry_listing_them_all(wow):
     free_trial = wow["blt3c75df04a7ee8b14"]
-    assert free_trial["sections"] == ["Great for New Players", "Games"]
+    assert free_trial["sections"] == ["Games", "Great for New Players"]
 
 
 def test_both_section_shapes_and_an_untitled_one_are_named(overwatch):
@@ -124,6 +126,18 @@ def test_a_page_that_is_not_the_data_payload_is_an_error():
     session = FakeSession(FakeResponse(b"<html>login</html>", content_type="text/html"))
     with pytest.raises(shop.ShopFetchError):
         shop.fetch_family(session, "https://eu.shop.battle.net/en-gb", "overwatch")
+
+
+def test_a_redirect_to_the_other_regions_shop_is_an_error():
+    body = "1:{}".encode("utf-8")
+    session = FakeSession(FakeResponse(body, url="https://us.shop.battle.net/en-us/family/overwatch"))
+    with pytest.raises(shop.ShopFetchError):
+        shop.fetch_family(session, "https://eu.shop.battle.net/en-gb", "overwatch")
+
+
+def test_a_banner_that_is_only_a_picture_still_has_a_title():
+    payload = stream({"cmsId": "blt9", "callToAction": {"headline": "", "subHeadline": "", "destination": None}})
+    assert shop.parse_items(payload)["blt9"]["title"] == shop.BANNER_SECTION
 
 
 def test_the_body_is_decoded_as_utf8_whatever_the_server_guesses():

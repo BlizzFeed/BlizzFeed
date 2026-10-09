@@ -1,6 +1,7 @@
 import json
 import re
 import time
+from urllib.parse import urlparse
 
 import requests
 
@@ -34,6 +35,9 @@ def _get(session, url):
         time.sleep(http._retry_delay(response))
         response = session.get(url, timeout=20)
     response.raise_for_status()
+    # The other region's host would mean the other region's prices
+    if urlparse(response.url).netloc != urlparse(url).netloc:
+        raise ShopFetchError(f"redirected to {response.url}")
     return response
 
 
@@ -157,7 +161,8 @@ def _banner(obj):
     return {
         "key": obj.get("cmsId") or "b:" + (destination or ""), "kind": "banner", "cmsId": obj.get("cmsId"),
         "slug": slug, "itemId": item_id(destination),
-        "title": cta.get("headline") or cta.get("productPageName") or cta.get("subHeadline"),
+        # Some banners are a picture only, with no text, button or link
+        "title": cta.get("headline") or cta.get("productPageName") or cta.get("subHeadline") or BANNER_SECTION,
         "productPageName": (cta.get("productPageName") or "").strip() or None,
         "headline": cta.get("headline"), "subHeadline": cta.get("subHeadline"),
         "buttonText": cta.get("buttonText"), "destination": destination,
@@ -180,6 +185,8 @@ def parse_items(payload):
             section = BANNER_SECTION if item["kind"] == "banner" else _section(ancestors)
             if section and section not in entry["sections"]:
                 entry["sections"].append(section)
+    for entry in found.values():
+        entry["sections"].sort()  # so the page reordering its sections isn't a change
     return found
 
 
