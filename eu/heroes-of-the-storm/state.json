@@ -1,0 +1,242 @@
+{
+  "items": {
+    "blt71aea9249b580b60": {
+      "key": "blt71aea9249b580b60",
+      "kind": "banner",
+      "cmsId": "blt71aea9249b580b60",
+      "slug": "heroes-of-the-storm-xalatath-bundle",
+      "itemId": null,
+      "title": "Dark Twilight Xal’atath Bundle ",
+      "productPageName": "Dark Twilight Xal’atath Bundle",
+      "headline": "",
+      "subHeadline": "The Harbinger of the Void has descended upon the Nexus",
+      "buttonText": "Purchase Now",
+      "destination": "/product/heroes-of-the-storm-xalatath-bundle",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blte4853646218cbddf/6aa5a3e73f72c3981a27f7ad/PROJECT_SNOW_BNET_1600x720_BATTLE_NET_WEB_SHOP_BANNER_(1).png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "bltfc8bd11725d34204": {
+      "key": "bltfc8bd11725d34204",
+      "kind": "banner",
+      "cmsId": "bltfc8bd11725d34204",
+      "slug": null,
+      "itemId": null,
+      "title": "Banner",
+      "productPageName": null,
+      "headline": "",
+      "subHeadline": "",
+      "buttonText": null,
+      "destination": null,
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt4e6ce6f2ac71f208/60e4a051eec1386b1f756110/169_desktop.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt9b63cca5d53b0be2": {
+      "key": "blt9b63cca5d53b0be2",
+      "kind": "item",
+      "cmsId": "blt9b63cca5d53b0be2",
+      "slug": "heroes-of-the-storm",
+      "title": "Heroes of the Storm™",
+      "description": "MOBA",
+      "categoryId": "moba",
+      "itemId": null,
+      "productIds": [
+        29489
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/heroes-of-the-storm?p=29489",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt8b87575c67cbe1aa/6125462efe89ee250efa2e63/6224-29489.png",
+      "sections": [
+        "Games"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": null,
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": null,
+        "raw": 0,
+        "labelFormat": "Play For Free"
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "bltd902fe872eaed3e1": {
+      "key": "bltd902fe872eaed3e1",
+      "kind": "item",
+      "cmsId": "bltd902fe872eaed3e1",
+      "slug": "heroes-of-the-storm-xalatath-bundle",
+      "title": "Xal'atath",
+      "description": "In-Game Content",
+      "categoryId": "in-game-content",
+      "itemId": null,
+      "productIds": [
+        2059598,
+        2121975
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/heroes-of-the-storm-xalatath-bundle",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt74f65de276133d39/6a8cd9333ad39275946f8d0a/PROJECT_SNOW_BNET_1920X1080_PHX_FRANCHISE_CARD.png",
+      "sections": [
+        "In-Game Content"
+      ],
+      "badge": "New",
+      "price": {
+        "fullAmount": "€7.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 7.99,
+        "labelFormat": "From {0}"
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "bltcb3e47b4547602f5": {
+      "key": "bltcb3e47b4547602f5",
+      "kind": "item",
+      "cmsId": "bltcb3e47b4547602f5",
+      "slug": "heroes-of-the-storm-gems",
+      "title": "Heroes of the Storm™ Gems",
+      "description": "In-Game Content",
+      "categoryId": "in-game-content",
+      "itemId": null,
+      "productIds": [
+        1955721,
+        1955254,
+        1955719,
+        1944672,
+        1955720
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/heroes-of-the-storm-gems",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltd8e46087b6bdcbf9/682e1b2c00c48efc2c7798b5/Heroes_Gems.png",
+      "sections": [
+        "In-Game Content"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€2.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 2.99,
+        "labelFormat": "From {0}"
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt6db811f3da9cf301": {
+      "key": "blt6db811f3da9cf301",
+      "kind": "item",
+      "cmsId": "blt6db811f3da9cf301",
+      "slug": "heroes-of-the-storm-reinforcement-bundle",
+      "title": "Heroic Reinforcement Bundle",
+      "description": "In-Game Content",
+      "categoryId": "in-game-content",
+      "itemId": null,
+      "productIds": [
+        44330
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/heroes-of-the-storm-reinforcement-bundle?p=44330",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt2dc4406ae6586a98/6125462ec8e665143d536835/19701-44330.png",
+      "sections": [
+        "In-Game Content"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€38.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 38.99,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "bltba86c916d5ed2e79": {
+      "key": "bltba86c916d5ed2e79",
+      "kind": "item",
+      "cmsId": "bltba86c916d5ed2e79",
+      "slug": "heroes-of-the-storm-welcome-bundle",
+      "title": "Welcome to the Nexus Bundle",
+      "description": "In-Game Content",
+      "categoryId": "in-game-content",
+      "itemId": null,
+      "productIds": [
+        44310
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/heroes-of-the-storm-welcome-bundle?p=44310",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt538aad341c0e6d8b/6125462ec2fc8a33359fd262/19700-44310.png",
+      "sections": [
+        "In-Game Content"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€15.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 15.99,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt57ccae4902543d74": {
+      "key": "blt57ccae4902543d74",
+      "kind": "item",
+      "cmsId": "blt57ccae4902543d74",
+      "slug": "heroes-of-the-storm",
+      "title": "Heroes of the Storm Gear",
+      "description": "Gear",
+      "categoryId": "gear",
+      "itemId": null,
+      "productIds": [
+        31996
+      ],
+      "subscriptionIds": [],
+      "destination": "https://gear.blizzard.com/collections/heroes-of-the-storm",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt2b10db6fd2de5543/63f584b6b624bd69a0f701c7/50317-BGS-battlenet-evergreen-HOS.jpg",
+      "sections": [
+        "Gear"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": null,
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": null,
+        "raw": 0,
+        "labelFormat": "Learn More"
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    }
+  },
+  "suspect": false
+}
