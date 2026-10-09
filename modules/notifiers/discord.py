@@ -16,6 +16,7 @@ IS_COMPONENTS_V2 = 1 << 15  # message flag: content/embeds are disabled, compone
 DIVIDER = {"type": 14, "divider": True, "spacing": 1}
 LOG_HEADING = "Changes detected"
 ARCHIVE_LOG_HEADING = "Archive changes"
+SHOP_LOG_HEADING = "Shop changes"
 ARCHIVE_SECTION = "### 📦 Archive"
 LOG_TOTAL_TEXT = 4000  # Discord's limit for the text of one message
 # Component ids the bot looks for when it merges two posts (same numbers in the bot's merge.py)
@@ -237,6 +238,84 @@ def build_log_message(diff, sources, repo_url, run_url):
     return _log_payload(containers)
 
 
+SHOP_EMOJI = {"new": "🟢", "back": "🔁", "gone": "🔴", "unlisted": "👻", "price": "💵", "sale_start": "🏷️",
+              "sale_end": "⌛", "badge": "✨", "details": "📝", "banner": "🖼️"}
+SHOP_LABEL = {"new": "new", "back": "back", "gone": "gone", "unlisted": "unlisted", "price": "price",
+              "sale_start": "sale started", "sale_end": "sale ended", "badge": "badge", "details": "details",
+              "banner": "banner"}
+SHOP_PLURAL = ("price", "badge", "banner")
+
+
+def _shop_counts(changes):
+    counts = {}
+    for change in changes:
+        counts[change["type"]] = counts.get(change["type"], 0) + 1
+    return ", ".join(f"{counts[kind]} {SHOP_LABEL[kind]}{'s' if counts[kind] > 1 and kind in SHOP_PLURAL else ''}"
+                     for kind in SHOP_LABEL if kind in counts)
+
+
+def _shop_detail(change):
+    """The small line under a change, if it needs one."""
+    if change["type"] == "price":
+        return f"{change['from'] or '–'} → {change['to'] or '–'}"
+    if change["type"] == "badge":
+        return f"{change['from'] or 'no badge'} → {change['to'] or 'no badge'}"
+    if change["type"] in ("details", "banner") and change.get("changed"):
+        return f"{', '.join(change['changed'])} changed"
+    return "back" if change.get("what") == "back" else None
+
+
+def _shop_line(change, base):
+    """A change as a line linked to its shop page."""
+    if change["type"] == "banner" and change.get("product"):
+        text = f"{change['button']} · {change['product']}"
+    else:
+        text = change["title"].strip()
+    label = _trim(text, 80).replace("[", "(").replace("]", ")")
+    destination = change.get("destination") or ""
+    url = base + destination if destination.startswith("/") else destination  # the Gear cards link off-site
+    link = f"[{label}]({url})" if url else label
+    lines = [f"- {SHOP_EMOJI[change['type']]} {link}"]
+    if detail := _shop_detail(change):
+        lines.append(f"  -# {detail}")
+    return "\n".join(lines)
+
+
+def _shop_entry(name, entry, base, repo_url, recovered_since):
+    """One shop page's part of the log: a counts line linked to its commit, then a line per change."""
+    commit = entry.get("commit")
+    title = f"[{name}]({repo_url}/commit/{commit})" if repo_url and commit else name
+    if entry["baseline"]:
+        parts = [f"🆕 baseline, {entry['items']} items stored, nothing reported"]
+    else:
+        parts = [_shop_counts(entry["changes"])] if entry["changes"] else []
+    if recovered_since:
+        parts.append(f"✅ recovered (was failing since {_discord_time(recovered_since, relative_only=True)})")
+    lines = [f"**{title}** · {', '.join(parts)}"]
+    for change in sorted(entry["changes"], key=lambda c: list(SHOP_LABEL).index(c["type"])):
+        lines.append(_shop_line(change, base))
+    return "\n".join(lines)
+
+
+def build_shop_log_message(diff, families, regions, repo_url, run_url):
+    """Summary of a shop run for the log channel, or None when nothing happened. Shop pages that fail
+    get their own red container; one that recovered is listed with the changes."""
+    recovered = {a["source"]: a["since"] for a in diff["alerts"] if a["kind"] == "recovered"}
+    blocks = []
+    for label, entry in diff["families"].items():
+        if entry["baseline"] or entry["changes"] or label in recovered:
+            region, family = label.split("/")
+            blocks.append(_shop_entry(f"{families[family]['name']} · {region.upper()}", entry, regions[region],
+                                      repo_url, recovered.get(label)))
+    containers = []
+    if blocks:
+        containers.append(_log_container(SHOP_LOG_HEADING, blocks, len(families) * len(regions), run_url, "Shop run",
+                                         noun="shop page"))
+    if alerts := build_shop_alert_message(diff["alerts"], run_url):
+        containers += alerts["components"]
+    return _log_payload(containers) if containers else None
+
+
 def build_shop_alert_message(alerts, run_url):
     """Shop pages that started or stopped failing, in one container however many there are."""
     blocks = []
@@ -276,7 +355,7 @@ def _fit_lines(block, limit):
     return "\n".join(kept + [f"-# …and {len(lines) - len(kept)} more"])
 
 
-def _log_container(heading, blocks, total, run_url, run_label):
+def _log_container(heading, blocks, total, run_url, run_label, noun="source"):
     """The blurple summary container: a block per changed source, trimmed to fit, then an unchanged count."""
     shown, used = [], 0
     for block in blocks:
@@ -286,12 +365,12 @@ def _log_container(heading, blocks, total, run_url, run_label):
         used += len(block) + 2
     if len(shown) < len(blocks):
         more = len(blocks) - len(shown)
-        shown.append(f"-# …and {more} more source{'s' if more != 1 else ''}")
+        shown.append(f"-# …and {more} more {noun}{'s' if more != 1 else ''}")
     now = _discord_time(datetime.now(timezone.utc).isoformat())
-    inner = [_with_logo(f"## {heading}\n-# {now} · {len(blocks)} of {total} sources changed"),
+    inner = [_with_logo(f"## {heading}\n-# {now} · {len(blocks)} of {total} {noun}s changed"),
              DIVIDER, _text("\n\n".join(shown))]
     if total > len(blocks):
-        inner += [DIVIDER, _text(f"-# Unchanged: {total - len(blocks)} source{'s' if total - len(blocks) != 1 else ''}")]
+        inner += [DIVIDER, _text(f"-# Unchanged: {total - len(blocks)} {noun}{'s' if total - len(blocks) != 1 else ''}")]
     if run_url:
         inner.append({"type": 1, "components": [_link_button(run_label, run_url)]})
     return {"type": 17, "accent_color": COLORS["log"], "components": inner}
@@ -481,15 +560,15 @@ def send_log(diff, sources, repo_url, run_url):
     return message_id
 
 
-def send_shop_alerts(diff, run_url):
-    """Post the shop run's failing and recovered alerts to DISCORD_WEBHOOK_LOG. Never fails the run."""
+def send_shop_log(diff, families, regions, repo_url, run_url):
+    """Post the shop run's summary and failing or recovered pages to DISCORD_WEBHOOK_LOG. Never fails the run."""
     url = os.environ.get("DISCORD_WEBHOOK_LOG")
     if not url:
-        logger.info("DISCORD_WEBHOOK_LOG isn't set; skipping the shop alerts.")
+        logger.info("DISCORD_WEBHOOK_LOG isn't set; skipping the shop log.")
         return
-    message = build_shop_alert_message(diff["alerts"], run_url)
+    message = build_shop_log_message(diff, families, regions, repo_url, run_url)
     if message and post(url, message):
-        logger.info("Posted the shop alerts.")
+        logger.info("Posted the shop log.")
 
 
 def send_archive_log(diff, sources, repo_url, run_url, log_message=None):

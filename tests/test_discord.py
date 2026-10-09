@@ -231,3 +231,40 @@ def test_shop_alerts_for_a_whole_region_stay_in_one_message_within_the_text_limi
     message = discord.build_shop_alert_message(down, "https://run")
     body = texts(message)
     assert len(message["components"]) == 1 and len(body) <= discord.LOG_TOTAL_TEXT and "more" in body
+
+
+SHOP_FAMILIES = {"overwatch": {"name": "Overwatch"}, "hearthstone": {"name": "Hearthstone"}}
+SHOP_REGIONS = {"eu": "https://eu.shop.battle.net/en-gb", "us": "https://us.shop.battle.net/en-us"}
+
+
+def shop_change(change_type, **fields):
+    return {"type": change_type, "key": "k", "kind": "item", "slug": "s", "title": "Shadow Monarch", "destination": "/product/s",
+            "seen": "2026-10-09T10:00:00Z", **fields}
+
+
+def shop_log(entries, alerts=()):
+    diff = {"families": entries, "alerts": list(alerts)}
+    return discord.build_shop_log_message(diff, SHOP_FAMILIES, SHOP_REGIONS, REPO, None)
+
+
+def test_shop_log_links_each_change_to_its_own_regions_page_and_counts_unchanged_pages():
+    body = texts(shop_log({"us/overwatch": {"baseline": False, "commit": "abc", "changes": [shop_change("sale_start")]}}))
+    assert "[Shadow Monarch](https://us.shop.battle.net/en-us/product/s)" in body
+    assert f"[Overwatch · US]({REPO}/commit/abc)" in body
+    assert "Unchanged: 3 shop pages" in body  # 2 families x 2 regions, one changed
+
+
+def test_shop_log_banner_reads_button_and_product_and_off_site_links_are_kept():
+    banner = shop_change("banner", kind="banner", what="added", button="Buy Now", product="The Bundle")
+    gear = shop_change("details", title="Gear", destination="https://gear.blizzard.com/x", changed=["title"])
+    body = texts(shop_log({"eu/overwatch": {"baseline": False, "changes": [banner, gear]}}))
+    assert "[Buy Now · The Bundle]" in body and "(https://gear.blizzard.com/x)" in body
+
+
+def test_shop_log_for_a_first_run_says_how_many_items_were_stored():
+    body = texts(shop_log({"eu/hearthstone": {"baseline": True, "items": 102, "changes": []}}))
+    assert "102 items stored" in body
+
+
+def test_shop_log_is_skipped_when_nothing_happened():
+    assert shop_log({"eu/overwatch": {"baseline": False, "changes": []}}) is None

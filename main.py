@@ -213,7 +213,7 @@ def shop_sweep(region, family):
             new, changes = shop_differ.sweep(old, items, now, config["gone_after_misses"],
                                              lambda item: shop.item_on_sale(session, base, slug, item))
             shop_differ.write_family(SHOP_DIR, name, slug, new, changes, baseline=old is None)
-            diff["families"][label] = {"baseline": old is None, "changes": changes}
+            diff["families"][label] = {"baseline": old is None, "items": len(items), "changes": changes}
             logger.success(f"[{label}] {len(items)} items, {len(changes)} change(s)"
                            f"{' (baseline, nothing reported)' if old is None else ''}")
     health.save(SHOP_DIR, state)
@@ -222,9 +222,12 @@ def shop_sweep(region, family):
 
 
 def shop_notify():
+    config = load_shop_config(SOURCES_FILE)
+    repo = os.environ.get("GITHUB_REPOSITORY")
+    repo_url = f"https://github.com/{repo}" if repo else None
     with open(SHOP_DIFF_FILE, "r", encoding="utf-8") as f:
         diff = json.load(f)
-    discord.send_shop_alerts(diff, os.environ.get("ACTIONS_RUN_URL"))
+    discord.send_shop_log(diff, config["families"], config["regions"], repo_url, os.environ.get("ACTIONS_RUN_URL"))
     logger.success("Notify complete.")
 
 
@@ -259,7 +262,7 @@ def main():
     parser.add_argument("--shop", action="store_true", help="Battle.net Shop tracking: fetch, write changes + shop-diff.json")
     parser.add_argument("--dry-run", action="store_true", help="with --shop: print what the shop lists, save nothing")
     parser.add_argument("--shop-commit", action="store_true", help="commit the shop run per family, push, record SHAs in shop-diff.json")
-    parser.add_argument("--shop-notify", action="store_true", help="post the shop run's failing and recovered pages to the log channel")
+    parser.add_argument("--shop-notify", action="store_true", help="post the shop run summary to the log channel")
     parser.add_argument("--region", help="with --shop: only this region (eu or us)")
     parser.add_argument("--family", help="with --shop: only this shop family slug")
     parser.add_argument("--notify", action="store_true", help="post the run summary to the log channel")
