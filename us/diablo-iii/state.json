@@ -1,0 +1,216 @@
+{
+  "items": {
+    "bltfa37b4287ea08ed1": {
+      "key": "bltfa37b4287ea08ed1",
+      "kind": "banner",
+      "cmsId": "bltfa37b4287ea08ed1",
+      "slug": null,
+      "itemId": null,
+      "title": "Banner",
+      "productPageName": null,
+      "headline": "",
+      "subHeadline": "",
+      "buttonText": null,
+      "destination": null,
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltd4b63389f26b52e2/60e4a0ab2ef84950640d240c/167_desktop.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt44727f293d8faa4f": {
+      "key": "blt44727f293d8faa4f",
+      "kind": "item",
+      "cmsId": "blt44727f293d8faa4f",
+      "slug": "diablo-iii",
+      "title": "Diablo® III: Eternal Collection",
+      "description": "Action RPG",
+      "categoryId": "action-rpg",
+      "itemId": null,
+      "productIds": [
+        38789
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/diablo-iii?p=38789",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltadeced5ebc57629e/69fed4b1d369e588f90591ca/251-38789.png",
+      "sections": [
+        "Games"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$39.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 39.99,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "bltf716f92174e7ee64": {
+      "key": "bltf716f92174e7ee64",
+      "kind": "item",
+      "cmsId": "bltf716f92174e7ee64",
+      "slug": "diablo-iii",
+      "title": "Diablo® III Battle Chest®",
+      "description": "Action RPG",
+      "categoryId": "action-rpg",
+      "itemId": null,
+      "productIds": [
+        388
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/diablo-iii?p=388",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltea990b55c48ee6b1/612558a4485f90297b7dea37/251-388.png",
+      "sections": [
+        "Games"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$29.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 29.99,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "bltbdb6a8942166a262": {
+      "key": "bltbdb6a8942166a262",
+      "kind": "item",
+      "cmsId": "bltbdb6a8942166a262",
+      "slug": "diablo-iii",
+      "title": "Diablo® III",
+      "description": "Action RPG",
+      "categoryId": "action-rpg",
+      "itemId": null,
+      "productIds": [
+        51
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/diablo-iii?p=51",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltd945b327ff3cd236/612558a46a123329708cbda8/251-51.png",
+      "sections": [
+        "Games"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$19.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 19.99,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt3b24a4738f0450ba": {
+      "key": "blt3b24a4738f0450ba",
+      "kind": "item",
+      "cmsId": "blt3b24a4738f0450ba",
+      "slug": "diablo-iii-ros",
+      "title": "Diablo® III Reaper of Souls™",
+      "description": "Expansions",
+      "categoryId": "expansions",
+      "itemId": null,
+      "productIds": [
+        15151,
+        15152
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/diablo-iii-ros",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt45e20a95dc92e8d4/6a39d07fd0360dcd27431e54/DIA_D3_Bnet_Patch2.7.8_Textless_1920x1080.avif",
+      "sections": [
+        "Expansions"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$19.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 19.99,
+        "labelFormat": "From {0}"
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt9b2b7302f2ddb036": {
+      "key": "blt9b2b7302f2ddb036",
+      "kind": "item",
+      "cmsId": "blt9b2b7302f2ddb036",
+      "slug": "diablo-iii-rise-of-the-necromancer",
+      "title": "Diablo® III: Rise of the Necromancer",
+      "description": "Expansions",
+      "categoryId": "expansions",
+      "itemId": null,
+      "productIds": [
+        22764
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/diablo-iii-rise-of-the-necromancer?p=22764",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt80a7fbba037ad6a1/6a39d163353f4e1d074e1b5c/8678-22764.png",
+      "sections": [
+        "Expansions"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$14.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 14.99,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt53a37c5a0638be72": {
+      "key": "blt53a37c5a0638be72",
+      "kind": "item",
+      "cmsId": "blt53a37c5a0638be72",
+      "slug": "diablo-iv-merchandise",
+      "title": "Diablo Gear",
+      "description": "Gear",
+      "categoryId": "gear",
+      "itemId": null,
+      "productIds": [],
+      "subscriptionIds": [],
+      "destination": "https://gear.blizzard.com/collections/diablo-iv-merchandise?utm_source=Partner&utm_medium=Battlenet&utm_campaign=BGS_Battlenet_DIV&utm_id=BGS_Battlenet_DIV ",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blte752ff8dbe87a681/69fe4a7b80db441fdc775cc8/D4Gear.jpg",
+      "sections": [
+        "Gear"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": null,
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": null,
+        "raw": 0,
+        "labelFormat": "Learn More"
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    }
+  },
+  "suspect": false
+}
