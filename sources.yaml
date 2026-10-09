@@ -57,6 +57,7 @@ channels:
   WARCRAFTRUMBLE:       {all: "1554679737433980948", new: "1555101992421040201", updated: "1555102014940381184"}
   WOW:                  {all: "1554679773450731610", new: "1555101994450948169", updated: "1555102016081104936"}
   WOW_US:               {all: "1554679797916106752", new: "1555101995595997264", updated: "1555102017230209044"}
+  SHOP:                 {name: "Battle.net Shop", all: "1557956587790934078"}  # shop posts only; not a source label
 
 # Article archive (archive.py): saves each article's card and full text as Markdown on the archive branch.
 archive:
