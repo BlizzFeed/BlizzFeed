@@ -81,4 +81,5 @@ def load_shop_config(path):
     """The shop: block of sources.yaml over the defaults."""
     with open(path, "r", encoding="utf-8") as f:
         cfg = yaml.safe_load(f)
-    return {**SHOP_DEFAULTS, **(cfg.get("shop") or {})}
+    channel = ((cfg.get("channels") or {}).get("SHOP") or {}).get("all")
+    return {**SHOP_DEFAULTS, **(cfg.get("shop") or {}), "channel": str(channel) if channel else None}

@@ -55,6 +55,24 @@ jobs:
           SHOP_DIFF_FILE: shop-diff.json
         run: python code/main.py --shop-commit
 
+      # For BlizzFeedBot, like the tracker's. Also saves the list of recent posts on the shop branch.
+      - name: Write outbox
+        env:
+          SHOP_DIR: shop
+          SHOP_DIFF_FILE: shop-diff.json
+          GITHUB_RUN_ID: ${{ github.run_id }}
+          ACTIONS_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: python code/main.py --shop-outbox
+
+      - name: Upload outbox
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: outbox
+          path: outbox.json
+          if-no-files-found: ignore
+          retention-days: 7
+
       - name: Notify Discord
         if: always()
         env:

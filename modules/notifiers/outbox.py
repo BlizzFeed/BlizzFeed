@@ -4,7 +4,8 @@ from datetime import datetime, timezone
 
 from loguru import logger
 
-from modules.notifiers import discord
+from modules.notifiers import discord, shop_messages
+from modules.processors import shop_posts
 
 OUTBOX_VERSION = 1
 # Tier channels each kind of post goes to
@@ -83,6 +84,36 @@ def build_archive_shops(diff):
     """The shop links found in the text of articles whose feed card had none, for the bot to add the button."""
     return [{"source": source_id, "article": shop["id"], "url": shop["url"]}
             for source_id, entry in diff["sources"].items() for shop in entry.get("shops", [])]
+
+
+def build_shop_entries(posts, states, sources, shop_channel, repo_url, detected):
+    """An edit entry replaces the earlier post with the same ref."""
+    entries = []
+    for post in posts:
+        kind, source_id = post["destination"]
+        source = sources[post["game"]]
+        events = post["events"]
+        changes = list(events[0]["changes"].values())
+        commit = changes[-1].get("commit")
+        if post["kind"] == "single":
+            message = shop_messages.build_single(events[0], states, source.logo, repo_url, commit, detected, kind)
+            title = changes[0]["title"] or events[0]["key"]
+        else:
+            message = shop_messages.build_digest(post, states, source.logo, repo_url, commit, detected, kind)
+            title = shop_messages.DIGEST[post["type"]].format(n=len(events))
+        if kind == "feed":
+            feed = sources[source_id]
+            tiers = shop_posts.FEED_TIERS.get(post["type"], ("all",))  # a mix of types only goes to "all"
+            channels = [c for tier in tiers for c in feed.tier_channels[tier]]
+            name = feed.name
+        else:
+            channels, name = [shop_channel] if shop_channel else [], "Battle.net Shop"
+        ref = shop_posts.ref(events[0]) if post["kind"] == "single" else None
+        entry = {"source": source_id or "shop", "source_name": name, "article": ref or title, "kind": "shop",
+                 "detected": detected, "title": title, "url": shop_messages.SHOP_URL, "message": message,
+                 "ref": ref, "edit": post["edit"]}
+        entries += [{"channel": channel, **entry} for channel in dict.fromkeys(channels)]
+    return entries
 
 
 def write(path, workflow, entries, run_url, checked=(), shops=()):

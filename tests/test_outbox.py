@@ -1,3 +1,5 @@
+from types import SimpleNamespace
+
 from modules.core.config import Source
 from modules.notifiers import outbox
 
@@ -45,3 +47,27 @@ def test_missing_ids_are_skipped_and_other_archive_kinds_are_not_posted():
 def test_messages_are_bot_safe():
     entries = outbox.build_tracker_entries(tracker_diff(added=[ITEM]), source(["DIABLO4"]), REPO, "t")
     assert not {"username", "avatar_url", "allowed_mentions"} & entries[0]["message"].keys()
+
+
+def _shop_post(kind, edit=False):
+    change = {"type": kind, "title": "T", "destination": "/x", "key": "c-1", "slug": "s", "seen": "t", "commit": "abc", "from": "1", "to": "2"}
+    event = {"type": kind, "family": "overwatch", "key": "c-1", "slug": "s", "changes": {"eu": change}}
+    return {"destination": ("feed", "ow"), "game": "ow", "kind": "single", "type": kind, "edit": edit, "events": [event]}
+
+
+def _shop_feed():
+    return SimpleNamespace(name="Overwatch", logo=None, tier_channels={"all": ["1"], "new": ["2"], "updated": ["3"]})
+
+
+def test_shop_new_goes_to_all_and_new_and_a_change_to_all_and_updated():
+    sources = {"ow": _shop_feed()}
+    channels = lambda kind: [e["channel"] for e in outbox.build_shop_entries(  # noqa: E731
+        [_shop_post(kind)], {}, sources, "9", None, "2026-10-10T10:00:00Z")]
+    assert channels("new") == ["1", "2"]
+    assert channels("price") == ["1", "3"]
+
+
+def test_shop_edit_entry_carries_the_ref_of_the_post_it_replaces():
+    entries = outbox.build_shop_entries([_shop_post("price", edit=True)], {}, {"ow": _shop_feed()}, "9", None,
+                                        "2026-10-10T10:00:00Z")
+    assert {e["ref"] for e in entries} == {"overwatch:price:c-1"} and all(e["edit"] for e in entries)

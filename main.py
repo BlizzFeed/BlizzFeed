@@ -12,7 +12,7 @@ from loguru import logger
 from modules.core import gitops, health
 from modules.core.config import load_shop_config, load_sources
 from modules.notifiers import discord, outbox
-from modules.processors import differ, shop_differ
+from modules.processors import differ, shop_differ, shop_posts
 from modules.providers import html as html_provider, json_api as json_provider, shop
 
 PROVIDERS = {"html": html_provider.fetch, "json": json_provider.fetch}
@@ -246,6 +246,27 @@ def shop_commit():
         json.dump(diff, f, indent=2, ensure_ascii=False)
 
 
+def shop_outbox():
+    """The shop run's posts for the bot, and the ledger of recent posts that lets the other region edit them."""
+    config = load_shop_config(SOURCES_FILE)
+    sources = {s.id: s for s in load_sources(SOURCES_FILE)}
+    repo = os.environ.get("GITHUB_REPOSITORY")
+    repo_url = f"https://github.com/{repo}" if repo else None
+    with open(SHOP_DIFF_FILE, "r", encoding="utf-8") as f:
+        diff = json.load(f)
+    now = outbox.now_iso()
+    fresh = [(*label.split("/"), {**change, "commit": entry.get("commit")})
+             for label, entry in diff["families"].items() for change in entry["changes"]]
+    events, ledger = shop_posts.resolve(shop_posts.load_ledger(SHOP_DIR), fresh, now)
+    posts = shop_posts.plan(events, config["families"])
+    states = {(r, f): shop_differ.load_state(SHOP_DIR, r, f) for r in config["regions"] for f in config["families"]}
+    entries = outbox.build_shop_entries(posts, states, sources, config["channel"], repo_url, now)
+    outbox.write(OUTBOX_FILE, "shop", entries, os.environ.get("ACTIONS_RUN_URL"))
+    shop_posts.save_ledger(SHOP_DIR, shop_posts.remember(ledger, posts, now))
+    gitops.commit_paths(SHOP_DIR, [shop_posts.LEDGER_FILE], "posted ledger")
+    gitops.push(SHOP_DIR)
+
+
 def main():
     logger.remove()
     logger.add(sys.stderr, level="INFO",
@@ -262,12 +283,13 @@ def main():
     parser.add_argument("--shop", action="store_true", help="Battle.net Shop tracking: fetch, write changes + shop-diff.json")
     parser.add_argument("--dry-run", action="store_true", help="with --shop: print what the shop lists, save nothing")
     parser.add_argument("--shop-commit", action="store_true", help="commit the shop run per family, push, record SHAs in shop-diff.json")
+    parser.add_argument("--shop-outbox", action="store_true", help="write outbox.json from shop-diff.json, for the bot")
     parser.add_argument("--shop-notify", action="store_true", help="post the shop run summary to the log channel")
     parser.add_argument("--region", help="with --shop: only this region (eu or us)")
     parser.add_argument("--family", help="with --shop: only this shop family slug")
     parser.add_argument("--notify", action="store_true", help="post the run summary to the log channel")
     args = parser.parse_args()
-    if not (args.scrape or args.deepen or args.commit or args.outbox or args.notify or args.shop or args.shop_commit or args.shop_notify):
+    if not (args.scrape or args.deepen or args.commit or args.outbox or args.notify or args.shop or args.shop_commit or args.shop_outbox or args.shop_notify):
         parser.print_help()
     if args.scrape:
         scrape()
@@ -283,6 +305,8 @@ def main():
         (shop_dry_run if args.dry_run else shop_sweep)(args.region, args.family)
     if args.shop_commit:
         shop_commit()
+    if args.shop_outbox:
+        shop_outbox()
     if args.shop_notify:
         shop_notify()
 
