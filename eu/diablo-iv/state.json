@@ -1,0 +1,667 @@
+{
+  "items": {
+    "blt9f9f26843b86cc9f": {
+      "key": "blt9f9f26843b86cc9f",
+      "kind": "banner",
+      "cmsId": "blt9f9f26843b86cc9f",
+      "slug": "diablo-iv-battle-pass-season-of-hells-legacy",
+      "itemId": null,
+      "title": "Diablo® IV - Season of Hell's Legacy",
+      "productPageName": "Diablo® IV - Season of Hell's Legacy",
+      "headline": "",
+      "subHeadline": "Unlock epic 30th Anniversary rewards with Premium Battle Pass Reliquaries",
+      "buttonText": "Purchase Battle Pass Now",
+      "destination": "/product/diablo-iv-battle-pass-season-of-hells-legacy",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt1398f0cb789324fe/6a99ea352c0580fe15273c99/DIA_D4_S15_Battle_Net_Shop_Banner_Desktop-1600x500_GG01.jpg",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt7c33d386f0e58dee": {
+      "key": "blt7c33d386f0e58dee",
+      "kind": "banner",
+      "cmsId": "blt7c33d386f0e58dee",
+      "slug": "diablo-iv",
+      "itemId": null,
+      "title": "Diablo® IV",
+      "productPageName": "Diablo® IV",
+      "headline": "",
+      "subHeadline": "Evil awaits in the Age of Hatred Collection",
+      "buttonText": "Purchase Now",
+      "destination": "/product/diablo-iv",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt48db0795026782ed/693ba2925491867d4350dbe7/DIA_DIV_Helix_Bnet_Product_Page_Banners_Bnet_GG01.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt924cde7bb2ad5a58": {
+      "key": "blt924cde7bb2ad5a58",
+      "kind": "banner",
+      "cmsId": "blt924cde7bb2ad5a58",
+      "slug": "diablo-iv",
+      "itemId": null,
+      "title": "Diablo® IV",
+      "productPageName": "Diablo® IV",
+      "headline": "",
+      "subHeadline": "Try for free, up to level 30!",
+      "buttonText": "Play Free Trial Now",
+      "destination": "/product/diablo-iv",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blteb64522e457deab3/63869184edd0a0105dfd2357/20_2022_10_Diablo_D4_Pre_Purchase_Blizzard_Channels_Shop_Banner_Desktop_1600x500_TS01.jpg",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt120ade6f2fd3a2ec": {
+      "key": "blt120ade6f2fd3a2ec",
+      "kind": "item",
+      "cmsId": "blt120ade6f2fd3a2ec",
+      "slug": "diablo-iv-lord-of-hatred",
+      "title": "Diablo® IV: Lord of Hatred - Ultimate Edition",
+      "description": "Action RPG",
+      "categoryId": "action-rpg",
+      "itemId": null,
+      "productIds": [
+        1971190
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/diablo-iv-lord-of-hatred?p=1971190",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt167507eeda4c77b7/690aba9810863b568c949408/DIA_DIV_Helix_UE_SKU_BNET_Product_Page_1920x1080_GG01.jpg",
+      "sections": [
+        "Expansions"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€89.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 89.99,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt10d202fda7e4bf57": {
+      "key": "blt10d202fda7e4bf57",
+      "kind": "item",
+      "cmsId": "blt10d202fda7e4bf57",
+      "slug": "diablo-iv-lord-of-hatred",
+      "title": "Diablo® IV: Lord of Hatred - Deluxe Edition",
+      "description": "Action RPG",
+      "categoryId": "action-rpg",
+      "itemId": null,
+      "productIds": [
+        1971233
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/diablo-iv-lord-of-hatred?p=1971233",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blte447d51c39428e2c/690aba9ca0fb93cd87213e96/DIA_DIV_Helix_DE_SKU_BNET_Product_Page_1920x1080_GG01.jpg",
+      "sections": [
+        "Expansions"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€59.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 59.99,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt0a11974afe6fcf09": {
+      "key": "blt0a11974afe6fcf09",
+      "kind": "item",
+      "cmsId": "blt0a11974afe6fcf09",
+      "slug": "diablo-iv-lord-of-hatred",
+      "title": "Diablo® IV: Lord of Hatred - Standard Edition",
+      "description": "Action RPG",
+      "categoryId": "action-rpg",
+      "itemId": null,
+      "productIds": [
+        1971232
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/diablo-iv-lord-of-hatred?p=1971232",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blta8144b87f02ecaa8/690abaa0aff6a82fc524cef2/DIA_DIV_Helix_SKU_BNET_Product_Page_1920x1080_GG01.jpg",
+      "sections": [
+        "Expansions"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€39.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 39.99,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "bltcae26533e788ec0e": {
+      "key": "bltcae26533e788ec0e",
+      "kind": "item",
+      "cmsId": "bltcae26533e788ec0e",
+      "slug": "diablo-iv",
+      "title": "Diablo® IV - Standard Edition",
+      "description": "Action RPG",
+      "categoryId": "action-rpg",
+      "itemId": null,
+      "productIds": [
+        1831178
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/diablo-iv?p=1831178",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt4197fb75a1d70653/636d8db2cd229e3bb8dd582c/2022_09_Diablo_D4_Shop_Product_Asset_Base_1920x1080_TS01.png",
+      "sections": [
+        "Games"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€49.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 49.99,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt5d94c1c0d75f49c8": {
+      "key": "blt5d94c1c0d75f49c8",
+      "kind": "item",
+      "cmsId": "blt5d94c1c0d75f49c8",
+      "slug": "diablo-iv",
+      "title": "Diablo® IV: Age of Hatred Collection",
+      "description": "Action RPG",
+      "categoryId": "action-rpg",
+      "itemId": null,
+      "productIds": [
+        2027418
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/diablo-iv?p=2027418",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt057ea3555961938a/690abaa394299f5ca1853e63/DIA_DIV_Helix_AoH_SKU_BNET_Product_Page_1920x1080_GG01.jpg",
+      "sections": [
+        "Games"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€69.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 69.99,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt09b0524ff3a750dd": {
+      "key": "blt09b0524ff3a750dd",
+      "kind": "item",
+      "cmsId": "blt09b0524ff3a750dd",
+      "slug": "diablo-iv-platinum",
+      "title": "Diablo® IV Platinum",
+      "description": "In-Game Content",
+      "categoryId": "in-game-content",
+      "itemId": null,
+      "productIds": [
+        809879,
+        809880,
+        809881,
+        809882,
+        809883,
+        1519748
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/diablo-iv-platinum",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blte7745c4e679f1f41/64680641367bd1288b242085/DIA_D4_early_access_live_now_prelaunch_bchbl_stat_enus_1920x1080_4_TS01.png",
+      "sections": [
+        "Add-ons & Platinum"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€4.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 4.99,
+        "labelFormat": "From {0}"
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt53a37c5a0638be72": {
+      "key": "blt53a37c5a0638be72",
+      "kind": "item",
+      "cmsId": "blt53a37c5a0638be72",
+      "slug": "diablo-iv-merchandise",
+      "title": "Diablo Gear",
+      "description": "Gear",
+      "categoryId": "gear",
+      "itemId": null,
+      "productIds": [],
+      "subscriptionIds": [],
+      "destination": "https://gear.blizzard.com/collections/diablo-iv-merchandise?utm_source=Partner&utm_medium=Battlenet&utm_campaign=BGS_Battlenet_DIV&utm_id=BGS_Battlenet_DIV ",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blte752ff8dbe87a681/69fe4a7b80db441fdc775cc8/D4Gear.jpg",
+      "sections": [
+        "Gear"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": null,
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": null,
+        "raw": 0,
+        "labelFormat": "Learn More"
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blta6b525e90a682629": {
+      "key": "blta6b525e90a682629",
+      "kind": "item",
+      "cmsId": "blta6b525e90a682629",
+      "slug": "diablo-iv-battle-pass-season-of-hells-legacy",
+      "title": " Deluxe Battle Pass Bundle - Season of Hell's Legacy",
+      "description": "In-Game Content",
+      "categoryId": "in-game-content",
+      "itemId": null,
+      "productIds": [
+        2114912
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/diablo-iv-battle-pass-season-of-hells-legacy?p=2114912",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt28148932096323f5/6a8e2e0e1deff33a28438fd2/S15_Web_Assets_Deluxe_BP_1920x1080_GG01.jpg",
+      "sections": [
+        "(untitled)"
+      ],
+      "badge": "New",
+      "price": {
+        "fullAmount": "2,800 Platinum",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XFB",
+        "raw": 2800,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt53a7ce0636097721": {
+      "key": "blt53a7ce0636097721",
+      "kind": "item",
+      "cmsId": "blt53a7ce0636097721",
+      "slug": "diablo-iv-battle-pass-season-of-hells-legacy",
+      "title": "Premium Battle Pass Bundle - Season of Hell's Legacy",
+      "description": "In-Game Content",
+      "categoryId": "in-game-content",
+      "itemId": null,
+      "productIds": [
+        2114911
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/diablo-iv-battle-pass-season-of-hells-legacy?p=2114911",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt757eae7bd03f1c44/6a8e2e0ead9209763b56253e/S15_Web_Assets_BP_1920x1080_GG01.jpg",
+      "sections": [
+        "(untitled)"
+      ],
+      "badge": "New",
+      "price": {
+        "fullAmount": "1,000 Platinum",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XFB",
+        "raw": 1000,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2114869": {
+      "key": "p:2114869",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "diablo-iv-weapons",
+      "title": "Weapons",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2114869,
+      "productIds": [
+        2114869
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/diablo-iv/items/2114869/weapons",
+      "image": "//catalog.blzstatic.com//f8a/9983ebe246ff49d8015a244a5f0b6a4d-BP_S15_Catalog_Weapons_WebImage.png",
+      "sections": [
+        "(untitled)"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "200 Platinum",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XFB",
+        "raw": 200,
+        "labelFormat": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2114888": {
+      "key": "p:2114888",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "diablo-iv-beasts",
+      "title": "Beasts",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2114888,
+      "productIds": [
+        2114888
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/diablo-iv/items/2114888/beasts",
+      "image": "//catalog.blzstatic.com//fc1/304913d1a41722e80e3e958d44433111-Catalog_BattlePass_S15_Catalog_Beasts_WebImage.png",
+      "sections": [
+        "(untitled)"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "500 Platinum",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XFB",
+        "raw": 500,
+        "labelFormat": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2114849": {
+      "key": "p:2114849",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "diablo-iv-armor",
+      "title": "Armor",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2114849,
+      "productIds": [
+        2114849
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/diablo-iv/items/2114849/armor",
+      "image": "//catalog.blzstatic.com//fd5/2c363a1d720effa0bec51edb95be8cb9-BP_S15_Catalog_Armor_WebImage.png",
+      "sections": [
+        "(untitled)"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "800 Platinum",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XFB",
+        "raw": 800,
+        "labelFormat": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2132973": {
+      "key": "p:2132973",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "diablo-iv-the-sectors-finest-armor-collection-pack",
+      "title": "The Sector's Finest Armor Collection Pack",
+      "description": "Bundle (39 items) | Multiple Classes",
+      "categoryId": null,
+      "itemId": 2132973,
+      "productIds": [
+        1967177,
+        1967223,
+        1967142,
+        1967220,
+        1967206,
+        1967137,
+        1967168,
+        1967229,
+        1967167,
+        1967169,
+        1977919,
+        1967157,
+        1967175,
+        1967190,
+        1967143,
+        1967224,
+        1967221,
+        1967218,
+        1967141,
+        1967174,
+        1967222,
+        1967256,
+        1967227,
+        1967219,
+        1967231,
+        1967259,
+        1967136,
+        1967228,
+        1967159,
+        1967176,
+        1967232,
+        1967258,
+        1967156,
+        1967230,
+        1967268,
+        1967158,
+        1967267,
+        1967257,
+        1967189
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/diablo-iv/items/2132973/the-sectors-finest-armor-collection-pack",
+      "image": "//catalog.blzstatic.com//f86/bd687417772eb1aa2e813535e95d54bd-ece2c019bab337d59726803c76222cf9.png",
+      "sections": [
+        "(untitled)"
+      ],
+      "badge": null,
+      "price": null,
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2132974": {
+      "key": "p:2132974",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "diablo-iv-azeroth-legends-i-armor-collection-pack",
+      "title": "Azeroth Legends I Armor Collection Pack",
+      "description": "Bundle (33 items) | Multiple Classes",
+      "categoryId": null,
+      "itemId": 2132974,
+      "productIds": [
+        1839050,
+        1839006,
+        1838995,
+        1839067,
+        1839004,
+        1838993,
+        1838996,
+        1839093,
+        1839068,
+        1838998,
+        1839086,
+        1839085,
+        1839005,
+        1839049,
+        1839083,
+        1839066,
+        1839084,
+        1839022,
+        1839069,
+        1838999,
+        1839082,
+        1839100,
+        1839091,
+        1839094,
+        1839023,
+        1838977,
+        1838994,
+        1839024,
+        1839051,
+        1839090,
+        1839092,
+        1839081,
+        1839003
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/diablo-iv/items/2132974/azeroth-legends-i-armor-collection-pack",
+      "image": "//catalog.blzstatic.com//0/8faa8415a0582d29e0df9277970a6944-1a195d942f5460f2a151c2091082620c.png",
+      "sections": [
+        "Warcraft Legends"
+      ],
+      "badge": null,
+      "price": null,
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2130931": {
+      "key": "p:2130931",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "diablo-iv-azeroth-legends-ii-armor-collection-pack",
+      "title": "Azeroth Legends II Armor Collection Pack",
+      "description": "Bundle (40 items) | Multiple Classes",
+      "categoryId": null,
+      "itemId": 2130931,
+      "productIds": [
+        1850068,
+        1850679,
+        1850651,
+        1850681,
+        1850112,
+        1850114,
+        1850184,
+        1850650,
+        1849872,
+        1850095,
+        1850115,
+        1850069,
+        1850119,
+        1850067,
+        1850120,
+        1850677,
+        1849871,
+        1849876,
+        1850680,
+        1849873,
+        1850183,
+        1849875,
+        1850179,
+        1849874,
+        1850167,
+        1850181,
+        1850065,
+        1850066,
+        1849870,
+        1850182,
+        1850097,
+        1850113,
+        1850180,
+        1850064,
+        1850070,
+        1850678,
+        1850121,
+        1850096,
+        1850118,
+        1850168
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/diablo-iv/items/2130931/azeroth-legends-ii-armor-collection-pack",
+      "image": "//catalog.blzstatic.com//f8d/0160978705b55f015f758120a4707ea2-b97e8ac369fa75314e00c3c15afa0837.png",
+      "sections": [
+        "Warcraft Legends II"
+      ],
+      "badge": null,
+      "price": null,
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:1850122": {
+      "key": "p:1850122",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "diablo-iv-the-spirit-of-death",
+      "title": "The Spirit of Death",
+      "description": "Bundle (7 items) | Spiritborn",
+      "categoryId": null,
+      "itemId": 1850122,
+      "productIds": [
+        1850119,
+        1850121,
+        1850095,
+        1850118,
+        1850097,
+        1850096,
+        1850120
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/diablo-iv/items/1850122/the-spirit-of-death",
+      "image": "//catalog.blzstatic.com//fdd/4ffb5ce974a4b4b2cea58be765a57f9d-449f8fd72f266f204bd22c4fd57d277a.png",
+      "sections": [
+        "Warcraft Legends II"
+      ],
+      "badge": null,
+      "price": null,
+      "expiresAtMs": null,
+      "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    }
+  },
+  "suspect": false
+}
