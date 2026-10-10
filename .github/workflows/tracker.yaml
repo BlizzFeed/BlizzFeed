@@ -26,6 +26,12 @@ on:
         default: "10"
   push:
     branches: [main]
+    # Pushes that only touch these don't change what the tracker does, so they skip the run.
+    paths-ignore:
+      - README.md
+      - images/**
+      - logos/**
+      - tests/**
 
 concurrency:
   group: tracker
