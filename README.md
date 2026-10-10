@@ -1,114 +1,102 @@
+<p align="center">
+  <img src="logos/BlizzFeed_AppIcon_1024-nobg.png" alt="BlizzFeed logo" width="180">
+</p>
+
 # BlizzFeed
 
-Watches the Blizzard news feeds (news.blizzard.com, en-gb) every minute on GitHub Actions, started by an external trigger. When a new article appears, it saves it to the `data` branch and builds the Discord post (title, summary, thumbnail, link and post time, plus a link to the commit that recorded it). The post goes into an `outbox` artifact, and BlizzFeedBot delivers it to Discord.
+BlizzFeed posts Blizzard news to Discord within minutes of it going live, one channel per game. It also notices when Blizzard quietly edits an article afterwards, and shows you exactly what changed.
 
-## Sources
-| Source | Channel labels |
+It's an unofficial, fan-run project. This repository holds the code that reads the news and writes the posts.
+
+The Discord server isn't open yet, but it's coming soon™. When it is, you'll pick the games you follow and can follow their channels into your own server.
+
+## What it does
+
+### New articles
+BlizzFeed checks Blizzard's news pages every minute. When a new article shows up, it posts the title, summary, picture and a link to read it.
+
+<img src="images/post-new-article.png" alt="A green BlizzFeed post for a new World of Warcraft article, with its title, summary, picture and the Read Article, Shop, Summary, Archive and History buttons" width="600">
+
+**Read Article** opens it on Blizzard's site, **Summary** shows what the feed said, **Archive** is the saved full text, **History** lists every saved version, and **Shop** appears when the article links to the Battle.net Shop.
+
+### Quiet edits
+Blizzard often changes articles after they're published. Hotfix lists grow, patch notes get corrected, a title or picture is swapped, and it usually goes unnoticed.
+
+BlizzFeed keeps a full copy of every article's text. When something changes, it posts an orange update saying what changed, with a link to a side-by-side comparison of the lines that were added, changed or removed.
+
+<img src="images/post-text-edit.png" alt="An orange BlizzFeed post for an article whose text was edited, showing one line added and one line changed, with Read Article, Article Changes and History buttons" width="600">
+
+A change to the title, summary or picture is posted the same way:
+
+<img src="images/post-updated.png" alt="An orange BlizzFeed post for an article whose summary changed, with Read Article, Summary Changes and History buttons" width="600">
+
+### The Battle.net Shop
+BlizzFeed also watches the Battle.net Shop for each game, in both the EU and US stores. It posts when an item is new, comes back, goes on or off sale, changes price, gets a badge, or is removed. Shop banners and edited item details are tracked too. Shop posts are green for new or back, orange for price, sale or badge changes, red for removed, and blue for banners and details.
+
+### Look things up
+The BlizzFeed bot also answers two commands in the Discord server, with a reply only you can see:
+
+- `/history` shows an article's summary and its latest changes, each linked to exactly what changed.
+- `/shop` shows what is new or on sale in a game's Battle.net Shop, or the price and changes of one item.
+
+<img src="images/command-history.png" alt="The /history command for a World of Warcraft (EU) article, and its reply: the title, summary, picture, change list and the Read Article, Shop, Archive, History and Share buttons" width="600">
+
+<img src="images/command-shop.png" alt="The /shop command for World of Warcraft, and its reply: the new items with their euro and dollar prices, their pictures, and the Shop and Share buttons" width="600">
+
+You can also have a feed's posts sent to you as direct messages with `/subscribe`.
+
+## What's covered
+
+| Game | Feed |
 | --- | --- |
-| World of Warcraft (EU) | `WOW` |
-| World of Warcraft (US) | `WOW_US` |
-| Heroes of the Storm | `HOTS` |
-| Hearthstone | `HEARTHSTONE` |
-| Diablo V | `DIABLO5` and `DIABLO` |
-| Diablo IV | `DIABLO4` and `DIABLO` |
-| Diablo Immortal | `DIABLOIMMORTAL` and `DIABLO` |
-| Diablo II: Resurrected | `DIABLO2` and `DIABLO` |
-| Diablo III | `DIABLO3` and `DIABLO` |
-| Overwatch | `OVERWATCH` |
-| STARCRAFT (2030) | `STARCRAFT` |
-| StarCraft Remastered | `STARCRAFTREMASTERED` |
-| StarCraft II | `STARCRAFT2` |
-| Warcraft 3: Reforged | `WARCRAFT3` |
-| Warcraft Rumble | `WARCRAFTRUMBLE` |
-| Blizzard (BlizzCon, company) | `BLIZZARD` |
+| World of Warcraft | EU and US (they word some titles and dates differently) |
+| Diablo | II: Resurrected, III, IV, V and Immortal, each on its own, plus one "all Diablo" feed |
+| Overwatch | one feed |
+| Hearthstone | one feed |
+| Heroes of the Storm | one feed |
+| StarCraft | STARCRAFT, StarCraft II and StarCraft Remastered |
+| Warcraft | Warcraft 3: Reforged and Warcraft Rumble |
+| Blizzard | company news, BlizzCon and similar |
 
-World of Warcraft is also read from the en-us feed, which words some titles and dates differently, and posts to its own channels. Every other game uses the en-gb feed only.
+Every feed has three channels, so you can follow only what you want:
 
-Each label has three Discord announcement channels, listed under `channels:` in `sources.yaml`:
-
-| Channel | Gets |
+| Channel | You get |
 | --- | --- |
-| `all` | every new and updated post |
-| `new` | new articles only |
-| `updated` | updated articles and edited article text |
+| All | every new and updated post |
+| New | new articles only |
+| Updates | updated articles and edited article text, with what changed |
 
-Servers can follow whichever of these they want. Each Diablo game posts to its own channels and also to the shared `DIABLO` ones. A source can list more than one label. A label or tier without a channel ID is skipped with a warning.
+Don't follow both All and another channel for the same feed, or you'll get duplicates.
 
-Optionally, `DISCORD_WEBHOOK_LOG` points at a private dev channel. After a run where something changed (new, updated, date/url-only, a baseline, or a source failing or recovering) it gets one summary message linking each source's commit. Runs with no changes post nothing, and a failed log post never fails the run. The archive run the tracker starts adds its summary to that same message, with a second run button; the hourly archive run posts its own. This is the only Discord webhook the workflows use.
+## Where the history lives
 
-Each source also has a `logo:` in `sources.yaml`, the game's icon as a PNG in `logos/games/`. A post's thumbnail is the article's image, or that logo when the article has none. When an update changes the image, the post shows the old and new images side by side and puts the logo beside the title.
+BlizzFeed saves everything it sees in this repository, on separate branches that anyone can read:
 
-More Blizzard products can be added by putting another entry in `sources.yaml`.
-
-## How it works
-- Each run reads the newest articles from each feed and compares them with the saved state. The feed is sorted by last update, so it stops as soon as it reaches articles it already has. Usually that's one request per source.
-- New articles are committed to the `data` branch (one commit per source) and put in the outbox for the bot to announce. Articles with a changed title, summary, image or link are announced too, in orange. If only the date changed, the saved copy is updated without a post. When the date moved along with the change, the post gets a note ("Checking the article text for changes…") while the archive re-checks the text; the bot removes it once that's done.
-- The first run for a source saves the last 150 articles without posting anything, so old articles that get edited later aren't mistaken for new ones.
-- If a source fails 12 runs in a row (about 12 minutes), the log channel gets a "failing" message, and a "recovered" one when it works again.
-
-## Article archive
-The feeds only carry the short version of each article: title, summary and thumbnail. Blizzard also edits the article text quietly (hotfix lists grow, patch notes get corrected), so the archive keeps the text too.
-
-- Each article is saved as a Markdown file on the `archive` branch, with one commit per change. GitHub's diff then shows exactly what was edited.
-- An article is saved again whenever its update date changes, however old it is. Once an hour, articles from the last 7 days are also re-checked in case an edit didn't change the date. The log channel notes when that happens.
-- The first run for a source saves the last 30 days of articles without posting. The archive reads the article pages, not the feeds, at most 60 per run, and continues on the next run.
-- Older articles can be added by hand: run `archive.yaml` with `backfill` ticked (optionally with a `source` id). It saves up to 150 articles the archive hasn't seen (`backfill_max_fetches`, one a second: `backfill_delay_seconds`), newest first, from those the feeds already list, and posts nothing. Run it again for the next 150. It stops at the first failed fetch, and skips pages that are gone or have no readable body.
-- The feeds list only the newest articles (a first run reads 10 pages of 15). To go further back, run `tracker.yaml` with `deepen` ticked, a `source`, a `from_page` (10 first, then 20, and so on) and `pages` (up to 20). It stores the older articles it finds on the `data` branch without announcing anything, and the archive backfill then saves their text. It reads feed pages one request at a time, and any failure ends the run.
-- The log post of a backfill run lists counts per source and how many articles are left, not each article.
-- When the text of an article changes, an "Updated" post (orange) with the number of lines added, changed and removed goes to the bot. Changes to only the title, summary or image are saved without a post, since they're announced already.
-- If the archive keeps failing for a source, the alert goes to `DISCORD_WEBHOOK_LOG` only.
-- The archive runs whenever the tracker finds a change, and once an hour.
-
-## Battle.net Shop
-Besides articles, BlizzFeed watches what the Battle.net Shop lists for each game and when it changes. There is no shop API, so it reads the shop's own pages.
-
-- `shop.yaml` runs about every 5 minutes (the tracker starts it, it has no cron). It reads each game's shop page in both regions, EU (`en-gb`, euro) and US (`en-us`, dollar), 13 pages each, and compares them with the saved state on the `shop` branch.
-- The first run for a page saves everything without posting. After that it records what is new, back, gone, changed in price, on sale or no longer on sale, given a badge, or changed in title, description, image or sections, plus header banners.
-- An item only counts as gone after it has been missing for 3 sweeps and its own page shows no price. A fetch that fails, or that loses more than a quarter of a page's items at once, is held until the next one agrees.
-- The `shop` branch keeps `<region>/<family>/state.json`, a Markdown card per item (so GitHub's history shows each change), and `changes.jsonl`, an append-only log of every change. `posted.json` lists recent posts.
-- The log channel gets a summary of each run that had changes, an alert when a page keeps failing, and a note once a day when the shop's home page links to a family that isn't in `sources.yaml`. `SHOP_HEARTBEAT_URL` (optional secret) is pinged after each good run.
-
-**What is posted.** A game's feed gets new and back items in its `all` and `new` channels, and price, sale and badge changes in its `all` and `updated` channels. The shop channel (`channel:` under `shop:`) gets every change, including removals, sales ending, banners and detail edits. WoW's EU changes go to the EU feed and its US changes to the US feed; other games have only an EU feed, so a US-only change for them goes to the shop channel alone.
-
-- A change is posted when one region sees it, with the prices both regions have. If the other region's matching change arrives within 30 minutes, the bot edits the post instead of adding one.
-- Three or more changes of one type for a game in one run become a single digest, and a game gets at most 5 posts per run, the rest folded into one.
-- The shop entries are part of the same outbox (`kind: shop`, with a `ref` and `edit`).
-
-## The outbox
-After each run that has something to post, `main.py --outbox` and `archive.py --outbox` write `outbox.json`, and the workflow uploads it as an artifact named `outbox` (kept for 7 days). It holds one finished Discord message per channel, so the bot only has to deliver them. Runs with nothing to post upload nothing. An archive run also lists the articles it re-checked without finding a text edit (`checked`), so the bot can remove the text-check note, and the Battle.net Shop link it found in the text of an article whose feed card had none (`shops`, the first `shop.battle.net/.../items/...` link), so the bot can add the shop button; it uploads an outbox for those alone too. The bot polls the repo's artifacts, paces its posts so Discord's publish limit isn't hit, and merges repeated updates to the same article.
-
-Discord posts have these buttons:
-
-| Post | Buttons |
+| Branch | What's on it |
 | --- | --- |
-| New article (green) | Read Article, Shop, Summary, Archive, History |
-| Card updated (orange) | Read Article, Shop, Summary Changes, History |
+| `main` | The code, the list of feeds ([sources.yaml](sources.yaml)) and the logos |
+| `data` | The latest title, summary and picture of every article, one commit per new or changed article |
+| `archive` | The full text of every article as a Markdown file, one commit per edit, so GitHub's diff view shows what Blizzard changed |
+| `shop` | What the Battle.net Shop lists, with a card per item and a log of every change |
 
-The Shop button is on the post when the feed's card has the link. When it doesn't, the archive run that follows reads the link from the article text and the bot adds the button to the post a minute or so later. Each archive run also saves the first shop item link in an article's text as its `shop_url` on the `data` branch when the card had none (the tracker keeps it), so `/history` can show the button for every article that has one.
-| Article text edited (orange) | Read Article, Article Changes, History |
+Open a file's history on the `archive` branch to see an article's edits over time. That's what the **History** button links to.
 
-Summary shows the saved title, summary and thumbnail, and Archive the article's saved full text (it can take a minute to appear). Summary Changes and Article Changes show what changed, and History lists every saved version.
+## How it runs
 
-Both kinds of update look the same, with a diff block saying what changed: the old and new title and whether the summary or image changed for a card, or how many lines were added, changed and removed for the article text.
+A scheduled job checks each feed every minute and compares it with what it saved last time. A second job reads the full article pages and saves the text, and re-checks recent articles every hour in case an edit didn't change the date. The first time BlizzFeed sees a feed it saves the existing articles without posting, so old articles don't flood the channels.
 
-## Files
-- `sources.yaml`: the feeds to watch, and the archive settings. Add an entry here to track another one.
-- `main.py`: the tracker steps (`--scrape`, `--commit`, `--outbox`, `--notify`), and `--deepen`, a manual run that stores older articles. The shop steps are `--shop` (`--dry-run` prints what the shop lists), `--shop-commit`, `--shop-outbox` and `--shop-notify`.
-- `archive.py`: the archive steps (`--fetch`, `--commit`, `--outbox`, `--notify`). `--notify` only posts the run summary to the log channel. `--fetch --backfill` is the manual backfill.
-- `.github/workflows/tracker.yaml`: the tracker workflow. It runs on a `workflow_dispatch` event, a manual run, or a push to `main`. It has no cron of its own.
-- `.github/workflows/shop.yaml`: the shop workflow, started by the tracker when the last run is 5 minutes old.
-- `.github/workflows/archive.yaml`: the archive workflow. It runs on a `workflow_dispatch` event or a manual run.
-- `logos/`: the BlizzFeed logo, exported at the sizes Discord (server, bot and app images, emoji, sticker) and GitHub (social preview, app logo) use, each with a dark background and a transparent `-nobg` version.
-- `logos/games/`: each game's icon (Blizzard's, see Logos and trademarks), the thumbnail of a post whose article has no image.
-- `tests/`: run `pip install -r requirements-dev.txt`, then `pytest`.
+The scheduled jobs in `.github/workflows/` are started by the project itself, and the Discord bot that delivers the posts is private. Forking this repository won't give you a running copy.
 
-## Setup
-1. Push to the `main` branch (the default) and create empty `data`, `archive` and `shop` branches.
-2. In Discord, create the announcement channels (three per label, see Sources) and put their IDs under `channels:` in `sources.yaml`.
-3. Optionally add the `DISCORD_WEBHOOK_LOG` secret under Settings → Secrets and variables → Actions.
-4. Run `tracker.yaml` once manually, then have something send its `workflow_dispatch` every minute, and `archive.yaml`'s once an hour.
-5. Run BlizzFeedBot so the outbox gets delivered. It needs a bot in the server and a GitHub App that can read this repo's Actions.
-6. Run `archive.yaml` manually twice to save the first 30 days of articles. It posts nothing.
+## Looking around the code
+
+| Path | What's there |
+| --- | --- |
+| [sources.yaml](sources.yaml) | The feeds to watch and how to read each one |
+| [main.py](main.py) | Reads the news feeds and the Battle.net Shop |
+| [archive.py](archive.py) | Saves full article text |
+| [modules/](modules) | The pieces: fetching pages, finding changes, building Discord messages |
+| [tests/](tests) | Automated tests. Run `pip install -r requirements-dev.txt`, then `pytest` |
+| [logos/](logos) | The BlizzFeed logo in the sizes Discord and GitHub use, and each game's icon |
 
 ## Logos and trademarks
 BlizzFeed is an unofficial fan project. It isn't affiliated with, endorsed by or sponsored by Blizzard Entertainment, Inc.
@@ -116,4 +104,4 @@ BlizzFeed is an unofficial fan project. It isn't affiliated with, endorsed by or
 All game and company names, logos and icons are trademarks or registered trademarks of Blizzard Entertainment, Inc., and belong to their owners. That includes the game logos in `logos/games/`, which are Blizzard's own game icons, and the BlizzFeed logo in `logos/`, which is a combination of parts of the World of Warcraft, Diablo IV, Overwatch 2 and StarCraft II icons. They're used here only to identify the news they belong to, and no ownership is claimed.
 
 ## Credits
-The idea and overall design (a scheduled Actions job, separate `main` and `data` branches, commit links in Discord messages) come from [Wumpus-Central/blog-tracker](https://github.com/Wumpus-Central/blog-tracker).
+The idea and overall design (a scheduled Actions job, separate `source` and `data` branches, commit links in Discord messages) come from [Wumpus-Central/blog-tracker](https://github.com/Wumpus-Central/blog-tracker).
