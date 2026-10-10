@@ -33,6 +33,14 @@ A change to the title, summary or picture is posted the same way:
 ### The Battle.net Shop
 BlizzFeed also watches the Battle.net Shop for each game, in both the EU and US stores. It posts when an item is new, comes back, goes on or off sale, changes price, gets a badge, or is removed. Shop banners and edited item details are tracked too. Shop posts are green for new or back, orange for price, sale or badge changes, red for removed, and blue for banners and details.
 
+The `bnet-shop` channel gets every shop change for every game. Each game's own feed gets only its new and back items, and its price, sale and badge changes. Three or more changes of one kind in a run are grouped into one post.
+
+<img src="images/shop-digest-new.png" alt="A green BlizzFeed post titled 6 new items in the shop for Overwatch, listing the Tech Witch bundles with their prices in Coins, a grid of their pictures, and the Shop, Shop Changes and History buttons" width="600">
+
+A single item's changes are combined into one post, here a price change and the end of a sale:
+
+<img src="images/shop-item-change.png" alt="An orange BlizzFeed post for the Overwatch Tech Witch Shion Bundle, showing its price changing from 2,600 to 2,400 Coins and its sale ending, with the item's picture and the Shop, Shop Changes and History buttons" width="600">
+
 ### Look things up
 The BlizzFeed bot also answers two commands in the Discord server, with a reply only you can see:
 
