@@ -39,7 +39,7 @@
       "sections": [
         "Campaigns"
       ],
-      "badge": "New",
+      "badge": null,
       "price": {
         "fullAmount": "€29.99",
         "discountAmount": null,
