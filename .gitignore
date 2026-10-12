@@ -38,3 +38,6 @@ archive-diff.json
 # Shop tracking: local checkout of the shop branch and the per-run hand-off file
 /shop/
 shop-diff.json
+
+# Node
+node_modules/

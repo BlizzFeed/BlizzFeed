@@ -1,0 +1,188 @@
+import fs from 'node:fs';
+import path from 'node:path';
+import { isDeepStrictEqual } from 'node:util';
+import { writeJson } from '../json.js';
+
+const SUSPECT_DROP = 0.25; // a fetch losing more than this share of the listed items is held for a second look
+export const META_FILE = 'meta.json';
+const UNLISTED_RECHECK_MS = 24 * 3600 * 1000;
+const DETAIL_FIELDS = ['title', 'description', 'image', 'sections'];
+const BANNER_FIELDS = ['headline', 'subHeadline', 'buttonText', 'destination'];
+
+export const familyDir = (region, family) => `${region}/${family}`;
+export const statePath = (shopDir, region, family) => path.join(shopDir, familyDir(region, family), 'state.json');
+
+export function loadState(shopDir, region, family) {
+	const file = statePath(shopDir, region, family);
+	return fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : null;
+}
+
+/** [families to report, new meta]. The first check reports nothing. */
+export function familyCheck(meta, slugs, tracked, now) {
+	const reported = new Set(meta.reported ?? []);
+	const untracked = [...new Set(slugs)].filter((slug) => !tracked.includes(slug));
+	const fresh = 'last_family_check' in meta ? untracked.filter((slug) => !reported.has(slug)).sort() : [];
+	return [fresh, { last_family_check: now, reported: [...new Set([...reported, ...untracked])].sort() }];
+}
+
+export const cardName = (key) => key.replaceAll(':', '-').replaceAll(',', '_');
+
+const priced = (item) => item.kind === 'item' && Boolean(item.price?.fullAmount);
+const value = (item, key) => item[key] ?? null; // so a missing field equals a null one
+
+function differing(prev, item, fields) {
+	const changed = fields.filter((key) => !isDeepStrictEqual(value(prev, key), value(item, key)));
+	return { changed, from: Object.fromEntries(changed.map((key) => [key, value(prev, key)])), to: Object.fromEntries(changed.map((key) => [key, value(item, key)])) };
+}
+
+/** A banner's product name: its own, else the title of the item card it links to. */
+function product(bannerItem, fetched) {
+	if (bannerItem.productPageName) {
+		return bannerItem.productPageName;
+	}
+	return Object.values(fetched).find((i) => i.kind === 'item' && ((i.itemId && i.itemId === bannerItem.itemId) || (i.slug && i.slug === bannerItem.slug)))?.title ?? null;
+}
+
+/** [type, extra] for each way the fetched item differs from the saved one. */
+function compare(prev, item) {
+	if (item.kind === 'banner') {
+		const found = differing(prev, item, BANNER_FIELDS);
+		return found.changed.length ? [['banner', { what: 'changed', ...found }]] : [];
+	}
+	const changes = [];
+	const [old, now] = [prev.price ?? {}, item.price ?? {}];
+	// A sale that ends by making its price the list price costs buyers nothing, so posts skip the price change.
+	const ended = old.discountAmount && !now.discountAmount;
+	const kept = ended && old.discountAmount === (now.fullAmount ?? null) ? { sale_kept: true } : {};
+	if ((old.fullAmount ?? null) !== (now.fullAmount ?? null)) {
+		changes.push(['price', { from: old.fullAmount ?? null, to: now.fullAmount ?? null, ...kept }]);
+	}
+	if (Boolean(old.discountAmount) !== Boolean(now.discountAmount)) {
+		changes.push([now.discountAmount ? 'sale_start' : 'sale_end', kept]);
+	}
+	if (value(prev, 'badge') !== value(item, 'badge')) {
+		changes.push(['badge', { from: value(prev, 'badge'), to: value(item, 'badge'), maybe_new: item.badge === 'New' }]);
+	}
+	const details = differing(prev, item, DETAIL_FIELDS);
+	if (details.changed.length) {
+		changes.push(['details', details]);
+	}
+	return changes;
+}
+
+/** [new state, changes]. old is null on a family's first run, which reports nothing.
+ * confirm(item) resolves to true when the item's own page still shows a price. */
+export async function sweep(old, fetched, now, missesNeeded, confirm) {
+	if (old === null) {
+		const items = Object.fromEntries(Object.entries(fetched).map(([key, i]) => [key, { ...i, first_seen: now, status: 'listed', misses: 0 }]));
+		return [{ items, suspect: false }, []];
+	}
+	const items = Object.fromEntries(Object.entries(old.items).map(([key, i]) => [key, { ...i }]));
+	const listed = Object.keys(items).filter((key) => items[key].status === 'listed');
+	const vanished = listed.filter((key) => !(key in fetched));
+	if (vanished.length > SUSPECT_DROP * listed.length && !old.suspect) {
+		return [{ ...old, suspect: true }, []]; // believed if the next fetch agrees
+	}
+	for (const [key, item] of Object.entries(fetched)) { // a product-only item that gained a card keeps its history under the new key
+		if (!(key in items) && item.kind === 'item' && item.itemId) {
+			const before = Object.keys(items).find((k) => !(k in fetched) && items[k].kind === 'item' && items[k].status !== 'gone' && items[k].itemId === item.itemId);
+			if (before) {
+				items[key] = items[before];
+				delete items[before];
+			}
+		}
+	}
+
+	const changes = [];
+	const log = (type, item, extra = {}) => {
+		const record = { type, key: item.key, kind: item.kind, slug: item.slug, title: item.title, destination: item.destination, seen: now };
+		Object.assign(record, item.kind === 'banner' ? { button: item.buttonText, product: product(item, fetched) } : { price: item.price });
+		changes.push({ ...record, ...extra });
+	};
+
+	for (const [key, item] of Object.entries(fetched)) {
+		const prev = items[key];
+		if (!prev || prev.status === 'gone') {
+			if (item.kind === 'banner') {
+				log('banner', item, { what: prev ? 'back' : 'added' });
+			} else {
+				log(prev ? 'back' : 'new', item);
+			}
+		} else {
+			for (const [type, extra] of compare(prev, item)) {
+				log(type, item, extra);
+			}
+		}
+		items[key] = { ...item, first_seen: prev ? prev.first_seen : now, status: 'listed', misses: 0 };
+	}
+
+	for (const [key, item] of Object.entries(items)) {
+		if (key in fetched || item.status === 'gone') {
+			continue;
+		}
+		if (item.status === 'unlisted') {
+			if (Date.parse(now) - Date.parse(item.checked) < UNLISTED_RECHECK_MS) {
+				continue;
+			}
+		} else {
+			item.status = 'missing';
+			item.misses++;
+			if (item.misses < missesNeeded) {
+				continue;
+			}
+		}
+		// Banners and price-less items can't be confirmed by their page.
+		if (priced(item)) {
+			let stillForSale;
+			try {
+				stillForSale = await confirm(item);
+			} catch {
+				continue; // can't tell; the next sweep asks again
+			}
+			if (stillForSale) {
+				if (item.status !== 'unlisted') {
+					item.status = 'unlisted';
+					log('unlisted', item);
+				}
+				item.checked = now;
+				continue;
+			}
+		}
+		item.status = 'gone';
+		item.gone_since = now;
+		log('gone', item);
+	}
+	return [{ items, suspect: false }, changes];
+}
+
+export function renderMarkdown(item) {
+	const price = item.price ?? {};
+	const lines = [`# ${item.title}`, '', `- Key: ${item.key}`, `- Status: ${item.status}`, `- Sections: ${item.sections.join(', ')}`, `- First seen: ${item.first_seen}`];
+	if (item.badge) {
+		lines.push(`- Badge: ${item.badge}`);
+	}
+	if (price.fullAmount) {
+		lines.push(`- Price: ${price.fullAmount}`);
+	}
+	if (price.discountAmount) {
+		lines.push(`- On sale: ${price.discountAmount}`);
+	}
+	if (item.image) {
+		lines.push(`![](${item.image.startsWith('//') ? 'https:' : ''}${item.image})`);
+	}
+	return [...lines, '', item.description || item.subHeadline || '', ''].join('\n');
+}
+
+/** state.json, a card for each changed item (every item on a baseline) and the change log. */
+export function writeFamily(shopDir, region, family, state, changes, baseline) {
+	const root = path.join(shopDir, familyDir(region, family));
+	fs.mkdirSync(path.join(root, 'items'), { recursive: true });
+	const touched = baseline ? Object.keys(state.items) : new Set(changes.map((c) => c.key));
+	for (const key of touched) {
+		fs.writeFileSync(path.join(root, 'items', `${cardName(key)}.md`), renderMarkdown(state.items[key]));
+	}
+	if (changes.length) {
+		fs.appendFileSync(path.join(root, 'changes.jsonl'), changes.map((change) => `${JSON.stringify(change)}\n`).join(''));
+	}
+	writeJson(statePath(shopDir, region, family), state);
+}
