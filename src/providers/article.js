@@ -1,3 +1,4 @@
+import { setTimeout as wait } from 'node:timers/promises';
 import * as cheerio from 'cheerio';
 import { HttpError, get } from './http.js';
 import { textOf } from './html.js';
@@ -11,15 +12,21 @@ export class BodyNotFound extends Error {}
 /** Blizzard redirects this slug-less URL to the full one, for every game's articles. */
 export const articleUrl = (locale, articleId) => `https://news.blizzard.com/${locale}/article/${articleId}`;
 
-export async function fetchBody(locale, articleId, selector) {
+/** One more try after a short pause on a 5xx, so a passing Blizzard 502 doesn't wait for the next run. */
+export async function fetchBody(locale, articleId, selector, retryMs = 2000) {
 	let response;
-	try {
-		response = await get(articleUrl(locale, articleId));
-	} catch (error) {
-		if (error instanceof HttpError && (error.status === 404 || error.status === 410)) {
-			throw new ArticleGone(articleId);
+	for (let attempt = 0; !response; attempt++) {
+		try {
+			response = await get(articleUrl(locale, articleId));
+		} catch (error) {
+			if (error instanceof HttpError && (error.status === 404 || error.status === 410)) {
+				throw new ArticleGone(articleId);
+			}
+			if (!(error instanceof HttpError && error.status >= 500 && !attempt)) {
+				throw error;
+			}
+			await wait(retryMs);
 		}
-		throw error;
 	}
 	// htmlparser2 keeps odd markup (a link in a link) as written, where the default parser would rearrange it.
 	const $ = cheerio.load(await response.text(), { xml: { xmlMode: false } });

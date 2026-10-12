@@ -23,7 +23,17 @@ test('a 404 or 410 is gone, a server error is not', async (t) => {
 		await assert.rejects(article.fetchBody('en-gb', '1', SELECTOR), article.ArticleGone);
 	}
 	answer(t, 500);
-	await assert.rejects(article.fetchBody('en-gb', '1', SELECTOR), (e) => e instanceof HttpError && !(e instanceof article.ArticleGone));
+	await assert.rejects(article.fetchBody('en-gb', '1', SELECTOR, 0), (e) => e instanceof HttpError && !(e instanceof article.ArticleGone));
+});
+
+test('a 5xx is tried once more, and only once', async (t) => {
+	const page = '<article class="Content"><section class="blog"><p>Hi</p></section></article>';
+	const replies = [new Response('', { status: 502 }), new Response(page)];
+	const fetch = t.mock.method(globalThis, 'fetch', async () => replies.shift());
+	assert.equal(await article.fetchBody('en-gb', '1', SELECTOR, 0), '<section class="blog"><p>Hi</p></section>');
+	answer(t, 502);
+	await assert.rejects(article.fetchBody('en-gb', '1', SELECTOR, 0), HttpError);
+	assert.equal(fetch.mock.callCount(), 2);
 });
 
 test('a missing or empty body is not found', async (t) => {
