@@ -100,10 +100,10 @@ The scheduled jobs in `.github/workflows/` are started by the project itself, an
 | Path | What's there |
 | --- | --- |
 | [sources.yaml](sources.yaml) | The feeds to watch and how to read each one |
-| [main.py](main.py) | Reads the news feeds and the Battle.net Shop |
-| [archive.py](archive.py) | Saves full article text |
-| [modules/](modules) | The pieces: fetching pages, finding changes, building Discord messages |
-| [tests/](tests) | Automated tests. Run `pip install -r requirements-dev.txt`, then `pytest` |
+| [src/main.js](src/main.js) | Reads the news feeds and the Battle.net Shop |
+| [src/archive.js](src/archive.js) | Saves full article text |
+| [src/](src) | The pieces: fetching pages, finding changes, building Discord messages. Tests sit next to the code; run `npm test` |
+| [tests/fixtures/](tests/fixtures) | Saved shop and article pages the tests read |
 | [logos/](logos) | The BlizzFeed logo in the sizes Discord and GitHub use, and each game's icon |
 
 ## Logos and trademarks

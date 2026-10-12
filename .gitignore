@@ -1,9 +1,3 @@
-# Python
-__pycache__/
-*.py[cod]
-venv/
-.venv/
-
 # Tracker output: local checkout of the data branch and the per-run hand-off file
 /data/
 diff.json
