@@ -41,6 +41,11 @@ A single item's changes are combined into one post, here a price change and the 
 
 <img src="images/shop-item-change.png" alt="An orange BlizzFeed post for the Overwatch Tech Witch Shion Bundle, showing its price changing from 2,600 to 2,400 Coins and its sale ending, with the item's picture and the Shop, Shop Changes and History buttons" width="600">
 
+### YouTube
+BlizzFeed also watches Blizzard's YouTube channels: each game's own, Blizzard's, and Overwatch Esports. It posts new videos, Shorts and livestreams, and notices when a title or description is edited afterwards. A livestream is posted when it's scheduled and again when it goes live, and its post is updated when it ends.
+
+The `youtube` channel gets every video from every channel. Each game's own feed gets its videos, picked by the video's title, so a Warcraft III match uploaded on the StarCraft channel still lands in the Warcraft III feed. Posts show the game's logo, the video's thumbnail and a button to YouTube. They are green for new videos and Shorts, purple for livestreams and orange for edits.
+
 ### Look things up
 The BlizzFeed bot also answers two commands in the Discord server, with a reply only you can see:
 
@@ -86,12 +91,15 @@ BlizzFeed saves everything it sees in this repository, on separate branches that
 | `data` | The latest title, summary and picture of every article, one commit per new or changed article |
 | `archive` | The full text of every article as a Markdown file, one commit per edit, so GitHub's diff view shows what Blizzard changed |
 | `shop` | What the Battle.net Shop lists, with a card per item and a log of every change |
+| `youtube` | The videos of each YouTube channel, with a Markdown file of every title and description, so GitHub's diff view shows what was edited |
 
 Open a file's history on the `archive` branch to see an article's edits over time. That's what the **History** button links to.
 
 ## How it runs
 
 A scheduled job checks each feed every minute and compares it with what it saved last time. A second job reads the full article pages and saves the text, and re-checks recent articles every hour in case an edit didn't change the date. The first time BlizzFeed sees a feed it saves the existing articles without posting, so old articles don't flood the channels.
+
+The YouTube channels are read every couple of minutes through the YouTube Data API. A channel is saved without posting the first time it is seen, like the news feeds.
 
 The scheduled jobs in `.github/workflows/` are started by the project itself, and the Discord bot that delivers the posts is private. Forking this repository won't give you a running copy.
 
@@ -100,10 +108,10 @@ The scheduled jobs in `.github/workflows/` are started by the project itself, an
 | Path | What's there |
 | --- | --- |
 | [sources.yaml](sources.yaml) | The feeds to watch and how to read each one |
-| [src/main.js](src/main.js) | Reads the news feeds and the Battle.net Shop |
+| [src/main.js](src/main.js) | Reads the news feeds, the Battle.net Shop and YouTube |
 | [src/archive.js](src/archive.js) | Saves full article text |
 | [src/](src) | The pieces: fetching pages, finding changes, building Discord messages. Tests sit next to the code; run `npm test` |
-| [tests/fixtures/](tests/fixtures) | Saved shop and article pages the tests read |
+| [tests/fixtures/](tests/fixtures) | Saved shop, article and YouTube data the tests read |
 | [logos/](logos) | The BlizzFeed logo in the sizes Discord and GitHub use, and each game's icon |
 
 ## Logos and trademarks
