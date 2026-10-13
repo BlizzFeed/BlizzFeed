@@ -17,8 +17,8 @@
         "Banner"
       ],
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "blt5628b20039bf3456": {
       "key": "blt5628b20039bf3456",
@@ -3371,8 +3371,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "blt1d1fbd6cc3183da4": {
       "key": "blt1d1fbd6cc3183da4",
@@ -3428,6 +3428,26 @@
       "price": null,
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
+      "status": "missing",
+      "misses": 1
+    },
+    "bltfcd1387370ad0ffa": {
+      "key": "bltfcd1387370ad0ffa",
+      "kind": "banner",
+      "cmsId": "bltfcd1387370ad0ffa",
+      "slug": "hearthstone-reign-of-the-black-empire-mega-bundle",
+      "itemId": null,
+      "title": "Reign of the Black Empire Bundles",
+      "productPageName": "Reign of the Black Empire Bundles",
+      "headline": "",
+      "subHeadline": "Last Chance to claim the power of the Mega Bundle!",
+      "buttonText": "Buy Now",
+      "destination": "/product/hearthstone-reign-of-the-black-empire-mega-bundle",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt5a9732d3260f68d6/6acd298255641dfe84f35edd/HS_MegaBundle_LC_BattleNet_Shop_Browser_DesktopBanner_1600x500_DB03_36p6.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-10-13T17:04:49Z",
       "status": "listed",
       "misses": 0
     }
