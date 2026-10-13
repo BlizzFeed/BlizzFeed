@@ -27,3 +27,16 @@ test('a saved shop link survives a feed card without one, but a card link wins',
 	assert.deepEqual(items.map((i) => i.shop_url), ['saved', 'card', undefined, undefined]);
 	assert.deepEqual(differ.compute(old, [{ ...OLD, shop_url: 'saved' }]), [[], [], []]);
 });
+
+test('an old copy served right after an edit keeps the edit, and a revert counts once the window has passed', () => {
+	const run = (state, summary, now) => {
+		const items = differ.settle(state, [{ ...OLD, summary }], now);
+		return [differ.compute(state, items)[1].length, differ.merge(state, items)];
+	};
+	let [posted, state] = run([OLD], 'Fixed', '2026-10-13T16:36:00Z');
+	assert.equal(posted, 1);
+	[posted, state] = run(state, 'S', '2026-10-13T16:37:00Z'); // the old copy again
+	assert.deepEqual([posted, state[0].summary], [0, 'Fixed']);
+	[posted, state] = run(state, 'S', '2026-10-13T17:10:00Z');
+	assert.deepEqual([posted, state[0].summary], [1, 'S']);
+});

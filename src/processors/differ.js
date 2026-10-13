@@ -17,6 +17,29 @@ const field = (item, key) => (key in item ? item[key] : '');
 
 export const changedFields = (prev, item) => ANNOUNCED.filter((key) => field(prev, key) !== item[key]);
 
+const FLIP_WINDOW_MS = 30 * 60 * 1000;
+
+/** Blizzard's servers can hand out an article's old copy for a while after an edit. A change straight back to the version
+ * it was edited from, within the window, keeps the saved copy; after the window the revert counts. Each edit saves the
+ * version it replaced as `replaced`. */
+export function settle(oldState, items, now) {
+	const old = new Map((oldState ?? []).map((i) => [i.id, i]));
+	return items.map((item) => {
+		const prev = old.get(item.id);
+		if (!prev) {
+			return item;
+		}
+		if (!changedFields(prev, item).length) {
+			return prev.replaced ? { ...item, replaced: prev.replaced } : item;
+		}
+		const { replaced } = prev;
+		if (replaced && Date.parse(now) - Date.parse(replaced.at) < FLIP_WINDOW_MS && ANNOUNCED.every((key) => replaced[key] === field(item, key))) {
+			return prev;
+		}
+		return { ...item, replaced: { ...Object.fromEntries(ANNOUNCED.map((key) => [key, field(prev, key)])), at: now } };
+	});
+}
+
 /** Append-only diff by id: an item missing from the fetch is never reported as removed.
  * [added, updated, quiet]; quiet items only changed their date, url or shop link. */
 export function compute(oldState, items) {

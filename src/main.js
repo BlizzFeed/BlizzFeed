@@ -71,7 +71,8 @@ async function mapLimit(list, limit, fn) {
  * moved too, so the archive run this one starts re-checks the text. The state file keeps the plain item. */
 function withChanges(oldState, item) {
 	const prev = oldState.find((i) => i.id === item.id);
-	return { ...item, changed: differ.changedFields(prev, item), previous_title: prev.title, previous_image: prev.image ?? '', awaits_text: prev.date !== item.date };
+	const { replaced: _replaced, ...plain } = item;
+	return { ...plain, changed: differ.changedFields(prev, item), previous_title: prev.title, previous_image: prev.image ?? '', awaits_text: prev.date !== item.date };
 }
 
 async function scrape() {
@@ -91,7 +92,8 @@ async function scrape() {
 
 	sources.forEach((source, i) => {
 		const oldState = oldStates[i];
-		const { items, error } = results[i];
+		const { error } = results[i];
+		let { items } = results[i];
 		const baseline = oldState === null;
 		let alert;
 		if (error) {
@@ -100,6 +102,7 @@ async function scrape() {
 		} else {
 			alert = health.recordSuccess(state, source);
 			differ.keepShopUrls(oldState, items);
+			items = differ.settle(oldState, items, isoSeconds());
 			const [added, updated, quiet] = differ.compute(oldState, items);
 			differ.writeSource(DATA_DIR, source.id, differ.merge(oldState, items), [...added, ...updated, ...quiet]);
 			// A baseline writes everything but announces nothing. Quiet items are saved but never announced.
