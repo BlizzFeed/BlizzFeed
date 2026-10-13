@@ -56,21 +56,31 @@ export function resolve(ledger, fresh, now) {
 		if (match) {
 			kept.splice(kept.indexOf(match), 1);
 			event.was = Object.keys(match.changes).sort();
+			event.digested = match.digested ?? [];
 			event.changes = { ...match.changes, ...event.changes };
 		}
 	}
 	return [events, kept];
 }
 
-/** Adds the one-sided events posted on their own to the ledger. */
+/** Adds the one-sided events of new posts to the ledger. `digested` lists the destinations that got the event in a
+ * digest, where there is no post of its own to edit. */
 export function remember(ledger, posts, now) {
-	const known = new Set(ledger.map(ref));
+	const known = new Map(ledger.map((e) => [ref(e), e]));
 	for (const post of posts) {
 		for (const event of post.events) {
-			if (post.kind === 'single' && !post.edit && Object.keys(event.changes).length === 1 && !known.has(ref(event))) {
-				const { was: _was, ...rest } = event;
-				ledger.push({ ...rest, at: now });
-				known.add(ref(event));
+			if (post.edit || Object.keys(event.changes).length !== 1) {
+				continue;
+			}
+			let entry = known.get(ref(event));
+			if (!entry) {
+				const { was: _was, digested: _digested, ...rest } = event;
+				entry = { ...rest, at: now, digested: [] };
+				ledger.push(entry);
+				known.set(ref(event), entry);
+			}
+			if (post.kind !== 'single') {
+				entry.digested.push(JSON.stringify(post.destination));
 			}
 		}
 	}
@@ -109,6 +119,9 @@ export function plan(events, families) {
 		const sources = families[event.family].sources;
 		const before = 'was' in event ? audiences(event, sources, event.was).map((d) => JSON.stringify(d)) : [];
 		for (const destination of audiences(event, sources)) {
+			if (event.digested?.includes(JSON.stringify(destination))) {
+				continue; // that digest already listed it
+			}
 			const edit = before.includes(JSON.stringify(destination));
 			const id = JSON.stringify([destination, sources[0], edit]);
 			if (!groups.has(id)) {

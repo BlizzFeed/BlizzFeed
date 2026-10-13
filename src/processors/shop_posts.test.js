@@ -69,9 +69,12 @@ test('other types and families do not pair', () => {
 	assert.equal(events.length, 4);
 });
 
-test('digested events are not remembered for edits', () => {
-	const [events, ledger] = sp.resolve([], [0, 1, 2].map((n) => fresh('eu', { key: `c-${n}` })), NOW);
-	assert.deepEqual(sp.remember(ledger, sp.plan(events, FAMILIES), NOW), []);
+test('a digest is not posted again when the other region follows, but a feed that missed it still gets it', () => {
+	const sweep = (region) => [0, 1, 2].map((n) => fresh(region, { key: `c-${n}` }));
+	let [events, ledger] = sp.resolve([], sweep('us'), NOW); // Overwatch has no US feed, so only the shop channel
+	ledger = sp.remember(ledger, sp.plan(events, FAMILIES), NOW);
+	[events] = sp.resolve(ledger, sweep('eu'), '2026-10-10T10:10:00+00:00');
+	assert.deepEqual(sp.plan(events, FAMILIES).map((p) => [p.destination, p.kind, p.edit]), [[['feed', 'overwatch-news'], 'digest', false]]);
 });
 
 test('WoW posts to each region\'s feed, a game without a US feed does not, and some types are shop-only or logged only', () => {
