@@ -1,0 +1,106 @@
+name: Track YouTube
+
+on:
+  # Started by the tracker when the last run is the sweep interval old (sources.yaml). No cron.
+  workflow_dispatch:
+
+# A queued run replaced by a newer dispatch loses nothing, as every run does the same work.
+concurrency:
+  group: youtube
+  cancel-in-progress: false
+
+jobs:
+  youtube:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout main branch (code) into ./code
+        uses: actions/checkout@v7
+        with:
+          ref: main
+          path: code
+
+      - name: Checkout youtube branch into ./youtube
+        uses: actions/checkout@v7
+        with:
+          ref: youtube
+          path: youtube
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: 'npm'
+          cache-dependency-path: code/package-lock.json
+
+      - run: npm ci --omit=dev --no-audit --no-fund
+        working-directory: code
+
+      - name: Configure git identity
+        working-directory: youtube
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Fetch the channels
+        env:
+          YOUTUBE_DIR: youtube
+          YOUTUBE_DIFF_FILE: youtube-diff.json
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: node code/src/main.js --youtube
+
+      - name: Commit and push
+        env:
+          YOUTUBE_DIR: youtube
+          YOUTUBE_DIFF_FILE: youtube-diff.json
+        run: node code/src/main.js --youtube-commit
+
+      # For BlizzFeedBot, like the tracker's and the shop's. Deploy the bot's YouTube support before this reaches main.
+      - name: Write outbox
+        env:
+          YOUTUBE_DIR: youtube
+          YOUTUBE_DIFF_FILE: youtube-diff.json
+          GITHUB_RUN_ID: ${{ github.run_id }}
+          ACTIONS_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: node code/src/main.js --youtube-outbox
+
+      - name: Upload outbox
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: outbox
+          path: outbox.json
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Notify Discord
+        if: always()
+        env:
+          YOUTUBE_DIFF_FILE: youtube-diff.json
+          ACTIONS_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          DISCORD_WEBHOOK_LOG: ${{ secrets.DISCORD_WEBHOOK_LOG }}
+        run: node code/src/main.js --youtube-notify
+
+      # Like the shop's: tells healthchecks.io the run got through. Best effort: it never fails the run.
+      - name: Heartbeat
+        continue-on-error: true
+        env:
+          HEARTBEAT_URL: ${{ secrets.YOUTUBE_HEARTBEAT_URL }}
+        run: |
+          if [ -n "$HEARTBEAT_URL" ]; then
+            curl -fsS -m 10 --retry 2 -o /dev/null "$HEARTBEAT_URL" || echo "Heartbeat ping failed."
+          else
+            echo "YOUTUBE_HEARTBEAT_URL isn't set, no heartbeat."
+          fi
+
+      # Kept in case the commit landed but a later step failed.
+      - name: Keep diff on failure
+        if: failure()
+        uses: actions/upload-artifact@v7
+        with:
+          name: youtube-diff-${{ github.run_id }}
+          path: youtube-diff.json
+          if-no-files-found: ignore
+          retention-days: 7

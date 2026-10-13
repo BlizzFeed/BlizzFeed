@@ -45,7 +45,7 @@ jobs:
     timeout-minutes: 10
     permissions:
       contents: write
-      actions: write  # to start the archive and shop workflows
+      actions: write  # to start the archive, shop and YouTube workflows
 
     steps:
       - name: Checkout main branch (code) into ./code
@@ -81,6 +81,19 @@ jobs:
           last=$(gh run list --workflow shop.yaml --limit 1 --json createdAt --jq '.[0].createdAt // empty')
           if [ -z "$last" ] || [ $(( $(date +%s) - $(date -d "$last" +%s) )) -ge $(( minutes * 60 )) ]; then
             gh workflow run shop.yaml --ref main
+          fi
+
+      # Start a YouTube run when the last one is as old as the sweep interval, which follows from the channel count and quota.
+      - name: Start YouTube run
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          minutes=$(node -e "import('./code/src/core/config.js').then((c) => console.log(c.youtubeSweepMinutes(c.loadYoutubeConfig('code/sources.yaml'))))")
+          last=$(gh run list --workflow youtube.yaml --limit 1 --json createdAt --jq '.[0].createdAt // empty')
+          if [ -z "$last" ] || [ $(( $(date +%s) - $(date -d "$last" +%s) )) -ge $(( minutes * 60 )) ]; then
+            gh workflow run youtube.yaml --ref main
           fi
 
       - name: Configure git identity
