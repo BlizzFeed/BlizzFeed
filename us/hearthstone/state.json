@@ -17,8 +17,9 @@
         "Banner"
       ],
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-13T17:15:25Z"
     },
     "blt5628b20039bf3456": {
       "key": "blt5628b20039bf3456",
@@ -131,7 +132,7 @@
         "Limited Time Bundles",
         "Web Offers"
       ],
-      "badge": null,
+      "badge": "New",
       "price": {
         "fullAmount": "$79.99",
         "discountAmount": null,
@@ -3371,8 +3372,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-13T17:15:25Z"
     },
     "blt1d1fbd6cc3183da4": {
       "key": "blt1d1fbd6cc3183da4",
@@ -3428,8 +3430,9 @@
       "price": null,
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-13T17:15:25Z"
     },
     "bltfcd1387370ad0ffa": {
       "key": "bltfcd1387370ad0ffa",
@@ -3448,6 +3451,31 @@
         "Banner"
       ],
       "first_seen": "2026-10-13T17:04:49Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2136769": {
+      "key": "p:2136769",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "hearthstone-free-battlenet-shop-gift",
+      "title": "Free Battle.net® Shop Gift!",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2136769,
+      "productIds": [
+        2136769
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/hearthstone/items/2136769/free-battlenet-shop-gift",
+      "image": "//catalog.blzstatic.com//fb2/aa2c0d1f8fdfb8e679f7482b39480532-HS_37p0_BNet_SpecialOffers_FreeWeeklyRewards_BattleNet_Shop_Product_Cards_CardPackStandard-1920X1080_.png",
+      "sections": [
+        "Web Offers"
+      ],
+      "badge": null,
+      "price": null,
+      "expiresAtMs": null,
+      "first_seen": "2026-10-13T17:15:25Z",
       "status": "listed",
       "misses": 0
     }
