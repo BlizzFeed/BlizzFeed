@@ -1,0 +1,3 @@
+# Heroes of the Storm: Nexomania II
+
+One of the most prestigious stops on the Nexomania circuit is the Intermultiversal Nexoweight Championship: No rules, no mercy, just nonstop, bicep-busting carnage. This time, many fans expected Mal’gaucho Mal’Ganis to win it all. The Swingin’ Scourge of Stratholme tore a bloody path through his side of the bracket, burying opponents beneath a deluge of demonic blows. But on the other side of the bracket, a mysterious upstart known only as La Gata de Batalla has proven herself a worthy challenger, defeating foes many times her size en route to the championship match. The arena is packed, with Nexomania legend MC Tombstone roaring away on the mic, and the final battle is about to begin. Whose side are you on?

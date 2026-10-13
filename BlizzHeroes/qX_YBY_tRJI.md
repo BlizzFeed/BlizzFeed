@@ -1,0 +1,3 @@
+# Mei Spotlight
+
+Lured by her inquisitive nature and a trail of bizarre climate phenomena, world-famous scientist Mei-Ling Zhou stumbled upon the Nexus and was soon enlisted in the fearsome battles that raged within. One of the first agents to rejoin Overwatch, Mei has a strong sense of right and wrong, and she’s determined to stand up for the weak and innocent everywhere, no matter which Realm they hail from. She’s a powerful ally and a spine-shivering foe, with advanced weather-altering technology that shifts the very architecture of the battleground. Get your parka on and prepare for Mei’s arrival in Heroes of the Storm!
