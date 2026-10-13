@@ -97,26 +97,31 @@ export function top(content, thumbnail, title) {
 	return [{ type: 9, components: [content], accessory: { type: 11, media: { url: thumbnail }, description: [...title].slice(0, 1024).join('') } }];
 }
 
+/** The article's image as a large picture, or nothing when it has none. */
+const picture = (url, title) => (url ? [{ type: 12, items: [{ media: { url }, description: title }] }] : []);
+
 const buttonRow = (pairs) => pairs.filter(([, url]) => url).map(([label, url]) => linkButton(label, url));
 const site = (repoUrl) => (repoUrl ? `[BlizzFeed](${repoUrl})` : 'BlizzFeed');
 const container = (color, components) => ({ flags: IS_COMPONENTS_V2, components: [{ type: 17, accent_color: color, components }] });
 
 /** A new or updated article. An update shows what changed on its card, and a note while the archive re-checks the text
- * (the bot removes it). The thumbnail is the article's image, else the game's logo. */
+ * (the bot removes it). The game's logo is the thumbnail and the article's image the large picture. */
 export function buildItemMessage(action, item, commitUrl, repoUrl, { summary = null, archived = null, history = null, logo = null } = {}) {
 	const title = trim(item.title, 256);
 	const body = text(trim(`## ${title}\n${trim(item.summary, 600)}`, 3000));
 	const updated = action === 'updated';
 	const before = updated && (item.changed ?? []).includes('image') ? item.previous_image : '';
-	// With a Before / After pair the new image would only repeat, so the game's logo goes there instead.
-	const inner = top(body, before ? logo : item.image || logo, title);
+	const inner = top(body, logo, title);
 	const block = updated ? diffBlock(cardDiffLines(item)) : null;
 	if (block) {
 		inner.push(block);
 	}
+	// With a Before / After pair the new image would only repeat, so the pair replaces the picture.
 	if (before && item.image) {
 		inner.push(text('**Before** (left)  ·  **After** (right)'),
 			{ type: 12, items: [{ media: { url: before }, description: 'Before' }, { media: { url: item.image }, description: 'After' }] });
+	} else {
+		inner.push(...picture(item.image, title));
 	}
 	const buttons = buttonRow([['Read Article', item.url], ['Shop', item.shop_url], updated ? ['Summary Changes', commitUrl] : ['Summary', summary],
 		['Archive', updated ? null : archived], ['History', history]]);
@@ -137,11 +142,12 @@ export function buildItemMessage(action, item, commitUrl, repoUrl, { summary = n
 export function buildEditMessage(change, repoUrl, sourceId, commitUrl, logo = null) {
 	const title = trim(change.title, 256);
 	const body = text(trim(`## ${title}\n${trim(change.summary ?? '', 600)}`.trimEnd(), 3000));
-	const inner = top(body, change.image || logo, title);
+	const inner = top(body, logo, title);
 	const block = diffBlock(lineCountLines(change));
 	if (block) {
 		inner.push(block);
 	}
+	inner.push(...picture(change.image, title));
 	const buttons = buttonRow([['Read Article', change.url], ['Article Changes', commitUrl], ['History', historyUrl(repoUrl, sourceId, change.id)]]);
 	if (buttons.length) {
 		inner.push(DIVIDER, { type: 1, id: BUTTONS_ID, components: buttons });

@@ -57,15 +57,19 @@ test('an edit message lists its line counts, leaving out zeros', () => {
 	assert.ok(body.includes('+ 8 lines added') && !body.includes('changed') && !body.includes('removed'));
 });
 
-test('an image change shows before and after, with the game\'s logo as the thumbnail', () => {
+test('the game\'s logo is the thumbnail and the article image the large picture, or a before and after pair on an image change', () => {
 	const logo = 'https://x/game.png';
-	const parts = inner(discord.buildItemMessage('updated', { ...ITEM, image: 'https://x/new.png', changed: ['image'], previous_image: 'https://x/old.png' }, null, REPO, { logo }));
-	assert.deepEqual(parts.find((c) => c.type === 12).items.map((i) => i.media.url), ['https://x/old.png', 'https://x/new.png']);
-	assert.equal(parts[0].accessory.media.url, logo);
-	const other = inner(discord.buildItemMessage('updated', { ...ITEM, changed: ['summary'], previous_image: 'https://x/old.png' }, null, REPO, { logo }));
-	assert.equal(other[0].accessory.media.url, ITEM.image);
-	assert.ok(!other.some((c) => c.type === 12));
-	assert.equal(inner(discord.buildItemMessage('added', { ...ITEM, image: '' }, null, REPO, { logo }))[0].accessory.media.url, logo);
+	const pictures = (message) => inner(message).filter((c) => c.type === 12).map((c) => c.items.map((i) => i.media.url));
+	const changed = discord.buildItemMessage('updated', { ...ITEM, image: 'https://x/new.png', changed: ['image'], previous_image: 'https://x/old.png' }, null, REPO, { logo });
+	assert.deepEqual(pictures(changed), [['https://x/old.png', 'https://x/new.png']]);
+	assert.equal(inner(changed)[0].accessory.media.url, logo);
+	const other = discord.buildItemMessage('updated', { ...ITEM, changed: ['summary'], previous_image: 'https://x/old.png' }, null, REPO, { logo });
+	assert.deepEqual(pictures(other), [[ITEM.image]]);
+	assert.equal(inner(other)[0].accessory.media.url, logo);
+	const bare = discord.buildItemMessage('added', { ...ITEM, image: '' }, null, REPO, { logo });
+	assert.deepEqual(pictures(bare), []);
+	assert.equal(inner(bare)[0].accessory.media.url, logo);
+	assert.deepEqual(pictures(discord.buildEditMessage(CHANGE, REPO, 'wow-news', null, logo)), [[ITEM.image]]);
 });
 
 test('an updated card lists what changed', () => {
