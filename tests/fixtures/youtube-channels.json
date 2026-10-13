@@ -1,0 +1,303 @@
+{
+ "kind": "youtube#channelListResponse",
+ "etag": "VCoJXWhtV4BJ1c7UAzdA6UMM-6U",
+ "pageInfo": {
+  "totalResults": 9,
+  "resultsPerPage": 5
+ },
+ "items": [
+  {
+   "kind": "youtube#channel",
+   "etag": "HqmqqspvgBrEZQP0CPfwpW6xmKY",
+   "id": "UCZ2h0d4tP0R8klduwj-_bDQ",
+   "snippet": {
+    "title": "StarCraft",
+    "description": "JOIN THE DOMINION. DEFEND MANKIND.\n\nLocation: Korhal | STARCRAFT.COM\n\nESRB Rating: TEEN with Blood and Gore, Language, Suggestive Themes, Use of Alcohol and Tobacco, Violence.",
+    "customUrl": "@starcraft",
+    "publishedAt": "2006-02-17T05:39:32Z",
+    "thumbnails": {
+     "default": {
+      "url": "https://yt3.ggpht.com/5ixR10JivFjRX1kTO30sTY5se8Nt4SMmGH5uRIRZwLyA1JJaEPcQJMyQHqygozoo1kmiQKcBJw=s88-c-k-c0x00ffffff-no-rj",
+      "width": 88,
+      "height": 88
+     },
+     "medium": {
+      "url": "https://yt3.ggpht.com/5ixR10JivFjRX1kTO30sTY5se8Nt4SMmGH5uRIRZwLyA1JJaEPcQJMyQHqygozoo1kmiQKcBJw=s240-c-k-c0x00ffffff-no-rj",
+      "width": 240,
+      "height": 240
+     },
+     "high": {
+      "url": "https://yt3.ggpht.com/5ixR10JivFjRX1kTO30sTY5se8Nt4SMmGH5uRIRZwLyA1JJaEPcQJMyQHqygozoo1kmiQKcBJw=s800-c-k-c0x00ffffff-no-rj",
+      "width": 800,
+      "height": 800
+     }
+    },
+    "localized": {
+     "title": "StarCraft",
+     "description": "JOIN THE DOMINION. DEFEND MANKIND.\n\nLocation: Korhal | STARCRAFT.COM\n\nESRB Rating: TEEN with Blood and Gore, Language, Suggestive Themes, Use of Alcohol and Tobacco, Violence."
+    }
+   }
+  },
+  {
+   "kind": "youtube#channel",
+   "etag": "K97vk-imadj6txLuuOcxKqlamIM",
+   "id": "UCiAInBL9kUzz1XRxk66v-gw",
+   "snippet": {
+    "title": "Overwatch Esports",
+    "description": "The official account of Overwatch Esports. #OWEsports",
+    "customUrl": "@ow_esports",
+    "publishedAt": "2016-10-20T17:12:53Z",
+    "thumbnails": {
+     "default": {
+      "url": "https://yt3.ggpht.com/h5Fw5irHXO5YnmiAG6CN42exyUHyNaOR56wj_iTskCNrlqvI4GuIBlw3pOs3WuXMY1DJvt1F=s88-c-k-c0x00ffffff-no-rj",
+      "width": 88,
+      "height": 88
+     },
+     "medium": {
+      "url": "https://yt3.ggpht.com/h5Fw5irHXO5YnmiAG6CN42exyUHyNaOR56wj_iTskCNrlqvI4GuIBlw3pOs3WuXMY1DJvt1F=s240-c-k-c0x00ffffff-no-rj",
+      "width": 240,
+      "height": 240
+     },
+     "high": {
+      "url": "https://yt3.ggpht.com/h5Fw5irHXO5YnmiAG6CN42exyUHyNaOR56wj_iTskCNrlqvI4GuIBlw3pOs3WuXMY1DJvt1F=s800-c-k-c0x00ffffff-no-rj",
+      "width": 800,
+      "height": 800
+     }
+    },
+    "localized": {
+     "title": "Overwatch Esports",
+     "description": "The official account of Overwatch Esports. #OWEsports"
+    },
+    "country": "US"
+   }
+  },
+  {
+   "kind": "youtube#channel",
+   "etag": "BvX1Z5kLpphEXXSl5Bd-_GZ5bwE",
+   "id": "UCxn8csYeZg6awRnZS-aqg0g",
+   "snippet": {
+    "title": "Diablo",
+    "description": "#DiabloIV is available now. Welcome to Hell 🌹\n\nESRB Rating: MATURE with Blood and Gore, Intense Violence, Language. \n\nDiablo4.com\n",
+    "customUrl": "@diablo",
+    "publishedAt": "2005-09-29T18:04:20Z",
+    "thumbnails": {
+     "default": {
+      "url": "https://yt3.ggpht.com/szFm91YuatPuvc05yoveO1Xu3q0Ro78ynn_ouGF2X1V2QELxVT1F6tXjnmnhc6AxLZUWUTCh=s88-c-k-c0x00ffffff-no-rj",
+      "width": 88,
+      "height": 88
+     },
+     "medium": {
+      "url": "https://yt3.ggpht.com/szFm91YuatPuvc05yoveO1Xu3q0Ro78ynn_ouGF2X1V2QELxVT1F6tXjnmnhc6AxLZUWUTCh=s240-c-k-c0x00ffffff-no-rj",
+      "width": 240,
+      "height": 240
+     },
+     "high": {
+      "url": "https://yt3.ggpht.com/szFm91YuatPuvc05yoveO1Xu3q0Ro78ynn_ouGF2X1V2QELxVT1F6tXjnmnhc6AxLZUWUTCh=s800-c-k-c0x00ffffff-no-rj",
+      "width": 800,
+      "height": 800
+     }
+    },
+    "localized": {
+     "title": "Diablo",
+     "description": "#DiabloIV is available now. Welcome to Hell 🌹\n\nESRB Rating: MATURE with Blood and Gore, Intense Violence, Language. \n\nDiablo4.com\n"
+    },
+    "country": "US"
+   }
+  },
+  {
+   "kind": "youtube#channel",
+   "etag": "cyq0spA7k4COXMuUsZ49fLl59r4",
+   "id": "UCbLj9QP9FAaHs_647QckGtg",
+   "snippet": {
+    "title": "World of Warcraft",
+    "description": "Enter the World of Warcraft and descend into a world of myth, magic, and legendary adventure. \n\nhttps://worldofwarcraft.com/\nDiscord: discord.gg/warcraft\n\nESRB Rating: TEEN with Blood and Gore, Crude Humor, Mild Language, Suggestive Themes, Use of Alcohol, Violence.",
+    "customUrl": "@warcraft",
+    "publishedAt": "2006-03-08T13:36:38Z",
+    "thumbnails": {
+     "default": {
+      "url": "https://yt3.ggpht.com/ytc/AIdro_mZgVxSAsRWnLU7h6m_bkaChY5gNbo7JAeoI-r0QVE75vc=s88-c-k-c0x00ffffff-no-rj",
+      "width": 88,
+      "height": 88
+     },
+     "medium": {
+      "url": "https://yt3.ggpht.com/ytc/AIdro_mZgVxSAsRWnLU7h6m_bkaChY5gNbo7JAeoI-r0QVE75vc=s240-c-k-c0x00ffffff-no-rj",
+      "width": 240,
+      "height": 240
+     },
+     "high": {
+      "url": "https://yt3.ggpht.com/ytc/AIdro_mZgVxSAsRWnLU7h6m_bkaChY5gNbo7JAeoI-r0QVE75vc=s800-c-k-c0x00ffffff-no-rj",
+      "width": 800,
+      "height": 800
+     }
+    },
+    "localized": {
+     "title": "World of Warcraft",
+     "description": "Enter the World of Warcraft and descend into a world of myth, magic, and legendary adventure. \n\nhttps://worldofwarcraft.com/\nDiscord: discord.gg/warcraft\n\nESRB Rating: TEEN with Blood and Gore, Crude Humor, Mild Language, Suggestive Themes, Use of Alcohol, Violence."
+    },
+    "country": "US"
+   }
+  },
+  {
+   "kind": "youtube#channel",
+   "etag": "CFgucmJGG4732ay21r1YytPsVKI",
+   "id": "UC3GriadTkHBnfgd2UFETGOA",
+   "snippet": {
+    "title": "Blizzard Entertainment",
+    "description": "Dedicated to creating the most epic entertainment experiences... ever.",
+    "customUrl": "@blizzard",
+    "publishedAt": "2005-10-10T09:14:09Z",
+    "thumbnails": {
+     "default": {
+      "url": "https://yt3.ggpht.com/KSac_DJVjwl35MGcpI1XtxPOvwbngBf70L-_QAPAp4d8KPbdB4J6_JlehOh0OXV_QqXEXO6X26k=s88-c-k-c0x00ffffff-no-rj",
+      "width": 88,
+      "height": 88
+     },
+     "medium": {
+      "url": "https://yt3.ggpht.com/KSac_DJVjwl35MGcpI1XtxPOvwbngBf70L-_QAPAp4d8KPbdB4J6_JlehOh0OXV_QqXEXO6X26k=s240-c-k-c0x00ffffff-no-rj",
+      "width": 240,
+      "height": 240
+     },
+     "high": {
+      "url": "https://yt3.ggpht.com/KSac_DJVjwl35MGcpI1XtxPOvwbngBf70L-_QAPAp4d8KPbdB4J6_JlehOh0OXV_QqXEXO6X26k=s800-c-k-c0x00ffffff-no-rj",
+      "width": 800,
+      "height": 800
+     }
+    },
+    "localized": {
+     "title": "Blizzard Entertainment",
+     "description": "Dedicated to creating the most epic entertainment experiences... ever."
+    }
+   }
+  },
+  {
+   "kind": "youtube#channel",
+   "etag": "zi0ZabzlCH6dLUQSfgXGp7OMOfI",
+   "id": "UCVia_crjzJylRmGq7SHTiaw",
+   "snippet": {
+    "title": "Hearthstone",
+    "description": "Hearthstone™, a free-to-play strategy card game from Blizzard Entertainment.\nESRB Rating: TEEN with Alcohol Reference, Blood, Fantasy Violence, Mild Suggestive Themes\n",
+    "customUrl": "@hearthstone",
+    "publishedAt": "2013-02-01T02:33:30Z",
+    "thumbnails": {
+     "default": {
+      "url": "https://yt3.ggpht.com/unWPliOD8Gv9W4z7YIb0plWQ-W4UkrlWTX0os-7sffEwBBMH3j6lQDiAxnkkUSM8IkpMuFncuA=s88-c-k-c0x00ffffff-no-rj",
+      "width": 88,
+      "height": 88
+     },
+     "medium": {
+      "url": "https://yt3.ggpht.com/unWPliOD8Gv9W4z7YIb0plWQ-W4UkrlWTX0os-7sffEwBBMH3j6lQDiAxnkkUSM8IkpMuFncuA=s240-c-k-c0x00ffffff-no-rj",
+      "width": 240,
+      "height": 240
+     },
+     "high": {
+      "url": "https://yt3.ggpht.com/unWPliOD8Gv9W4z7YIb0plWQ-W4UkrlWTX0os-7sffEwBBMH3j6lQDiAxnkkUSM8IkpMuFncuA=s800-c-k-c0x00ffffff-no-rj",
+      "width": 800,
+      "height": 800
+     }
+    },
+    "localized": {
+     "title": "Hearthstone",
+     "description": "Hearthstone™, a free-to-play strategy card game from Blizzard Entertainment.\nESRB Rating: TEEN with Alcohol Reference, Blood, Fantasy Violence, Mild Suggestive Themes\n"
+    },
+    "country": "US"
+   }
+  },
+  {
+   "kind": "youtube#channel",
+   "etag": "Au6ssSuF6hh5bKfQqMz2G5zbEdA",
+   "id": "UCwA2Fkx6Uq24GBDL6tL2eyw",
+   "snippet": {
+    "title": "Warcraft Rumble",
+    "description": "A mobile strategy game set in the Warcraft Universe. #WarcraftRumble is available now!",
+    "customUrl": "@warcraftrumble",
+    "publishedAt": "2022-04-26T15:51:20.117893Z",
+    "thumbnails": {
+     "default": {
+      "url": "https://yt3.ggpht.com/FW55t8IVEAwTOc9dJZD_TxYE3HEHxV9lGiqPJzpJoYUZ0H5vw4dOddVhmqOnhBf49lMXpeJk=s88-c-k-c0x00ffffff-no-rj",
+      "width": 88,
+      "height": 88
+     },
+     "medium": {
+      "url": "https://yt3.ggpht.com/FW55t8IVEAwTOc9dJZD_TxYE3HEHxV9lGiqPJzpJoYUZ0H5vw4dOddVhmqOnhBf49lMXpeJk=s240-c-k-c0x00ffffff-no-rj",
+      "width": 240,
+      "height": 240
+     },
+     "high": {
+      "url": "https://yt3.ggpht.com/FW55t8IVEAwTOc9dJZD_TxYE3HEHxV9lGiqPJzpJoYUZ0H5vw4dOddVhmqOnhBf49lMXpeJk=s800-c-k-c0x00ffffff-no-rj",
+      "width": 800,
+      "height": 800
+     }
+    },
+    "localized": {
+     "title": "Warcraft Rumble",
+     "description": "A mobile strategy game set in the Warcraft Universe. #WarcraftRumble is available now!"
+    }
+   }
+  },
+  {
+   "kind": "youtube#channel",
+   "etag": "W5kgKC0PR3CyTZW251ednPzRHy0",
+   "id": "UCpVdq9gLew6E76BmfB2GJ0w",
+   "snippet": {
+    "title": "Heroes of the Storm",
+    "description": "The official YouTube channel for the game Heroes of the Storm, a raucous online team brawler starring your favorite Blizzard characters.\n\nESRB Rating: RP-M with Crude Humor, Fantasy Violence, Mild Blood, Mild Language, Mild Suggestive Themes.\n\nPEGI 12: Visit http://www.pegi.info for rating information.",
+    "customUrl": "@blizzheroes",
+    "publishedAt": "2013-09-13T19:07:53Z",
+    "thumbnails": {
+     "default": {
+      "url": "https://yt3.ggpht.com/ytc/AIdro_k2fmE5viJOKGulIndSt58H06VuCxPiQyG5cE0PMKpYpQ=s88-c-k-c0x00ffffff-no-rj",
+      "width": 88,
+      "height": 88
+     },
+     "medium": {
+      "url": "https://yt3.ggpht.com/ytc/AIdro_k2fmE5viJOKGulIndSt58H06VuCxPiQyG5cE0PMKpYpQ=s240-c-k-c0x00ffffff-no-rj",
+      "width": 240,
+      "height": 240
+     },
+     "high": {
+      "url": "https://yt3.ggpht.com/ytc/AIdro_k2fmE5viJOKGulIndSt58H06VuCxPiQyG5cE0PMKpYpQ=s800-c-k-c0x00ffffff-no-rj",
+      "width": 800,
+      "height": 800
+     }
+    },
+    "localized": {
+     "title": "Heroes of the Storm",
+     "description": "The official YouTube channel for the game Heroes of the Storm, a raucous online team brawler starring your favorite Blizzard characters.\n\nESRB Rating: RP-M with Crude Humor, Fantasy Violence, Mild Blood, Mild Language, Mild Suggestive Themes.\n\nPEGI 12: Visit http://www.pegi.info for rating information."
+    }
+   }
+  },
+  {
+   "kind": "youtube#channel",
+   "etag": "X58jywcGM_5c4Y0IgXo-gAQWT2Y",
+   "id": "UClOf1XXinvZsy4wKPAkro2A",
+   "snippet": {
+    "title": "PlayOverwatch",
+    "description": "Where players become Heroes.\n",
+    "customUrl": "@playoverwatch",
+    "publishedAt": "2014-09-27T06:22:50Z",
+    "thumbnails": {
+     "default": {
+      "url": "https://yt3.ggpht.com/Z4_yXKvNr-eUYCQO0Dby0o7VOBCcyHz8p3oKtZYK69YMmjHckfMZMP7-a6uSG4DwXJtJcdTxVA=s88-c-k-c0x00ffffff-no-rj",
+      "width": 88,
+      "height": 88
+     },
+     "medium": {
+      "url": "https://yt3.ggpht.com/Z4_yXKvNr-eUYCQO0Dby0o7VOBCcyHz8p3oKtZYK69YMmjHckfMZMP7-a6uSG4DwXJtJcdTxVA=s240-c-k-c0x00ffffff-no-rj",
+      "width": 240,
+      "height": 240
+     },
+     "high": {
+      "url": "https://yt3.ggpht.com/Z4_yXKvNr-eUYCQO0Dby0o7VOBCcyHz8p3oKtZYK69YMmjHckfMZMP7-a6uSG4DwXJtJcdTxVA=s800-c-k-c0x00ffffff-no-rj",
+      "width": 800,
+      "height": 800
+     }
+    },
+    "localized": {
+     "title": "PlayOverwatch",
+     "description": "Where players become Heroes.\n"
+    },
+    "country": "US"
+   }
+  }
+ ]
+}

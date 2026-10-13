@@ -1,0 +1,1065 @@
+{
+ "kind": "youtube#videoListResponse",
+ "etag": "fixture",
+ "items": [
+  {
+   "kind": "youtube#video",
+   "etag": "-hVjl3glO_bxlMr4ej-9SqxnQNg",
+   "id": "phxy5Gat_Gs",
+   "snippet": {
+    "publishedAt": "2026-10-12T17:00:13Z",
+    "channelId": "UCbLj9QP9FAaHs_647QckGtg",
+    "title": "Midnight Content Update | Labyrinth, Kith’ix Campaign, Aqir Invasions, and more",
+    "description": "A dormant terror has been unleashed. Exterminate swarming forces, challenge a familiar foe in a single-boss raid, and descend into the Labyrinth of Kindo’jan, a new sprawling multi-wing Delve, in Midnight [Patch 12.1.5].\n\nLearn more at: https://us.shop.battle.net/en-us/family/world-of-warcraft   \n\n► Latest WoW news: http://worldofwarcraft.com/news  \n► Subscribe to WoW: http://blizz.ly/WoWYTSub \n► Visit WoW on Battle.net: https://shop.battle.net/family/world-of-warcraft  \n\n-- \n\n► Follow Warcraft on Twitter: https://twitter.com/warcraft  \n► Follow Warcraft on Instagram: https://instagram.com/warcraft  \n► Like Warcraft on Facebook: https://facebook.com/warcraft",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/phxy5Gat_Gs/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/phxy5Gat_Gs/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/phxy5Gat_Gs/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/phxy5Gat_Gs/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/phxy5Gat_Gs/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     },
+     "fhd": {
+      "url": "https://i.ytimg.com/vi/phxy5Gat_Gs/fhddefault.jpg",
+      "width": 1920,
+      "height": 1080
+     }
+    },
+    "channelTitle": "World of Warcraft",
+    "tags": [
+     "world of warcraft",
+     "wow",
+     "warcraft",
+     "blizzard",
+     "blizzard entertainment",
+     "midnight",
+     "kith’ix",
+     "aqir",
+     "labyrinth",
+     "kindo’jan",
+     "mythic flex",
+     "invasions",
+     "silvermoon",
+     "patch 12.1.5"
+    ],
+    "categoryId": "20",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "en",
+    "localized": {
+     "title": "Midnight Content Update | Labyrinth, Kith’ix Campaign, Aqir Invasions, and more",
+     "description": "A dormant terror has been unleashed. Exterminate swarming forces, challenge a familiar foe in a single-boss raid, and descend into the Labyrinth of Kindo’jan, a new sprawling multi-wing Delve, in Midnight [Patch 12.1.5].\n\nLearn more at: https://us.shop.battle.net/en-us/family/world-of-warcraft   \n\n► Latest WoW news: http://worldofwarcraft.com/news  \n► Subscribe to WoW: http://blizz.ly/WoWYTSub \n► Visit WoW on Battle.net: https://shop.battle.net/family/world-of-warcraft  \n\n-- \n\n► Follow Warcraft on Twitter: https://twitter.com/warcraft  \n► Follow Warcraft on Instagram: https://instagram.com/warcraft  \n► Like Warcraft on Facebook: https://facebook.com/warcraft"
+    },
+    "defaultAudioLanguage": "en"
+   },
+   "contentDetails": {
+    "duration": "PT1M19S",
+    "dimension": "2d",
+    "definition": "hd",
+    "caption": "true",
+    "licensedContent": true,
+    "contentRating": {},
+    "projection": "rectangular"
+   }
+  },
+  {
+   "kind": "youtube#video",
+   "etag": "bSoAWtBfd2Nte3WIWKHR-6j3PxY",
+   "id": "NYTy-KF05rM",
+   "snippet": {
+    "publishedAt": "2026-10-12T21:00:11Z",
+    "channelId": "UCbLj9QP9FAaHs_647QckGtg",
+    "title": "Q: How do you tune a dungeon? A: Carefully!",
+    "description": "Dive into dungeon design with the Forever Devs in this week’s episode of the Podcast, live on our channel!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/NYTy-KF05rM/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/NYTy-KF05rM/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/NYTy-KF05rM/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/NYTy-KF05rM/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/NYTy-KF05rM/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "World of Warcraft",
+    "tags": [
+     "World of Warcraft",
+     "WoW",
+     "Warcraft",
+     "Blizzard",
+     "Blizzard Entertainment",
+     "gaming",
+     "video games",
+     "rpg",
+     "mmo",
+     "esports",
+     "wow classic"
+    ],
+    "categoryId": "20",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "en",
+    "localized": {
+     "title": "Q: How do you tune a dungeon? A: Carefully!",
+     "description": "Dive into dungeon design with the Forever Devs in this week’s episode of the Podcast, live on our channel!"
+    },
+    "defaultAudioLanguage": "en"
+   },
+   "contentDetails": {
+    "duration": "PT29S",
+    "dimension": "2d",
+    "definition": "hd",
+    "caption": "false",
+    "licensedContent": true,
+    "contentRating": {},
+    "projection": "rectangular"
+   }
+  },
+  {
+   "kind": "youtube#video",
+   "etag": "PL3ELphAM9QZ4DC38D8fyOWrwB0",
+   "id": "dg28HuLT2C0",
+   "snippet": {
+    "publishedAt": "2026-10-09T16:00:33Z",
+    "channelId": "UCbLj9QP9FAaHs_647QckGtg",
+    "title": "World of Warcraft: Forever - Your Adventure Begins",
+    "description": "Learn about the new quests, characters, and rewards waiting ahead of your leveling journey through Azeroth. \n\n► Latest WoW news: http://worldofwarcraft.com/news \n► Subscribe to WoW: http://blizz.ly/WoWYTSub\n► Visit WoW on Battle.net: https://shop.battle.net/family/world-of-warcraft\n\n--\n\n► Follow Warcraft on Twitter: https://twitter.com/warcraft \n► Follow Warcraft on Instagram: https://instagram.com/warcraft \n► Like Warcraft on Facebook: https://facebook.com/warcraft",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/dg28HuLT2C0/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/dg28HuLT2C0/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/dg28HuLT2C0/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/dg28HuLT2C0/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/dg28HuLT2C0/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     },
+     "fhd": {
+      "url": "https://i.ytimg.com/vi/dg28HuLT2C0/fhddefault.jpg",
+      "width": 1920,
+      "height": 1080
+     }
+    },
+    "channelTitle": "World of Warcraft",
+    "tags": [
+     "World of Warcraft",
+     "WoW",
+     "Warcraft",
+     "Blizzard",
+     "Blizzard Entertainment",
+     "gaming",
+     "video games",
+     "rpg",
+     "mmo",
+     "esports",
+     "wow classic"
+    ],
+    "categoryId": "20",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "en",
+    "localized": {
+     "title": "World of Warcraft: Forever - Your Adventure Begins",
+     "description": "Learn about the new quests, characters, and rewards waiting ahead of your leveling journey through Azeroth. \n\n► Latest WoW news: http://worldofwarcraft.com/news \n► Subscribe to WoW: http://blizz.ly/WoWYTSub\n► Visit WoW on Battle.net: https://shop.battle.net/family/world-of-warcraft\n\n--\n\n► Follow Warcraft on Twitter: https://twitter.com/warcraft \n► Follow Warcraft on Instagram: https://instagram.com/warcraft \n► Like Warcraft on Facebook: https://facebook.com/warcraft"
+    },
+    "defaultAudioLanguage": "en"
+   },
+   "contentDetails": {
+    "duration": "PT5M47S",
+    "dimension": "2d",
+    "definition": "hd",
+    "caption": "true",
+    "licensedContent": true,
+    "contentRating": {},
+    "projection": "rectangular"
+   }
+  },
+  {
+   "kind": "youtube#video",
+   "etag": "PeDZpuJxZGTgJ977ZMjm5HfA8hM",
+   "id": "Bv16SAgjQGY",
+   "snippet": {
+    "publishedAt": "2026-10-04T19:00:39Z",
+    "channelId": "UCbLj9QP9FAaHs_647QckGtg",
+    "title": "Swim in it, fish in it, fight Murlocs in it 🌊",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/Bv16SAgjQGY/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/Bv16SAgjQGY/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/Bv16SAgjQGY/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/Bv16SAgjQGY/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/Bv16SAgjQGY/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     },
+     "qhd": {
+      "url": "https://i.ytimg.com/vi/Bv16SAgjQGY/qhddefault.jpg",
+      "width": 2560,
+      "height": 1440
+     }
+    },
+    "channelTitle": "World of Warcraft",
+    "categoryId": "20",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "en",
+    "localized": {
+     "title": "Swim in it, fish in it, fight Murlocs in it 🌊",
+     "description": ""
+    }
+   },
+   "contentDetails": {
+    "duration": "PT46S",
+    "dimension": "2d",
+    "definition": "hd",
+    "caption": "false",
+    "licensedContent": false,
+    "contentRating": {},
+    "projection": "rectangular"
+   }
+  },
+  {
+   "kind": "youtube#video",
+   "etag": "XVjliCOIa0EusxErUIpzmOff6FY",
+   "id": "Duqv2j_7XSg",
+   "snippet": {
+    "publishedAt": "2026-09-14T01:26:29Z",
+    "channelId": "UC3GriadTkHBnfgd2UFETGOA",
+    "title": "BlizzCon 2026 | Main Stage | Closing Remarks",
+    "description": "For more information, visit Blizzard.com.\r\n\r\nLike Blizzard on Facebook: facebook.com/Blizzard/\r\nLike Blizzard on Instagram: instagram.com/blizzard/\r\nFollow Blizzard on Twitter: twitter.com/blizzard_ent\r\nBlizzard is hiring: blizzard.com/company/careers/",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/Duqv2j_7XSg/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/Duqv2j_7XSg/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/Duqv2j_7XSg/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/Duqv2j_7XSg/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/Duqv2j_7XSg/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Blizzard Entertainment",
+    "tags": [
+     "Blizzard",
+     "Blizzard Entertainment",
+     "Overwatch",
+     "Hearthstone",
+     "World of Warcraft",
+     "StarCraft",
+     "Diablo",
+     "Heroes of the Storm",
+     "Video Games"
+    ],
+    "categoryId": "20",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "en",
+    "localized": {
+     "title": "BlizzCon 2026 | Main Stage | Closing Remarks",
+     "description": "For more information, visit Blizzard.com.\r\n\r\nLike Blizzard on Facebook: facebook.com/Blizzard/\r\nLike Blizzard on Instagram: instagram.com/blizzard/\r\nFollow Blizzard on Twitter: twitter.com/blizzard_ent\r\nBlizzard is hiring: blizzard.com/company/careers/"
+    },
+    "defaultAudioLanguage": "en"
+   },
+   "contentDetails": {
+    "duration": "PT7H32M16S",
+    "dimension": "2d",
+    "definition": "hd",
+    "caption": "false",
+    "licensedContent": true,
+    "contentRating": {},
+    "projection": "rectangular"
+   },
+   "liveStreamingDetails": {
+    "actualStartTime": "2026-09-13T16:37:36Z",
+    "actualEndTime": "2026-09-14T00:09:36Z",
+    "scheduledStartTime": "2026-09-13T16:30:00Z"
+   }
+  },
+  {
+   "kind": "youtube#video",
+   "etag": "DXEfcimJqbXighx3pcmYG_CEIGw",
+   "id": "9Qo3Ziwq8go",
+   "snippet": {
+    "publishedAt": "2026-09-14T20:16:14Z",
+    "channelId": "UC3GriadTkHBnfgd2UFETGOA",
+    "title": "BlizzCon 2026 | Closing Remarks",
+    "description": "For more information, visit Blizzard.com.\n\nLike Blizzard on Facebook: facebook.com/Blizzard/\nLike Blizzard on Instagram: instagram.com/blizzard/\nFollow Blizzard on Twitter: twitter.com/blizzard_ent\nBlizzard is hiring: https://careers.blizzard.com/global/",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/9Qo3Ziwq8go/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/9Qo3Ziwq8go/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/9Qo3Ziwq8go/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/9Qo3Ziwq8go/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/9Qo3Ziwq8go/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     },
+     "fhd": {
+      "url": "https://i.ytimg.com/vi/9Qo3Ziwq8go/fhddefault.jpg",
+      "width": 1920,
+      "height": 1080
+     }
+    },
+    "channelTitle": "Blizzard Entertainment",
+    "tags": [
+     "Blizzard",
+     "Blizzard Entertainment",
+     "Overwatch",
+     "Hearthstone",
+     "World of Warcraft",
+     "StarCraft",
+     "Diablo",
+     "Heroes of the Storm",
+     "Video Games"
+    ],
+    "categoryId": "20",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "en",
+    "localized": {
+     "title": "BlizzCon 2026 | Closing Remarks",
+     "description": "For more information, visit Blizzard.com.\n\nLike Blizzard on Facebook: facebook.com/Blizzard/\nLike Blizzard on Instagram: instagram.com/blizzard/\nFollow Blizzard on Twitter: twitter.com/blizzard_ent\nBlizzard is hiring: https://careers.blizzard.com/global/"
+    },
+    "defaultAudioLanguage": "en"
+   },
+   "contentDetails": {
+    "duration": "PT2M25S",
+    "dimension": "2d",
+    "definition": "hd",
+    "caption": "false",
+    "licensedContent": true,
+    "contentRating": {},
+    "projection": "rectangular"
+   }
+  },
+  {
+   "kind": "youtube#video",
+   "etag": "21Hblo0pZVvuu5AZHpmecSq8k7k",
+   "id": "3ZK1AJ3kZMY",
+   "snippet": {
+    "publishedAt": "2026-10-12T19:27:59Z",
+    "channelId": "UCiAInBL9kUzz1XRxk66v-gw",
+    "title": "OWCS 2026 | NA/EMEA | Stage 3 Week 2 Day 2",
+    "description": "Welcome to Stage 3 of OWCS 2026! NA and EMEA's Top 6 are facing off to determine who will represent them at the OWCS World Finals in Guangzhou this December. Let's get into it! \n\n👉Don't forget to subscribe for all the action! https://bit.ly/OWCSYT\n👉Follow OWCS on all of our channels! https://linktr.ee/owcs \n👉Read our Stage 3 Viewers Guide: https://esports.overwatch.com/en-us/news/owcs-2026-stage-3-viewers-guide\n👉View updated schedule and score details: https://esports.overwatch.com/en-us/s...\n👉Join the OWCS Discord: discord.gg/overwatchesports\n👉Play in FACEIT's Daily and Weekly Tournaments to increase your FACEIT Elo, win FACEIT Points, and more! https://www.faceit.com/en/ow2/tournam... \n👉Check the OWE website for news, schedule updates and more! https://esports.overwatch.com/en-us\n\n#OverwatchEsports #Overwatch2 #Overwatch #OWCS #OWEsports #Esports #FACEIT #OWCSChampionsClash #OWCS2026",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/3ZK1AJ3kZMY/default_live.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/3ZK1AJ3kZMY/mqdefault_live.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/3ZK1AJ3kZMY/hqdefault_live.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/3ZK1AJ3kZMY/sddefault_live.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/3ZK1AJ3kZMY/maxresdefault_live.jpg",
+      "width": 1280,
+      "height": 720
+     },
+     "fhd": {
+      "url": "https://i.ytimg.com/vi/3ZK1AJ3kZMY/fhddefault_live.jpg",
+      "width": 1920,
+      "height": 1080
+     }
+    },
+    "channelTitle": "Overwatch Esports",
+    "tags": [
+     "Los Angeles Gladiators",
+     "Shanghai Dragons",
+     "San Francisco Shock",
+     "New York Excelsior",
+     "Los Angeles Valiant",
+     "London Spitfire",
+     "Houston Outlaws",
+     "Florida Mayhem",
+     "Dallas Fuel",
+     "Boston Uprising",
+     "Hangzhou Spark",
+     "Toronto Defiant",
+     "Atlanta Reign",
+     "Guangzhou Charge",
+     "Washington Justice",
+     "Vegas Eternal",
+     "Vancouver Titans",
+     "Seoul Dynasty",
+     "Seoul Infernal",
+     "OWL",
+     "Overwatch League",
+     "esports",
+     "Video Games",
+     "OWL Highlights",
+     "Watchpoint",
+     "OWL2023",
+     "OW2",
+     "6thseason",
+     "Overwatch 2"
+    ],
+    "categoryId": "20",
+    "liveBroadcastContent": "upcoming",
+    "defaultLanguage": "en",
+    "localized": {
+     "title": "OWCS 2026 | NA/EMEA | Stage 3 Week 2 Day 2",
+     "description": "Welcome to Stage 3 of OWCS 2026! NA and EMEA's Top 6 are facing off to determine who will represent them at the OWCS World Finals in Guangzhou this December. Let's get into it! \n\n👉Don't forget to subscribe for all the action! https://bit.ly/OWCSYT\n👉Follow OWCS on all of our channels! https://linktr.ee/owcs \n👉Read our Stage 3 Viewers Guide: https://esports.overwatch.com/en-us/news/owcs-2026-stage-3-viewers-guide\n👉View updated schedule and score details: https://esports.overwatch.com/en-us/s...\n👉Join the OWCS Discord: discord.gg/overwatchesports\n👉Play in FACEIT's Daily and Weekly Tournaments to increase your FACEIT Elo, win FACEIT Points, and more! https://www.faceit.com/en/ow2/tournam... \n👉Check the OWE website for news, schedule updates and more! https://esports.overwatch.com/en-us\n\n#OverwatchEsports #Overwatch2 #Overwatch #OWCS #OWEsports #Esports #FACEIT #OWCSChampionsClash #OWCS2026"
+    },
+    "defaultAudioLanguage": "en"
+   },
+   "contentDetails": {
+    "duration": "P0D",
+    "dimension": "2d",
+    "definition": "sd",
+    "caption": "false",
+    "licensedContent": true,
+    "contentRating": {},
+    "projection": "rectangular"
+   },
+   "liveStreamingDetails": {
+    "scheduledStartTime": "2026-10-18T16:30:00Z"
+   }
+  },
+  {
+   "kind": "youtube#video",
+   "etag": "Qr52MHCm9Ie7xKH0D1aiJnTFxOI",
+   "id": "f9IhuWN__Kg",
+   "snippet": {
+    "publishedAt": "2026-10-12T01:31:36Z",
+    "channelId": "UCiAInBL9kUzz1XRxk66v-gw",
+    "title": "OWCS 2026 | NA/EMEA | Stage 3 Week 1 Day 2",
+    "description": "Welcome to Stage 3 of OWCS 2026! NA and EMEA's Top 6 are facing off to determine who will represent them at the OWCS World Finals in Guangzhou this December. Let's get into it! \n\n👉Don't forget to subscribe for all the action! https://bit.ly/OWCSYT\n👉Follow OWCS on all of our channels! https://linktr.ee/owcs \n👉Read our Stage 3 Viewers Guide: https://esports.overwatch.com/en-us/news/owcs-2026-stage-3-viewers-guide\n👉View updated schedule and score details: https://esports.overwatch.com/en-us/s...\n👉Join the OWCS Discord: discord.gg/overwatchesports\n👉Play in FACEIT's Daily and Weekly Tournaments to increase your FACEIT Elo, win FACEIT Points, and more! https://www.faceit.com/en/ow2/tournam... \n👉Check the OWE website for news, schedule updates and more! https://esports.overwatch.com/en-us\n\n#OverwatchEsports #Overwatch2 #Overwatch #OWCS #OWEsports #Esports #FACEIT #OWCSChampionsClash #OWCS2026",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/f9IhuWN__Kg/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/f9IhuWN__Kg/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/f9IhuWN__Kg/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/f9IhuWN__Kg/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/f9IhuWN__Kg/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     },
+     "fhd": {
+      "url": "https://i.ytimg.com/vi/f9IhuWN__Kg/fhddefault.jpg",
+      "width": 1920,
+      "height": 1080
+     }
+    },
+    "channelTitle": "Overwatch Esports",
+    "tags": [
+     "Los Angeles Gladiators",
+     "Shanghai Dragons",
+     "San Francisco Shock",
+     "New York Excelsior",
+     "Los Angeles Valiant",
+     "London Spitfire",
+     "Houston Outlaws",
+     "Florida Mayhem",
+     "Dallas Fuel",
+     "Boston Uprising",
+     "Hangzhou Spark",
+     "Toronto Defiant",
+     "Atlanta Reign",
+     "Guangzhou Charge",
+     "Washington Justice",
+     "Vegas Eternal",
+     "Vancouver Titans",
+     "Seoul Dynasty",
+     "Seoul Infernal",
+     "OWL",
+     "Overwatch League",
+     "esports",
+     "Video Games",
+     "OWL Highlights",
+     "Watchpoint",
+     "OWL2023",
+     "OW2",
+     "6thseason",
+     "Overwatch 2"
+    ],
+    "categoryId": "20",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "en",
+    "localized": {
+     "title": "OWCS 2026 | NA/EMEA | Stage 3 Week 1 Day 2",
+     "description": "Welcome to Stage 3 of OWCS 2026! NA and EMEA's Top 6 are facing off to determine who will represent them at the OWCS World Finals in Guangzhou this December. Let's get into it! \n\n👉Don't forget to subscribe for all the action! https://bit.ly/OWCSYT\n👉Follow OWCS on all of our channels! https://linktr.ee/owcs \n👉Read our Stage 3 Viewers Guide: https://esports.overwatch.com/en-us/news/owcs-2026-stage-3-viewers-guide\n👉View updated schedule and score details: https://esports.overwatch.com/en-us/s...\n👉Join the OWCS Discord: discord.gg/overwatchesports\n👉Play in FACEIT's Daily and Weekly Tournaments to increase your FACEIT Elo, win FACEIT Points, and more! https://www.faceit.com/en/ow2/tournam... \n👉Check the OWE website for news, schedule updates and more! https://esports.overwatch.com/en-us\n\n#OverwatchEsports #Overwatch2 #Overwatch #OWCS #OWEsports #Esports #FACEIT #OWCSChampionsClash #OWCS2026"
+    },
+    "defaultAudioLanguage": "en"
+   },
+   "contentDetails": {
+    "duration": "PT8H24M31S",
+    "dimension": "2d",
+    "definition": "hd",
+    "caption": "false",
+    "licensedContent": true,
+    "contentRating": {},
+    "projection": "rectangular"
+   },
+   "liveStreamingDetails": {
+    "actualStartTime": "2026-10-11T16:39:16Z",
+    "actualEndTime": "2026-10-12T01:04:51Z",
+    "scheduledStartTime": "2026-10-11T16:30:00Z"
+   }
+  },
+  {
+   "kind": "youtube#video",
+   "etag": "AQ1OD9ToPZzAm2LXUCy8OdNLKXY",
+   "id": "xznB7M1zPkM",
+   "snippet": {
+    "publishedAt": "2026-10-08T21:13:49Z",
+    "channelId": "UCiAInBL9kUzz1XRxk66v-gw",
+    "title": "Are the Season 5 patch notes SPOOOKY enough, let us know in the comments! #OWCS #OWCS2026 #overwatch",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/xznB7M1zPkM/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/xznB7M1zPkM/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/xznB7M1zPkM/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/xznB7M1zPkM/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/xznB7M1zPkM/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Overwatch Esports",
+    "categoryId": "20",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "en",
+    "localized": {
+     "title": "Are the Season 5 patch notes SPOOOKY enough, let us know in the comments! #OWCS #OWCS2026 #overwatch",
+     "description": ""
+    },
+    "defaultAudioLanguage": "en"
+   },
+   "contentDetails": {
+    "duration": "PT1M33S",
+    "dimension": "2d",
+    "definition": "hd",
+    "caption": "false",
+    "licensedContent": true,
+    "contentRating": {},
+    "projection": "rectangular"
+   }
+  },
+  {
+   "kind": "youtube#video",
+   "etag": "nBabWmQJqLimNAOwZAZBUpCcVK8",
+   "id": "bci06gUcGmI",
+   "snippet": {
+    "publishedAt": "2026-10-06T19:00:36Z",
+    "channelId": "UCVia_crjzJylRmGq7SHTiaw",
+    "title": "⚔️ Battle for the Fate of Azeroth!",
+    "description": "⚔️ Participate in a war as big as the Old Gods themselves!\n\nBattle for the fate of Azeroth, earn powerful cards, and acquire otherworldly rewards in this event!\n\n#Hearthstone #Warcraft #Gaming",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/bci06gUcGmI/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/bci06gUcGmI/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/bci06gUcGmI/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/bci06gUcGmI/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/bci06gUcGmI/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Hearthstone",
+    "categoryId": "20",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "en",
+    "localized": {
+     "title": "⚔️ Battle for the Fate of Azeroth!",
+     "description": "⚔️ Participate in a war as big as the Old Gods themselves!\n\nBattle for the fate of Azeroth, earn powerful cards, and acquire otherworldly rewards in this event!\n\n#Hearthstone #Warcraft #Gaming"
+    }
+   },
+   "contentDetails": {
+    "duration": "PT40S",
+    "dimension": "2d",
+    "definition": "hd",
+    "caption": "false",
+    "licensedContent": false,
+    "contentRating": {},
+    "projection": "rectangular"
+   }
+  },
+  {
+   "kind": "youtube#video",
+   "etag": "atUu_H95aqYStuC-wVxrLeLuXk8",
+   "id": "QoeBTv_w0Qk",
+   "snippet": {
+    "publishedAt": "2026-10-09T20:37:47Z",
+    "channelId": "UCVia_crjzJylRmGq7SHTiaw",
+    "title": "Old Gods Gauntlet Day 2 | Reign of the Black Empire | Hearthstone",
+    "description": "Join hosts Rarran and Danehearth as your favorite content creators battle it out Old Gods style! Featuring a new corrupted ruleset each day, this two day challenge shows off the power of the Old Gods from Hearthstone's newest expansion: Reign of the Black Empire.\n\nReign of the Black Empire will be available on October 20th.  \n\nPre-Purchase the Mega Bundle: https://us.shop.battle.net/en-us/product/hearthstone-reign-of-the-black-empire-mega-bundle \n\nLearn more about Reign of the Black Empire: https://hearthstone.blizzard.com/en-us/news/24297200/command-the-old-gods-in-reign-of-the-black-empire-hearthstones-next-expansion \n\nCheck out our Card Library: https://hearthstone.blizzard.com/en-us/expansions-adventures/reign-of-the-black-empire \n\nSubscribe! https://www.youtube.com/Hearthstone/subscribe",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/QoeBTv_w0Qk/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/QoeBTv_w0Qk/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/QoeBTv_w0Qk/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/QoeBTv_w0Qk/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/QoeBTv_w0Qk/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     },
+     "fhd": {
+      "url": "https://i.ytimg.com/vi/QoeBTv_w0Qk/fhddefault.jpg",
+      "width": 1920,
+      "height": 1080
+     }
+    },
+    "channelTitle": "Hearthstone",
+    "tags": [
+     "Hearthstone",
+     "Heroes of Warcraft",
+     "Blizzard",
+     "Blizzard Entertainment"
+    ],
+    "categoryId": "20",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "en",
+    "localized": {
+     "title": "Old Gods Gauntlet Day 2 | Reign of the Black Empire | Hearthstone",
+     "description": "Join hosts Rarran and Danehearth as your favorite content creators battle it out Old Gods style! Featuring a new corrupted ruleset each day, this two day challenge shows off the power of the Old Gods from Hearthstone's newest expansion: Reign of the Black Empire.\n\nReign of the Black Empire will be available on October 20th.  \n\nPre-Purchase the Mega Bundle: https://us.shop.battle.net/en-us/product/hearthstone-reign-of-the-black-empire-mega-bundle \n\nLearn more about Reign of the Black Empire: https://hearthstone.blizzard.com/en-us/news/24297200/command-the-old-gods-in-reign-of-the-black-empire-hearthstones-next-expansion \n\nCheck out our Card Library: https://hearthstone.blizzard.com/en-us/expansions-adventures/reign-of-the-black-empire \n\nSubscribe! https://www.youtube.com/Hearthstone/subscribe"
+    },
+    "defaultAudioLanguage": "en"
+   },
+   "contentDetails": {
+    "duration": "PT4H27M46S",
+    "dimension": "2d",
+    "definition": "hd",
+    "caption": "false",
+    "licensedContent": true,
+    "contentRating": {},
+    "projection": "rectangular"
+   },
+   "liveStreamingDetails": {
+    "actualStartTime": "2026-10-09T15:50:56Z",
+    "actualEndTime": "2026-10-09T20:19:26Z",
+    "scheduledStartTime": "2026-10-09T16:00:00Z"
+   }
+  },
+  {
+   "kind": "youtube#video",
+   "etag": "QBtk535RFATsl_XgcNYkmLpG-bQ",
+   "id": "W64QNl4VlLs",
+   "snippet": {
+    "publishedAt": "2026-09-16T21:58:01Z",
+    "channelId": "UCxn8csYeZg6awRnZS-aqg0g",
+    "title": "Diablo IV | Lord of Hatred Collection | Nintendo Switch™ 2",
+    "description": "Now you can unleash Hell whenever, wherever. 😈\n\n🔥 Diablo IV Base Game\n🐺 Vessel of Hatred Expansion\n💀 Lord of Hatred Expansion\n\nDiablo IV: Age of Hatred Collection is Available Now on Nintendo Switch™ 2.",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/W64QNl4VlLs/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/W64QNl4VlLs/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/W64QNl4VlLs/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/W64QNl4VlLs/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/W64QNl4VlLs/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     },
+     "uhd": {
+      "url": "https://i.ytimg.com/vi/W64QNl4VlLs/uhddefault.jpg",
+      "width": 3840,
+      "height": 2160
+     }
+    },
+    "channelTitle": "Diablo",
+    "tags": [
+     "Diablo",
+     "Diablo III",
+     "D3",
+     "Blizzard",
+     "Blizzard Entertainment"
+    ],
+    "categoryId": "20",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "en",
+    "localized": {
+     "title": "Diablo IV | Lord of Hatred Collection | Nintendo Switch™ 2",
+     "description": "Now you can unleash Hell whenever, wherever. 😈\n\n🔥 Diablo IV Base Game\n🐺 Vessel of Hatred Expansion\n💀 Lord of Hatred Expansion\n\nDiablo IV: Age of Hatred Collection is Available Now on Nintendo Switch™ 2."
+    },
+    "defaultAudioLanguage": "en"
+   },
+   "contentDetails": {
+    "duration": "PT1M17S",
+    "dimension": "2d",
+    "definition": "hd",
+    "caption": "true",
+    "licensedContent": true,
+    "contentRating": {},
+    "projection": "rectangular"
+   }
+  },
+  {
+   "kind": "youtube#video",
+   "etag": "P5nIYeLpuYHPcvsB6Q20pFNS4t4",
+   "id": "ZewePNZQvOA",
+   "snippet": {
+    "publishedAt": "2026-10-09T17:00:37Z",
+    "channelId": "UCxn8csYeZg6awRnZS-aqg0g",
+    "title": "Diablo IV | Season of Hell’s Legacy | Your Prime Evil - Baal",
+    "description": "Everything gets destroyed sooner or later. Don’t believe us? Just ask Baal. 💥",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/ZewePNZQvOA/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/ZewePNZQvOA/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/ZewePNZQvOA/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/ZewePNZQvOA/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/ZewePNZQvOA/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     },
+     "fhd": {
+      "url": "https://i.ytimg.com/vi/ZewePNZQvOA/fhddefault.jpg",
+      "width": 1920,
+      "height": 1080
+     }
+    },
+    "channelTitle": "Diablo",
+    "categoryId": "20",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "en",
+    "localized": {
+     "title": "Diablo IV | Season of Hell’s Legacy | Your Prime Evil - Baal",
+     "description": "Everything gets destroyed sooner or later. Don’t believe us? Just ask Baal. 💥"
+    }
+   },
+   "contentDetails": {
+    "duration": "PT34S",
+    "dimension": "2d",
+    "definition": "hd",
+    "caption": "false",
+    "licensedContent": false,
+    "contentRating": {},
+    "projection": "rectangular"
+   }
+  },
+  {
+   "kind": "youtube#video",
+   "etag": "PeRgghbr0kgJl4CXIP28W1wdLDg",
+   "id": "Ih6DVdyQn3I",
+   "snippet": {
+    "publishedAt": "2026-10-05T17:00:23Z",
+    "channelId": "UClOf1XXinvZsy4wKPAkro2A",
+    "title": "Season 5: A Grim Doctrine Launch Trailer | Overwatch",
+    "description": "Something truly wicked is being unleashed during Season 5: A Grim Doctrine.\n\nThe wait is over! Our newest Support Hero is here with the arrival of Doctrine. Freed from his volcanic prison by Doomfist himself, this sinister foe can manipulate life using his Eternal Scepter and mechanical drones, while also empowering each ability with his signature Infuse.\n\nBreak into Watchpoint: Grímsvötn - the Icelandic prison that once held Doctrine and Doomfist, and our first new Escort Map since Overwatch 2 launched. Battle your way through fire and ice as the final chapter in the Reign of Talon starts right here.\n\nThe Halloween mayhem continues this year with our newest event, Mystery Madness: Graveyard Games. You’ll start off as a random Hero and unlock random new powers each time you die. Complete chilling challenges to collect Offerings and help summon the next Hero into the madness.\n\nUnlock haunting new cosmetics through the Season 5 Ultimate Battle Pass, Starter Pack, and in the Shop like Dokiwatch 2.0, our latest collaboration, and new Mythic skin for Wuyang and Mythic weapon skin for Lúcio.\n\nIf you thought you knew Sombra and Roadhog before, get ready to think again. Sombra is hacking her way into the Support role, while Roadhog changes things up with a revamped Scrap Gun and all-new Trash Compactor ability.\n\nAnd that's just the beginning! Look out for Drives coming to Quick Play, Unvaulted Battle Passes, and so much more all season long.\n\nSink your teeth in when Season 5: A Grim Doctrine launches in-game TOMORROW at 11am PT.\n\nOverwatch is free to play on PC and console, including Nintendo Switch™ 2!\n_\nFollow #Overwatch for the latest news:\nInstagram: https://www.instagram.com/playoverwatch\nTikTok: https://www.tiktok.com/@overwatch\nTwitter: http://www.twitter.com/playoverwatch \nFacebook: http://www.facebook.com/playoverwatch",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/Ih6DVdyQn3I/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/Ih6DVdyQn3I/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/Ih6DVdyQn3I/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/Ih6DVdyQn3I/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/Ih6DVdyQn3I/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     },
+     "fhd": {
+      "url": "https://i.ytimg.com/vi/Ih6DVdyQn3I/fhddefault.jpg",
+      "width": 1920,
+      "height": 1080
+     }
+    },
+    "channelTitle": "PlayOverwatch",
+    "tags": [
+     "Overwatch 2",
+     "Overwatch"
+    ],
+    "categoryId": "20",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "en",
+    "localized": {
+     "title": "Season 5: A Grim Doctrine Launch Trailer | Overwatch",
+     "description": "Something truly wicked is being unleashed during Season 5: A Grim Doctrine.\n\nThe wait is over! Our newest Support Hero is here with the arrival of Doctrine. Freed from his volcanic prison by Doomfist himself, this sinister foe can manipulate life using his Eternal Scepter and mechanical drones, while also empowering each ability with his signature Infuse.\n\nBreak into Watchpoint: Grímsvötn - the Icelandic prison that once held Doctrine and Doomfist, and our first new Escort Map since Overwatch 2 launched. Battle your way through fire and ice as the final chapter in the Reign of Talon starts right here.\n\nThe Halloween mayhem continues this year with our newest event, Mystery Madness: Graveyard Games. You’ll start off as a random Hero and unlock random new powers each time you die. Complete chilling challenges to collect Offerings and help summon the next Hero into the madness.\n\nUnlock haunting new cosmetics through the Season 5 Ultimate Battle Pass, Starter Pack, and in the Shop like Dokiwatch 2.0, our latest collaboration, and new Mythic skin for Wuyang and Mythic weapon skin for Lúcio.\n\nIf you thought you knew Sombra and Roadhog before, get ready to think again. Sombra is hacking her way into the Support role, while Roadhog changes things up with a revamped Scrap Gun and all-new Trash Compactor ability.\n\nAnd that's just the beginning! Look out for Drives coming to Quick Play, Unvaulted Battle Passes, and so much more all season long.\n\nSink your teeth in when Season 5: A Grim Doctrine launches in-game TOMORROW at 11am PT.\n\nOverwatch is free to play on PC and console, including Nintendo Switch™ 2!\n_\nFollow #Overwatch for the latest news:\nInstagram: https://www.instagram.com/playoverwatch\nTikTok: https://www.tiktok.com/@overwatch\nTwitter: http://www.twitter.com/playoverwatch \nFacebook: http://www.facebook.com/playoverwatch"
+    },
+    "defaultAudioLanguage": "en-US"
+   },
+   "contentDetails": {
+    "duration": "PT2M21S",
+    "dimension": "2d",
+    "definition": "hd",
+    "caption": "true",
+    "licensedContent": true,
+    "contentRating": {},
+    "projection": "rectangular"
+   }
+  },
+  {
+   "kind": "youtube#video",
+   "etag": "pdvYTAku19DTrA7kZveWo3xba5g",
+   "id": "qX_YBY_tRJI",
+   "snippet": {
+    "publishedAt": "2020-06-15T18:15:34Z",
+    "channelId": "UCpVdq9gLew6E76BmfB2GJ0w",
+    "title": "Mei Spotlight",
+    "description": "Lured by her inquisitive nature and a trail of bizarre climate phenomena, world-famous scientist Mei-Ling Zhou stumbled upon the Nexus and was soon enlisted in the fearsome battles that raged within. One of the first agents to rejoin Overwatch, Mei has a strong sense of right and wrong, and she’s determined to stand up for the weak and innocent everywhere, no matter which Realm they hail from. She’s a powerful ally and a spine-shivering foe, with advanced weather-altering technology that shifts the very architecture of the battleground. Get your parka on and prepare for Mei’s arrival in Heroes of the Storm!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/qX_YBY_tRJI/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/qX_YBY_tRJI/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/qX_YBY_tRJI/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/qX_YBY_tRJI/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/qX_YBY_tRJI/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "Heroes of the Storm",
+    "tags": [
+     "BlizzHeroes",
+     "Heroes of the Storm",
+     "Blizzard Heroes",
+     "Mei",
+     "New Hero"
+    ],
+    "categoryId": "20",
+    "liveBroadcastContent": "none",
+    "defaultLanguage": "en",
+    "localized": {
+     "title": "Mei Spotlight",
+     "description": "Lured by her inquisitive nature and a trail of bizarre climate phenomena, world-famous scientist Mei-Ling Zhou stumbled upon the Nexus and was soon enlisted in the fearsome battles that raged within. One of the first agents to rejoin Overwatch, Mei has a strong sense of right and wrong, and she’s determined to stand up for the weak and innocent everywhere, no matter which Realm they hail from. She’s a powerful ally and a spine-shivering foe, with advanced weather-altering technology that shifts the very architecture of the battleground. Get your parka on and prepare for Mei’s arrival in Heroes of the Storm!"
+    },
+    "defaultAudioLanguage": "en"
+   },
+   "contentDetails": {
+    "duration": "PT2M56S",
+    "dimension": "2d",
+    "definition": "hd",
+    "caption": "true",
+    "licensedContent": true,
+    "contentRating": {},
+    "projection": "rectangular"
+   }
+  }
+ ],
+ "pageInfo": {
+  "totalResults": 15,
+  "resultsPerPage": 15
+ }
+}

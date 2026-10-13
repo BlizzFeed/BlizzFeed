@@ -1,0 +1,811 @@
+{
+ "kind": "youtube#playlistItemListResponse",
+ "etag": "MFOGUlcv0VZIsHGJ2v1sv0qq93E",
+ "nextPageToken": "EAAaHlBUOkNBOGlFRU5DUVVJeVJqWTRPRU16UmtZNU1EYw",
+ "items": [
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "c_p-XkULjIF8K6u_rcvS-fd1LJA",
+   "id": "VVViTGo5UVA5RkFhSHNfNjQ3UWNrR3RnLk5ZVHktS0YwNXJN",
+   "snippet": {
+    "publishedAt": "2026-10-12T21:00:11Z",
+    "channelId": "UCbLj9QP9FAaHs_647QckGtg",
+    "title": "Q: How do you tune a dungeon? A: Carefully!",
+    "description": "Dive into dungeon design with the Forever Devs in this week’s episode of the Podcast, live on our channel!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/NYTy-KF05rM/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/NYTy-KF05rM/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/NYTy-KF05rM/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/NYTy-KF05rM/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/NYTy-KF05rM/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "World of Warcraft",
+    "playlistId": "UUbLj9QP9FAaHs_647QckGtg",
+    "position": 0,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "NYTy-KF05rM"
+    },
+    "videoOwnerChannelTitle": "World of Warcraft",
+    "videoOwnerChannelId": "UCbLj9QP9FAaHs_647QckGtg"
+   },
+   "contentDetails": {
+    "videoId": "NYTy-KF05rM",
+    "videoPublishedAt": "2026-10-12T21:00:11Z"
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "KJoOqGAxXiY3nvh9L1yvkfnr1xw",
+   "id": "VVViTGo5UVA5RkFhSHNfNjQ3UWNrR3RnLnBoeHk1R2F0X0dz",
+   "snippet": {
+    "publishedAt": "2026-10-12T17:00:13Z",
+    "channelId": "UCbLj9QP9FAaHs_647QckGtg",
+    "title": "Midnight Content Update | Labyrinth, Kith’ix Campaign, Aqir Invasions, and more",
+    "description": "A dormant terror has been unleashed. Exterminate swarming forces, challenge a familiar foe in a single-boss raid, and descend into the Labyrinth of Kindo’jan, a new sprawling multi-wing Delve, in Midnight [Patch 12.1.5].\n\nLearn more at: https://us.shop.battle.net/en-us/family/world-of-warcraft   \n\n► Latest WoW news: http://worldofwarcraft.com/news  \n► Subscribe to WoW: http://blizz.ly/WoWYTSub \n► Visit WoW on Battle.net: https://shop.battle.net/family/world-of-warcraft  \n\n-- \n\n► Follow Warcraft on Twitter: https://twitter.com/warcraft  \n► Follow Warcraft on Instagram: https://instagram.com/warcraft  \n► Like Warcraft on Facebook: https://facebook.com/warcraft",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/phxy5Gat_Gs/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/phxy5Gat_Gs/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/phxy5Gat_Gs/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/phxy5Gat_Gs/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/phxy5Gat_Gs/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     },
+     "fhd": {
+      "url": "https://i.ytimg.com/vi/phxy5Gat_Gs/fhddefault.jpg",
+      "width": 1920,
+      "height": 1080
+     }
+    },
+    "channelTitle": "World of Warcraft",
+    "playlistId": "UUbLj9QP9FAaHs_647QckGtg",
+    "position": 1,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "phxy5Gat_Gs"
+    },
+    "videoOwnerChannelTitle": "World of Warcraft",
+    "videoOwnerChannelId": "UCbLj9QP9FAaHs_647QckGtg"
+   },
+   "contentDetails": {
+    "videoId": "phxy5Gat_Gs",
+    "videoPublishedAt": "2026-10-12T17:00:13Z"
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "92JjF_Z148NGiwouLtSWpnt5Gp4",
+   "id": "VVViTGo5UVA5RkFhSHNfNjQ3UWNrR3RnLjhXdW14QzllcUpz",
+   "snippet": {
+    "publishedAt": "2026-10-09T16:13:59Z",
+    "channelId": "UCbLj9QP9FAaHs_647QckGtg",
+    "title": "Wherever your journey in WoW: Forever’s Azeroth begins, there’s something new to see 🔎",
+    "description": "For more on your upcoming leveling journey, check out the full video on our channel",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/8WumxC9eqJs/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/8WumxC9eqJs/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/8WumxC9eqJs/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/8WumxC9eqJs/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/8WumxC9eqJs/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "World of Warcraft",
+    "playlistId": "UUbLj9QP9FAaHs_647QckGtg",
+    "position": 2,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "8WumxC9eqJs"
+    },
+    "videoOwnerChannelTitle": "World of Warcraft",
+    "videoOwnerChannelId": "UCbLj9QP9FAaHs_647QckGtg"
+   },
+   "contentDetails": {
+    "videoId": "8WumxC9eqJs",
+    "videoPublishedAt": "2026-10-09T16:13:59Z"
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "o1K6CxpMNklQhXPcfk_2g-cdXIs",
+   "id": "VVViTGo5UVA5RkFhSHNfNjQ3UWNrR3RnLmRnMjhIdUxUMkMw",
+   "snippet": {
+    "publishedAt": "2026-10-09T16:00:33Z",
+    "channelId": "UCbLj9QP9FAaHs_647QckGtg",
+    "title": "World of Warcraft: Forever - Your Adventure Begins",
+    "description": "Learn about the new quests, characters, and rewards waiting ahead of your leveling journey through Azeroth. \n\n► Latest WoW news: http://worldofwarcraft.com/news \n► Subscribe to WoW: http://blizz.ly/WoWYTSub\n► Visit WoW on Battle.net: https://shop.battle.net/family/world-of-warcraft\n\n--\n\n► Follow Warcraft on Twitter: https://twitter.com/warcraft \n► Follow Warcraft on Instagram: https://instagram.com/warcraft \n► Like Warcraft on Facebook: https://facebook.com/warcraft",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/dg28HuLT2C0/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/dg28HuLT2C0/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/dg28HuLT2C0/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/dg28HuLT2C0/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/dg28HuLT2C0/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     },
+     "fhd": {
+      "url": "https://i.ytimg.com/vi/dg28HuLT2C0/fhddefault.jpg",
+      "width": 1920,
+      "height": 1080
+     }
+    },
+    "channelTitle": "World of Warcraft",
+    "playlistId": "UUbLj9QP9FAaHs_647QckGtg",
+    "position": 3,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "dg28HuLT2C0"
+    },
+    "videoOwnerChannelTitle": "World of Warcraft",
+    "videoOwnerChannelId": "UCbLj9QP9FAaHs_647QckGtg"
+   },
+   "contentDetails": {
+    "videoId": "dg28HuLT2C0",
+    "videoPublishedAt": "2026-10-09T16:00:33Z"
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "qaSkBIbTCOR9rMW_pPF_lCGoZzM",
+   "id": "VVViTGo5UVA5RkFhSHNfNjQ3UWNrR3RnLlE3Z0dFYUFFRUtr",
+   "snippet": {
+    "publishedAt": "2026-10-08T16:29:18Z",
+    "channelId": "UCbLj9QP9FAaHs_647QckGtg",
+    "title": "Beware the tall grass 🦖",
+    "description": "Get more dungeon details in Episode 3 of the WoW: Forever Podcast on our channel!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/Q7gGEaAEEKk/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/Q7gGEaAEEKk/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/Q7gGEaAEEKk/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/Q7gGEaAEEKk/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/Q7gGEaAEEKk/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "World of Warcraft",
+    "playlistId": "UUbLj9QP9FAaHs_647QckGtg",
+    "position": 4,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "Q7gGEaAEEKk"
+    },
+    "videoOwnerChannelTitle": "World of Warcraft",
+    "videoOwnerChannelId": "UCbLj9QP9FAaHs_647QckGtg"
+   },
+   "contentDetails": {
+    "videoId": "Q7gGEaAEEKk",
+    "videoPublishedAt": "2026-10-08T16:29:18Z"
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "KuamJQWpqlBZAUWV98u-t579oj0",
+   "id": "VVViTGo5UVA5RkFhSHNfNjQ3UWNrR3RnLkx3T1dBZjA2WVBn",
+   "snippet": {
+    "publishedAt": "2026-10-08T16:23:52Z",
+    "channelId": "UCbLj9QP9FAaHs_647QckGtg",
+    "title": "Dive into Dungeons with Devs ft. @hammerdancegaming | Episode 3 - The WoW: Forever Podcast",
+    "description": "Join Host @countdowntoclassic, Senior Game Designers Josh “Aggrend” Greenfield, Jay Hartman, and Rowan Ryder, plus special guest @hammerdancegaming for a deep dive discussion breaking down WoW: Forever’s dungeons and other relevant news related to the Beta. \n\nListen to the podcast on your next adventure!\nApple Podcasts: https://podcasts.apple.com/us/podcast/dive-into-dungeons-with-devs-ft-hammerdancegaming/id6816315985?i=1000793890891\nSpotify Podcasts: https://open.spotify.com/episode/3sQN7SCOi5fDRrhLsZSNLT\n\n\nLearn more at: https://worldofwarcraft.blizzard.com/forever\n\n► Latest WoW news: http://worldofwarcraft.com/news \n► Subscribe to WoW: http://blizz.ly/WoWYTSub\n► Visit WoW on Battle.net: https://shop.battle.net/family/world-of-warcraft\n\n--\n\n► Follow Warcraft on Twitter: https://twitter.com/warcraft \n► Follow Warcraft on Instagram: https://instagram.com/warcraft \n► Like Warcraft on Facebook: https://facebook.com/warcraft\n\n0:00 Intro\n1:08 Podcast Updates\n1:30 Beta Updates\n5:34 Diving Into Dungeons\n7:12 Dungeon XP Adjustments\n9:11 Questing vs. Dungeons for XP & Rewards\n11:55 Existing Dungeon Quests\n12:45 Balancing Dungeons & Questing\n15:35 The Ruins of Lordaeron\n20:24 Hall of Thanes\n23:45 Excavation Site: Wetlands\n32:06 Dalaran Dungeon\n39:07 Blackmaw Hold\n43:44 Dungeon Roles & Specs or Mastering Your Spec in Dungeons\n53:31 Raids: Attunements\n55:06 The Long Game\n57:19 Raids: Consumables\n59:21 Favorite Dungeons & Raids to Make",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/LwOWAf06YPg/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/LwOWAf06YPg/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/LwOWAf06YPg/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/LwOWAf06YPg/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/LwOWAf06YPg/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     },
+     "fhd": {
+      "url": "https://i.ytimg.com/vi/LwOWAf06YPg/fhddefault.jpg",
+      "width": 1920,
+      "height": 1080
+     }
+    },
+    "channelTitle": "World of Warcraft",
+    "playlistId": "UUbLj9QP9FAaHs_647QckGtg",
+    "position": 5,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "LwOWAf06YPg"
+    },
+    "videoOwnerChannelTitle": "World of Warcraft",
+    "videoOwnerChannelId": "UCbLj9QP9FAaHs_647QckGtg"
+   },
+   "contentDetails": {
+    "videoId": "LwOWAf06YPg",
+    "videoPublishedAt": "2026-10-08T16:23:52Z"
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "43pzzenE29dJWjHgsmLOsFCrby8",
+   "id": "VVViTGo5UVA5RkFhSHNfNjQ3UWNrR3RnLko2alM3N2R5ZlJ3",
+   "snippet": {
+    "publishedAt": "2026-10-06T22:00:09Z",
+    "channelId": "UCbLj9QP9FAaHs_647QckGtg",
+    "title": "Wield demons, agony, and searing flames to dominate the opposition 🔥",
+    "description": "Full overview of Warlock changes coming with WoW: Forever on our channel!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/J6jS77dyfRw/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/J6jS77dyfRw/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/J6jS77dyfRw/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/J6jS77dyfRw/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/J6jS77dyfRw/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "World of Warcraft",
+    "playlistId": "UUbLj9QP9FAaHs_647QckGtg",
+    "position": 6,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "J6jS77dyfRw"
+    },
+    "videoOwnerChannelTitle": "World of Warcraft",
+    "videoOwnerChannelId": "UCbLj9QP9FAaHs_647QckGtg"
+   },
+   "contentDetails": {
+    "videoId": "J6jS77dyfRw",
+    "videoPublishedAt": "2026-10-06T22:00:09Z"
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "kIdC_yjtv08l8HOh1VTxTjT7SLs",
+   "id": "VVViTGo5UVA5RkFhSHNfNjQ3UWNrR3RnLlVNLTJBbU42SnFR",
+   "snippet": {
+    "publishedAt": "2026-10-06T20:00:17Z",
+    "channelId": "UCbLj9QP9FAaHs_647QckGtg",
+    "title": "When darkness falls, you can wear it as armor or light a new path ✨",
+    "description": "See how your Priest journey starts to unfold in WoW: Forever!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/UM-2AmN6JqQ/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/UM-2AmN6JqQ/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/UM-2AmN6JqQ/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/UM-2AmN6JqQ/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/UM-2AmN6JqQ/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "World of Warcraft",
+    "playlistId": "UUbLj9QP9FAaHs_647QckGtg",
+    "position": 7,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "UM-2AmN6JqQ"
+    },
+    "videoOwnerChannelTitle": "World of Warcraft",
+    "videoOwnerChannelId": "UCbLj9QP9FAaHs_647QckGtg"
+   },
+   "contentDetails": {
+    "videoId": "UM-2AmN6JqQ",
+    "videoPublishedAt": "2026-10-06T20:00:17Z"
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "8TKZImoZfIMCSBY-vHixNWkwp3Y",
+   "id": "VVViTGo5UVA5RkFhSHNfNjQ3UWNrR3RnLkhmM3A3UW15UTVB",
+   "snippet": {
+    "publishedAt": "2026-10-06T18:33:10Z",
+    "channelId": "UCbLj9QP9FAaHs_647QckGtg",
+    "title": "Yes, you can now pop potions while shapeshifted 🧪",
+    "description": "Catch the full Druid Class Highlight on YouTube for more changes coming with WoW: Forever!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/Hf3p7QmyQ5A/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/Hf3p7QmyQ5A/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/Hf3p7QmyQ5A/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/Hf3p7QmyQ5A/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/Hf3p7QmyQ5A/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "World of Warcraft",
+    "playlistId": "UUbLj9QP9FAaHs_647QckGtg",
+    "position": 8,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "Hf3p7QmyQ5A"
+    },
+    "videoOwnerChannelTitle": "World of Warcraft",
+    "videoOwnerChannelId": "UCbLj9QP9FAaHs_647QckGtg"
+   },
+   "contentDetails": {
+    "videoId": "Hf3p7QmyQ5A",
+    "videoPublishedAt": "2026-10-06T18:33:10Z"
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "3GNgjL2PbiSs36f90Stje1Zwvhs",
+   "id": "VVViTGo5UVA5RkFhSHNfNjQ3UWNrR3RnLjhjWXFRREdCTHcw",
+   "snippet": {
+    "publishedAt": "2026-10-06T18:20:48Z",
+    "channelId": "UCbLj9QP9FAaHs_647QckGtg",
+    "title": "Class Highlights - Part 3: Druid, Warlock, Priest | World of Warcraft: Forever",
+    "description": "Our final installment of the Class Highlights series covers the changes to Druids, Warlocks, and Priests in World of Warcraft: Forever. \n\nLearn more at: https://worldofwarcraft.blizzard.com/forever\n\nLatest WoW news: http://worldofwarcraft.com/news  \n► Subscribe to WoW: http://blizz.ly/WoWYTSub \n► Visit WoW on Battle.net: https://shop.battle.net/family/world-of-warcraft  \n-- \n► Follow Warcraft on Twitter: https://twitter.com/warcraft  \n► Follow Warcraft on Instagram: https://instagram.com/warcraft  \n► Like Warcraft on Facebook: https://facebook.com/warcraft\n\n00:00 Intro\n00:15 Druid\n03:05 Warlock\n05:30 Priest\n07:09 Outro",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/8cYqQDGBLw0/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/8cYqQDGBLw0/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/8cYqQDGBLw0/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/8cYqQDGBLw0/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/8cYqQDGBLw0/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     },
+     "fhd": {
+      "url": "https://i.ytimg.com/vi/8cYqQDGBLw0/fhddefault.jpg",
+      "width": 1920,
+      "height": 1080
+     }
+    },
+    "channelTitle": "World of Warcraft",
+    "playlistId": "UUbLj9QP9FAaHs_647QckGtg",
+    "position": 9,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "8cYqQDGBLw0"
+    },
+    "videoOwnerChannelTitle": "World of Warcraft",
+    "videoOwnerChannelId": "UCbLj9QP9FAaHs_647QckGtg"
+   },
+   "contentDetails": {
+    "videoId": "8cYqQDGBLw0",
+    "videoPublishedAt": "2026-10-06T18:20:48Z"
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "WUX4g74ZV4ehBDWlX561xsslpM4",
+   "id": "VVViTGo5UVA5RkFhSHNfNjQ3UWNrR3RnLjh5SjFKWVQ5WldN",
+   "snippet": {
+    "publishedAt": "2026-10-05T22:28:26Z",
+    "channelId": "UCbLj9QP9FAaHs_647QckGtg",
+    "title": "How will your Skyborne adventure begin? 🪽 ☁️",
+    "description": "Live on our channel!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/8yJ1JYT9ZWM/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/8yJ1JYT9ZWM/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/8yJ1JYT9ZWM/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/8yJ1JYT9ZWM/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/8yJ1JYT9ZWM/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "World of Warcraft",
+    "playlistId": "UUbLj9QP9FAaHs_647QckGtg",
+    "position": 10,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "8yJ1JYT9ZWM"
+    },
+    "videoOwnerChannelTitle": "World of Warcraft",
+    "videoOwnerChannelId": "UCbLj9QP9FAaHs_647QckGtg"
+   },
+   "contentDetails": {
+    "videoId": "8yJ1JYT9ZWM",
+    "videoPublishedAt": "2026-10-05T22:28:26Z"
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "F-_XCz6r_maumxYS2ZLecEraCpQ",
+   "id": "VVViTGo5UVA5RkFhSHNfNjQ3UWNrR3RnLkdtQ1NldzNXV1Fv",
+   "snippet": {
+    "publishedAt": "2026-10-05T18:11:56Z",
+    "channelId": "UCbLj9QP9FAaHs_647QckGtg",
+    "title": "Skyborne Lore & Abilities | World of Warcraft: Forever",
+    "description": "First, these High Elven exiles fled Kalimdor under the threat of certain death. The protection of powerful wind spirits provided refuge…for a time. \n\nAfter their benefactors vanished, the Skyborne have begun seeking out a new path. One that takes them out of hiding and into greater Azeroth. \n\nAccess this brand new race by purchasing the Skyborne Heroic Pack, the Skyborne Epic Pack, or the Warcraft Forever Collection: https://us.shop.battle.net/product/world-of-warcraft-forever\n\nLatest WoW news: http://worldofwarcraft.com/news  \n► Subscribe to WoW: http://blizz.ly/WoWYTSub \n► Visit WoW on Battle.net: https://shop.battle.net/family/world-of-warcraft  \n-- \n► Follow Warcraft on Twitter: https://twitter.com/warcraft  \n► Follow Warcraft on Instagram: https://instagram.com/warcraft  \n► Like Warcraft on Facebook: https://facebook.com/warcraft",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/GmCSew3WWQo/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/GmCSew3WWQo/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/GmCSew3WWQo/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/GmCSew3WWQo/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/GmCSew3WWQo/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     },
+     "fhd": {
+      "url": "https://i.ytimg.com/vi/GmCSew3WWQo/fhddefault.jpg",
+      "width": 1920,
+      "height": 1080
+     }
+    },
+    "channelTitle": "World of Warcraft",
+    "playlistId": "UUbLj9QP9FAaHs_647QckGtg",
+    "position": 11,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "GmCSew3WWQo"
+    },
+    "videoOwnerChannelTitle": "World of Warcraft",
+    "videoOwnerChannelId": "UCbLj9QP9FAaHs_647QckGtg"
+   },
+   "contentDetails": {
+    "videoId": "GmCSew3WWQo",
+    "videoPublishedAt": "2026-10-05T18:11:56Z"
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "nybkj2voVeRlbQ6ZX8T02sjpmTE",
+   "id": "VVViTGo5UVA5RkFhSHNfNjQ3UWNrR3RnLkJ2MTZTQWdqUUdZ",
+   "snippet": {
+    "publishedAt": "2026-10-04T19:00:39Z",
+    "channelId": "UCbLj9QP9FAaHs_647QckGtg",
+    "title": "Swim in it, fish in it, fight Murlocs in it 🌊",
+    "description": "",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/Bv16SAgjQGY/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/Bv16SAgjQGY/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/Bv16SAgjQGY/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/Bv16SAgjQGY/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/Bv16SAgjQGY/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     },
+     "qhd": {
+      "url": "https://i.ytimg.com/vi/Bv16SAgjQGY/qhddefault.jpg",
+      "width": 2560,
+      "height": 1440
+     }
+    },
+    "channelTitle": "World of Warcraft",
+    "playlistId": "UUbLj9QP9FAaHs_647QckGtg",
+    "position": 12,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "Bv16SAgjQGY"
+    },
+    "videoOwnerChannelTitle": "World of Warcraft",
+    "videoOwnerChannelId": "UCbLj9QP9FAaHs_647QckGtg"
+   },
+   "contentDetails": {
+    "videoId": "Bv16SAgjQGY",
+    "videoPublishedAt": "2026-10-04T19:00:39Z"
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "5fbjU5okqq39x4yKV2ptoC0QKBE",
+   "id": "VVViTGo5UVA5RkFhSHNfNjQ3UWNrR3RnLmRUZ1hGZTduZ1Fz",
+   "snippet": {
+    "publishedAt": "2026-10-04T17:00:27Z",
+    "channelId": "UCbLj9QP9FAaHs_647QckGtg",
+    "title": "Paladins, feel free to throw that Lay on Hands Hail Mary every 20 mins instead of once an hour ❤️‍🩹",
+    "description": "Watch Episode 2 of the WoW: Forever Podcast on our YouTube for more class info!",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/dTgXFe7ngQs/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/dTgXFe7ngQs/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/dTgXFe7ngQs/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/dTgXFe7ngQs/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/dTgXFe7ngQs/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     }
+    },
+    "channelTitle": "World of Warcraft",
+    "playlistId": "UUbLj9QP9FAaHs_647QckGtg",
+    "position": 13,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "dTgXFe7ngQs"
+    },
+    "videoOwnerChannelTitle": "World of Warcraft",
+    "videoOwnerChannelId": "UCbLj9QP9FAaHs_647QckGtg"
+   },
+   "contentDetails": {
+    "videoId": "dTgXFe7ngQs",
+    "videoPublishedAt": "2026-10-04T17:00:27Z"
+   }
+  },
+  {
+   "kind": "youtube#playlistItem",
+   "etag": "74Ids1KR0WRh_sUK1Pj29y6nxhI",
+   "id": "VVViTGo5UVA5RkFhSHNfNjQ3UWNrR3RnLkxxbE9sYnZhVHNj",
+   "snippet": {
+    "publishedAt": "2026-10-03T17:00:28Z",
+    "channelId": "UCbLj9QP9FAaHs_647QckGtg",
+    "title": "Class Highlights - Part 2: Hunter, Mage, Paladin | World of Warcraft: Forever",
+    "description": "In Part 2 of our Class Highlights series, we break down everything you can expect when you roll a Hunter, Mage, or Paladin in World of Warcraft: Forever. \n\nLearn more at: https://worldofwarcraft.blizzard.com/forever  \n\n► Latest WoW news: http://worldofwarcraft.com/news  \n► Subscribe to WoW: http://blizz.ly/WoWYTSub \n► Visit WoW on Battle.net: https://shop.battle.net/family/world-of-warcraft  \n-- \n► Follow Warcraft on Twitter: https://twitter.com/warcraft  \n► Follow Warcraft on Instagram: https://instagram.com/warcraft  \n► Like Warcraft on Facebook: https://facebook.com/warcraft\n\n00:00 Intro\n00:21 Hunter\n01:54 Mage\n04:02 Paladin\n06:08 Outro",
+    "thumbnails": {
+     "default": {
+      "url": "https://i.ytimg.com/vi/LqlOlbvaTsc/default.jpg",
+      "width": 120,
+      "height": 90
+     },
+     "medium": {
+      "url": "https://i.ytimg.com/vi/LqlOlbvaTsc/mqdefault.jpg",
+      "width": 320,
+      "height": 180
+     },
+     "high": {
+      "url": "https://i.ytimg.com/vi/LqlOlbvaTsc/hqdefault.jpg",
+      "width": 480,
+      "height": 360
+     },
+     "standard": {
+      "url": "https://i.ytimg.com/vi/LqlOlbvaTsc/sddefault.jpg",
+      "width": 640,
+      "height": 480
+     },
+     "maxres": {
+      "url": "https://i.ytimg.com/vi/LqlOlbvaTsc/maxresdefault.jpg",
+      "width": 1280,
+      "height": 720
+     },
+     "fhd": {
+      "url": "https://i.ytimg.com/vi/LqlOlbvaTsc/fhddefault.jpg",
+      "width": 1920,
+      "height": 1080
+     }
+    },
+    "channelTitle": "World of Warcraft",
+    "playlistId": "UUbLj9QP9FAaHs_647QckGtg",
+    "position": 14,
+    "resourceId": {
+     "kind": "youtube#video",
+     "videoId": "LqlOlbvaTsc"
+    },
+    "videoOwnerChannelTitle": "World of Warcraft",
+    "videoOwnerChannelId": "UCbLj9QP9FAaHs_647QckGtg"
+   },
+   "contentDetails": {
+    "videoId": "LqlOlbvaTsc",
+    "videoPublishedAt": "2026-10-03T17:00:28Z"
+   }
+  }
+ ],
+ "pageInfo": {
+  "totalResults": 2389,
+  "resultsPerPage": 15
+ }
+}

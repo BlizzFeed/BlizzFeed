@@ -6,9 +6,10 @@ const MAX_RETRY_SECONDS = 30;
 export const TIMEOUT_MS = 20000;
 
 export class HttpError extends Error {
-	constructor(response) {
+	constructor(response, body = '') {
 		super(`${response.status} ${response.statusText} for ${response.url}`);
 		this.status = response.status;
+		this.body = body;
 	}
 }
 
@@ -32,8 +33,7 @@ export async function get(url, { headers = {}, params } = {}) {
 		response = await send();
 	}
 	if (!response.ok) {
-		await response.body?.cancel();
-		throw new HttpError(response);
+		throw new HttpError(response, (await response.text().catch(() => '')).slice(0, 2000));
 	}
 	return response;
 }
