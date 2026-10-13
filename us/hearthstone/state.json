@@ -18,7 +18,7 @@
       ],
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "blt5628b20039bf3456": {
       "key": "blt5628b20039bf3456",
@@ -126,12 +126,12 @@
       ],
       "subscriptionIds": [],
       "destination": "/product/hearthstone-reign-of-the-black-empire-mega-bundle?p=2120904",
-      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt45ffebcf233d6ba3/6a95c027dee88415dbcba8ec/HS_36p6_MegaBundle_PP_BattleNet_Shop_Browsing_Card_1920x1080_DB03.png",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt8dc91900a8b2fa1b/6ac3fd6edee8845657cbb150/HS_MegaBundle_LC_BattleNet_Shop_Browsing_Card_1920x1080_DB04_NoChest_36p6.png",
       "sections": [
         "Limited Time Bundles",
         "Web Offers"
       ],
-      "badge": "New",
+      "badge": null,
       "price": {
         "fullAmount": "$79.99",
         "discountAmount": null,
@@ -159,7 +159,7 @@
       ],
       "subscriptionIds": [],
       "destination": "/product/hearthstone-reign-of-the-black-empire-mega-bundle?p=2120905",
-      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt5b3d9833b446c525/6a95c24a4b66aadf5691d058/HS_36p6_Standard_Bundle_PP_BattleNet_Shop_Browsing_Card_1920x1080_DB02B.png",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blte456e7b47b3fc22a/6ac3fd6e4b66aa652291d87d/HS_36p6_StandardBundle_LC_BattleNet_Shop_Browsing_Card_1920x1080_LZO01.png",
       "sections": [
         "Limited Time Bundles",
         "Web Offers"
@@ -3372,7 +3372,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "blt1d1fbd6cc3183da4": {
       "key": "blt1d1fbd6cc3183da4",
@@ -3429,7 +3429,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "bltfcd1387370ad0ffa": {
       "key": "bltfcd1387370ad0ffa",
