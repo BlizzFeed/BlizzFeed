@@ -14,6 +14,7 @@ const DIGEST = {
 const COLOR = { new: 'added', back: 'added', gone: 'down', banner: 'log', details: 'log' }; // the rest is orange
 const MAX_LINES = 12;
 const MAX_IMAGES = 10; // the most a gallery holds
+const GAP = { type: 14, divider: false, spacing: 1 };
 
 /** A digest's title; a post without a type is a mix, folded past the cap. */
 export const digestTitle = (type, n) => `${n} ${DIGEST[type ?? 'more']}`;
@@ -170,7 +171,8 @@ function detailsBody(events, states) {
 	}
 	const body = [...groups.values()].flatMap(({ lines, items }, n) => {
 		const block = d.diffBlock(lines);
-		return [{ ...block, id: block.id + n }, d.text(items.join('\n'))]; // every id must be unique
+		const group = [{ ...block, id: block.id + n }, d.text(items.join('\n'))]; // every id must be unique
+		return n ? [GAP, ...group] : group; // without the gap a block hugs the list above it on mobile
 	});
 	if (events.length > MAX_LINES) {
 		body.push(d.text(`-# …and ${events.length - MAX_LINES} more`));
