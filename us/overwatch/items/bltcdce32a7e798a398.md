@@ -2,7 +2,7 @@
 
 - Key: bltcdce32a7e798a398
 - Status: listed
-- Sections: Featured, Seasonal Offers
+- Sections: Seasonal Offers
 - First seen: 2026-10-09T03:10:55Z
 - Badge: New
 - Price: $39.99
