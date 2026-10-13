@@ -564,8 +564,9 @@
       "price": null,
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-13T19:19:31Z"
     },
     "p:2130931": {
       "key": "p:2130931",
@@ -628,8 +629,9 @@
       "price": null,
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-13T19:19:31Z"
     },
     "p:1850122": {
       "key": "p:1850122",
@@ -659,8 +661,9 @@
       "price": null,
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-13T19:19:31Z"
     }
   },
   "suspect": false
