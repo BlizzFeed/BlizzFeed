@@ -1,5 +1,461 @@
 [
   {
+    "id": "23284208",
+    "title": "Galakrond's Awakening Chapter 4 - Live Now!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23284208/galakrond-s-awakening-chapter-4-live-now",
+    "date": "2020-02-11T18:00:00Z",
+    "summary": "It’s the final countdown! The last chapter of Galakrond’s Awakening is now available!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/q8/Q8O57L5G1FU21580936933205.jpg"
+  },
+  {
+    "id": "23305788",
+    "title": "Introducing the Demon Hunter",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23305788/introducing-the-demon-hunter",
+    "date": "2020-03-17T17:00:00Z",
+    "summary": "Are you prepared?",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/os/OSGO4L8FO1UQ1583911502155.jpg"
+  },
+  {
+    "id": "23312587",
+    "title": "Dragons Enter Battlegrounds – 16.4 Patch Notes – February 26",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23312587/dragons-enter-battlegrounds-16-4-patch-notes-february-26",
+    "date": "2020-02-26T18:00:00Z",
+    "summary": "We've got Dragons, 7 new Heroes, and 18 new minions coming to Battlegrounds!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/eg/EG0JPV0APAS11581638913856.jpg"
+  },
+  {
+    "id": "23313807",
+    "title": "Announcing the Relocation of Masters Tour Indonesia to Los Angeles",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23313807/announcing-the-relocation-of-masters-tour-indonesia-to-los-angeles",
+    "date": "2020-02-18T21:00:00Z",
+    "summary": "Hearthstone Masters Tour is moving from Indonesia to Los Angeles",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/jj/JJQX7S1MW34M1581620585207.png"
+  },
+  {
+    "id": "23318077",
+    "title": "Announcing the Restructuring of Masters Tour Los Angeles to Online-Only",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23318077/announcing-the-restructuring-of-masters-tour-los-angeles-to-online-only",
+    "date": "2020-03-06T19:02:00Z",
+    "summary": "Masters Tour Los Angeles is Now Online-Only",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/86/86RGQAPAOOWU1583526730781.png"
+  },
+  {
+    "id": "23318078",
+    "title": "Masters Tour Los Angeles Viewer’s Guide",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23318078/masters-tour-los-angeles-viewers-guide",
+    "date": "2020-03-16T16:48:00Z",
+    "summary": "The second Masters Tour stop of 2020 is ready to begin!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/up/UP6XQNERIHM01584031493284.png"
+  },
+  {
+    "id": "23319439",
+    "title": "The Spirit of Competition – Hearthstone Anniversary Event",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23319439/the-spirit-of-competition-hearthstone-anniversary-event",
+    "date": "2020-03-04T18:00:00Z",
+    "summary": "We're celebrating six years of Hearthstone with special rewards, quests, and Tavern Brawls!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/nt/NTW1FN1C2W8M1582151331020.png"
+  },
+  {
+    "id": "23319440",
+    "title": "Hearthstone Updates – March 17 – Patch 16.6",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23319440/hearthstone-updates-march-17-patch-16-6",
+    "date": "2020-03-17T17:00:00Z",
+    "summary": "Patch 16.6 brings balance updates, a new Battlegrounds Hero, and Pre-Purchase for Ashes of Outland!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/qq/QQD6QGXS4IU21583911837495.jpg"
+  },
+  {
+    "id": "23319441",
+    "title": "Welcome to the Year of the Phoenix!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23319441/welcome-to-the-year-of-the-phoenix",
+    "date": "2020-03-17T17:00:00Z",
+    "summary": "We've got card pack changes, an overhaul for Ranked Mode, a major update for Priest, and so much more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/oj/OJQKTAKGMR6F1583915785517.jpg"
+  },
+  {
+    "id": "23324071",
+    "title": "Announcing Ashes of Outland – Hearthstone's Newest Expansion!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23324071/announcing-ashes-of-outland-hearthstone-s-newest-expansion",
+    "date": "2020-03-17T17:00:00Z",
+    "summary": "Launching worldwide on April 7, Ashes of Outland will feature the new Demon Hunter class, 135 new cards, brand-new mechanics, a host of game improvements, and more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/nn/NNO1MP2JG3MP1584462234801.jpg"
+  },
+  {
+    "id": "23334168",
+    "title": "Arena Leaderboards Update: December 2019 – February 2020",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23334168/arena-leaderboards-update-december-2019-february-2020",
+    "date": "2020-03-12T17:00:00Z",
+    "summary": "Arena rankings reflect players’ best 30 consecutive runs throughout a season.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/1FQV5WKQQGND1386713896853.jpg"
+  },
+  {
+    "id": "23335603",
+    "title": "Save the Date: Hearthstone 2020 Showcase Coming March 17!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23335603/save-the-date-hearthstone-2020-showcase-coming-march-17",
+    "date": "2020-03-13T17:00:00Z",
+    "summary": "Tune in on March 17 for a preview of new content and major changes coming to Hearthstone.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/s4/S4QT69PQ2KGB1583774778626.png"
+  },
+  {
+    "id": "23357895",
+    "title": "Open Ashes of Outland Packs at Home at Your Own Pre-Release Fireside Gathering!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23357895/open-ashes-of-outland-packs-at-home-at-your-own-pre-release-fireside-gathering",
+    "date": "2020-03-24T17:00:00Z",
+    "summary": "It’s almost time to take up arms with the Demon Hunters in Outland!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/y8/Y8FWPHKXV2J81584639514030.png"
+  },
+  {
+    "id": "23357896",
+    "title": "Ashes of Outland Patch 17.0 – March 26",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23357896/ashes-of-outland-patch-17-0-march-26",
+    "date": "2020-03-26T17:00:00Z",
+    "summary": "Priest updates, Hall of Fame, and Battlegrounds changes are included in today’s update.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/l7/L70QGU1EQ9861584648208239.jpg"
+  },
+  {
+    "id": "23369558",
+    "title": "Announcing Masters Tour Jönköping and Upcoming Asia-Pacific Masters Tour Will Be Online-Only",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23369558/announcing-masters-tour-jonkoping-and-upcoming-asia-pacific-masters-tour-will-be-online-only",
+    "date": "2020-03-30T17:00:00Z",
+    "summary": "Masters Tour Jönköping and Masters Tour Asia-Pacific To Be Online-Only",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/f4/F4VZAZ5RGPX91585272102099.jpg"
+  },
+  {
+    "id": "23369565",
+    "title": "Ashes of Outland and the Demon Hunter are Now Live!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23369565/ashes-of-outland-and-the-demon-hunter-are-now-live",
+    "date": "2020-04-07T17:00:00Z",
+    "summary": "Ashes of Outland introduces the Demon Hunter—Hearthstone’s first-ever new class—as well as 135 exciting new cards, new mechanics, and more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/t9/T9ZXTXZDZ0GR1585682522972.jpg"
+  },
+  {
+    "id": "23387529",
+    "title": "Introducing the Newest Hearthstone Grandmasters!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23387529/introducing-the-newest-hearthstone-grandmasters",
+    "date": "2020-04-10T17:34:00Z",
+    "summary": "Introducing the Newest Hearthstone Grandmasters!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ax/AXM2R80JYMZK1586389635550.jpg"
+  },
+  {
+    "id": "23389389",
+    "title": "Announcing the Outland Inn-vitational!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23389389/announcing-the-outland-inn-vitational",
+    "date": "2020-04-15T17:00:00Z",
+    "summary": "Watch as 20 Hearthstone personalities duke it out for US $100,000, Demon Hunter style.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/4m/4M3W2JM9HNML1586473510105.jpg"
+  },
+  {
+    "id": "23391368",
+    "title": "Grandmasters 2020 Season 1 Viewer’s Guide",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23391368/grandmasters-2020-season-1-viewers-guide",
+    "date": "2020-04-10T23:39:00Z",
+    "summary": "The first season of Grandmasters 2020 is here!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/t1/T1BPIUWBRLS91586737579133.jpg"
+  },
+  {
+    "id": "23408967",
+    "title": "Card Back Creation Livestreams, Starting May 18!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23408967/card-back-creation-livestreams-starting-may-18",
+    "date": "2020-05-13T17:00:00Z",
+    "summary": "Watch us bring the September Monthly Card Back to life, from concept to completion!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/2a/2AMRTPALJON41589331814758.jpg"
+  },
+  {
+    "id": "23416841",
+    "title": "Arena Leaderboards Update: February – April 2020",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23416841/arena-leaderboards-update-february-april-2020",
+    "date": "2020-05-04T21:00:00Z",
+    "summary": "Arena rankings reflect players’ best 30 consecutive runs throughout a season.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/1FQV5WKQQGND1386713896853.jpg"
+  },
+  {
+    "id": "23418923",
+    "title": "Hearthstone Updates – May 12 – Patch 17.2",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23418923/hearthstone-updates-may-12-patch-17-2",
+    "date": "2020-05-11T17:00:00Z",
+    "summary": "The patch includes new Battlegrounds Heroes, deck re-ordering, and other game improvements.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/k5/K5F5QK2QTYYH1588614934742.jpg"
+  },
+  {
+    "id": "23426180",
+    "title": "17.2.1 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23426180/17-2-1-patch-notes",
+    "date": "2020-05-15T17:00:00Z",
+    "summary": "The 17.2.1 patch contains balance updates for 12 cards in Standard and bug fix for Ethereal Conjurer.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/pc/PCIHHELJQKJR1589481912979.png"
+  },
+  {
+    "id": "23429187",
+    "title": "Masters Tour Montreal Moves Online and Qualifiers Begin!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23429187/masters-tour-montreal-moves-online-and-qualifiers-begin",
+    "date": "2020-05-21T17:00:00Z",
+    "summary": "Following the recent announcement that DreamHack Montreal has been postponed to 2021, we are restructuring Masters Tour Montreal to an online-only event.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/5m/RSCLA5NLSYE51590763897450.png"
+  },
+  {
+    "id": "23440114",
+    "title": "17.4 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23440114/17-4-patch-notes",
+    "date": "2020-06-08T17:00:00Z",
+    "summary": "The Felfire Festival welcomes Pirates to Battlegrounds, the Trial by Felfire Solo Adventure, and more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/dz/DZN87DZTB8JE1590770110974.jpg"
+  },
+  {
+    "id": "23440115",
+    "title": "Welcome to the Felfire Festival of Music and VENGEANCE",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23440115/welcome-to-the-felfire-festival-of-music-and-vengeance",
+    "date": "2020-06-08T17:00:00Z",
+    "summary": "The Felfire Festival brings Pirates to Battlegrounds, the Trial by Felfire Story Adventure, and more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/0g/0GRDLTFI3PAO1591215496291.jpg"
+  },
+  {
+    "id": "23442721",
+    "title": "Announcing Battlegrounds Brawl: Pirates & Mayhem",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23442721/announcing-battlegrounds-brawl-pirates-mayhem",
+    "date": "2020-06-16T16:59:00Z",
+    "summary": "The Battlegrounds Brawl returns with $200,000 on the line.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/py/PY2PYTHUPN2S1592252361706.jpg"
+  },
+  {
+    "id": "23442723",
+    "title": "17.4.1 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23442723/17-4-1-patch-notes",
+    "date": "2020-06-17T17:00:00Z",
+    "summary": "The 17.4.1 patch brings Battlegrounds balance updates, few bug fixes, and a change for Twin Slice.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/sj/SJSY8557F0F01592342104213.png"
+  },
+  {
+    "id": "23445056",
+    "title": "Masters Tour Online: Jönköping Viewer’s Guide",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23445056/masters-tour-online-jonkoping-viewers-guide",
+    "date": "2020-06-11T17:00:00Z",
+    "summary": "The third Masters Tour stop of 2020 is ready to begin!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/dg/DGYI066KD7XT1591723519844.jpg"
+  },
+  {
+    "id": "23453343",
+    "title": "Announcing Scholomance Academy – Hearthstone’s Newest Expansion!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23453343/announcing-scholomance-academy-hearthstones-newest-expansion",
+    "date": "2020-07-14T17:00:00Z",
+    "summary": "Scholomance Academy brings 135 new cards designed to supercharge your matches with arcane splendor and encourage all manner of never-before-seen sorcerous synergies.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/kd/KD9QT07QPQTR1594673292642.jpg"
+  },
+  {
+    "id": "23453348",
+    "title": "The Masters Tour Online: Jönköping Champion is Here!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23453348/the-masters-tour-online-jonkoping-champion-is-here",
+    "date": "2020-06-14T22:09:00Z",
+    "summary": "The Masters Tour Online: Jönköping Champion Has Been Crowned!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/m5/M5AKGW2KN8OJ1592177138948.jpg"
+  },
+  {
+    "id": "23463127",
+    "title": "18.0 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23463127/18-0-patch-notes",
+    "date": "2020-07-30T17:00:00Z",
+    "summary": "Prepping for Scholomance Academy, the 18.0 patch includes Battlegrounds updates and more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/t8/T8VDDR1UUGYO1595455347242.jpg"
+  },
+  {
+    "id": "23469099",
+    "title": "Hearthstone 17.6 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23469099/hearthstone-17-6-patch-notes",
+    "date": "2020-07-14T17:00:00Z",
+    "summary": "The 17.6 patch includes pre-purchase for Scholomance Academy, Battlegrounds updates, balance changes for Standard, and more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ec/ECA8LH7MAPRM1593712894372.png"
+  },
+  {
+    "id": "23471112",
+    "title": "Arena Leaderboards Update: April – June 2020",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23471112/arena-leaderboards-update-april-june-2020",
+    "date": "2020-07-10T17:00:00Z",
+    "summary": "Arena rankings reflect players’ best 30 consecutive runs throughout a season.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/1FQV5WKQQGND1386713896853.jpg"
+  },
+  {
+    "id": "23473110",
+    "title": "Hearthstone Masters Tour Online: Asia-Pacific Viewer’s Guide",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23473110/hearthstone-masters-tour-online-asia-pacific-viewers-guide",
+    "date": "2020-07-12T17:00:00Z",
+    "summary": "Hearthstone Masters Tour returns with Hearthstone Masters Tour Online: Asia-Pacific, beginning Thursday, July 16, 2020.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/vb/VB3C3YN7KY6E1594248913141.jpg"
+  },
+  {
+    "id": "23479799",
+    "title": "Tales From The Tavern - Masters Tour Online: Asia-Pacific",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23479799/tales-from-the-tavern-masters-tour-online-asia-pacific",
+    "date": "2020-07-15T16:38:00Z",
+    "summary": "Lorinda breaks down the key players to watch at this weekend’s Masters Tour Online: Asia-Pacific!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/mx/MXPSP2J1JKAE1594831066112.png"
+  },
+  {
+    "id": "23479807",
+    "title": "Scholomance Academy Launches August 6! Open Packs at Home at Your Own Pre-Release Fireside Gathering!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23479807/scholomance-academy-launches-august-6-open-packs-at-home-at-your-own-pre-release-fireside-gathering",
+    "date": "2020-07-21T17:00:00Z",
+    "summary": "It’s nearly time to begin your pursuits of academic excellence!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/lo/LOJLISAZM5541595026674954.jpg"
+  },
+  {
+    "id": "23482890",
+    "title": "A New Champion Has Been Crowned at Masters Tour Online: Asia-Pacific!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23482890/a-new-champion-has-been-crowned-at-masters-tour-online-asia-pacific",
+    "date": "2020-07-19T08:16:00Z",
+    "summary": "The first Italian Masters Tour champion is here!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/7v/7VKGSJ7Y8P9P1595146541849.png"
+  },
+  {
+    "id": "23482894",
+    "title": "Masters Tour Online: Madrid is Now in October!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23482894/masters-tour-online-madrid-is-now-in-october",
+    "date": "2020-07-23T17:00:00Z",
+    "summary": "Masters Tour Online: Madrid is now taking place October 23-25!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/5a/5AIWYLZVNHTA1595293435906.jpg"
+  },
+  {
+    "id": "23486106",
+    "title": "Scholomance Academy is NOW LIVE!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23486106/scholomance-academy-is-now-live",
+    "date": "2020-08-06T17:00:00Z",
+    "summary": "Hearthstone’s newest expansion is live! Log-in now to receive a free class Legendary!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/lo/LORE26YSXUBP1595883958005.jpg"
+  },
+  {
+    "id": "23494815",
+    "title": "18.0.2 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23494815/18-0-2-patch-notes",
+    "date": "2020-08-17T17:00:00Z",
+    "summary": "The patch includes updates for Battlegrounds, changes for two minions in Standard, and more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/0f/0FPWH0JRBUGE1597437915659.png"
+  },
+  {
+    "id": "23494816",
+    "title": "Announcing the Scholomance Inn-vitational!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23494816/announcing-the-scholomance-inn-vitational",
+    "date": "2020-08-18T17:00:00Z",
+    "summary": "Who will take home the lion’s share of the $100,000 prize pool and the title of Scholomance Inn-vitational champions?",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/bi/BIQB3E0EAR8C1597686356952.jpg"
+  },
+  {
+    "id": "23494821",
+    "title": "Hearthstone Masters Tour Online: Montreal Viewer’s Guide",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23494821/hearthstone-masters-tour-online-montreal-viewers-guide",
+    "date": "2020-09-06T15:00:00Z",
+    "summary": "Hearthstone Masters Tour returns this Friday at 6 am PDT only on YouTube!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/nu/NULETMI5CSSP1599257557165.jpg"
+  },
+  {
+    "id": "23494822",
+    "title": "Arena Leaderboards Update: July – August",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23494822/arena-leaderboards-update-july-august",
+    "date": "2020-09-14T17:00:00Z",
+    "summary": "Arena rankings reflect players’ best 30 consecutive runs throughout a season.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/1FQV5WKQQGND1386713896853.jpg"
+  },
+  {
+    "id": "23497925",
+    "title": "Hearthstone Grandmasters 2020 Season 2 Viewer’s Guide",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23497925/hearthstone-grandmasters-2020-season-2-viewers-guide",
+    "date": "2020-08-10T17:00:00Z",
+    "summary": "Hearthstone Grandmasters returns for Season 2 on August 14!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/lf/LFZG4CUX57D11596748916608.png"
+  },
+  {
+    "id": "23509389",
+    "title": "Who Dares Enter the Forbidden Library!?",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23509389/who-dares-enter-the-forbidden-library",
+    "date": "2020-09-03T16:55:00Z",
+    "summary": "This limited-time event brings the permanent addition of Battleground Parties, a new solo experience, the return of Heroic Brawliseum, and more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/qv/QVOHYCGUOEC91598636765298.jpg"
+  },
+  {
+    "id": "23509390",
+    "title": "18.2 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23509390/18-2-patch-notes",
+    "date": "2020-09-03T16:55:00Z",
+    "summary": "This patch introduces Battlegrounds parties, the Forbidden Library limited-time event, balance updates, and more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/zk/ZKTRD3TOX7H91598977165702.jpg"
+  },
+  {
+    "id": "23516575",
+    "title": "Tales from the Tavern: Eggowaffle",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23516575/tales-from-the-tavern-eggowaffle",
+    "date": "2020-09-07T16:23:00Z",
+    "summary": "L0rinda explores the background of Eggowaffle, and why he is worth watching at this weekend’s Masters Tour Online: Montreal!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/v0/V0ITDOVQ587T1599495780897.jpg"
+  },
+  {
+    "id": "23516577",
+    "title": "Tales from the Tavern: GamerRVG",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23516577/tales-from-the-tavern-gamerrvg",
+    "date": "2020-09-08T19:56:00Z",
+    "summary": "L0rinda explores the background of GamerRVG, and why he is worth watching at this weekend’s Masters Tour Online: Montreal!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/mx/MXIUG9LB293K1599595223480.jpg"
+  },
+  {
+    "id": "23516578",
+    "title": "Tales from the Tavern: Gaby",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23516578/tales-from-the-tavern-gaby",
+    "date": "2020-09-09T20:00:00Z",
+    "summary": "L0rinda explores the background of Gaby, and why he is worth watching at this weekend’s Masters Tour Online: Montreal!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/wp/WPP3272BO9RA1599678370658.jpg"
+  },
+  {
+    "id": "23521818",
+    "title": "Tales from the Tavern: Pizza",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23521818/tales-from-the-tavern-pizza",
+    "date": "2020-09-10T20:00:00Z",
+    "summary": "L0rinda explores the background of Pizza, and why he is worth watching at this weekend’s Masters Tour Online: Montreal!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/d8/D8YZ9OWR8VYC1599762090125.jpg"
+  },
+  {
+    "id": "23521826",
+    "title": "EMEA Battlegrounds Cup: Qualifications Open Now!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23521826/emea-battlegrounds-cup-qualifications-open-now",
+    "date": "2020-09-13T00:13:00Z",
+    "summary": "Your chance to compete in the first EMEA Battlegrounds Cup is here!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/cc/CCUU6W4PII8N1598956947162.jpg"
+  },
+  {
+    "id": "23521827",
+    "title": "Frenetic is the Masters Tour Online: Montreal Champion!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23521827/frenetic-is-the-masters-tour-online-montreal-champion",
+    "date": "2020-09-14T00:24:00Z",
+    "summary": "Frenetic is the first Spanish Masters Tour champion!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ac/ACIZDMNU6EHD1600042545287.png"
+  },
+  {
+    "id": "23523062",
+    "title": "18.4 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23523062/18-4-patch-notes",
+    "date": "2020-09-28T17:00:00Z",
+    "summary": "The 18.4 patch includes a Battlegrounds rating reset and Elementals update, Dual-Class Arena, and more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/h4/H4J3QTPCHMCW1600796383335.jpg"
+  },
+  {
+    "id": "23523063",
+    "title": "Your Attendance is Requested at the Masquerade Ball!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23523063/your-attendance-is-requested-at-the-masquerade-ball",
+    "date": "2020-09-28T17:00:00Z",
+    "summary": "This limited-time event features new content unlocking weekly including a major Battlegrounds update, new Tavern Brawls, Dual-Class Arena, and more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/w8/W8D1FRLDBMJB1600733657511.jpg"
+  },
+  {
+    "id": "23523064",
+    "title": "Developer Insights: Hearthstone Battlegrounds Rating System Update",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23523064/developer-insights-hearthstone-battlegrounds-rating-system-update",
+    "date": "2020-09-28T17:00:00Z",
+    "summary": "Take a deep dive into the new Battlegrounds rating system introduced in the 18.4 patch!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/cn/CNTASJPAY2R31602872319956.jpg"
+  },
+  {
+    "id": "23523205",
+    "title": "Save the Date: 2020 Hearthstone World Championship",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23523205/save-the-date-2020-hearthstone-world-championship",
+    "date": "2020-09-17T15:00:00Z",
+    "summary": "Watch live as the eight best Hearthstone players in the world compete in the 2020 World Championship!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/yz/YZ14YIQIDG4P1601323873927.jpg"
+  },
+  {
     "id": "23529213",
     "title": "Introducing a New Game Mode: Hearthstone Duels!",
     "url": "https://hearthstone.blizzard.com/en-gb/news/23529213/introducing-a-new-game-mode-hearthstone-duels",
@@ -32,6 +488,14 @@
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/fu/FU5N8NP3LDSX1602884532477.jpg"
   },
   {
+    "id": "23537429",
+    "title": "Watch This Weekend’s Epic Conclusion to Grandmasters 2020 Season 2!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23537429/watch-this-weekends-epic-conclusion-to-grandmasters-2020-season-2",
+    "date": "2020-10-07T15:00:00Z",
+    "summary": "The top eight players from each region are set to compete to see who will secure the final three Grandmasters spots for the 2020 Hearthstone World Championship, only on YouTube!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/rm/RMHFS0SAVX8E1601867828458.jpg"
+  },
+  {
     "id": "23537431",
     "title": "Save the Date: Hearthstone Fall Reveal, Coming October 22!",
     "url": "https://hearthstone.blizzard.com/en-gb/news/23537431/save-the-date-hearthstone-fall-reveal-coming-october-22",
@@ -46,6 +510,14 @@
     "date": "2020-10-13T17:00:00Z",
     "summary": "The 18.4.2 patch includes balance updates for several Battlegrounds Heroes and minions!",
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/6m/6MYLQTXZRGI21602200154898.png"
+  },
+  {
+    "id": "23541520",
+    "title": "Grandmasters 2020 Season 2 Champions Are Heading to the World Championship!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23541520/grandmasters-2020-season-2-champions-are-heading-to-the-world-championship",
+    "date": "2020-10-12T03:30:00Z",
+    "summary": "Grandmasters 2020 Season 2 Champions Are Heading to the World Championship, December 12-13!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/it/ITWH8WNY8QU71602473370557.jpg"
   },
   {
     "id": "23544721",
@@ -1008,6 +1480,14 @@
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/w5/W5EV50PAXHSK1639518189364.jpg"
   },
   {
+    "id": "23758614",
+    "title": "22.0.2 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23758614/22-0-2-patch-notes",
+    "date": "2021-12-20T17:00:00Z",
+    "summary": "Patch 22.0.2 brings changes to Standard, Battlegrounds, and more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/vl/VLUQK57H2M681639612338733.jpg"
+  },
+  {
     "id": "23761136",
     "title": "Battlegrounds: Lobby Legends - Raid Leaders is Taking Place April 2-3!",
     "url": "https://hearthstone.blizzard.com/en-gb/news/23761136/battlegrounds-lobby-legends-raid-leaders-is-taking-place-april-2-3",
@@ -1160,6 +1640,14 @@
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/1k/1K93JBAF3HA11648080184805.jpg"
   },
   {
+    "id": "23784368",
+    "title": "23.0 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23784368/23-0-patch-notes",
+    "date": "2022-04-05T17:00:00Z",
+    "summary": "Patch 23.0 prepares the Tavern for Voyage to the Sunken City and includes updates to Battlegrounds, Mercenaries, and more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/s0/S0SG72I0HP431648586163728.jpg"
+  },
+  {
     "id": "23784369",
     "title": "Welcome to the Year of the Hydra",
     "url": "https://hearthstone.blizzard.com/en-gb/news/23784369/welcome-to-the-year-of-the-hydra",
@@ -1168,12 +1656,60 @@
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/t2/T2RCYEWI65RO1648224333584.jpg"
   },
   {
+    "id": "23784370",
+    "title": "Voyage to the Sunken City is NOW LIVE!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23784370/voyage-to-the-sunken-city-is-now-live",
+    "date": "2022-04-12T17:00:00Z",
+    "summary": "Hearthstone’s newest expansion is now live worldwide!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/xv/XVDM1LUF4VVL1649440371923.jpg"
+  },
+  {
+    "id": "23784373",
+    "title": "Arena Leaderboards Update: January – March 2022",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23784373/arena-leaderboards-update-january-march-2022",
+    "date": "2022-04-08T17:00:00Z",
+    "summary": "Arena rankings reflect players’ best 30 consecutive runs throughout a season.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/1FQV5WKQQGND1386713896853.jpg"
+  },
+  {
+    "id": "23784374",
+    "title": "Prepare for the Rise of the Naga",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23784374/prepare-for-the-rise-of-the-naga",
+    "date": "2022-05-05T17:00:00Z",
+    "summary": "Prepare for Hearthstone’s Inaugural Battlegrounds Season, Rise of the Naga, coming soon!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/h9/H93VZ0YFNL0M1651182244945.jpg"
+  },
+  {
+    "id": "23784375",
+    "title": "23.2 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23784375/23-2-patch-notes",
+    "date": "2022-05-09T17:00:00Z",
+    "summary": "Patch 23.2 brings Naga to Battlegrounds, updates to Mercenaries, new client features, and more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/7k/7KI42E77NVLX1651551070237.jpg"
+  },
+  {
+    "id": "23785576",
+    "title": "Voyage to the Sunken City Theorycrafting Livestreams",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23785576/voyage-to-the-sunken-city-theorycrafting-livestreams",
+    "date": "2022-04-06T19:00:00Z",
+    "summary": "Join us for the first look at Hearthstone’s newest expansion: Voyage to the Sunken City, starting April 7!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/11/1157DR5D4OBZ1649265810205.jpg"
+  },
+  {
     "id": "23785631",
     "title": "Hearthstone Masters Tour Ruins of Alterac is This Weekend!",
     "url": "https://hearthstone.blizzard.com/en-gb/news/23785631/hearthstone-masters-tour-ruins-of-alterac-is-this-weekend",
     "date": "2022-03-15T16:00:00Z",
     "summary": "Following an epic battle, players will compete over the remaining treasures in Masters Tour Ruins of Alterac, March 18-20, only on YouTube!",
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/hw/HW98L9R4SU8C1647020258739.png"
+  },
+  {
+    "id": "23788539",
+    "title": "Time to Take a Swim with the Masters Summer Championship!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23788539/time-to-take-a-swim-with-the-masters-summer-championship",
+    "date": "2022-05-31T13:00:00Z",
+    "summary": "The Masters Summer Championship is here, with 16 players battling for an invite to the 2022 World Championship, only on YouTube!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/57/57KBR8D1QLVT1653603809222.png"
   },
   {
     "id": "23789454",
@@ -1200,6 +1736,494 @@
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/9u/9UWOEUIIS2CN1649013827755.PNG"
   },
   {
+    "id": "23793178",
+    "title": "Explore the Sea This Weekend with Masters Tour: Voyage to the Sunken City!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23793178/explore-the-sea-this-weekend-with-masters-tour-voyage-to-the-sunken-city",
+    "date": "2022-04-26T13:00:00Z",
+    "summary": "Explore Hearthstone’s newest expansion with the third Masters Tour of the year, only on YouTube!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/uk/UKGSLXSLQX9Z1650918551598.jpg"
+  },
+  {
+    "id": "23797158",
+    "title": "New Features Coming Soon!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23797158/new-features-coming-soon",
+    "date": "2022-05-09T17:00:00Z",
+    "summary": "Learn more about three exciting new features coming to Hearthstone with Patch 23.2.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/2f/2FZGF5BRMOCO1652113228355.jpg"
+  },
+  {
+    "id": "23797160",
+    "title": "23.0.3 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23797160/23-0-3-patch-notes",
+    "date": "2022-04-26T16:00:00Z",
+    "summary": "Patch 23.0.3 includes balance changes to Standard, Wild, and Battlegrounds!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/1c/1CWJBECYHFTM1650929087654.jpg"
+  },
+  {
+    "id": "23797161",
+    "title": "Prepare to dive into the Throne of the Tides Mini-Set!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23797161/prepare-to-dive-into-the-throne-of-the-tides-mini-set",
+    "date": "2022-05-27T17:00:00Z",
+    "summary": "Fight for the Throne of the Tides in Hearthstone’s all new, 35-card Mini-Set!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ye/YEAS3WKKH3YH1653069431601.jpg"
+  },
+  {
+    "id": "23797162",
+    "title": "23.2.2 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23797162/23-2-2-patch-notes",
+    "date": "2022-05-19T16:00:00Z",
+    "summary": "Patch 23.2.2 brings bug fixes and balance changes to Battlegrounds and Standard!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ah/AHQ4T77RFCHW1652744811664.jpg"
+  },
+  {
+    "id": "23797164",
+    "title": "23.4 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23797164/23-4-patch-notes",
+    "date": "2022-05-31T17:00:00Z",
+    "summary": "Patch 23.4 brings the new Voyage to the Sunken City Mini-Set, updates to Battlegrounds, a ton of Mercenaries, and more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/k1/K14VDT242KTI1653351691677.jpg"
+  },
+  {
+    "id": "23801628",
+    "title": "Battlegrounds: Lobby Legends Enters the Noblegarden This Weekend!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23801628/battlegrounds-lobby-legends-enters-the-noblegarden-this-weekend",
+    "date": "2022-05-11T13:00:00Z",
+    "summary": "The second Lobby Legends takes place live on YouTube and Twitch this weekend!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/4c/4C2YKJV2UVBK1651793108443.jpg"
+  },
+  {
+    "id": "23813569",
+    "title": "The Masters Tour Heads to Castle Nathria!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23813569/the-masters-tour-heads-to-castle-nathria",
+    "date": "2022-08-08T15:57:00Z",
+    "summary": "The fifth Masters Tour explores the murder at Castle Nathria, only on YouTube!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/c5/C5JLANUY8U881659554131224.png"
+  },
+  {
+    "id": "23816549",
+    "title": "Court is in session with Masters Tour: Maw & Disorder!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23816549/court-is-in-session-with-masters-tour-maw-disorder",
+    "date": "2022-10-04T16:52:58Z",
+    "summary": "The sixth Masters Tour settles the murder at Castle Nathria in court, only on YouTube!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/2x/2XMUFSZ012U41664591243938.png"
+  },
+  {
+    "id": "23817872",
+    "title": "23.4.3 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23817872/23-4-3-patch-notes",
+    "date": "2022-06-16T16:00:00Z",
+    "summary": "Patch 23.4.3 includes several balance changes to Standard, Battlegrounds, and Mercenaries, plus more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/fm/FM96M20IYEMV1655155200557.jpg"
+  },
+  {
+    "id": "23817873",
+    "title": "23.6 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23817873/23-6-patch-notes",
+    "date": "2022-06-27T17:00:00Z",
+    "summary": "Prepare for Hearthstone’s next expansion: Murder at Castle Nathria!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/79/791AMCQ0V7HT1655849872431.jpg"
+  },
+  {
+    "id": "23817874",
+    "title": "Announcing Murder at Castle Nathria, Hearthstone’s Next Expansion!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23817874/announcing-murder-at-castle-nathria-hearthstones-next-expansion",
+    "date": "2022-06-27T17:00:00Z",
+    "summary": "Investigate new Locations in Hearthstone’s newest Infusion of cards.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/8y/8YMVA2MP74U21655753857188.jpg"
+  },
+  {
+    "id": "23817875",
+    "title": "Murloc Holmes and the Murder at Castle Nathria",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23817875/murloc-holmes-and-the-murder-at-castle-nathria",
+    "date": "2022-07-05T17:00:00Z",
+    "summary": "Join in the murder-mystery with this Murder at Castle Nathria mystery script!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ap/APULLLE41AYL1656548336258.jpg"
+  },
+  {
+    "id": "23817877",
+    "title": "Tavern Talks: BabyBear",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23817877/tavern-talks-babybear",
+    "date": "2022-07-28T17:00:00Z",
+    "summary": "Come meet the competitor from Belgium, BabyBear.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/bv/BVRYO6EW5BE21658450701620.jpg"
+  },
+  {
+    "id": "23819884",
+    "title": "Battlegrounds: Lobby Legends Hits the Eternal Night Dance Floor!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23819884/battlegrounds-lobby-legends-hits-the-eternal-night-dance-floor",
+    "date": "2022-06-20T16:00:00Z",
+    "summary": "The fun don’t stop with Battlegrounds: Lobby Legends as Bob’s tavern is dancing through the Eternal Night all weekend, only on YouTube and Twitch!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/k0/K01I0NNZTP4A1655331338516.jpg"
+  },
+  {
+    "id": "23819885",
+    "title": "Masters Tour: Vashj'ir is Live this Weekend!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23819885/masters-tour-vashj-ir-is-live-this-weekend",
+    "date": "2022-06-26T13:00:00Z",
+    "summary": "Prepare for the fourth Masters Tour of the year, only on YouTube!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/b7/B76UQ9W2EKVO1655416127132.png"
+  },
+  {
+    "id": "23819887",
+    "title": "It’s Last Call for Hearthstone Grandmasters!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23819887/its-last-call-for-hearthstone-grandmasters",
+    "date": "2022-07-19T16:00:00Z",
+    "summary": "Grandmasters: Last Call begins this weekend, with one player advancing to the 2022 World Championship!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ig/IG47E9LXRTFK1553658953513.jpg"
+  },
+  {
+    "id": "23831401",
+    "title": "Murder at Castle Nathria Theorycrafting Livestreams and Pre-Launch Festivities",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23831401/murder-at-castle-nathria-theorycrafting-livestreams-and-pre-launch-festivities",
+    "date": "2022-07-19T17:39:04Z",
+    "summary": "Join us on July 21 for the first investigations of Hearthstone’s newest expansion: Murder at Castle Nathria!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/qe/QEY47HWP3OBU1657760648443.jpg"
+  },
+  {
+    "id": "23831402",
+    "title": "Rewards Track Refresh for Murder at Castle Nathria",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23831402/rewards-track-refresh-for-murder-at-castle-nathria",
+    "date": "2022-07-25T17:00:00Z",
+    "summary": "It’s almost time for another Rewards Track refresh, with new exciting rewards!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/fp/FP99U36AIMOI1658171891662.jpg"
+  },
+  {
+    "id": "23831404",
+    "title": "Arena Leaderboards Update: May – July 2022",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23831404/arena-leaderboards-update-may-july-2022",
+    "date": "2022-07-22T17:01:07Z",
+    "summary": "Arena rankings reflect players’ best 30 consecutive runs throughout a season.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/1FQV5WKQQGND1386713896853.jpg"
+  },
+  {
+    "id": "23831407",
+    "title": "Murder at Castle Nathria is NOW LIVE!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23831407/murder-at-castle-nathria-is-now-live",
+    "date": "2022-08-02T17:00:00Z",
+    "summary": "Hearthstone’s newest expansion is now live worldwide!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ol/OLK9A81302L61658967496753.jpg"
+  },
+  {
+    "id": "23831408",
+    "title": "Announcing Battlegrounds Season 2!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23831408/announcing-battlegrounds-season-2",
+    "date": "2022-08-23T17:00:00Z",
+    "summary": "Get your first look at the new Battlegrounds Track, Battlegrounds Season Pass, new gameplay Quests, and more–coming soon!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/1d/1D08XPAUNB341660692633856.jpg"
+  },
+  {
+    "id": "23831409",
+    "title": "Quests: A New Mechanic for Battlegrounds",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23831409/quests-a-new-mechanic-for-battlegrounds",
+    "date": "2022-08-23T17:00:00Z",
+    "summary": "Preview the new Battlegrounds mechanic, coming with Patch 24.2.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/vq/VQTMPFR4ZA9J1660771851658.jpg"
+  },
+  {
+    "id": "23831410",
+    "title": "Battlegrounds Season 2 Preview Event",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23831410/battlegrounds-season-2-preview-event",
+    "date": "2022-08-24T17:00:00Z",
+    "summary": "Come watch your favorite content creators explore the magic in Battlegrounds Season 2.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/u1/U1H8OREAWUA41661228824550.jpg"
+  },
+  {
+    "id": "23831411",
+    "title": "24.2 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23831411/24-2-patch-notes",
+    "date": "2022-08-25T17:00:00Z",
+    "summary": "Patch 24.2 kicks off Battlegrounds Season 2, with the new Battlegrounds Track, Season Pass, and more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/4o/4OD5XIH89DX51661192982023.jpg"
+  },
+  {
+    "id": "23837945",
+    "title": "Warm Up Next to the Fire with the Fall Championship!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23837945/warm-up-next-to-the-fire-with-the-fall-championship",
+    "date": "2022-10-25T22:00:00Z",
+    "summary": "The Masters Fall Championship is here, with 16 players battling for an invite to the 2022 World Championship, only on YouTube!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/0r/0RQ6BDY8K0NU1666383232207.png"
+  },
+  {
+    "id": "23840663",
+    "title": "Introducing the New Hearthstone Creator Program!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23840663/introducing-the-new-hearthstone-creator-program",
+    "date": "2023-01-26T22:00:00Z",
+    "summary": "Come learn about Hearthstone’s new Creator Program, now live!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/x8/X837DI8ODKSQ1670464111792.jpg"
+  },
+  {
+    "id": "23840664",
+    "title": "Arena Leaderboards Update: July – September 2022",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23840664/arena-leaderboards-update-july-september-2022",
+    "date": "2022-09-30T17:00:00Z",
+    "summary": "Arena rankings reflect players’ best 30 consecutive runs throughout a season.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/1FQV5WKQQGND1386713896853.jpg"
+  },
+  {
+    "id": "23840665",
+    "title": "24.0.3 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23840665/24-0-3-patch-notes",
+    "date": "2022-08-16T16:00:00Z",
+    "summary": "Patch 24.0.3, launching today, includes adjustments to Standard, Wild, Battlegrounds, and Duels, as well as a couple bug fixes!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/zx/ZXWRDKDPC3HE1660264449447.jpg"
+  },
+  {
+    "id": "23846695",
+    "title": "Lobby Legends Heads to Castle Nathria!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23846695/lobby-legends-heads-to-castle-nathria",
+    "date": "2022-09-20T16:00:00Z",
+    "summary": "The most suspicious of Lobby Legends takes place this weekend, with the all-new Tavern Buddy Twitch Extension for viewers to show off their skills!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/mq/MQWKVJ3IERVS1663262360289.png"
+  },
+  {
+    "id": "23848936",
+    "title": "Lobby Legends Embraces the Magic of Azeroth!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23848936/lobby-legends-embraces-the-magic-of-azeroth",
+    "date": "2022-08-30T20:00:00Z",
+    "summary": "Lobby Legends returns this weekend!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ym/YMX8NSR2MXS71661886412002.png"
+  },
+  {
+    "id": "23850855",
+    "title": "Welcome to the Players' Tavern",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23850855/welcome-to-the-players-tavern",
+    "date": "2022-11-02T18:00:00Z",
+    "summary": "Games One Stop: All You Need To Know",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/le/LEEX2Z7H3CSP1666952904519.jpg"
+  },
+  {
+    "id": "23852686",
+    "title": "24.2.2 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23852686/24-2-2-patch-notes",
+    "date": "2022-09-09T16:00:00Z",
+    "summary": "Hotfix patch 24.2.2 brings balance updates to Standard, Battlegrounds, and Duels.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/qd/QDD86XRD3M191662589936460.jpg"
+  },
+  {
+    "id": "23852687",
+    "title": "24.4 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23852687/24-4-patch-notes",
+    "date": "2022-09-26T22:00:00Z",
+    "summary": "Patch 24.4 Brings the new Mini-Set, Maw and Disorder to the Tavern, as well as a returning Battlegrounds Hero, Mercenaries changes, and more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/xz/XZU8RVX4VN441663629390511.jpg"
+  },
+  {
+    "id": "23852688",
+    "title": "Next on the Docket: The Maw and Disorder Mini-Set!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23852688/next-on-the-docket-the-maw-and-disorder-mini-set",
+    "date": "2022-09-22T17:00:00Z",
+    "summary": "After the Murder at Castle Nathria, Sylvanas has been brought before the Jailer to answer for her crimes. What crimes, you ask? Well, there have been many. Watch the trial unfold in the all-new Maw and Disorder Mini-Set!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/cy/CYUN3I1ZPWTU1663288853324.jpg"
+  },
+  {
+    "id": "23852692",
+    "title": "24.4.3 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23852692/24-4-3-patch-notes",
+    "date": "2022-10-13T17:00:00Z",
+    "summary": "Patch 24.4.3 brings balance changes to Hearthstone and Battlegrounds.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/49/4956MAZ8TD501665506724864.jpg"
+  },
+  {
+    "id": "23852693",
+    "title": "Patch 24.6 Preview!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23852693/patch-24-6-preview",
+    "date": "2022-10-27T17:00:00Z",
+    "summary": "Get a sneak peek at new features and more coming soon to Hearthstone.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/kd/KD9GQVJTIHP31666656690248.jpg"
+  },
+  {
+    "id": "23852694",
+    "title": "24.6 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23852694/24-6-patch-notes",
+    "date": "2022-11-01T17:24:00Z",
+    "summary": "Prepare for Hearthstone’s next expansion: March of the Lich King!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/qz/QZFYI4H2RTXQ1666726809761.jpg"
+  },
+  {
+    "id": "23852695",
+    "title": "Announcing March of the Lich King, Hearthstone’s Next Expansion!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23852695/announcing-march-of-the-lich-king-hearthstones-next-expansion",
+    "date": "2022-11-01T17:10:00Z",
+    "summary": "The Undead are Reborn under Death Knights’ command in Hearthstone’s biggest expansion yet!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/4c/4C6GAMDKTDWZ1666723353314.jpg"
+  },
+  {
+    "id": "23852696",
+    "title": "Death Knight Deep Dive",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23852696/death-knight-deep-dive",
+    "date": "2022-11-01T17:10:00Z",
+    "summary": "Learn how to become the master of death in this review of the new Death Knight class!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/7w/7WM6X7L65Q8Q1666730164094.jpg"
+  },
+  {
+    "id": "23865347",
+    "title": "Lobby Legends gets Murlocized!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23865347/lobby-legends-gets-murlocized",
+    "date": "2022-10-11T19:58:00Z",
+    "summary": "The cutest Lobby Legends takes place this weekend, be sure to follow along with the Tavern Buddy extension on Twitch!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/9x/9XHODA21141N1665171647794.png"
+  },
+  {
+    "id": "23866591",
+    "title": "Hearthstone Death Knight Cosplay Contest!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23866591/hearthstone-death-knight-cosplay-contest",
+    "date": "2022-11-02T21:00:00Z",
+    "summary": "Check out the Hearthstone Cosplay Contest rules, entry forms, and reference kits!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/bg/BGD2QLDOMYTD1666733215113.jpg"
+  },
+  {
+    "id": "23874319",
+    "title": "24.6.2 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23874319/24-6-2-patch-notes",
+    "date": "2022-11-10T17:01:00Z",
+    "summary": "Patch 24.6.2 includes updates to Battlegrounds and Arena.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/wf/WFID971QCIUS1668098161090.jpg"
+  },
+  {
+    "id": "23882859",
+    "title": "March of the Lich King Theorycrafting and Pre-Release Festivities",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23882859/march-of-the-lich-king-theorycrafting-and-pre-release-festivities",
+    "date": "2022-11-23T18:00:00Z",
+    "summary": "Join us on December 1 as your favorite content creators join the Lich King’s army!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/gj/GJ8Y65CPOK7W1668719198977.jpg"
+  },
+  {
+    "id": "23882860",
+    "title": "25.0 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23882860/25-0-patch-notes",
+    "date": "2022-11-28T18:00:00Z",
+    "summary": "Patch 25.0 rallies the troops for March of the Lich King, and includes updates to Battlegrounds, Mercenaries, Duels, Arena, and more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/nv/NV7TO0V32CZM1669223876330.jpg"
+  },
+  {
+    "id": "23882861",
+    "title": "Rewards Track Refresh for March of the Lich King",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23882861/rewards-track-refresh-for-march-of-the-lich-king",
+    "date": "2022-11-29T18:00:00Z",
+    "summary": "It’s almost time for another Rewards Track refresh, with cool new rewards!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/2b/2B7ASVW6DTIF1669168404974.jpg"
+  },
+  {
+    "id": "23882863",
+    "title": "Winter Veil Returns to Hearthstone",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23882863/winter-veil-returns-to-hearthstone",
+    "date": "2022-12-13T18:00:00Z",
+    "summary": "Prepare for all the frosty festivities in this year’s snowy celebration!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/fu/FU2OPSY9IGBG1670460205492.jpg"
+  },
+  {
+    "id": "23885939",
+    "title": "Lobby Legends gets snowed in during Winter Veil",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23885939/lobby-legends-gets-snowed-in-during-winter-veil",
+    "date": "2022-11-29T21:00:00Z",
+    "summary": "Seek reprieve in the Tavern from the cold winds of the north during Winter Veil this weekend and be sure to follow along with the Tavern Buddy extension on Twitch!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ym/YMX8NSR2MXS71661886412002.png"
+  },
+  {
+    "id": "23885940",
+    "title": "March of the Lich King is NOW LIVE!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23885940/march-of-the-lich-king-is-now-live",
+    "date": "2022-12-06T18:00:00Z",
+    "summary": "Hearthstone’s latest expansion—introducing the new Death Knight class—is now live worldwide!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/jz/JZ8NHFWRJA8T1669764818193.jpg"
+  },
+  {
+    "id": "23891618",
+    "title": "Hearthstone 2022 World Championship - Viewer’s Guide",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23891618/hearthstone-2022-world-championship-viewers-guide",
+    "date": "2022-12-12T18:00:00Z",
+    "summary": "Hearthstone 2022 World Championship begins this weekend, starting December 16 at 12 am PST only on YouTube!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ar/ARTBAVQMX37G1670542733056.png"
+  },
+  {
+    "id": "23892222",
+    "title": "25.0.3 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23892222/25-0-3-patch-notes",
+    "date": "2022-12-09T18:00:00Z",
+    "summary": "Patch 25.0.3 includes balance changes to two Standard cards.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/nx/NXBCWJWEW2WX1670541876349.jpg"
+  },
+  {
+    "id": "23892223",
+    "title": "25.0.4 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23892223/25-0-4-patch-notes",
+    "date": "2022-12-19T17:30:00Z",
+    "summary": "25.0.4 is a data-only patch that includes balance changes to Standard, Wild, Battlegrounds, and Arena!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/0m/0M7Y765ILJ5K1671155888676.jpg"
+  },
+  {
+    "id": "23892224",
+    "title": "Announcing Battlegrounds Season 3!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23892224/announcing-battlegrounds-season-3",
+    "date": "2023-01-10T18:00:00Z",
+    "summary": "Battlegrounds Season 3 brings with it new Undead and dual-type minions!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/bj/BJNFAU0IH8ED1672957528485.jpg"
+  },
+  {
+    "id": "23892225",
+    "title": "25.2 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23892225/25-2-patch-notes",
+    "date": "2023-01-17T17:00:00Z",
+    "summary": "Patch 25.2 kicks off Battlegrounds Season 3, featuring a new Hero, Undead and dual-type minions, and more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/5y/5YMNFIQ9IRZH1673381218651.jpg"
+  },
+  {
+    "id": "23892226",
+    "title": "Mercenaries Gets a Mythic Update",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23892226/mercenaries-gets-a-mythic-update",
+    "date": "2023-02-07T18:00:00Z",
+    "summary": "Mercenaries gets new Factions, Dual-Type Mercs, and a Mythic Boss Rush system as the Mode reaches completion.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/p0/P0LIYPZRS9ET1675299914515.jpg"
+  },
+  {
+    "id": "23892228",
+    "title": "25.2.2 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23892228/25-2-2-patch-notes",
+    "date": "2023-01-26T17:00:00Z",
+    "summary": "Patch 25.2.2 includes balance changes to Standard, Battlegrounds, and Duels!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/4d/4DZ0PHIEIV5N1674581715243.jpg"
+  },
+  {
+    "id": "23904520",
+    "title": "Climb the Ladder with Hearthstone Esports in 2023!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23904520/climb-the-ladder-with-hearthstone-esports-in-2023",
+    "date": "2023-01-19T18:30:00Z",
+    "summary": "Get ready to climb the Ladder to compete in the 2023 Hearthstone Esports program, on Twitch and YouTube!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/g4/G4DSHZ9AWC5Y1674088211401.png"
+  },
+  {
+    "id": "23913670",
+    "title": "The Lich King Calls on You to Return to Naxxramas!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23913670/the-lich-king-calls-on-you-to-return-to-naxxramas",
+    "date": "2023-02-09T18:00:00Z",
+    "summary": "The Battle for Silvermoon reaches its next phase as The Lich King calls for reinforcements in the March of the Lich King Mini-Set, Return to Naxxramas!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ym/YMFV9SXB2BSC1675385364311.jpg"
+  },
+  {
+    "id": "23913671",
+    "title": "25.4 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23913671/25-4-patch-notes",
+    "date": "2023-02-13T18:00:00Z",
+    "summary": "Patch 25.4, launching on February 14, includes the Return to Naxxramas Mini-Set, a major Mercenaries update, and more!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ws/WSNPB0CVKM3T1675812799212.jpg"
+  },
+  {
+    "id": "23913672",
+    "title": "Battlegrounds is Bringing Back Buddies!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23913672/battlegrounds-is-bringing-back-buddies",
+    "date": "2023-03-07T18:00:00Z",
+    "summary": "Catch up with old friends, or make some new ones, in the next Battlegrounds update!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/qr/QRC9CCJCQSJ71677778566657.jpg"
+  },
+  {
+    "id": "23921492",
+    "title": "25.4.3 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23921492/25-4-3-patch-notes",
+    "date": "2023-03-02T17:00:00Z",
+    "summary": "Patch 25.4.3 includes balance changes for Standard, Wild, Battlegrounds, and Duels!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/92/92619MLK7PMA1677546097460.jpg"
+  },
+  {
     "id": "23921493",
     "title": "26.0 Patch Notes.v3.final.final2.PR_edit.FINAL",
     "url": "https://hearthstone.blizzard.com/en-gb/news/23921493/26-0-patch-notes-v3-final-final2-pr_edit-final",
@@ -1214,6 +2238,38 @@
     "date": "2023-03-28T17:00:00Z",
     "summary": "Join us as we reveal the rest of the Festival of Legends setlist and kick off some warm-ups before the big show!",
     "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/0p/0PY0RHZICHYA1679607278081.jpg"
+  },
+  {
+    "id": "23921495",
+    "title": "Year of the Wolf Core Set Update!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23921495/year-of-the-wolf-core-set-update",
+    "date": "2023-03-23T17:00:00Z",
+    "summary": "Come learn about the upcoming Core Set update and the next Hearthstone year, the Year of the Wolf!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/yc/YCUTIDDBKVQM1679085602797.jpg"
+  },
+  {
+    "id": "23921496",
+    "title": "25.6 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23921496/25-6-patch-notes",
+    "date": "2023-03-14T17:00:00Z",
+    "summary": "Patch 25.6 sets the stage for Hearthstone’s next expansion: Festival of Legends!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/5e/5E2VXRMZS86E1678239767604.jpg"
+  },
+  {
+    "id": "23921497",
+    "title": "Announcing Festival of Legends, Hearthstone’s Next Expansion!",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23921497/announcing-festival-of-legends-hearthstones-next-expansion",
+    "date": "2023-03-14T17:00:00Z",
+    "summary": "E.T.C. is putting on the biggest concert Azeroth has ever seen in Hearthstone’s most jam-packed expansion yet!",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/a9/A96ZM76TN6FV1678237011114.jpg"
+  },
+  {
+    "id": "23921500",
+    "title": "25.6.2 Patch Notes",
+    "url": "https://hearthstone.blizzard.com/en-gb/news/23921500/25-6-2-patch-notes",
+    "date": "2023-03-23T20:00:00Z",
+    "summary": "Patch 25.6.2 brings a bevy of Battlegrounds adjustments.",
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ge/GETD6TRPBX611679432092301.jpg"
   },
   {
     "id": "23935243",
