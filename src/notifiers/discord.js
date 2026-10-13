@@ -4,7 +4,7 @@ import { USER_AGENT } from '../providers/http.js';
 
 const POST_ATTEMPTS = 3;
 const TIMEOUT_MS = 10000;
-export const COLORS = { added: 0x57F287, updated: 0xFAA61A, down: 0xED4245, recovered: 0x57F287, log: 0x5865F2 };
+export const COLORS = { added: 0x57F287, updated: 0xFAA61A, down: 0xED4245, recovered: 0x57F287, log: 0x5865F2, stream: 0x9B59B6 };
 const LOG_USERNAME = 'BlizzFeed Log';
 const LOG_AVATAR = 'https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/main/logos/BlizzFeed_ServerIcon_512.png';
 const LOGO = 'https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/main/logos/BlizzFeed_AppLogo_200-nobg.png';
@@ -14,6 +14,7 @@ export const DIVIDER = { type: 14, divider: true, spacing: 1 };
 const LOG_HEADING = 'Changes detected';
 const ARCHIVE_LOG_HEADING = 'Archive changes';
 const SHOP_LOG_HEADING = 'Shop changes';
+const YOUTUBE_LOG_HEADING = 'YouTube changes';
 const ARCHIVE_SECTION = '### 📦 Archive';
 export const LOG_TOTAL_TEXT = 4000; // Discord's limit for the text of one message
 // Component ids the bot looks for when it merges two posts (same numbers in the bot's merge.js)
@@ -84,7 +85,7 @@ function cardDiffLines(item) {
 }
 
 /** The + / ~ / - lines of an edited article's text, leaving out what is zero. */
-const lineCountLines = (change) => [['+', 'added'], ['~', 'changed'], ['-', 'removed']]
+export const lineCountLines = (change) => [['+', 'added'], ['~', 'changed'], ['-', 'removed']]
 	.filter(([, key]) => change[key])
 	.map(([sign, key]) => `${sign} ${change[key]} line${change[key] !== 1 ? 's' : ''} ${key}`);
 
@@ -315,16 +316,59 @@ export function buildNewFamiliesMessage(slugs, base) {
 	return logPayload([{ type: 17, accent_color: COLORS.log, components: [withLogo(content)] }]);
 }
 
+const YOUTUBE_EMOJI = { video: '🎬', short: '📱', stream: '🔴', edited: '✏️', live: '🔴', rescheduled: '🕒' };
+const YOUTUBE_ORDER = ['new', 'live', 'rescheduled', 'edited'];
+
+/** A change as a line linked to its video, with the detail under it. */
+function youtubeLine(change) {
+	const emoji = change.type === 'new' ? YOUTUBE_EMOJI[change.kind] : change.type === 'live' && change.to === 'ended' ? '⏹️' : YOUTUBE_EMOJI[change.type];
+	const lines = [`- ${emoji} [${linkLabel(change.title, 80)}](https://www.youtube.com/watch?v=${change.id})`];
+	if (change.type === 'new') {
+		lines.push(`  -# new ${change.premiere ? 'premiere' : change.kind}${change.live !== 'none' ? `, ${change.live}` : ''}`);
+	} else if (change.type === 'live') {
+		lines.push(`  -# ${change.from} → ${change.to}`);
+	} else if (change.type === 'edited') {
+		lines.push(`  -# ${Object.keys(change.fields).join(' and ')} edited`);
+	} else {
+		lines.push('  -# start time changed');
+	}
+	return lines.join('\n');
+}
+
+/** One channel's part of the log: a counts line linked to its commit, then a line per change. */
+function youtubeEntry(name, entry, repoUrl, recoveredSince) {
+	const counts = countBy(entry.changes, 'type');
+	const parts = entry.baseline ? [`🆕 baseline, ${entry.videos} videos stored, nothing reported`] : YOUTUBE_ORDER.filter((type) => type in counts).map((type) => `${counts[type]} ${type}`);
+	if (recoveredSince) {
+		parts.push(recoveredPart(recoveredSince));
+	}
+	const sorted = entry.changes.toSorted((a, b) => YOUTUBE_ORDER.indexOf(a.type) - YOUTUBE_ORDER.indexOf(b.type));
+	return [`**${commitTitle(name, repoUrl, entry.commit)}** · ${parts.join(', ')}`, ...sorted.map(youtubeLine)].join('\n');
+}
+
+/** Summary of a YouTube run for the log channel, or null when nothing happened. Failing channels are a message of their own. */
+export function buildYoutubeLogMessage(diff, channels, repoUrl, runUrl) {
+	const recovered = recoveries(diff.alerts);
+	const blocks = Object.entries(diff.channels)
+		.filter(([handle, entry]) => entry.baseline || entry.changes.length || handle in recovered)
+		.map(([handle, entry]) => youtubeEntry(channels[handle]?.name ?? handle, entry, repoUrl, recovered[handle]));
+	return blocks.length ? logPayload([logContainer(YOUTUBE_LOG_HEADING, blocks, Object.keys(channels).length, runUrl, 'YouTube run', 'channel')]) : null;
+}
+
 /** Shop pages that started or stopped failing, in one container however many there are. */
-export function buildShopAlertMessage(alerts, runUrl) {
+export const buildShopAlertMessage = (alerts, runUrl) => alertsMessage(alerts, runUrl, 'Shop pages');
+
+export const buildYoutubeAlertMessage = (alerts, runUrl) => alertsMessage(alerts, runUrl, 'YouTube channels');
+
+function alertsMessage(alerts, runUrl, noun) {
 	const blocks = [];
 	const down = alerts.filter((a) => a.kind === 'down');
 	if (down.length) {
-		blocks.push('## Shop pages failing\n' + down.map((a) => `- \`${a.source}\` since ${discordTime(a.since, true)}: ${trim(a.error, 100)}`).join('\n'));
+		blocks.push(`## ${noun} failing\n` + down.map((a) => `- \`${a.source}\` since ${discordTime(a.since, true)}: ${trim(a.error, 100)}`).join('\n'));
 	}
 	const recovered = alerts.filter((a) => a.kind === 'recovered');
 	if (recovered.length) {
-		blocks.push('## Shop pages recovered\n' + recovered.map((a) => `- \`${a.source}\` (was failing since ${discordTime(a.since, true)})`).join('\n'));
+		blocks.push(`## ${noun} recovered\n` + recovered.map((a) => `- \`${a.source}\` (was failing since ${discordTime(a.since, true)})`).join('\n'));
 	}
 	if (!blocks.length) {
 		return null;
@@ -587,6 +631,19 @@ export async function sendShopLog(diff, families, regions, repoUrl, runUrl) {
 	for (const message of [buildShopLogMessage(diff, families, regions, repoUrl, runUrl), buildShopAlertMessage(diff.alerts, runUrl)]) {
 		if (message && await post(url, message)) {
 			logger.info('Posted the shop log.');
+		}
+	}
+}
+
+/** The YouTube run's summary, then its failing or recovered channels. */
+export async function sendYoutubeLog(diff, channels, repoUrl, runUrl) {
+	const url = logWebhook('YouTube log');
+	if (!url) {
+		return;
+	}
+	for (const message of [buildYoutubeLogMessage(diff, channels, repoUrl, runUrl), buildYoutubeAlertMessage(diff.alerts, runUrl)]) {
+		if (message && await post(url, message)) {
+			logger.info('Posted the YouTube log.');
 		}
 	}
 }

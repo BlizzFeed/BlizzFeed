@@ -174,3 +174,16 @@ test('the shop log links each change to its own region\'s page and counts unchan
 	assert.ok(buttonless.includes('[The Bundle]'));
 	assert.equal(shopLog({ 'eu/overwatch': { baseline: false, changes: [] } }), null);
 });
+
+const YOUTUBE_CHANNELS = { Warcraft: { name: 'World of Warcraft' }, Blizzard: { name: 'Blizzard' } };
+const youtubeLog = (channels) => discord.buildYoutubeLogMessage({ channels, alerts: [] }, YOUTUBE_CHANNELS, REPO, null);
+
+test('the YouTube log links each change to its video and counts unchanged channels', () => {
+	const fresh = { type: 'new', id: 'abc', kind: 'stream', title: 'Live [now]', live: 'upcoming' };
+	const edit = { type: 'edited', id: 'x', kind: 'video', title: 'T', fields: { title: {}, description: {} } };
+	const body = texts(youtubeLog({ Warcraft: { baseline: false, commit: 'abc', changes: [fresh, edit] }, Blizzard: { baseline: false, changes: [] } }));
+	assert.ok(body.includes('[Live (now)](https://www.youtube.com/watch?v=abc)'));
+	assert.ok(body.includes(`[World of Warcraft](${REPO}/commit/abc)`) && body.includes('title and description edited'));
+	assert.ok(body.includes('Unchanged: 1 channel'));
+	assert.equal(youtubeLog({ Warcraft: { baseline: false, changes: [] } }), null);
+});
