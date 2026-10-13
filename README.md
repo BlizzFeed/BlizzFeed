@@ -22,13 +22,9 @@ BlizzFeed checks Blizzard's news pages every minute. When a new article shows up
 ### Quiet edits
 Blizzard often changes articles after they're published. Hotfix lists grow, patch notes get corrected, a title or picture is swapped, and it usually goes unnoticed.
 
-BlizzFeed keeps a full copy of every article's text. When something changes, it posts an orange update saying what changed, with a link to a side-by-side comparison of the lines that were added, changed or removed.
+BlizzFeed keeps a full copy of every article's text. When something changes, it posts an orange update saying what changed: a new title or summary, a swapped picture (shown as Before and After), or lines added, changed or removed. **Summary Changes** opens what the feed itself changed, and **Article Changes** opens a side-by-side comparison of the text. When both change together, you get one post with both buttons, like this:
 
-<img src="images/post-text-edit.png" alt="An orange BlizzFeed post for an article whose text was edited, showing one line added and one line changed, with Read Article, Article Changes and History buttons" width="600">
-
-A change to the title, summary or picture is posted the same way:
-
-<img src="images/post-updated.png" alt="An orange BlizzFeed post for an article whose summary changed, with Read Article, Summary Changes and History buttons" width="600">
+<img src="images/post-updated-title-lines.png" alt="An orange BlizzFeed post for an article whose title changed and 148 lines were added, with Read Article, Summary Changes, Article Changes and History buttons" width="600">
 
 ### The Battle.net Shop
 BlizzFeed also watches the Battle.net Shop for each game, in both the EU and US stores. It posts when an item is new, comes back, goes on or off sale, changes price, gets a badge, or is removed. Shop banners and edited item details are tracked too. Shop posts are green for new or back, orange for price, sale or badge changes, red for removed, and blue for banners and details.
