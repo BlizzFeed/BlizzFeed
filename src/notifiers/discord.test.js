@@ -88,7 +88,7 @@ test('the archive log lists changes and silent edits, or is skipped when nothing
 	const articles = [CHANGE, { ...CHANGE, id: '7', title: 'New', kind: 'archived', commit: 'def' }, { ...CHANGE, id: '8', title: 'Quiet', silent: true, commit: 'eee' }];
 	const body = texts(discord.buildArchiveLogMessage(archiveDiff(articles), SOURCES, REPO, 'https://run'));
 	assert.ok(body.includes('1 of 2 sources changed') && body.includes('2 text edited') && body.includes('1 archived'));
-	assert.ok(body.includes(`[Hotfixes](${REPO}/commit/abc123)\n  -# +1 ~2 −3`));
+	assert.ok(body.includes(`[Hotfixes](${REPO}/commit/abc123)\n-# ↳ +1 ~2 −3`));
 	assert.ok(body.includes('silent edit (date unchanged)'));
 	assert.equal(discord.buildArchiveLogMessage(archiveDiff([]), SOURCES, REPO, null), null);
 	assert.ok(texts(discord.buildArchiveLogMessage(archiveDiff([], [DOWN]), SOURCES, REPO, null)).includes('WoW - archive failing'));
@@ -97,7 +97,7 @@ test('the archive log lists changes and silent edits, or is skipped when nothing
 test('a long archive log is cut between lines, not inside a link', () => {
 	const articles = Array.from({ length: 30 }, (_, i) => ({ ...CHANGE, id: String(i), title: `A rather long article title number ${i}`, kind: 'archived', commit: String(i).padStart(40, '0') }));
 	const body = texts(discord.buildArchiveLogMessage(archiveDiff(articles), SOURCES, REPO, null));
-	const lines = body.split('\n').filter((line) => line.startsWith('- '));
+	const lines = body.split('\n').filter((line) => line.includes('A rather long'));
 	assert.ok(lines.length && lines.every((line) => line.endsWith(')')));
 	assert.ok(body.includes(`-# …and ${30 - lines.length} more`));
 });

@@ -194,7 +194,7 @@ function logEntry(name, entry, repoUrl, recoveredSince) {
 	const lines = [`**${commitTitle(name, repoUrl, entry.commit)}** · ${parts.join(', ')}`];
 	for (const [emoji, action] of [['🟢', 'added'], ['🟠', 'updated']]) {
 		for (const item of entry[action]) {
-			lines.push(`- ${emoji} [${linkLabel(item.title, 100)}](${item.url})`);
+			lines.push(`${emoji} [${linkLabel(item.title, 100)}](${item.url})`);
 		}
 	}
 	return lines.join('\n');
@@ -268,16 +268,19 @@ function shopDetail(change) {
 	return change.what === 'back' ? 'back' : null;
 }
 
+// Log lines lead with their emoji, not a list bullet: mobile joins an indented subtext line onto its list item.
+const subline = (detail) => `-# ↳ ${detail}`;
+
 /** A change as a line linked to its shop page. */
 function shopLine(change, base) {
 	// Some banners have no button text.
 	const label = change.type === 'banner' && change.product ? [change.button, change.product].filter(Boolean).join(' · ') : (change.title || change.key).trim();
 	const destination = change.destination || '';
 	const url = destination.startsWith('/') ? base + destination : destination; // the Gear cards link off-site
-	const lines = [`- ${SHOP_EMOJI[change.type]} ${url ? `[${linkLabel(label, 80)}](${url})` : linkLabel(label, 80)}`];
+	const lines = [`${SHOP_EMOJI[change.type]} ${url ? `[${linkLabel(label, 80)}](${url})` : linkLabel(label, 80)}`];
 	const detail = shopDetail(change);
 	if (detail) {
-		lines.push(`  -# ${detail}`);
+		lines.push(subline(detail));
 	}
 	return lines.join('\n');
 }
@@ -450,9 +453,9 @@ function archiveLogEntry(name, entry, repoUrl, recoveredSince) {
 		if (change.silent) { // only the window sweep finds these, so they show whether it's worth widening
 			detail.push('silent edit (date unchanged)');
 		}
-		lines.push(`- ${ARCHIVE_EMOJI[change.kind]} ${commitTitle(linkLabel(change.title, 100), repoUrl, change.commit)}`);
+		lines.push(`${ARCHIVE_EMOJI[change.kind]} ${commitTitle(linkLabel(change.title, 100), repoUrl, change.commit)}`);
 		if (detail.length) {
-			lines.push(`  -# ${detail.join(' · ')}`);
+			lines.push(subline(detail.join(' · ')));
 		}
 	}
 	return lines.join('\n');
