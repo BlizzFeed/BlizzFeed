@@ -73,11 +73,11 @@ function status(event) {
 	if (event.type !== 'badge') {
 		return STATUS[event.type];
 	}
-	const badge = firstChange(event).to;
-	if (badge === 'New') {
-		return '✨ **Marked as new in the shop**';
+	const { from, to } = firstChange(event);
+	if (!from) {
+		return `🔖 **Badge added** · ${to}`;
 	}
-	return badge ? `✨ **${badge}**` : '✨ **Badge removed**';
+	return to ? `🔖 **Badge changed** · ${from} → ${to}` : `🔖 **Badge removed** · ${from}`;
 }
 
 function detailLines(change) {
@@ -119,12 +119,10 @@ export function buildSingle(events, states, logo, repoUrl, commit, now, channel)
 	const kind = event.type;
 	const item = artItem(states, event);
 	const title = titleOf(event);
-	let content = `## ${d.trim(title, 256)}\n` + events.map((e) => statusLine(e, states)).join('\n');
+	const content = `## ${d.trim(title, 256)}\n` + events.map((e) => statusLine(e, states)).join('\n');
 	const note = kind === 'banner' ? item.subHeadline : kind === 'details' ? null : item.description;
-	if (note) {
-		content += `\n${d.trim(note, 200)}`;
-	}
-	const inner = d.top(d.text(content), logo, title);
+	// The divider keeps the item's own description from reading as one more status line.
+	const inner = [...d.top(d.text(content), logo, title), d.DIVIDER, ...(note ? [d.text(d.trim(note, 200))] : [])];
 	let art = item.image ? [{ media: { url: image(item.image) } }] : [];
 	const edited = events.find((e) => e.type === 'details');
 	if (edited) {

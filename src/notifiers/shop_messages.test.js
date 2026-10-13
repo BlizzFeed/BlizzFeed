@@ -48,6 +48,19 @@ test('a digest gallery shows shared art once, and only from the listed items', (
 	assert.deepEqual(gallery.items.map((i) => i.media.url), ['https://x/shared.png', ...Array.from({ length: 9 }, (_, i) => `https://x/${i + 2}.png`)]);
 });
 
+test('a badge post names the badge it added, changed or removed', () => {
+	const badge = (from, to) => statusLines([event('badge', { from, to })], {});
+	assert.deepEqual(badge(null, 'Great Deal'), ['🔖 **Badge added** · Great Deal']);
+	assert.deepEqual(badge('New', 'Great Deal'), ['🔖 **Badge changed** · New → Great Deal']);
+	assert.deepEqual(badge('New', null), ['🔖 **Badge removed** · New']);
+});
+
+test('the item\'s description sits under a divider, apart from the status lines', () => {
+	const states = { 'eu/f': { items: { 'c-1': { ...item('€25.00'), description: 'About it.' } } } };
+	const inner = parts(m.buildSingle([event('new')], states, null, null, null, NOW, 'shop'));
+	assert.deepEqual(inner.slice(0, 3).map((c) => c.content ?? 'divider'), ['## T\n🟢 **New in the shop** · **€25.00**', 'divider', 'About it.']);
+});
+
 test('a removed banner has no price to show', () => {
 	assert.deepEqual(statusLines([event('gone')], {}), ['🔴 **Removed from the shop**']);
 });

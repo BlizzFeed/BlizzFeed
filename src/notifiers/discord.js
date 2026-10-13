@@ -222,7 +222,7 @@ export function buildLogMessage(diff, sources, repoUrl, runUrl) {
 }
 
 export const SHOP_EMOJI = {
-	new: '🟢', back: '🔁', gone: '🔴', unlisted: '👻', price: '💵', sale_start: '🏷️', sale_end: '⌛', badge: '✨', details: '📝', banner: '🖼️',
+	new: '🟢', back: '🔁', gone: '🔴', unlisted: '👻', price: '💵', sale_start: '🏷️', sale_end: '⌛', badge: '🔖', details: '📝', banner: '🖼️',
 };
 const SHOP_LABEL = {
 	new: 'new', back: 'back', gone: 'gone', unlisted: 'unlisted', price: 'price', sale_start: 'sale started', sale_end: 'sale ended',
