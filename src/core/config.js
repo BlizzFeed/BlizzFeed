@@ -41,12 +41,14 @@ export class Source {
 	}
 }
 
+/** The channels: block as { label: { tier: channel id } }. A label left empty (WOW:) has no IDs, so what uses it warns and skips it. */
+export const labelChannels = (config) => Object.fromEntries(Object.entries(config.channels ?? {}).map(([label, ids]) => [
+	String(label), Object.fromEntries(TIERS.filter((tier) => ids?.[tier]).map((tier) => [tier, channelId(ids[tier], `channels.${label}.${tier}`)])),
+]));
+
 export function loadSources(path) {
 	const config = readConfig(path);
-	// A label left empty (WOW:) has no IDs, so its sources warn and skip it like an empty ID.
-	const channelIds = Object.fromEntries(Object.entries(config.channels ?? {}).map(([label, ids]) => [
-		String(label), Object.fromEntries(TIERS.filter((tier) => ids?.[tier]).map((tier) => [tier, channelId(ids[tier], `channels.${label}.${tier}`)])),
-	]));
+	const channelIds = labelChannels(config);
 	return config.sources.map((raw) => new Source(raw, config.defaults ?? {}, channelIds));
 }
 
@@ -69,3 +71,65 @@ export function loadShopConfig(path) {
 	channelId(config.channel, 'shop.channel');
 	return config;
 }
+
+export const YOUTUBE_KINDS = ['video', 'short', 'stream'];
+
+const YOUTUBE_DEFAULTS = {
+	channel: null, daily_units: 9000, min_sweep_minutes: 2, failures_before_alert: 3, stream_edit_days: 14, channels: {},
+	logo_url: 'https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/main/logos/games/{}.png',
+};
+
+/** The youtube: block over the defaults. A feed label not under channels: would drop posts silently, so it throws. */
+export function loadYoutubeConfig(path) {
+	const root = readConfig(path);
+	const config = { ...YOUTUBE_DEFAULTS, ...root.youtube, labels: labelChannels(root) };
+	if (config.channel) {
+		config.channel = channelId(config.channel, 'youtube.channel');
+	}
+	config.channels = Object.fromEntries(Object.entries(config.channels ?? {}).map(([handle, raw]) => {
+		const kinds = raw.kinds ?? YOUTUBE_KINDS;
+		const feeds = raw.feeds ?? [];
+		if (!/^UC[\w-]{22}$/.test(raw.id ?? '')) {
+			throw new Error(`sources.yaml: youtube.channels.${handle}.id isn't a channel ID (UC...)`);
+		}
+		for (const kind of kinds.filter((k) => !YOUTUBE_KINDS.includes(k))) {
+			throw new Error(`sources.yaml: youtube.channels.${handle}.kinds has "${kind}", expected ${YOUTUBE_KINDS.join(', ')}`);
+		}
+		const unknown = (labels, where) => {
+			for (const label of labels.filter((l) => !(l in (root.channels ?? {})))) {
+				throw new Error(`sources.yaml: youtube.channels.${handle}.${where} has "${label}", which isn't under channels:`);
+			}
+		};
+		unknown(feeds, 'feeds');
+		// A route without a match would be an empty pattern, which matches every title.
+		// A logo is a name in logos/games (world-of-warcraft), made into the URL it is hosted at.
+		const logoUrl = (logo, where) => {
+			if (logo === undefined) {
+				return null;
+			}
+			if (!/^[a-z0-9-]+$/.test(logo ?? '')) {
+				throw new Error(`sources.yaml: youtube.channels.${handle}.${where} "${logo}" isn't a logo name (like world-of-warcraft)`);
+			}
+			return config.logo_url.replace('{}', logo);
+		};
+		const routes = (raw.routes ?? []).map((route, n) => {
+			const where = `sources.yaml: youtube.channels.${handle}.routes[${n}]`;
+			if (typeof route.match !== 'string' || !route.match) {
+				throw new Error(`${where} has no match`);
+			}
+			unknown(route.feeds ?? [], `routes[${n}].feeds`);
+			let pattern;
+			try {
+				pattern = new RegExp(route.match, route.case ? '' : 'i');
+			} catch (error) {
+				throw new Error(`${where}.match isn't a valid pattern: ${error.message}`);
+			}
+			return { pattern, feeds: route.feeds ?? [], logo: logoUrl(route.logo, `routes[${n}].logo`) };
+		});
+		return [handle, { id: raw.id, name: raw.name ?? handle, feeds, kinds, routes, logo: logoUrl(raw.logo, 'logo') }];
+	}));
+	return config;
+}
+
+/** Minutes between sweeps, so a sweep (a call per channel plus the shared video lookup) fits daily_units. */
+export const youtubeSweepMinutes = (config) => Math.max(config.min_sweep_minutes, Math.ceil((Object.keys(config.channels).length + 1) * 1440 / config.daily_units));

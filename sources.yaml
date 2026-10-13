@@ -102,6 +102,63 @@ shop:
     starcraft-ii: {name: StarCraft II, sources: [starcraft-2-news]}
     starcraft-remastered: {name: StarCraft Remastered, sources: [starcraft-remastered-news]}
 
+# YouTube videos (src/main.js --youtube): uploads, Shorts and streams of Blizzard's channels, by the YouTube Data API (key in YOUTUBE_API_KEY).
+#   channel                The #youtube channel, which gets every video of every channel below. Not under channels: it isn't a feed.
+#   daily_units            Quota we allow ourselves out of Google's 10,000 a day. The sweep interval follows from it and the channel count.
+#   min_sweep_minutes      The shortest time between sweeps.
+#   stream_edit_days       How long a stream's posts can still be edited: the scheduled post when its start time changes,
+#                          the live post when the stream ends.
+#   logo_url               Optional. Where a logo name points, {} being the name. Default: logos/games on this repo's main branch.
+#   channels               YouTube handle -> id, name, logo, feeds, kinds and routes. Only these are tracked.
+#     logo                 The game logo beside the post: a file name in logos/games (world-of-warcraft), made into a URL by logo_url.
+#     feeds                Labels from channels: above. A new video goes to each one's "all" and "new" channel, an edit to "all" and "updated". None: #youtube only.
+#     kinds                Which kinds go to the feeds: video, short, stream. Default all three. #youtube always gets all three.
+#     routes               For a channel that covers several games: the first route whose match (a case-insensitive regex,
+#                          or case-sensitive with case: true) is in the title replaces feeds for that video. No match: feeds.
+#                          Match the full game name as Blizzard writes it ("Diablo II", not "Resurrected"), so a word
+#                          that turns up in another game's title doesn't send it to the wrong feed. A route can also have a
+#                          logo, for the game it is about; without one the channel's logo is used.
+youtube:
+  channel: "1559440446344794142"   # #youtube, which gets every video of every channel below
+  daily_units: 9000
+  min_sweep_minutes: 2
+  failures_before_alert: 3
+  stream_edit_days: 14
+  channels:
+    Warcraft:
+      id: UCbLj9QP9FAaHs_647QckGtg
+      name: World of Warcraft
+      logo: world-of-warcraft
+      feeds: [WOW, WOW_US]
+      routes:
+        - {match: 'Warcraft (III|3)\b', logo: warcraft-3, feeds: [WARCRAFT3]}
+        - {match: 'Warcraft Rumble', logo: warcraft-rumble, feeds: [WARCRAFTRUMBLE]}
+    Blizzard:        {id: UC3GriadTkHBnfgd2UFETGOA, name: Blizzard Entertainment, logo: blizzard, feeds: [BLIZZARD]}
+    Diablo:
+      id: UCxn8csYeZg6awRnZS-aqg0g
+      name: Diablo
+      logo: diablo-4                    # the current game
+      feeds: [DIABLO4, DIABLO]
+      routes:
+        - {match: 'Diablo Immortal', logo: diablo-immortal, feeds: [DIABLOIMMORTAL, DIABLO]}
+        - {match: 'Diablo (III|3)\b', logo: diablo-3, feeds: [DIABLO3, DIABLO]}
+        - {match: 'Diablo (II|2)\b', logo: diablo-2-resurrected, feeds: [DIABLO2, DIABLO]}
+        - {match: '^Diablo\s*[|:]', feeds: [DIABLO]}     # "Diablo | ...": the whole series, no one game, so the channel's logo
+    PlayOverwatch:   {id: UClOf1XXinvZsy4wKPAkro2A, name: Overwatch, logo: overwatch, feeds: [OVERWATCH]}
+    Hearthstone:     {id: UCVia_crjzJylRmGq7SHTiaw, name: Hearthstone, logo: hearthstone, feeds: [HEARTHSTONE]}
+    StarCraft:
+      id: UCZ2h0d4tP0R8klduwj-_bDQ
+      name: StarCraft
+      logo: starcraft-2                 # mostly StarCraft II
+      feeds: [STARCRAFT2]
+      routes:
+        - {match: '^STARCRAFT\b', case: true, logo: starcraft, feeds: [STARCRAFT]}   # the new game is written in capitals, the old ones aren't
+        - {match: 'StarCraft:? Remastered', logo: starcraft-remastered, feeds: [STARCRAFTREMASTERED]}
+        - {match: 'Warcraft (III|3)\b', logo: warcraft-3, feeds: [WARCRAFT3]}
+    WarcraftRumble:  {id: UCwA2Fkx6Uq24GBDL6tL2eyw, name: Warcraft Rumble, logo: warcraft-rumble, feeds: [WARCRAFTRUMBLE]}
+    BlizzHeroes:     {id: UCpVdq9gLew6E76BmfB2GJ0w, name: Heroes of the Storm, logo: heroes-of-the-storm, feeds: [HOTS]}
+    ow_esports:      {id: UCiAInBL9kUzz1XRxk66v-gw, name: Overwatch Esports, logo: overwatch}   # no feeds: #youtube only
+
 # Shared settings for news.blizzard.com, reused below with "<<: *blizzard-news-api".
 # The feed is sorted by last update, newest first, 15 articles per page.
 templates:
