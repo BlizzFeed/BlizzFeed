@@ -2,8 +2,10 @@ import { logger } from '../log.js';
 import { writeJson } from '../json.js';
 import { isoSeconds } from '../time.js';
 import { FEED_TIERS, ref } from '../processors/shop_posts.js';
+import { feedsFor, logoFor, postFor } from '../processors/youtube_posts.js';
 import * as discord from './discord.js';
 import * as shopMessages from './shop_messages.js';
+import * as youtubeMessages from './youtube_messages.js';
 
 const OUTBOX_VERSION = 1;
 // Tier channels each kind of post goes to
@@ -107,6 +109,34 @@ export function buildShopEntries(posts, states, sources, shopChannel, repoUrl, d
 		const entry = { source: sourceId ?? 'shop', source_name: name, article: postRef ?? title, kind: 'shop', detected, title,
 			url: shopMessages.SHOP_URL, message, ref: postRef, edit: post.edit };
 		out.push(...[...new Set(targets)].map((channel) => ({ channel, ...entry })));
+	}
+	return out;
+}
+
+/** states maps a channel handle to its saved state; config is loadYoutubeConfig's. One entry per channel a change goes to:
+ * #youtube always, and the game feeds the video is routed to. A change to a stream's phase carries the ref of the post it edits. */
+export function buildYoutubeEntries(diff, config, states, repoUrl, detected) {
+	const out = [];
+	for (const [handle, entry] of Object.entries(diff.channels)) {
+		const channel = config.channels[handle];
+		for (const change of entry.changes) {
+			const stored = states[handle]?.videos[change.id];
+			if (!stored) {
+				continue;
+			}
+			const video = { id: change.id, ...stored };
+			const post = postFor(change, video);
+			const message = youtubeMessages.buildVideoMessage(video, { name: channel.name, logo: logoFor(channel, video) },
+				{ change: change.type === 'edited' ? change : null, repoUrl, commitUrl: commitUrl(repoUrl, entry.commit), now: detected });
+			const feeds = feedsFor(channel, video).flatMap((label) => post.tiers.map((tier) => config.labels[label]?.[tier]));
+			const targets = new Set([config.channel, ...feeds].filter(Boolean));
+			const fields = { source: `youtube:${handle}`, source_name: channel.name, article: video.id, kind: post.kind, detected, title: video.title,
+				url: youtubeMessages.watchUrl(video), message };
+			if (post.ref) {
+				Object.assign(fields, { ref: post.ref, edit: post.edit, edit_for: config.stream_edit_days * 86400 });
+			}
+			out.push(...[...targets].map((target) => ({ channel: target, ...fields })));
+		}
 	}
 	return out;
 }

@@ -8,15 +8,17 @@ import { logger } from './log.js';
 import { isoSeconds } from './time.js';
 import * as gitops from './core/gitops.js';
 import * as health from './core/health.js';
-import { loadShopConfig, loadSources } from './core/config.js';
+import { loadShopConfig, loadSources, loadYoutubeConfig } from './core/config.js';
 import * as discord from './notifiers/discord.js';
 import * as outbox from './notifiers/outbox.js';
 import * as differ from './processors/differ.js';
 import * as shopDiffer from './processors/shop_differ.js';
+import * as youtubeDiffer from './processors/youtube_differ.js';
 import * as shopPosts from './processors/shop_posts.js';
 import * as htmlProvider from './providers/html.js';
 import * as jsonProvider from './providers/json_api.js';
 import * as shop from './providers/shop.js';
+import * as youtube from './providers/youtube.js';
 
 const PROVIDERS = { html: htmlProvider.fetchFeed, json: jsonProvider.fetchFeed };
 const MAX_FETCH_ATTEMPTS = 3;
@@ -28,6 +30,8 @@ const DIFF_FILE = process.env.DIFF_FILE ?? 'diff.json';
 const OUTBOX_FILE = process.env.OUTBOX_FILE ?? 'outbox.json';
 const SHOP_DIR = process.env.SHOP_DIR ?? 'shop';
 const SHOP_DIFF_FILE = process.env.SHOP_DIFF_FILE ?? 'shop-diff.json';
+const YOUTUBE_DIR = process.env.YOUTUBE_DIR ?? 'youtube';
+const YOUTUBE_DIFF_FILE = process.env.YOUTUBE_DIFF_FILE ?? 'youtube-diff.json';
 
 const sourcesById = () => Object.fromEntries(loadSources(SOURCES_FILE).map((s) => [s.id, s]));
 
@@ -308,6 +312,119 @@ function shopOutbox() {
 	gitops.push(SHOP_DIR);
 }
 
+/** Print each channel's newest uploads with their kinds. Saves nothing. */
+async function youtubeDryRun(handle) {
+	const key = process.env.YOUTUBE_API_KEY || fail('YOUTUBE_API_KEY is not set (try: node --env-file=.env src/main.js ...)');
+	const channels = Object.entries(loadYoutubeConfig(SOURCES_FILE).channels).filter(([name]) => !handle || name === handle);
+	if (!channels.length) {
+		fail(`No such channel under youtube.channels: ${handle}`);
+	}
+	for (const [name, channel] of channels) {
+		const uploads = await youtube.fetchUploads(key, channel.id);
+		const ids = uploads.map((upload) => upload.id);
+		const [videos, shorts] = await Promise.all([youtube.fetchVideos(key, ids), youtube.fetchShortIds(key, channel.id)]);
+		console.log(`\n== ${name}: ${ids.length} newest uploads ==`);
+		for (const id of ids.filter((i) => videos.has(i))) {
+			const video = youtube.buildVideo(videos.get(id), shorts);
+			console.log(`  ${video.kind.padEnd(6)} ${video.live.padEnd(8)} ${video.published}  ${video.title}`);
+		}
+	}
+	console.log(`\nQuota used: ${youtube.quotaUnits()} units`);
+}
+
+/** Fetch each channel's newest uploads, write the changes under YOUTUBE_DIR and list them in youtube-diff.json. The video
+ * details of every channel come from one lookup, so streams scheduled for days ahead cost a call per sweep, not one per channel. */
+async function youtubeSweep(handle) {
+	const key = process.env.YOUTUBE_API_KEY || fail('YOUTUBE_API_KEY is not set');
+	const config = loadYoutubeConfig(SOURCES_FILE);
+	const channels = Object.entries(config.channels).filter(([name]) => !handle || name === handle);
+	if (!channels.length) {
+		fail(`No such channel under youtube.channels: ${handle}`);
+	}
+	const state = health.load(YOUTUBE_DIR);
+	const diff = { channels: {}, alerts: [] };
+	const now = isoSeconds();
+	const failed = (name, error) => {
+		logger.error(`[${name}] failed: ${error.message}`);
+		const alert = health.recordFailure(state, { id: name, failuresBeforeAlert: config.failures_before_alert }, error.message);
+		if (alert) {
+			diff.alerts.push(alert);
+		}
+	};
+
+	const runs = [];
+	for (const [name, channel] of channels) {
+		try {
+			const old = youtubeDiffer.loadState(YOUTUBE_DIR, name);
+			const listed = await youtube.fetchUploads(key, channel.id);
+			runs.push({ name, channel, old, listed, ids: youtubeDiffer.needsDetails(old, listed) });
+		} catch (error) {
+			failed(name, error);
+		}
+	}
+	let resources = null;
+	try {
+		resources = await youtube.fetchVideos(key, [...new Set(runs.flatMap((run) => run.ids))]);
+	} catch (error) {
+		runs.filter((run) => run.ids.length).forEach((run) => failed(run.name, error));
+	}
+
+	for (const { name, channel, old, listed, ids } of runs) {
+		if (ids.length && !resources) {
+			continue;
+		}
+		try {
+			// Only new videos YouTube returned: one it didn't (still processing, or private) would fetch the Shorts list every sweep.
+			const fresh = ids.some((id) => !old?.videos[id] && resources.has(id));
+			const shorts = fresh ? await youtube.fetchShortIds(key, channel.id) : new Set();
+			const details = new Map(ids.filter((id) => resources.has(id)).map((id) => [id, youtube.buildVideo(resources.get(id), shorts)]));
+			const alert = health.recordSuccess(state, { id: name, failuresBeforeAlert: config.failures_before_alert });
+			if (alert) {
+				diff.alerts.push(alert);
+			}
+			const [next, changes] = youtubeDiffer.sweep(old, listed, details, now);
+			youtubeDiffer.writeChannel(YOUTUBE_DIR, name, next, changes, old === null);
+			diff.channels[name] = { baseline: old === null, videos: Object.keys(next.videos).length, changes };
+			logger.success(`[${name}] ${listed.length} listed, ${changes.length} change(s)${old === null ? ' (baseline, nothing reported)' : ''}`);
+		} catch (error) {
+			failed(name, error);
+		}
+	}
+	health.save(YOUTUBE_DIR, state);
+	writeJson(YOUTUBE_DIFF_FILE, { ...diff, quota: youtube.quotaUnits() });
+	logger.info(`Quota used: ${youtube.quotaUnits()} units`);
+}
+
+/** One commit per changed channel, then a single push. Records each SHA in youtube-diff.json. */
+function youtubeCommit() {
+	const diff = readJson(YOUTUBE_DIFF_FILE);
+	for (const [name, entry] of Object.entries(diff.channels)) {
+		const counts = new Map();
+		for (const change of entry.changes) {
+			counts.set(change.type, (counts.get(change.type) ?? 0) + 1);
+		}
+		const summary = entry.baseline ? 'baseline' : [...counts].map(([type, n]) => `${n} ${type}`).join(', ') || 'state';
+		entry.commit = gitops.commitPaths(YOUTUBE_DIR, [name], `${name}: ${summary}`);
+	}
+	gitops.commitPaths(YOUTUBE_DIR, [health.HEALTH_FILE], 'health state');
+	gitops.push(YOUTUBE_DIR);
+	writeJson(YOUTUBE_DIFF_FILE, diff);
+}
+
+/** The run's posts for the bot: a post for each new video, Short and stream phase, and each edit. */
+function youtubeOutbox() {
+	const config = loadYoutubeConfig(SOURCES_FILE);
+	const diff = readJson(YOUTUBE_DIFF_FILE);
+	const states = Object.fromEntries(Object.keys(diff.channels).map((name) => [name, youtubeDiffer.loadState(YOUTUBE_DIR, name)]));
+	const entries = outbox.buildYoutubeEntries(diff, config, states, repoUrl(), isoSeconds());
+	outbox.write(OUTBOX_FILE, 'youtube', entries, process.env.ACTIONS_RUN_URL);
+}
+
+async function youtubeNotify() {
+	await discord.sendYoutubeLog(readJson(YOUTUBE_DIFF_FILE), loadYoutubeConfig(SOURCES_FILE).channels, repoUrl(), process.env.ACTIONS_RUN_URL);
+	logger.success('Notify complete.');
+}
+
 const USAGE = `Usage: node src/main.js [flags]
 
 Page tracker: scrape -> commit -> notify
@@ -320,20 +437,25 @@ Page tracker: scrape -> commit -> notify
   --outbox          write outbox.json from diff.json, for the bot
   --notify          post the run summary to the log channel
   --shop            Battle.net Shop tracking: fetch, write changes + shop-diff.json
-  --dry-run         with --shop: print what the shop lists, save nothing
+  --dry-run         with --shop or --youtube: print what is listed, save nothing
   --region R        with --shop: only this region (eu or us)
   --family SLUG     with --shop: only this shop family slug
   --shop-families   once a day, report shop families that aren't in sources.yaml
   --shop-commit     commit the shop run per family, push, record SHAs in shop-diff.json
   --shop-outbox     write outbox.json from shop-diff.json, for the bot
-  --shop-notify     post the shop run summary to the log channel`;
+  --shop-notify     post the shop run summary to the log channel
+  --youtube         YouTube tracking: fetch, write changes + youtube-diff.json
+  --youtube-commit  commit the YouTube run per channel, push, record SHAs in youtube-diff.json
+  --youtube-outbox  write outbox.json from youtube-diff.json, for the bot
+  --youtube-notify  post the YouTube run summary to the log channel
+  --channel HANDLE  with --youtube: only this channel`;
 
 const flag = { type: 'boolean' };
-const ACTIONS = ['scrape', 'deepen', 'commit', 'outbox', 'notify', 'shop', 'shop-commit', 'shop-families', 'shop-outbox', 'shop-notify'];
+const ACTIONS = ['scrape', 'deepen', 'commit', 'outbox', 'notify', 'shop', 'shop-commit', 'shop-families', 'shop-outbox', 'shop-notify', 'youtube', 'youtube-commit', 'youtube-outbox', 'youtube-notify'];
 const args = parseFlags({
 	...Object.fromEntries(ACTIONS.map((name) => [name, flag])), 'dry-run': flag,
 	'source': { type: 'string' }, 'from-page': { type: 'string', default: '10' }, 'pages': { type: 'string', default: '10' },
-	'region': { type: 'string' }, 'family': { type: 'string' },
+	'region': { type: 'string' }, 'family': { type: 'string' }, 'channel': { type: 'string' },
 }, USAGE, ACTIONS);
 
 if (args.scrape) {
@@ -365,4 +487,16 @@ if (args['shop-outbox']) {
 }
 if (args['shop-notify']) {
 	await shopNotify();
+}
+if (args.youtube) {
+	await (args['dry-run'] ? youtubeDryRun : youtubeSweep)(args.channel);
+}
+if (args['youtube-commit']) {
+	youtubeCommit();
+}
+if (args['youtube-outbox']) {
+	youtubeOutbox();
+}
+if (args['youtube-notify']) {
+	await youtubeNotify();
 }
