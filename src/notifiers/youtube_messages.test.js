@@ -16,6 +16,10 @@ test('a description shows its first paragraph of real text, cut at a word', () =
 	assert.equal(blurb('https://a.com #tag\n\nThe real text.'), 'The real text.');
 	assert.equal(blurb('For more information, visit Blizzard.com.\r\n\r\nLike Blizzard on Facebook: x'), '');
 	assert.equal(blurb(''), '');
+	// A hard wrap inside a sentence is joined; a break after a full stop or before a list item stays.
+	assert.equal(blurb('Let the music carry you to\nZephras Isle, Riverglades, and\nMount Hyjal.'), 'Let the music carry you to Zephras Isle, Riverglades, and Mount Hyjal.');
+	assert.equal(blurb('The new War Chest is here!\nCheck out the trailer.'), 'The new War Chest is here!\nCheck out the trailer.');
+	assert.equal(blurb('Features:\n- one\n- two'), 'Features:\n- one\n- two');
 	const long = blurb('word '.repeat(100));
 	assert.ok(long.length <= 281 && long.endsWith('word…'));
 });

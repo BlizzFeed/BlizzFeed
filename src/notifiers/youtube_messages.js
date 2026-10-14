@@ -5,9 +5,13 @@ const MAX_BLURB = 280;
 // Not worth showing as a description: links or hashtags only, and Blizzard's stock lines on its streams.
 const BOILERPLATE = /^(https?:\/\/\S+|[#@]\S+|\s)+$|^(For more information|Like Blizzard on|Follow |Subscribe)/i;
 
-/** The first paragraph of real text in a description, cut at a word. Empty when there is none. */
+// A line break after a word or a comma is a hard wrap in the middle of a sentence; one after "." or "!" is meant, and so is one before a list item.
+const HARD_WRAP = /([\p{L}\p{N},])\n(?![-•*]|\d+[.)])/gu;
+
+/** The first paragraph of real text in a description, hard wraps joined, cut at a word. Empty when there is none. */
 export function blurb(description) {
-	const first = description.replaceAll('\r\n', '\n').split(/\n\s*\n/).map((p) => p.trim()).find((p) => p && !BOILERPLATE.test(p)) ?? '';
+	const found = description.replaceAll('\r\n', '\n').split(/\n\s*\n/).map((p) => p.trim()).find((p) => p && !BOILERPLATE.test(p)) ?? '';
+	const first = found.replace(HARD_WRAP, '$1 ');
 	return first.length <= MAX_BLURB ? first : `${first.slice(0, MAX_BLURB).replace(/\s+\S*$/, '')}…`;
 }
 
