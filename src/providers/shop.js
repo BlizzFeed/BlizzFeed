@@ -81,7 +81,8 @@ async function fetchPayload(session, url) {
 		throw new ShopFetchError(`redirected to ${response.url}`);
 	}
 	if (!(response.headers.get('content-type') ?? '').startsWith(RSC_TYPE)) {
-		throw new ShopFetchError(`unexpected content type '${response.headers.get('content-type')}' at ${response.url}`);
+		const type = response.headers.get('content-type') ?? 'no content type';
+		throw new ShopFetchError(`${response.url} served ${type.startsWith('text/html') ? 'an HTML page (the old storefront?)' : `'${type}'`}, not a data payload`);
 	}
 	return response.text;
 }

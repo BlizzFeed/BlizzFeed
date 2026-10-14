@@ -373,7 +373,7 @@ function alertsMessage(alerts, runUrl, noun) {
 	const blocks = [];
 	const down = alerts.filter((a) => a.kind === 'down');
 	if (down.length) {
-		blocks.push(`## ${noun} failing\n` + down.map((a) => `- \`${a.source}\` since ${discordTime(a.since, true)}: ${trim(a.error, 100)}`).join('\n'));
+		blocks.push(`## ${noun} failing\n` + down.map((a) => `- \`${a.source}\` since ${discordTime(a.since, true)}: ${trim(a.error, 200)}`).join('\n'));
 	}
 	const recovered = alerts.filter((a) => a.kind === 'recovered');
 	if (recovered.length) {
