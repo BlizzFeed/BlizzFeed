@@ -331,15 +331,15 @@ const YOUTUBE_ORDER = ['new', 'live', 'rescheduled', 'edited'];
 /** A change as a line linked to its video, with the detail under it. */
 function youtubeLine(change) {
 	const emoji = change.type === 'new' ? YOUTUBE_EMOJI[change.kind] : change.type === 'live' && change.to === 'ended' ? '⏹️' : YOUTUBE_EMOJI[change.type];
-	const lines = [`- ${emoji} [${linkLabel(change.title, 80)}](https://www.youtube.com/watch?v=${change.id})`];
+	const lines = [`${emoji} [${linkLabel(change.title, 80)}](https://www.youtube.com/watch?v=${change.id})`];
 	if (change.type === 'new') {
-		lines.push(`  -# new ${change.premiere ? 'premiere' : change.kind}${change.live !== 'none' ? `, ${change.live}` : ''}`);
+		lines.push(subline(`new ${change.premiere ? 'premiere' : change.kind}${change.live !== 'none' ? `, ${change.live}` : ''}`));
 	} else if (change.type === 'live') {
-		lines.push(`  -# ${change.from} → ${change.to}`);
+		lines.push(subline(`${change.from} → ${change.to}`));
 	} else if (change.type === 'edited') {
-		lines.push(`  -# ${Object.keys(change.fields).join(' and ')} edited`);
+		lines.push(subline(`${Object.keys(change.fields).join(' and ')} edited`));
 	} else {
-		lines.push('  -# start time changed');
+		lines.push(subline('start time changed'));
 	}
 	return lines.join('\n');
 }
