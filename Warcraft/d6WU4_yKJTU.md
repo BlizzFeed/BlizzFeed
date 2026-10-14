@@ -1,0 +1,3 @@
+# Thunder Bluff towers in the distance, peaceful plains seem to stretch infinitely...
+
+...and your tauren ancestors fill Mulgore with sacred energy 🪶
