@@ -319,7 +319,7 @@
       "sections": [
         "Mounts"
       ],
-      "badge": "New",
+      "badge": null,
       "price": {
         "fullAmount": "€25.00",
         "discountAmount": null,
@@ -679,7 +679,7 @@
       "sections": [
         "Pets"
       ],
-      "badge": "New",
+      "badge": null,
       "price": {
         "fullAmount": "€10.00",
         "discountAmount": null,
