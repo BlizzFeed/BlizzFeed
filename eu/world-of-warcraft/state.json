@@ -4721,6 +4721,38 @@
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
       "misses": 0
+    },
+    "p:2132971": {
+      "key": "p:2132971",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-zhevraskin-rug",
+      "title": "Zhevraskin Rug",
+      "description": "Decor",
+      "categoryId": null,
+      "itemId": 2132971,
+      "productIds": [
+        2132971
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2132971/zhevraskin-rug",
+      "image": "//catalog.blzstatic.com//fca/0e2215bab7b40a698e5d573c884446bd-WoW_RexxarBundle_BnetShop_ProductAssetGallery_1920x1080_ModernRug.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "100 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 100,
+        "labelFormat": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-15T16:59:25Z",
+      "status": "listed",
+      "misses": 0
     }
   },
   "suspect": false
