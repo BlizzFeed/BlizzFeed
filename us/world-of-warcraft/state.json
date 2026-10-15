@@ -146,12 +146,12 @@
         1914324,
         1914315,
         2091255,
-        2094248
+        2080506
       ],
       "subscriptionIds": [
         1914317,
         1914325,
-        2094251,
+        2140486,
         2091256
       ],
       "destination": "/product/world-of-warcraft-subscription",
@@ -4719,6 +4719,58 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "bltaab231228033176c": {
+      "key": "bltaab231228033176c",
+      "kind": "banner",
+      "cmsId": "bltaab231228033176c",
+      "slug": "world-of-warcraft-champion-of-the-wilds-pack",
+      "itemId": null,
+      "title": "Champion of the Wilds Pack ",
+      "productPageName": "Champion of the Wilds Pack",
+      "headline": "",
+      "subHeadline": "Channel the spirit of Rexxar and answer the call of the wild. ",
+      "buttonText": "Buy Now",
+      "destination": "/product/world-of-warcraft-champion-of-the-wilds-pack",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blte3e9a6bf2bfe96b7/6abd5543dee8845a1fcbb0ed/WoW_RexxarBundle_BnetShop_HeaderDesktop_1600x500-Modern.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-10-15T17:09:34Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt8682660ecbb7b482": {
+      "key": "blt8682660ecbb7b482",
+      "kind": "item",
+      "cmsId": "blt8682660ecbb7b482",
+      "slug": "world-of-warcraft-champion-of-the-wilds-pack",
+      "title": "Champion of the Wilds Pack ",
+      "description": "Bundles",
+      "categoryId": "bundles",
+      "itemId": null,
+      "productIds": [
+        2132972
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/world-of-warcraft-champion-of-the-wilds-pack?p=2132972",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt0a8ee44335ec1af5/6abd46597ec8fe8c25000bf7/WoW_RexxarBundle_BnetShop_ProductAssetGallery_1920x1080-Modern.png",
+      "sections": [
+        "Bundles"
+      ],
+      "badge": "New",
+      "price": {
+        "fullAmount": "$30.00",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 30,
+        "labelFormat": ""
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-15T17:09:34Z",
       "status": "listed",
       "misses": 0
     }
