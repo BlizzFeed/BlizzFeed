@@ -4,7 +4,7 @@ import { USER_AGENT } from '../providers/http.js';
 
 const POST_ATTEMPTS = 3;
 const TIMEOUT_MS = 10000;
-export const COLORS = { added: 0x57F287, updated: 0xFAA61A, down: 0xED4245, recovered: 0x57F287, log: 0x5865F2, stream: 0x9B59B6 };
+export const COLORS = { added: 0x57F287, updated: 0xFAA61A, down: 0xED4245, recovered: 0x57F287, log: 0x5865F2, stream: 0x9B59B6, video: 0xEB459E, shop: 0x00B8D9 };
 const LOG_USERNAME = 'BlizzFeed Log';
 const LOG_AVATAR = 'https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/main/logos/BlizzFeed_ServerIcon_512.png';
 const LOGO = 'https://raw.githubusercontent.com/BlizzFeed/BlizzFeed/main/logos/BlizzFeed_AppLogo_200-nobg.png';

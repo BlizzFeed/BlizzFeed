@@ -27,7 +27,7 @@ BlizzFeed keeps a full copy of every article's text. When something changes, it 
 <img src="images/post-updated-title-lines.png" alt="An orange BlizzFeed post for an article whose title changed and 148 lines were added, with Read Article, Summary Changes, Article Changes and History buttons" width="600">
 
 ### The Battle.net Shop
-BlizzFeed also watches the Battle.net Shop for each game, in both the EU and US stores. It posts when an item is new, comes back, goes on or off sale, changes price, gets a badge, or is removed. Shop banners and edited item details are tracked too. Shop posts are green for new or back, orange for price, sale or badge changes, red for removed, and blue for banners and details.
+BlizzFeed also watches the Battle.net Shop for each game, in both the EU and US stores. It posts when an item is new, comes back, goes on or off sale, changes price, gets a badge, or is removed. Shop banners and edited item details are tracked too. Shop posts are cyan for new or back, orange for price, sale or badge changes, red for removed, and blue for banners and details.
 
 The `bnet-shop` channel gets every shop change for every game. Each game's own feed gets only its new and back items, and its price, sale and badge changes. Three or more changes of one kind in a run are grouped into one post.
 
@@ -40,7 +40,7 @@ A single item's changes are combined into one post, here a price change and the 
 ### YouTube
 BlizzFeed also watches Blizzard's YouTube channels: each game's own, Blizzard's, and Overwatch Esports. It posts new videos, Shorts and livestreams, and notices when a title or description is edited afterwards. A livestream is posted when it's scheduled and again when it goes live, and its post is updated when it ends.
 
-The `youtube` channel gets every video from every channel. Each game's own feed gets its videos, picked by the video's title, so a Warcraft III match uploaded on the StarCraft channel still lands in the Warcraft III feed. Posts show the game's logo, the video's thumbnail and a button to YouTube. They are green for new videos and Shorts, purple for livestreams and orange for edits.
+The `youtube` channel gets every video from every channel. Each game's own feed gets its videos, picked by the video's title, so a Warcraft III match uploaded on the StarCraft channel still lands in the Warcraft III feed. Posts show the game's logo, the video's thumbnail and a button to YouTube. They are pink for new videos and Shorts, purple for livestreams and orange for edits.
 
 ### Look things up
 The BlizzFeed bot also answers two commands in the Discord server, with a reply only you can see:

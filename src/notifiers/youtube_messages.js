@@ -46,7 +46,7 @@ function status(video, channel) {
 		return { ...states[video.live], color: d.COLORS.stream };
 	}
 	const [emoji, word] = video.kind === 'short' ? ['📱', 'New Short'] : ['🎬', 'New video'];
-	return { info: `${emoji} **${word}** · ${name} · ${long}`, foot: ['Posted', video.published], button: 'YouTube', color: d.COLORS.added };
+	return { info: `${emoji} **${word}** · ${name} · ${long}`, foot: ['Posted', video.published], button: 'YouTube', color: d.COLORS.video };
 }
 
 /** A ```diff block of what an edit changed: the old and new title, and the description's line counts. */

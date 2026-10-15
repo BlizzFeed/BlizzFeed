@@ -11,7 +11,7 @@ const DIGEST = {
 	sale_end: 'sales ended', badge: 'badge changes', gone: 'items removed from the shop', banner: 'banner changes',
 	details: 'items with changed details', more: 'more changes',
 };
-const COLOR = { new: 'added', back: 'added', gone: 'down', banner: 'log', details: 'log' }; // the rest is orange
+const COLOR = { new: 'shop', back: 'shop', gone: 'down', banner: 'log', details: 'log' }; // the rest is orange
 const MAX_LINES = 12;
 const MAX_IMAGES = 10; // the most a gallery holds
 const GAP = { type: 14, divider: false, spacing: 1 };
