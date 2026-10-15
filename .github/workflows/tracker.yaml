@@ -70,7 +70,8 @@ jobs:
         working-directory: code
 
       # Start a shop run when the last one is sweep_minutes old. A failed dispatch doesn't fail this run:
-      # the next minute tries again.
+      # the next minute tries again. Both checks allow 30 seconds of slack: the tracker starts a few seconds into
+      # its minute, so an exact check waits one minute too many.
       - name: Start shop run
         continue-on-error: true
         env:
@@ -79,7 +80,7 @@ jobs:
         run: |
           minutes=$(node -e "import('./code/src/core/config.js').then((c) => console.log(c.loadShopConfig('code/sources.yaml').sweep_minutes))")
           last=$(gh run list --workflow shop.yaml --limit 1 --json createdAt --jq '.[0].createdAt // empty')
-          if [ -z "$last" ] || [ $(( $(date +%s) - $(date -d "$last" +%s) )) -ge $(( minutes * 60 )) ]; then
+          if [ -z "$last" ] || [ $(( $(date +%s) - $(date -d "$last" +%s) )) -ge $(( minutes * 60 - 30 )) ]; then
             gh workflow run shop.yaml --ref main
           fi
 
@@ -92,7 +93,7 @@ jobs:
         run: |
           minutes=$(node -e "import('./code/src/core/config.js').then((c) => console.log(c.youtubeSweepMinutes(c.loadYoutubeConfig('code/sources.yaml'))))")
           last=$(gh run list --workflow youtube.yaml --limit 1 --json createdAt --jq '.[0].createdAt // empty')
-          if [ -z "$last" ] || [ $(( $(date +%s) - $(date -d "$last" +%s) )) -ge $(( minutes * 60 )) ]; then
+          if [ -z "$last" ] || [ $(( $(date +%s) - $(date -d "$last" +%s) )) -ge $(( minutes * 60 - 30 )) ]; then
             gh workflow run youtube.yaml --ref main
           fi
 
