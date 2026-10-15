@@ -1,28 +1,5 @@
 [
   {
-    "type": "gone",
-    "family": "world-of-warcraft-classic",
-    "key": "blt3a0100d12c32d56b",
-    "slug": "world-of-warcraft-subscription",
-    "seen": "2026-10-15T17:32:29Z",
-    "changes": {
-      "us": {
-        "type": "gone",
-        "key": "blt3a0100d12c32d56b",
-        "kind": "banner",
-        "slug": "world-of-warcraft-subscription",
-        "title": "World of Warcraft®: Subscription",
-        "destination": "/product/world-of-warcraft-subscription",
-        "seen": "2026-10-15T17:32:29Z",
-        "button": "Subscribe Now",
-        "product": "World of Warcraft®: Subscription",
-        "commit": "67f0377cb338dd247db3b5e40b4359008902693d"
-      }
-    },
-    "at": "2026-10-15T17:33:07Z",
-    "digested": []
-  },
-  {
     "type": "details",
     "family": "world-of-warcraft-classic",
     "key": "blt303a08e1ee43c1e3",
