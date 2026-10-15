@@ -366,8 +366,8 @@
       "price": null,
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2136853": {
       "key": "p:2136853",
@@ -846,6 +846,31 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-14T15:12:26Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2136847": {
+      "key": "p:2136847",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "diablo-immortal-champions-bounty-random-set-item",
+      "title": "Champion's Bounty - Random Set Item",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2136847,
+      "productIds": [
+        2136847
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/diablo-immortal/items/2136847/champions-bounty-random-set-item",
+      "image": "//catalog.blzstatic.com//fda/e7f9676ce768008c71ed5dd22e6e2786-DIA_DI_NA_FreeBundle_RandomSetItem_1920x1080_enus_EE01.png",
+      "sections": [
+        "Free Gift"
+      ],
+      "badge": null,
+      "price": null,
+      "expiresAtMs": null,
+      "first_seen": "2026-10-15T15:01:35Z",
       "status": "listed",
       "misses": 0
     }
