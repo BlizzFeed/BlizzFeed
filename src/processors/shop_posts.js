@@ -26,9 +26,19 @@ export const ref = (event) => `${event.family}:${event.type}:${event.key}`;
 
 const toEvent = (region, family, change) => ({ type: change.type, family, key: change.key, slug: change.slug, seen: change.seen, changes: { [region]: change } });
 
+/** A badge or banner going opposite ways in the two regions is two changes: one region can serve a stale copy. */
+function sameWay(a, b) {
+	const [x, y] = [a, b].map((e) => Object.values(e.changes)[0]);
+	if (a.type === 'badge') {
+		return (x.to ?? null) === (y.to ?? null);
+	}
+	return a.type !== 'banner' || x.what === y.what;
+}
+
 /** The same change in the other region: by key, else by slug when that is unambiguous (Diablo II's keys differ). */
 function partner(event, others) {
-	const same = others.filter((o) => o.family === event.family && o.type === event.type && !Object.keys(o.changes).some((r) => r in event.changes));
+	const same = others.filter((o) => o.family === event.family && o.type === event.type && !Object.keys(o.changes).some((r) => r in event.changes)
+		&& sameWay(o, event));
 	const byKey = same.find((o) => o.key === event.key);
 	if (byKey) {
 		return byKey;

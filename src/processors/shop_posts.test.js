@@ -64,6 +64,16 @@ test('different keys pair by a unique slug only', () => {
 	assert.equal(sp.resolve([], shared, NOW)[0].length, 3); // the slug is shared, so it can't tell which one is meant
 });
 
+test('a badge going opposite ways in the two regions is two events, in a run and across runs', () => {
+	const badge = (region, to) => [region, 'world-of-warcraft', { type: 'badge', key: 'c-1', slug: 's', seen: NOW, from: to ? null : 'New', to }];
+	let [events, ledger] = sp.resolve([], [badge('eu', 'New'), badge('us', null)], NOW);
+	assert.equal(events.length, 2);
+	[events, ledger] = sp.resolve([], [badge('eu', null)], NOW);
+	ledger = sp.remember(ledger, sp.plan(events, FAMILIES), NOW);
+	[events] = sp.resolve(ledger, [badge('us', 'New')], NOW);
+	assert.equal('was' in events[0], false);
+});
+
 test('other types and families do not pair', () => {
 	const [events] = sp.resolve([], [fresh('eu', { kind: 'price' }), fresh('us', { kind: 'new' }), fresh('eu', { family: 'world-of-warcraft' }), fresh('us')], NOW);
 	assert.equal(events.length, 4);
