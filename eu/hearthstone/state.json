@@ -132,7 +132,7 @@
         "Limited Time Bundles",
         "Web Offers"
       ],
-      "badge": "New",
+      "badge": null,
       "price": {
         "fullAmount": "€79.99",
         "discountAmount": null,
@@ -165,7 +165,7 @@
         "Limited Time Bundles",
         "Web Offers"
       ],
-      "badge": "New",
+      "badge": null,
       "price": {
         "fullAmount": "€49.99",
         "discountAmount": null,
