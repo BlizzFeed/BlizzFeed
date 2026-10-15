@@ -77,8 +77,9 @@
         "Banner"
       ],
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-15T17:32:29Z"
     },
     "blt3a0100d12c32d56b": {
       "key": "blt3a0100d12c32d56b",
@@ -254,7 +255,7 @@
       "productIds": [],
       "subscriptionIds": [],
       "destination": "/product/world-of-warcraft-subscription",
-      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt53d7af3c32be4c52/6a4bce27cfed1504d9b00896/WoW_6MonthSub_6MonthGameTimeOffer_BnetShop_ProductAssetGallery_1920x1080_ROW.png",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltace32ee596dce81d/6ac3f7fe7ec8fe45a6000c4e/WoW_YoA2026_BnetShop_ProductAssetGallery_1920x1080-ROW.png",
       "sections": [
         "Subscriptions"
       ],
