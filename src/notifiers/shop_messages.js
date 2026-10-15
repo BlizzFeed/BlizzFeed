@@ -4,8 +4,9 @@ import { cardName, familyDir } from '../processors/shop_differ.js';
 export const SHOP_URL = 'https://shop.battle.net'; // the plain host sends each reader to their own region
 const STATUS = {
 	new: '🟢 **New in the shop**', back: '🔁 **Back in the shop**', price: '💵 **Price changed**', sale_start: '🏷️ **Now on sale**',
-	sale_end: '⌛ **Sale ended**', gone: '🔴 **Removed from the shop**', banner: '🖼️ **New banner**', details: '📝 **Details changed**',
+	sale_end: '⌛ **Sale ended**', gone: '🔴 **Removed from the shop**', details: '📝 **Details changed**',
 };
+const BANNER = { added: '🖼️ **New banner**', back: '🖼️ **Banner back**', changed: '🖼️ **Banner changed**', removed: '🖼️ **Banner removed**' };
 const DIGEST = {
 	new: 'new items in the shop', back: 'items back in the shop', price: 'price changes', sale_start: 'items now on sale',
 	sale_end: 'sales ended', badge: 'badge changes', gone: 'items removed from the shop', banner: 'banner changes',
@@ -71,6 +72,9 @@ function priceText(event, states) {
 }
 
 function status(event) {
+	if (event.type === 'banner') {
+		return BANNER[firstChange(event).what] ?? BANNER.added;
+	}
 	if (event.type !== 'badge') {
 		return STATUS[event.type];
 	}
@@ -121,11 +125,12 @@ export function buildSingle(events, states, logo, repoUrl, commit, now, channel)
 	const item = artItem(states, event);
 	const title = titleOf(event);
 	const content = `## ${d.trim(title, 256)}\n` + events.map((e) => statusLine(e, states)).join('\n');
-	const note = kind === 'banner' ? item.subHeadline : kind === 'details' ? null : item.description;
+	const diffed = kind === 'details' || (kind === 'banner' && change.changed?.length); // the diff block shows the text
+	const note = diffed ? null : kind === 'banner' ? item.subHeadline : item.description;
 	// The divider keeps the item's own description from reading as one more status line.
 	const inner = [...d.top(d.text(content), logo, title), d.DIVIDER, ...(note ? [d.text(d.trim(note, 200))] : [])];
 	let art = item.image ? [{ media: { url: image(item.image) } }] : [];
-	const edited = events.find((e) => e.type === 'details');
+	const edited = events.find((e) => e.type === 'details' || (e.type === 'banner' && firstChange(e).changed?.length));
 	if (edited) {
 		const detail = firstChange(edited);
 		const block = d.diffBlock(detailLines(detail));

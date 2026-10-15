@@ -265,7 +265,7 @@ function shopDetail(change) {
 	if (['details', 'banner'].includes(change.type) && change.changed?.length) {
 		return change.changed.map((field) => shopField(change, field)).join(' · ');
 	}
-	return change.what === 'back' ? 'back' : null;
+	return ['back', 'removed'].includes(change.what) ? change.what : null;
 }
 
 // Log lines lead with their emoji, not a list bullet: mobile joins an indented subtext line onto its list item.

@@ -43,6 +43,14 @@ function product(bannerItem, fetched) {
 	return Object.values(fetched).find((i) => i.kind === 'item' && ((i.itemId && i.itemId === bannerItem.itemId) || (i.slug && i.slug === bannerItem.slug)))?.title ?? null;
 }
 
+/** A saved banner that left the page as a new banner for the same product arrived: Blizzard swapped the art and text. */
+function replacedBanner(items, fetched, item) {
+	if (item.kind !== 'banner' || !item.destination) {
+		return null;
+	}
+	return Object.values(items).find((i) => i.kind === 'banner' && i.status !== 'gone' && !(i.key in fetched) && i.destination === item.destination) ?? null;
+}
+
 /** [type, extra] for each way the fetched item differs from the saved one. */
 function compare(prev, item) {
 	if (item.kind === 'banner') {
@@ -102,7 +110,14 @@ export async function sweep(old, fetched, now, missesNeeded, confirm) {
 
 	for (const [key, item] of Object.entries(fetched)) {
 		const prev = items[key];
-		if (!prev || prev.status === 'gone') {
+		const replaced = !prev && replacedBanner(items, fetched, item);
+		if (replaced) {
+			Object.assign(replaced, { status: 'gone', gone_since: now }); // its successor reports the change
+			const found = differing(replaced, item, [...BANNER_FIELDS, 'image']);
+			if (found.changed.length) {
+				log('banner', item, { what: 'changed', replaced: replaced.key, ...found });
+			}
+		} else if (!prev || prev.status === 'gone') {
 			if (item.kind === 'banner') {
 				log('banner', item, { what: prev ? 'back' : 'added' });
 			} else {
@@ -150,7 +165,11 @@ export async function sweep(old, fetched, now, missesNeeded, confirm) {
 		}
 		item.status = 'gone';
 		item.gone_since = now;
-		log('gone', item);
+		if (item.kind === 'banner') {
+			log('banner', item, { what: 'removed' }); // the product it showed is usually still for sale
+		} else {
+			log('gone', item);
+		}
 	}
 	return [{ items, suspect: false }, changes];
 }
@@ -177,7 +196,7 @@ export function renderMarkdown(item) {
 export function writeFamily(shopDir, region, family, state, changes, baseline) {
 	const root = path.join(shopDir, familyDir(region, family));
 	fs.mkdirSync(path.join(root, 'items'), { recursive: true });
-	const touched = baseline ? Object.keys(state.items) : new Set(changes.map((c) => c.key));
+	const touched = baseline ? Object.keys(state.items) : new Set(changes.flatMap((c) => [c.key, c.replaced].filter(Boolean)));
 	for (const key of touched) {
 		fs.writeFileSync(path.join(root, 'items', `${cardName(key)}.md`), renderMarkdown(state.items[key]));
 	}

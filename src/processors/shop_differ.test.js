@@ -131,13 +131,24 @@ test('an unlisted item back on the page is listed again, silently', async () => 
 	assert.equal(back.items.a.status, 'listed');
 });
 
-test('free items and banners are gone without asking the item page', async () => {
+test('free items and banners are gone without asking the item page, and a banner leaving is a removed banner', async () => {
 	const confirm = async () => {
 		throw new Error('asked');
 	};
 	const state = await baseline(item('f', { price: { fullAmount: null, raw: 0 } }), banner(), item('c'));
-	const [, changes] = await missingSweeps(state, NEEDED, confirm, [item('c')]);
-	assert.deepEqual(types(changes), ['gone', 'gone']);
+	const [after, changes] = await missingSweeps(state, NEEDED, confirm, [item('c')]);
+	assert.deepEqual(changes.map((c) => [c.type, c.what]), [['gone', undefined], ['banner', 'removed']]);
+	assert.equal(after.items.b.status, 'gone');
+});
+
+test('a new banner for a missing banner\'s product replaces it as one change', async () => {
+	const state = await baseline(item('a'), banner('old', { subHeadline: '6 months', image: 'old.png' }), banner('other', { destination: '/product/y' }));
+	const swapped = banner('new', { subHeadline: '12 months', image: 'new.png' });
+	const [after, changes] = await run(state, page(item('a'), swapped, banner('other', { destination: '/product/y' }), ...STABLE));
+	assert.deepEqual(changes.map((c) => [c.type, c.what, c.key, c.replaced, c.changed]), [['banner', 'changed', 'new', 'old', ['subHeadline', 'image']]]);
+	assert.equal(after.items.old.status, 'gone');
+	const [, later] = await missingSweeps(after, NEEDED, undefined, [item('a'), swapped, banner('other', { destination: '/product/y' })]);
+	assert.deepEqual(later, []); // the old one is not reported again
 });
 
 test('a failed check is retried next sweep instead of deciding', async () => {
