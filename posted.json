@@ -1,24 +1,24 @@
 [
   {
-    "type": "new",
+    "type": "gone",
     "family": "diablo-immortal",
-    "key": "p:2136847",
-    "slug": "diablo-immortal-champions-bounty-random-set-item",
-    "seen": "2026-10-15T15:01:35Z",
+    "key": "p:2136846",
+    "slug": "diablo-immortal-champions-bounty-bound-gem-fragment",
+    "seen": "2026-10-15T15:13:39Z",
     "changes": {
       "us": {
-        "type": "new",
-        "key": "p:2136847",
+        "type": "gone",
+        "key": "p:2136846",
         "kind": "item",
-        "slug": "diablo-immortal-champions-bounty-random-set-item",
-        "title": "Champion's Bounty - Random Set Item",
-        "destination": "/family/diablo-immortal/items/2136847/champions-bounty-random-set-item",
-        "seen": "2026-10-15T15:01:35Z",
+        "slug": "diablo-immortal-champions-bounty-bound-gem-fragment",
+        "title": "Champion's Bounty - Bound Gem Fragment",
+        "destination": "/family/diablo-immortal/items/2136846/champions-bounty-bound-gem-fragment",
+        "seen": "2026-10-15T15:13:39Z",
         "price": null,
-        "commit": "0ac93cc92267f8424742d4f7f395e9c55c6a3e19"
+        "commit": "b420b85a2af0ff7ee54928a01725ec10da96886e"
       }
     },
-    "at": "2026-10-15T15:02:12Z",
+    "at": "2026-10-15T15:14:17Z",
     "digested": []
   }
 ]
