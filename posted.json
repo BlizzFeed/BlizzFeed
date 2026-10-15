@@ -93,67 +93,27 @@
     "digested": []
   },
   {
-    "type": "badge",
-    "family": "hearthstone",
-    "key": "bltd0d7cfe481d6893f",
-    "slug": "hearthstone-reign-of-the-black-empire-mega-bundle",
-    "seen": "2026-10-15T17:04:29Z",
+    "type": "banner",
+    "family": "world-of-warcraft",
+    "key": "blt88a08b7741e93ffc",
+    "slug": "world-of-warcraft-subscription",
+    "seen": "2026-10-15T17:09:34Z",
     "changes": {
-      "us": {
-        "type": "badge",
-        "key": "bltd0d7cfe481d6893f",
-        "kind": "item",
-        "slug": "hearthstone-reign-of-the-black-empire-mega-bundle",
-        "title": "Hearthstone®: Reign of the Black Empire Mega Bundle Pre-Purchase",
-        "destination": "/product/hearthstone-reign-of-the-black-empire-mega-bundle?p=2120904",
-        "seen": "2026-10-15T17:04:29Z",
-        "price": {
-          "fullAmount": "$79.99",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "USD",
-          "raw": 79.99,
-          "labelFormat": ""
-        },
-        "from": "New",
-        "to": null,
-        "maybe_new": false,
-        "commit": "99a35853c265e541d77214f0e5dc1c8735049a2b"
+      "eu": {
+        "type": "banner",
+        "key": "blt88a08b7741e93ffc",
+        "kind": "banner",
+        "slug": "world-of-warcraft-subscription",
+        "title": "World of Warcraft®: Subscription",
+        "destination": "/product/world-of-warcraft-subscription",
+        "seen": "2026-10-15T17:09:34Z",
+        "button": "Subscribe Now",
+        "product": "World of Warcraft®: Subscription",
+        "what": "added",
+        "commit": "f6183312363e4f8deda1c2a28d9b0e81f59f4dfe"
       }
     },
-    "at": "2026-10-15T17:05:07Z",
-    "digested": []
-  },
-  {
-    "type": "badge",
-    "family": "hearthstone",
-    "key": "blt1cf070cf99e0fdc2",
-    "slug": "hearthstone-reign-of-the-black-empire-mega-bundle",
-    "seen": "2026-10-15T17:04:29Z",
-    "changes": {
-      "us": {
-        "type": "badge",
-        "key": "blt1cf070cf99e0fdc2",
-        "kind": "item",
-        "slug": "hearthstone-reign-of-the-black-empire-mega-bundle",
-        "title": "Hearthstone®: Reign of the Black Empire Bundle Pre-Purchase",
-        "destination": "/product/hearthstone-reign-of-the-black-empire-mega-bundle?p=2120905",
-        "seen": "2026-10-15T17:04:29Z",
-        "price": {
-          "fullAmount": "$49.99",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "USD",
-          "raw": 49.99,
-          "labelFormat": ""
-        },
-        "from": "New",
-        "to": null,
-        "maybe_new": false,
-        "commit": "99a35853c265e541d77214f0e5dc1c8735049a2b"
-      }
-    },
-    "at": "2026-10-15T17:05:07Z",
+    "at": "2026-10-15T17:10:13Z",
     "digested": []
   }
 ]
