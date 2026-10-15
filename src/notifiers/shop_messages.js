@@ -152,15 +152,24 @@ export function buildSingle(events, states, logo, repoUrl, commit, now, channel)
 	return payload(kind, inner);
 }
 
+/** What a digest line says after the item, so it reads without opening it: the price, or what changed. */
+function lineDetail(event, states) {
+	if (event.type === 'badge') {
+		const { from, to } = firstChange(event);
+		return `${from || 'no badge'} → ${to || 'no badge'}`;
+	}
+	if (event.type === 'banner') {
+		return firstChange(event).what ?? null;
+	}
+	return event.type === 'details' ? null : priceText(event, states);
+}
+
 function line(event, states, emoji = false) {
 	const change = firstChange(event);
 	const title = d.linkLabel(titleOf(event), 60);
-	let text = (emoji ? `- ${d.SHOP_EMOJI[event.type]} ` : '- ') + (change.destination ? `[${title}](${url(change.destination)})` : title);
-	const price = ['new', 'back', 'sale_start', 'price'].includes(event.type) ? priceText(event, states) : null;
-	if (price) {
-		text += ` · ${price}`;
-	}
-	return text;
+	const text = (emoji ? `- ${d.SHOP_EMOJI[event.type]} ` : '- ') + (change.destination ? `[${title}](${url(change.destination)})` : title);
+	const detail = lineDetail(event, states);
+	return detail ? `${text} · ${detail}` : text;
 }
 
 /** A details digest: one diff block per kind of change, each followed by the items it applies to. */
