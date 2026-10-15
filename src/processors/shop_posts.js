@@ -1,5 +1,6 @@
 import fs from 'node:fs';
 import path from 'node:path';
+import { isDeepStrictEqual } from 'node:util';
 import { writeJson } from '../json.js';
 
 export const LEDGER_FILE = 'posted.json';
@@ -36,8 +37,19 @@ function partner(event, others) {
 	return clash.length === 1 && event.slug ? clash[0] : null;
 }
 
+const signature = (event) => {
+	const { title = null, what = null, to = null } = Object.values(event.changes)[0];
+	return { type: event.type, title, what, to };
+};
+
+/** The same change to a product another family's page also shows (WoW and Classic share the subscription): by key,
+ * else by slug and title. */
+const sameChange = (a, b) => a.family !== b.family && (a.key === b.key || (Boolean(a.slug) && a.slug === b.slug))
+	&& isDeepStrictEqual(signature(a), signature(b));
+
 /** [events, ledger] from fresh [[region, family, change]]. An event whose other region is in the ledger gets `was`,
- * the regions already posted, so its post is edited. */
+ * the regions already posted, so its post is edited. The ledger entry stays, paired, so another family's page
+ * showing the same change still finds it. */
 export function resolve(ledger, fresh, now) {
 	const cutoff = Date.parse(now) - EDIT_WINDOW_MS;
 	const kept = ledger.filter((e) => Date.parse(e.at) > cutoff);
@@ -52,21 +64,21 @@ export function resolve(ledger, fresh, now) {
 		}
 	}
 	for (const event of events) {
-		const match = partner(event, kept);
+		const match = partner(event, kept.filter((e) => !e.paired));
 		if (match) {
-			kept.splice(kept.indexOf(match), 1);
 			event.was = Object.keys(match.changes).sort();
-			event.digested = match.digested ?? [];
+			event.digested = [...match.digested ?? []];
 			event.changes = { ...match.changes, ...event.changes };
+			Object.assign(match, { paired: true, changes: event.changes });
 		}
 	}
 	return [events, kept];
 }
 
-/** Adds the one-sided events of new posts to the ledger. `digested` lists the destinations that got the event in a
- * digest, where there is no post of its own to edit. */
+/** Adds the one-sided events of new posts to the ledger. `digested` lists the destinations with no post of the event's
+ * own to edit: they got it in a digest, or as another family's post of the same change. */
 export function remember(ledger, posts, now) {
-	const known = new Map(ledger.map((e) => [ref(e), e]));
+	const known = new Map(ledger.filter((e) => !e.paired).map((e) => [ref(e), e]));
 	for (const post of posts) {
 		for (const event of post.events) {
 			if (post.edit || Object.keys(event.changes).length !== 1) {
@@ -74,8 +86,8 @@ export function remember(ledger, posts, now) {
 			}
 			let entry = known.get(ref(event));
 			if (!entry) {
-				const { was: _was, digested: _digested, ...rest } = event;
-				entry = { ...rest, at: now, digested: [] };
+				const { was: _was, digested, ...rest } = event;
+				entry = { ...rest, at: now, digested: [...digested ?? []] };
 				ledger.push(entry);
 				known.set(ref(event), entry);
 			}
@@ -112,23 +124,33 @@ function singles(events) {
 const announced = (event) => !(event.type === 'price' && Object.values(event.changes).some((c) => c.sale_kept));
 
 /** The posts of a run: {destination, game (the family's first feed), edit, kind (single, digest or more), type, events}.
- * Edits go to destinations the event was already posted to; the rest are digested and capped. */
-export function plan(events, families) {
+ * Edits go to destinations the event was already posted to; the rest are digested and capped. A change another family
+ * already took to a destination, in this run or in the recent ledger, isn't posted there again. */
+export function plan(events, families, ledger = []) {
+	const reached = ledger.map((e) => [e, audiences(e, families[e.family]?.sources ?? []).map((d) => JSON.stringify(d))]);
 	const groups = new Map();
 	for (const event of events.filter(announced)) {
 		const sources = families[event.family].sources;
 		const before = 'was' in event ? audiences(event, sources, event.was).map((d) => JSON.stringify(d)) : [];
+		const took = [];
 		for (const destination of audiences(event, sources)) {
-			if (event.digested?.includes(JSON.stringify(destination))) {
-				continue; // that digest already listed it
+			const key = JSON.stringify(destination);
+			if (event.digested?.includes(key)) {
+				continue; // a digest or another family's post already has it
 			}
-			const edit = before.includes(JSON.stringify(destination));
+			const edit = before.includes(key);
+			if (!edit && reached.some(([other, keys]) => keys.includes(key) && sameChange(event, other))) {
+				event.digested = [...event.digested ?? [], key];
+				continue;
+			}
+			took.push(key);
 			const id = JSON.stringify([destination, sources[0], edit]);
 			if (!groups.has(id)) {
 				groups.set(id, { destination, game: sources[0], edit, members: [] });
 			}
 			groups.get(id).members.push(event);
 		}
+		reached.push([event, took]);
 	}
 	const posts = [];
 	for (const { destination, game, edit, members } of groups.values()) {

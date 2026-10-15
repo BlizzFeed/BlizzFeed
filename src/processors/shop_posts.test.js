@@ -37,7 +37,7 @@ test('the other region arriving later edits the earlier post', () => {
 	ledger = sp.remember(ledger, sp.plan(events, FAMILIES), NOW);
 	assert.deepEqual(ledger.map((e) => Object.keys(e.changes)), [['eu']]);
 	[events, ledger] = sp.resolve(ledger, [fresh('us')], '2026-10-10T10:10:00+00:00');
-	assert.deepEqual(ledger, []);
+	assert.deepEqual(ledger.map((e) => [e.paired, Object.keys(e.changes).sort()]), [[true, ['eu', 'us']]]);
 	assert.deepEqual(events[0].was, ['eu']);
 	assert.deepEqual(Object.keys(events[0].changes).sort(), ['eu', 'us']);
 	assert.ok(sp.plan(events, FAMILIES).every((p) => p.edit));
@@ -67,6 +67,22 @@ test('different keys pair by a unique slug only', () => {
 test('other types and families do not pair', () => {
 	const [events] = sp.resolve([], [fresh('eu', { kind: 'price' }), fresh('us', { kind: 'new' }), fresh('eu', { family: 'world-of-warcraft' }), fresh('us')], NOW);
 	assert.equal(events.length, 4);
+});
+
+test('the same change on two families\' pages is posted once per destination, also when the other family follows later', () => {
+	const classic = { ...FAMILIES, 'world-of-warcraft-classic': { sources: ['wow-news', 'wow-news-us'] } };
+	const both = [fresh('eu', { family: 'world-of-warcraft', kind: 'banner', key: 'b-1' }), fresh('eu', { family: 'world-of-warcraft-classic', kind: 'banner', key: 'b-1' })];
+	let [events, ledger] = sp.resolve([], both, NOW);
+	let posts = sp.plan(events, classic, ledger);
+	assert.deepEqual(posts.map((p) => [p.destination, p.events.map((e) => e.family)]), [[['shop', null], ['world-of-warcraft']]]);
+	ledger = sp.remember(ledger, posts, NOW);
+	const later = '2026-10-10T10:10:00+00:00';
+	[events, ledger] = sp.resolve(ledger, [fresh('us', { family: 'world-of-warcraft', kind: 'banner', key: 'b-1' })], later);
+	ledger = sp.remember(ledger, sp.plan(events, classic, ledger), later);
+	[events] = sp.resolve(ledger, [fresh('us', { family: 'world-of-warcraft-classic', kind: 'banner', key: 'b-1' })], later);
+	assert.deepEqual(sp.plan(events, classic, ledger), []); // the WoW post, edited for the US, already has it
+	[events] = sp.resolve([], [fresh('eu', { family: 'world-of-warcraft-classic', kind: 'new', key: 'c-9' })], NOW);
+	assert.equal(sp.plan(events, classic, ledger).length, 2); // another item is posted as usual
 });
 
 test('a digest is not posted again when the other region follows, but a feed that missed it still gets it', () => {

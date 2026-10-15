@@ -299,7 +299,7 @@ function shopOutbox() {
 	const now = isoSeconds();
 	const fresh = Object.entries(diff.families).flatMap(([label, entry]) => entry.changes.map((change) => [...label.split('/'), { ...change, commit: entry.commit ?? null }]));
 	const [events, ledger] = shopPosts.resolve(shopPosts.loadLedger(SHOP_DIR), fresh, now);
-	const posts = shopPosts.plan(events, config.families);
+	const posts = shopPosts.plan(events, config.families, ledger);
 	const states = {};
 	if (posts.length) {
 		for (const region of Object.keys(config.regions)) {
