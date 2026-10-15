@@ -57,9 +57,13 @@ const signature = (event) => {
 const sameChange = (a, b) => a.family !== b.family && (a.key === b.key || (Boolean(a.slug) && a.slug === b.slug))
 	&& isDeepStrictEqual(signature(a), signature(b));
 
+/** A ledger entry's lines: each change of its post with when it was seen. */
+const linesOf = (entry) => entry.lines ?? [{ seen: entry.seen, changes: entry.changes }];
+
 /** [events, ledger] from fresh [[region, family, change]]. An event whose other region is in the ledger gets `was`,
  * the regions already posted, so its post is edited. The ledger entry stays, paired, so another family's page
- * showing the same change still finds it. */
+ * showing the same change still finds it. An item that changes the same way again within the window (a badge
+ * Blizzard's servers flip back and forth) edits that post too, and the event gets `lines`: every change, timed. */
 export function resolve(ledger, fresh, now) {
 	const cutoff = Date.parse(now) - EDIT_WINDOW_MS;
 	const kept = ledger.filter((e) => Date.parse(e.at) > cutoff);
@@ -73,6 +77,7 @@ export function resolve(ledger, fresh, now) {
 			events.push(event);
 		}
 	}
+	const owners = new Map();
 	for (const event of events) {
 		const match = partner(event, kept.filter((e) => !e.paired));
 		if (match) {
@@ -80,24 +85,39 @@ export function resolve(ledger, fresh, now) {
 			event.digested = [...match.digested ?? []];
 			event.changes = { ...match.changes, ...event.changes };
 			Object.assign(match, { paired: true, changes: event.changes });
+			owners.set(event, match);
+			continue;
+		}
+		const earlier = announced(event) && kept.findLast((e) => ref(e) === ref(event));
+		if (earlier) {
+			event.was = Object.keys(earlier.changes).sort();
+			event.digested = [...earlier.digested ?? []];
+			earlier.lines = [...linesOf(earlier), { seen: event.seen, changes: event.changes }];
+			Object.assign(earlier, { paired: true, changes: { ...earlier.changes, ...event.changes } });
+			owners.set(event, earlier);
+		}
+	}
+	for (const [event, entry] of owners) {
+		if (entry.lines) {
+			event.lines = entry.lines; // the final list, so every event of the item shows all of it
 		}
 	}
 	return [events, kept];
 }
 
-/** Adds the one-sided events of new posts to the ledger. `digested` lists the destinations with no post of the event's
+/** Adds the events of new posts to the ledger. `digested` lists the destinations with no post of the event's
  * own to edit: they got it in a digest, or as another family's post of the same change. */
 export function remember(ledger, posts, now) {
-	const known = new Map(ledger.filter((e) => !e.paired).map((e) => [ref(e), e]));
+	const known = new Map(ledger.map((e) => [ref(e), e])); // the newest entry of each
 	for (const post of posts) {
 		for (const event of post.events) {
-			if (post.edit || Object.keys(event.changes).length !== 1) {
+			if (post.edit) {
 				continue;
 			}
 			let entry = known.get(ref(event));
 			if (!entry) {
-				const { was: _was, digested, ...rest } = event;
-				entry = { ...rest, at: now, digested: [...digested ?? []] };
+				const { was: _was, digested, lines: _lines, ...rest } = event;
+				entry = { ...rest, at: now, digested: [...digested ?? []], ...(Object.keys(event.changes).length > 1 && { paired: true }) };
 				ledger.push(entry);
 				known.set(ref(event), entry);
 			}
@@ -130,6 +150,24 @@ function singles(events) {
 	return [...items.values()].map((group) => ({ kind: 'single', type: group[0].type, events: group }));
 }
 
+/** The item's other changes that went out in the same post as an edited one, from the ledger, so the edit keeps them
+ * (and the post's first change, whose ref the bot finds it by). */
+function postedWith(members, ledger, destination, families) {
+	const key = JSON.stringify(destination);
+	const has = (e) => members.some((m) => m.family === e.family && m.key === e.key && m.type === e.type);
+	const found = new Set();
+	for (const member of members) {
+		const owner = ledger.findLast((e) => ref(e) === ref(member));
+		for (const entry of ledger) {
+			if (owner && entry !== owner && entry.family === owner.family && entry.key === owner.key && entry.at === owner.at && !has(entry)
+				&& !entry.digested?.includes(key) && audiences(entry, families[entry.family]?.sources ?? []).some((d) => JSON.stringify(d) === key)) {
+				found.add(entry);
+			}
+		}
+	}
+	return [...found];
+}
+
 /** A price change that only made the sale price the list price isn't news; the sale ending is. */
 const announced = (event) => !(event.type === 'price' && Object.values(event.changes).some((c) => c.sale_kept));
 
@@ -143,7 +181,10 @@ export function plan(events, families, ledger = []) {
 		const sources = families[event.family].sources;
 		const before = 'was' in event ? audiences(event, sources, event.was).map((d) => JSON.stringify(d)) : [];
 		const took = [];
-		for (const destination of audiences(event, sources)) {
+		// An item's post that lists its changes is edited everywhere it went, also where this change's region doesn't go.
+		const targets = event.lines ? [...new Map([...audiences(event, sources), ...audiences(event, sources, event.was)].map((d) => [JSON.stringify(d), d])).values()]
+			: audiences(event, sources);
+		for (const destination of targets) {
 			const key = JSON.stringify(destination);
 			if (event.digested?.includes(key)) {
 				continue; // a digest or another family's post already has it
@@ -166,7 +207,7 @@ export function plan(events, families, ledger = []) {
 	for (const { destination, game, edit, members } of groups.values()) {
 		let built;
 		if (edit) {
-			built = singles(members);
+			built = singles([...members, ...postedWith(members, ledger, destination, families)]);
 		} else {
 			built = ORDER.map((type) => ({ kind: 'digest', type, events: members.filter((e) => e.type === type) })).filter((p) => p.events.length >= DIGEST_AT);
 			const digested = new Set(built.flatMap((p) => p.events));

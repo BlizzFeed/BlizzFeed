@@ -64,6 +64,25 @@ test('different keys pair by a unique slug only', () => {
 	assert.equal(sp.resolve([], shared, NOW)[0].length, 3); // the slug is shared, so it can't tell which one is meant
 });
 
+test('an edit keeps the other changes its post showed, first change first, only where they went', () => {
+	const at = (time) => `2026-10-13T${time}:00+00:00`;
+	const change = (type, from, to, time) => ({ type, key: 'c-1', slug: 's', seen: at(time), from, to });
+	const runs = [
+		['17:04', [['eu', 'overwatch', change('badge', 'New', null, '17:04')], ['eu', 'overwatch', { ...change('details', {}, {}, '17:04'), changed: [] }]]],
+		['17:15', [['eu', 'overwatch', change('badge', null, 'New', '17:15')]]],
+	];
+	let ledger = [];
+	let posts;
+	for (const [time, fresh] of runs) {
+		let events;
+		[events, ledger] = sp.resolve(ledger, fresh, at(time));
+		posts = sp.plan(events, FAMILIES, ledger);
+		ledger = sp.remember(ledger, posts, at(time));
+	}
+	assert.deepEqual(posts.map((p) => [p.destination[1] ?? 'shop', p.edit, p.events.map((e) => e.type)]),
+		[['overwatch-news', true, ['badge']], ['shop', true, ['badge', 'details']]]); // details only went to the shop channel
+});
+
 test('a badge going opposite ways in the two regions is two events, in a run and across runs', () => {
 	const badge = (region, to) => [region, 'world-of-warcraft', { type: 'badge', key: 'c-1', slug: 's', seen: NOW, from: to ? null : 'New', to }];
 	let [events, ledger] = sp.resolve([], [badge('eu', 'New'), badge('us', null)], NOW);
@@ -71,7 +90,30 @@ test('a badge going opposite ways in the two regions is two events, in a run and
 	[events, ledger] = sp.resolve([], [badge('eu', null)], NOW);
 	ledger = sp.remember(ledger, sp.plan(events, FAMILIES), NOW);
 	[events] = sp.resolve(ledger, [badge('us', 'New')], NOW);
-	assert.equal('was' in events[0], false);
+	assert.deepEqual(events[0].lines.map((l) => [Object.keys(l.changes), l.changes[Object.keys(l.changes)[0]].to]), [[['eu'], null], [['us'], 'New']]);
+});
+
+test('an item that changes the same way again within the window edits its post, which lists every change', () => {
+	const badge = (region, from, to, seen) => [region, 'world-of-warcraft', { type: 'badge', key: 'c-1', slug: 's', seen, from, to }];
+	const runs = [['10:00', [badge('eu', 'New', null)]], ['10:05', [badge('eu', null, 'New'), badge('us', 'New', null)]], ['10:10', [badge('eu', 'New', null)]]];
+	let ledger = [];
+	const seen = [];
+	for (const [time, fresh] of runs) {
+		const now = `2026-10-10T${time}:00+00:00`;
+		let events;
+		[events, ledger] = sp.resolve(ledger, fresh.map(([r, f, c]) => [r, f, { ...c, seen: now }]), now);
+		const posts = sp.plan(events, FAMILIES, ledger);
+		seen.push(posts.map((p) => [p.destination[1] ?? 'shop', p.edit]));
+		ledger = sp.remember(ledger, posts, now);
+		if (time === '10:10') {
+			assert.equal(posts[0].events[0].lines.length, 4);
+		}
+	}
+	assert.deepEqual(seen, [
+		[['wow-news', false], ['shop', false]],
+		[['wow-news', true], ['shop', true], ['wow-news-us', false]], // the US feed's first post of it lists the whole story
+		[['wow-news', true], ['shop', true], ['wow-news-us', true]],
+	]);
 });
 
 test('other types and families do not pair', () => {

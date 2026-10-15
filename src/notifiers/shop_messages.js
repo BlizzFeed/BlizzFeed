@@ -117,6 +117,26 @@ function statusLine(event, states) {
 	return price ? `${status(event)} · ${price}` : status(event);
 }
 
+/** A status line per event. An event with `lines` (the item changed again within the edit window) shows each change
+ * with its time, and its region when the other region didn't see it; its other events of that type are in those lines. */
+function statusLines(events, states) {
+	const shown = new Set();
+	return events.flatMap((event) => {
+		if (!event.lines) {
+			return [statusLine(event, states)];
+		}
+		if (shown.has(event.type)) {
+			return [];
+		}
+		shown.add(event.type);
+		const regions = new Set(event.lines.flatMap((l) => Object.keys(l.changes)));
+		return event.lines.map(({ seen, changes }) => {
+			const where = Object.keys(changes).length < regions.size ? ` · ${Object.keys(changes).sort().join('/').toUpperCase()}` : '';
+			return `${statusLine({ ...event, changes }, states)} · <t:${Math.floor(Date.parse(seen) / 1000)}:t>${where}`;
+		});
+	});
+}
+
 /** An item's changes in a run, one status line each. channel is 'feed' or 'shop'. */
 export function buildSingle(events, states, logo, repoUrl, commit, now, channel) {
 	const [event] = events;
@@ -124,7 +144,7 @@ export function buildSingle(events, states, logo, repoUrl, commit, now, channel)
 	const kind = event.type;
 	const item = artItem(states, event);
 	const title = titleOf(event);
-	const content = `## ${d.trim(title, 256)}\n` + events.map((e) => statusLine(e, states)).join('\n');
+	const content = `## ${d.trim(title, 256)}\n` + statusLines(events, states).join('\n');
 	const diffed = kind === 'details' || (kind === 'banner' && change.changed?.length); // the diff block shows the text
 	const note = diffed ? null : kind === 'banner' ? item.subHeadline : item.description;
 	// The divider keeps the item's own description from reading as one more status line.
