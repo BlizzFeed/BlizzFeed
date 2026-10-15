@@ -1,1 +1,31 @@
-[]
+[
+  {
+    "type": "new",
+    "family": "world-of-warcraft",
+    "key": "p:2132971",
+    "slug": "world-of-warcraft-zhevraskin-rug",
+    "seen": "2026-10-15T16:59:25Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2132971",
+        "kind": "item",
+        "slug": "world-of-warcraft-zhevraskin-rug",
+        "title": "Zhevraskin Rug",
+        "destination": "/family/world-of-warcraft/items/2132971/zhevraskin-rug",
+        "seen": "2026-10-15T16:59:25Z",
+        "price": {
+          "fullAmount": "100 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 100,
+          "labelFormat": null
+        },
+        "commit": "e88d10d4740021accde587df51328aea3840dd9e"
+      }
+    },
+    "at": "2026-10-15T17:00:02Z",
+    "digested": []
+  }
+]
