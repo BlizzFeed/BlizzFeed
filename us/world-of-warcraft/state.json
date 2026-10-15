@@ -77,8 +77,8 @@
         "Banner"
       ],
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "blt3a0100d12c32d56b": {
       "key": "blt3a0100d12c32d56b",
@@ -98,7 +98,7 @@
       ],
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "blt3c75df04a7ee8b14": {
       "key": "blt3c75df04a7ee8b14",
@@ -4791,6 +4791,38 @@
         "Banner"
       ],
       "first_seen": "2026-10-15T17:15:31Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2132971": {
+      "key": "p:2132971",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-zhevraskin-rug",
+      "title": "Zhevraskin Rug",
+      "description": "Decor",
+      "categoryId": null,
+      "itemId": 2132971,
+      "productIds": [
+        2132971
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2132971/zhevraskin-rug",
+      "image": "//catalog.blzstatic.com//fca/0e2215bab7b40a698e5d573c884446bd-WoW_RexxarBundle_BnetShop_ProductAssetGallery_1920x1080_ModernRug.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "100 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 100,
+        "labelFormat": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-15T17:21:34Z",
       "status": "listed",
       "misses": 0
     }
