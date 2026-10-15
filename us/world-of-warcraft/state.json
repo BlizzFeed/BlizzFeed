@@ -2237,7 +2237,7 @@
       "sections": [
         "Pets"
       ],
-      "badge": "New",
+      "badge": null,
       "price": {
         "fullAmount": "$10.00",
         "discountAmount": null,
@@ -4773,8 +4773,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-15T17:09:34Z",
-      "status": "missing",
-      "misses": 2
+      "status": "unlisted",
+      "misses": 3,
+      "checked": "2026-10-15T18:46:33Z"
     },
     "blt88a08b7741e93ffc": {
       "key": "blt88a08b7741e93ffc",
@@ -4825,8 +4826,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-15T17:21:34Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-15T18:46:33Z"
     }
   },
   "suspect": false
