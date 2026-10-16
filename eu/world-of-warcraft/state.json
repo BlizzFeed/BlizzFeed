@@ -4827,9 +4827,10 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-15T17:09:34Z",
-      "status": "unlisted",
+      "status": "gone",
       "misses": 3,
-      "checked": "2026-10-15T18:46:33Z"
+      "checked": "2026-10-15T18:46:33Z",
+      "gone_since": "2026-10-16T12:26:23Z"
     }
   },
   "suspect": false
