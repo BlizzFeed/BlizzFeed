@@ -1,4 +1,4 @@
-# The PvP Episode ft. @TipsOutBaby  & @Savixirl | Episode 4 - The WoW: Forever Podcast
+# The PvP Episode ft. @TipsOutBaby & @Savixirl | Episode 4 - The WoW: Forever Podcast
 
 Join Host @countdowntoclassic, Senior Game Designer Josh “Aggrend” Greenfield, Lead Classic Designer Tim Jones, plus special guests @TipsOutBaby & @Savixirl for the discussion you’ve all been waiting for: the current state and future of PvP in World of Warcraft: Forever. 
 
