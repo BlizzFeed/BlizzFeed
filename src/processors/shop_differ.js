@@ -5,7 +5,6 @@ import { writeJson } from '../json.js';
 
 const SUSPECT_DROP = 0.25; // a fetch losing more than this share of the listed items is held for a second look
 export const META_FILE = 'meta.json';
-const UNLISTED_RECHECK_MS = 24 * 3600 * 1000;
 const DETAIL_FIELDS = ['title', 'description', 'image', 'sections'];
 const BANNER_FIELDS = ['headline', 'subHeadline', 'buttonText', 'destination'];
 
@@ -135,11 +134,7 @@ export async function sweep(old, fetched, now, missesNeeded, confirm) {
 		if (key in fetched || item.status === 'gone') {
 			continue;
 		}
-		if (item.status === 'unlisted') {
-			if (Date.parse(now) - Date.parse(item.checked) < UNLISTED_RECHECK_MS) {
-				continue;
-			}
-		} else {
+		if (item.status !== 'unlisted') { // an unlisted item is asked about again every sweep
 			item.status = 'missing';
 			item.misses++;
 			if (item.misses < missesNeeded) {
@@ -159,7 +154,6 @@ export async function sweep(old, fetched, now, missesNeeded, confirm) {
 					item.status = 'unlisted';
 					log('unlisted', item);
 				}
-				item.checked = now;
 				continue;
 			}
 		}

@@ -108,7 +108,7 @@ test('an item is only gone after enough missed sweeps, and returning before that
 	assert.deepEqual(types(changes), ['gone']);
 });
 
-test('a priced item still for sale is unlisted, not gone, and rechecked daily', async () => {
+test('a priced item still for sale is unlisted, not gone, and rechecked every sweep', async () => {
 	const asked = [];
 	const confirm = async (i) => {
 		asked.push(i.key);
@@ -119,8 +119,8 @@ test('a priced item still for sale is unlisted, not gone, and rechecked daily', 
 	assert.deepEqual(asked, ['a']);
 	[state, changes] = await run(state, page(item('b'), ...STABLE), '2026-10-09T20:00:00Z', confirm);
 	assert.deepEqual(changes, []);
-	assert.deepEqual(asked, ['a']); // checked less than a day ago
-	[, changes] = await run(state, page(item('b'), ...STABLE), LATER);
+	assert.deepEqual(asked, ['a', 'a']);
+	[, changes] = await run(state, page(item('b'), ...STABLE), LATER, async () => false);
 	assert.deepEqual(types(changes), ['gone']);
 });
 
