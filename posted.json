@@ -1,1 +1,34 @@
-[]
+[
+  {
+    "type": "badge",
+    "family": "heroes-of-the-storm",
+    "key": "bltd902fe872eaed3e1",
+    "slug": "heroes-of-the-storm-xalatath-bundle",
+    "seen": "2026-10-19T19:47:27Z",
+    "changes": {
+      "us": {
+        "type": "badge",
+        "key": "bltd902fe872eaed3e1",
+        "kind": "item",
+        "slug": "heroes-of-the-storm-xalatath-bundle",
+        "title": "Xal'atath",
+        "destination": "/product/heroes-of-the-storm-xalatath-bundle",
+        "seen": "2026-10-19T19:47:27Z",
+        "price": {
+          "fullAmount": "$7.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 7.99,
+          "labelFormat": "From {0}"
+        },
+        "from": "New",
+        "to": null,
+        "maybe_new": false,
+        "commit": "174da7e1ce30e30b20b4b402f29a7ba96cc6cca5"
+      }
+    },
+    "at": "2026-10-19T19:48:05Z",
+    "digested": []
+  }
+]
