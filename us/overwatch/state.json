@@ -274,7 +274,7 @@
       "sections": [
         "Seasonal Offers"
       ],
-      "badge": "New",
+      "badge": null,
       "price": {
         "fullAmount": "$39.99",
         "discountAmount": null,
