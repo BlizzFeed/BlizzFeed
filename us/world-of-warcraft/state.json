@@ -4828,9 +4828,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-15T17:21:34Z",
-      "status": "gone",
-      "misses": 3,
-      "gone_since": "2026-10-15T18:46:33Z"
+      "status": "listed",
+      "misses": 0
     }
   },
   "suspect": false
