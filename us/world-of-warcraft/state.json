@@ -4774,10 +4774,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-15T17:09:34Z",
-      "status": "gone",
-      "misses": 3,
-      "checked": "2026-10-15T18:46:33Z",
-      "gone_since": "2026-10-16T12:26:23Z"
+      "status": "listed",
+      "misses": 0
     },
     "blt88a08b7741e93ffc": {
       "key": "blt88a08b7741e93ffc",
