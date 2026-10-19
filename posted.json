@@ -13,7 +13,7 @@
         "slug": "heroes-of-the-storm-xalatath-bundle",
         "title": "Xal'atath",
         "destination": "/product/heroes-of-the-storm-xalatath-bundle",
-        "seen": "2026-10-19T19:47:27Z",
+        "seen": "2026-10-19T19:52:23Z",
         "price": {
           "fullAmount": "$7.99",
           "discountAmount": null,
@@ -22,13 +22,122 @@
           "raw": 7.99,
           "labelFormat": "From {0}"
         },
-        "from": "New",
-        "to": null,
-        "maybe_new": false,
-        "commit": "174da7e1ce30e30b20b4b402f29a7ba96cc6cca5"
+        "from": null,
+        "to": "New",
+        "maybe_new": true,
+        "commit": "a4a4859c180720286025970db815f384327a50d9"
       }
     },
     "at": "2026-10-19T19:48:05Z",
-    "digested": []
+    "digested": [],
+    "lines": [
+      {
+        "seen": "2026-10-19T19:47:27Z",
+        "changes": {
+          "us": {
+            "type": "badge",
+            "key": "bltd902fe872eaed3e1",
+            "kind": "item",
+            "slug": "heroes-of-the-storm-xalatath-bundle",
+            "title": "Xal'atath",
+            "destination": "/product/heroes-of-the-storm-xalatath-bundle",
+            "seen": "2026-10-19T19:47:27Z",
+            "price": {
+              "fullAmount": "$7.99",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "USD",
+              "raw": 7.99,
+              "labelFormat": "From {0}"
+            },
+            "from": "New",
+            "to": null,
+            "maybe_new": false,
+            "commit": "174da7e1ce30e30b20b4b402f29a7ba96cc6cca5"
+          }
+        }
+      },
+      {
+        "seen": "2026-10-19T19:52:23Z",
+        "changes": {
+          "us": {
+            "type": "badge",
+            "key": "bltd902fe872eaed3e1",
+            "kind": "item",
+            "slug": "heroes-of-the-storm-xalatath-bundle",
+            "title": "Xal'atath",
+            "destination": "/product/heroes-of-the-storm-xalatath-bundle",
+            "seen": "2026-10-19T19:52:23Z",
+            "price": {
+              "fullAmount": "$7.99",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "USD",
+              "raw": 7.99,
+              "labelFormat": "From {0}"
+            },
+            "from": null,
+            "to": "New",
+            "maybe_new": true,
+            "commit": "a4a4859c180720286025970db815f384327a50d9"
+          }
+        }
+      }
+    ],
+    "paired": true
+  },
+  {
+    "type": "badge",
+    "family": "overwatch",
+    "key": "bltcdce32a7e798a398",
+    "slug": "overwatch-ultimate-bundle",
+    "seen": "2026-10-19T19:52:23Z",
+    "changes": {
+      "eu": {
+        "type": "badge",
+        "key": "bltcdce32a7e798a398",
+        "kind": "item",
+        "slug": "overwatch-ultimate-bundle",
+        "title": "Overwatch® – Ultimate Battle Pass Bundle: Season 5",
+        "destination": "/product/overwatch-ultimate-bundle?p=2120799",
+        "seen": "2026-10-19T19:52:23Z",
+        "price": {
+          "fullAmount": "€39.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 39.99,
+          "labelFormat": ""
+        },
+        "from": "New",
+        "to": null,
+        "maybe_new": false,
+        "commit": "b3971eb6e376db3320b724ca54811c12b782bce3"
+      },
+      "us": {
+        "type": "badge",
+        "key": "bltcdce32a7e798a398",
+        "kind": "item",
+        "slug": "overwatch-ultimate-bundle",
+        "title": "Overwatch® – Ultimate Battle Pass Bundle: Season 5",
+        "destination": "/product/overwatch-ultimate-bundle?p=2120799",
+        "seen": "2026-10-19T19:52:23Z",
+        "price": {
+          "fullAmount": "$39.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 39.99,
+          "labelFormat": ""
+        },
+        "from": "New",
+        "to": null,
+        "maybe_new": false,
+        "commit": "78b8fee8b9778401edc737774fcc7158e2c07026"
+      }
+    },
+    "at": "2026-10-19T19:53:00Z",
+    "digested": [],
+    "paired": true
   }
 ]
