@@ -4741,9 +4741,8 @@
         "Banner"
       ],
       "first_seen": "2026-10-15T17:09:34Z",
-      "status": "gone",
-      "misses": 3,
-      "gone_since": "2026-10-15T19:01:30Z"
+      "status": "listed",
+      "misses": 0
     },
     "blt8682660ecbb7b482": {
       "key": "blt8682660ecbb7b482",
