@@ -46,5 +46,53 @@
     "at": "2026-10-19T21:57:59Z",
     "digested": [],
     "paired": true
+  },
+  {
+    "type": "back",
+    "family": "world-of-warcraft",
+    "key": "blt8682660ecbb7b482",
+    "slug": "world-of-warcraft-champion-of-the-wilds-pack",
+    "seen": "2026-10-19T22:07:28Z",
+    "changes": {
+      "eu": {
+        "type": "back",
+        "key": "blt8682660ecbb7b482",
+        "kind": "item",
+        "slug": "world-of-warcraft-champion-of-the-wilds-pack",
+        "title": "Champion of the Wilds Pack ",
+        "destination": "/product/world-of-warcraft-champion-of-the-wilds-pack?p=2132972",
+        "seen": "2026-10-19T22:07:28Z",
+        "price": {
+          "fullAmount": "€30.00",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 30,
+          "labelFormat": ""
+        },
+        "commit": "2b2902fdeff61b6fbe3fad39e2ad1c6d38cc3082"
+      },
+      "us": {
+        "type": "back",
+        "key": "blt8682660ecbb7b482",
+        "kind": "item",
+        "slug": "world-of-warcraft-champion-of-the-wilds-pack",
+        "title": "Champion of the Wilds Pack ",
+        "destination": "/product/world-of-warcraft-champion-of-the-wilds-pack?p=2132972",
+        "seen": "2026-10-19T22:07:28Z",
+        "price": {
+          "fullAmount": "$30.00",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 30,
+          "labelFormat": ""
+        },
+        "commit": "e53a0d3ec942a2a0c1196d593465f58713b7a884"
+      }
+    },
+    "at": "2026-10-19T22:08:04Z",
+    "digested": [],
+    "paired": true
   }
 ]
