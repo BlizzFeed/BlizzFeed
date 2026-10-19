@@ -34,7 +34,7 @@
         "slug": "heroes-of-the-storm-xalatath-bundle",
         "title": "Xal'atath",
         "destination": "/product/heroes-of-the-storm-xalatath-bundle",
-        "seen": "2026-10-19T20:02:27Z",
+        "seen": "2026-10-19T20:07:28Z",
         "price": {
           "fullAmount": "€7.99",
           "discountAmount": null,
@@ -43,10 +43,10 @@
           "raw": 7.99,
           "labelFormat": "From {0}"
         },
-        "from": null,
-        "to": "New",
-        "maybe_new": true,
-        "commit": "5dfa50164a5012b4679bfe3d8a8f75299bd4c099"
+        "from": "New",
+        "to": null,
+        "maybe_new": false,
+        "commit": "2cf8d7ee80c479f2c93f0ff0c0bb627e0bed40dc"
       }
     },
     "at": "2026-10-19T19:48:05Z",
@@ -174,6 +174,32 @@
             "to": "New",
             "maybe_new": true,
             "commit": "5dfa50164a5012b4679bfe3d8a8f75299bd4c099"
+          }
+        }
+      },
+      {
+        "seen": "2026-10-19T20:07:28Z",
+        "changes": {
+          "eu": {
+            "type": "badge",
+            "key": "bltd902fe872eaed3e1",
+            "kind": "item",
+            "slug": "heroes-of-the-storm-xalatath-bundle",
+            "title": "Xal'atath",
+            "destination": "/product/heroes-of-the-storm-xalatath-bundle",
+            "seen": "2026-10-19T20:07:28Z",
+            "price": {
+              "fullAmount": "€7.99",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "EUR",
+              "raw": 7.99,
+              "labelFormat": "From {0}"
+            },
+            "from": "New",
+            "to": null,
+            "maybe_new": false,
+            "commit": "2cf8d7ee80c479f2c93f0ff0c0bb627e0bed40dc"
           }
         }
       }
