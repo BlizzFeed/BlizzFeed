@@ -1,43 +1,5 @@
 [
   {
-    "type": "banner",
-    "family": "overwatch",
-    "key": "blt39533ec237164792",
-    "slug": null,
-    "seen": "2026-10-20T18:15:33Z",
-    "changes": {
-      "us": {
-        "type": "banner",
-        "key": "blt39533ec237164792",
-        "kind": "banner",
-        "slug": null,
-        "title": "Legendary looks await in the Mega Bundle, inspired by the Hunters and Shadow Army!",
-        "destination": "/family/overwatch/items/2129813",
-        "seen": "2026-10-20T18:15:33Z",
-        "button": "Buy Now",
-        "product": null,
-        "what": "removed",
-        "commit": "4901c7785cc993d3738c116915557015dcc238e4"
-      },
-      "eu": {
-        "type": "banner",
-        "key": "blt39533ec237164792",
-        "kind": "banner",
-        "slug": null,
-        "title": "Legendary looks await in the Mega Bundle, inspired by the Hunters and Shadow Army!",
-        "destination": "/family/overwatch/items/2129813",
-        "seen": "2026-10-20T18:20:26Z",
-        "button": "Buy Now",
-        "product": null,
-        "what": "removed",
-        "commit": "6717737e2bfdedb3b7d31cc287a2808a1aa208f0"
-      }
-    },
-    "at": "2026-10-20T18:16:11Z",
-    "digested": [],
-    "paired": true
-  },
-  {
     "type": "new",
     "family": "hearthstone",
     "key": "p:2122670",
