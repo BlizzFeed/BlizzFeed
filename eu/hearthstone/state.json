@@ -144,7 +144,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "blt1cf070cf99e0fdc2": {
       "key": "blt1cf070cf99e0fdc2",
@@ -177,7 +177,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "bltaf948cdac2715734": {
       "key": "bltaf948cdac2715734",
@@ -404,8 +404,7 @@
       "destination": "/product/hearthstone-azeroths-most-wanted-golden-class-set?p=2115086",
       "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt97f887b3f16e5f59/6a7cbfb2c751e1569c0c4d2f/HS_36p4_Golden_Class_Set_Bundle_BattleNet_Shop_Browsing_Card_1920x1080_DB03.png",
       "sections": [
-        "Standard Cards",
-        "Web Offers"
+        "Standard Cards"
       ],
       "badge": null,
       "price": {
@@ -437,8 +436,7 @@
       "destination": "/product/hearthstone-azeroths-most-wanted-golden-class-set?p=2115087",
       "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt9bd5bc632e2c3181/6a7cbfb22924f542678aa6d8/HS_36p4_Normal_Class_Set_Bundle_BattleNet_Shop_Feature_Card_1920x1080_DB03.png",
       "sections": [
-        "Standard Cards",
-        "Web Offers"
+        "Standard Cards"
       ],
       "badge": null,
       "price": {
@@ -959,8 +957,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 1
+      "status": "listed",
+      "misses": 0
     },
     "blt0e2d7179b62d5484": {
       "key": "blt0e2d7179b62d5484",
@@ -1027,8 +1025,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 1
+      "status": "listed",
+      "misses": 0
     },
     "blt319b4205c5bc58de": {
       "key": "blt319b4205c5bc58de",
@@ -1062,8 +1060,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 1
+      "status": "listed",
+      "misses": 0
     },
     "blt9f1068b21e8388e2": {
       "key": "blt9f1068b21e8388e2",
@@ -2324,8 +2322,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 1
+      "status": "listed",
+      "misses": 0
     },
     "blt01957ac4cc9a0baa": {
       "key": "blt01957ac4cc9a0baa",
@@ -3478,7 +3476,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-13T17:21:32Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "blt9095a4f2d568180c": {
       "key": "blt9095a4f2d568180c",
@@ -3496,7 +3494,8 @@
       "destination": "/product/hearthstone-reign-of-the-black-empire-tavern-pass?p=2122698",
       "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt74062f9cbaf520d1/6ac9230a3f72c3229027fe0b/HS_37p0_TavernPass_BattleNet_Shop_BrowsingCard_1920x1080_01A.png",
       "sections": [
-        "Limited Time Bundles"
+        "Limited Time Bundles",
+        "Web Offers"
       ],
       "badge": "New",
       "price": {
@@ -3733,6 +3732,104 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T17:02:36Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt428f3cfaef1f3030": {
+      "key": "blt428f3cfaef1f3030",
+      "kind": "item",
+      "cmsId": "blt428f3cfaef1f3030",
+      "slug": "hearthstone-reign-of-the-black-empire-packs",
+      "title": "Reign of the Black Empire Packs",
+      "description": "Card Packs",
+      "categoryId": "card-packs",
+      "itemId": null,
+      "productIds": [
+        2122701,
+        2122693,
+        2122694,
+        2122702,
+        2122697
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/hearthstone-reign-of-the-black-empire-packs",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt6b20a7c4638daf02/6ac91b02ad9209161d562f81/HS_37p0_RBE_StandardPack_BattleNet_Shop_BrowsingCard_1920x1080_LZO01.png",
+      "sections": [
+        "Standard Cards",
+        "Web Offers"
+      ],
+      "badge": "New",
+      "price": {
+        "fullAmount": "€2.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 2.99,
+        "labelFormat": "From {0}"
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-20T17:09:34Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt86a654a339a47809": {
+      "key": "blt86a654a339a47809",
+      "kind": "item",
+      "cmsId": "blt86a654a339a47809",
+      "slug": "hearthstone-golden-reign-of-the-black-empire-packs",
+      "title": "Golden Reign of the Black Empire Packs",
+      "description": "Card Packs",
+      "categoryId": "card-packs",
+      "itemId": null,
+      "productIds": [
+        2122695,
+        2122704,
+        2122703,
+        2122696
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/hearthstone-golden-reign-of-the-black-empire-packs",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt7e42f297e0f5f938/6ac91de87ec8fe7e28000e24/HS_37p0_RBE_GoldenPack_BattleNet_Shop_BrowsingCard_1920x1080_LZO01.png",
+      "sections": [
+        "Standard Cards",
+        "Web Offers"
+      ],
+      "badge": "New",
+      "price": {
+        "fullAmount": "€19.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 19.99,
+        "labelFormat": "From {0}"
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-20T17:09:34Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2136771": {
+      "key": "p:2136771",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "hearthstone-free-battlenet-shop-gift",
+      "title": "Free Battle.net® Shop Gift!",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2136771,
+      "productIds": [
+        2136771
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/hearthstone/items/2136771/free-battlenet-shop-gift",
+      "image": "//catalog.blzstatic.com//1c/16538e570195449107dc27f7e77ee119-HS_37p0_BNet_SpecialOffers_FreeWeeklyRewards_BattleNet_Shop_Product_Cards_CardPackGolden-1920X1080_.png",
+      "sections": [
+        "Web Offers"
+      ],
+      "badge": null,
+      "price": null,
+      "expiresAtMs": null,
+      "first_seen": "2026-10-20T17:09:34Z",
       "status": "listed",
       "misses": 0
     }
