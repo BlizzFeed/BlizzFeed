@@ -176,8 +176,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "unlisted",
-      "misses": 3
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-20T17:19:30Z"
     },
     "bltaf948cdac2715734": {
       "key": "bltaf948cdac2715734",
@@ -3450,8 +3451,8 @@
         "Banner"
       ],
       "first_seen": "2026-10-13T17:04:49Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2136769": {
       "key": "p:2136769",
@@ -3831,6 +3832,26 @@
       "price": null,
       "expiresAtMs": null,
       "first_seen": "2026-10-20T17:09:34Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "bltdbc1bcd20d19296e": {
+      "key": "bltdbc1bcd20d19296e",
+      "kind": "banner",
+      "cmsId": "bltdbc1bcd20d19296e",
+      "slug": null,
+      "itemId": null,
+      "title": "Earn rewards when you shop on Battle.net",
+      "productPageName": null,
+      "headline": "",
+      "subHeadline": "Earn rewards when you shop on Battle.net",
+      "buttonText": "Shop Now",
+      "destination": "/family/hearthstone#tavern-rewards-vault",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltefff0b6709b6b942/6abec18e2c058073c8274442/tavern-tender_carousel-banner_1600X500.jpg",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-10-20T17:19:30Z",
       "status": "listed",
       "misses": 0
     }
