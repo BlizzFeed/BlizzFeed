@@ -1,7 +1,7 @@
 # Hearthstone®: Reign of the Black Empire Mega Bundle Pre-Purchase
 
 - Key: bltd0d7cfe481d6893f
-- Status: unlisted
+- Status: gone
 - Sections: Limited Time Bundles, Web Offers
 - First seen: 2026-10-09T03:10:55Z
 - Price: €79.99

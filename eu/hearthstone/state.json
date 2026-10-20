@@ -144,8 +144,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "unlisted",
-      "misses": 3
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-20T17:40:25Z"
     },
     "blt1cf070cf99e0fdc2": {
       "key": "blt1cf070cf99e0fdc2",
