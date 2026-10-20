@@ -1,191 +1,5 @@
 [
   {
-    "type": "details",
-    "family": "hearthstone",
-    "key": "blt9095a4f2d568180c",
-    "slug": "hearthstone-reign-of-the-black-empire-tavern-pass",
-    "seen": "2026-10-20T17:09:34Z",
-    "changes": {
-      "eu": {
-        "type": "details",
-        "key": "blt9095a4f2d568180c",
-        "kind": "item",
-        "slug": "hearthstone-reign-of-the-black-empire-tavern-pass",
-        "title": "Reign of the Black Empire Tavern Pass",
-        "destination": "/product/hearthstone-reign-of-the-black-empire-tavern-pass?p=2122698",
-        "seen": "2026-10-20T17:09:34Z",
-        "price": {
-          "fullAmount": "€19.99",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "EUR",
-          "raw": 19.99,
-          "labelFormat": ""
-        },
-        "changed": [
-          "sections"
-        ],
-        "from": {
-          "sections": [
-            "Limited Time Bundles"
-          ]
-        },
-        "to": {
-          "sections": [
-            "Limited Time Bundles",
-            "Web Offers"
-          ]
-        },
-        "commit": "500abdd3295f3f28a6be9f8483de60aafa19afa4"
-      }
-    },
-    "at": "2026-10-20T17:10:11Z",
-    "digested": []
-  },
-  {
-    "type": "details",
-    "family": "hearthstone",
-    "key": "blt86a654a339a47809",
-    "slug": "hearthstone-golden-reign-of-the-black-empire-packs",
-    "seen": "2026-10-20T17:09:34Z",
-    "changes": {
-      "us": {
-        "type": "details",
-        "key": "blt86a654a339a47809",
-        "kind": "item",
-        "slug": "hearthstone-golden-reign-of-the-black-empire-packs",
-        "title": "Golden Reign of the Black Empire Packs",
-        "destination": "/product/hearthstone-golden-reign-of-the-black-empire-packs",
-        "seen": "2026-10-20T17:09:34Z",
-        "price": {
-          "fullAmount": "$19.99",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "USD",
-          "raw": 19.99,
-          "labelFormat": "From {0}"
-        },
-        "changed": [
-          "title"
-        ],
-        "from": {
-          "title": ""
-        },
-        "to": {
-          "title": "Golden Reign of the Black Empire Packs"
-        },
-        "commit": "5d1e8a57f80374cdf74538d3f7823abfa34706fb"
-      }
-    },
-    "at": "2026-10-20T17:10:11Z",
-    "digested": []
-  },
-  {
-    "type": "details",
-    "family": "world-of-warcraft-classic",
-    "key": "blt59390526f5755d62",
-    "slug": "",
-    "seen": "2026-10-20T17:09:34Z",
-    "changes": {
-      "us": {
-        "type": "details",
-        "key": "blt59390526f5755d62",
-        "kind": "item",
-        "slug": "wow-classic-dark-portal-pack",
-        "title": "Anniversary Dark Portal Pack",
-        "destination": "/product/wow-classic-dark-portal-pack?p=2044048",
-        "seen": "2026-10-20T17:14:27Z",
-        "price": {
-          "fullAmount": "$20.00",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "USD",
-          "raw": 20,
-          "labelFormat": ""
-        },
-        "changed": [
-          "title"
-        ],
-        "from": {
-          "title": ""
-        },
-        "to": {
-          "title": "Anniversary Dark Portal Pack"
-        },
-        "commit": "c8eed7d6801ad0a17d63e80f01bbd755284d28bb"
-      }
-    },
-    "at": "2026-10-20T17:10:11Z",
-    "digested": [],
-    "lines": [
-      {
-        "seen": "2026-10-20T17:09:34Z",
-        "changes": {
-          "us": {
-            "type": "details",
-            "key": "blt59390526f5755d62",
-            "kind": "item",
-            "slug": "",
-            "title": "",
-            "destination": "",
-            "seen": "2026-10-20T17:09:34Z",
-            "price": {
-              "fullAmount": "$20.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "USD",
-              "raw": 20,
-              "labelFormat": ""
-            },
-            "changed": [
-              "title"
-            ],
-            "from": {
-              "title": "Anniversary Dark Portal Pack"
-            },
-            "to": {
-              "title": ""
-            },
-            "commit": "9910440d69245aba243619512521e94a173029f8"
-          }
-        }
-      },
-      {
-        "seen": "2026-10-20T17:14:27Z",
-        "changes": {
-          "us": {
-            "type": "details",
-            "key": "blt59390526f5755d62",
-            "kind": "item",
-            "slug": "wow-classic-dark-portal-pack",
-            "title": "Anniversary Dark Portal Pack",
-            "destination": "/product/wow-classic-dark-portal-pack?p=2044048",
-            "seen": "2026-10-20T17:14:27Z",
-            "price": {
-              "fullAmount": "$20.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "USD",
-              "raw": 20,
-              "labelFormat": ""
-            },
-            "changed": [
-              "title"
-            ],
-            "from": {
-              "title": ""
-            },
-            "to": {
-              "title": "Anniversary Dark Portal Pack"
-            },
-            "commit": "c8eed7d6801ad0a17d63e80f01bbd755284d28bb"
-          }
-        }
-      }
-    ],
-    "paired": true
-  },
-  {
     "type": "gone",
     "family": "hearthstone",
     "key": "p:2136769",
@@ -484,5 +298,34 @@
     "at": "2026-10-20T17:36:03Z",
     "digested": [],
     "paired": true
+  },
+  {
+    "type": "gone",
+    "family": "hearthstone",
+    "key": "bltd0d7cfe481d6893f",
+    "slug": "hearthstone-reign-of-the-black-empire-mega-bundle",
+    "seen": "2026-10-20T17:40:25Z",
+    "changes": {
+      "eu": {
+        "type": "gone",
+        "key": "bltd0d7cfe481d6893f",
+        "kind": "item",
+        "slug": "hearthstone-reign-of-the-black-empire-mega-bundle",
+        "title": "Hearthstone®: Reign of the Black Empire Mega Bundle Pre-Purchase",
+        "destination": "/product/hearthstone-reign-of-the-black-empire-mega-bundle?p=2120904",
+        "seen": "2026-10-20T17:40:25Z",
+        "price": {
+          "fullAmount": "€79.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 79.99,
+          "labelFormat": ""
+        },
+        "commit": "cd1728bf8db1deee3b01f3f78433fa3021a72dcd"
+      }
+    },
+    "at": "2026-10-20T17:41:03Z",
+    "digested": []
   }
 ]
