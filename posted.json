@@ -1,1 +1,521 @@
-[]
+[
+  {
+    "type": "new",
+    "family": "hearthstone",
+    "key": "blt9095a4f2d568180c",
+    "slug": "hearthstone-reign-of-the-black-empire-tavern-pass",
+    "seen": "2026-10-20T17:02:36Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "blt9095a4f2d568180c",
+        "kind": "item",
+        "slug": "hearthstone-reign-of-the-black-empire-tavern-pass",
+        "title": "Reign of the Black Empire Tavern Pass",
+        "destination": "/product/hearthstone-reign-of-the-black-empire-tavern-pass?p=2122698",
+        "seen": "2026-10-20T17:02:36Z",
+        "price": {
+          "fullAmount": "€19.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 19.99,
+          "labelFormat": ""
+        },
+        "commit": "bba003c8648083427033026ef29d1d0a40d45b02"
+      },
+      "us": {
+        "type": "new",
+        "key": "blt9095a4f2d568180c",
+        "kind": "item",
+        "slug": "hearthstone-reign-of-the-black-empire-tavern-pass",
+        "title": "Reign of the Black Empire Tavern Pass",
+        "destination": "/product/hearthstone-reign-of-the-black-empire-tavern-pass?p=2122698",
+        "seen": "2026-10-20T17:02:36Z",
+        "price": {
+          "fullAmount": "$19.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 19.99,
+          "labelFormat": ""
+        },
+        "commit": "12671df92bcd3d646ec9382243c371e80a93bb1d"
+      }
+    },
+    "at": "2026-10-20T17:03:15Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"hearthstone-news\"]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "hearthstone",
+    "key": "p:2137294",
+    "slug": "hearthstone-welcome-inn-card-back",
+    "seen": "2026-10-20T17:02:36Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2137294",
+        "kind": "item",
+        "slug": "hearthstone-welcome-inn-card-back",
+        "title": "Hearthstone®: Welcome Inn Card Back",
+        "destination": "/family/hearthstone/items/2137294/welcome-inn-card-back",
+        "seen": "2026-10-20T17:02:36Z",
+        "price": {
+          "fullAmount": "2,500 Tavern Tender",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVW",
+          "raw": 2500,
+          "labelFormat": null
+        },
+        "commit": "bba003c8648083427033026ef29d1d0a40d45b02"
+      }
+    },
+    "at": "2026-10-20T17:03:15Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"hearthstone-news\"]"
+    ]
+  },
+  {
+    "type": "new",
+    "family": "hearthstone",
+    "key": "p:2137305",
+    "slug": "hearthstone-1-random-signature-legendary-standard-card",
+    "seen": "2026-10-20T17:02:36Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2137305",
+        "kind": "item",
+        "slug": "hearthstone-1-random-signature-legendary-standard-card",
+        "title": "Hearthstone®: 1 Random Signature Legendary Standard Card",
+        "destination": "/family/hearthstone/items/2137305/1-random-signature-legendary-standard-card",
+        "seen": "2026-10-20T17:02:36Z",
+        "price": {
+          "fullAmount": "3,000 Tavern Tender",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVW",
+          "raw": 3000,
+          "labelFormat": null
+        },
+        "commit": "bba003c8648083427033026ef29d1d0a40d45b02"
+      }
+    },
+    "at": "2026-10-20T17:03:15Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"hearthstone-news\"]"
+    ]
+  },
+  {
+    "type": "new",
+    "family": "hearthstone",
+    "key": "p:2137306",
+    "slug": "hearthstone-wild-god-omen",
+    "seen": "2026-10-20T17:02:36Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2137306",
+        "kind": "item",
+        "slug": "hearthstone-wild-god-omen",
+        "title": "Wild God Omen",
+        "destination": "/family/hearthstone/items/2137306/wild-god-omen",
+        "seen": "2026-10-20T17:02:36Z",
+        "price": {
+          "fullAmount": "1,500 Tavern Tender",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVW",
+          "raw": 1500,
+          "labelFormat": null
+        },
+        "commit": "bba003c8648083427033026ef29d1d0a40d45b02"
+      }
+    },
+    "at": "2026-10-20T17:03:15Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"hearthstone-news\"]"
+    ]
+  },
+  {
+    "type": "new",
+    "family": "hearthstone",
+    "key": "p:2137307",
+    "slug": "hearthstone-af-kitsune",
+    "seen": "2026-10-20T17:02:36Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2137307",
+        "kind": "item",
+        "slug": "hearthstone-af-kitsune",
+        "title": "A.F. Kitsune",
+        "destination": "/family/hearthstone/items/2137307/af-kitsune",
+        "seen": "2026-10-20T17:02:36Z",
+        "price": {
+          "fullAmount": "1,000 Tavern Tender",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVW",
+          "raw": 1000,
+          "labelFormat": null
+        },
+        "commit": "bba003c8648083427033026ef29d1d0a40d45b02"
+      }
+    },
+    "at": "2026-10-20T17:03:15Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"hearthstone-news\"]"
+    ]
+  },
+  {
+    "type": "new",
+    "family": "hearthstone",
+    "key": "p:2137295",
+    "slug": "hearthstone-annhylde-hero-set",
+    "seen": "2026-10-20T17:02:36Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2137295",
+        "kind": "item",
+        "slug": "hearthstone-annhylde-hero-set",
+        "title": "Annhylde Hero Set",
+        "destination": "/family/hearthstone/items/2137295/annhylde-hero-set",
+        "seen": "2026-10-20T17:02:36Z",
+        "price": {
+          "fullAmount": "1,000 Tavern Tender",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVW",
+          "raw": 1000,
+          "labelFormat": null
+        },
+        "commit": "bba003c8648083427033026ef29d1d0a40d45b02"
+      }
+    },
+    "at": "2026-10-20T17:03:15Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"hearthstone-news\"]"
+    ]
+  },
+  {
+    "type": "new",
+    "family": "hearthstone",
+    "key": "p:2137296",
+    "slug": "hearthstone-ice-lord-malfurion",
+    "seen": "2026-10-20T17:02:36Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2137296",
+        "kind": "item",
+        "slug": "hearthstone-ice-lord-malfurion",
+        "title": "Ice Lord Malfurion",
+        "destination": "/family/hearthstone/items/2137296/ice-lord-malfurion",
+        "seen": "2026-10-20T17:02:36Z",
+        "price": {
+          "fullAmount": "800 Tavern Tender",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVW",
+          "raw": 800,
+          "labelFormat": null
+        },
+        "commit": "bba003c8648083427033026ef29d1d0a40d45b02"
+      }
+    },
+    "at": "2026-10-20T17:03:15Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"hearthstone-news\"]"
+    ]
+  },
+  {
+    "type": "new",
+    "family": "hearthstone",
+    "key": "p:2137297",
+    "slug": "hearthstone-5-reign-of-the-black-empire-packs",
+    "seen": "2026-10-20T17:02:36Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2137297",
+        "kind": "item",
+        "slug": "hearthstone-5-reign-of-the-black-empire-packs",
+        "title": "Hearthstone®: 5 Reign of the Black Empire Packs",
+        "destination": "/family/hearthstone/items/2137297/5-reign-of-the-black-empire-packs",
+        "seen": "2026-10-20T17:02:36Z",
+        "price": {
+          "fullAmount": "1,200 Tavern Tender",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVW",
+          "raw": 1200,
+          "labelFormat": null
+        },
+        "commit": "bba003c8648083427033026ef29d1d0a40d45b02"
+      }
+    },
+    "at": "2026-10-20T17:03:15Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"hearthstone-news\"]"
+    ]
+  },
+  {
+    "type": "new",
+    "family": "hearthstone",
+    "key": "blt428f3cfaef1f3030",
+    "slug": "hearthstone-reign-of-the-black-empire-packs",
+    "seen": "2026-10-20T17:02:36Z",
+    "changes": {
+      "us": {
+        "type": "new",
+        "key": "blt428f3cfaef1f3030",
+        "kind": "item",
+        "slug": "hearthstone-reign-of-the-black-empire-packs",
+        "title": "Reign of the Black Empire Packs",
+        "destination": "/product/hearthstone-reign-of-the-black-empire-packs",
+        "seen": "2026-10-20T17:02:36Z",
+        "price": {
+          "fullAmount": "$2.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 2.99,
+          "labelFormat": "From {0}"
+        },
+        "commit": "12671df92bcd3d646ec9382243c371e80a93bb1d"
+      }
+    },
+    "at": "2026-10-20T17:03:15Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "new",
+    "family": "hearthstone",
+    "key": "blt86a654a339a47809",
+    "slug": "",
+    "seen": "2026-10-20T17:02:36Z",
+    "changes": {
+      "us": {
+        "type": "new",
+        "key": "blt86a654a339a47809",
+        "kind": "item",
+        "slug": "",
+        "title": "",
+        "destination": "",
+        "seen": "2026-10-20T17:02:36Z",
+        "price": {
+          "fullAmount": "$19.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 19.99,
+          "labelFormat": "From {0}"
+        },
+        "commit": "12671df92bcd3d646ec9382243c371e80a93bb1d"
+      }
+    },
+    "at": "2026-10-20T17:03:15Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "new",
+    "family": "hearthstone",
+    "key": "p:2136771",
+    "slug": "hearthstone-free-battlenet-shop-gift",
+    "seen": "2026-10-20T17:02:36Z",
+    "changes": {
+      "us": {
+        "type": "new",
+        "key": "p:2136771",
+        "kind": "item",
+        "slug": "hearthstone-free-battlenet-shop-gift",
+        "title": "Free Battle.net® Shop Gift!",
+        "destination": "/family/hearthstone/items/2136771/free-battlenet-shop-gift",
+        "seen": "2026-10-20T17:02:36Z",
+        "price": null,
+        "commit": "12671df92bcd3d646ec9382243c371e80a93bb1d"
+      }
+    },
+    "at": "2026-10-20T17:03:15Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "details",
+    "family": "hearthstone",
+    "key": "blt2a9a5c58ee5e82db",
+    "slug": "hearthstone",
+    "seen": "2026-10-20T17:02:36Z",
+    "changes": {
+      "eu": {
+        "type": "details",
+        "key": "blt2a9a5c58ee5e82db",
+        "kind": "item",
+        "slug": "hearthstone",
+        "title": "Hearthstone®",
+        "destination": "/product/hearthstone?p=29509",
+        "seen": "2026-10-20T17:02:36Z",
+        "price": {
+          "fullAmount": null,
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": null,
+          "raw": 0,
+          "labelFormat": "Play For Free"
+        },
+        "changed": [
+          "image"
+        ],
+        "from": {
+          "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt95c52c4cf760c572/6a468f30fc05dd0c86d8d300/HS_36p0_EFVH_NowLive_BlizzardCom_WhatsNew_1920x1080_SW01.png"
+        },
+        "to": {
+          "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blta82c79e1a4c7204e/6ac9242432e602412ac0e4ea/37_BlackEmpire_KeyArt_16x9_FINAL.png"
+        },
+        "commit": "bba003c8648083427033026ef29d1d0a40d45b02"
+      },
+      "us": {
+        "type": "details",
+        "key": "blt2a9a5c58ee5e82db",
+        "kind": "item",
+        "slug": "hearthstone",
+        "title": "Hearthstone®",
+        "destination": "/product/hearthstone?p=29509",
+        "seen": "2026-10-20T17:02:36Z",
+        "price": {
+          "fullAmount": null,
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": null,
+          "raw": 0,
+          "labelFormat": "Play For Free"
+        },
+        "changed": [
+          "image"
+        ],
+        "from": {
+          "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt95c52c4cf760c572/6a468f30fc05dd0c86d8d300/HS_36p0_EFVH_NowLive_BlizzardCom_WhatsNew_1920x1080_SW01.png"
+        },
+        "to": {
+          "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blta82c79e1a4c7204e/6ac9242432e602412ac0e4ea/37_BlackEmpire_KeyArt_16x9_FINAL.png"
+        },
+        "commit": "12671df92bcd3d646ec9382243c371e80a93bb1d"
+      }
+    },
+    "at": "2026-10-20T17:03:15Z",
+    "digested": [
+      "[\"shop\",null]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "details",
+    "family": "hearthstone",
+    "key": "bltcb7fa0a51fb130c1",
+    "slug": "hearthstone-azeroths-most-wanted-golden-class-set",
+    "seen": "2026-10-20T17:02:36Z",
+    "changes": {
+      "us": {
+        "type": "details",
+        "key": "bltcb7fa0a51fb130c1",
+        "kind": "item",
+        "slug": "hearthstone-azeroths-most-wanted-golden-class-set",
+        "title": "Hearthstone®: Azeroth's Most Wanted Standard Class Set Bundle",
+        "destination": "/product/hearthstone-azeroths-most-wanted-golden-class-set?p=2115087",
+        "seen": "2026-10-20T17:02:36Z",
+        "price": {
+          "fullAmount": "$19.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 19.99,
+          "labelFormat": ""
+        },
+        "changed": [
+          "sections"
+        ],
+        "from": {
+          "sections": [
+            "Standard Cards",
+            "Web Offers"
+          ]
+        },
+        "to": {
+          "sections": [
+            "Standard Cards"
+          ]
+        },
+        "commit": "12671df92bcd3d646ec9382243c371e80a93bb1d"
+      }
+    },
+    "at": "2026-10-20T17:03:15Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "details",
+    "family": "hearthstone",
+    "key": "blt3b8b7b1becc2321e",
+    "slug": "hearthstone-azeroths-most-wanted-golden-class-set",
+    "seen": "2026-10-20T17:02:36Z",
+    "changes": {
+      "us": {
+        "type": "details",
+        "key": "blt3b8b7b1becc2321e",
+        "kind": "item",
+        "slug": "hearthstone-azeroths-most-wanted-golden-class-set",
+        "title": "Hearthstone®: Azeroth's Most Wanted Golden Class Set Bundle",
+        "destination": "/product/hearthstone-azeroths-most-wanted-golden-class-set?p=2115086",
+        "seen": "2026-10-20T17:02:36Z",
+        "price": {
+          "fullAmount": "$79.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 79.99,
+          "labelFormat": ""
+        },
+        "changed": [
+          "sections"
+        ],
+        "from": {
+          "sections": [
+            "Standard Cards",
+            "Web Offers"
+          ]
+        },
+        "to": {
+          "sections": [
+            "Standard Cards"
+          ]
+        },
+        "commit": "12671df92bcd3d646ec9382243c371e80a93bb1d"
+      }
+    },
+    "at": "2026-10-20T17:03:15Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  }
+]
