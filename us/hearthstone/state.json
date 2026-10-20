@@ -144,7 +144,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "blt1cf070cf99e0fdc2": {
       "key": "blt1cf070cf99e0fdc2",
@@ -177,7 +177,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "bltaf948cdac2715734": {
       "key": "bltaf948cdac2715734",
@@ -3476,7 +3476,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-13T17:15:25Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "blt9095a4f2d568180c": {
       "key": "blt9095a4f2d568180c",
@@ -3552,8 +3552,8 @@
       "key": "blt86a654a339a47809",
       "kind": "item",
       "cmsId": "blt86a654a339a47809",
-      "slug": "",
-      "title": "",
+      "slug": "hearthstone-golden-reign-of-the-black-empire-packs",
+      "title": "Golden Reign of the Black Empire Packs",
       "description": "Card Packs",
       "categoryId": "card-packs",
       "itemId": null,
@@ -3564,7 +3564,7 @@
         2122696
       ],
       "subscriptionIds": [],
-      "destination": "",
+      "destination": "/product/hearthstone-golden-reign-of-the-black-empire-packs",
       "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt7e42f297e0f5f938/6ac91de87ec8fe7e28000e24/HS_37p0_RBE_GoldenPack_BattleNet_Shop_BrowsingCard_1920x1080_LZO01.png",
       "sections": [
         "Standard Cards",
@@ -3606,6 +3606,230 @@
       "price": null,
       "expiresAtMs": null,
       "first_seen": "2026-10-20T17:02:36Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2137294": {
+      "key": "p:2137294",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "hearthstone-welcome-inn-card-back",
+      "title": "Hearthstone®: Welcome Inn Card Back",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2137294,
+      "productIds": [
+        2137294
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/hearthstone/items/2137294/welcome-inn-card-back",
+      "image": "//catalog.blzstatic.com//fff/c9d01ea327fd1d9bccb72e700708813a-HS_37p0_Tavern_Tender_SKUs_Feature_Card_1_T1_WelcomeInn_CardBack_1920x1080_DB01.png",
+      "sections": [
+        "(untitled)"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "2,500 Tavern Tender",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVW",
+        "raw": 2500,
+        "labelFormat": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-20T17:09:34Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2137305": {
+      "key": "p:2137305",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "hearthstone-1-random-signature-legendary-standard-card",
+      "title": "Hearthstone®: 1 Random Signature Legendary Standard Card",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2137305,
+      "productIds": [
+        2137305
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/hearthstone/items/2137305/1-random-signature-legendary-standard-card",
+      "image": "//catalog.blzstatic.com//fbf/2dbe4c1961a963445a6e44d66ca81472-HS_37p0_Tavern_Tender_SKUs_Feature_Card_2_T1_RandomLegendarySignature_1920x1080_DB01B.png",
+      "sections": [
+        "(untitled)"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "3,000 Tavern Tender",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVW",
+        "raw": 3000,
+        "labelFormat": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-20T17:09:34Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2137306": {
+      "key": "p:2137306",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "hearthstone-wild-god-omen",
+      "title": "Hearthstone®: Wild God Omen",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2137306,
+      "productIds": [
+        2137306
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/hearthstone/items/2137306/wild-god-omen",
+      "image": "//catalog.blzstatic.com//feb/b6b8b936f95c64257bd83981bb4eed29-HS_37p0_Tavern_Tender_SKUs_Feature_Card_3_T2_WildGodOmen_SkinLite_1920x1080_DB01.png",
+      "sections": [
+        "(untitled)"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,500 Tavern Tender",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVW",
+        "raw": 1500,
+        "labelFormat": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-20T17:09:34Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2137307": {
+      "key": "p:2137307",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "hearthstone-af-kitsune",
+      "title": "Hearthstone®: A.F. Kitsune",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2137307,
+      "productIds": [
+        2137307
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/hearthstone/items/2137307/af-kitsune",
+      "image": "//catalog.blzstatic.com//f87/e04d33a17dfbb46a5e2c585f8058f1f0-HS_37p0_Tavern_Tender_SKUs_Feature_Card_4_T2_AFKitsune_SkinLite_1920x1080_DB01.png",
+      "sections": [
+        "(untitled)"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,000 Tavern Tender",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVW",
+        "raw": 1000,
+        "labelFormat": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-20T17:09:34Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2137295": {
+      "key": "p:2137295",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "hearthstone-annhylde-hero-set",
+      "title": "Hearthstone®: Annhylde Hero Set",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2137295,
+      "productIds": [
+        2137295
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/hearthstone/items/2137295/annhylde-hero-set",
+      "image": "//catalog.blzstatic.com//76/d92f2df8969321b29b86297f445eac82-HS_37p0_Tavern_Tender_SKUs_Feature_Card_5_T2_Annhylde_SkinFull_1920x1080_DB01.png",
+      "sections": [
+        "(untitled)"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,000 Tavern Tender",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVW",
+        "raw": 1000,
+        "labelFormat": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-20T17:09:34Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2137296": {
+      "key": "p:2137296",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "hearthstone-ice-lord-malfurion",
+      "title": "Hearthstone®: Ice Lord Malfurion",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2137296,
+      "productIds": [
+        2137296
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/hearthstone/items/2137296/ice-lord-malfurion",
+      "image": "//catalog.blzstatic.com//fbc/e2b64794cb5aa5f7a20425d655857789-HS_37p0_Tavern_Tender_SKUs_Feature_Card_6_T2_IceLordMalfurion_SkinLite_1920x1080_DB01.png",
+      "sections": [
+        "(untitled)"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "800 Tavern Tender",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVW",
+        "raw": 800,
+        "labelFormat": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-20T17:09:34Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2137297": {
+      "key": "p:2137297",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "hearthstone-5-reign-of-the-black-empire-packs",
+      "title": "Hearthstone®: 5 Reign of the Black Empire Packs",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2137297,
+      "productIds": [
+        2137297
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/hearthstone/items/2137297/5-reign-of-the-black-empire-packs",
+      "image": "//catalog.blzstatic.com//f97/87cb9ba6d6512f24971f30efc6ee070a-HS_37p0_Tavern_Tender_SKUs_Feature_Card_7_T2_BlackEmpire_Pack_1920x1080_DB01.png",
+      "sections": [
+        "(untitled)"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,200 Tavern Tender",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVW",
+        "raw": 1200,
+        "labelFormat": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-20T17:09:34Z",
       "status": "listed",
       "misses": 0
     }
