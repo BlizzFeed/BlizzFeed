@@ -17,8 +17,9 @@
         "Banner"
       ],
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-20T18:15:33Z"
     },
     "blte3aab15ef6141199": {
       "key": "blte3aab15ef6141199",
