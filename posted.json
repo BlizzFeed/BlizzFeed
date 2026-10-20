@@ -1,1 +1,31 @@
-[]
+[
+  {
+    "type": "gone",
+    "family": "hearthstone",
+    "key": "bltaf948cdac2715734",
+    "slug": "hearthstone-escape-from-violet-hold-tavern-pass",
+    "seen": "2026-10-20T15:12:22Z",
+    "changes": {
+      "eu": {
+        "type": "gone",
+        "key": "bltaf948cdac2715734",
+        "kind": "item",
+        "slug": "hearthstone-escape-from-violet-hold-tavern-pass",
+        "title": "Escape from Violet Hold Tavern Pass",
+        "destination": "/product/hearthstone-escape-from-violet-hold-tavern-pass?p=2091428",
+        "seen": "2026-10-20T15:12:22Z",
+        "price": {
+          "fullAmount": "€19.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 19.99,
+          "labelFormat": ""
+        },
+        "commit": "1e3a6e7ea6c6860a395f01000c463acba20c2b54"
+      }
+    },
+    "at": "2026-10-20T15:13:00Z",
+    "digested": []
+  }
+]
