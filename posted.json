@@ -862,10 +862,10 @@
         "type": "details",
         "key": "blt59390526f5755d62",
         "kind": "item",
-        "slug": "",
-        "title": "",
-        "destination": "",
-        "seen": "2026-10-20T17:09:34Z",
+        "slug": "wow-classic-dark-portal-pack",
+        "title": "Anniversary Dark Portal Pack",
+        "destination": "/product/wow-classic-dark-portal-pack?p=2044048",
+        "seen": "2026-10-20T17:14:27Z",
         "price": {
           "fullAmount": "$20.00",
           "discountAmount": null,
@@ -878,15 +878,140 @@
           "title"
         ],
         "from": {
-          "title": "Anniversary Dark Portal Pack"
-        },
-        "to": {
           "title": ""
         },
-        "commit": "9910440d69245aba243619512521e94a173029f8"
+        "to": {
+          "title": "Anniversary Dark Portal Pack"
+        },
+        "commit": "c8eed7d6801ad0a17d63e80f01bbd755284d28bb"
       }
     },
     "at": "2026-10-20T17:10:11Z",
+    "digested": [],
+    "lines": [
+      {
+        "seen": "2026-10-20T17:09:34Z",
+        "changes": {
+          "us": {
+            "type": "details",
+            "key": "blt59390526f5755d62",
+            "kind": "item",
+            "slug": "",
+            "title": "",
+            "destination": "",
+            "seen": "2026-10-20T17:09:34Z",
+            "price": {
+              "fullAmount": "$20.00",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "USD",
+              "raw": 20,
+              "labelFormat": ""
+            },
+            "changed": [
+              "title"
+            ],
+            "from": {
+              "title": "Anniversary Dark Portal Pack"
+            },
+            "to": {
+              "title": ""
+            },
+            "commit": "9910440d69245aba243619512521e94a173029f8"
+          }
+        }
+      },
+      {
+        "seen": "2026-10-20T17:14:27Z",
+        "changes": {
+          "us": {
+            "type": "details",
+            "key": "blt59390526f5755d62",
+            "kind": "item",
+            "slug": "wow-classic-dark-portal-pack",
+            "title": "Anniversary Dark Portal Pack",
+            "destination": "/product/wow-classic-dark-portal-pack?p=2044048",
+            "seen": "2026-10-20T17:14:27Z",
+            "price": {
+              "fullAmount": "$20.00",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "USD",
+              "raw": 20,
+              "labelFormat": ""
+            },
+            "changed": [
+              "title"
+            ],
+            "from": {
+              "title": ""
+            },
+            "to": {
+              "title": "Anniversary Dark Portal Pack"
+            },
+            "commit": "c8eed7d6801ad0a17d63e80f01bbd755284d28bb"
+          }
+        }
+      }
+    ],
+    "paired": true
+  },
+  {
+    "type": "gone",
+    "family": "hearthstone",
+    "key": "p:2136769",
+    "slug": "hearthstone-free-battlenet-shop-gift",
+    "seen": "2026-10-20T17:14:27Z",
+    "changes": {
+      "eu": {
+        "type": "gone",
+        "key": "p:2136769",
+        "kind": "item",
+        "slug": "hearthstone-free-battlenet-shop-gift",
+        "title": "Free Battle.net® Shop Gift!",
+        "destination": "/family/hearthstone/items/2136769/free-battlenet-shop-gift",
+        "seen": "2026-10-20T17:14:27Z",
+        "price": null,
+        "commit": "6b4bde41bfbe86a07d4a3da22a8c6176128de51b"
+      },
+      "us": {
+        "type": "gone",
+        "key": "p:2136769",
+        "kind": "item",
+        "slug": "hearthstone-free-battlenet-shop-gift",
+        "title": "Free Battle.net® Shop Gift!",
+        "destination": "/family/hearthstone/items/2136769/free-battlenet-shop-gift",
+        "seen": "2026-10-20T17:14:27Z",
+        "price": null,
+        "commit": "69785ffd2e1e790bd118309012d0c670acb1ddee"
+      }
+    },
+    "at": "2026-10-20T17:15:05Z",
+    "digested": [],
+    "paired": true
+  },
+  {
+    "type": "banner",
+    "family": "hearthstone",
+    "key": "bltdbc1bcd20d19296e",
+    "slug": null,
+    "seen": "2026-10-20T17:14:27Z",
+    "changes": {
+      "us": {
+        "type": "banner",
+        "key": "bltdbc1bcd20d19296e",
+        "kind": "banner",
+        "slug": null,
+        "title": "Earn rewards when you shop on Battle.net",
+        "destination": "/family/hearthstone#tavern-rewards-vault",
+        "seen": "2026-10-20T17:14:27Z",
+        "button": "Shop Now",
+        "product": null,
+        "what": "added",
+        "commit": "69785ffd2e1e790bd118309012d0c670acb1ddee"
+      }
+    },
+    "at": "2026-10-20T17:15:05Z",
     "digested": []
   }
 ]
