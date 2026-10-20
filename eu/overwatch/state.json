@@ -2265,8 +2265,8 @@
       "key": "p:2131873",
       "kind": "item",
       "cmsId": null,
-      "slug": "overwatch-malus-rammatra-bundle",
-      "title": "Malus Rammatra Bundle",
+      "slug": "overwatch-malus-ramattra-bundle",
+      "title": "Malus Ramattra Bundle",
       "description": "Ultra | Bundle (5 items)",
       "categoryId": null,
       "itemId": 2131873,
@@ -2278,7 +2278,7 @@
         2128714
       ],
       "subscriptionIds": [],
-      "destination": "/family/overwatch/items/2131873/malus-rammatra-bundle",
+      "destination": "/family/overwatch/items/2131873/malus-ramattra-bundle",
       "image": "//catalog.blzstatic.com//51/7bf53e927f815a00fad72ea074a847ae-S25_Dokiwatch_Ramattra_web.png",
       "sections": [
         "Featured"
