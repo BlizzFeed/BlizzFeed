@@ -559,8 +559,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-20T15:17:36Z"
     },
     "p:2136843": {
       "key": "p:2136843",
@@ -591,8 +592,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-20T15:17:36Z"
     },
     "p:2136844": {
       "key": "p:2136844",
@@ -623,8 +625,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-20T15:17:36Z"
     },
     "p:2136851": {
       "key": "p:2136851",
