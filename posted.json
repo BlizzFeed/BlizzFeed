@@ -65,5 +65,904 @@
     },
     "at": "2026-10-20T17:41:03Z",
     "digested": []
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2132890",
+    "slug": "overwatch-dokiwatch-collectors-bundle",
+    "seen": "2026-10-20T18:00:29Z",
+    "changes": {
+      "us": {
+        "type": "new",
+        "key": "p:2132890",
+        "kind": "item",
+        "slug": "overwatch-dokiwatch-collectors-bundle",
+        "title": "Dokiwatch Collectors Bundle",
+        "destination": "/family/overwatch/items/2132890/dokiwatch-collectors-bundle",
+        "seen": "2026-10-20T18:00:29Z",
+        "price": {
+          "fullAmount": "30,100 Coins",
+          "discountAmount": "11,800 Coins",
+          "discountPercentage": 60,
+          "currency": "XWC",
+          "raw": 11800,
+          "labelFormat": null
+        },
+        "commit": "ff50ba8e4c4f48f1e95942d890ce940c752d8b70"
+      }
+    },
+    "at": "2026-10-20T18:01:06Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2131869",
+    "slug": "overwatch-dokiwatch-20-mega-bundle",
+    "seen": "2026-10-20T18:00:29Z",
+    "changes": {
+      "us": {
+        "type": "new",
+        "key": "p:2131869",
+        "kind": "item",
+        "slug": "overwatch-dokiwatch-20-mega-bundle",
+        "title": "Dokiwatch 2.0 Mega Bundle",
+        "destination": "/family/overwatch/items/2131869/dokiwatch-20-mega-bundle",
+        "seen": "2026-10-20T18:00:29Z",
+        "price": {
+          "fullAmount": "15,800 Coins",
+          "discountAmount": "7,600 Coins",
+          "discountPercentage": 51,
+          "currency": "XWC",
+          "raw": 7600,
+          "labelFormat": null
+        },
+        "commit": "ff50ba8e4c4f48f1e95942d890ce940c752d8b70"
+      }
+    },
+    "at": "2026-10-20T18:01:06Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2131873",
+    "slug": "overwatch-malus-rammatra-bundle",
+    "seen": "2026-10-20T18:00:29Z",
+    "changes": {
+      "us": {
+        "type": "new",
+        "key": "p:2131873",
+        "kind": "item",
+        "slug": "overwatch-malus-rammatra-bundle",
+        "title": "Malus Rammatra Bundle",
+        "destination": "/family/overwatch/items/2131873/malus-rammatra-bundle",
+        "seen": "2026-10-20T18:00:29Z",
+        "price": {
+          "fullAmount": "4,500 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 4500,
+          "labelFormat": null
+        },
+        "commit": "ff50ba8e4c4f48f1e95942d890ce940c752d8b70"
+      }
+    },
+    "at": "2026-10-20T18:01:06Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2131872",
+    "slug": "overwatch-heart-of-mercy-bundle",
+    "seen": "2026-10-20T18:00:29Z",
+    "changes": {
+      "us": {
+        "type": "new",
+        "key": "p:2131872",
+        "kind": "item",
+        "slug": "overwatch-heart-of-mercy-bundle",
+        "title": "Heart of Mercy Bundle",
+        "destination": "/family/overwatch/items/2131872/heart-of-mercy-bundle",
+        "seen": "2026-10-20T18:00:29Z",
+        "price": {
+          "fullAmount": "2,600 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 2600,
+          "labelFormat": null
+        },
+        "commit": "ff50ba8e4c4f48f1e95942d890ce940c752d8b70"
+      }
+    },
+    "at": "2026-10-20T18:01:06Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2126628",
+    "slug": "overwatch-eclypse",
+    "seen": "2026-10-20T18:00:29Z",
+    "changes": {
+      "us": {
+        "type": "new",
+        "key": "p:2126628",
+        "kind": "item",
+        "slug": "overwatch-eclypse",
+        "title": "Eclypse",
+        "destination": "/family/overwatch/items/2126628/eclypse",
+        "seen": "2026-10-20T18:00:29Z",
+        "price": {
+          "fullAmount": "1,900 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 1900,
+          "labelFormat": null
+        },
+        "commit": "ff50ba8e4c4f48f1e95942d890ce940c752d8b70"
+      }
+    },
+    "at": "2026-10-20T18:01:06Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2131871",
+    "slug": "overwatch-woebringer-lifeweaver-bundle",
+    "seen": "2026-10-20T18:00:29Z",
+    "changes": {
+      "us": {
+        "type": "new",
+        "key": "p:2131871",
+        "kind": "item",
+        "slug": "overwatch-woebringer-lifeweaver-bundle",
+        "title": "Woebringer Lifeweaver Bundle",
+        "destination": "/family/overwatch/items/2131871/woebringer-lifeweaver-bundle",
+        "seen": "2026-10-20T18:00:29Z",
+        "price": {
+          "fullAmount": "2,600 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 2600,
+          "labelFormat": null
+        },
+        "commit": "ff50ba8e4c4f48f1e95942d890ce940c752d8b70"
+      }
+    },
+    "at": "2026-10-20T18:01:06Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2126036",
+    "slug": "overwatch-heart-of-tenacity",
+    "seen": "2026-10-20T18:00:29Z",
+    "changes": {
+      "us": {
+        "type": "new",
+        "key": "p:2126036",
+        "kind": "item",
+        "slug": "overwatch-heart-of-tenacity",
+        "title": "Heart of Tenacity",
+        "destination": "/family/overwatch/items/2126036/heart-of-tenacity",
+        "seen": "2026-10-20T18:00:29Z",
+        "price": {
+          "fullAmount": "1,900 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 1900,
+          "labelFormat": null
+        },
+        "commit": "ff50ba8e4c4f48f1e95942d890ce940c752d8b70"
+      }
+    },
+    "at": "2026-10-20T18:01:06Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2126041",
+    "slug": "overwatch-heart-of-valor",
+    "seen": "2026-10-20T18:00:29Z",
+    "changes": {
+      "us": {
+        "type": "new",
+        "key": "p:2126041",
+        "kind": "item",
+        "slug": "overwatch-heart-of-valor",
+        "title": "Heart of Valor",
+        "destination": "/family/overwatch/items/2126041/heart-of-valor",
+        "seen": "2026-10-20T18:00:29Z",
+        "price": {
+          "fullAmount": "1,900 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 1900,
+          "labelFormat": null
+        },
+        "commit": "ff50ba8e4c4f48f1e95942d890ce940c752d8b70"
+      }
+    },
+    "at": "2026-10-20T18:01:06Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:1935740",
+    "slug": "overwatch-dokiwatch-mega-bundle",
+    "seen": "2026-10-20T18:00:29Z",
+    "changes": {
+      "us": {
+        "type": "new",
+        "key": "p:1935740",
+        "kind": "item",
+        "slug": "overwatch-dokiwatch-mega-bundle",
+        "title": "Dokiwatch Mega Bundle",
+        "destination": "/family/overwatch/items/1935740/dokiwatch-mega-bundle",
+        "seen": "2026-10-20T18:00:29Z",
+        "price": {
+          "fullAmount": "12,400 Coins",
+          "discountAmount": "5,900 Coins",
+          "discountPercentage": 52,
+          "currency": "XWC",
+          "raw": 5900,
+          "labelFormat": null
+        },
+        "commit": "ff50ba8e4c4f48f1e95942d890ce940c752d8b70"
+      }
+    },
+    "at": "2026-10-20T18:01:06Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "details",
+    "family": "overwatch",
+    "key": "p:2131874",
+    "slug": "overwatch-tech-witch-mega-bundle",
+    "seen": "2026-10-20T18:00:29Z",
+    "changes": {
+      "us": {
+        "type": "details",
+        "key": "p:2131874",
+        "kind": "item",
+        "slug": "overwatch-tech-witch-mega-bundle",
+        "title": "Tech Witch Mega Bundle",
+        "destination": "/family/overwatch/items/2131874/tech-witch-mega-bundle",
+        "seen": "2026-10-20T18:00:29Z",
+        "price": {
+          "fullAmount": "13,600 Coins",
+          "discountAmount": "6,900 Coins",
+          "discountPercentage": 49,
+          "currency": "XWC",
+          "raw": 6900,
+          "labelFormat": null
+        },
+        "changed": [
+          "sections"
+        ],
+        "from": {
+          "sections": [
+            "(untitled)"
+          ]
+        },
+        "to": {
+          "sections": [
+            "Featured"
+          ]
+        },
+        "commit": "ff50ba8e4c4f48f1e95942d890ce940c752d8b70"
+      }
+    },
+    "at": "2026-10-20T18:01:06Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "details",
+    "family": "overwatch",
+    "key": "p:2131875",
+    "slug": "overwatch-tech-witch-dmon-bundle",
+    "seen": "2026-10-20T18:00:29Z",
+    "changes": {
+      "us": {
+        "type": "details",
+        "key": "p:2131875",
+        "kind": "item",
+        "slug": "overwatch-tech-witch-dmon-bundle",
+        "title": "Tech Witch D.Mon Bundle",
+        "destination": "/family/overwatch/items/2131875/tech-witch-dmon-bundle",
+        "seen": "2026-10-20T18:00:29Z",
+        "price": {
+          "fullAmount": "2,400 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 2400,
+          "labelFormat": null
+        },
+        "changed": [
+          "sections"
+        ],
+        "from": {
+          "sections": [
+            "(untitled)"
+          ]
+        },
+        "to": {
+          "sections": [
+            "Featured"
+          ]
+        },
+        "commit": "ff50ba8e4c4f48f1e95942d890ce940c752d8b70"
+      }
+    },
+    "at": "2026-10-20T18:01:06Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "details",
+    "family": "overwatch",
+    "key": "p:2132882",
+    "slug": "overwatch-tech-witch-jetpack-cat-bundle",
+    "seen": "2026-10-20T18:00:29Z",
+    "changes": {
+      "us": {
+        "type": "details",
+        "key": "p:2132882",
+        "kind": "item",
+        "slug": "overwatch-tech-witch-jetpack-cat-bundle",
+        "title": "Tech Witch Jetpack Cat Bundle",
+        "destination": "/family/overwatch/items/2132882/tech-witch-jetpack-cat-bundle",
+        "seen": "2026-10-20T18:00:29Z",
+        "price": {
+          "fullAmount": "3,100 Coins",
+          "discountAmount": "2,600 Coins",
+          "discountPercentage": 16,
+          "currency": "XWC",
+          "raw": 2600,
+          "labelFormat": null
+        },
+        "changed": [
+          "sections"
+        ],
+        "from": {
+          "sections": [
+            "(untitled)"
+          ]
+        },
+        "to": {
+          "sections": [
+            "Featured"
+          ]
+        },
+        "commit": "ff50ba8e4c4f48f1e95942d890ce940c752d8b70"
+      }
+    },
+    "at": "2026-10-20T18:01:06Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "details",
+    "family": "overwatch",
+    "key": "p:2131876",
+    "slug": "overwatch-tech-witch-shion-bundle",
+    "seen": "2026-10-20T18:00:29Z",
+    "changes": {
+      "us": {
+        "type": "details",
+        "key": "p:2131876",
+        "kind": "item",
+        "slug": "overwatch-tech-witch-shion-bundle",
+        "title": "Tech Witch Shion Bundle",
+        "destination": "/family/overwatch/items/2131876/tech-witch-shion-bundle",
+        "seen": "2026-10-20T18:00:29Z",
+        "price": {
+          "fullAmount": "2,400 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 2400,
+          "labelFormat": null
+        },
+        "changed": [
+          "sections"
+        ],
+        "from": {
+          "sections": [
+            "(untitled)"
+          ]
+        },
+        "to": {
+          "sections": [
+            "Featured"
+          ]
+        },
+        "commit": "ff50ba8e4c4f48f1e95942d890ce940c752d8b70"
+      }
+    },
+    "at": "2026-10-20T18:01:06Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "details",
+    "family": "overwatch",
+    "key": "p:2126630",
+    "slug": "overwatch-tech-witch",
+    "seen": "2026-10-20T18:00:29Z",
+    "changes": {
+      "us": {
+        "type": "details",
+        "key": "p:2126630",
+        "kind": "item",
+        "slug": "overwatch-tech-witch",
+        "title": "Tech Witch",
+        "destination": "/family/overwatch/items/2126630/tech-witch",
+        "seen": "2026-10-20T18:00:29Z",
+        "price": {
+          "fullAmount": "1,900 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 1900,
+          "labelFormat": null
+        },
+        "changed": [
+          "sections"
+        ],
+        "from": {
+          "sections": [
+            "(untitled)"
+          ]
+        },
+        "to": {
+          "sections": [
+            "Featured"
+          ]
+        },
+        "commit": "ff50ba8e4c4f48f1e95942d890ce940c752d8b70"
+      }
+    },
+    "at": "2026-10-20T18:01:06Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "details",
+    "family": "overwatch",
+    "key": "p:2126631",
+    "slug": "overwatch-tech-witch",
+    "seen": "2026-10-20T18:00:29Z",
+    "changes": {
+      "us": {
+        "type": "details",
+        "key": "p:2126631",
+        "kind": "item",
+        "slug": "overwatch-tech-witch",
+        "title": "Tech Witch",
+        "destination": "/family/overwatch/items/2126631/tech-witch",
+        "seen": "2026-10-20T18:00:29Z",
+        "price": {
+          "fullAmount": "1,900 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 1900,
+          "labelFormat": null
+        },
+        "changed": [
+          "sections"
+        ],
+        "from": {
+          "sections": [
+            "(untitled)"
+          ]
+        },
+        "to": {
+          "sections": [
+            "Featured"
+          ]
+        },
+        "commit": "ff50ba8e4c4f48f1e95942d890ce940c752d8b70"
+      }
+    },
+    "at": "2026-10-20T18:01:06Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "details",
+    "family": "overwatch",
+    "key": "p:2131866",
+    "slug": "overwatch-prestige-influence-mega-bundle",
+    "seen": "2026-10-20T18:00:29Z",
+    "changes": {
+      "us": {
+        "type": "details",
+        "key": "p:2131866",
+        "kind": "item",
+        "slug": "overwatch-prestige-influence-mega-bundle",
+        "title": "Prestige Influence Mega Bundle",
+        "destination": "/family/overwatch/items/2131866/prestige-influence-mega-bundle",
+        "seen": "2026-10-20T18:00:29Z",
+        "price": {
+          "fullAmount": "8,600 Coins",
+          "discountAmount": "4,500 Coins",
+          "discountPercentage": 47,
+          "currency": "XWC",
+          "raw": 4500,
+          "labelFormat": null
+        },
+        "changed": [
+          "sections"
+        ],
+        "from": {
+          "sections": [
+            "(untitled)"
+          ]
+        },
+        "to": {
+          "sections": [
+            "Featured"
+          ]
+        },
+        "commit": "ff50ba8e4c4f48f1e95942d890ce940c752d8b70"
+      }
+    },
+    "at": "2026-10-20T18:01:06Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "details",
+    "family": "overwatch",
+    "key": "p:2131868",
+    "slug": "overwatch-prestige-influence-ashe-bundle",
+    "seen": "2026-10-20T18:00:29Z",
+    "changes": {
+      "us": {
+        "type": "details",
+        "key": "p:2131868",
+        "kind": "item",
+        "slug": "overwatch-prestige-influence-ashe-bundle",
+        "title": "Prestige Influence Ashe Bundle",
+        "destination": "/family/overwatch/items/2131868/prestige-influence-ashe-bundle",
+        "seen": "2026-10-20T18:00:29Z",
+        "price": {
+          "fullAmount": "4,300 Coins",
+          "discountAmount": "3,100 Coins",
+          "discountPercentage": 27,
+          "currency": "XWC",
+          "raw": 3100,
+          "labelFormat": null
+        },
+        "changed": [
+          "sections"
+        ],
+        "from": {
+          "sections": [
+            "(untitled)"
+          ]
+        },
+        "to": {
+          "sections": [
+            "Featured"
+          ]
+        },
+        "commit": "ff50ba8e4c4f48f1e95942d890ce940c752d8b70"
+      }
+    },
+    "at": "2026-10-20T18:01:06Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "details",
+    "family": "overwatch",
+    "key": "p:2131867",
+    "slug": "overwatch-prestige-influence-cassidy-bundle",
+    "seen": "2026-10-20T18:00:29Z",
+    "changes": {
+      "us": {
+        "type": "details",
+        "key": "p:2131867",
+        "kind": "item",
+        "slug": "overwatch-prestige-influence-cassidy-bundle",
+        "title": "Prestige Influence Cassidy Bundle",
+        "destination": "/family/overwatch/items/2131867/prestige-influence-cassidy-bundle",
+        "seen": "2026-10-20T18:00:29Z",
+        "price": {
+          "fullAmount": "4,300 Coins",
+          "discountAmount": "3,100 Coins",
+          "discountPercentage": 27,
+          "currency": "XWC",
+          "raw": 3100,
+          "labelFormat": null
+        },
+        "changed": [
+          "sections"
+        ],
+        "from": {
+          "sections": [
+            "(untitled)"
+          ]
+        },
+        "to": {
+          "sections": [
+            "Featured"
+          ]
+        },
+        "commit": "ff50ba8e4c4f48f1e95942d890ce940c752d8b70"
+      }
+    },
+    "at": "2026-10-20T18:01:06Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "details",
+    "family": "overwatch",
+    "key": "p:2132889",
+    "slug": "overwatch-sporty-owe-unvault-bundle",
+    "seen": "2026-10-20T18:00:29Z",
+    "changes": {
+      "us": {
+        "type": "details",
+        "key": "p:2132889",
+        "kind": "item",
+        "slug": "overwatch-sporty-owe-unvault-bundle",
+        "title": "Sporty OWE Unvault Bundle",
+        "destination": "/family/overwatch/items/2132889/sporty-owe-unvault-bundle",
+        "seen": "2026-10-20T18:00:29Z",
+        "price": {
+          "fullAmount": "5,300 Coins",
+          "discountAmount": "3,800 Coins",
+          "discountPercentage": 28,
+          "currency": "XWC",
+          "raw": 3800,
+          "labelFormat": null
+        },
+        "changed": [
+          "sections"
+        ],
+        "from": {
+          "sections": [
+            "(untitled)",
+            "Featured"
+          ]
+        },
+        "to": {
+          "sections": [
+            "Featured"
+          ]
+        },
+        "commit": "ff50ba8e4c4f48f1e95942d890ce940c752d8b70"
+      }
+    },
+    "at": "2026-10-20T18:01:06Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "details",
+    "family": "overwatch",
+    "key": "p:209611",
+    "slug": "overwatch-mm-mei",
+    "seen": "2026-10-20T18:00:29Z",
+    "changes": {
+      "us": {
+        "type": "details",
+        "key": "p:209611",
+        "kind": "item",
+        "slug": "overwatch-mm-mei",
+        "title": "MM-Mei",
+        "destination": "/family/overwatch/items/209611/mm-mei",
+        "seen": "2026-10-20T18:00:29Z",
+        "price": {
+          "fullAmount": "1,900 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 1900,
+          "labelFormat": null
+        },
+        "changed": [
+          "sections"
+        ],
+        "from": {
+          "sections": [
+            "(untitled)",
+            "Featured"
+          ]
+        },
+        "to": {
+          "sections": [
+            "Featured"
+          ]
+        },
+        "commit": "ff50ba8e4c4f48f1e95942d890ce940c752d8b70"
+      }
+    },
+    "at": "2026-10-20T18:01:06Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "details",
+    "family": "overwatch",
+    "key": "p:1262576",
+    "slug": "overwatch-boleiro",
+    "seen": "2026-10-20T18:00:29Z",
+    "changes": {
+      "us": {
+        "type": "details",
+        "key": "p:1262576",
+        "kind": "item",
+        "slug": "overwatch-boleiro",
+        "title": "Boleiro",
+        "destination": "/family/overwatch/items/1262576/boleiro",
+        "seen": "2026-10-20T18:00:29Z",
+        "price": {
+          "fullAmount": "1,000 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 1000,
+          "labelFormat": null
+        },
+        "changed": [
+          "sections"
+        ],
+        "from": {
+          "sections": [
+            "(untitled)",
+            "Featured"
+          ]
+        },
+        "to": {
+          "sections": [
+            "Featured"
+          ]
+        },
+        "commit": "ff50ba8e4c4f48f1e95942d890ce940c752d8b70"
+      }
+    },
+    "at": "2026-10-20T18:01:06Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "details",
+    "family": "overwatch",
+    "key": "p:1092160",
+    "slug": "overwatch-rock-climber",
+    "seen": "2026-10-20T18:00:29Z",
+    "changes": {
+      "us": {
+        "type": "details",
+        "key": "p:1092160",
+        "kind": "item",
+        "slug": "overwatch-rock-climber",
+        "title": "Rock Climber",
+        "destination": "/family/overwatch/items/1092160/rock-climber",
+        "seen": "2026-10-20T18:00:29Z",
+        "price": {
+          "fullAmount": "1,900 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 1900,
+          "labelFormat": null
+        },
+        "changed": [
+          "sections"
+        ],
+        "from": {
+          "sections": [
+            "(untitled)",
+            "Featured"
+          ]
+        },
+        "to": {
+          "sections": [
+            "Featured"
+          ]
+        },
+        "commit": "ff50ba8e4c4f48f1e95942d890ce940c752d8b70"
+      }
+    },
+    "at": "2026-10-20T18:01:06Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "details",
+    "family": "overwatch",
+    "key": "p:2044425",
+    "slug": "overwatch-voidwalker-mega-bundle",
+    "seen": "2026-10-20T18:00:29Z",
+    "changes": {
+      "us": {
+        "type": "details",
+        "key": "p:2044425",
+        "kind": "item",
+        "slug": "overwatch-voidwalker-mega-bundle",
+        "title": "Voidwalker Mega Bundle",
+        "destination": "/family/overwatch/items/2044425/voidwalker-mega-bundle",
+        "seen": "2026-10-20T18:00:29Z",
+        "price": {
+          "fullAmount": "12,100 Coins",
+          "discountAmount": "5,900 Coins",
+          "discountPercentage": 51,
+          "currency": "XWC",
+          "raw": 5900,
+          "labelFormat": null
+        },
+        "changed": [
+          "sections"
+        ],
+        "from": {
+          "sections": [
+            "(untitled)"
+          ]
+        },
+        "to": {
+          "sections": [
+            "Featured"
+          ]
+        },
+        "commit": "ff50ba8e4c4f48f1e95942d890ce940c752d8b70"
+      }
+    },
+    "at": "2026-10-20T18:01:06Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
   }
 ]
