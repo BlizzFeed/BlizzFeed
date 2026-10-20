@@ -78,8 +78,8 @@
         "Banner"
       ],
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "blt2a9a5c58ee5e82db": {
       "key": "blt2a9a5c58ee5e82db",
@@ -3450,8 +3450,9 @@
         "Banner"
       ],
       "first_seen": "2026-10-13T17:04:49Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-20T17:24:26Z"
     },
     "p:2136769": {
       "key": "p:2136769",
@@ -3851,6 +3852,26 @@
         "Banner"
       ],
       "first_seen": "2026-10-20T17:14:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt73d9f2e176f0123a": {
+      "key": "blt73d9f2e176f0123a",
+      "kind": "banner",
+      "cmsId": "blt73d9f2e176f0123a",
+      "slug": "hearthstone-reign-of-the-black-empire-tavern-pass",
+      "itemId": null,
+      "title": "Reign of the Black Empire Tavern Pass",
+      "productPageName": "Reign of the Black Empire Tavern Pass",
+      "headline": "",
+      "subHeadline": "Claim ancient power with the Tavern Pass today!",
+      "buttonText": "Buy Now",
+      "destination": "/product/hearthstone-reign-of-the-black-empire-tavern-pass",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt9ce5583836796630/6acd28133ad39285f66f9856/HS_37p0_TavernPass_BattleNet_Shop_DesktopBanner-1600x500_LZO01.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-10-20T17:24:26Z",
       "status": "listed",
       "misses": 0
     }
