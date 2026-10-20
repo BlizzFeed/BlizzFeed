@@ -79,7 +79,7 @@
       ],
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "blt2a9a5c58ee5e82db": {
       "key": "blt2a9a5c58ee5e82db",
@@ -143,8 +143,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "unlisted",
-      "misses": 3
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-20T17:29:36Z"
     },
     "blt1cf070cf99e0fdc2": {
       "key": "blt1cf070cf99e0fdc2",
@@ -176,8 +177,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "unlisted",
-      "misses": 3
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-20T17:29:36Z"
     },
     "bltaf948cdac2715734": {
       "key": "bltaf948cdac2715734",
