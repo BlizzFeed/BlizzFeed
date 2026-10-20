@@ -1052,10 +1052,95 @@
           "labelFormat": ""
         },
         "commit": "28104385e2e39c53ff22e2b29c6cb5b480f8e9c0"
+      },
+      "us": {
+        "type": "gone",
+        "key": "blt1cf070cf99e0fdc2",
+        "kind": "item",
+        "slug": "hearthstone-reign-of-the-black-empire-mega-bundle",
+        "title": "Hearthstone®: Reign of the Black Empire Bundle Pre-Purchase",
+        "destination": "/product/hearthstone-reign-of-the-black-empire-mega-bundle?p=2120905",
+        "seen": "2026-10-20T17:29:36Z",
+        "price": {
+          "fullAmount": "$49.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 49.99,
+          "labelFormat": ""
+        },
+        "commit": "af470523fa9e6eaa21b6a85ff04397dc7d4d4f71"
       }
     },
     "at": "2026-10-20T17:20:07Z",
-    "digested": []
+    "digested": [],
+    "paired": true,
+    "lines": [
+      {
+        "seen": "2026-10-20T17:19:30Z",
+        "changes": {
+          "eu": {
+            "type": "gone",
+            "key": "blt1cf070cf99e0fdc2",
+            "kind": "item",
+            "slug": "hearthstone-reign-of-the-black-empire-mega-bundle",
+            "title": "Hearthstone®: Reign of the Black Empire Bundle Pre-Purchase",
+            "destination": "/product/hearthstone-reign-of-the-black-empire-mega-bundle?p=2120905",
+            "seen": "2026-10-20T17:19:30Z",
+            "price": {
+              "fullAmount": "€49.99",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "EUR",
+              "raw": 49.99,
+              "labelFormat": ""
+            },
+            "commit": "28104385e2e39c53ff22e2b29c6cb5b480f8e9c0"
+          },
+          "us": {
+            "type": "gone",
+            "key": "bltd0d7cfe481d6893f",
+            "kind": "item",
+            "slug": "hearthstone-reign-of-the-black-empire-mega-bundle",
+            "title": "Hearthstone®: Reign of the Black Empire Mega Bundle Pre-Purchase",
+            "destination": "/product/hearthstone-reign-of-the-black-empire-mega-bundle?p=2120904",
+            "seen": "2026-10-20T17:29:36Z",
+            "price": {
+              "fullAmount": "$79.99",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "USD",
+              "raw": 79.99,
+              "labelFormat": ""
+            },
+            "commit": "af470523fa9e6eaa21b6a85ff04397dc7d4d4f71"
+          }
+        }
+      },
+      {
+        "seen": "2026-10-20T17:29:36Z",
+        "changes": {
+          "us": {
+            "type": "gone",
+            "key": "blt1cf070cf99e0fdc2",
+            "kind": "item",
+            "slug": "hearthstone-reign-of-the-black-empire-mega-bundle",
+            "title": "Hearthstone®: Reign of the Black Empire Bundle Pre-Purchase",
+            "destination": "/product/hearthstone-reign-of-the-black-empire-mega-bundle?p=2120905",
+            "seen": "2026-10-20T17:29:36Z",
+            "price": {
+              "fullAmount": "$49.99",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "USD",
+              "raw": 49.99,
+              "labelFormat": ""
+            },
+            "commit": "af470523fa9e6eaa21b6a85ff04397dc7d4d4f71"
+          }
+        }
+      }
+    ]
   },
   {
     "type": "banner",
@@ -1114,9 +1199,23 @@
         "product": "Reign of the Black Empire Bundles",
         "what": "removed",
         "commit": "0d07ddfed2a1b027fd813ab7b25e65c3095db093"
+      },
+      "eu": {
+        "type": "banner",
+        "key": "bltfcd1387370ad0ffa",
+        "kind": "banner",
+        "slug": "hearthstone-reign-of-the-black-empire-mega-bundle",
+        "title": "Reign of the Black Empire Bundles",
+        "destination": "/product/hearthstone-reign-of-the-black-empire-mega-bundle",
+        "seen": "2026-10-20T17:29:36Z",
+        "button": "Buy Now",
+        "product": "Reign of the Black Empire Bundles",
+        "what": "removed",
+        "commit": "8e16ce8ceb91dd132d4ae0ec1e551ec862d42466"
       }
     },
     "at": "2026-10-20T17:25:02Z",
-    "digested": []
+    "digested": [],
+    "paired": true
   }
 ]
