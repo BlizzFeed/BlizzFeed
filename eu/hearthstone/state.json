@@ -143,8 +143,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 2
+      "status": "unlisted",
+      "misses": 3
     },
     "blt1cf070cf99e0fdc2": {
       "key": "blt1cf070cf99e0fdc2",
@@ -176,8 +176,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 2
+      "status": "unlisted",
+      "misses": 3
     },
     "bltaf948cdac2715734": {
       "key": "bltaf948cdac2715734",
@@ -3475,8 +3475,9 @@
       "price": null,
       "expiresAtMs": null,
       "first_seen": "2026-10-13T17:21:32Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-20T17:14:27Z"
     },
     "blt9095a4f2d568180c": {
       "key": "blt9095a4f2d568180c",
