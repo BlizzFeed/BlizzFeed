@@ -1,34 +1,5 @@
 [
   {
-    "type": "gone",
-    "family": "hearthstone",
-    "key": "bltd0d7cfe481d6893f",
-    "slug": "hearthstone-reign-of-the-black-empire-mega-bundle",
-    "seen": "2026-10-20T17:40:25Z",
-    "changes": {
-      "eu": {
-        "type": "gone",
-        "key": "bltd0d7cfe481d6893f",
-        "kind": "item",
-        "slug": "hearthstone-reign-of-the-black-empire-mega-bundle",
-        "title": "Hearthstone®: Reign of the Black Empire Mega Bundle Pre-Purchase",
-        "destination": "/product/hearthstone-reign-of-the-black-empire-mega-bundle?p=2120904",
-        "seen": "2026-10-20T17:40:25Z",
-        "price": {
-          "fullAmount": "€79.99",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "EUR",
-          "raw": 79.99,
-          "labelFormat": ""
-        },
-        "commit": "cd1728bf8db1deee3b01f3f78433fa3021a72dcd"
-      }
-    },
-    "at": "2026-10-20T17:41:03Z",
-    "digested": []
-  },
-  {
     "type": "new",
     "family": "overwatch",
     "key": "p:2132890",
@@ -1558,5 +1529,191 @@
       "[\"shop\",null]"
     ],
     "paired": true
+  },
+  {
+    "type": "gone",
+    "family": "overwatch",
+    "key": "p:2129813",
+    "slug": "overwatch-shadow-monarch-mega-bundle",
+    "seen": "2026-10-20T18:10:26Z",
+    "changes": {
+      "us": {
+        "type": "gone",
+        "key": "p:2129813",
+        "kind": "item",
+        "slug": "overwatch-shadow-monarch-mega-bundle",
+        "title": "Shadow Monarch Mega Bundle",
+        "destination": "/family/overwatch/items/2129813/shadow-monarch-mega-bundle",
+        "seen": "2026-10-20T18:10:26Z",
+        "price": {
+          "fullAmount": "17,900 Coins",
+          "discountAmount": "6,900 Coins",
+          "discountPercentage": 61,
+          "currency": "XWC",
+          "raw": 6900,
+          "labelFormat": null
+        },
+        "commit": "fdf90ba9665c32602027b223004d4bbea0fb7b10"
+      }
+    },
+    "at": "2026-10-20T18:11:03Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "gone",
+    "family": "overwatch",
+    "key": "p:2130310",
+    "slug": "overwatch-cha-hae-in-anran-bundle",
+    "seen": "2026-10-20T18:10:26Z",
+    "changes": {
+      "us": {
+        "type": "gone",
+        "key": "p:2130310",
+        "kind": "item",
+        "slug": "overwatch-cha-hae-in-anran-bundle",
+        "title": "Cha Hae-In Anran Bundle",
+        "destination": "/family/overwatch/items/2130310/cha-hae-in-anran-bundle",
+        "seen": "2026-10-20T18:10:26Z",
+        "price": {
+          "fullAmount": "3,400 Coins",
+          "discountAmount": "2,800 Coins",
+          "discountPercentage": 17,
+          "currency": "XWC",
+          "raw": 2800,
+          "labelFormat": null
+        },
+        "commit": "fdf90ba9665c32602027b223004d4bbea0fb7b10"
+      }
+    },
+    "at": "2026-10-20T18:11:03Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "gone",
+    "family": "overwatch",
+    "key": "p:2130312",
+    "slug": "overwatch-sung-jinwoo-genji-bundle",
+    "seen": "2026-10-20T18:10:26Z",
+    "changes": {
+      "us": {
+        "type": "gone",
+        "key": "p:2130312",
+        "kind": "item",
+        "slug": "overwatch-sung-jinwoo-genji-bundle",
+        "title": "Sung Jinwoo Genji Bundle",
+        "destination": "/family/overwatch/items/2130312/sung-jinwoo-genji-bundle",
+        "seen": "2026-10-20T18:10:26Z",
+        "price": {
+          "fullAmount": "4,300 Coins",
+          "discountAmount": "2,800 Coins",
+          "discountPercentage": 34,
+          "currency": "XWC",
+          "raw": 2800,
+          "labelFormat": null
+        },
+        "commit": "fdf90ba9665c32602027b223004d4bbea0fb7b10"
+      }
+    },
+    "at": "2026-10-20T18:11:03Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "gone",
+    "family": "overwatch",
+    "key": "p:2130315",
+    "slug": "overwatch-choi-jong-in-lifeweaver-bundle",
+    "seen": "2026-10-20T18:10:26Z",
+    "changes": {
+      "us": {
+        "type": "gone",
+        "key": "p:2130315",
+        "kind": "item",
+        "slug": "overwatch-choi-jong-in-lifeweaver-bundle",
+        "title": "Choi Jong-In Lifeweaver Bundle",
+        "destination": "/family/overwatch/items/2130315/choi-jong-in-lifeweaver-bundle",
+        "seen": "2026-10-20T18:10:26Z",
+        "price": {
+          "fullAmount": "3,400 Coins",
+          "discountAmount": "2,800 Coins",
+          "discountPercentage": 17,
+          "currency": "XWC",
+          "raw": 2800,
+          "labelFormat": null
+        },
+        "commit": "fdf90ba9665c32602027b223004d4bbea0fb7b10"
+      }
+    },
+    "at": "2026-10-20T18:11:03Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "gone",
+    "family": "overwatch",
+    "key": "p:2130318",
+    "slug": "overwatch-iron-reinhardt-bundle",
+    "seen": "2026-10-20T18:10:26Z",
+    "changes": {
+      "us": {
+        "type": "gone",
+        "key": "p:2130318",
+        "kind": "item",
+        "slug": "overwatch-iron-reinhardt-bundle",
+        "title": "Iron Reinhardt Bundle",
+        "destination": "/family/overwatch/items/2130318/iron-reinhardt-bundle",
+        "seen": "2026-10-20T18:10:26Z",
+        "price": {
+          "fullAmount": "3,400 Coins",
+          "discountAmount": "2,800 Coins",
+          "discountPercentage": 17,
+          "currency": "XWC",
+          "raw": 2800,
+          "labelFormat": null
+        },
+        "commit": "fdf90ba9665c32602027b223004d4bbea0fb7b10"
+      }
+    },
+    "at": "2026-10-20T18:11:03Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "gone",
+    "family": "overwatch",
+    "key": "p:2130316",
+    "slug": "overwatch-igris-reaper-bundle",
+    "seen": "2026-10-20T18:10:26Z",
+    "changes": {
+      "us": {
+        "type": "gone",
+        "key": "p:2130316",
+        "kind": "item",
+        "slug": "overwatch-igris-reaper-bundle",
+        "title": "Igris Reaper Bundle",
+        "destination": "/family/overwatch/items/2130316/igris-reaper-bundle",
+        "seen": "2026-10-20T18:10:26Z",
+        "price": {
+          "fullAmount": "3,400 Coins",
+          "discountAmount": "2,800 Coins",
+          "discountPercentage": 17,
+          "currency": "XWC",
+          "raw": 2800,
+          "labelFormat": null
+        },
+        "commit": "fdf90ba9665c32602027b223004d4bbea0fb7b10"
+      }
+    },
+    "at": "2026-10-20T18:11:03Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
   }
 ]
