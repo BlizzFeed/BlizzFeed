@@ -1009,9 +1009,52 @@
         "product": null,
         "what": "added",
         "commit": "69785ffd2e1e790bd118309012d0c670acb1ddee"
+      },
+      "eu": {
+        "type": "banner",
+        "key": "bltdbc1bcd20d19296e",
+        "kind": "banner",
+        "slug": null,
+        "title": "Earn rewards when you shop on Battle.net",
+        "destination": "/family/hearthstone#tavern-rewards-vault",
+        "seen": "2026-10-20T17:19:30Z",
+        "button": "Shop Now",
+        "product": null,
+        "what": "added",
+        "commit": "28104385e2e39c53ff22e2b29c6cb5b480f8e9c0"
       }
     },
     "at": "2026-10-20T17:15:05Z",
+    "digested": [],
+    "paired": true
+  },
+  {
+    "type": "gone",
+    "family": "hearthstone",
+    "key": "blt1cf070cf99e0fdc2",
+    "slug": "hearthstone-reign-of-the-black-empire-mega-bundle",
+    "seen": "2026-10-20T17:19:30Z",
+    "changes": {
+      "eu": {
+        "type": "gone",
+        "key": "blt1cf070cf99e0fdc2",
+        "kind": "item",
+        "slug": "hearthstone-reign-of-the-black-empire-mega-bundle",
+        "title": "Hearthstone®: Reign of the Black Empire Bundle Pre-Purchase",
+        "destination": "/product/hearthstone-reign-of-the-black-empire-mega-bundle?p=2120905",
+        "seen": "2026-10-20T17:19:30Z",
+        "price": {
+          "fullAmount": "€49.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 49.99,
+          "labelFormat": ""
+        },
+        "commit": "28104385e2e39c53ff22e2b29c6cb5b480f8e9c0"
+      }
+    },
+    "at": "2026-10-20T17:20:07Z",
     "digested": []
   }
 ]
