@@ -370,8 +370,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "bltad6d580fcefaa54c": {
       "key": "bltad6d580fcefaa54c",
