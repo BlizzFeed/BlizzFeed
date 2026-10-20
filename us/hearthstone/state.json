@@ -3877,6 +3877,38 @@
       "first_seen": "2026-10-20T17:24:26Z",
       "status": "listed",
       "misses": 0
+    },
+    "p:2122670": {
+      "key": "p:2122670",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "hearthstone-chronicles-of-cataclysm-violet-hold-bundle",
+      "title": "Hearthstone®: Chronicles of CATACLYSM & Violet Hold Bundle",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2122670,
+      "productIds": [
+        2122670
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/hearthstone/items/2122670/chronicles-of-cataclysm-violet-hold-bundle",
+      "image": "//catalog.blzstatic.com//5e/a82c07af2eb679e6da02ba080a2edff0-HS_37p0_CataclysmViolet_BattleNet_Shop_FeatureLZO01A.png",
+      "sections": [
+        "Web Offers"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$19.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 19.99,
+        "labelFormat": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-20T18:40:27Z",
+      "status": "listed",
+      "misses": 0
     }
   },
   "suspect": false
