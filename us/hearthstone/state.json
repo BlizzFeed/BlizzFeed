@@ -78,8 +78,9 @@
         "Banner"
       ],
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-20T17:35:25Z"
     },
     "blt2a9a5c58ee5e82db": {
       "key": "blt2a9a5c58ee5e82db",
