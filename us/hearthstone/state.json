@@ -208,8 +208,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "unlisted",
-      "misses": 3
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-20T15:22:23Z"
     },
     "blt89701fcc8b2a1208": {
       "key": "blt89701fcc8b2a1208",
