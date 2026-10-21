@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "type": "price",
+    "family": "hearthstone",
+    "key": "p:2137297",
+    "slug": "hearthstone-5-reign-of-the-black-empire-packs",
+    "seen": "2026-10-21T02:50:31Z",
+    "changes": {
+      "us": {
+        "type": "price",
+        "key": "p:2137297",
+        "kind": "item",
+        "slug": "hearthstone-5-reign-of-the-black-empire-packs",
+        "title": "Hearthstone®: 5 Reign of the Black Empire Packs",
+        "destination": "/family/hearthstone/items/2137297/5-reign-of-the-black-empire-packs",
+        "seen": "2026-10-21T02:50:31Z",
+        "price": null,
+        "from": "1,200 Tavern Tender",
+        "to": null,
+        "commit": "2de3c516fc3ee578f970021c6857dfb3e7b42ac4"
+      }
+    },
+    "at": "2026-10-21T02:51:07Z",
+    "digested": []
+  }
+]
