@@ -1199,16 +1199,67 @@
         "slug": null,
         "title": "Save up to 50% on Midnight, transmogs, and more through November 2",
         "destination": "/family/world-of-warcraft-classic#anniversary-game-services",
-        "seen": "2026-10-21T18:10:28Z",
+        "seen": "2026-10-21T18:30:28Z",
         "button": "Shop Now",
         "product": null,
-        "what": "added",
-        "commit": "f486cd8d211dcb6ae3bcd672397f97feb3ecff8d"
+        "what": "removed",
+        "commit": "872f1c116ceecddf39ab63fbcfc2cdfdd3ec13b6"
       }
     },
     "at": "2026-10-21T18:11:05Z",
     "digested": [],
-    "paired": true
+    "paired": true,
+    "lines": [
+      {
+        "seen": "2026-10-21T18:10:28Z",
+        "changes": {
+          "eu": {
+            "type": "banner",
+            "key": "blta9fc42d98b36761c",
+            "kind": "banner",
+            "slug": null,
+            "title": "Save up to 50% on Midnight, transmogs, and more through November 2",
+            "destination": "/family/world-of-warcraft-classic#anniversary-game-services",
+            "seen": "2026-10-21T18:10:28Z",
+            "button": "Shop Now",
+            "product": null,
+            "what": "added",
+            "commit": "8bc7930d678339416332cea09b7fd407a1e09b15"
+          },
+          "us": {
+            "type": "banner",
+            "key": "blta9fc42d98b36761c",
+            "kind": "banner",
+            "slug": null,
+            "title": "Save up to 50% on Midnight, transmogs, and more through November 2",
+            "destination": "/family/world-of-warcraft-classic#anniversary-game-services",
+            "seen": "2026-10-21T18:10:28Z",
+            "button": "Shop Now",
+            "product": null,
+            "what": "added",
+            "commit": "f486cd8d211dcb6ae3bcd672397f97feb3ecff8d"
+          }
+        }
+      },
+      {
+        "seen": "2026-10-21T18:30:28Z",
+        "changes": {
+          "us": {
+            "type": "banner",
+            "key": "blta9fc42d98b36761c",
+            "kind": "banner",
+            "slug": null,
+            "title": "Save up to 50% on Midnight, transmogs, and more through November 2",
+            "destination": "/family/world-of-warcraft-classic#anniversary-game-services",
+            "seen": "2026-10-21T18:30:28Z",
+            "button": "Shop Now",
+            "product": null,
+            "what": "removed",
+            "commit": "872f1c116ceecddf39ab63fbcfc2cdfdd3ec13b6"
+          }
+        }
+      }
+    ]
   },
   {
     "type": "sale_start",
