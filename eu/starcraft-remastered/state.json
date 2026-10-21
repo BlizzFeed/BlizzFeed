@@ -45,7 +45,8 @@
         "discountPercentage": null,
         "currency": null,
         "raw": 0,
-        "labelFormat": "Play For Free"
+        "labelFormat": "Play For Free",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -77,7 +78,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 14.99,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -109,7 +111,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 24.98,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -141,7 +144,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 9.99,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -173,7 +177,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 4.99,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -205,7 +210,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 14.99,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -237,7 +243,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 4.99,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -269,7 +276,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 4.99,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -301,7 +309,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 4.99,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -333,7 +342,8 @@
         "discountPercentage": null,
         "currency": null,
         "raw": 0,
-        "labelFormat": "Shop Now"
+        "labelFormat": "Shop Now",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
