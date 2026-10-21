@@ -200,10 +200,10 @@
       "badge": null,
       "price": {
         "fullAmount": "€49.99",
-        "discountAmount": "€24.99",
-        "discountPercentage": 50,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
-        "raw": 24.99,
+        "raw": 49.99,
         "labelFormat": "From {0}"
       },
       "expiresAtMs": null,
