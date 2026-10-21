@@ -4,6 +4,10 @@ import { isDeepStrictEqual } from 'node:util';
 import { writeJson } from '../json.js';
 
 const SUSPECT_DROP = 0.25; // a fetch losing more than this share of the listed items is held for a second look
+const END_SHARE = 0.5; // a sale campaign ends when this share of its items read "no sale" in one sweep
+const MIN_POOL = 4; // a smaller campaign is too small to tell a stale copy from a real end
+const LEAVE_SWEEPS = 3; // sweeps in a row an item reads "no sale" before it leaves a running campaign alone
+const CLOSED_KEEP_MS = 7 * 24 * 60 * 60 * 1000;
 export const META_FILE = 'meta.json';
 const DETAIL_FIELDS = ['title', 'description', 'image', 'sections'];
 const BANNER_FIELDS = ['headline', 'subHeadline', 'buttonText', 'destination'];
@@ -77,6 +81,80 @@ function compare(prev, item) {
 	return changes;
 }
 
+const onSale = (price) => Boolean(price?.discountAmount);
+const regular = (item) => item?.kind === 'item';
+
+/** A campaign for each discount ID with a sale saved on it, for the first run after the campaigns were introduced. */
+function savedCampaigns(items, now) {
+	const campaigns = {};
+	for (const item of Object.values(items)) {
+		const id = item.status === 'listed' && onSale(item.price) && item.price.discountId;
+		if (id) {
+			(campaigns[id] ??= { status: 'active', members: [], started: now }).members.push(item.key);
+		}
+	}
+	return campaigns;
+}
+
+/** [campaigns, the fetched items as they should be judged].
+ * A stale copy only shows the old state, so a sale ends when most of its campaign reads "no sale", not when one item does. */
+function settle(old, items, fetched, now) {
+	const campaigns = old.campaigns ? structuredClone(old.campaigns) : savedCampaigns(items, now);
+	const judged = { ...fetched };
+	const keep = (key) => { judged[key] = { ...fetched[key], price: items[key].price }; }; // the saved price stays as posted
+	for (const [id, campaign] of Object.entries(campaigns)) {
+		const here = (key) => regular(fetched[key]) && items[key]?.status === 'listed';
+		if (campaign.status === 'active') {
+			const posted = Object.keys(fetched).filter((key) => here(key) && onSale(items[key].price) && items[key].price.discountId === id);
+			const quiet = posted.filter((key) => !onSale(fetched[key].price));
+			if (posted.length < MIN_POOL) {
+				posted.forEach((key) => delete items[key].settle);
+				continue;
+			}
+			if (quiet.length >= END_SHARE * posted.length) {
+				Object.assign(campaign, { status: 'ended', ended: now });
+				for (const key of posted) {
+					delete items[key].settle;
+					if (onSale(fetched[key].price) && fetched[key].price.discountId === id) { // still shown on sale by a stale copy; a different campaign's sale stays on
+						judged[key] = { ...fetched[key], price: { ...fetched[key].price, discountAmount: null, discountPercentage: null, discountId: null } };
+					}
+				}
+				continue;
+			}
+			for (const key of posted) {
+				const misses = quiet.includes(key) ? (items[key].settle?.misses ?? 0) + 1 : 0;
+				if (misses && misses < LEAVE_SWEEPS) {
+					items[key].settle = { misses };
+					keep(key);
+				} else {
+					delete items[key].settle; // an item reading "no sale" for good leaves the running campaign by itself
+				}
+			}
+		} else if (Date.parse(now) - Date.parse(campaign.ended) > CLOSED_KEEP_MS) {
+			delete campaigns[id];
+		} else {
+			const present = campaign.members.filter((key) => here(key) && !onSale(items[key].price));
+			const back = present.filter((key) => onSale(fetched[key].price) && fetched[key].price.discountId === id);
+			if (present.length >= MIN_POOL && back.length >= END_SHARE * present.length) {
+				campaign.status = 'active'; // Blizzard extended it
+				delete campaign.ended;
+			} else {
+				back.forEach(keep);
+			}
+		}
+	}
+	for (const [key, item] of Object.entries(judged)) {
+		const id = regular(item) && onSale(item.price) && item.price.discountId;
+		if (id && campaigns[id]?.status !== 'ended') {
+			const campaign = (campaigns[id] ??= { status: 'active', members: [], started: now });
+			if (!campaign.members.includes(key)) {
+				campaign.members.push(key);
+			}
+		}
+	}
+	return [campaigns, judged];
+}
+
 /** [new state, changes]. old is null on a family's first run, which reports nothing.
  * confirm(item) resolves to true when the item's own page still shows a price. */
 export async function sweep(old, fetched, now, missesNeeded, confirm) {
@@ -100,6 +178,7 @@ export async function sweep(old, fetched, now, missesNeeded, confirm) {
 		}
 	}
 
+	const [campaigns, judged] = settle(old, items, fetched, now);
 	const changes = [];
 	const log = (type, item, extra = {}) => {
 		const record = { type, key: item.key, kind: item.kind, slug: item.slug, title: item.title, destination: item.destination, seen: now };
@@ -107,7 +186,7 @@ export async function sweep(old, fetched, now, missesNeeded, confirm) {
 		changes.push({ ...record, ...extra });
 	};
 
-	for (const [key, item] of Object.entries(fetched)) {
+	for (const [key, item] of Object.entries(judged)) {
 		const prev = items[key];
 		const replaced = !prev && replacedBanner(items, fetched, item);
 		if (replaced) {
@@ -127,7 +206,7 @@ export async function sweep(old, fetched, now, missesNeeded, confirm) {
 				log(type, item, extra);
 			}
 		}
-		items[key] = { ...item, first_seen: prev ? prev.first_seen : now, status: 'listed', misses: 0 };
+		items[key] = { ...item, first_seen: prev ? prev.first_seen : now, status: 'listed', misses: 0, ...(prev?.settle ? { settle: prev.settle } : {}) };
 	}
 
 	for (const [key, item] of Object.entries(items)) {
@@ -165,7 +244,7 @@ export async function sweep(old, fetched, now, missesNeeded, confirm) {
 			log('gone', item);
 		}
 	}
-	return [{ items, suspect: false }, changes];
+	return [{ items, suspect: false, ...(Object.keys(campaigns).length ? { campaigns } : {}) }, changes];
 }
 
 export function renderMarkdown(item) {

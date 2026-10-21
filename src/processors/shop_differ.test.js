@@ -195,3 +195,70 @@ test('a new shop family is reported once, and the first check reports nothing', 
 	assert.deepEqual(fresh, ['d']);
 	assert.deepEqual(sd.familyCheck(meta, ['a', 'b', 'c', 'd'], ['a'], LATER)[0], []);
 });
+
+const SALE = (id) => ({ fullAmount: '19.99', discountAmount: '9.99', discountId: id });
+const NO_SALE = { fullAmount: '19.99', discountAmount: null, discountId: null };
+const members = (price, count = 5) => Array.from({ length: count }, (_, n) => item(`s${n}`, { price: price(n) }));
+
+test('the items of a sale campaign post their start as they appear', async () => {
+	let state = await baseline(...members(() => NO_SALE));
+	let changes;
+	[state, changes] = await run(state, page(...members((n) => (n < 2 ? SALE('X') : NO_SALE)), ...STABLE));
+	assert.deepEqual(types(changes), ['sale_start', 'sale_start']);
+	[state, changes] = await run(state, page(...members((n) => (n < 5 ? SALE('X') : NO_SALE)), ...STABLE), LATER);
+	assert.deepEqual(types(changes), ['sale_start', 'sale_start', 'sale_start']);
+	assert.deepEqual(state.campaigns.X.members, ['s0', 's1', 's2', 's3', 's4']);
+});
+
+test('a few items of a campaign reading no sale are a stale copy', async () => {
+	const state = await baseline(...members(() => SALE('X')));
+	const [next, changes] = await run(state, page(...members((n) => (n < 2 ? NO_SALE : SALE('X'))), ...STABLE));
+	assert.deepEqual(changes, []);
+	assert.equal(next.items.s0.price.discountAmount, '9.99');
+	assert.equal(next.campaigns.X.status, 'active'); // built from the saved state on the first sweep
+});
+
+test('half a campaign reading no sale ends it for every item still posted on sale', async () => {
+	const state = await baseline(...members(() => SALE('X')));
+	const [next, changes] = await run(state, page(...members((n) => (n < 3 ? NO_SALE : SALE('X'))), ...STABLE));
+	assert.deepEqual(changes.map((c) => [c.key, c.type]), ['s0', 's1', 's2', 's3', 's4'].map((key) => [key, 'sale_end']));
+	assert.equal(next.items.s4.price.discountAmount, null);
+	assert.equal(next.campaigns.X.status, 'ended');
+});
+
+test('a closed campaign ID showing again is ignored, a new ID is not, and most of it returning reopens it', async () => {
+	let state = await baseline(...members(() => SALE('X')));
+	[state] = await run(state, page(...members(() => NO_SALE), ...STABLE));
+	let changes;
+	[, changes] = await run(state, page(...members((n) => (n < 1 ? SALE('X') : NO_SALE)), ...STABLE), LATER);
+	assert.deepEqual(changes, []);
+	[, changes] = await run(state, page(...members((n) => (n < 1 ? SALE('Y') : NO_SALE)), ...STABLE), LATER);
+	assert.deepEqual(types(changes), ['sale_start']);
+	[state, changes] = await run(state, page(...members((n) => (n < 3 ? SALE('X') : NO_SALE)), ...STABLE), LATER);
+	assert.equal(changes.length, 3);
+	assert.equal(state.campaigns.X.status, 'active');
+});
+
+test('an item reading no sale in a row leaves a running campaign by itself', async () => {
+	let state = await baseline(...members(() => SALE('X')));
+	let changes;
+	for (let n = 1; n <= 3; n++) {
+		[state, changes] = await run(state, page(...members((i) => (i === 0 ? NO_SALE : SALE('X'))), ...STABLE), `2026-10-09T10:${String(10 + n).padStart(2, '0')}:00Z`);
+		assert.deepEqual(types(changes), n < 3 ? [] : ['sale_end']);
+	}
+	assert.equal(state.items.s0.settle, undefined);
+});
+
+test('an item back on sale resets the count of sweeps it read no sale', async () => {
+	let state = await baseline(...members(() => SALE('X')));
+	for (const price of [NO_SALE, NO_SALE, SALE('X'), NO_SALE]) {
+		[state] = await run(state, page(...members((i) => (i === 0 ? price : SALE('X'))), ...STABLE));
+	}
+	assert.equal(state.items.s0.settle.misses, 1);
+});
+
+test('an item moving to a new campaign as the old one ends is not ended', async () => {
+	const state = await baseline(...members(() => SALE('X')));
+	const [, changes] = await run(state, page(...members((n) => (n < 3 ? NO_SALE : n === 3 ? SALE('Y') : SALE('X'))), ...STABLE));
+	assert.deepEqual(changes.map((c) => [c.key, c.type]), [['s0', 'sale_end'], ['s1', 'sale_end'], ['s2', 'sale_end'], ['s4', 'sale_end']]);
+});
