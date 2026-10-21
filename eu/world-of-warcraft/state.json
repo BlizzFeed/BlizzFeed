@@ -202,12 +202,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€49.99",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€24.99",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 49.99,
+        "raw": 24.99,
         "labelFormat": "From {0}",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -369,12 +369,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€35.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€17.50",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 35,
+        "raw": 17.5,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -402,12 +402,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€25.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€12.50",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 25,
+        "raw": 12.5,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1805,12 +1805,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€20.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€14.00",
+        "discountPercentage": 30,
         "currency": "EUR",
-        "raw": 20,
+        "raw": 14,
         "labelFormat": "From {0}",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1838,12 +1838,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€20.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€14.00",
+        "discountPercentage": 30,
         "currency": "EUR",
-        "raw": 20,
+        "raw": 14,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1871,12 +1871,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€20.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€10.00",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 20,
+        "raw": 10,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1937,12 +1937,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€25.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€15.00",
+        "discountPercentage": 40,
         "currency": "EUR",
-        "raw": 25,
+        "raw": 15,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1970,12 +1970,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€20.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€10.00",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 20,
+        "raw": 10,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -2003,12 +2003,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€20.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€10.00",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 20,
+        "raw": 10,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -2036,12 +2036,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€8.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€4.00",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 8,
+        "raw": 4,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -2069,12 +2069,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€15.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€7.50",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 15,
+        "raw": 7.5,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -2102,12 +2102,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€20.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€10.00",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 20,
+        "raw": 10,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -2135,12 +2135,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€20.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€10.00",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 20,
+        "raw": 10,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -2168,12 +2168,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€20.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€10.00",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 20,
+        "raw": 10,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -2201,12 +2201,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€15.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€7.50",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 15,
+        "raw": 7.5,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -2234,12 +2234,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€20.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€10.00",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 20,
+        "raw": 10,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -3130,12 +3130,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€10.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€5.00",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 10,
+        "raw": 5,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -3163,12 +3163,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€5.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€2.50",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 5,
+        "raw": 2.5,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -3196,12 +3196,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€10.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€5.00",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 10,
+        "raw": 5,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -3229,12 +3229,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€5.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€2.50",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 5,
+        "raw": 2.5,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -3262,12 +3262,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€5.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€2.50",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 5,
+        "raw": 2.5,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -3295,12 +3295,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€10.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€5.00",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 10,
+        "raw": 5,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -3329,12 +3329,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€60.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€40.20",
+        "discountPercentage": 33,
         "currency": "EUR",
-        "raw": 60,
+        "raw": 40.2,
         "labelFormat": "From {0}",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -3364,12 +3364,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€25.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€17.50",
+        "discountPercentage": 30,
         "currency": "EUR",
-        "raw": 25,
+        "raw": 17.5,
         "labelFormat": "From {0}",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -3399,12 +3399,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€30.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€21.00",
+        "discountPercentage": 30,
         "currency": "EUR",
-        "raw": 30,
+        "raw": 21,
         "labelFormat": "From {0}",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -3434,12 +3434,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€25.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€17.50",
+        "discountPercentage": 30,
         "currency": "EUR",
-        "raw": 25,
+        "raw": 17.5,
         "labelFormat": "From {0}",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -3469,12 +3469,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€10.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€7.00",
+        "discountPercentage": 30,
         "currency": "EUR",
-        "raw": 10,
+        "raw": 7,
         "labelFormat": "From {0}",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
