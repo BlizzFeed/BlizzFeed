@@ -4990,8 +4990,9 @@
         "Banner"
       ],
       "first_seen": "2026-10-21T18:10:28Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-21T18:35:29Z"
     },
     "blt58777451ef9d0cda": {
       "key": "blt58777451ef9d0cda",
