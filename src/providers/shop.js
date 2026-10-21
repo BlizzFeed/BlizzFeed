@@ -174,7 +174,7 @@ function price(raw) {
 	if (!raw) {
 		return null;
 	}
-	const cleaned = Object.fromEntries(['fullAmount', 'discountAmount', 'discountPercentage', 'currency', 'raw', 'labelFormat'].map((key) => [key, raw[key] ?? null]));
+	const cleaned = Object.fromEntries(['fullAmount', 'discountAmount', 'discountPercentage', 'currency', 'raw', 'labelFormat', 'discountId'].map((key) => [key, raw[key] ?? null]));
 	for (const key of ['fullAmount', 'discountAmount']) {
 		if (cleaned[key]) {
 			cleaned[key] = cleaned[key].replaceAll('$$', '$'); // the US shop doubles the dollar sign
