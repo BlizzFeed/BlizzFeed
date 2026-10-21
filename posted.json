@@ -183,6 +183,25 @@
           "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
         },
         "commit": "60e579897727069b8951713a49d5be69a8141eee"
+      },
+      "eu": {
+        "type": "sale_start",
+        "key": "blta2d8bd8a05c7c620",
+        "kind": "item",
+        "slug": "wow-classic-service-boost-bcc-anniversary",
+        "title": "Level 58 Character Boost (Anniversary) ",
+        "destination": "/product/wow-classic-service-boost-bcc-anniversary?p=2042612",
+        "seen": "2026-10-21T18:20:24Z",
+        "price": {
+          "fullAmount": "€60.00",
+          "discountAmount": "€40.20",
+          "discountPercentage": 33,
+          "currency": "EUR",
+          "raw": 40.2,
+          "labelFormat": "",
+          "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        },
+        "commit": "79298ba9f67eb75c5f8499fa105b8a7d317fe009"
       }
     },
     "at": "2026-10-21T18:06:05Z",
@@ -237,6 +256,30 @@
             "commit": "60e579897727069b8951713a49d5be69a8141eee"
           }
         }
+      },
+      {
+        "seen": "2026-10-21T18:20:24Z",
+        "changes": {
+          "eu": {
+            "type": "sale_start",
+            "key": "blta2d8bd8a05c7c620",
+            "kind": "item",
+            "slug": "wow-classic-service-boost-bcc-anniversary",
+            "title": "Level 58 Character Boost (Anniversary) ",
+            "destination": "/product/wow-classic-service-boost-bcc-anniversary?p=2042612",
+            "seen": "2026-10-21T18:20:24Z",
+            "price": {
+              "fullAmount": "€60.00",
+              "discountAmount": "€40.20",
+              "discountPercentage": 33,
+              "currency": "EUR",
+              "raw": 40.2,
+              "labelFormat": "",
+              "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+            },
+            "commit": "79298ba9f67eb75c5f8499fa105b8a7d317fe009"
+          }
+        }
       }
     ],
     "paired": true
@@ -266,6 +309,25 @@
           "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
         },
         "commit": "60e579897727069b8951713a49d5be69a8141eee"
+      },
+      "eu": {
+        "type": "sale_start",
+        "key": "blt293f3b01dca48c3a",
+        "kind": "item",
+        "slug": "wow-classic-service-name-change-bcc-anniversary",
+        "title": "Classic Name Change (Anniversary)",
+        "destination": "/product/wow-classic-service-name-change-bcc-anniversary",
+        "seen": "2026-10-21T18:20:24Z",
+        "price": {
+          "fullAmount": "€10.00",
+          "discountAmount": "€7.00",
+          "discountPercentage": 30,
+          "currency": "EUR",
+          "raw": 7,
+          "labelFormat": "From {0}",
+          "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        },
+        "commit": "79298ba9f67eb75c5f8499fa105b8a7d317fe009"
       }
     },
     "at": "2026-10-21T18:06:05Z",
@@ -318,6 +380,30 @@
               "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
             },
             "commit": "60e579897727069b8951713a49d5be69a8141eee"
+          }
+        }
+      },
+      {
+        "seen": "2026-10-21T18:20:24Z",
+        "changes": {
+          "eu": {
+            "type": "sale_start",
+            "key": "blt293f3b01dca48c3a",
+            "kind": "item",
+            "slug": "wow-classic-service-name-change-bcc-anniversary",
+            "title": "Classic Name Change (Anniversary)",
+            "destination": "/product/wow-classic-service-name-change-bcc-anniversary",
+            "seen": "2026-10-21T18:20:24Z",
+            "price": {
+              "fullAmount": "€10.00",
+              "discountAmount": "€7.00",
+              "discountPercentage": 30,
+              "currency": "EUR",
+              "raw": 7,
+              "labelFormat": "From {0}",
+              "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+            },
+            "commit": "79298ba9f67eb75c5f8499fa105b8a7d317fe009"
           }
         }
       }
@@ -1257,13 +1343,34 @@
           "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
         },
         "commit": "48d46569ddcb0672ae633fee1604d602b1631ab8"
+      },
+      "us": {
+        "type": "sale_start",
+        "key": "bltcc2d72d2f7c94641",
+        "kind": "item",
+        "slug": "world-of-warcraft-toy-magical-murkmorpher",
+        "title": "Magical Murkmorpher  ",
+        "destination": "/product/world-of-warcraft-toy-magical-murkmorpher?p=1614383",
+        "seen": "2026-10-21T18:20:24Z",
+        "price": {
+          "fullAmount": "$10.00",
+          "discountAmount": "$5.00",
+          "discountPercentage": 50,
+          "currency": "USD",
+          "raw": 5,
+          "labelFormat": "",
+          "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        },
+        "commit": "f4cf76f3931438ffb810b63da67d9bff46c8ce15"
       }
     },
     "at": "2026-10-21T18:16:00Z",
     "digested": [
       "[\"feed\",\"wow-news\"]",
-      "[\"shop\",null]"
-    ]
+      "[\"shop\",null]",
+      "[\"feed\",\"wow-news-us\"]"
+    ],
+    "paired": true
   },
   {
     "type": "sale_start",
@@ -1290,13 +1397,34 @@
           "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
         },
         "commit": "48d46569ddcb0672ae633fee1604d602b1631ab8"
+      },
+      "us": {
+        "type": "sale_start",
+        "key": "bltc4ff87cfb556a68c",
+        "kind": "item",
+        "slug": "world-of-warcraft-toy-eternal-travelers-hearthstone",
+        "title": "Eternal Traveler's Hearthstone Effect",
+        "destination": "/product/world-of-warcraft-toy-eternal-travelers-hearthstone?p=61850",
+        "seen": "2026-10-21T18:20:24Z",
+        "price": {
+          "fullAmount": "$5.00",
+          "discountAmount": "$2.50",
+          "discountPercentage": 50,
+          "currency": "USD",
+          "raw": 2.5,
+          "labelFormat": "",
+          "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        },
+        "commit": "f4cf76f3931438ffb810b63da67d9bff46c8ce15"
       }
     },
     "at": "2026-10-21T18:16:00Z",
     "digested": [
       "[\"feed\",\"wow-news\"]",
-      "[\"shop\",null]"
-    ]
+      "[\"shop\",null]",
+      "[\"feed\",\"wow-news-us\"]"
+    ],
+    "paired": true
   },
   {
     "type": "sale_start",
@@ -1377,13 +1505,34 @@
           "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
         },
         "commit": "48d46569ddcb0672ae633fee1604d602b1631ab8"
+      },
+      "us": {
+        "type": "sale_start",
+        "key": "blt09b8c9c3f3650d5c",
+        "kind": "item",
+        "slug": "world-of-warcraft-toy-transmorpher-beacon",
+        "title": "Transmorpher Beacon",
+        "destination": "/product/world-of-warcraft-toy-transmorpher-beacon?p=45890",
+        "seen": "2026-10-21T18:20:24Z",
+        "price": {
+          "fullAmount": "$10.00",
+          "discountAmount": "$5.00",
+          "discountPercentage": 50,
+          "currency": "USD",
+          "raw": 5,
+          "labelFormat": "",
+          "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        },
+        "commit": "f4cf76f3931438ffb810b63da67d9bff46c8ce15"
       }
     },
     "at": "2026-10-21T18:16:00Z",
     "digested": [
       "[\"feed\",\"wow-news\"]",
-      "[\"shop\",null]"
-    ]
+      "[\"shop\",null]",
+      "[\"feed\",\"wow-news-us\"]"
+    ],
+    "paired": true
   },
   {
     "type": "sale_start",
@@ -1692,5 +1841,29 @@
     "at": "2026-10-21T18:16:00Z",
     "digested": [],
     "paired": true
+  },
+  {
+    "type": "banner",
+    "family": "world-of-warcraft",
+    "key": "blt58777451ef9d0cda",
+    "slug": null,
+    "seen": "2026-10-21T18:20:24Z",
+    "changes": {
+      "us": {
+        "type": "banner",
+        "key": "blt58777451ef9d0cda",
+        "kind": "banner",
+        "slug": null,
+        "title": "Save up to 50% on Midnight, transmogs, and more through November 2",
+        "destination": null,
+        "seen": "2026-10-21T18:20:24Z",
+        "button": null,
+        "product": null,
+        "what": "added",
+        "commit": "f4cf76f3931438ffb810b63da67d9bff46c8ce15"
+      }
+    },
+    "at": "2026-10-21T18:20:59Z",
+    "digested": []
   }
 ]
