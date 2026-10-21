@@ -9,9 +9,9 @@ const MIN_POOL = 4; // a smaller campaign is too small to tell a stale copy from
 const GREY_SHARE = 0.3; // from this share of a campaign reading "no sale", extra copies of the page decide
 const GREY_COPIES = 2;
 const CHECK_COPIES = 3;
-const SETTLE_MS = 60 * 60 * 1000; // a change undoing one posted within this long is checked against extra copies
+const SETTLE_MS = 30 * 60 * 1000; // a change undoing one posted within this long is checked against extra copies
 const LEAVE_SWEEPS = 3; // sweeps in a row an item reads "no sale" before it leaves a running campaign alone
-const CLOSED_KEEP_MS = 7 * 24 * 60 * 60 * 1000;
+const CLOSED_GRACE_MS = 30 * 60 * 1000; // stale copies of an ended sale last about 15 minutes; after this the same ID is a new sale
 export const META_FILE = 'meta.json';
 const DETAIL_FIELDS = ['title', 'description', 'image', 'sections'];
 const BANNER_FIELDS = ['headline', 'subHeadline', 'buttonText', 'destination'];
@@ -102,6 +102,7 @@ function pooler(copies) {
 		} catch {
 			failed = true;
 		}
+		failed ||= got.length < n; // fewer than asked can't confirm anything
 		return failed ? null : got.slice(0, n);
 	};
 }
@@ -163,6 +164,10 @@ async function settle(old, items, fetched, now, pool) {
 	for (const [id, campaign] of Object.entries(campaigns)) {
 		const here = (key) => regular(fetched[key]) && items[key]?.status === 'listed';
 		if (campaign.status === 'active') {
+			if (!Object.values(items).some((i) => onSale(i.price) && i.price.discountId === id)) {
+				delete campaigns[id]; // nothing is on sale under it any more
+				continue;
+			}
 			const posted = Object.keys(fetched).filter((key) => here(key) && onSale(items[key].price) && items[key].price.discountId === id);
 			const quiet = posted.filter((key) => !onSale(fetched[key].price));
 			if (posted.length < MIN_POOL) {
@@ -203,7 +208,7 @@ async function settle(old, items, fetched, now, pool) {
 				}
 				setMisses(items[key], misses);
 			}
-		} else if (Date.parse(now) - Date.parse(campaign.ended) > CLOSED_KEEP_MS) {
+		} else if (Date.parse(now) - Date.parse(campaign.ended) > CLOSED_GRACE_MS) {
 			delete campaigns[id];
 		} else {
 			const present = campaign.members.filter((key) => here(key) && !onSale(items[key].price));
@@ -228,10 +233,11 @@ async function settle(old, items, fetched, now, pool) {
 			}
 		}
 	}
-	// A change that undoes one posted in the last hour has to show in every extra copy too.
+	// A change that undoes one posted in the last 30 minutes has to show in every extra copy too. A sale ID never seen before can't come from a stale copy.
 	const reversals = Object.keys(judged).filter((key) => {
 		const [prev, item] = [items[key], judged[key]];
-		return !decided.has(key) && regular(item) && prev?.status === 'listed' && prev.settle?.from && sameState(item.price, prev.settle.from) && !sameState(item.price, prev.price);
+		const fresh = onSale(item.price) && item.price.discountId && !campaigns[item.price.discountId];
+		return !decided.has(key) && !fresh && regular(item) && prev?.status === 'listed' && prev.settle?.from && sameState(item.price, prev.settle.from) && !sameState(item.price, prev.price);
 	});
 	if (reversals.length) {
 		const pages = await pool(CHECK_COPIES);

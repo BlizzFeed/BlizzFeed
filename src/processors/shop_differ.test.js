@@ -4,6 +4,7 @@ import * as sd from './shop_differ.js';
 
 const T0 = '2026-10-09T10:00:00Z';
 const T1 = '2026-10-09T10:05:00Z';
+const SOON = '2026-10-09T10:20:00Z';
 const LATER = '2026-10-10T11:00:00Z';
 const NEEDED = 3;
 
@@ -232,16 +233,23 @@ test('a closed campaign ID showing again is ignored, a new ID is not, and most o
 	let state = await baseline(...members(() => SALE('X')));
 	[state] = await run(state, page(...members(() => NO_SALE), ...STABLE));
 	let changes;
-	[, changes] = await run(state, page(...members((n) => (n < 1 ? SALE('X') : NO_SALE)), ...STABLE), LATER);
+	[, changes] = await run(state, page(...members((n) => (n < 1 ? SALE('X') : NO_SALE)), ...STABLE), SOON);
 	assert.deepEqual(changes, []);
-	[, changes] = await run(state, page(...members((n) => (n < 1 ? SALE('Y') : NO_SALE)), ...STABLE), LATER);
+	[, changes] = await run(state, page(...members((n) => (n < 1 ? SALE('Y') : NO_SALE)), ...STABLE), SOON);
 	assert.deepEqual(types(changes), ['sale_start']);
 	const again = page(...members((n) => (n < 3 ? SALE('X') : NO_SALE)), ...STABLE);
-	[, changes] = await run(state, again, LATER);
+	[, changes] = await run(state, again, SOON);
 	assert.deepEqual(changes, []); // one copy isn't enough to reopen it
-	[state, changes] = await run(state, again, LATER, undefined, extra(again, again));
+	[state, changes] = await run(state, again, SOON, undefined, extra(again, again));
 	assert.equal(changes.length, 3);
 	assert.equal(state.campaigns.X.status, 'active');
+});
+
+test('the same ID starting a sale again after the grace is a first change', async () => {
+	let state = await baseline(...members(() => SALE('X')));
+	[state] = await run(state, page(...members(() => NO_SALE), ...STABLE));
+	const [, changes] = await run(state, page(...members((n) => (n < 1 ? SALE('X') : NO_SALE)), ...STABLE), LATER);
+	assert.deepEqual(types(changes), ['sale_start']);
 });
 
 test('an item reading no sale in a row leaves a running campaign by itself', async () => {
@@ -289,7 +297,7 @@ test('a quiet run fetches no extra copies', async () => {
 	assert.equal(asked, 0);
 });
 
-test('a change undoing one posted in the last hour posts only when every extra copy shows it', async () => {
+test('a change undoing one posted in the last 30 minutes posts only when every extra copy shows it', async () => {
 	let state = await baseline(item('a'));
 	let changes;
 	const sale = page(item('a', { price: { fullAmount: '9.99', discountAmount: '4.99' } }), ...STABLE);
@@ -302,6 +310,6 @@ test('a change undoing one posted in the last hour posts only when every extra c
 	assert.deepEqual(changes, []); // no copies to ask
 	[, changes] = await run(state, plain, T1, undefined, extra(plain, plain, plain));
 	assert.deepEqual(types(changes), ['sale_end']);
-	[, changes] = await run(state, plain, LATER); // an hour on, it is a first change again
+	[, changes] = await run(state, plain, LATER); // a day on, it is a first change again
 	assert.deepEqual(types(changes), ['sale_end']);
 });
