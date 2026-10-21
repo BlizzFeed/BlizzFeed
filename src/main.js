@@ -200,6 +200,16 @@ async function shopDryRun(region, family) {
 	}
 }
 
+/** n more parsed copies of a family page, spaced like the sweep's own fetches. */
+async function extraCopies(session, base, slug, n, delaySeconds) {
+	const pages = [];
+	for (let i = 0; i < n; i++) {
+		await wait(delaySeconds * 1000);
+		pages.push(shop.parseItems(await shop.fetchFamily(session, base, slug)));
+	}
+	return pages;
+}
+
 /** Fetch the shop pages, write the changes under SHOP_DIR and list them in shop-diff.json. */
 async function shopSweep(region, family) {
 	const [config, regions, families] = shopTargets(region, family);
@@ -233,7 +243,7 @@ async function shopSweep(region, family) {
 				diff.alerts.push(alert);
 			}
 			const old = shopDiffer.loadState(SHOP_DIR, name, slug);
-			const [fresh, changes] = await shopDiffer.sweep(old, items, now, config.gone_after_misses, (item) => shop.itemOnSale(session, base, slug, item));
+			const [fresh, changes] = await shopDiffer.sweep(old, items, now, config.gone_after_misses, (item) => shop.itemOnSale(session, base, slug, item), (n) => extraCopies(session, base, slug, n, config.fetch_delay_seconds));
 			shopDiffer.writeFamily(SHOP_DIR, name, slug, fresh, changes, old === null);
 			diff.families[label] = { baseline: old === null, items: Object.keys(items).length, changes };
 			logger.success(`[${label}] ${Object.keys(items).length} items, ${changes.length} change(s)${old === null ? ' (baseline, nothing reported)' : ''}`);

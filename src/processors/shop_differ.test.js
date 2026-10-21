@@ -14,7 +14,7 @@ const item = (key = 'a', fields = {}) => ({
 const banner = (key = 'b', fields = {}) => ({ ...item(key), kind: 'banner', price: null, headline: 'H', subHeadline: 'S', buttonText: 'Buy', productPageName: null, destination: '/product/x', ...fields });
 const STABLE = Array.from({ length: 8 }, (_, n) => item(`z${n}`)); // so one or two items leaving is under the suspicious-drop share
 const page = (...items) => Object.fromEntries(items.map((i) => [i.key, i]));
-const run = (old, fetched, now = T1, confirm = async () => false) => sd.sweep(old, fetched, now, NEEDED, confirm);
+const run = (old, fetched, now = T1, confirm = async () => false, copies) => sd.sweep(old, fetched, now, NEEDED, confirm, copies);
 const baseline = async (...items) => (await run(null, page(...items, ...STABLE), T0))[0];
 const types = (changes) => changes.map((c) => c.type);
 
@@ -196,6 +196,8 @@ test('a new shop family is reported once, and the first check reports nothing', 
 	assert.deepEqual(sd.familyCheck(meta, ['a', 'b', 'c', 'd'], ['a'], LATER)[0], []);
 });
 
+/** A copies callback handing out these pages. */
+const extra = (...pages) => async (n) => pages.slice(0, n);
 const SALE = (id) => ({ fullAmount: '19.99', discountAmount: '9.99', discountId: id });
 const NO_SALE = { fullAmount: '19.99', discountAmount: null, discountId: null };
 const members = (price, count = 5) => Array.from({ length: count }, (_, n) => item(`s${n}`, { price: price(n) }));
@@ -234,7 +236,10 @@ test('a closed campaign ID showing again is ignored, a new ID is not, and most o
 	assert.deepEqual(changes, []);
 	[, changes] = await run(state, page(...members((n) => (n < 1 ? SALE('Y') : NO_SALE)), ...STABLE), LATER);
 	assert.deepEqual(types(changes), ['sale_start']);
-	[state, changes] = await run(state, page(...members((n) => (n < 3 ? SALE('X') : NO_SALE)), ...STABLE), LATER);
+	const again = page(...members((n) => (n < 3 ? SALE('X') : NO_SALE)), ...STABLE);
+	[, changes] = await run(state, again, LATER);
+	assert.deepEqual(changes, []); // one copy isn't enough to reopen it
+	[state, changes] = await run(state, again, LATER, undefined, extra(again, again));
 	assert.equal(changes.length, 3);
 	assert.equal(state.campaigns.X.status, 'active');
 });
@@ -243,10 +248,11 @@ test('an item reading no sale in a row leaves a running campaign by itself', asy
 	let state = await baseline(...members(() => SALE('X')));
 	let changes;
 	for (let n = 1; n <= 3; n++) {
-		[state, changes] = await run(state, page(...members((i) => (i === 0 ? NO_SALE : SALE('X'))), ...STABLE), `2026-10-09T10:${String(10 + n).padStart(2, '0')}:00Z`);
+		const gone = page(...members((i) => (i === 0 ? NO_SALE : SALE('X'))), ...STABLE);
+		[state, changes] = await run(state, gone, `2026-10-09T10:${String(10 + n).padStart(2, '0')}:00Z`, undefined, extra(gone, gone, gone));
 		assert.deepEqual(types(changes), n < 3 ? [] : ['sale_end']);
 	}
-	assert.equal(state.items.s0.settle, undefined);
+	assert.equal(state.items.s0.settle.misses, undefined);
 });
 
 test('an item back on sale resets the count of sweeps it read no sale', async () => {
@@ -261,4 +267,41 @@ test('an item moving to a new campaign as the old one ends is not ended', async 
 	const state = await baseline(...members(() => SALE('X')));
 	const [, changes] = await run(state, page(...members((n) => (n < 3 ? NO_SALE : n === 3 ? SALE('Y') : SALE('X'))), ...STABLE));
 	assert.deepEqual(changes.map((c) => [c.key, c.type]), [['s0', 'sale_end'], ['s1', 'sale_end'], ['s2', 'sale_end'], ['s4', 'sale_end']]);
+});
+
+test('a grey-zone share of a campaign is decided by the pooled extra copies', async () => {
+	const state = await baseline(...members(() => SALE('X'), 10));
+	const ten = (quiet) => page(...members((n) => (n < quiet ? NO_SALE : SALE('X')), 10), ...STABLE);
+	let [next, changes] = await run(state, ten(4), T1, undefined, extra(ten(0), ten(0)));
+	assert.deepEqual(changes, []); // 4 of 10, then 0 and 0: a stale copy
+	assert.equal(next.campaigns.X.status, 'active');
+	[next, changes] = await run(state, ten(4), T1, undefined, extra(ten(8), ten(8)));
+	assert.equal(changes.length, 10); // 20 of 30 read no sale
+	assert.equal(next.campaigns.X.status, 'ended');
+	[next, changes] = await run(state, ten(4), T1, undefined, async () => { throw new Error('down'); });
+	assert.deepEqual(changes, []); // can't tell
+});
+
+test('a quiet run fetches no extra copies', async () => {
+	let asked = 0;
+	const state = await baseline(...members(() => SALE('X')));
+	await run(state, page(...members(() => SALE('X')), ...STABLE), T1, undefined, async () => { asked++; return []; });
+	assert.equal(asked, 0);
+});
+
+test('a change undoing one posted in the last hour posts only when every extra copy shows it', async () => {
+	let state = await baseline(item('a'));
+	let changes;
+	const sale = page(item('a', { price: { fullAmount: '9.99', discountAmount: '4.99' } }), ...STABLE);
+	const plain = page(item('a'), ...STABLE);
+	[state, changes] = await run(state, sale);
+	assert.deepEqual(types(changes), ['sale_start']);
+	[, changes] = await run(state, plain, T1, undefined, extra(sale, plain, plain));
+	assert.deepEqual(changes, []);
+	[, changes] = await run(state, plain, T1);
+	assert.deepEqual(changes, []); // no copies to ask
+	[, changes] = await run(state, plain, T1, undefined, extra(plain, plain, plain));
+	assert.deepEqual(types(changes), ['sale_end']);
+	[, changes] = await run(state, plain, LATER); // an hour on, it is a first change again
+	assert.deepEqual(types(changes), ['sale_end']);
 });

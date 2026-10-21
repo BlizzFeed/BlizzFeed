@@ -6,6 +6,10 @@ import { writeJson } from '../json.js';
 const SUSPECT_DROP = 0.25; // a fetch losing more than this share of the listed items is held for a second look
 const END_SHARE = 0.5; // a sale campaign ends when this share of its items read "no sale" in one sweep
 const MIN_POOL = 4; // a smaller campaign is too small to tell a stale copy from a real end
+const GREY_SHARE = 0.3; // from this share of a campaign reading "no sale", extra copies of the page decide
+const GREY_COPIES = 2;
+const CHECK_COPIES = 3;
+const SETTLE_MS = 60 * 60 * 1000; // a change undoing one posted within this long is checked against extra copies
 const LEAVE_SWEEPS = 3; // sweeps in a row an item reads "no sale" before it leaves a running campaign alone
 const CLOSED_KEEP_MS = 7 * 24 * 60 * 60 * 1000;
 export const META_FILE = 'meta.json';
@@ -83,6 +87,51 @@ function compare(prev, item) {
 
 const onSale = (price) => Boolean(price?.discountAmount);
 const regular = (item) => item?.kind === 'item';
+const sameState = (a, b) => (a?.fullAmount ?? null) === (b?.fullAmount ?? null) && (a?.discountAmount ?? null) === (b?.discountAmount ?? null);
+const priceChange = ([type]) => ['price', 'sale_start', 'sale_end'].includes(type);
+
+/** Extra copies of the family page for one run: asks `copies` for what is missing, and null once it fails ("can't tell"). */
+function pooler(copies) {
+	const got = [];
+	let failed = !copies;
+	return async (n) => {
+		try {
+			if (!failed && got.length < n) {
+				got.push(...await copies(n - got.length));
+			}
+		} catch {
+			failed = true;
+		}
+		return failed ? null : got.slice(0, n);
+	};
+}
+
+/** [pages showing `read`, pages listing the item], summed over the keys and pages. */
+function tally(pages, keys, read) {
+	let [hit, seen] = [0, 0];
+	for (const key of keys) {
+		for (const page of pages.filter((p) => regular(p[key]))) {
+			seen++;
+			hit += Number(read(page[key]));
+		}
+	}
+	return [hit, seen];
+}
+
+/** Sets or clears an item's count of sweeps reading "no sale", leaving the rest of its settle record. */
+function setMisses(item, misses) {
+	const settle = { ...item.settle };
+	if (misses) {
+		settle.misses = misses;
+	} else {
+		delete settle.misses;
+	}
+	if (Object.keys(settle).length) {
+		item.settle = settle;
+	} else {
+		delete item.settle;
+	}
+}
 
 /** A campaign for each discount ID with a sale saved on it, for the first run after the campaigns were introduced. */
 function savedCampaigns(items, now) {
@@ -97,24 +146,42 @@ function savedCampaigns(items, now) {
 }
 
 /** [campaigns, the fetched items as they should be judged].
- * A stale copy only shows the old state, so a sale ends when most of its campaign reads "no sale", not when one item does. */
-function settle(old, items, fetched, now) {
+ * A stale copy only shows the old state, so a sale ends when most of its campaign reads "no sale", not when one item does.
+ * pool(n) resolves to n more copies of the page, or null when they can't be had. */
+async function settle(old, items, fetched, now, pool) {
 	const campaigns = old.campaigns ? structuredClone(old.campaigns) : savedCampaigns(items, now);
 	const judged = { ...fetched };
+	const decided = new Set(); // judged with their whole campaign
 	const keep = (key) => { judged[key] = { ...fetched[key], price: items[key].price }; }; // the saved price stays as posted
+	for (const item of Object.values(items)) {
+		if (item.settle?.until && Date.parse(item.settle.until) <= Date.parse(now)) {
+			const { from, until, ...rest } = item.settle;
+			item.settle = rest;
+			setMisses(item, rest.misses);
+		}
+	}
 	for (const [id, campaign] of Object.entries(campaigns)) {
 		const here = (key) => regular(fetched[key]) && items[key]?.status === 'listed';
 		if (campaign.status === 'active') {
 			const posted = Object.keys(fetched).filter((key) => here(key) && onSale(items[key].price) && items[key].price.discountId === id);
 			const quiet = posted.filter((key) => !onSale(fetched[key].price));
 			if (posted.length < MIN_POOL) {
-				posted.forEach((key) => delete items[key].settle);
+				posted.forEach((key) => setMisses(items[key], 0));
 				continue;
 			}
-			if (quiet.length >= END_SHARE * posted.length) {
+			posted.forEach((key) => decided.add(key));
+			let ending = quiet.length >= END_SHARE * posted.length;
+			if (!ending && quiet.length >= GREY_SHARE * posted.length) {
+				const more = await pool(GREY_COPIES);
+				if (more) {
+					const [hit, seen] = tally([fetched, ...more], posted, (item) => !onSale(item.price));
+					ending = hit >= END_SHARE * seen;
+				}
+			}
+			if (ending) {
 				Object.assign(campaign, { status: 'ended', ended: now });
 				for (const key of posted) {
-					delete items[key].settle;
+					setMisses(items[key], 0);
 					if (onSale(fetched[key].price) && fetched[key].price.discountId === id) { // still shown on sale by a stale copy; a different campaign's sale stays on
 						judged[key] = { ...fetched[key], price: { ...fetched[key].price, discountAmount: null, discountPercentage: null, discountId: null } };
 					}
@@ -122,24 +189,55 @@ function settle(old, items, fetched, now) {
 				continue;
 			}
 			for (const key of posted) {
-				const misses = quiet.includes(key) ? (items[key].settle?.misses ?? 0) + 1 : 0;
-				if (misses && misses < LEAVE_SWEEPS) {
-					items[key].settle = { misses };
+				let misses = quiet.includes(key) ? (items[key].settle?.misses ?? 0) + 1 : 0;
+				if (misses >= LEAVE_SWEEPS) { // an item reading "no sale" for good leaves the running campaign by itself, once the extra copies agree
+					const pages = await pool(CHECK_COPIES);
+					if (pages?.every((page) => regular(page[key]) && !onSale(page[key].price))) {
+						misses = 0;
+					} else {
+						misses = pages ? 0 : LEAVE_SWEEPS - 1;
+						keep(key);
+					}
+				} else if (misses) {
 					keep(key);
-				} else {
-					delete items[key].settle; // an item reading "no sale" for good leaves the running campaign by itself
 				}
+				setMisses(items[key], misses);
 			}
 		} else if (Date.parse(now) - Date.parse(campaign.ended) > CLOSED_KEEP_MS) {
 			delete campaigns[id];
 		} else {
 			const present = campaign.members.filter((key) => here(key) && !onSale(items[key].price));
-			const back = present.filter((key) => onSale(fetched[key].price) && fetched[key].price.discountId === id);
-			if (present.length >= MIN_POOL && back.length >= END_SHARE * present.length) {
+			const returning = (item) => onSale(item.price) && item.price.discountId === id;
+			const back = present.filter((key) => returning(fetched[key]));
+			let reopen = false;
+			if (present.length >= MIN_POOL && back.length >= GREY_SHARE * present.length) {
+				const more = await pool(GREY_COPIES);
+				if (more) {
+					const [hit, seen] = tally([fetched, ...more], present, returning);
+					reopen = hit >= END_SHARE * seen;
+				}
+			}
+			if (reopen) {
 				campaign.status = 'active'; // Blizzard extended it
 				delete campaign.ended;
 			} else {
 				back.forEach(keep);
+			}
+			if (present.length >= MIN_POOL) {
+				back.forEach((key) => decided.add(key));
+			}
+		}
+	}
+	// A change that undoes one posted in the last hour has to show in every extra copy too.
+	const reversals = Object.keys(judged).filter((key) => {
+		const [prev, item] = [items[key], judged[key]];
+		return !decided.has(key) && regular(item) && prev?.status === 'listed' && prev.settle?.from && sameState(item.price, prev.settle.from) && !sameState(item.price, prev.price);
+	});
+	if (reversals.length) {
+		const pages = await pool(CHECK_COPIES);
+		for (const key of reversals) {
+			if (!pages?.every((page) => regular(page[key]) && sameState(page[key].price, judged[key].price))) {
+				keep(key);
 			}
 		}
 	}
@@ -156,8 +254,9 @@ function settle(old, items, fetched, now) {
 }
 
 /** [new state, changes]. old is null on a family's first run, which reports nothing.
- * confirm(item) resolves to true when the item's own page still shows a price. */
-export async function sweep(old, fetched, now, missesNeeded, confirm) {
+ * confirm(item) resolves to true when the item's own page still shows a price.
+ * copies(n) resolves to n more parsed copies of the family page, and rejects when it can't. */
+export async function sweep(old, fetched, now, missesNeeded, confirm, copies) {
 	if (old === null) {
 		const items = Object.fromEntries(Object.entries(fetched).map(([key, i]) => [key, { ...i, first_seen: now, status: 'listed', misses: 0 }]));
 		return [{ items, suspect: false }, []];
@@ -178,7 +277,7 @@ export async function sweep(old, fetched, now, missesNeeded, confirm) {
 		}
 	}
 
-	const [campaigns, judged] = settle(old, items, fetched, now);
+	const [campaigns, judged] = await settle(old, items, fetched, now, pooler(copies));
 	const changes = [];
 	const log = (type, item, extra = {}) => {
 		const record = { type, key: item.key, kind: item.kind, slug: item.slug, title: item.title, destination: item.destination, seen: now };
@@ -188,6 +287,7 @@ export async function sweep(old, fetched, now, missesNeeded, confirm) {
 
 	for (const [key, item] of Object.entries(judged)) {
 		const prev = items[key];
+		let posted = null;
 		const replaced = !prev && replacedBanner(items, fetched, item);
 		if (replaced) {
 			Object.assign(replaced, { status: 'gone', gone_since: now }); // its successor reports the change
@@ -202,11 +302,16 @@ export async function sweep(old, fetched, now, missesNeeded, confirm) {
 				log(prev ? 'back' : 'new', item);
 			}
 		} else {
-			for (const [type, extra] of compare(prev, item)) {
+			const found = compare(prev, item);
+			for (const [type, extra] of found) {
 				log(type, item, extra);
 			}
+			if (found.some(priceChange)) {
+				posted = { from: { fullAmount: prev.price?.fullAmount ?? null, discountAmount: prev.price?.discountAmount ?? null }, until: new Date(Date.parse(now) + SETTLE_MS).toISOString() };
+			}
 		}
-		items[key] = { ...item, first_seen: prev ? prev.first_seen : now, status: 'listed', misses: 0, ...(prev?.settle ? { settle: prev.settle } : {}) };
+		const record = { ...prev?.settle, ...posted };
+		items[key] = { ...item, first_seen: prev ? prev.first_seen : now, status: 'listed', misses: 0, ...(Object.keys(record).length ? { settle: record } : {}) };
 	}
 
 	for (const [key, item] of Object.entries(items)) {
