@@ -46,7 +46,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 29.99,
-        "labelFormat": "From {0}"
+        "labelFormat": "From {0}",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -78,7 +79,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 39.99,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -110,7 +112,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 9.99,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -142,7 +145,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 14.99,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -174,7 +178,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 29.99,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -206,7 +211,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 5.99,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -238,7 +244,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 9.99,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -270,7 +277,8 @@
         "discountPercentage": null,
         "currency": null,
         "raw": 0,
-        "labelFormat": "Learn More"
+        "labelFormat": "Learn More",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
