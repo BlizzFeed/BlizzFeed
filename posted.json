@@ -2,1476 +2,6 @@
   {
     "type": "sale_start",
     "family": "world-of-warcraft",
-    "key": "blt772547cf6f4b3142",
-    "slug": "world-of-warcraft-service-character-boost",
-    "seen": "2026-10-21T16:40:31Z",
-    "changes": {
-      "eu": {
-        "type": "sale_start",
-        "key": "blt772547cf6f4b3142",
-        "kind": "item",
-        "slug": "world-of-warcraft-service-character-boost",
-        "title": "Enhanced Level 80 Character Boost",
-        "destination": "/product/world-of-warcraft-service-character-boost",
-        "seen": "2026-10-21T17:00:28Z",
-        "price": {
-          "fullAmount": "€60.00",
-          "discountAmount": "€40.20",
-          "discountPercentage": 33,
-          "currency": "EUR",
-          "raw": 40.2,
-          "labelFormat": "From {0}"
-        },
-        "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
-      },
-      "us": {
-        "type": "sale_start",
-        "key": "blt772547cf6f4b3142",
-        "kind": "item",
-        "slug": "world-of-warcraft-service-character-boost",
-        "title": "Enhanced Level 80 Character Boost",
-        "destination": "/product/world-of-warcraft-service-character-boost",
-        "seen": "2026-10-21T16:40:31Z",
-        "price": {
-          "fullAmount": "$60.00",
-          "discountAmount": "$40.20",
-          "discountPercentage": 33,
-          "currency": "USD",
-          "raw": 40.2,
-          "labelFormat": "From {0}"
-        },
-        "commit": "9959b03e011d3f52ba1c80a62adc0db4cb970881"
-      }
-    },
-    "at": "2026-10-21T16:41:07Z",
-    "digested": [
-      "[\"feed\",\"wow-news\"]",
-      "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ],
-    "paired": true,
-    "lines": [
-      {
-        "seen": "2026-10-21T16:40:31Z",
-        "changes": {
-          "eu": {
-            "type": "sale_start",
-            "key": "blt772547cf6f4b3142",
-            "kind": "item",
-            "slug": "world-of-warcraft-service-character-boost",
-            "title": "Enhanced Level 80 Character Boost",
-            "destination": "/product/world-of-warcraft-service-character-boost",
-            "seen": "2026-10-21T16:40:31Z",
-            "price": {
-              "fullAmount": "€60.00",
-              "discountAmount": "€40.20",
-              "discountPercentage": 33,
-              "currency": "EUR",
-              "raw": 40.2,
-              "labelFormat": "From {0}"
-            },
-            "commit": "1826d1bdc8cca2ad938ce757bc2a0e0dd5c64f5b"
-          },
-          "us": {
-            "type": "sale_start",
-            "key": "blt772547cf6f4b3142",
-            "kind": "item",
-            "slug": "world-of-warcraft-service-character-boost",
-            "title": "Enhanced Level 80 Character Boost",
-            "destination": "/product/world-of-warcraft-service-character-boost",
-            "seen": "2026-10-21T16:40:31Z",
-            "price": {
-              "fullAmount": "$60.00",
-              "discountAmount": "$40.20",
-              "discountPercentage": 33,
-              "currency": "USD",
-              "raw": 40.2,
-              "labelFormat": "From {0}"
-            },
-            "commit": "9959b03e011d3f52ba1c80a62adc0db4cb970881"
-          }
-        }
-      },
-      {
-        "seen": "2026-10-21T17:00:28Z",
-        "changes": {
-          "eu": {
-            "type": "sale_start",
-            "key": "blt772547cf6f4b3142",
-            "kind": "item",
-            "slug": "world-of-warcraft-service-character-boost",
-            "title": "Enhanced Level 80 Character Boost",
-            "destination": "/product/world-of-warcraft-service-character-boost",
-            "seen": "2026-10-21T17:00:28Z",
-            "price": {
-              "fullAmount": "€60.00",
-              "discountAmount": "€40.20",
-              "discountPercentage": 33,
-              "currency": "EUR",
-              "raw": 40.2,
-              "labelFormat": "From {0}"
-            },
-            "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "type": "sale_start",
-    "family": "world-of-warcraft",
-    "key": "blt01ffc87a96c04fb1",
-    "slug": "world-of-warcraft-service-faction-change",
-    "seen": "2026-10-21T16:40:31Z",
-    "changes": {
-      "eu": {
-        "type": "sale_start",
-        "key": "blt01ffc87a96c04fb1",
-        "kind": "item",
-        "slug": "world-of-warcraft-service-faction-change",
-        "title": "Faction Change",
-        "destination": "/product/world-of-warcraft-service-faction-change",
-        "seen": "2026-10-21T16:40:31Z",
-        "price": {
-          "fullAmount": "€30.00",
-          "discountAmount": "€21.00",
-          "discountPercentage": 30,
-          "currency": "EUR",
-          "raw": 21,
-          "labelFormat": "From {0}"
-        },
-        "commit": "1826d1bdc8cca2ad938ce757bc2a0e0dd5c64f5b"
-      },
-      "us": {
-        "type": "sale_start",
-        "key": "blt01ffc87a96c04fb1",
-        "kind": "item",
-        "slug": "world-of-warcraft-service-faction-change",
-        "title": "Faction Change",
-        "destination": "/product/world-of-warcraft-service-faction-change",
-        "seen": "2026-10-21T16:40:31Z",
-        "price": {
-          "fullAmount": "$30.00",
-          "discountAmount": "$21.00",
-          "discountPercentage": 30,
-          "currency": "USD",
-          "raw": 21,
-          "labelFormat": "From {0}"
-        },
-        "commit": "9959b03e011d3f52ba1c80a62adc0db4cb970881"
-      }
-    },
-    "at": "2026-10-21T16:41:07Z",
-    "digested": [
-      "[\"feed\",\"wow-news\"]",
-      "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ],
-    "paired": true
-  },
-  {
-    "type": "sale_start",
-    "family": "world-of-warcraft",
-    "key": "blt0c12d595a37ead0c",
-    "slug": "world-of-warcraft-service-race-change",
-    "seen": "2026-10-21T16:40:31Z",
-    "changes": {
-      "eu": {
-        "type": "sale_start",
-        "key": "blt0c12d595a37ead0c",
-        "kind": "item",
-        "slug": "world-of-warcraft-service-race-change",
-        "title": "Race Change",
-        "destination": "/product/world-of-warcraft-service-race-change",
-        "seen": "2026-10-21T16:55:24Z",
-        "price": {
-          "fullAmount": "€25.00",
-          "discountAmount": "€17.50",
-          "discountPercentage": 30,
-          "currency": "EUR",
-          "raw": 17.5,
-          "labelFormat": "From {0}"
-        },
-        "commit": "a146b141b251dab3d30380d71cdafd09a772794e"
-      },
-      "us": {
-        "type": "sale_start",
-        "key": "blt0c12d595a37ead0c",
-        "kind": "item",
-        "slug": "world-of-warcraft-service-race-change",
-        "title": "Race Change",
-        "destination": "/product/world-of-warcraft-service-race-change",
-        "seen": "2026-10-21T16:40:31Z",
-        "price": {
-          "fullAmount": "$25.00",
-          "discountAmount": "$17.50",
-          "discountPercentage": 30,
-          "currency": "USD",
-          "raw": 17.5,
-          "labelFormat": "From {0}"
-        },
-        "commit": "9959b03e011d3f52ba1c80a62adc0db4cb970881"
-      }
-    },
-    "at": "2026-10-21T16:41:07Z",
-    "digested": [
-      "[\"feed\",\"wow-news\"]",
-      "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ],
-    "paired": true,
-    "lines": [
-      {
-        "seen": "2026-10-21T16:40:31Z",
-        "changes": {
-          "eu": {
-            "type": "sale_start",
-            "key": "blt0c12d595a37ead0c",
-            "kind": "item",
-            "slug": "world-of-warcraft-service-race-change",
-            "title": "Race Change",
-            "destination": "/product/world-of-warcraft-service-race-change",
-            "seen": "2026-10-21T16:40:31Z",
-            "price": {
-              "fullAmount": "€25.00",
-              "discountAmount": "€17.50",
-              "discountPercentage": 30,
-              "currency": "EUR",
-              "raw": 17.5,
-              "labelFormat": "From {0}"
-            },
-            "commit": "1826d1bdc8cca2ad938ce757bc2a0e0dd5c64f5b"
-          },
-          "us": {
-            "type": "sale_start",
-            "key": "blt0c12d595a37ead0c",
-            "kind": "item",
-            "slug": "world-of-warcraft-service-race-change",
-            "title": "Race Change",
-            "destination": "/product/world-of-warcraft-service-race-change",
-            "seen": "2026-10-21T16:40:31Z",
-            "price": {
-              "fullAmount": "$25.00",
-              "discountAmount": "$17.50",
-              "discountPercentage": 30,
-              "currency": "USD",
-              "raw": 17.5,
-              "labelFormat": "From {0}"
-            },
-            "commit": "9959b03e011d3f52ba1c80a62adc0db4cb970881"
-          }
-        }
-      },
-      {
-        "seen": "2026-10-21T16:55:24Z",
-        "changes": {
-          "eu": {
-            "type": "sale_start",
-            "key": "blt0c12d595a37ead0c",
-            "kind": "item",
-            "slug": "world-of-warcraft-service-race-change",
-            "title": "Race Change",
-            "destination": "/product/world-of-warcraft-service-race-change",
-            "seen": "2026-10-21T16:55:24Z",
-            "price": {
-              "fullAmount": "€25.00",
-              "discountAmount": "€17.50",
-              "discountPercentage": 30,
-              "currency": "EUR",
-              "raw": 17.5,
-              "labelFormat": "From {0}"
-            },
-            "commit": "a146b141b251dab3d30380d71cdafd09a772794e"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "type": "sale_start",
-    "family": "world-of-warcraft",
-    "key": "blt77976f6c60f9b8b7",
-    "slug": "world-of-warcraft-service-name-change",
-    "seen": "2026-10-21T16:40:31Z",
-    "changes": {
-      "eu": {
-        "type": "sale_start",
-        "key": "blt77976f6c60f9b8b7",
-        "kind": "item",
-        "slug": "world-of-warcraft-service-name-change",
-        "title": "Name Change",
-        "destination": "/product/world-of-warcraft-service-name-change",
-        "seen": "2026-10-21T17:05:30Z",
-        "price": {
-          "fullAmount": "€10.00",
-          "discountAmount": "€7.00",
-          "discountPercentage": 30,
-          "currency": "EUR",
-          "raw": 7,
-          "labelFormat": "From {0}"
-        },
-        "commit": "334699e77fbb06196c64b16631730fedd85c52f6"
-      },
-      "us": {
-        "type": "sale_start",
-        "key": "blt77976f6c60f9b8b7",
-        "kind": "item",
-        "slug": "world-of-warcraft-service-name-change",
-        "title": "Name Change",
-        "destination": "/product/world-of-warcraft-service-name-change",
-        "seen": "2026-10-21T16:40:31Z",
-        "price": {
-          "fullAmount": "$10.00",
-          "discountAmount": "$7.00",
-          "discountPercentage": 30,
-          "currency": "USD",
-          "raw": 7,
-          "labelFormat": "From {0}"
-        },
-        "commit": "9959b03e011d3f52ba1c80a62adc0db4cb970881"
-      }
-    },
-    "at": "2026-10-21T16:41:07Z",
-    "digested": [
-      "[\"feed\",\"wow-news\"]",
-      "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ],
-    "paired": true,
-    "lines": [
-      {
-        "seen": "2026-10-21T16:40:31Z",
-        "changes": {
-          "eu": {
-            "type": "sale_start",
-            "key": "blt77976f6c60f9b8b7",
-            "kind": "item",
-            "slug": "world-of-warcraft-service-name-change",
-            "title": "Name Change",
-            "destination": "/product/world-of-warcraft-service-name-change",
-            "seen": "2026-10-21T16:40:31Z",
-            "price": {
-              "fullAmount": "€10.00",
-              "discountAmount": "€7.00",
-              "discountPercentage": 30,
-              "currency": "EUR",
-              "raw": 7,
-              "labelFormat": "From {0}"
-            },
-            "commit": "1826d1bdc8cca2ad938ce757bc2a0e0dd5c64f5b"
-          },
-          "us": {
-            "type": "sale_start",
-            "key": "blt77976f6c60f9b8b7",
-            "kind": "item",
-            "slug": "world-of-warcraft-service-name-change",
-            "title": "Name Change",
-            "destination": "/product/world-of-warcraft-service-name-change",
-            "seen": "2026-10-21T16:40:31Z",
-            "price": {
-              "fullAmount": "$10.00",
-              "discountAmount": "$7.00",
-              "discountPercentage": 30,
-              "currency": "USD",
-              "raw": 7,
-              "labelFormat": "From {0}"
-            },
-            "commit": "9959b03e011d3f52ba1c80a62adc0db4cb970881"
-          }
-        }
-      },
-      {
-        "seen": "2026-10-21T17:05:30Z",
-        "changes": {
-          "eu": {
-            "type": "sale_start",
-            "key": "blt77976f6c60f9b8b7",
-            "kind": "item",
-            "slug": "world-of-warcraft-service-name-change",
-            "title": "Name Change",
-            "destination": "/product/world-of-warcraft-service-name-change",
-            "seen": "2026-10-21T17:05:30Z",
-            "price": {
-              "fullAmount": "€10.00",
-              "discountAmount": "€7.00",
-              "discountPercentage": 30,
-              "currency": "EUR",
-              "raw": 7,
-              "labelFormat": "From {0}"
-            },
-            "commit": "334699e77fbb06196c64b16631730fedd85c52f6"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "type": "sale_start",
-    "family": "world-of-warcraft",
-    "key": "bltcd8c97c6094de246",
-    "slug": "world-of-warcraft-toy-sandbox-storm-gryphon",
-    "seen": "2026-10-21T16:40:31Z",
-    "changes": {
-      "us": {
-        "type": "sale_start",
-        "key": "bltcd8c97c6094de246",
-        "kind": "item",
-        "slug": "world-of-warcraft-toy-sandbox-storm-gryphon",
-        "title": "Sandbox Storm Gryphon",
-        "destination": "/product/world-of-warcraft-toy-sandbox-storm-gryphon?p=1433457",
-        "seen": "2026-10-21T16:40:31Z",
-        "price": {
-          "fullAmount": "$10.00",
-          "discountAmount": "$5.00",
-          "discountPercentage": 50,
-          "currency": "USD",
-          "raw": 5,
-          "labelFormat": ""
-        },
-        "commit": "9959b03e011d3f52ba1c80a62adc0db4cb970881"
-      },
-      "eu": {
-        "type": "sale_start",
-        "key": "bltcd8c97c6094de246",
-        "kind": "item",
-        "slug": "world-of-warcraft-toy-sandbox-storm-gryphon",
-        "title": "Sandbox Storm Gryphon",
-        "destination": "/product/world-of-warcraft-toy-sandbox-storm-gryphon?p=1433457",
-        "seen": "2026-10-21T16:45:24Z",
-        "price": {
-          "fullAmount": "€10.00",
-          "discountAmount": "€5.00",
-          "discountPercentage": 50,
-          "currency": "EUR",
-          "raw": 5,
-          "labelFormat": ""
-        },
-        "commit": "787c3b7021bd9cdacf70d94fb0e3faf5d35bbaf4"
-      }
-    },
-    "at": "2026-10-21T16:41:07Z",
-    "digested": [
-      "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]",
-      "[\"feed\",\"wow-news\"]"
-    ],
-    "paired": true
-  },
-  {
-    "type": "sale_start",
-    "family": "world-of-warcraft",
-    "key": "bltd8f325973824e7ca",
-    "slug": "world-of-warcraft-toy-deepdwellers-earthen-hearthstone",
-    "seen": "2026-10-21T16:40:31Z",
-    "changes": {
-      "us": {
-        "type": "sale_start",
-        "key": "bltd8f325973824e7ca",
-        "kind": "item",
-        "slug": "world-of-warcraft-toy-deepdwellers-earthen-hearthstone",
-        "title": "Deepdweller’s Earthen Hearthstone Effect",
-        "destination": "/product/world-of-warcraft-toy-deepdwellers-earthen-hearthstone?p=1433456",
-        "seen": "2026-10-21T16:40:31Z",
-        "price": {
-          "fullAmount": "$5.00",
-          "discountAmount": "$2.50",
-          "discountPercentage": 50,
-          "currency": "USD",
-          "raw": 2.5,
-          "labelFormat": ""
-        },
-        "commit": "9959b03e011d3f52ba1c80a62adc0db4cb970881"
-      },
-      "eu": {
-        "type": "sale_start",
-        "key": "bltd8f325973824e7ca",
-        "kind": "item",
-        "slug": "world-of-warcraft-toy-deepdwellers-earthen-hearthstone",
-        "title": "Deepdweller’s Earthen Hearthstone Effect",
-        "destination": "/product/world-of-warcraft-toy-deepdwellers-earthen-hearthstone?p=1433456",
-        "seen": "2026-10-21T16:45:24Z",
-        "price": {
-          "fullAmount": "€5.00",
-          "discountAmount": "€2.50",
-          "discountPercentage": 50,
-          "currency": "EUR",
-          "raw": 2.5,
-          "labelFormat": ""
-        },
-        "commit": "787c3b7021bd9cdacf70d94fb0e3faf5d35bbaf4"
-      }
-    },
-    "at": "2026-10-21T16:41:07Z",
-    "digested": [
-      "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]",
-      "[\"feed\",\"wow-news\"]"
-    ],
-    "paired": true
-  },
-  {
-    "type": "sale_start",
-    "family": "world-of-warcraft",
-    "key": "blt666aea471d0ec98d",
-    "slug": "world-of-warcraft-toy-timewalkers-hearthstone",
-    "seen": "2026-10-21T16:40:31Z",
-    "changes": {
-      "us": {
-        "type": "sale_start",
-        "key": "blt666aea471d0ec98d",
-        "kind": "item",
-        "slug": "world-of-warcraft-toy-timewalkers-hearthstone",
-        "title": "Timewalker’s Hearthstone Effect",
-        "destination": "/product/world-of-warcraft-toy-timewalkers-hearthstone?p=847128",
-        "seen": "2026-10-21T16:40:31Z",
-        "price": {
-          "fullAmount": "$5.00",
-          "discountAmount": "$2.50",
-          "discountPercentage": 50,
-          "currency": "USD",
-          "raw": 2.5,
-          "labelFormat": ""
-        },
-        "commit": "9959b03e011d3f52ba1c80a62adc0db4cb970881"
-      },
-      "eu": {
-        "type": "sale_start",
-        "key": "blt666aea471d0ec98d",
-        "kind": "item",
-        "slug": "world-of-warcraft-toy-timewalkers-hearthstone",
-        "title": "Timewalker’s Hearthstone Effect",
-        "destination": "/product/world-of-warcraft-toy-timewalkers-hearthstone?p=847128",
-        "seen": "2026-10-21T16:45:24Z",
-        "price": {
-          "fullAmount": "€5.00",
-          "discountAmount": "€2.50",
-          "discountPercentage": 50,
-          "currency": "EUR",
-          "raw": 2.5,
-          "labelFormat": ""
-        },
-        "commit": "787c3b7021bd9cdacf70d94fb0e3faf5d35bbaf4"
-      }
-    },
-    "at": "2026-10-21T16:41:07Z",
-    "digested": [
-      "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]",
-      "[\"feed\",\"wow-news\"]"
-    ],
-    "paired": true
-  },
-  {
-    "type": "sale_start",
-    "family": "world-of-warcraft",
-    "key": "blt0610899f846ba36d",
-    "slug": "world-of-warcraft-service-character-transfer",
-    "seen": "2026-10-21T16:40:31Z",
-    "changes": {
-      "us": {
-        "type": "sale_start",
-        "key": "blt0610899f846ba36d",
-        "kind": "item",
-        "slug": "world-of-warcraft-service-character-transfer",
-        "title": "Character Transfer",
-        "destination": "/product/world-of-warcraft-service-character-transfer",
-        "seen": "2026-10-21T16:40:31Z",
-        "price": {
-          "fullAmount": "$25.00",
-          "discountAmount": "$17.50",
-          "discountPercentage": 30,
-          "currency": "USD",
-          "raw": 17.5,
-          "labelFormat": "From {0}"
-        },
-        "commit": "9959b03e011d3f52ba1c80a62adc0db4cb970881"
-      },
-      "eu": {
-        "type": "sale_start",
-        "key": "blt0610899f846ba36d",
-        "kind": "item",
-        "slug": "world-of-warcraft-service-character-transfer",
-        "title": "Character Transfer",
-        "destination": "/product/world-of-warcraft-service-character-transfer",
-        "seen": "2026-10-21T17:00:28Z",
-        "price": {
-          "fullAmount": "€25.00",
-          "discountAmount": "€17.50",
-          "discountPercentage": 30,
-          "currency": "EUR",
-          "raw": 17.5,
-          "labelFormat": "From {0}"
-        },
-        "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
-      }
-    },
-    "at": "2026-10-21T16:41:07Z",
-    "digested": [
-      "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]",
-      "[\"feed\",\"wow-news\"]"
-    ],
-    "paired": true,
-    "lines": [
-      {
-        "seen": "2026-10-21T16:40:31Z",
-        "changes": {
-          "us": {
-            "type": "sale_start",
-            "key": "blt0610899f846ba36d",
-            "kind": "item",
-            "slug": "world-of-warcraft-service-character-transfer",
-            "title": "Character Transfer",
-            "destination": "/product/world-of-warcraft-service-character-transfer",
-            "seen": "2026-10-21T16:40:31Z",
-            "price": {
-              "fullAmount": "$25.00",
-              "discountAmount": "$17.50",
-              "discountPercentage": 30,
-              "currency": "USD",
-              "raw": 17.5,
-              "labelFormat": "From {0}"
-            },
-            "commit": "9959b03e011d3f52ba1c80a62adc0db4cb970881"
-          },
-          "eu": {
-            "type": "sale_start",
-            "key": "blt0610899f846ba36d",
-            "kind": "item",
-            "slug": "world-of-warcraft-service-character-transfer",
-            "title": "Character Transfer",
-            "destination": "/product/world-of-warcraft-service-character-transfer",
-            "seen": "2026-10-21T16:45:24Z",
-            "price": {
-              "fullAmount": "€25.00",
-              "discountAmount": "€17.50",
-              "discountPercentage": 30,
-              "currency": "EUR",
-              "raw": 17.5,
-              "labelFormat": "From {0}"
-            },
-            "commit": "787c3b7021bd9cdacf70d94fb0e3faf5d35bbaf4"
-          }
-        }
-      },
-      {
-        "seen": "2026-10-21T17:00:28Z",
-        "changes": {
-          "eu": {
-            "type": "sale_start",
-            "key": "blt0610899f846ba36d",
-            "kind": "item",
-            "slug": "world-of-warcraft-service-character-transfer",
-            "title": "Character Transfer",
-            "destination": "/product/world-of-warcraft-service-character-transfer",
-            "seen": "2026-10-21T17:00:28Z",
-            "price": {
-              "fullAmount": "€25.00",
-              "discountAmount": "€17.50",
-              "discountPercentage": 30,
-              "currency": "EUR",
-              "raw": 17.5,
-              "labelFormat": "From {0}"
-            },
-            "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "type": "sale_end",
-    "family": "world-of-warcraft",
-    "key": "bltf976865edfcf1e87",
-    "slug": "world-of-warcraft-transmog-waveborne-diplomats-regalia",
-    "seen": "2026-10-21T16:40:31Z",
-    "changes": {
-      "eu": {
-        "type": "sale_end",
-        "key": "bltf976865edfcf1e87",
-        "kind": "item",
-        "slug": "world-of-warcraft-transmog-waveborne-diplomats-regalia",
-        "title": "Waveborne Diplomat’s Regalia",
-        "destination": "/product/world-of-warcraft-transmog-waveborne-diplomats-regalia?p=1197181",
-        "seen": "2026-10-21T17:00:28Z",
-        "price": {
-          "fullAmount": "€20.00",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "EUR",
-          "raw": 20,
-          "labelFormat": ""
-        },
-        "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
-      },
-      "us": {
-        "type": "sale_end",
-        "key": "bltf976865edfcf1e87",
-        "kind": "item",
-        "slug": "world-of-warcraft-transmog-waveborne-diplomats-regalia",
-        "title": "Waveborne Diplomat’s Regalia",
-        "destination": "/product/world-of-warcraft-transmog-waveborne-diplomats-regalia?p=1197181",
-        "seen": "2026-10-21T17:05:30Z",
-        "price": {
-          "fullAmount": "$20.00",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "USD",
-          "raw": 20,
-          "labelFormat": ""
-        },
-        "commit": "27ef346956ac9591b741c0bdb1bf5f3fea06d02a"
-      }
-    },
-    "at": "2026-10-21T16:41:07Z",
-    "digested": [
-      "[\"shop\",null]"
-    ],
-    "lines": [
-      {
-        "seen": "2026-10-21T16:40:31Z",
-        "changes": {
-          "eu": {
-            "type": "sale_end",
-            "key": "bltf976865edfcf1e87",
-            "kind": "item",
-            "slug": "world-of-warcraft-transmog-waveborne-diplomats-regalia",
-            "title": "Waveborne Diplomat’s Regalia",
-            "destination": "/product/world-of-warcraft-transmog-waveborne-diplomats-regalia?p=1197181",
-            "seen": "2026-10-21T16:40:31Z",
-            "price": {
-              "fullAmount": "€20.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "EUR",
-              "raw": 20,
-              "labelFormat": ""
-            },
-            "commit": "1826d1bdc8cca2ad938ce757bc2a0e0dd5c64f5b"
-          }
-        }
-      },
-      {
-        "seen": "2026-10-21T17:00:28Z",
-        "changes": {
-          "eu": {
-            "type": "sale_end",
-            "key": "bltf976865edfcf1e87",
-            "kind": "item",
-            "slug": "world-of-warcraft-transmog-waveborne-diplomats-regalia",
-            "title": "Waveborne Diplomat’s Regalia",
-            "destination": "/product/world-of-warcraft-transmog-waveborne-diplomats-regalia?p=1197181",
-            "seen": "2026-10-21T17:00:28Z",
-            "price": {
-              "fullAmount": "€20.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "EUR",
-              "raw": 20,
-              "labelFormat": ""
-            },
-            "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
-          }
-        }
-      },
-      {
-        "seen": "2026-10-21T17:05:30Z",
-        "changes": {
-          "us": {
-            "type": "sale_end",
-            "key": "bltf976865edfcf1e87",
-            "kind": "item",
-            "slug": "world-of-warcraft-transmog-waveborne-diplomats-regalia",
-            "title": "Waveborne Diplomat’s Regalia",
-            "destination": "/product/world-of-warcraft-transmog-waveborne-diplomats-regalia?p=1197181",
-            "seen": "2026-10-21T17:05:30Z",
-            "price": {
-              "fullAmount": "$20.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "USD",
-              "raw": 20,
-              "labelFormat": ""
-            },
-            "commit": "27ef346956ac9591b741c0bdb1bf5f3fea06d02a"
-          }
-        }
-      }
-    ],
-    "paired": true
-  },
-  {
-    "type": "sale_end",
-    "family": "world-of-warcraft",
-    "key": "bltc00d4f8688cab261",
-    "slug": "world-of-warcraft-transmog-fireplume-regalia",
-    "seen": "2026-10-21T16:40:31Z",
-    "changes": {
-      "eu": {
-        "type": "sale_end",
-        "key": "bltc00d4f8688cab261",
-        "kind": "item",
-        "slug": "world-of-warcraft-transmog-fireplume-regalia",
-        "title": "Fireplume Regalia",
-        "destination": "/product/world-of-warcraft-transmog-fireplume-regalia?p=759079",
-        "seen": "2026-10-21T17:00:28Z",
-        "price": {
-          "fullAmount": "€20.00",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "EUR",
-          "raw": 20,
-          "labelFormat": ""
-        },
-        "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
-      },
-      "us": {
-        "type": "sale_end",
-        "key": "bltc00d4f8688cab261",
-        "kind": "item",
-        "slug": "world-of-warcraft-transmog-fireplume-regalia",
-        "title": "Fireplume Regalia",
-        "destination": "/product/world-of-warcraft-transmog-fireplume-regalia?p=759079",
-        "seen": "2026-10-21T17:05:30Z",
-        "price": {
-          "fullAmount": "$20.00",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "USD",
-          "raw": 20,
-          "labelFormat": ""
-        },
-        "commit": "27ef346956ac9591b741c0bdb1bf5f3fea06d02a"
-      }
-    },
-    "at": "2026-10-21T16:41:07Z",
-    "digested": [
-      "[\"shop\",null]"
-    ],
-    "paired": true,
-    "lines": [
-      {
-        "seen": "2026-10-21T16:40:31Z",
-        "changes": {
-          "eu": {
-            "type": "sale_end",
-            "key": "bltc00d4f8688cab261",
-            "kind": "item",
-            "slug": "world-of-warcraft-transmog-fireplume-regalia",
-            "title": "Fireplume Regalia",
-            "destination": "/product/world-of-warcraft-transmog-fireplume-regalia?p=759079",
-            "seen": "2026-10-21T16:40:31Z",
-            "price": {
-              "fullAmount": "€20.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "EUR",
-              "raw": 20,
-              "labelFormat": ""
-            },
-            "commit": "1826d1bdc8cca2ad938ce757bc2a0e0dd5c64f5b"
-          },
-          "us": {
-            "type": "sale_end",
-            "key": "bltc00d4f8688cab261",
-            "kind": "item",
-            "slug": "world-of-warcraft-transmog-fireplume-regalia",
-            "title": "Fireplume Regalia",
-            "destination": "/product/world-of-warcraft-transmog-fireplume-regalia?p=759079",
-            "seen": "2026-10-21T16:55:24Z",
-            "price": {
-              "fullAmount": "$20.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "USD",
-              "raw": 20,
-              "labelFormat": ""
-            },
-            "commit": "fa3855b7038734533b1c61f7f6fd4e25fe217f07"
-          }
-        }
-      },
-      {
-        "seen": "2026-10-21T17:00:28Z",
-        "changes": {
-          "eu": {
-            "type": "sale_end",
-            "key": "bltc00d4f8688cab261",
-            "kind": "item",
-            "slug": "world-of-warcraft-transmog-fireplume-regalia",
-            "title": "Fireplume Regalia",
-            "destination": "/product/world-of-warcraft-transmog-fireplume-regalia?p=759079",
-            "seen": "2026-10-21T17:00:28Z",
-            "price": {
-              "fullAmount": "€20.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "EUR",
-              "raw": 20,
-              "labelFormat": ""
-            },
-            "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
-          }
-        }
-      },
-      {
-        "seen": "2026-10-21T17:05:30Z",
-        "changes": {
-          "us": {
-            "type": "sale_end",
-            "key": "bltc00d4f8688cab261",
-            "kind": "item",
-            "slug": "world-of-warcraft-transmog-fireplume-regalia",
-            "title": "Fireplume Regalia",
-            "destination": "/product/world-of-warcraft-transmog-fireplume-regalia?p=759079",
-            "seen": "2026-10-21T17:05:30Z",
-            "price": {
-              "fullAmount": "$20.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "USD",
-              "raw": 20,
-              "labelFormat": ""
-            },
-            "commit": "27ef346956ac9591b741c0bdb1bf5f3fea06d02a"
-          }
-        }
-      }
-    ]
-  },
-  {
-    "type": "sale_end",
-    "family": "world-of-warcraft",
-    "key": "blteab825d5d503a792",
-    "slug": "world-of-warcraft-celestial-observers-ensemble",
-    "seen": "2026-10-21T16:40:31Z",
-    "changes": {
-      "eu": {
-        "type": "sale_end",
-        "key": "blteab825d5d503a792",
-        "kind": "item",
-        "slug": "world-of-warcraft-celestial-observers-ensemble",
-        "title": "Celestial Observer's Ensemble",
-        "destination": "/product/world-of-warcraft-celestial-observers-ensemble?p=250981",
-        "seen": "2026-10-21T17:00:28Z",
-        "price": {
-          "fullAmount": "€20.00",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "EUR",
-          "raw": 20,
-          "labelFormat": ""
-        },
-        "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
-      },
-      "us": {
-        "type": "sale_end",
-        "key": "blteab825d5d503a792",
-        "kind": "item",
-        "slug": "world-of-warcraft-celestial-observers-ensemble",
-        "title": "Celestial Observer's Ensemble",
-        "destination": "/product/world-of-warcraft-celestial-observers-ensemble?p=250981",
-        "seen": "2026-10-21T17:05:30Z",
-        "price": {
-          "fullAmount": "$20.00",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "USD",
-          "raw": 20,
-          "labelFormat": ""
-        },
-        "commit": "27ef346956ac9591b741c0bdb1bf5f3fea06d02a"
-      }
-    },
-    "at": "2026-10-21T16:41:07Z",
-    "digested": [
-      "[\"shop\",null]"
-    ],
-    "lines": [
-      {
-        "seen": "2026-10-21T16:40:31Z",
-        "changes": {
-          "eu": {
-            "type": "sale_end",
-            "key": "blteab825d5d503a792",
-            "kind": "item",
-            "slug": "world-of-warcraft-celestial-observers-ensemble",
-            "title": "Celestial Observer's Ensemble",
-            "destination": "/product/world-of-warcraft-celestial-observers-ensemble?p=250981",
-            "seen": "2026-10-21T16:40:31Z",
-            "price": {
-              "fullAmount": "€20.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "EUR",
-              "raw": 20,
-              "labelFormat": ""
-            },
-            "commit": "1826d1bdc8cca2ad938ce757bc2a0e0dd5c64f5b"
-          }
-        }
-      },
-      {
-        "seen": "2026-10-21T17:00:28Z",
-        "changes": {
-          "eu": {
-            "type": "sale_end",
-            "key": "blteab825d5d503a792",
-            "kind": "item",
-            "slug": "world-of-warcraft-celestial-observers-ensemble",
-            "title": "Celestial Observer's Ensemble",
-            "destination": "/product/world-of-warcraft-celestial-observers-ensemble?p=250981",
-            "seen": "2026-10-21T17:00:28Z",
-            "price": {
-              "fullAmount": "€20.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "EUR",
-              "raw": 20,
-              "labelFormat": ""
-            },
-            "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
-          }
-        }
-      },
-      {
-        "seen": "2026-10-21T17:05:30Z",
-        "changes": {
-          "us": {
-            "type": "sale_end",
-            "key": "blteab825d5d503a792",
-            "kind": "item",
-            "slug": "world-of-warcraft-celestial-observers-ensemble",
-            "title": "Celestial Observer's Ensemble",
-            "destination": "/product/world-of-warcraft-celestial-observers-ensemble?p=250981",
-            "seen": "2026-10-21T17:05:30Z",
-            "price": {
-              "fullAmount": "$20.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "USD",
-              "raw": 20,
-              "labelFormat": ""
-            },
-            "commit": "27ef346956ac9591b741c0bdb1bf5f3fea06d02a"
-          }
-        }
-      }
-    ],
-    "paired": true
-  },
-  {
-    "type": "sale_end",
-    "family": "world-of-warcraft",
-    "key": "bltad6d580fcefaa54c",
-    "slug": "world-of-warcraft-the-mighty-kodo-pack",
-    "seen": "2026-10-21T16:40:31Z",
-    "changes": {
-      "us": {
-        "type": "sale_end",
-        "key": "bltad6d580fcefaa54c",
-        "kind": "item",
-        "slug": "world-of-warcraft-the-mighty-kodo-pack",
-        "title": "The Mighty Kodo Pack",
-        "destination": "/product/world-of-warcraft-the-mighty-kodo-pack?p=1994790",
-        "seen": "2026-10-21T16:55:24Z",
-        "price": {
-          "fullAmount": "$25.00",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "USD",
-          "raw": 25,
-          "labelFormat": ""
-        },
-        "commit": "fa3855b7038734533b1c61f7f6fd4e25fe217f07"
-      },
-      "eu": {
-        "type": "sale_end",
-        "key": "bltad6d580fcefaa54c",
-        "kind": "item",
-        "slug": "world-of-warcraft-the-mighty-kodo-pack",
-        "title": "The Mighty Kodo Pack",
-        "destination": "/product/world-of-warcraft-the-mighty-kodo-pack?p=1994790",
-        "seen": "2026-10-21T17:00:28Z",
-        "price": {
-          "fullAmount": "€25.00",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "EUR",
-          "raw": 25,
-          "labelFormat": ""
-        },
-        "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
-      }
-    },
-    "at": "2026-10-21T16:41:07Z",
-    "digested": [
-      "[\"shop\",null]"
-    ],
-    "lines": [
-      {
-        "seen": "2026-10-21T16:40:31Z",
-        "changes": {
-          "us": {
-            "type": "sale_end",
-            "key": "bltad6d580fcefaa54c",
-            "kind": "item",
-            "slug": "world-of-warcraft-the-mighty-kodo-pack",
-            "title": "The Mighty Kodo Pack",
-            "destination": "/product/world-of-warcraft-the-mighty-kodo-pack?p=1994790",
-            "seen": "2026-10-21T16:40:31Z",
-            "price": {
-              "fullAmount": "$25.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "USD",
-              "raw": 25,
-              "labelFormat": ""
-            },
-            "commit": "9959b03e011d3f52ba1c80a62adc0db4cb970881"
-          }
-        }
-      },
-      {
-        "seen": "2026-10-21T16:55:24Z",
-        "changes": {
-          "us": {
-            "type": "sale_end",
-            "key": "bltad6d580fcefaa54c",
-            "kind": "item",
-            "slug": "world-of-warcraft-the-mighty-kodo-pack",
-            "title": "The Mighty Kodo Pack",
-            "destination": "/product/world-of-warcraft-the-mighty-kodo-pack?p=1994790",
-            "seen": "2026-10-21T16:55:24Z",
-            "price": {
-              "fullAmount": "$25.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "USD",
-              "raw": 25,
-              "labelFormat": ""
-            },
-            "commit": "fa3855b7038734533b1c61f7f6fd4e25fe217f07"
-          }
-        }
-      },
-      {
-        "seen": "2026-10-21T17:00:28Z",
-        "changes": {
-          "eu": {
-            "type": "sale_end",
-            "key": "bltad6d580fcefaa54c",
-            "kind": "item",
-            "slug": "world-of-warcraft-the-mighty-kodo-pack",
-            "title": "The Mighty Kodo Pack",
-            "destination": "/product/world-of-warcraft-the-mighty-kodo-pack?p=1994790",
-            "seen": "2026-10-21T17:00:28Z",
-            "price": {
-              "fullAmount": "€25.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "EUR",
-              "raw": 25,
-              "labelFormat": ""
-            },
-            "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
-          }
-        }
-      }
-    ],
-    "paired": true
-  },
-  {
-    "type": "sale_end",
-    "family": "world-of-warcraft",
-    "key": "blt5c565694d77a7838",
-    "slug": "world-of-warcraft-transmog-lanathels-crimson-couture",
-    "seen": "2026-10-21T16:40:31Z",
-    "changes": {
-      "us": {
-        "type": "sale_end",
-        "key": "blt5c565694d77a7838",
-        "kind": "item",
-        "slug": "world-of-warcraft-transmog-lanathels-crimson-couture",
-        "title": "Lana'thel's Crimson Couture",
-        "destination": "/product/world-of-warcraft-transmog-lanathels-crimson-couture?p=1995058",
-        "seen": "2026-10-21T17:05:30Z",
-        "price": {
-          "fullAmount": "$20.00",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "USD",
-          "raw": 20,
-          "labelFormat": ""
-        },
-        "commit": "27ef346956ac9591b741c0bdb1bf5f3fea06d02a"
-      },
-      "eu": {
-        "type": "sale_end",
-        "key": "blt5c565694d77a7838",
-        "kind": "item",
-        "slug": "world-of-warcraft-transmog-lanathels-crimson-couture",
-        "title": "Lana'thel's Crimson Couture",
-        "destination": "/product/world-of-warcraft-transmog-lanathels-crimson-couture?p=1995058",
-        "seen": "2026-10-21T17:00:28Z",
-        "price": {
-          "fullAmount": "€20.00",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "EUR",
-          "raw": 20,
-          "labelFormat": ""
-        },
-        "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
-      }
-    },
-    "at": "2026-10-21T16:41:07Z",
-    "digested": [
-      "[\"shop\",null]"
-    ],
-    "lines": [
-      {
-        "seen": "2026-10-21T16:40:31Z",
-        "changes": {
-          "us": {
-            "type": "sale_end",
-            "key": "blt5c565694d77a7838",
-            "kind": "item",
-            "slug": "world-of-warcraft-transmog-lanathels-crimson-couture",
-            "title": "Lana'thel's Crimson Couture",
-            "destination": "/product/world-of-warcraft-transmog-lanathels-crimson-couture?p=1995058",
-            "seen": "2026-10-21T16:40:31Z",
-            "price": {
-              "fullAmount": "$20.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "USD",
-              "raw": 20,
-              "labelFormat": ""
-            },
-            "commit": "9959b03e011d3f52ba1c80a62adc0db4cb970881"
-          }
-        }
-      },
-      {
-        "seen": "2026-10-21T16:55:24Z",
-        "changes": {
-          "us": {
-            "type": "sale_end",
-            "key": "blt5c565694d77a7838",
-            "kind": "item",
-            "slug": "world-of-warcraft-transmog-lanathels-crimson-couture",
-            "title": "Lana'thel's Crimson Couture",
-            "destination": "/product/world-of-warcraft-transmog-lanathels-crimson-couture?p=1995058",
-            "seen": "2026-10-21T16:55:24Z",
-            "price": {
-              "fullAmount": "$20.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "USD",
-              "raw": 20,
-              "labelFormat": ""
-            },
-            "commit": "fa3855b7038734533b1c61f7f6fd4e25fe217f07"
-          }
-        }
-      },
-      {
-        "seen": "2026-10-21T17:00:28Z",
-        "changes": {
-          "eu": {
-            "type": "sale_end",
-            "key": "blt5c565694d77a7838",
-            "kind": "item",
-            "slug": "world-of-warcraft-transmog-lanathels-crimson-couture",
-            "title": "Lana'thel's Crimson Couture",
-            "destination": "/product/world-of-warcraft-transmog-lanathels-crimson-couture?p=1995058",
-            "seen": "2026-10-21T17:00:28Z",
-            "price": {
-              "fullAmount": "€20.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "EUR",
-              "raw": 20,
-              "labelFormat": ""
-            },
-            "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
-          }
-        }
-      },
-      {
-        "seen": "2026-10-21T17:05:30Z",
-        "changes": {
-          "us": {
-            "type": "sale_end",
-            "key": "blt5c565694d77a7838",
-            "kind": "item",
-            "slug": "world-of-warcraft-transmog-lanathels-crimson-couture",
-            "title": "Lana'thel's Crimson Couture",
-            "destination": "/product/world-of-warcraft-transmog-lanathels-crimson-couture?p=1995058",
-            "seen": "2026-10-21T17:05:30Z",
-            "price": {
-              "fullAmount": "$20.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "USD",
-              "raw": 20,
-              "labelFormat": ""
-            },
-            "commit": "27ef346956ac9591b741c0bdb1bf5f3fea06d02a"
-          }
-        }
-      }
-    ],
-    "paired": true
-  },
-  {
-    "type": "sale_end",
-    "family": "world-of-warcraft",
-    "key": "bltdb2cbc052e308628",
-    "slug": "world-of-warcraft-dreadlords-regalia-pack",
-    "seen": "2026-10-21T16:40:31Z",
-    "changes": {
-      "us": {
-        "type": "sale_end",
-        "key": "bltdb2cbc052e308628",
-        "kind": "item",
-        "slug": "world-of-warcraft-dreadlords-regalia-pack",
-        "title": "The Dreadlord's Regalia Pack",
-        "destination": "/product/world-of-warcraft-dreadlords-regalia-pack?p=1995053",
-        "seen": "2026-10-21T17:05:30Z",
-        "price": {
-          "fullAmount": "$20.00",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "USD",
-          "raw": 20,
-          "labelFormat": ""
-        },
-        "commit": "27ef346956ac9591b741c0bdb1bf5f3fea06d02a"
-      },
-      "eu": {
-        "type": "sale_end",
-        "key": "bltdb2cbc052e308628",
-        "kind": "item",
-        "slug": "world-of-warcraft-dreadlords-regalia-pack",
-        "title": "The Dreadlord's Regalia Pack",
-        "destination": "/product/world-of-warcraft-dreadlords-regalia-pack?p=1995053",
-        "seen": "2026-10-21T17:00:28Z",
-        "price": {
-          "fullAmount": "€20.00",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "EUR",
-          "raw": 20,
-          "labelFormat": ""
-        },
-        "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
-      }
-    },
-    "at": "2026-10-21T16:41:07Z",
-    "digested": [
-      "[\"shop\",null]"
-    ],
-    "lines": [
-      {
-        "seen": "2026-10-21T16:40:31Z",
-        "changes": {
-          "us": {
-            "type": "sale_end",
-            "key": "bltdb2cbc052e308628",
-            "kind": "item",
-            "slug": "world-of-warcraft-dreadlords-regalia-pack",
-            "title": "The Dreadlord's Regalia Pack",
-            "destination": "/product/world-of-warcraft-dreadlords-regalia-pack?p=1995053",
-            "seen": "2026-10-21T16:40:31Z",
-            "price": {
-              "fullAmount": "$20.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "USD",
-              "raw": 20,
-              "labelFormat": ""
-            },
-            "commit": "9959b03e011d3f52ba1c80a62adc0db4cb970881"
-          }
-        }
-      },
-      {
-        "seen": "2026-10-21T16:55:24Z",
-        "changes": {
-          "us": {
-            "type": "sale_end",
-            "key": "bltdb2cbc052e308628",
-            "kind": "item",
-            "slug": "world-of-warcraft-dreadlords-regalia-pack",
-            "title": "The Dreadlord's Regalia Pack",
-            "destination": "/product/world-of-warcraft-dreadlords-regalia-pack?p=1995053",
-            "seen": "2026-10-21T16:55:24Z",
-            "price": {
-              "fullAmount": "$20.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "USD",
-              "raw": 20,
-              "labelFormat": ""
-            },
-            "commit": "fa3855b7038734533b1c61f7f6fd4e25fe217f07"
-          }
-        }
-      },
-      {
-        "seen": "2026-10-21T17:00:28Z",
-        "changes": {
-          "eu": {
-            "type": "sale_end",
-            "key": "bltdb2cbc052e308628",
-            "kind": "item",
-            "slug": "world-of-warcraft-dreadlords-regalia-pack",
-            "title": "The Dreadlord's Regalia Pack",
-            "destination": "/product/world-of-warcraft-dreadlords-regalia-pack?p=1995053",
-            "seen": "2026-10-21T17:00:28Z",
-            "price": {
-              "fullAmount": "€20.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "EUR",
-              "raw": 20,
-              "labelFormat": ""
-            },
-            "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
-          }
-        }
-      },
-      {
-        "seen": "2026-10-21T17:05:30Z",
-        "changes": {
-          "us": {
-            "type": "sale_end",
-            "key": "bltdb2cbc052e308628",
-            "kind": "item",
-            "slug": "world-of-warcraft-dreadlords-regalia-pack",
-            "title": "The Dreadlord's Regalia Pack",
-            "destination": "/product/world-of-warcraft-dreadlords-regalia-pack?p=1995053",
-            "seen": "2026-10-21T17:05:30Z",
-            "price": {
-              "fullAmount": "$20.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "USD",
-              "raw": 20,
-              "labelFormat": ""
-            },
-            "commit": "27ef346956ac9591b741c0bdb1bf5f3fea06d02a"
-          }
-        }
-      }
-    ],
-    "paired": true
-  },
-  {
-    "type": "sale_start",
-    "family": "world-of-warcraft",
     "key": "blt76278791b674c4a2",
     "slug": "world-of-warcraft-midnight",
     "seen": "2026-10-21T16:45:24Z",
@@ -1483,7 +13,7 @@
         "slug": "world-of-warcraft-midnight",
         "title": "World of Warcraft®: Midnight",
         "destination": "/product/world-of-warcraft-midnight",
-        "seen": "2026-10-21T17:00:28Z",
+        "seen": "2026-10-21T17:10:34Z",
         "price": {
           "fullAmount": "€49.99",
           "discountAmount": "€24.99",
@@ -1492,7 +22,7 @@
           "raw": 24.99,
           "labelFormat": "From {0}"
         },
-        "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
+        "commit": "1c5c5f284adca3432479277cd93f09c68bff9969"
       },
       "us": {
         "type": "sale_start",
@@ -1582,6 +112,29 @@
               "labelFormat": "From {0}"
             },
             "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
+          }
+        }
+      },
+      {
+        "seen": "2026-10-21T17:10:34Z",
+        "changes": {
+          "eu": {
+            "type": "sale_start",
+            "key": "blt76278791b674c4a2",
+            "kind": "item",
+            "slug": "world-of-warcraft-midnight",
+            "title": "World of Warcraft®: Midnight",
+            "destination": "/product/world-of-warcraft-midnight",
+            "seen": "2026-10-21T17:10:34Z",
+            "price": {
+              "fullAmount": "€49.99",
+              "discountAmount": "€24.99",
+              "discountPercentage": 50,
+              "currency": "EUR",
+              "raw": 24.99,
+              "labelFormat": "From {0}"
+            },
+            "commit": "1c5c5f284adca3432479277cd93f09c68bff9969"
           }
         }
       }
@@ -2012,6 +565,24 @@
           "labelFormat": "From {0}"
         },
         "commit": "334699e77fbb06196c64b16631730fedd85c52f6"
+      },
+      "us": {
+        "type": "sale_end",
+        "key": "blt76278791b674c4a2",
+        "kind": "item",
+        "slug": "world-of-warcraft-midnight",
+        "title": "World of Warcraft®: Midnight",
+        "destination": "/product/world-of-warcraft-midnight",
+        "seen": "2026-10-21T17:10:34Z",
+        "price": {
+          "fullAmount": "$49.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 49.99,
+          "labelFormat": "From {0}"
+        },
+        "commit": "d7273db4af146988455444a13d3b6437d046afeb"
       }
     },
     "at": "2026-10-21T16:56:01Z",
@@ -2064,6 +635,29 @@
             "commit": "334699e77fbb06196c64b16631730fedd85c52f6"
           }
         }
+      },
+      {
+        "seen": "2026-10-21T17:10:34Z",
+        "changes": {
+          "us": {
+            "type": "sale_end",
+            "key": "blt76278791b674c4a2",
+            "kind": "item",
+            "slug": "world-of-warcraft-midnight",
+            "title": "World of Warcraft®: Midnight",
+            "destination": "/product/world-of-warcraft-midnight",
+            "seen": "2026-10-21T17:10:34Z",
+            "price": {
+              "fullAmount": "$49.99",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "USD",
+              "raw": 49.99,
+              "labelFormat": "From {0}"
+            },
+            "commit": "d7273db4af146988455444a13d3b6437d046afeb"
+          }
+        }
       }
     ],
     "paired": true
@@ -2082,7 +676,7 @@
         "slug": "world-of-warcraft-wings-and-wisdom-pack",
         "title": "Wings & Wisdom Pack",
         "destination": "/product/world-of-warcraft-wings-and-wisdom-pack?p=1935598",
-        "seen": "2026-10-21T16:55:24Z",
+        "seen": "2026-10-21T17:10:34Z",
         "price": {
           "fullAmount": "€35.00",
           "discountAmount": null,
@@ -2091,7 +685,7 @@
           "raw": 35,
           "labelFormat": ""
         },
-        "commit": "a146b141b251dab3d30380d71cdafd09a772794e"
+        "commit": "1c5c5f284adca3432479277cd93f09c68bff9969"
       },
       "us": {
         "type": "sale_end",
@@ -2116,7 +710,73 @@
     "digested": [
       "[\"shop\",null]"
     ],
-    "paired": true
+    "paired": true,
+    "lines": [
+      {
+        "seen": "2026-10-21T16:55:24Z",
+        "changes": {
+          "eu": {
+            "type": "sale_end",
+            "key": "blt2245f40198551963",
+            "kind": "item",
+            "slug": "world-of-warcraft-wings-and-wisdom-pack",
+            "title": "Wings & Wisdom Pack",
+            "destination": "/product/world-of-warcraft-wings-and-wisdom-pack?p=1935598",
+            "seen": "2026-10-21T16:55:24Z",
+            "price": {
+              "fullAmount": "€35.00",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "EUR",
+              "raw": 35,
+              "labelFormat": ""
+            },
+            "commit": "a146b141b251dab3d30380d71cdafd09a772794e"
+          },
+          "us": {
+            "type": "sale_end",
+            "key": "blt2245f40198551963",
+            "kind": "item",
+            "slug": "world-of-warcraft-wings-and-wisdom-pack",
+            "title": "Wings & Wisdom Pack",
+            "destination": "/product/world-of-warcraft-wings-and-wisdom-pack?p=1935598",
+            "seen": "2026-10-21T17:00:28Z",
+            "price": {
+              "fullAmount": "$35.00",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "USD",
+              "raw": 35,
+              "labelFormat": ""
+            },
+            "commit": "102bd075aae4e955262db97d78afd1f322dabdda"
+          }
+        }
+      },
+      {
+        "seen": "2026-10-21T17:10:34Z",
+        "changes": {
+          "eu": {
+            "type": "sale_end",
+            "key": "blt2245f40198551963",
+            "kind": "item",
+            "slug": "world-of-warcraft-wings-and-wisdom-pack",
+            "title": "Wings & Wisdom Pack",
+            "destination": "/product/world-of-warcraft-wings-and-wisdom-pack?p=1935598",
+            "seen": "2026-10-21T17:10:34Z",
+            "price": {
+              "fullAmount": "€35.00",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "EUR",
+              "raw": 35,
+              "labelFormat": ""
+            },
+            "commit": "1c5c5f284adca3432479277cd93f09c68bff9969"
+          }
+        }
+      }
+    ]
   },
   {
     "type": "sale_end",
@@ -3510,7 +2170,7 @@
         "slug": "world-of-warcraft-service-name-change",
         "title": "Name Change",
         "destination": "/product/world-of-warcraft-service-name-change",
-        "seen": "2026-10-21T17:00:28Z",
+        "seen": "2026-10-21T17:10:34Z",
         "price": {
           "fullAmount": "€10.00",
           "discountAmount": null,
@@ -3519,14 +2179,80 @@
           "raw": 10,
           "labelFormat": "From {0}"
         },
-        "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
+        "commit": "1c5c5f284adca3432479277cd93f09c68bff9969"
       }
     },
     "at": "2026-10-21T16:56:01Z",
     "digested": [
       "[\"shop\",null]"
     ],
-    "paired": true
+    "paired": true,
+    "lines": [
+      {
+        "seen": "2026-10-21T16:55:24Z",
+        "changes": {
+          "us": {
+            "type": "sale_end",
+            "key": "blt77976f6c60f9b8b7",
+            "kind": "item",
+            "slug": "world-of-warcraft-service-name-change",
+            "title": "Name Change",
+            "destination": "/product/world-of-warcraft-service-name-change",
+            "seen": "2026-10-21T16:55:24Z",
+            "price": {
+              "fullAmount": "$10.00",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "USD",
+              "raw": 10,
+              "labelFormat": "From {0}"
+            },
+            "commit": "fa3855b7038734533b1c61f7f6fd4e25fe217f07"
+          },
+          "eu": {
+            "type": "sale_end",
+            "key": "blt77976f6c60f9b8b7",
+            "kind": "item",
+            "slug": "world-of-warcraft-service-name-change",
+            "title": "Name Change",
+            "destination": "/product/world-of-warcraft-service-name-change",
+            "seen": "2026-10-21T17:00:28Z",
+            "price": {
+              "fullAmount": "€10.00",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "EUR",
+              "raw": 10,
+              "labelFormat": "From {0}"
+            },
+            "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
+          }
+        }
+      },
+      {
+        "seen": "2026-10-21T17:10:34Z",
+        "changes": {
+          "eu": {
+            "type": "sale_end",
+            "key": "blt77976f6c60f9b8b7",
+            "kind": "item",
+            "slug": "world-of-warcraft-service-name-change",
+            "title": "Name Change",
+            "destination": "/product/world-of-warcraft-service-name-change",
+            "seen": "2026-10-21T17:10:34Z",
+            "price": {
+              "fullAmount": "€10.00",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "EUR",
+              "raw": 10,
+              "labelFormat": "From {0}"
+            },
+            "commit": "1c5c5f284adca3432479277cd93f09c68bff9969"
+          }
+        }
+      }
+    ]
   },
   {
     "type": "sale_end",
@@ -3552,12 +2278,31 @@
           "labelFormat": ""
         },
         "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
+      },
+      "us": {
+        "type": "sale_end",
+        "key": "bltcd8c97c6094de246",
+        "kind": "item",
+        "slug": "world-of-warcraft-toy-sandbox-storm-gryphon",
+        "title": "Sandbox Storm Gryphon",
+        "destination": "/product/world-of-warcraft-toy-sandbox-storm-gryphon?p=1433457",
+        "seen": "2026-10-21T17:10:34Z",
+        "price": {
+          "fullAmount": "$10.00",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 10,
+          "labelFormat": ""
+        },
+        "commit": "d7273db4af146988455444a13d3b6437d046afeb"
       }
     },
     "at": "2026-10-21T17:01:05Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "sale_end",
@@ -3583,12 +2328,31 @@
           "labelFormat": ""
         },
         "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
+      },
+      "us": {
+        "type": "sale_end",
+        "key": "bltd8f325973824e7ca",
+        "kind": "item",
+        "slug": "world-of-warcraft-toy-deepdwellers-earthen-hearthstone",
+        "title": "Deepdweller’s Earthen Hearthstone Effect",
+        "destination": "/product/world-of-warcraft-toy-deepdwellers-earthen-hearthstone?p=1433456",
+        "seen": "2026-10-21T17:10:34Z",
+        "price": {
+          "fullAmount": "$5.00",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 5,
+          "labelFormat": ""
+        },
+        "commit": "d7273db4af146988455444a13d3b6437d046afeb"
       }
     },
     "at": "2026-10-21T17:01:05Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "sale_end",
@@ -3654,7 +2418,7 @@
         "slug": "wow-classic-service-boost-bcc-anniversary",
         "title": "Level 58 Character Boost (Anniversary) ",
         "destination": "/product/wow-classic-service-boost-bcc-anniversary?p=2042612",
-        "seen": "2026-10-21T17:00:28Z",
+        "seen": "2026-10-21T17:10:34Z",
         "price": {
           "fullAmount": "€60.00",
           "discountAmount": null,
@@ -3663,13 +2427,98 @@
           "raw": 60,
           "labelFormat": ""
         },
-        "commit": "b8e87ebb470bf73658b22c1eded49058633ac6dd"
+        "commit": "a7ce6ff664a814a7e580d4445e1ecc26ec047b08"
+      },
+      "us": {
+        "type": "sale_end",
+        "key": "blta2d8bd8a05c7c620",
+        "kind": "item",
+        "slug": "wow-classic-service-boost-bcc-anniversary",
+        "title": "Level 58 Character Boost (Anniversary) ",
+        "destination": "/product/wow-classic-service-boost-bcc-anniversary?p=2042612",
+        "seen": "2026-10-21T17:10:34Z",
+        "price": {
+          "fullAmount": "$60.00",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 60,
+          "labelFormat": ""
+        },
+        "commit": "0d548446ac46edbc93782ba691ae14deab068c38"
       }
     },
     "at": "2026-10-21T17:01:05Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "lines": [
+      {
+        "seen": "2026-10-21T17:00:28Z",
+        "changes": {
+          "eu": {
+            "type": "sale_end",
+            "key": "blta2d8bd8a05c7c620",
+            "kind": "item",
+            "slug": "wow-classic-service-boost-bcc-anniversary",
+            "title": "Level 58 Character Boost (Anniversary) ",
+            "destination": "/product/wow-classic-service-boost-bcc-anniversary?p=2042612",
+            "seen": "2026-10-21T17:00:28Z",
+            "price": {
+              "fullAmount": "€60.00",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "EUR",
+              "raw": 60,
+              "labelFormat": ""
+            },
+            "commit": "b8e87ebb470bf73658b22c1eded49058633ac6dd"
+          }
+        }
+      },
+      {
+        "seen": "2026-10-21T17:10:34Z",
+        "changes": {
+          "eu": {
+            "type": "sale_end",
+            "key": "blta2d8bd8a05c7c620",
+            "kind": "item",
+            "slug": "wow-classic-service-boost-bcc-anniversary",
+            "title": "Level 58 Character Boost (Anniversary) ",
+            "destination": "/product/wow-classic-service-boost-bcc-anniversary?p=2042612",
+            "seen": "2026-10-21T17:10:34Z",
+            "price": {
+              "fullAmount": "€60.00",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "EUR",
+              "raw": 60,
+              "labelFormat": ""
+            },
+            "commit": "a7ce6ff664a814a7e580d4445e1ecc26ec047b08"
+          },
+          "us": {
+            "type": "sale_end",
+            "key": "blta2d8bd8a05c7c620",
+            "kind": "item",
+            "slug": "wow-classic-service-boost-bcc-anniversary",
+            "title": "Level 58 Character Boost (Anniversary) ",
+            "destination": "/product/wow-classic-service-boost-bcc-anniversary?p=2042612",
+            "seen": "2026-10-21T17:10:34Z",
+            "price": {
+              "fullAmount": "$60.00",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "USD",
+              "raw": 60,
+              "labelFormat": ""
+            },
+            "commit": "0d548446ac46edbc93782ba691ae14deab068c38"
+          }
+        }
+      }
+    ],
+    "paired": true
   },
   {
     "type": "sale_start",
@@ -3698,6 +2547,83 @@
       }
     },
     "at": "2026-10-21T17:06:07Z",
+    "digested": []
+  },
+  {
+    "type": "sale_end",
+    "family": "world-of-warcraft-classic",
+    "key": "blt293f3b01dca48c3a",
+    "slug": "wow-classic-service-name-change-bcc-anniversary",
+    "seen": "2026-10-21T17:10:34Z",
+    "changes": {
+      "eu": {
+        "type": "sale_end",
+        "key": "blt293f3b01dca48c3a",
+        "kind": "item",
+        "slug": "wow-classic-service-name-change-bcc-anniversary",
+        "title": "Classic Name Change (Anniversary)",
+        "destination": "/product/wow-classic-service-name-change-bcc-anniversary",
+        "seen": "2026-10-21T17:10:34Z",
+        "price": {
+          "fullAmount": "€10.00",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 10,
+          "labelFormat": "From {0}"
+        },
+        "commit": "a7ce6ff664a814a7e580d4445e1ecc26ec047b08"
+      },
+      "us": {
+        "type": "sale_end",
+        "key": "blt293f3b01dca48c3a",
+        "kind": "item",
+        "slug": "wow-classic-service-name-change-bcc-anniversary",
+        "title": "Classic Name Change (Anniversary)",
+        "destination": "/product/wow-classic-service-name-change-bcc-anniversary",
+        "seen": "2026-10-21T17:10:34Z",
+        "price": {
+          "fullAmount": "$10.00",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 10,
+          "labelFormat": "From {0}"
+        },
+        "commit": "0d548446ac46edbc93782ba691ae14deab068c38"
+      }
+    },
+    "at": "2026-10-21T17:11:11Z",
+    "digested": [],
+    "paired": true
+  },
+  {
+    "type": "sale_end",
+    "family": "world-of-warcraft",
+    "key": "bltad6d580fcefaa54c",
+    "slug": "world-of-warcraft-the-mighty-kodo-pack",
+    "seen": "2026-10-21T17:10:34Z",
+    "changes": {
+      "us": {
+        "type": "sale_end",
+        "key": "bltad6d580fcefaa54c",
+        "kind": "item",
+        "slug": "world-of-warcraft-the-mighty-kodo-pack",
+        "title": "The Mighty Kodo Pack",
+        "destination": "/product/world-of-warcraft-the-mighty-kodo-pack?p=1994790",
+        "seen": "2026-10-21T17:10:34Z",
+        "price": {
+          "fullAmount": "$25.00",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 25,
+          "labelFormat": ""
+        },
+        "commit": "d7273db4af146988455444a13d3b6437d046afeb"
+      }
+    },
+    "at": "2026-10-21T17:11:11Z",
     "digested": []
   }
 ]
