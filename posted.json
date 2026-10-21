@@ -1,34 +1,5 @@
 [
   {
-    "type": "sale_start",
-    "family": "world-of-warcraft",
-    "key": "bltad6d580fcefaa54c",
-    "slug": "world-of-warcraft-the-mighty-kodo-pack",
-    "seen": "2026-10-21T17:05:30Z",
-    "changes": {
-      "us": {
-        "type": "sale_start",
-        "key": "bltad6d580fcefaa54c",
-        "kind": "item",
-        "slug": "world-of-warcraft-the-mighty-kodo-pack",
-        "title": "The Mighty Kodo Pack",
-        "destination": "/product/world-of-warcraft-the-mighty-kodo-pack?p=1994790",
-        "seen": "2026-10-21T17:05:30Z",
-        "price": {
-          "fullAmount": "$25.00",
-          "discountAmount": "$12.50",
-          "discountPercentage": 50,
-          "currency": "USD",
-          "raw": 12.5,
-          "labelFormat": ""
-        },
-        "commit": "27ef346956ac9591b741c0bdb1bf5f3fea06d02a"
-      }
-    },
-    "at": "2026-10-21T17:06:07Z",
-    "digested": []
-  },
-  {
     "type": "sale_end",
     "family": "world-of-warcraft-classic",
     "key": "blt293f3b01dca48c3a",
