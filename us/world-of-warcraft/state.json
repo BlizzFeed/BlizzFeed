@@ -3196,12 +3196,12 @@
       "badge": null,
       "price": {
         "fullAmount": "$10.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "$5.00",
+        "discountPercentage": 50,
         "currency": "USD",
-        "raw": 10,
+        "raw": 5,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -3229,12 +3229,12 @@
       "badge": null,
       "price": {
         "fullAmount": "$5.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "$2.50",
+        "discountPercentage": 50,
         "currency": "USD",
-        "raw": 5,
+        "raw": 2.5,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -3295,12 +3295,12 @@
       "badge": null,
       "price": {
         "fullAmount": "$10.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "$5.00",
+        "discountPercentage": 50,
         "currency": "USD",
-        "raw": 10,
+        "raw": 5,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -4990,6 +4990,26 @@
         "Banner"
       ],
       "first_seen": "2026-10-21T18:10:28Z",
+      "status": "missing",
+      "misses": 1
+    },
+    "blt58777451ef9d0cda": {
+      "key": "blt58777451ef9d0cda",
+      "kind": "banner",
+      "cmsId": "blt58777451ef9d0cda",
+      "slug": null,
+      "itemId": null,
+      "title": "Save up to 50% on Midnight, transmogs, and more through November 2",
+      "productPageName": null,
+      "headline": "",
+      "subHeadline": "Save up to 50% on Midnight, transmogs, and more through November 2",
+      "buttonText": null,
+      "destination": null,
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt2e736ce83844ab67/6acfd311626f24bc1bfb13f0/WoW_12.0_MidnightCiematic_BnetShop_HeaderDesktop_1600x500.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-10-21T18:20:24Z",
       "status": "listed",
       "misses": 0
     }
