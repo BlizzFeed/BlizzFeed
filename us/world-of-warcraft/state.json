@@ -5015,5 +5015,40 @@
       "misses": 0
     }
   },
-  "suspect": false
+  "suspect": false,
+  "campaigns": {
+    "02ff17c4-6bf0-470a-9640-7ff45b109e60": {
+      "status": "active",
+      "members": [
+        "blt76278791b674c4a2",
+        "blt2245f40198551963",
+        "bltad6d580fcefaa54c",
+        "blt655c0eac76c59e1d",
+        "blt5c565694d77a7838",
+        "bltec442faf62951573",
+        "blt2cee8c8f40f88a6c",
+        "blt8b9037243a8cc1f2",
+        "bltdb2cbc052e308628",
+        "blt38bc4028e8ac3e23",
+        "bltf23f4602e46440b5",
+        "bltf976865edfcf1e87",
+        "bltc00d4f8688cab261",
+        "blt46ecac8b6b8d56cf",
+        "blt89c73f83bd996d24",
+        "blteab825d5d503a792",
+        "bltcd8c97c6094de246",
+        "bltd8f325973824e7ca",
+        "bltcc2d72d2f7c94641",
+        "bltc4ff87cfb556a68c",
+        "blt666aea471d0ec98d",
+        "blt09b8c9c3f3650d5c",
+        "blt772547cf6f4b3142",
+        "blt0610899f846ba36d",
+        "blt01ffc87a96c04fb1",
+        "blt0c12d595a37ead0c",
+        "blt77976f6c60f9b8b7"
+      ],
+      "started": "2026-10-21T23:27:23Z"
+    }
+  }
 }
