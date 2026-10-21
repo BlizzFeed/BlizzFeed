@@ -146,7 +146,8 @@
         "discountPercentage": null,
         "currency": null,
         "raw": 0,
-        "labelFormat": "Play For Free"
+        "labelFormat": "Play For Free",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -181,7 +182,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 9.99,
-        "labelFormat": "From {0}"
+        "labelFormat": "From {0}",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -218,7 +220,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 4.99,
-        "labelFormat": "From {0}"
+        "labelFormat": "From {0}",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -250,7 +253,8 @@
         "discountPercentage": null,
         "currency": null,
         "raw": 0,
-        "labelFormat": "Shop Now"
+        "labelFormat": "Shop Now",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -282,7 +286,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 39.99,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -314,7 +319,8 @@
         "discountPercentage": null,
         "currency": null,
         "raw": 0,
-        "labelFormat": "Learn More"
+        "labelFormat": "Learn More",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -347,7 +353,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 39.99,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -379,7 +386,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 9.99,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -411,7 +419,8 @@
         "discountPercentage": null,
         "currency": null,
         "raw": 0,
-        "labelFormat": "Learn More"
+        "labelFormat": "Learn More",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -447,7 +456,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 39.99,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -484,7 +494,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 39.99,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -518,7 +529,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 9.99,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -554,7 +566,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 19.99,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -586,7 +599,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 14.99,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -889,7 +903,8 @@
         "discountPercentage": 47,
         "currency": "XWC",
         "raw": 4500,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -927,7 +942,8 @@
         "discountPercentage": 27,
         "currency": "XWC",
         "raw": 3100,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -965,7 +981,8 @@
         "discountPercentage": 27,
         "currency": "XWC",
         "raw": 3100,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1015,7 +1032,8 @@
         "discountPercentage": 51,
         "currency": "XWC",
         "raw": 5900,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1056,7 +1074,8 @@
         "discountPercentage": 37,
         "currency": "XWC",
         "raw": 4500,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1097,7 +1116,8 @@
         "discountPercentage": 37,
         "currency": "XWC",
         "raw": 4500,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1138,7 +1158,8 @@
         "discountPercentage": 37,
         "currency": "XWC",
         "raw": 4500,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1179,7 +1200,8 @@
         "discountPercentage": 37,
         "currency": "XWC",
         "raw": 4500,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1220,7 +1242,8 @@
         "discountPercentage": 37,
         "currency": "XWC",
         "raw": 4500,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1261,7 +1284,8 @@
         "discountPercentage": 37,
         "currency": "XWC",
         "raw": 4500,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1302,7 +1326,8 @@
         "discountPercentage": 37,
         "currency": "XWC",
         "raw": 4500,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1343,7 +1368,8 @@
         "discountPercentage": 37,
         "currency": "XWC",
         "raw": 4500,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1384,7 +1410,8 @@
         "discountPercentage": 37,
         "currency": "XWC",
         "raw": 4500,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1425,7 +1452,8 @@
         "discountPercentage": 37,
         "currency": "XWC",
         "raw": 4500,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1466,7 +1494,8 @@
         "discountPercentage": 37,
         "currency": "XWC",
         "raw": 4500,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1507,7 +1536,8 @@
         "discountPercentage": 37,
         "currency": "XWC",
         "raw": 4500,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1548,7 +1578,8 @@
         "discountPercentage": 37,
         "currency": "XWC",
         "raw": 4500,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1589,7 +1620,8 @@
         "discountPercentage": 37,
         "currency": "XWC",
         "raw": 4500,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1642,7 +1674,8 @@
         "discountPercentage": 49,
         "currency": "XWC",
         "raw": 6900,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T18:01:34Z",
@@ -1677,7 +1710,8 @@
         "discountPercentage": null,
         "currency": "XWC",
         "raw": 2400,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T18:01:34Z",
@@ -1713,7 +1747,8 @@
         "discountPercentage": 16,
         "currency": "XWC",
         "raw": 2600,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T18:01:34Z",
@@ -1748,7 +1783,8 @@
         "discountPercentage": null,
         "currency": "XWC",
         "raw": 2400,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T18:01:34Z",
@@ -1780,7 +1816,8 @@
         "discountPercentage": null,
         "currency": "XWC",
         "raw": 1900,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T18:01:34Z",
@@ -1812,7 +1849,8 @@
         "discountPercentage": null,
         "currency": "XWC",
         "raw": 1900,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T18:01:34Z",
@@ -1859,7 +1897,8 @@
         "discountPercentage": 36,
         "currency": "XWC",
         "raw": 6900,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:17:27Z",
@@ -1894,7 +1933,8 @@
         "discountPercentage": null,
         "currency": "XWC",
         "raw": 2600,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:17:27Z",
@@ -1930,7 +1970,8 @@
         "discountPercentage": null,
         "currency": "XWC",
         "raw": 2600,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:17:27Z",
@@ -1962,7 +2003,8 @@
         "discountPercentage": null,
         "currency": "XWC",
         "raw": 1900,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:17:27Z",
@@ -1994,7 +2036,8 @@
         "discountPercentage": null,
         "currency": "XWC",
         "raw": 1900,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:17:27Z",
@@ -2031,7 +2074,8 @@
         "discountPercentage": 28,
         "currency": "XWC",
         "raw": 3800,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:17:27Z",
@@ -2063,7 +2107,8 @@
         "discountPercentage": null,
         "currency": "XWC",
         "raw": 1900,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:17:27Z",
@@ -2095,7 +2140,8 @@
         "discountPercentage": null,
         "currency": "XWC",
         "raw": 1000,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:17:27Z",
@@ -2127,7 +2173,8 @@
         "discountPercentage": null,
         "currency": "XWC",
         "raw": 1900,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:17:27Z",
@@ -2201,7 +2248,8 @@
         "discountPercentage": 60,
         "currency": "XWC",
         "raw": 11800,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:05:33Z",
@@ -2254,7 +2302,8 @@
         "discountPercentage": 51,
         "currency": "XWC",
         "raw": 7600,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:05:33Z",
@@ -2290,7 +2339,8 @@
         "discountPercentage": null,
         "currency": "XWC",
         "raw": 4500,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:05:33Z",
@@ -2325,7 +2375,8 @@
         "discountPercentage": null,
         "currency": "XWC",
         "raw": 2600,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:05:33Z",
@@ -2357,7 +2408,8 @@
         "discountPercentage": null,
         "currency": "XWC",
         "raw": 1900,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:05:33Z",
@@ -2392,7 +2444,8 @@
         "discountPercentage": null,
         "currency": "XWC",
         "raw": 2600,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:05:33Z",
@@ -2424,7 +2477,8 @@
         "discountPercentage": null,
         "currency": "XWC",
         "raw": 1900,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:05:33Z",
@@ -2456,7 +2510,8 @@
         "discountPercentage": null,
         "currency": "XWC",
         "raw": 1900,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:05:33Z",
@@ -2507,7 +2562,8 @@
         "discountPercentage": 52,
         "currency": "XWC",
         "raw": 5900,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:05:33Z",
