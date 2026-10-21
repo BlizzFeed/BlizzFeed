@@ -200,10 +200,10 @@
       "badge": null,
       "price": {
         "fullAmount": "€49.99",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€24.99",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 49.99,
+        "raw": 24.99,
         "labelFormat": "From {0}"
       },
       "expiresAtMs": null,
@@ -362,10 +362,10 @@
       "badge": null,
       "price": {
         "fullAmount": "€35.00",
-        "discountAmount": "€17.50",
-        "discountPercentage": 50,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
-        "raw": 17.5,
+        "raw": 35,
         "labelFormat": ""
       },
       "expiresAtMs": null,
@@ -3369,10 +3369,10 @@
       "badge": null,
       "price": {
         "fullAmount": "€10.00",
-        "discountAmount": "€7.00",
-        "discountPercentage": 30,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
-        "raw": 7,
+        "raw": 10,
         "labelFormat": "From {0}"
       },
       "expiresAtMs": null,
