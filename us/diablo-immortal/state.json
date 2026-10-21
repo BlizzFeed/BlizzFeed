@@ -877,6 +877,102 @@
       "first_seen": "2026-10-15T15:01:35Z",
       "status": "listed",
       "misses": 0
+    },
+    "p:2137982": {
+      "key": "p:2137982",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "diablo-immortal-gemologists-hoard",
+      "title": "Gemologist's Hoard",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2137982,
+      "productIds": [
+        2137982
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/diablo-immortal/items/2137982/gemologists-hoard",
+      "image": "//catalog.blzstatic.com//14/d6e4ba9cbbbea2e1e7aacf69298f9377-DIA_DI_NA_Patch4.1.2_GemologistHoard_AllIcons_1920x1080_enus_EE01.png",
+      "sections": [
+        "Exclusive Bundles"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$199.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 199.99,
+        "labelFormat": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-21T15:00:26Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2137981": {
+      "key": "p:2137981",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "diablo-immortal-gemologists-cache",
+      "title": "Gemologist's Cache",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2137981,
+      "productIds": [
+        2137981
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/diablo-immortal/items/2137981/gemologists-cache",
+      "image": "//catalog.blzstatic.com//fd2/aae0df7feeb4dafdc2593eecb05e0a38-DI_B12_GemologistsCache_Items_BonusBanner_1920x1080.jpg",
+      "sections": [
+        "Exclusive Bundles"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$99.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 99.99,
+        "labelFormat": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-21T15:00:26Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2137980": {
+      "key": "p:2137980",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "diablo-immortal-gemologists-chest",
+      "title": "Gemologist's Chest",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2137980,
+      "productIds": [
+        2137980
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/diablo-immortal/items/2137980/gemologists-chest",
+      "image": "//catalog.blzstatic.com//e/a687e5f0d274940ac7461e517099e5f3-DIA_DI_NA_BattlenetBundles_GemologistsChest_AllIcons_1920x1080_enus_EE01.png",
+      "sections": [
+        "Exclusive Bundles"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$49.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 49.99,
+        "labelFormat": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-21T15:00:26Z",
+      "status": "listed",
+      "misses": 0
     }
   },
   "suspect": false
