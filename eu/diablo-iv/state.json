@@ -85,7 +85,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 89.99,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -117,7 +118,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 59.99,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -149,7 +151,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 39.99,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -181,7 +184,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 49.99,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -213,7 +217,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 69.99,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -250,7 +255,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 4.99,
-        "labelFormat": "From {0}"
+        "labelFormat": "From {0}",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -280,7 +286,8 @@
         "discountPercentage": null,
         "currency": null,
         "raw": 0,
-        "labelFormat": "Learn More"
+        "labelFormat": "Learn More",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -312,7 +319,8 @@
         "discountPercentage": null,
         "currency": "XFB",
         "raw": 2800,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -344,7 +352,8 @@
         "discountPercentage": null,
         "currency": "XFB",
         "raw": 1000,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -376,7 +385,8 @@
         "discountPercentage": null,
         "currency": "XFB",
         "raw": 200,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -408,7 +418,8 @@
         "discountPercentage": null,
         "currency": "XFB",
         "raw": 500,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -440,7 +451,8 @@
         "discountPercentage": null,
         "currency": "XFB",
         "raw": 800,
-        "labelFormat": null
+        "labelFormat": null,
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
