@@ -1501,12 +1501,12 @@
       "badge": null,
       "price": {
         "fullAmount": "$60.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "$40.20",
+        "discountPercentage": 33,
         "currency": "USD",
-        "raw": 60,
+        "raw": 40.2,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1536,12 +1536,12 @@
       "badge": null,
       "price": {
         "fullAmount": "$10.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "$7.00",
+        "discountPercentage": 30,
         "currency": "USD",
-        "raw": 10,
+        "raw": 7,
         "labelFormat": "From {0}",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1598,6 +1598,26 @@
         "Banner"
       ],
       "first_seen": "2026-10-15T17:21:34Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt3b7be63073ed441a": {
+      "key": "blt3b7be63073ed441a",
+      "kind": "banner",
+      "cmsId": "blt3b7be63073ed441a",
+      "slug": null,
+      "itemId": null,
+      "title": "Save big on name change and the Level 58 Boost through November 2!",
+      "productPageName": null,
+      "headline": "",
+      "subHeadline": "Save big on name change and the Level 58 Boost through November 2!",
+      "buttonText": "Shop Now",
+      "destination": "/family/world-of-warcraft-classic#anniversary-game-services",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltd63dcc656584fa2e/6acfcdc9bf3f2471b8c049ae/WoW_BCCA_OctoberSaleVAS_BnetShop_HeaderDesktop_1600x500.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-10-21T18:15:24Z",
       "status": "listed",
       "misses": 0
     }
