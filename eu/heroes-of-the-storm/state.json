@@ -65,7 +65,8 @@
         "discountPercentage": null,
         "currency": null,
         "raw": 0,
-        "labelFormat": "Play For Free"
+        "labelFormat": "Play For Free",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -98,7 +99,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 7.99,
-        "labelFormat": "From {0}"
+        "labelFormat": "From {0}",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -134,7 +136,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 2.99,
-        "labelFormat": "From {0}"
+        "labelFormat": "From {0}",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -166,7 +169,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 38.99,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -198,7 +202,8 @@
         "discountPercentage": null,
         "currency": "EUR",
         "raw": 15.99,
-        "labelFormat": ""
+        "labelFormat": "",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -230,7 +235,8 @@
         "discountPercentage": null,
         "currency": null,
         "raw": 0,
-        "labelFormat": "Learn More"
+        "labelFormat": "Learn More",
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
