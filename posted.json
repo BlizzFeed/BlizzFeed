@@ -13,14 +13,67 @@
         "slug": "hearthstone-5-reign-of-the-black-empire-packs",
         "title": "Hearthstone®: 5 Reign of the Black Empire Packs",
         "destination": "/family/hearthstone/items/2137297/5-reign-of-the-black-empire-packs",
-        "seen": "2026-10-21T02:50:31Z",
-        "price": null,
-        "from": "1,200 Tavern Tender",
-        "to": null,
-        "commit": "2de3c516fc3ee578f970021c6857dfb3e7b42ac4"
+        "seen": "2026-10-21T03:00:26Z",
+        "price": {
+          "fullAmount": "1,200 Tavern Tender",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVW",
+          "raw": 1200,
+          "labelFormat": null
+        },
+        "from": null,
+        "to": "1,200 Tavern Tender",
+        "commit": "85a14234000596bb5e9e35494bcef3bffca7dbf5"
       }
     },
     "at": "2026-10-21T02:51:07Z",
-    "digested": []
+    "digested": [],
+    "lines": [
+      {
+        "seen": "2026-10-21T02:50:31Z",
+        "changes": {
+          "us": {
+            "type": "price",
+            "key": "p:2137297",
+            "kind": "item",
+            "slug": "hearthstone-5-reign-of-the-black-empire-packs",
+            "title": "Hearthstone®: 5 Reign of the Black Empire Packs",
+            "destination": "/family/hearthstone/items/2137297/5-reign-of-the-black-empire-packs",
+            "seen": "2026-10-21T02:50:31Z",
+            "price": null,
+            "from": "1,200 Tavern Tender",
+            "to": null,
+            "commit": "2de3c516fc3ee578f970021c6857dfb3e7b42ac4"
+          }
+        }
+      },
+      {
+        "seen": "2026-10-21T03:00:26Z",
+        "changes": {
+          "us": {
+            "type": "price",
+            "key": "p:2137297",
+            "kind": "item",
+            "slug": "hearthstone-5-reign-of-the-black-empire-packs",
+            "title": "Hearthstone®: 5 Reign of the Black Empire Packs",
+            "destination": "/family/hearthstone/items/2137297/5-reign-of-the-black-empire-packs",
+            "seen": "2026-10-21T03:00:26Z",
+            "price": {
+              "fullAmount": "1,200 Tavern Tender",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "XVW",
+              "raw": 1200,
+              "labelFormat": null
+            },
+            "from": null,
+            "to": "1,200 Tavern Tender",
+            "commit": "85a14234000596bb5e9e35494bcef3bffca7dbf5"
+          }
+        }
+      }
+    ],
+    "paired": true
   }
 ]
