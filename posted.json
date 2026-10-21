@@ -1861,9 +1861,23 @@
         "product": null,
         "what": "added",
         "commit": "f4cf76f3931438ffb810b63da67d9bff46c8ce15"
+      },
+      "eu": {
+        "type": "banner",
+        "key": "blt58777451ef9d0cda",
+        "kind": "banner",
+        "slug": null,
+        "title": "Save up to 50% on Midnight, transmogs, and more through November 2",
+        "destination": null,
+        "seen": "2026-10-21T18:25:26Z",
+        "button": null,
+        "product": null,
+        "what": "added",
+        "commit": "65fe36528892d9c8bff078d18ac8709773d76a8a"
       }
     },
     "at": "2026-10-21T18:20:59Z",
-    "digested": []
+    "digested": [],
+    "paired": true
   }
 ]
