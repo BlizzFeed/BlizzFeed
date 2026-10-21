@@ -200,10 +200,10 @@
       "badge": null,
       "price": {
         "fullAmount": "€49.99",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€24.99",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 49.99,
+        "raw": 24.99,
         "labelFormat": "From {0}"
       },
       "expiresAtMs": null,
@@ -362,10 +362,10 @@
       "badge": null,
       "price": {
         "fullAmount": "€35.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€17.50",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 35,
+        "raw": 17.5,
         "labelFormat": ""
       },
       "expiresAtMs": null,
@@ -394,10 +394,10 @@
       "badge": null,
       "price": {
         "fullAmount": "€25.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€12.50",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 25,
+        "raw": 12.5,
         "labelFormat": ""
       },
       "expiresAtMs": null,
@@ -3040,10 +3040,10 @@
       "badge": null,
       "price": {
         "fullAmount": "€10.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€5.00",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 10,
+        "raw": 5,
         "labelFormat": ""
       },
       "expiresAtMs": null,
@@ -3072,10 +3072,10 @@
       "badge": null,
       "price": {
         "fullAmount": "€5.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€2.50",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 5,
+        "raw": 2.5,
         "labelFormat": ""
       },
       "expiresAtMs": null,
@@ -3104,10 +3104,10 @@
       "badge": null,
       "price": {
         "fullAmount": "€10.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€5.00",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 10,
+        "raw": 5,
         "labelFormat": ""
       },
       "expiresAtMs": null,
@@ -3136,10 +3136,10 @@
       "badge": null,
       "price": {
         "fullAmount": "€5.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€2.50",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 5,
+        "raw": 2.5,
         "labelFormat": ""
       },
       "expiresAtMs": null,
@@ -3168,10 +3168,10 @@
       "badge": null,
       "price": {
         "fullAmount": "€5.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€2.50",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 5,
+        "raw": 2.5,
         "labelFormat": ""
       },
       "expiresAtMs": null,
@@ -3200,10 +3200,10 @@
       "badge": null,
       "price": {
         "fullAmount": "€10.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€5.00",
+        "discountPercentage": 50,
         "currency": "EUR",
-        "raw": 10,
+        "raw": 5,
         "labelFormat": ""
       },
       "expiresAtMs": null,
@@ -3267,10 +3267,10 @@
       "badge": null,
       "price": {
         "fullAmount": "€25.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€17.50",
+        "discountPercentage": 30,
         "currency": "EUR",
-        "raw": 25,
+        "raw": 17.5,
         "labelFormat": "From {0}"
       },
       "expiresAtMs": null,
@@ -3335,10 +3335,10 @@
       "badge": null,
       "price": {
         "fullAmount": "€25.00",
-        "discountAmount": "€17.50",
-        "discountPercentage": 30,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
-        "raw": 17.5,
+        "raw": 25,
         "labelFormat": "From {0}"
       },
       "expiresAtMs": null,
