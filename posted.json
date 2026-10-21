@@ -1,271 +1,5 @@
 [
   {
-    "type": "sale_end",
-    "family": "world-of-warcraft",
-    "key": "bltcd8c97c6094de246",
-    "slug": "world-of-warcraft-toy-sandbox-storm-gryphon",
-    "seen": "2026-10-21T17:00:28Z",
-    "changes": {
-      "eu": {
-        "type": "sale_end",
-        "key": "bltcd8c97c6094de246",
-        "kind": "item",
-        "slug": "world-of-warcraft-toy-sandbox-storm-gryphon",
-        "title": "Sandbox Storm Gryphon",
-        "destination": "/product/world-of-warcraft-toy-sandbox-storm-gryphon?p=1433457",
-        "seen": "2026-10-21T17:00:28Z",
-        "price": {
-          "fullAmount": "€10.00",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "EUR",
-          "raw": 10,
-          "labelFormat": ""
-        },
-        "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
-      },
-      "us": {
-        "type": "sale_end",
-        "key": "bltcd8c97c6094de246",
-        "kind": "item",
-        "slug": "world-of-warcraft-toy-sandbox-storm-gryphon",
-        "title": "Sandbox Storm Gryphon",
-        "destination": "/product/world-of-warcraft-toy-sandbox-storm-gryphon?p=1433457",
-        "seen": "2026-10-21T17:10:34Z",
-        "price": {
-          "fullAmount": "$10.00",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "USD",
-          "raw": 10,
-          "labelFormat": ""
-        },
-        "commit": "d7273db4af146988455444a13d3b6437d046afeb"
-      }
-    },
-    "at": "2026-10-21T17:01:05Z",
-    "digested": [
-      "[\"shop\",null]"
-    ],
-    "paired": true
-  },
-  {
-    "type": "sale_end",
-    "family": "world-of-warcraft",
-    "key": "bltd8f325973824e7ca",
-    "slug": "world-of-warcraft-toy-deepdwellers-earthen-hearthstone",
-    "seen": "2026-10-21T17:00:28Z",
-    "changes": {
-      "eu": {
-        "type": "sale_end",
-        "key": "bltd8f325973824e7ca",
-        "kind": "item",
-        "slug": "world-of-warcraft-toy-deepdwellers-earthen-hearthstone",
-        "title": "Deepdweller’s Earthen Hearthstone Effect",
-        "destination": "/product/world-of-warcraft-toy-deepdwellers-earthen-hearthstone?p=1433456",
-        "seen": "2026-10-21T17:00:28Z",
-        "price": {
-          "fullAmount": "€5.00",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "EUR",
-          "raw": 5,
-          "labelFormat": ""
-        },
-        "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
-      },
-      "us": {
-        "type": "sale_end",
-        "key": "bltd8f325973824e7ca",
-        "kind": "item",
-        "slug": "world-of-warcraft-toy-deepdwellers-earthen-hearthstone",
-        "title": "Deepdweller’s Earthen Hearthstone Effect",
-        "destination": "/product/world-of-warcraft-toy-deepdwellers-earthen-hearthstone?p=1433456",
-        "seen": "2026-10-21T17:10:34Z",
-        "price": {
-          "fullAmount": "$5.00",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "USD",
-          "raw": 5,
-          "labelFormat": ""
-        },
-        "commit": "d7273db4af146988455444a13d3b6437d046afeb"
-      }
-    },
-    "at": "2026-10-21T17:01:05Z",
-    "digested": [
-      "[\"shop\",null]"
-    ],
-    "paired": true
-  },
-  {
-    "type": "sale_end",
-    "family": "world-of-warcraft",
-    "key": "blt666aea471d0ec98d",
-    "slug": "world-of-warcraft-toy-timewalkers-hearthstone",
-    "seen": "2026-10-21T17:00:28Z",
-    "changes": {
-      "eu": {
-        "type": "sale_end",
-        "key": "blt666aea471d0ec98d",
-        "kind": "item",
-        "slug": "world-of-warcraft-toy-timewalkers-hearthstone",
-        "title": "Timewalker’s Hearthstone Effect",
-        "destination": "/product/world-of-warcraft-toy-timewalkers-hearthstone?p=847128",
-        "seen": "2026-10-21T17:00:28Z",
-        "price": {
-          "fullAmount": "€5.00",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "EUR",
-          "raw": 5,
-          "labelFormat": ""
-        },
-        "commit": "94d4223b4dbb12aeefc3b18468ac84ca99aab221"
-      },
-      "us": {
-        "type": "sale_end",
-        "key": "blt666aea471d0ec98d",
-        "kind": "item",
-        "slug": "world-of-warcraft-toy-timewalkers-hearthstone",
-        "title": "Timewalker’s Hearthstone Effect",
-        "destination": "/product/world-of-warcraft-toy-timewalkers-hearthstone?p=847128",
-        "seen": "2026-10-21T17:00:28Z",
-        "price": {
-          "fullAmount": "$5.00",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "USD",
-          "raw": 5,
-          "labelFormat": ""
-        },
-        "commit": "102bd075aae4e955262db97d78afd1f322dabdda"
-      }
-    },
-    "at": "2026-10-21T17:01:05Z",
-    "digested": [
-      "[\"shop\",null]"
-    ],
-    "paired": true
-  },
-  {
-    "type": "sale_end",
-    "family": "world-of-warcraft-classic",
-    "key": "blta2d8bd8a05c7c620",
-    "slug": "wow-classic-service-boost-bcc-anniversary",
-    "seen": "2026-10-21T17:00:28Z",
-    "changes": {
-      "eu": {
-        "type": "sale_end",
-        "key": "blta2d8bd8a05c7c620",
-        "kind": "item",
-        "slug": "wow-classic-service-boost-bcc-anniversary",
-        "title": "Level 58 Character Boost (Anniversary) ",
-        "destination": "/product/wow-classic-service-boost-bcc-anniversary?p=2042612",
-        "seen": "2026-10-21T17:10:34Z",
-        "price": {
-          "fullAmount": "€60.00",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "EUR",
-          "raw": 60,
-          "labelFormat": ""
-        },
-        "commit": "a7ce6ff664a814a7e580d4445e1ecc26ec047b08"
-      },
-      "us": {
-        "type": "sale_end",
-        "key": "blta2d8bd8a05c7c620",
-        "kind": "item",
-        "slug": "wow-classic-service-boost-bcc-anniversary",
-        "title": "Level 58 Character Boost (Anniversary) ",
-        "destination": "/product/wow-classic-service-boost-bcc-anniversary?p=2042612",
-        "seen": "2026-10-21T17:10:34Z",
-        "price": {
-          "fullAmount": "$60.00",
-          "discountAmount": null,
-          "discountPercentage": null,
-          "currency": "USD",
-          "raw": 60,
-          "labelFormat": ""
-        },
-        "commit": "0d548446ac46edbc93782ba691ae14deab068c38"
-      }
-    },
-    "at": "2026-10-21T17:01:05Z",
-    "digested": [
-      "[\"shop\",null]"
-    ],
-    "lines": [
-      {
-        "seen": "2026-10-21T17:00:28Z",
-        "changes": {
-          "eu": {
-            "type": "sale_end",
-            "key": "blta2d8bd8a05c7c620",
-            "kind": "item",
-            "slug": "wow-classic-service-boost-bcc-anniversary",
-            "title": "Level 58 Character Boost (Anniversary) ",
-            "destination": "/product/wow-classic-service-boost-bcc-anniversary?p=2042612",
-            "seen": "2026-10-21T17:00:28Z",
-            "price": {
-              "fullAmount": "€60.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "EUR",
-              "raw": 60,
-              "labelFormat": ""
-            },
-            "commit": "b8e87ebb470bf73658b22c1eded49058633ac6dd"
-          }
-        }
-      },
-      {
-        "seen": "2026-10-21T17:10:34Z",
-        "changes": {
-          "eu": {
-            "type": "sale_end",
-            "key": "blta2d8bd8a05c7c620",
-            "kind": "item",
-            "slug": "wow-classic-service-boost-bcc-anniversary",
-            "title": "Level 58 Character Boost (Anniversary) ",
-            "destination": "/product/wow-classic-service-boost-bcc-anniversary?p=2042612",
-            "seen": "2026-10-21T17:10:34Z",
-            "price": {
-              "fullAmount": "€60.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "EUR",
-              "raw": 60,
-              "labelFormat": ""
-            },
-            "commit": "a7ce6ff664a814a7e580d4445e1ecc26ec047b08"
-          },
-          "us": {
-            "type": "sale_end",
-            "key": "blta2d8bd8a05c7c620",
-            "kind": "item",
-            "slug": "wow-classic-service-boost-bcc-anniversary",
-            "title": "Level 58 Character Boost (Anniversary) ",
-            "destination": "/product/wow-classic-service-boost-bcc-anniversary?p=2042612",
-            "seen": "2026-10-21T17:10:34Z",
-            "price": {
-              "fullAmount": "$60.00",
-              "discountAmount": null,
-              "discountPercentage": null,
-              "currency": "USD",
-              "raw": 60,
-              "labelFormat": ""
-            },
-            "commit": "0d548446ac46edbc93782ba691ae14deab068c38"
-          }
-        }
-      }
-    ],
-    "paired": true
-  },
-  {
     "type": "sale_start",
     "family": "world-of-warcraft",
     "key": "bltad6d580fcefaa54c",
@@ -308,7 +42,7 @@
         "slug": "wow-classic-service-name-change-bcc-anniversary",
         "title": "Classic Name Change (Anniversary)",
         "destination": "/product/wow-classic-service-name-change-bcc-anniversary",
-        "seen": "2026-10-21T17:10:34Z",
+        "seen": "2026-10-21T17:30:31Z",
         "price": {
           "fullAmount": "€10.00",
           "discountAmount": null,
@@ -317,7 +51,7 @@
           "raw": 10,
           "labelFormat": "From {0}"
         },
-        "commit": "a7ce6ff664a814a7e580d4445e1ecc26ec047b08"
+        "commit": "6c2891f7eefe6aaeaa486a3e1cdd663a2e8d6095"
       },
       "us": {
         "type": "sale_end",
@@ -340,7 +74,73 @@
     },
     "at": "2026-10-21T17:11:11Z",
     "digested": [],
-    "paired": true
+    "paired": true,
+    "lines": [
+      {
+        "seen": "2026-10-21T17:10:34Z",
+        "changes": {
+          "eu": {
+            "type": "sale_end",
+            "key": "blt293f3b01dca48c3a",
+            "kind": "item",
+            "slug": "wow-classic-service-name-change-bcc-anniversary",
+            "title": "Classic Name Change (Anniversary)",
+            "destination": "/product/wow-classic-service-name-change-bcc-anniversary",
+            "seen": "2026-10-21T17:10:34Z",
+            "price": {
+              "fullAmount": "€10.00",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "EUR",
+              "raw": 10,
+              "labelFormat": "From {0}"
+            },
+            "commit": "a7ce6ff664a814a7e580d4445e1ecc26ec047b08"
+          },
+          "us": {
+            "type": "sale_end",
+            "key": "blt293f3b01dca48c3a",
+            "kind": "item",
+            "slug": "wow-classic-service-name-change-bcc-anniversary",
+            "title": "Classic Name Change (Anniversary)",
+            "destination": "/product/wow-classic-service-name-change-bcc-anniversary",
+            "seen": "2026-10-21T17:10:34Z",
+            "price": {
+              "fullAmount": "$10.00",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "USD",
+              "raw": 10,
+              "labelFormat": "From {0}"
+            },
+            "commit": "0d548446ac46edbc93782ba691ae14deab068c38"
+          }
+        }
+      },
+      {
+        "seen": "2026-10-21T17:30:31Z",
+        "changes": {
+          "eu": {
+            "type": "sale_end",
+            "key": "blt293f3b01dca48c3a",
+            "kind": "item",
+            "slug": "wow-classic-service-name-change-bcc-anniversary",
+            "title": "Classic Name Change (Anniversary)",
+            "destination": "/product/wow-classic-service-name-change-bcc-anniversary",
+            "seen": "2026-10-21T17:30:31Z",
+            "price": {
+              "fullAmount": "€10.00",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "EUR",
+              "raw": 10,
+              "labelFormat": "From {0}"
+            },
+            "commit": "6c2891f7eefe6aaeaa486a3e1cdd663a2e8d6095"
+          }
+        }
+      }
+    ]
   },
   {
     "type": "sale_end",
@@ -427,6 +227,35 @@
       }
     },
     "at": "2026-10-21T17:26:09Z",
+    "digested": []
+  },
+  {
+    "type": "sale_end",
+    "family": "world-of-warcraft-classic",
+    "key": "blta2d8bd8a05c7c620",
+    "slug": "wow-classic-service-boost-bcc-anniversary",
+    "seen": "2026-10-21T17:30:31Z",
+    "changes": {
+      "eu": {
+        "type": "sale_end",
+        "key": "blta2d8bd8a05c7c620",
+        "kind": "item",
+        "slug": "wow-classic-service-boost-bcc-anniversary",
+        "title": "Level 58 Character Boost (Anniversary) ",
+        "destination": "/product/wow-classic-service-boost-bcc-anniversary?p=2042612",
+        "seen": "2026-10-21T17:30:31Z",
+        "price": {
+          "fullAmount": "€60.00",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 60,
+          "labelFormat": ""
+        },
+        "commit": "6c2891f7eefe6aaeaa486a3e1cdd663a2e8d6095"
+      }
+    },
+    "at": "2026-10-21T17:31:08Z",
     "digested": []
   }
 ]
