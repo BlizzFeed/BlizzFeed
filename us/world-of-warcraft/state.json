@@ -200,10 +200,10 @@
       "badge": null,
       "price": {
         "fullAmount": "$49.99",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "$24.99",
+        "discountPercentage": 50,
         "currency": "USD",
-        "raw": 49.99,
+        "raw": 24.99,
         "labelFormat": "From {0}"
       },
       "expiresAtMs": null,
@@ -362,10 +362,10 @@
       "badge": null,
       "price": {
         "fullAmount": "$35.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "$17.50",
+        "discountPercentage": 50,
         "currency": "USD",
-        "raw": 35,
+        "raw": 17.5,
         "labelFormat": ""
       },
       "expiresAtMs": null,
@@ -394,10 +394,10 @@
       "badge": null,
       "price": {
         "fullAmount": "$25.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "$12.50",
+        "discountPercentage": 50,
         "currency": "USD",
-        "raw": 25,
+        "raw": 12.5,
         "labelFormat": ""
       },
       "expiresAtMs": null,
