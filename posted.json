@@ -1,39 +1,5 @@
 [
   {
-    "type": "new",
-    "family": "diablo-immortal",
-    "key": "p:2137983",
-    "slug": "diablo-immortal-champions-bounty-bound-gem-fragment",
-    "seen": "2026-10-22T15:02:39Z",
-    "changes": {
-      "us": {
-        "type": "new",
-        "key": "p:2137983",
-        "kind": "item",
-        "slug": "diablo-immortal-champions-bounty-bound-gem-fragment",
-        "title": "Champion's Bounty - Bound Gem Fragment",
-        "destination": "/family/diablo-immortal/items/2137983/champions-bounty-bound-gem-fragment",
-        "seen": "2026-10-22T15:02:39Z",
-        "price": null,
-        "commit": "d202f454f69f7c1e30068fd7d61655e6c7df9a39"
-      },
-      "eu": {
-        "type": "new",
-        "key": "p:2137983",
-        "kind": "item",
-        "slug": "diablo-immortal-champions-bounty-bound-gem-fragment",
-        "title": "Champion's Bounty - Bound Gem Fragment",
-        "destination": "/family/diablo-immortal/items/2137983/champions-bounty-bound-gem-fragment",
-        "seen": "2026-10-22T15:12:27Z",
-        "price": null,
-        "commit": "70347b421f2a178552f203ca3671974f1ef829e6"
-      }
-    },
-    "at": "2026-10-22T15:03:16Z",
-    "digested": [],
-    "paired": true
-  },
-  {
     "type": "gone",
     "family": "diablo-immortal",
     "key": "p:2136847",
