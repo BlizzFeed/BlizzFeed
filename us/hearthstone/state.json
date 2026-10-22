@@ -3236,8 +3236,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "blt182a70c6a8c264fa": {
       "key": "blt182a70c6a8c264fa",
