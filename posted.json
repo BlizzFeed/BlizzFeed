@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "type": "banner",
+    "family": "hearthstone",
+    "key": "bltdbc1bcd20d19296e",
+    "slug": null,
+    "seen": "2026-10-22T17:12:28Z",
+    "changes": {
+      "eu": {
+        "type": "banner",
+        "key": "bltdbc1bcd20d19296e",
+        "kind": "banner",
+        "slug": null,
+        "title": "Earn Tavern Tender when you shop on Battle.net. Collect over time and redeem when you're ready.",
+        "destination": "/family/hearthstone#tavern-rewards-vault",
+        "seen": "2026-10-22T17:12:28Z",
+        "button": "Shop Now",
+        "product": null,
+        "what": "changed",
+        "changed": [
+          "subHeadline"
+        ],
+        "from": {
+          "subHeadline": "Earn rewards when you shop on Battle.net"
+        },
+        "to": {
+          "subHeadline": "Earn Tavern Tender when you shop on Battle.net. Collect over time and redeem when you're ready."
+        },
+        "commit": "3828bb7831846362e36fb9f6d48b9f61d3f67092"
+      }
+    },
+    "at": "2026-10-22T17:13:06Z",
+    "digested": []
+  }
+]
