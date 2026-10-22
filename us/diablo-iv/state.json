@@ -519,8 +519,9 @@
       "price": null,
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-22T19:17:25Z"
     },
     "p:2132974": {
       "key": "p:2132974",
