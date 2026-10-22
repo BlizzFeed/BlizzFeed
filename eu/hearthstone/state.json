@@ -2644,8 +2644,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 2
+      "status": "listed",
+      "misses": 0
     },
     "blt58c90a4f8bf322b2": {
       "key": "blt58c90a4f8bf322b2",
@@ -3947,10 +3947,10 @@
       "cmsId": "bltdbc1bcd20d19296e",
       "slug": null,
       "itemId": null,
-      "title": "Earn rewards when you shop on Battle.net",
+      "title": "Earn Tavern Tender when you shop on Battle.net. Collect over time and redeem when you're ready.",
       "productPageName": null,
       "headline": "",
-      "subHeadline": "Earn rewards when you shop on Battle.net",
+      "subHeadline": "Earn Tavern Tender when you shop on Battle.net. Collect over time and redeem when you're ready.",
       "buttonText": "Shop Now",
       "destination": "/family/hearthstone#tavern-rewards-vault",
       "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltefff0b6709b6b942/6abec18e2c058073c8274442/tavern-tender_carousel-banner_1600X500.jpg",
