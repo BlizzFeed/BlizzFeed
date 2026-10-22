@@ -1,1 +1,24 @@
-[]
+[
+  {
+    "type": "gone",
+    "family": "diablo-iv",
+    "key": "p:2132973",
+    "slug": "diablo-iv-the-sectors-finest-armor-collection-pack",
+    "seen": "2026-10-22T19:17:25Z",
+    "changes": {
+      "us": {
+        "type": "gone",
+        "key": "p:2132973",
+        "kind": "item",
+        "slug": "diablo-iv-the-sectors-finest-armor-collection-pack",
+        "title": "The Sector's Finest Armor Collection Pack",
+        "destination": "/family/diablo-iv/items/2132973/the-sectors-finest-armor-collection-pack",
+        "seen": "2026-10-22T19:17:25Z",
+        "price": null,
+        "commit": "3119803500be6a8b03324b1768c97e3786ac146e"
+      }
+    },
+    "at": "2026-10-22T19:18:01Z",
+    "digested": []
+  }
+]
