@@ -898,7 +898,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-15T15:01:35Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:2137982": {
       "key": "p:2137982",
@@ -1021,8 +1021,8 @@
       "price": null,
       "expiresAtMs": null,
       "first_seen": "2026-10-22T15:02:39Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     }
   },
   "suspect": false
