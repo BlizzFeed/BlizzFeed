@@ -1,4 +1,4 @@
-# End of Beta Special | Episode 5 - The WoW: Forever Podcast
+# End of Beta Special ft. @Meeix | Episode 5 - The WoW: Forever Podcast
 
 Join Host @countdowntoclassic, Senior Game Designer Josh “Aggrend” Greenfield, Associate Production Director Clay Stone, Lead Software Engineer Ana Resendez, Lead Encounter Designer Michael Nuthals, & special guest @Meeix for a roundtable discussion digesting the WoW: Forever Beta.
 
