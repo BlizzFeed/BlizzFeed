@@ -1,7 +1,31 @@
 {
+  "eu/diablo-ii": {
+    "failures": 1,
+    "since": "2026-10-23T20:13:53Z"
+  },
+  "eu/hearthstone": {
+    "failures": 1,
+    "since": "2026-10-23T20:14:18Z"
+  },
   "eu/starcraft-ii": {
     "failures": 3,
     "since": "2026-10-14T19:02:45Z"
+  },
+  "eu/starcraft-remastered": {
+    "failures": 1,
+    "since": "2026-10-23T20:15:03Z"
+  },
+  "eu/warcraft-rumble": {
+    "failures": 1,
+    "since": "2026-10-23T20:13:32Z"
+  },
+  "eu/world-of-warcraft": {
+    "failures": 1,
+    "since": "2026-10-23T20:13:02Z"
+  },
+  "eu/world-of-warcraft-classic": {
+    "failures": 1,
+    "since": "2026-10-23T20:13:23Z"
   },
   "us/starcraft-ii": {
     "failures": 3,
