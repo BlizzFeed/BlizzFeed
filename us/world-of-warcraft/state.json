@@ -17,8 +17,9 @@
         "Banner"
       ],
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "gone",
+      "misses": 0,
+      "gone_since": "2026-10-23T17:07:34Z"
     },
     "bltf9a623dd9bce91a8": {
       "key": "bltf9a623dd9bce91a8",
@@ -5011,6 +5012,26 @@
         "Banner"
       ],
       "first_seen": "2026-10-21T18:20:24Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt05242be8b86fb740": {
+      "key": "blt05242be8b86fb740",
+      "kind": "banner",
+      "cmsId": "blt05242be8b86fb740",
+      "slug": "world-of-warcraft-forever",
+      "itemId": null,
+      "title": "World of Warcraft®: Forever ",
+      "productPageName": "World of Warcraft®: Forever",
+      "headline": "",
+      "subHeadline": "Claim your name starting October 27",
+      "buttonText": "Pre-purchase Now",
+      "destination": "/product/world-of-warcraft-forever",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt5cd0845b9eb13d18/6ad26fc38df0bd12b87512bd/WoW_Camelot_EarlyNameReservation_BnetShop_HeaderDesktop_1600x500.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-10-23T17:07:34Z",
       "status": "listed",
       "misses": 0
     }
