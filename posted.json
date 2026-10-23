@@ -1,1 +1,66 @@
-[]
+[
+  {
+    "type": "banner",
+    "family": "world-of-warcraft",
+    "key": "blt05242be8b86fb740",
+    "slug": "world-of-warcraft-forever",
+    "seen": "2026-10-23T17:07:34Z",
+    "changes": {
+      "eu": {
+        "type": "banner",
+        "key": "blt05242be8b86fb740",
+        "kind": "banner",
+        "slug": "world-of-warcraft-forever",
+        "title": "World of Warcraft®: Forever ",
+        "destination": "/product/world-of-warcraft-forever",
+        "seen": "2026-10-23T17:07:34Z",
+        "button": "Pre-purchase Now",
+        "product": "World of Warcraft®: Forever",
+        "what": "changed",
+        "replaced": "blt2f945601d406700f",
+        "changed": [
+          "subHeadline",
+          "image"
+        ],
+        "from": {
+          "subHeadline": "WoW: Forever Beta is now live—carve a new path with the Skyborne Epic Pack",
+          "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blte309492f2ca43c81/6a91efc02437ed3b63d486c0/WoW_Camelot_AnnounceSupport_Alliance_BnetShop_HeaderDesktop_1600x500.png"
+        },
+        "to": {
+          "subHeadline": "Claim your name starting October 27",
+          "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt5cd0845b9eb13d18/6ad26fc38df0bd12b87512bd/WoW_Camelot_EarlyNameReservation_BnetShop_HeaderDesktop_1600x500.png"
+        },
+        "commit": "7a8aec817d6db7e7403d95a52912d99265790461"
+      },
+      "us": {
+        "type": "banner",
+        "key": "blt05242be8b86fb740",
+        "kind": "banner",
+        "slug": "world-of-warcraft-forever",
+        "title": "World of Warcraft®: Forever ",
+        "destination": "/product/world-of-warcraft-forever",
+        "seen": "2026-10-23T17:07:34Z",
+        "button": "Pre-purchase Now",
+        "product": "World of Warcraft®: Forever",
+        "what": "changed",
+        "replaced": "blt2f945601d406700f",
+        "changed": [
+          "subHeadline",
+          "image"
+        ],
+        "from": {
+          "subHeadline": "WoW: Forever Beta is now live—carve a new path with the Skyborne Epic Pack",
+          "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blte309492f2ca43c81/6a91efc02437ed3b63d486c0/WoW_Camelot_AnnounceSupport_Alliance_BnetShop_HeaderDesktop_1600x500.png"
+        },
+        "to": {
+          "subHeadline": "Claim your name starting October 27",
+          "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt5cd0845b9eb13d18/6ad26fc38df0bd12b87512bd/WoW_Camelot_EarlyNameReservation_BnetShop_HeaderDesktop_1600x500.png"
+        },
+        "commit": "a92ef85e43e0613bebf0682fa422d84b6fac14b2"
+      }
+    },
+    "at": "2026-10-23T17:08:11Z",
+    "digested": [],
+    "paired": true
+  }
+]
