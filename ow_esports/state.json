@@ -274,9 +274,9 @@
       "kind": "stream",
       "premiere": false,
       "duration": 0,
-      "live": "upcoming",
+      "live": "live",
       "scheduled": "2026-10-24T16:30:00Z",
-      "started": null,
+      "started": "2026-10-24T16:37:05Z",
       "ended": null,
       "thumbnail": "https://i.ytimg.com/vi/JOW-OcapYMY/maxresdefault.jpg?v=6ad93fc1",
       "first_seen": "2026-10-21T22:43:29Z"
