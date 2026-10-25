@@ -287,11 +287,11 @@
       "published": "2026-10-21T22:43:32Z",
       "kind": "stream",
       "premiere": false,
-      "duration": 0,
-      "live": "live",
+      "duration": 23220,
+      "live": "ended",
       "scheduled": "2026-10-25T16:30:00Z",
       "started": "2026-10-25T16:36:57Z",
-      "ended": null,
+      "ended": "2026-10-25T23:03:57Z",
       "thumbnail": "https://i.ytimg.com/vi/hQaZe6niYRM/maxresdefault.jpg?v=6ad94016",
       "first_seen": "2026-10-21T22:45:26Z"
     }
