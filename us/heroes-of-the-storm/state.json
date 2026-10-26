@@ -104,14 +104,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$7.99",
-          "discountAmount": null
-        },
-        "until": "2026-10-26T17:35:29.000Z"
-      }
+      "misses": 0
     },
     "bltcb3e47b4547602f5": {
       "key": "bltcb3e47b4547602f5",
