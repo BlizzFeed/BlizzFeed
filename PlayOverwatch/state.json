@@ -348,6 +348,20 @@
       "ended": null,
       "thumbnail": "https://i.ytimg.com/vi/mWUeS3HOAoA/maxresdefault.jpg",
       "first_seen": "2026-10-23T18:01:30Z"
+    },
+    "wAYUid4HxFg": {
+      "title": "Look both ways before leaving spawn 🚸",
+      "description": "",
+      "published": "2026-10-26T17:00:34Z",
+      "kind": "short",
+      "premiere": false,
+      "duration": 15,
+      "live": "none",
+      "scheduled": null,
+      "started": null,
+      "ended": null,
+      "thumbnail": "https://i.ytimg.com/vi/wAYUid4HxFg/maxresdefault.jpg",
+      "first_seen": "2026-10-26T17:01:34Z"
     }
   }
 }
