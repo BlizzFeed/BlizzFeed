@@ -2,6 +2,12 @@
 
 Cormack, a former Scarlet Crusader in life and now raised as Forsaken, struggles to accept his undead existence. After confronting both his past and the beliefs that defined him, he is left to ask himself: can a Forsaken still serve the Light? 
 
+Join the fallen crusader, Cormack, for a special fireside telling of our newest short story, “Unbowed”. 
+
+Written by Sean Copeland 
+Illustrated by Surfside 3D 
+Narrated by Jesse Burch as Cormack 
+
 
 ► Latest WoW news: http://worldofwarcraft.com/news 
 ► Subscribe to WoW: http://blizz.ly/WoWYTSub
