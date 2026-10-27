@@ -1568,10 +1568,24 @@
         "product": "Hexed Witchwick Collection",
         "what": "removed",
         "commit": "7480ab3b93243144a4ba867e199dd747b63ce882"
+      },
+      "eu": {
+        "type": "banner",
+        "key": "bltf9a623dd9bce91a8",
+        "kind": "banner",
+        "slug": "world-of-warcraft-hexed-witchwick-collection",
+        "title": "Hexed Witchwick Collection",
+        "destination": "/product/world-of-warcraft-hexed-witchwick-collection",
+        "seen": "2026-10-27T17:18:31Z",
+        "button": "Buy Now",
+        "product": "Hexed Witchwick Collection",
+        "what": "removed",
+        "commit": "6cee6ab29e06e3df6cda616cd228b5e740a291a6"
       }
     },
     "at": "2026-10-27T17:14:12Z",
-    "digested": []
+    "digested": [],
+    "paired": true
   },
   {
     "type": "banner",
@@ -1592,9 +1606,83 @@
         "product": "Whoofle Bramblewing",
         "what": "removed",
         "commit": "7480ab3b93243144a4ba867e199dd747b63ce882"
+      },
+      "eu": {
+        "type": "banner",
+        "key": "blteae21668baf91813",
+        "kind": "banner",
+        "slug": "world-of-warcraft-mount-whoofle-bramblewing",
+        "title": "Whoofle Bramblewing",
+        "destination": "/product/world-of-warcraft-mount-whoofle-bramblewing",
+        "seen": "2026-10-27T17:18:31Z",
+        "button": "Buy Now",
+        "product": "Whoofle Bramblewing",
+        "what": "removed",
+        "commit": "6cee6ab29e06e3df6cda616cd228b5e740a291a6"
       }
     },
     "at": "2026-10-27T17:14:12Z",
+    "digested": [],
+    "paired": true
+  },
+  {
+    "type": "gone",
+    "family": "world-of-warcraft",
+    "key": "p:2145432",
+    "slug": "world-of-warcraft-haunted-grimtide-estate",
+    "seen": "2026-10-27T17:18:31Z",
+    "changes": {
+      "us": {
+        "type": "gone",
+        "key": "p:2145432",
+        "kind": "item",
+        "slug": "world-of-warcraft-haunted-grimtide-estate",
+        "title": "Haunted Grimtide Estate",
+        "destination": "/family/world-of-warcraft/items/2145432/haunted-grimtide-estate",
+        "seen": "2026-10-27T17:18:31Z",
+        "price": {
+          "fullAmount": "2,500 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 2500,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "b8e3c53603b5d54263f6bcbbac5495123dc7ec5c"
+      }
+    },
+    "at": "2026-10-27T17:19:09Z",
+    "digested": []
+  },
+  {
+    "type": "gone",
+    "family": "world-of-warcraft",
+    "key": "p:2145435",
+    "slug": "world-of-warcraft-grimtide-decor-pack",
+    "seen": "2026-10-27T17:18:31Z",
+    "changes": {
+      "us": {
+        "type": "gone",
+        "key": "p:2145435",
+        "kind": "item",
+        "slug": "world-of-warcraft-grimtide-decor-pack",
+        "title": "Grimtide Decor Pack",
+        "destination": "/family/world-of-warcraft/items/2145435/grimtide-decor-pack",
+        "seen": "2026-10-27T17:18:31Z",
+        "price": {
+          "fullAmount": "1,000 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 1000,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "b8e3c53603b5d54263f6bcbbac5495123dc7ec5c"
+      }
+    },
+    "at": "2026-10-27T17:19:09Z",
     "digested": []
   }
 ]
