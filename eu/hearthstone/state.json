@@ -3938,8 +3938,9 @@
       "price": null,
       "expiresAtMs": null,
       "first_seen": "2026-10-20T17:09:34Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-27T17:13:35Z"
     },
     "bltdbc1bcd20d19296e": {
       "key": "bltdbc1bcd20d19296e",
@@ -4037,7 +4038,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-27T17:03:27Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     }
   },
   "suspect": false
