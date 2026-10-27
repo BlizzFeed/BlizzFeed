@@ -5129,8 +5129,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-27T17:03:27Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-27T17:18:31Z"
     },
     "p:2145435": {
       "key": "p:2145435",
@@ -5220,8 +5221,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-27T17:03:27Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-27T17:18:31Z"
     },
     "p:2139977": {
       "key": "p:2139977",
