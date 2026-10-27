@@ -38,8 +38,9 @@
         "Banner"
       ],
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-27T17:13:35Z"
     },
     "blteae21668baf91813": {
       "key": "blteae21668baf91813",
@@ -58,8 +59,9 @@
         "Banner"
       ],
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-27T17:13:35Z"
     },
     "blt1894ec6b8e261420": {
       "key": "blt1894ec6b8e261420",
@@ -5128,7 +5130,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-27T17:03:27Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:2145435": {
       "key": "p:2145435",
@@ -5219,7 +5221,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-27T17:03:27Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:2139977": {
       "key": "p:2139977",
