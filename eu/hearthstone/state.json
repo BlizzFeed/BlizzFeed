@@ -4037,8 +4037,8 @@
       "price": null,
       "expiresAtMs": null,
       "first_seen": "2026-10-27T17:03:27Z",
-      "status": "missing",
-      "misses": 2
+      "status": "listed",
+      "misses": 0
     }
   },
   "suspect": false
