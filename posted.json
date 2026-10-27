@@ -124,13 +124,34 @@
           "discountId": null
         },
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2139977",
+        "kind": "item",
+        "slug": "world-of-warcraft-grimtide-grand-table",
+        "title": "Grimtide Grand Table",
+        "destination": "/family/world-of-warcraft/items/2139977/grimtide-grand-table",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "200 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 200,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ]
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"feed\",\"wow-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -157,13 +178,34 @@
           "discountId": null
         },
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2142757",
+        "kind": "item",
+        "slug": "world-of-warcraft-grimtide-side-table",
+        "title": "Grimtide Side Table",
+        "destination": "/family/world-of-warcraft/items/2142757/grimtide-side-table",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "100 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 100,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ]
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"feed\",\"wow-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -190,13 +232,34 @@
           "discountId": null
         },
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2142758",
+        "kind": "item",
+        "slug": "world-of-warcraft-grimtide-dining-chair",
+        "title": "Grimtide Dining Chair",
+        "destination": "/family/world-of-warcraft/items/2142758/grimtide-dining-chair",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "50 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 50,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ]
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"feed\",\"wow-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -223,13 +286,34 @@
           "discountId": null
         },
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2142759",
+        "kind": "item",
+        "slug": "world-of-warcraft-grimtide-couch",
+        "title": "Grimtide Couch",
+        "destination": "/family/world-of-warcraft/items/2142759/grimtide-couch",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "200 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 200,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ]
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"feed\",\"wow-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -256,13 +340,34 @@
           "discountId": null
         },
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2142760",
+        "kind": "item",
+        "slug": "world-of-warcraft-small-grimtide-rug",
+        "title": "Small Grimtide Rug",
+        "destination": "/family/world-of-warcraft/items/2142760/small-grimtide-rug",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "100 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 100,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ]
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"feed\",\"wow-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -289,13 +394,34 @@
           "discountId": null
         },
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2142762",
+        "kind": "item",
+        "slug": "world-of-warcraft-grimtide-rug",
+        "title": "Grimtide Rug",
+        "destination": "/family/world-of-warcraft/items/2142762/grimtide-rug",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "100 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 100,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ]
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"feed\",\"wow-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -322,13 +448,34 @@
           "discountId": null
         },
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2142763",
+        "kind": "item",
+        "slug": "world-of-warcraft-grimtide-coffee-table",
+        "title": "Grimtide Coffee Table",
+        "destination": "/family/world-of-warcraft/items/2142763/grimtide-coffee-table",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "100 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 100,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ]
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"feed\",\"wow-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -355,13 +502,34 @@
           "discountId": null
         },
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2142764",
+        "kind": "item",
+        "slug": "world-of-warcraft-grimtide-grand-piano",
+        "title": "Grimtide Grand Piano",
+        "destination": "/family/world-of-warcraft/items/2142764/grimtide-grand-piano",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "300 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 300,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ]
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"feed\",\"wow-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -388,13 +556,34 @@
           "discountId": null
         },
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2142765",
+        "kind": "item",
+        "slug": "world-of-warcraft-grimtide-tentacle",
+        "title": "Grimtide Tentacle",
+        "destination": "/family/world-of-warcraft/items/2142765/grimtide-tentacle",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "50 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 50,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ]
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"feed\",\"wow-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -421,13 +610,34 @@
           "discountId": null
         },
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2142766",
+        "kind": "item",
+        "slug": "world-of-warcraft-daytime-grimtide-window",
+        "title": "Daytime Grimtide Window",
+        "destination": "/family/world-of-warcraft/items/2142766/daytime-grimtide-window",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "50 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 50,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ]
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"feed\",\"wow-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -454,13 +664,34 @@
           "discountId": null
         },
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2145336",
+        "kind": "item",
+        "slug": "world-of-warcraft-nighttime-grimtide-window",
+        "title": "Nighttime Grimtide Window",
+        "destination": "/family/world-of-warcraft/items/2145336/nighttime-grimtide-window",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "50 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 50,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ]
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"feed\",\"wow-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -487,13 +718,34 @@
           "discountId": null
         },
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2145337",
+        "kind": "item",
+        "slug": "world-of-warcraft-grimtide-display-anchor",
+        "title": "Grimtide Display Anchor",
+        "destination": "/family/world-of-warcraft/items/2145337/grimtide-display-anchor",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "50 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 50,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ]
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"feed\",\"wow-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -520,13 +772,34 @@
           "discountId": null
         },
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2145364",
+        "kind": "item",
+        "slug": "world-of-warcraft-grimtide-enchanted-candles",
+        "title": "Grimtide Enchanted Candles",
+        "destination": "/family/world-of-warcraft/items/2145364/grimtide-enchanted-candles",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "30 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 30,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ]
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"feed\",\"wow-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -553,13 +826,34 @@
           "discountId": null
         },
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2145365",
+        "kind": "item",
+        "slug": "world-of-warcraft-grimtide-tall-enchanted-candle",
+        "title": "Grimtide Tall Enchanted Candle",
+        "destination": "/family/world-of-warcraft/items/2145365/grimtide-tall-enchanted-candle",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "10 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 10,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ]
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"feed\",\"wow-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -586,13 +880,34 @@
           "discountId": null
         },
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2145367",
+        "kind": "item",
+        "slug": "world-of-warcraft-grimtide-enchanted-candle",
+        "title": "Grimtide Enchanted Candle",
+        "destination": "/family/world-of-warcraft/items/2145367/grimtide-enchanted-candle",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "10 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 10,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ]
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"feed\",\"wow-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -619,13 +934,34 @@
           "discountId": null
         },
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2145366",
+        "kind": "item",
+        "slug": "world-of-warcraft-grimtide-small-enchanted-candle",
+        "title": "Grimtide Small Enchanted Candle",
+        "destination": "/family/world-of-warcraft/items/2145366/grimtide-small-enchanted-candle",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "10 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 10,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ]
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"feed\",\"wow-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -652,13 +988,34 @@
           "discountId": null
         },
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2145368",
+        "kind": "item",
+        "slug": "world-of-warcraft-grimtide-chandelier",
+        "title": "Grimtide Chandelier",
+        "destination": "/family/world-of-warcraft/items/2145368/grimtide-chandelier",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "300 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 300,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ]
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"feed\",\"wow-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -685,13 +1042,34 @@
           "discountId": null
         },
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2145369",
+        "kind": "item",
+        "slug": "world-of-warcraft-grimtide-sconce",
+        "title": "Grimtide Sconce",
+        "destination": "/family/world-of-warcraft/items/2145369/grimtide-sconce",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "50 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 50,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ]
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"feed\",\"wow-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -718,13 +1096,34 @@
           "discountId": null
         },
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2145370",
+        "kind": "item",
+        "slug": "world-of-warcraft-grimtide-candelabra",
+        "title": "Grimtide Candelabra",
+        "destination": "/family/world-of-warcraft/items/2145370/grimtide-candelabra",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "50 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 50,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ]
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"feed\",\"wow-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -751,13 +1150,34 @@
           "discountId": null
         },
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2145371",
+        "kind": "item",
+        "slug": "world-of-warcraft-grimtide-bookcase",
+        "title": "Grimtide Bookcase",
+        "destination": "/family/world-of-warcraft/items/2145371/grimtide-bookcase",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "200 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 200,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ]
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"feed\",\"wow-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -784,13 +1204,34 @@
           "discountId": null
         },
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2145372",
+        "kind": "item",
+        "slug": "world-of-warcraft-grimtide-floor-hatch",
+        "title": "Grimtide Floor Hatch",
+        "destination": "/family/world-of-warcraft/items/2145372/grimtide-floor-hatch",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "50 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 50,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]",
-      "[\"feed\",\"wow-news-us\"]"
-    ]
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"feed\",\"wow-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "banner",
@@ -811,12 +1252,26 @@
         "product": "Haunted Grimtide Estate",
         "what": "added",
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "banner",
+        "key": "blt6176d14804b303ff",
+        "kind": "banner",
+        "slug": "world-of-warcraft-haunted-grimtide-estate",
+        "title": "Haunted Grimtide Estate",
+        "destination": "/product/world-of-warcraft-haunted-grimtide-estate",
+        "seen": "2026-10-27T17:08:27Z",
+        "button": "Buy Now",
+        "product": "Haunted Grimtide Estate",
+        "what": "added",
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "banner",
@@ -837,12 +1292,26 @@
         "product": "Living Heartsbane Cauldron",
         "what": "added",
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "banner",
+        "key": "bltbaa90612f81fd6f3",
+        "kind": "banner",
+        "slug": "world-of-warcraft-mount-living-heartsbane-cauldron",
+        "title": "Living Heartsbane Cauldron ",
+        "destination": "/product/world-of-warcraft-mount-living-heartsbane-cauldron",
+        "seen": "2026-10-27T17:08:27Z",
+        "button": "Buy Now",
+        "product": "Living Heartsbane Cauldron",
+        "what": "added",
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "banner",
@@ -863,11 +1332,187 @@
         "product": "Grimtide Decor Pack",
         "what": "added",
         "commit": "f60c75d124d05c8e748b6ca252f3247d14c8ed13"
+      },
+      "eu": {
+        "type": "banner",
+        "key": "blt1a2aae48fe1d04de",
+        "kind": "banner",
+        "slug": "world-of-warcraft-grimtide-decor-pack",
+        "title": "Grimtide Decor Pack",
+        "destination": "/product/world-of-warcraft-grimtide-decor-pack",
+        "seen": "2026-10-27T17:08:27Z",
+        "button": "Buy Now",
+        "product": "Grimtide Decor Pack",
+        "what": "added",
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
       }
     },
     "at": "2026-10-27T17:04:05Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "world-of-warcraft",
+    "key": "blt5a0d798ee7d8a9dc",
+    "slug": "world-of-warcraft-mount-living-heartsbane-cauldron",
+    "seen": "2026-10-27T17:08:27Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "blt5a0d798ee7d8a9dc",
+        "kind": "item",
+        "slug": "world-of-warcraft-mount-living-heartsbane-cauldron",
+        "title": "Living Heartsbane Cauldron ",
+        "destination": "/product/world-of-warcraft-mount-living-heartsbane-cauldron?p=2137952",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "€25.00",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 25,
+          "labelFormat": "",
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
+      },
+      "us": {
+        "type": "new",
+        "key": "blt5a0d798ee7d8a9dc",
+        "kind": "item",
+        "slug": "world-of-warcraft-mount-living-heartsbane-cauldron",
+        "title": "Living Heartsbane Cauldron ",
+        "destination": "/product/world-of-warcraft-mount-living-heartsbane-cauldron?p=2137952",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "$25.00",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 25,
+          "labelFormat": "",
+          "discountId": null
+        },
+        "commit": "068e02ed881da0ae9a55a81b53db84b2010f44b7"
+      }
+    },
+    "at": "2026-10-27T17:09:04Z",
+    "digested": [
+      "[\"feed\",\"wow-news\"]",
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"shop\",null]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "world-of-warcraft",
+    "key": "blt7a87f57ab5b26904",
+    "slug": "world-of-warcraft-haunted-grimtide-estate",
+    "seen": "2026-10-27T17:08:27Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "blt7a87f57ab5b26904",
+        "kind": "item",
+        "slug": "world-of-warcraft-haunted-grimtide-estate",
+        "title": "Haunted Grimtide Estate",
+        "destination": "/product/world-of-warcraft-haunted-grimtide-estate?p=2145432",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "2,500 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 2500,
+          "labelFormat": "",
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
+      },
+      "us": {
+        "type": "new",
+        "key": "blt7a87f57ab5b26904",
+        "kind": "item",
+        "slug": "world-of-warcraft-haunted-grimtide-estate",
+        "title": "Haunted Grimtide Estate",
+        "destination": "/product/world-of-warcraft-haunted-grimtide-estate?p=2145432",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "2,500 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 2500,
+          "labelFormat": "",
+          "discountId": null
+        },
+        "commit": "068e02ed881da0ae9a55a81b53db84b2010f44b7"
+      }
+    },
+    "at": "2026-10-27T17:09:04Z",
+    "digested": [
+      "[\"feed\",\"wow-news\"]",
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"shop\",null]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "world-of-warcraft",
+    "key": "bltfcdbac4e6fc2cc9f",
+    "slug": "world-of-warcraft-grimtide-decor-pack",
+    "seen": "2026-10-27T17:08:27Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "bltfcdbac4e6fc2cc9f",
+        "kind": "item",
+        "slug": "world-of-warcraft-grimtide-decor-pack",
+        "title": "Grimtide Decor Pack",
+        "destination": "/product/world-of-warcraft-grimtide-decor-pack?p=2145435",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "1,000 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 1000,
+          "labelFormat": "",
+          "discountId": null
+        },
+        "commit": "3ba87079b18e5ffb4220128c9f053d94e8683599"
+      },
+      "us": {
+        "type": "new",
+        "key": "bltfcdbac4e6fc2cc9f",
+        "kind": "item",
+        "slug": "world-of-warcraft-grimtide-decor-pack",
+        "title": "Grimtide Decor Pack",
+        "destination": "/product/world-of-warcraft-grimtide-decor-pack?p=2145435",
+        "seen": "2026-10-27T17:08:27Z",
+        "price": {
+          "fullAmount": "1,000 Hearthsteel",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVV",
+          "raw": 1000,
+          "labelFormat": "",
+          "discountId": null
+        },
+        "commit": "068e02ed881da0ae9a55a81b53db84b2010f44b7"
+      }
+    },
+    "at": "2026-10-27T17:09:04Z",
+    "digested": [
+      "[\"feed\",\"wow-news\"]",
+      "[\"feed\",\"wow-news-us\"]",
+      "[\"shop\",null]"
+    ],
+    "paired": true
   }
 ]
