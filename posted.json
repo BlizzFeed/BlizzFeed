@@ -1514,5 +1514,87 @@
       "[\"shop\",null]"
     ],
     "paired": true
+  },
+  {
+    "type": "gone",
+    "family": "hearthstone",
+    "key": "p:2136771",
+    "slug": "hearthstone-free-battlenet-shop-gift",
+    "seen": "2026-10-27T17:13:35Z",
+    "changes": {
+      "eu": {
+        "type": "gone",
+        "key": "p:2136771",
+        "kind": "item",
+        "slug": "hearthstone-free-battlenet-shop-gift",
+        "title": "Free Battle.net® Shop Gift!",
+        "destination": "/family/hearthstone/items/2136771/free-battlenet-shop-gift",
+        "seen": "2026-10-27T17:13:35Z",
+        "price": null,
+        "commit": "98deb77d24c31987527d5b8e8e79cb2cb78aeaaf"
+      },
+      "us": {
+        "type": "gone",
+        "key": "p:2136771",
+        "kind": "item",
+        "slug": "hearthstone-free-battlenet-shop-gift",
+        "title": "Free Battle.net® Shop Gift!",
+        "destination": "/family/hearthstone/items/2136771/free-battlenet-shop-gift",
+        "seen": "2026-10-27T17:13:35Z",
+        "price": null,
+        "commit": "0b3ff7dec83310cfc37b22366328288070f8e1b4"
+      }
+    },
+    "at": "2026-10-27T17:14:12Z",
+    "digested": [],
+    "paired": true
+  },
+  {
+    "type": "banner",
+    "family": "world-of-warcraft",
+    "key": "bltf9a623dd9bce91a8",
+    "slug": "world-of-warcraft-hexed-witchwick-collection",
+    "seen": "2026-10-27T17:13:35Z",
+    "changes": {
+      "us": {
+        "type": "banner",
+        "key": "bltf9a623dd9bce91a8",
+        "kind": "banner",
+        "slug": "world-of-warcraft-hexed-witchwick-collection",
+        "title": "Hexed Witchwick Collection",
+        "destination": "/product/world-of-warcraft-hexed-witchwick-collection",
+        "seen": "2026-10-27T17:13:35Z",
+        "button": "Buy Now",
+        "product": "Hexed Witchwick Collection",
+        "what": "removed",
+        "commit": "7480ab3b93243144a4ba867e199dd747b63ce882"
+      }
+    },
+    "at": "2026-10-27T17:14:12Z",
+    "digested": []
+  },
+  {
+    "type": "banner",
+    "family": "world-of-warcraft",
+    "key": "blteae21668baf91813",
+    "slug": "world-of-warcraft-mount-whoofle-bramblewing",
+    "seen": "2026-10-27T17:13:35Z",
+    "changes": {
+      "us": {
+        "type": "banner",
+        "key": "blteae21668baf91813",
+        "kind": "banner",
+        "slug": "world-of-warcraft-mount-whoofle-bramblewing",
+        "title": "Whoofle Bramblewing",
+        "destination": "/product/world-of-warcraft-mount-whoofle-bramblewing",
+        "seen": "2026-10-27T17:13:35Z",
+        "button": "Buy Now",
+        "product": "Whoofle Bramblewing",
+        "what": "removed",
+        "commit": "7480ab3b93243144a4ba867e199dd747b63ce882"
+      }
+    },
+    "at": "2026-10-27T17:14:12Z",
+    "digested": []
   }
 ]
