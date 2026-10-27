@@ -3707,8 +3707,9 @@
       "price": null,
       "expiresAtMs": null,
       "first_seen": "2026-10-20T17:02:36Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-10-27T17:13:35Z"
     },
     "p:2137294": {
       "key": "p:2137294",
@@ -4036,8 +4037,8 @@
       "price": null,
       "expiresAtMs": null,
       "first_seen": "2026-10-27T17:03:27Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     }
   },
   "suspect": false
