@@ -908,8 +908,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2131868": {
       "key": "p:2131868",
@@ -947,8 +947,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2131867": {
       "key": "p:2131867",
@@ -986,8 +986,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2044425": {
       "key": "p:2044425",
@@ -1037,8 +1037,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2115720": {
       "key": "p:2115720",
@@ -1679,8 +1679,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T18:01:34Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2131875": {
       "key": "p:2131875",
@@ -1715,8 +1715,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T18:01:34Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2132882": {
       "key": "p:2132882",
@@ -1752,8 +1752,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T18:01:34Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2131876": {
       "key": "p:2131876",
@@ -1788,8 +1788,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T18:01:34Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2126630": {
       "key": "p:2126630",
@@ -1821,8 +1821,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T18:01:34Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2126631": {
       "key": "p:2126631",
@@ -1854,8 +1854,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T18:01:34Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2132885": {
       "key": "p:2132885",
@@ -2567,6 +2567,53 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:00:29Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2027259": {
+      "key": "p:2027259",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-borealis-mega-bundle",
+      "title": "Borealis Mega Bundle",
+      "description": "Legendary | Bundle (15 items)",
+      "categoryId": null,
+      "itemId": 2027259,
+      "productIds": [
+        2026647,
+        2026502,
+        2026511,
+        2026514,
+        2027143,
+        2027147,
+        2026652,
+        2026644,
+        2027154,
+        2027152,
+        2027138,
+        2026509,
+        2026503,
+        2027158,
+        2027140
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2027259/borealis-mega-bundle",
+      "image": "//catalog.blzstatic.com//fde/0850b73f6ed2d213f7383dd16ca7e8a3-Web_1920x1080_S20_AuroranFrostMegaBundle.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "12,100 Coins",
+        "discountAmount": "5,900 Coins",
+        "discountPercentage": 51,
+        "currency": "XWC",
+        "raw": 5900,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T18:03:32Z",
       "status": "listed",
       "misses": 0
     }
