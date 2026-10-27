@@ -3236,8 +3236,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 1
+      "status": "listed",
+      "misses": 0
     },
     "blt182a70c6a8c264fa": {
       "key": "blt182a70c6a8c264fa",
@@ -3269,8 +3269,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 1
+      "status": "listed",
+      "misses": 0
     },
     "bltbd5f33ae79f4134f": {
       "key": "bltbd5f33ae79f4134f",
@@ -3302,8 +3302,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 1
+      "status": "listed",
+      "misses": 0
     },
     "bltc8d31656a3aeacac": {
       "key": "bltc8d31656a3aeacac",
@@ -3939,7 +3939,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-20T17:09:34Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "bltdbc1bcd20d19296e": {
       "key": "bltdbc1bcd20d19296e",
@@ -4036,8 +4036,8 @@
       "price": null,
       "expiresAtMs": null,
       "first_seen": "2026-10-27T17:03:27Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     }
   },
   "suspect": false
