@@ -39,7 +39,7 @@
       ],
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "blteae21668baf91813": {
       "key": "blteae21668baf91813",
@@ -59,7 +59,7 @@
       ],
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "blt1894ec6b8e261420": {
       "key": "blt1894ec6b8e261420",
@@ -5127,8 +5127,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-27T17:03:27Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2145435": {
       "key": "p:2145435",
@@ -5218,8 +5218,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-27T17:03:27Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2139977": {
       "key": "p:2139977",
@@ -5911,6 +5911,105 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt5a0d798ee7d8a9dc": {
+      "key": "blt5a0d798ee7d8a9dc",
+      "kind": "item",
+      "cmsId": "blt5a0d798ee7d8a9dc",
+      "slug": "world-of-warcraft-mount-living-heartsbane-cauldron",
+      "title": "Living Heartsbane Cauldron ",
+      "description": "Mounts",
+      "categoryId": "mounts",
+      "itemId": null,
+      "productIds": [
+        2137952
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/world-of-warcraft-mount-living-heartsbane-cauldron?p=2137952",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt3630357012647963/6ad67a9368dfc9db63961582/WoW_DrustvarCauldronMount_BnetShop_ProductAssetGallery-v01_1920x1080.png",
+      "sections": [
+        "Mounts"
+      ],
+      "badge": "New",
+      "price": {
+        "fullAmount": "$25.00",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 25,
+        "labelFormat": "",
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:08:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt7a87f57ab5b26904": {
+      "key": "blt7a87f57ab5b26904",
+      "kind": "item",
+      "cmsId": "blt7a87f57ab5b26904",
+      "slug": "world-of-warcraft-haunted-grimtide-estate",
+      "title": "Haunted Grimtide Estate",
+      "description": "Housing",
+      "categoryId": "housing",
+      "itemId": null,
+      "productIds": [
+        2145432
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/world-of-warcraft-haunted-grimtide-estate?p=2145432",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltd91cac504114b3cd/6ad67561cc0a30da1b546fc4/WoW_GrimtideHouse_BnetShop_ProductAssetGallery_1920x1080.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": "New",
+      "price": {
+        "fullAmount": "2,500 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 2500,
+        "labelFormat": "",
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:08:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "bltfcdbac4e6fc2cc9f": {
+      "key": "bltfcdbac4e6fc2cc9f",
+      "kind": "item",
+      "cmsId": "bltfcdbac4e6fc2cc9f",
+      "slug": "world-of-warcraft-grimtide-decor-pack",
+      "title": "Grimtide Decor Pack",
+      "description": "Housing",
+      "categoryId": "housing",
+      "itemId": null,
+      "productIds": [
+        2145435
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/world-of-warcraft-grimtide-decor-pack?p=2145435",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt31e19a25f78f9690/6ad664bd68c7472c4d4f54a6/WoW_GrimtideDecor_BnetShop_ProductAssetGallery_1920x1080.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": "New",
+      "price": {
+        "fullAmount": "1,000 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 1000,
+        "labelFormat": "",
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:08:27Z",
       "status": "listed",
       "misses": 0
     }
