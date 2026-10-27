@@ -74,12 +74,32 @@
           "discountId": null
         },
         "commit": "2f03affb7ee00d475a2c950a4606ccb0684e0044"
+      },
+      "us": {
+        "type": "gone",
+        "key": "p:2131866",
+        "kind": "item",
+        "slug": "overwatch-prestige-influence-mega-bundle",
+        "title": "Prestige Influence Mega Bundle",
+        "destination": "/family/overwatch/items/2131866/prestige-influence-mega-bundle",
+        "seen": "2026-10-27T18:18:30Z",
+        "price": {
+          "fullAmount": "8,600 Coins",
+          "discountAmount": "4,500 Coins",
+          "discountPercentage": 47,
+          "currency": "XWC",
+          "raw": 4500,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "9b7e0be4d08aa1d5b0bb07d433e718526799a3e0"
       }
     },
     "at": "2026-10-27T18:14:11Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "gone",
@@ -106,12 +126,32 @@
           "discountId": null
         },
         "commit": "2f03affb7ee00d475a2c950a4606ccb0684e0044"
+      },
+      "us": {
+        "type": "gone",
+        "key": "p:2131868",
+        "kind": "item",
+        "slug": "overwatch-prestige-influence-ashe-bundle",
+        "title": "Prestige Influence Ashe Bundle",
+        "destination": "/family/overwatch/items/2131868/prestige-influence-ashe-bundle",
+        "seen": "2026-10-27T18:18:30Z",
+        "price": {
+          "fullAmount": "4,300 Coins",
+          "discountAmount": "3,100 Coins",
+          "discountPercentage": 27,
+          "currency": "XWC",
+          "raw": 3100,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "9b7e0be4d08aa1d5b0bb07d433e718526799a3e0"
       }
     },
     "at": "2026-10-27T18:14:11Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "gone",
@@ -138,12 +178,32 @@
           "discountId": null
         },
         "commit": "2f03affb7ee00d475a2c950a4606ccb0684e0044"
+      },
+      "us": {
+        "type": "gone",
+        "key": "p:2131867",
+        "kind": "item",
+        "slug": "overwatch-prestige-influence-cassidy-bundle",
+        "title": "Prestige Influence Cassidy Bundle",
+        "destination": "/family/overwatch/items/2131867/prestige-influence-cassidy-bundle",
+        "seen": "2026-10-27T18:18:30Z",
+        "price": {
+          "fullAmount": "4,300 Coins",
+          "discountAmount": "3,100 Coins",
+          "discountPercentage": 27,
+          "currency": "XWC",
+          "raw": 3100,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "9b7e0be4d08aa1d5b0bb07d433e718526799a3e0"
       }
     },
     "at": "2026-10-27T18:14:11Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "gone",
@@ -170,12 +230,32 @@
           "discountId": null
         },
         "commit": "2f03affb7ee00d475a2c950a4606ccb0684e0044"
+      },
+      "us": {
+        "type": "gone",
+        "key": "p:2044425",
+        "kind": "item",
+        "slug": "overwatch-voidwalker-mega-bundle",
+        "title": "Voidwalker Mega Bundle",
+        "destination": "/family/overwatch/items/2044425/voidwalker-mega-bundle",
+        "seen": "2026-10-27T18:18:30Z",
+        "price": {
+          "fullAmount": "12,100 Coins",
+          "discountAmount": "5,900 Coins",
+          "discountPercentage": 51,
+          "currency": "XWC",
+          "raw": 5900,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "9b7e0be4d08aa1d5b0bb07d433e718526799a3e0"
       }
     },
     "at": "2026-10-27T18:14:11Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "gone",
@@ -202,12 +282,32 @@
           "discountId": null
         },
         "commit": "2f03affb7ee00d475a2c950a4606ccb0684e0044"
+      },
+      "us": {
+        "type": "gone",
+        "key": "p:2131874",
+        "kind": "item",
+        "slug": "overwatch-tech-witch-mega-bundle",
+        "title": "Tech Witch Mega Bundle",
+        "destination": "/family/overwatch/items/2131874/tech-witch-mega-bundle",
+        "seen": "2026-10-27T18:18:30Z",
+        "price": {
+          "fullAmount": "13,600 Coins",
+          "discountAmount": "6,900 Coins",
+          "discountPercentage": 49,
+          "currency": "XWC",
+          "raw": 6900,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "9b7e0be4d08aa1d5b0bb07d433e718526799a3e0"
       }
     },
     "at": "2026-10-27T18:14:11Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "gone",
@@ -234,12 +334,32 @@
           "discountId": null
         },
         "commit": "2f03affb7ee00d475a2c950a4606ccb0684e0044"
+      },
+      "us": {
+        "type": "gone",
+        "key": "p:2131875",
+        "kind": "item",
+        "slug": "overwatch-tech-witch-dmon-bundle",
+        "title": "Tech Witch D.Mon Bundle",
+        "destination": "/family/overwatch/items/2131875/tech-witch-dmon-bundle",
+        "seen": "2026-10-27T18:18:30Z",
+        "price": {
+          "fullAmount": "2,400 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 2400,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "9b7e0be4d08aa1d5b0bb07d433e718526799a3e0"
       }
     },
     "at": "2026-10-27T18:14:11Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "gone",
@@ -266,12 +386,32 @@
           "discountId": null
         },
         "commit": "2f03affb7ee00d475a2c950a4606ccb0684e0044"
+      },
+      "us": {
+        "type": "gone",
+        "key": "p:2132882",
+        "kind": "item",
+        "slug": "overwatch-tech-witch-jetpack-cat-bundle",
+        "title": "Tech Witch Jetpack Cat Bundle",
+        "destination": "/family/overwatch/items/2132882/tech-witch-jetpack-cat-bundle",
+        "seen": "2026-10-27T18:18:30Z",
+        "price": {
+          "fullAmount": "3,100 Coins",
+          "discountAmount": "2,600 Coins",
+          "discountPercentage": 16,
+          "currency": "XWC",
+          "raw": 2600,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "9b7e0be4d08aa1d5b0bb07d433e718526799a3e0"
       }
     },
     "at": "2026-10-27T18:14:11Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "gone",
@@ -298,12 +438,32 @@
           "discountId": null
         },
         "commit": "2f03affb7ee00d475a2c950a4606ccb0684e0044"
+      },
+      "us": {
+        "type": "gone",
+        "key": "p:2131876",
+        "kind": "item",
+        "slug": "overwatch-tech-witch-shion-bundle",
+        "title": "Tech Witch Shion Bundle",
+        "destination": "/family/overwatch/items/2131876/tech-witch-shion-bundle",
+        "seen": "2026-10-27T18:18:30Z",
+        "price": {
+          "fullAmount": "2,400 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 2400,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "9b7e0be4d08aa1d5b0bb07d433e718526799a3e0"
       }
     },
     "at": "2026-10-27T18:14:11Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "gone",
@@ -330,12 +490,32 @@
           "discountId": null
         },
         "commit": "2f03affb7ee00d475a2c950a4606ccb0684e0044"
+      },
+      "us": {
+        "type": "gone",
+        "key": "p:2126630",
+        "kind": "item",
+        "slug": "overwatch-tech-witch",
+        "title": "Tech Witch",
+        "destination": "/family/overwatch/items/2126630/tech-witch",
+        "seen": "2026-10-27T18:18:30Z",
+        "price": {
+          "fullAmount": "1,900 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 1900,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "9b7e0be4d08aa1d5b0bb07d433e718526799a3e0"
       }
     },
     "at": "2026-10-27T18:14:11Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "gone",
@@ -362,11 +542,31 @@
           "discountId": null
         },
         "commit": "2f03affb7ee00d475a2c950a4606ccb0684e0044"
+      },
+      "us": {
+        "type": "gone",
+        "key": "p:2126631",
+        "kind": "item",
+        "slug": "overwatch-tech-witch",
+        "title": "Tech Witch",
+        "destination": "/family/overwatch/items/2126631/tech-witch",
+        "seen": "2026-10-27T18:18:30Z",
+        "price": {
+          "fullAmount": "1,900 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 1900,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "9b7e0be4d08aa1d5b0bb07d433e718526799a3e0"
       }
     },
     "at": "2026-10-27T18:14:11Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   }
 ]
