@@ -3374,8 +3374,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "blt01ffc87a96c04fb1": {
       "key": "blt01ffc87a96c04fb1",
@@ -3409,8 +3409,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "blt0c12d595a37ead0c": {
       "key": "blt0c12d595a37ead0c",
