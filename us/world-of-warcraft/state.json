@@ -38,8 +38,8 @@
         "Banner"
       ],
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "blteae21668baf91813": {
       "key": "blteae21668baf91813",
@@ -58,8 +58,8 @@
         "Banner"
       ],
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "blt1894ec6b8e261420": {
       "key": "blt1894ec6b8e261420",
@@ -5032,6 +5032,885 @@
         "Banner"
       ],
       "first_seen": "2026-10-23T17:07:34Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt6176d14804b303ff": {
+      "key": "blt6176d14804b303ff",
+      "kind": "banner",
+      "cmsId": "blt6176d14804b303ff",
+      "slug": "world-of-warcraft-haunted-grimtide-estate",
+      "itemId": null,
+      "title": "Haunted Grimtide Estate",
+      "productPageName": "Haunted Grimtide Estate",
+      "headline": "",
+      "subHeadline": "Let the mysteries of the ocean depths engulf your home inside and out! ",
+      "buttonText": "Buy Now",
+      "destination": "/product/world-of-warcraft-haunted-grimtide-estate",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt6e4ccbdde6f61a95/6ad6900fdfe9046c267e315b/WoW_GrimtideHouse_BnetShop_HeaderDesktop_1600x500.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "bltbaa90612f81fd6f3": {
+      "key": "bltbaa90612f81fd6f3",
+      "kind": "banner",
+      "cmsId": "bltbaa90612f81fd6f3",
+      "slug": "world-of-warcraft-mount-living-heartsbane-cauldron",
+      "itemId": null,
+      "title": "Living Heartsbane Cauldron ",
+      "productPageName": "Living Heartsbane Cauldron",
+      "headline": "",
+      "subHeadline": "Take command of this cursed creation and carry its dark witchcraft across Azeroth. ",
+      "buttonText": "Buy Now",
+      "destination": "/product/world-of-warcraft-mount-living-heartsbane-cauldron",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt5d0c96baf732ccd9/6ad690efbdf06ebd3f6e7da5/WoW_DrustvarCauldronMount_BnetShop_HeaderDesktop_1600x500.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt1a2aae48fe1d04de": {
+      "key": "blt1a2aae48fe1d04de",
+      "kind": "banner",
+      "cmsId": "blt1a2aae48fe1d04de",
+      "slug": "world-of-warcraft-grimtide-decor-pack",
+      "itemId": null,
+      "title": "Grimtide Decor Pack",
+      "productPageName": "Grimtide Decor Pack",
+      "headline": "",
+      "subHeadline": "Fill your home with relics hauled from far beneath the ocean waves. ",
+      "buttonText": "Buy Now",
+      "destination": "/product/world-of-warcraft-grimtide-decor-pack",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt96014363129d3a23/6ad68f1a96e0996116df4313/WoW_GrimtideDecor_BnetShop_HeaderDesktop_1600x500.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145432": {
+      "key": "p:2145432",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-haunted-grimtide-estate",
+      "title": "Haunted Grimtide Estate",
+      "description": "Housing | Bundle (3 items)",
+      "categoryId": null,
+      "itemId": 2145432,
+      "productIds": [
+        2145939,
+        2145434,
+        2145394
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2145432/haunted-grimtide-estate",
+      "image": "//catalog.blzstatic.com//6d/bdbc930ab64cee341a1e3d140c14b524-WoW_GrimtideHouse_BnetShop_ProductAssetGallery_1920x1080.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "2,500 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 2500,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145435": {
+      "key": "p:2145435",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-grimtide-decor-pack",
+      "title": "Grimtide Decor Pack",
+      "description": "Housing | Bundle (59 items)",
+      "categoryId": null,
+      "itemId": 2145435,
+      "productIds": [
+        2145369,
+        2145369,
+        2145370,
+        2145370,
+        2145366,
+        2145368,
+        2145369,
+        2145369,
+        2145372,
+        2145372,
+        2145370,
+        2145370,
+        2145371,
+        2145371,
+        2142757,
+        2142757,
+        2142758,
+        2142758,
+        2139977,
+        2142760,
+        2142760,
+        2142762,
+        2142762,
+        2142758,
+        2142758,
+        2142759,
+        2142759,
+        2142765,
+        2142765,
+        2142765,
+        2142766,
+        2142763,
+        2142763,
+        2142764,
+        2142765,
+        2145336,
+        2145336,
+        2145336,
+        2145337,
+        2142766,
+        2142766,
+        2142766,
+        2145336,
+        2145364,
+        2145365,
+        2145365,
+        2145365,
+        2145337,
+        2145364,
+        2145364,
+        2145364,
+        2145367,
+        2145366,
+        2145366,
+        2145366,
+        2145365,
+        2145367,
+        2145367,
+        2145367
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2145435/grimtide-decor-pack",
+      "image": "//catalog.blzstatic.com//3a/751eb72a1507b19b5acce5d4ae1a334e-WoW_GrimtideDecor_BnetShop_ProductAssetGallery_1920x1080.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,000 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 1000,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2139977": {
+      "key": "p:2139977",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-grimtide-grand-table",
+      "title": "Grimtide Grand Table",
+      "description": "Decor",
+      "categoryId": null,
+      "itemId": 2139977,
+      "productIds": [
+        2139977
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2139977/grimtide-grand-table",
+      "image": "//catalog.blzstatic.com//fda/4386f88fb3af2f61cda6fcd855951c0e-WoW_GrimtideDecor_BnetShop_ProductAssetGallery_1920x1080-GrandTable-Standalone.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "200 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 200,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2142757": {
+      "key": "p:2142757",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-grimtide-side-table",
+      "title": "Grimtide Side Table",
+      "description": "Decor",
+      "categoryId": null,
+      "itemId": 2142757,
+      "productIds": [
+        2142757
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2142757/grimtide-side-table",
+      "image": "//catalog.blzstatic.com//16/fe67288294db697e66320b4f7b895f2f-WoW_GrimtideDecor_BnetShop_ProductAssetGallery_1920x1080-SideTable-Standalone.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "100 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 100,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2142758": {
+      "key": "p:2142758",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-grimtide-dining-chair",
+      "title": "Grimtide Dining Chair",
+      "description": "Decor",
+      "categoryId": null,
+      "itemId": 2142758,
+      "productIds": [
+        2142758
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2142758/grimtide-dining-chair",
+      "image": "//catalog.blzstatic.com//73/b6d9a388c4d6535acd24e31fc507f268-WoW_GrimtideDecor_BnetShop_ProductAssetGallery_1920x1080-DiningChair-Standalone.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "50 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 50,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2142759": {
+      "key": "p:2142759",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-grimtide-couch",
+      "title": "Grimtide Couch",
+      "description": "Decor",
+      "categoryId": null,
+      "itemId": 2142759,
+      "productIds": [
+        2142759
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2142759/grimtide-couch",
+      "image": "//catalog.blzstatic.com//fe5/77b58b8559cc37e09eefae6514a62b20-WoW_GrimtideDecor_BnetShop_ProductAssetGallery_1920x1080-Couch-Standalone.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "200 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 200,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2142760": {
+      "key": "p:2142760",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-small-grimtide-rug",
+      "title": "Small Grimtide Rug",
+      "description": "Decor",
+      "categoryId": null,
+      "itemId": 2142760,
+      "productIds": [
+        2142760
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2142760/small-grimtide-rug",
+      "image": "//catalog.blzstatic.com//f93/616ebb97f78ebb1cb7b8de0521d93e31-WoW_GrimtideDecor_BnetShop_ProductAssetGallery_1920x1080-SmallRug-Standalone.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "100 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 100,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2142762": {
+      "key": "p:2142762",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-grimtide-rug",
+      "title": "Grimtide Rug",
+      "description": "Decor",
+      "categoryId": null,
+      "itemId": 2142762,
+      "productIds": [
+        2142762
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2142762/grimtide-rug",
+      "image": "//catalog.blzstatic.com//55/6ea27230cd91ff17502bf5ea90356601-WoW_GrimtideDecor_BnetShop_ProductAssetGallery_1920x1080-Rug-Standalone.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "100 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 100,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2142763": {
+      "key": "p:2142763",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-grimtide-coffee-table",
+      "title": "Grimtide Coffee Table",
+      "description": "Decor",
+      "categoryId": null,
+      "itemId": 2142763,
+      "productIds": [
+        2142763
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2142763/grimtide-coffee-table",
+      "image": "//catalog.blzstatic.com//11/30950c0f4eb73471936912afca1cccec-WoW_GrimtideDecor_BnetShop_ProductAssetGallery_1920x1080-CoffeeTable-Standalone.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "100 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 100,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2142764": {
+      "key": "p:2142764",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-grimtide-grand-piano",
+      "title": "Grimtide Grand Piano",
+      "description": "Decor",
+      "categoryId": null,
+      "itemId": 2142764,
+      "productIds": [
+        2142764
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2142764/grimtide-grand-piano",
+      "image": "//catalog.blzstatic.com//39/786a46ec5a5c8eb021bcc6b3a60dc479-WoW_GrimtideDecor_BnetShop_ProductAssetGallery_1920x1080-GrandPiano-Standalone.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "300 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 300,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2142765": {
+      "key": "p:2142765",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-grimtide-tentacle",
+      "title": "Grimtide Tentacle",
+      "description": "Decor",
+      "categoryId": null,
+      "itemId": 2142765,
+      "productIds": [
+        2142765
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2142765/grimtide-tentacle",
+      "image": "//catalog.blzstatic.com//8/025c0029be308d287a7af8aef6e10b2d-WoW_GrimtideDecor_BnetShop_ProductAssetGallery_1920x1080-Tentacle-Standalone.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "50 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 50,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2142766": {
+      "key": "p:2142766",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-daytime-grimtide-window",
+      "title": "Daytime Grimtide Window",
+      "description": "Decor",
+      "categoryId": null,
+      "itemId": 2142766,
+      "productIds": [
+        2142766
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2142766/daytime-grimtide-window",
+      "image": "//catalog.blzstatic.com//68/7386194b3aaaef105733e39ec3142a9f-WoW_GrimtideDecor_BnetShop_ProductAssetGallery_1920x1080-DaytimeGrimtideWindow-Standalone.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "50 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 50,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145336": {
+      "key": "p:2145336",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-nighttime-grimtide-window",
+      "title": "Nighttime Grimtide Window",
+      "description": "Decor",
+      "categoryId": null,
+      "itemId": 2145336,
+      "productIds": [
+        2145336
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2145336/nighttime-grimtide-window",
+      "image": "//catalog.blzstatic.com//59/3b854a8ccf80b4ff08f99481b4a433d4-WoW_GrimtideDecor_BnetShop_ProductAssetGallery_1920x1080-NighttimeGrimtideWindow-Standalone.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "50 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 50,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145337": {
+      "key": "p:2145337",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-grimtide-display-anchor",
+      "title": "Grimtide Display Anchor",
+      "description": "Decor",
+      "categoryId": null,
+      "itemId": 2145337,
+      "productIds": [
+        2145337
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2145337/grimtide-display-anchor",
+      "image": "//catalog.blzstatic.com//6b/4db1315adcfad404eecc102bb24e2342-WoW_GrimtideDecor_BnetShop_ProductAssetGallery_1920x1080-DisplayAnchor-Standalone.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "50 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 50,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145364": {
+      "key": "p:2145364",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-grimtide-enchanted-candles",
+      "title": "Grimtide Enchanted Candles",
+      "description": "Decor",
+      "categoryId": null,
+      "itemId": 2145364,
+      "productIds": [
+        2145364
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2145364/grimtide-enchanted-candles",
+      "image": "//catalog.blzstatic.com//3c/dd34a8990362db4892d367b4ef868239-WoW_GrimtideDecor_BnetShop_ProductAssetGallery_1920x1080-EnchantedCandles-Standalone.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "30 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 30,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145365": {
+      "key": "p:2145365",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-grimtide-tall-enchanted-candle",
+      "title": "Grimtide Tall Enchanted Candle",
+      "description": "Decor",
+      "categoryId": null,
+      "itemId": 2145365,
+      "productIds": [
+        2145365
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2145365/grimtide-tall-enchanted-candle",
+      "image": "//catalog.blzstatic.com//fcb/25932226872d327127d0bb27ee3b81e7-WoW_GrimtideDecor_BnetShop_ProductAssetGallery_1920x1080-TallEnchantedCandles-Standalone.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "10 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 10,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145367": {
+      "key": "p:2145367",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-grimtide-enchanted-candle",
+      "title": "Grimtide Enchanted Candle",
+      "description": "Decor",
+      "categoryId": null,
+      "itemId": 2145367,
+      "productIds": [
+        2145367
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2145367/grimtide-enchanted-candle",
+      "image": "//catalog.blzstatic.com//47/0c53f3783e7abc2ac479a59cacd53347-WoW_GrimtideDecor_BnetShop_ProductAssetGallery_1920x1080-EnchantedCandle-Standalone.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "10 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 10,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145366": {
+      "key": "p:2145366",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-grimtide-small-enchanted-candle",
+      "title": "Grimtide Small Enchanted Candle",
+      "description": "Decor",
+      "categoryId": null,
+      "itemId": 2145366,
+      "productIds": [
+        2145366
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2145366/grimtide-small-enchanted-candle",
+      "image": "//catalog.blzstatic.com//fde/1f85af189717325975610defb43da6ff-WoW_GrimtideDecor_BnetShop_ProductAssetGallery_1920x1080-SmallEnchantedCandles-Standalone.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "10 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 10,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145368": {
+      "key": "p:2145368",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-grimtide-chandelier",
+      "title": "Grimtide Chandelier",
+      "description": "Decor",
+      "categoryId": null,
+      "itemId": 2145368,
+      "productIds": [
+        2145368
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2145368/grimtide-chandelier",
+      "image": "//catalog.blzstatic.com//fab/866a00b56ad12e57abbf56595baa147f-WoW_GrimtideDecor_BnetShop_ProductAssetGallery_1920x1080-Chandelier-Standalone.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "300 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 300,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145369": {
+      "key": "p:2145369",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-grimtide-sconce",
+      "title": "Grimtide Sconce",
+      "description": "Decor",
+      "categoryId": null,
+      "itemId": 2145369,
+      "productIds": [
+        2145369
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2145369/grimtide-sconce",
+      "image": "//catalog.blzstatic.com//2c/005c5941328b22779ee8d14607259796-WoW_GrimtideDecor_BnetShop_ProductAssetGallery_1920x1080-Sconce-Standalone.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "50 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 50,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145370": {
+      "key": "p:2145370",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-grimtide-candelabra",
+      "title": "Grimtide Candelabra",
+      "description": "Decor",
+      "categoryId": null,
+      "itemId": 2145370,
+      "productIds": [
+        2145370
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2145370/grimtide-candelabra",
+      "image": "//catalog.blzstatic.com//faf/ba7eeea0d2d408e82295f4250971e765-WoW_GrimtideDecor_BnetShop_ProductAssetGallery_1920x1080-Candelabra-Standalone.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "50 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 50,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145371": {
+      "key": "p:2145371",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-grimtide-bookcase",
+      "title": "Grimtide Bookcase",
+      "description": "Decor",
+      "categoryId": null,
+      "itemId": 2145371,
+      "productIds": [
+        2145371
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2145371/grimtide-bookcase",
+      "image": "//catalog.blzstatic.com//f95/e8e7e2e1b9caf6feef82e99e0acd8c76-WoW_GrimtideDecor_BnetShop_ProductAssetGallery_1920x1080-Bookcase-Standalone.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "200 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 200,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:03:27Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145372": {
+      "key": "p:2145372",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "world-of-warcraft-grimtide-floor-hatch",
+      "title": "Grimtide Floor Hatch",
+      "description": "Decor",
+      "categoryId": null,
+      "itemId": 2145372,
+      "productIds": [
+        2145372
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/world-of-warcraft/items/2145372/grimtide-floor-hatch",
+      "image": "//catalog.blzstatic.com//6/404b89714baec24a90639397ed7495c9-WoW_GrimtideDecor_BnetShop_ProductAssetGallery_1920x1080-FloorHatch-Standalone.png",
+      "sections": [
+        "Catalog"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "50 Hearthsteel",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XVV",
+        "raw": 50,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-10-27T17:03:27Z",
       "status": "listed",
       "misses": 0
     }
