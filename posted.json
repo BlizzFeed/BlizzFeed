@@ -1,1 +1,66 @@
-[]
+[
+  {
+    "type": "banner",
+    "family": "world-of-warcraft",
+    "key": "blte4f7626ec4ece1ce",
+    "slug": "world-of-warcraft-forever",
+    "seen": "2026-10-28T00:24:26Z",
+    "changes": {
+      "eu": {
+        "type": "banner",
+        "key": "blte4f7626ec4ece1ce",
+        "kind": "banner",
+        "slug": "world-of-warcraft-forever",
+        "title": "World of Warcraft®: Forever ",
+        "destination": "/product/world-of-warcraft-forever",
+        "seen": "2026-10-28T00:24:26Z",
+        "button": "Pre-purchase Now",
+        "product": "World of Warcraft®: Forever",
+        "what": "changed",
+        "replaced": "blt05242be8b86fb740",
+        "changed": [
+          "subHeadline",
+          "image"
+        ],
+        "from": {
+          "subHeadline": "Claim your name starting October 27",
+          "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt5cd0845b9eb13d18/6ad26fc38df0bd12b87512bd/WoW_Camelot_EarlyNameReservation_BnetShop_HeaderDesktop_1600x500.png"
+        },
+        "to": {
+          "subHeadline": "Reserve your name and customize your character ahead of November 4 launch",
+          "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt906a02b2ac465a33/6ada4ba1eca6723a8d2b186e/WoW_Camelot_Skyborne_LaunchSupportAssets_BnetShop_HeaderDesktop_1600x500.png"
+        },
+        "commit": "ab60f61178d8e9cddb14ae9ea06e2340ee8f9443"
+      },
+      "us": {
+        "type": "banner",
+        "key": "blte4f7626ec4ece1ce",
+        "kind": "banner",
+        "slug": "world-of-warcraft-forever",
+        "title": "World of Warcraft®: Forever ",
+        "destination": "/product/world-of-warcraft-forever",
+        "seen": "2026-10-28T00:24:26Z",
+        "button": "Pre-purchase Now",
+        "product": "World of Warcraft®: Forever",
+        "what": "changed",
+        "replaced": "blt05242be8b86fb740",
+        "changed": [
+          "subHeadline",
+          "image"
+        ],
+        "from": {
+          "subHeadline": "Claim your name starting October 27",
+          "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt5cd0845b9eb13d18/6ad26fc38df0bd12b87512bd/WoW_Camelot_EarlyNameReservation_BnetShop_HeaderDesktop_1600x500.png"
+        },
+        "to": {
+          "subHeadline": "Reserve your name and customize your character ahead of November 4 launch",
+          "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt906a02b2ac465a33/6ada4ba1eca6723a8d2b186e/WoW_Camelot_Skyborne_LaunchSupportAssets_BnetShop_HeaderDesktop_1600x500.png"
+        },
+        "commit": "f47dad5cf4e1c1735fcfb5dc3bc62ebbabf2737e"
+      }
+    },
+    "at": "2026-10-28T00:25:02Z",
+    "digested": [],
+    "paired": true
+  }
+]
