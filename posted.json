@@ -93,9 +93,9 @@
         "key": "bltd902fe872eaed3e1",
         "kind": "item",
         "slug": "heroes-of-the-storm-xalatath-bundle",
-        "title": "Dark Twilight Xal’atath Bundle ",
-        "destination": "/product/heroes-of-the-storm-xalatath-bundle?p=2121975",
-        "seen": "2026-10-28T17:20:31Z",
+        "title": "Xal'atath",
+        "destination": "/product/heroes-of-the-storm-xalatath-bundle",
+        "seen": "2026-10-28T17:30:29Z",
         "price": {
           "fullAmount": "$7.99",
           "discountAmount": null,
@@ -109,12 +109,12 @@
           "title"
         ],
         "from": {
-          "title": "Xal'atath"
-        },
-        "to": {
           "title": "Dark Twilight Xal’atath Bundle "
         },
-        "commit": "9b018649ccda734ef56eb0073aa73c72a5449913"
+        "to": {
+          "title": "Xal'atath"
+        },
+        "commit": "c94685e5c6c6fce94131672b39e14ab269a4bfa1"
       }
     },
     "at": "2026-10-28T17:16:08Z",
@@ -212,6 +212,39 @@
               "title": "Dark Twilight Xal’atath Bundle "
             },
             "commit": "9b018649ccda734ef56eb0073aa73c72a5449913"
+          }
+        }
+      },
+      {
+        "seen": "2026-10-28T17:30:29Z",
+        "changes": {
+          "us": {
+            "type": "details",
+            "key": "bltd902fe872eaed3e1",
+            "kind": "item",
+            "slug": "heroes-of-the-storm-xalatath-bundle",
+            "title": "Xal'atath",
+            "destination": "/product/heroes-of-the-storm-xalatath-bundle",
+            "seen": "2026-10-28T17:30:29Z",
+            "price": {
+              "fullAmount": "$7.99",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "USD",
+              "raw": 7.99,
+              "labelFormat": "From {0}",
+              "discountId": null
+            },
+            "changed": [
+              "title"
+            ],
+            "from": {
+              "title": "Dark Twilight Xal’atath Bundle "
+            },
+            "to": {
+              "title": "Xal'atath"
+            },
+            "commit": "c94685e5c6c6fce94131672b39e14ab269a4bfa1"
           }
         }
       }
