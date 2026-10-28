@@ -1,4 +1,4 @@
-# Dark Twilight Xal’atath Bundle 
+# Xal'atath
 
 - Key: bltd902fe872eaed3e1
 - Status: listed
