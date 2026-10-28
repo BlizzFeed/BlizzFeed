@@ -11,9 +11,9 @@
         "key": "bltd902fe872eaed3e1",
         "kind": "item",
         "slug": "heroes-of-the-storm-xalatath-bundle",
-        "title": "Dark Twilight Xal’atath Bundle ",
-        "destination": "/product/heroes-of-the-storm-xalatath-bundle?p=2121975",
-        "seen": "2026-10-28T17:45:31Z",
+        "title": "Xal'atath",
+        "destination": "/product/heroes-of-the-storm-xalatath-bundle",
+        "seen": "2026-10-28T17:50:27Z",
         "price": {
           "fullAmount": "€7.99",
           "discountAmount": null,
@@ -27,15 +27,84 @@
           "title"
         ],
         "from": {
-          "title": "Xal'atath"
-        },
-        "to": {
           "title": "Dark Twilight Xal’atath Bundle "
         },
-        "commit": "0fdc8038ad556f3005e6f00692dc35082574a5be"
+        "to": {
+          "title": "Xal'atath"
+        },
+        "commit": "aee3d0a8400d2d570baed72cee32840e6833a020"
       }
     },
     "at": "2026-10-28T17:46:10Z",
-    "digested": []
+    "digested": [],
+    "lines": [
+      {
+        "seen": "2026-10-28T17:45:31Z",
+        "changes": {
+          "eu": {
+            "type": "details",
+            "key": "bltd902fe872eaed3e1",
+            "kind": "item",
+            "slug": "heroes-of-the-storm-xalatath-bundle",
+            "title": "Dark Twilight Xal’atath Bundle ",
+            "destination": "/product/heroes-of-the-storm-xalatath-bundle?p=2121975",
+            "seen": "2026-10-28T17:45:31Z",
+            "price": {
+              "fullAmount": "€7.99",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "EUR",
+              "raw": 7.99,
+              "labelFormat": "From {0}",
+              "discountId": null
+            },
+            "changed": [
+              "title"
+            ],
+            "from": {
+              "title": "Xal'atath"
+            },
+            "to": {
+              "title": "Dark Twilight Xal’atath Bundle "
+            },
+            "commit": "0fdc8038ad556f3005e6f00692dc35082574a5be"
+          }
+        }
+      },
+      {
+        "seen": "2026-10-28T17:50:27Z",
+        "changes": {
+          "eu": {
+            "type": "details",
+            "key": "bltd902fe872eaed3e1",
+            "kind": "item",
+            "slug": "heroes-of-the-storm-xalatath-bundle",
+            "title": "Xal'atath",
+            "destination": "/product/heroes-of-the-storm-xalatath-bundle",
+            "seen": "2026-10-28T17:50:27Z",
+            "price": {
+              "fullAmount": "€7.99",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "EUR",
+              "raw": 7.99,
+              "labelFormat": "From {0}",
+              "discountId": null
+            },
+            "changed": [
+              "title"
+            ],
+            "from": {
+              "title": "Dark Twilight Xal’atath Bundle "
+            },
+            "to": {
+              "title": "Xal'atath"
+            },
+            "commit": "aee3d0a8400d2d570baed72cee32840e6833a020"
+          }
+        }
+      }
+    ],
+    "paired": true
   }
 ]
