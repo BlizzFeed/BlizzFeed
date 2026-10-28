@@ -152,6 +152,21 @@ test('a new banner for a missing banner\'s product replaces it as one change', a
 	assert.deepEqual(later, []); // the old one is not reported again
 });
 
+test('a replaced banner showing again in a stale copy stays gone unless every extra copy shows it', async () => {
+	const state = await baseline(item('a'), banner('old', { subHeadline: '6 months' }));
+	const swapped = banner('new', { subHeadline: '12 months' });
+	const [after] = await run(state, page(item('a'), swapped, ...STABLE));
+	const stale = page(item('a'), banner('old', { subHeadline: '6 months' }), ...STABLE);
+	const current = page(item('a'), swapped, ...STABLE);
+	let [next, changes] = await run(after, stale, SOON, undefined, extra(current, stale, stale));
+	assert.deepEqual(changes, []);
+	assert.deepEqual([next.items.old.status, next.items.new.status, next.items.new.misses], ['gone', 'listed', 0]);
+	[, changes] = await run(after, stale, SOON);
+	assert.deepEqual(changes, []); // no copies to ask
+	[, changes] = await run(after, stale, SOON, undefined, extra(stale, stale, stale));
+	assert.deepEqual(changes.map((c) => [c.key, c.what]), [['old', 'back']]); // Blizzard really put it back
+});
+
 test('a failed check is retried next sweep instead of deciding', async () => {
 	const broken = async () => {
 		throw new Error('network');

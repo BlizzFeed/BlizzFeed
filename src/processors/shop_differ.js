@@ -58,6 +58,25 @@ function replacedBanner(items, fetched, item) {
 	return Object.values(items).find((i) => i.kind === 'banner' && i.status !== 'gone' && !(i.key in fetched) && i.destination === item.destination) ?? null;
 }
 
+/** A gone banner showing again in place of the saved banner that replaced it is believed only when every extra copy agrees.
+ * Otherwise it is a stale copy: the old banner stays gone and its successor counts as shown. */
+async function staleBanners(items, judged, pool) {
+	for (const [key, item] of Object.entries(judged)) {
+		if (item.kind !== 'banner' || items[key]?.status !== 'gone' || !item.destination) {
+			continue;
+		}
+		const successor = Object.values(items).find((i) => i.kind === 'banner' && i.status !== 'gone' && !(i.key in judged) && i.destination === item.destination);
+		if (!successor) {
+			continue;
+		}
+		const pages = await pool(CHECK_COPIES);
+		if (!pages?.every((page) => key in page && !(successor.key in page))) {
+			delete judged[key];
+			judged[successor.key] = successor;
+		}
+	}
+}
+
 /** [type, extra] for each way the fetched item differs from the saved one. */
 function compare(prev, item) {
 	if (item.kind === 'banner') {
@@ -283,7 +302,9 @@ export async function sweep(old, fetched, now, missesNeeded, confirm, copies) {
 		}
 	}
 
-	const [campaigns, judged] = await settle(old, items, fetched, now, pooler(copies));
+	const pool = pooler(copies);
+	const [campaigns, judged] = await settle(old, items, fetched, now, pool);
+	await staleBanners(items, judged, pool);
 	const changes = [];
 	const log = (type, item, extra = {}) => {
 		const record = { type, key: item.key, kind: item.kind, slug: item.slug, title: item.title, destination: item.destination, seen: now };
@@ -321,7 +342,7 @@ export async function sweep(old, fetched, now, missesNeeded, confirm, copies) {
 	}
 
 	for (const [key, item] of Object.entries(items)) {
-		if (key in fetched || item.status === 'gone') {
+		if (key in judged || item.status === 'gone') {
 			continue;
 		}
 		if (item.status !== 'unlisted') { // an unlisted item is asked about again every sweep
