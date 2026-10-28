@@ -1639,9 +1639,8 @@
         "Banner"
       ],
       "first_seen": "2026-10-23T17:12:34Z",
-      "status": "gone",
-      "misses": 3,
-      "gone_since": "2026-10-28T00:54:26Z"
+      "status": "listed",
+      "misses": 0
     },
     "blte4f7626ec4ece1ce": {
       "key": "blte4f7626ec4ece1ce",
@@ -1660,8 +1659,8 @@
         "Banner"
       ],
       "first_seen": "2026-10-28T00:24:26Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     }
   },
   "suspect": false,
