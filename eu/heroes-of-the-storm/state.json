@@ -78,16 +78,15 @@
       "kind": "item",
       "cmsId": "bltd902fe872eaed3e1",
       "slug": "heroes-of-the-storm-xalatath-bundle",
-      "title": "Xal'atath",
+      "title": "Dark Twilight Xal’atath Bundle ",
       "description": "In-Game Content",
       "categoryId": "in-game-content",
       "itemId": null,
       "productIds": [
-        2059598,
         2121975
       ],
       "subscriptionIds": [],
-      "destination": "/product/heroes-of-the-storm-xalatath-bundle",
+      "destination": "/product/heroes-of-the-storm-xalatath-bundle?p=2121975",
       "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt74f65de276133d39/6a8cd9333ad39275946f8d0a/PROJECT_SNOW_BNET_1920X1080_PHX_FRANCHISE_CARD.png",
       "sections": [
         "In-Game Content"
