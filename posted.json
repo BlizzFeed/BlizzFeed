@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "type": "banner",
+    "family": "world-of-warcraft-classic",
+    "key": "blt05242be8b86fb740",
+    "slug": "world-of-warcraft-forever",
+    "seen": "2026-10-28T01:49:27Z",
+    "changes": {
+      "eu": {
+        "type": "banner",
+        "key": "blt05242be8b86fb740",
+        "kind": "banner",
+        "slug": "world-of-warcraft-forever",
+        "title": "World of Warcraft®: Forever ",
+        "destination": "/product/world-of-warcraft-forever",
+        "seen": "2026-10-28T01:49:27Z",
+        "button": "Pre-purchase Now",
+        "product": "World of Warcraft®: Forever",
+        "what": "back",
+        "commit": "32f9e47319c6315ba4d9c1febb60544792450ea4"
+      }
+    },
+    "at": "2026-10-28T01:50:03Z",
+    "digested": []
+  }
+]
