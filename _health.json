@@ -1,7 +1,23 @@
 {
+  "eu/diablo-ii": {
+    "failures": 1,
+    "since": "2026-10-28T22:45:23Z"
+  },
+  "eu/diablo-iii": {
+    "failures": 1,
+    "since": "2026-10-28T22:45:44Z"
+  },
+  "eu/diablo-immortal": {
+    "failures": 1,
+    "since": "2026-10-28T22:45:52Z"
+  },
   "eu/starcraft-ii": {
     "failures": 3,
     "since": "2026-10-14T19:02:45Z"
+  },
+  "eu/warcraft-rumble": {
+    "failures": 1,
+    "since": "2026-10-28T22:45:02Z"
   },
   "us/starcraft-ii": {
     "failures": 3,
