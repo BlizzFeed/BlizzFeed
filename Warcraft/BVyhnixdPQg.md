@@ -2,6 +2,10 @@
 
 Join Host @countdowntoclassic, Senior Game Designer Josh “Aggrend” Greenfield, Lead Software Engineer Ana Resendez, Principal Software Engineer Frank Williams, and special guest @Shobek for a discussion going behind the tech that powers WoW: Forever.
 
+Listen on your next adventure!
+Spotify: https://podcasts.apple.com/us/podcast/ep-6-all-about-tech/id6816315985?i=1000798741551
+Apple Podcasts: https://podcasts.apple.com/us/podcast/ep-6-all-about-tech/id6816315985?i=1000798741551
+
 Learn more at: https://worldofwarcraft.blizzard.com/forever
 
 ► Latest WoW news: http://worldofwarcraft.com/news 
