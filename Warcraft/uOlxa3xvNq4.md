@@ -12,7 +12,7 @@ Learn more at: https://worldofwarcraft.blizzard.com/forever
 ► Follow Warcraft on Instagram: https://instagram.com/warcraft  
 ► Like Warcraft on Facebook: https://facebook.com/warcraft
 
-00:11 Intros
+00:00 Intros
 2:52 Addressing Datamining
 7:28 Beta Insights
 14:58 Secrets to Still Discover
