@@ -16,10 +16,22 @@
         "seen": "2026-10-29T15:04:30Z",
         "price": null,
         "commit": "837481799c559b0c8391134a45ea9bdcf6c5d1de"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2137984",
+        "kind": "item",
+        "slug": "diablo-immortal-champions-bounty-telluric-pearl",
+        "title": "Champion's Bounty - Telluric Pearl",
+        "destination": "/family/diablo-immortal/items/2137984/champions-bounty-telluric-pearl",
+        "seen": "2026-10-29T15:29:23Z",
+        "price": null,
+        "commit": "d9b522a108b733366877d3efafb30f6d08faefa5"
       }
     },
     "at": "2026-10-29T15:05:09Z",
-    "digested": []
+    "digested": [],
+    "paired": true
   },
   {
     "type": "gone",
