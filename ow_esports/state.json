@@ -316,9 +316,9 @@
       "kind": "stream",
       "premiere": false,
       "duration": 0,
-      "live": "upcoming",
+      "live": "live",
       "scheduled": "2026-10-30T16:30:00Z",
-      "started": null,
+      "started": "2026-10-30T16:36:49Z",
       "ended": null,
       "thumbnail": "https://i.ytimg.com/vi/rwBECBHt4Is/maxresdefault.jpg?v=6ae352fe",
       "first_seen": "2026-10-29T14:07:27Z"
