@@ -1,1 +1,14 @@
-{}
+{
+  "diablo-2-resurrected-news": {
+    "failures": 1,
+    "since": "2026-10-31T06:26:32Z"
+  },
+  "wow-news": {
+    "failures": 1,
+    "since": "2026-10-31T06:26:32Z"
+  },
+  "wow-news-us": {
+    "failures": 1,
+    "since": "2026-10-31T06:26:32Z"
+  }
+}
