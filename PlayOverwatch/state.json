@@ -418,6 +418,20 @@
       "ended": null,
       "thumbnail": "https://i.ytimg.com/vi/Af3CimAMomk/maxresdefault.jpg",
       "first_seen": "2026-10-30T21:32:33Z"
+    },
+    "SA29AQwd0SA": {
+      "title": "Happy Halloween 👻",
+      "description": "",
+      "published": "2026-10-31T17:00:35Z",
+      "kind": "short",
+      "premiere": false,
+      "duration": 35,
+      "live": "none",
+      "scheduled": null,
+      "started": null,
+      "ended": null,
+      "thumbnail": "https://i.ytimg.com/vi/SA29AQwd0SA/maxresdefault.jpg",
+      "first_seen": "2026-10-31T17:02:36Z"
     }
   }
 }
