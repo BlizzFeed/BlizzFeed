@@ -1,4 +1,4 @@
-# WoW: Forever Journey EP.2 | Denmark (ft. Guzu, Zibartas and GingiTV)
+# Guzu, Zibartas & GingiTV's Quest Through Denmark | WoW: Forever Journey EP.2
 
 Sandstorms are rising over Råbjerg Mile... Episode 2 of WoW: Forever Journey is here ♾️
 
