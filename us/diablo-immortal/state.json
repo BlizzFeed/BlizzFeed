@@ -410,8 +410,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2136852": {
       "key": "p:2136852",
@@ -443,8 +443,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2136856": {
       "key": "p:2136856",
@@ -476,8 +476,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2136855": {
       "key": "p:2136855",
@@ -509,8 +509,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2136854": {
       "key": "p:2136854",
@@ -542,8 +542,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2136842": {
       "key": "p:2136842",
@@ -674,8 +674,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2136850": {
       "key": "p:2136850",
@@ -707,8 +707,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2136849": {
       "key": "p:2136849",
@@ -740,8 +740,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2136848": {
       "key": "p:2136848",
@@ -773,8 +773,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2136859": {
       "key": "p:2136859",
@@ -1053,7 +1053,139 @@
       "first_seen": "2026-10-29T15:04:30Z",
       "status": "listed",
       "misses": 0
+    },
+    "p:2137988": {
+      "key": "p:2137988",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "diablo-immortal-wayfarers-arsenal",
+      "title": "Wayfarer's Arsenal",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2137988,
+      "productIds": [
+        2137988
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/diablo-immortal/items/2137988/wayfarers-arsenal",
+      "image": "//catalog.blzstatic.com//5/4bebf9a6ae80bfcc1b67b956c88b62ae-WayfarersArsenal_BundleUpdate_1920x10801.png",
+      "sections": [
+        "Wayfarer's Catalogue"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$199.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 199.99,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-01T16:10:24Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2137987": {
+      "key": "p:2137987",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "diablo-immortal-wayfarers-vault",
+      "title": "Wayfarer's Vault",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2137987,
+      "productIds": [
+        2137987
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/diablo-immortal/items/2137987/wayfarers-vault",
+      "image": "//catalog.blzstatic.com//f8e/2b4c4bbe2899a1d8fe3b986371d03a2c-WayfarersVault_BundleUpdate_1920x10801.png",
+      "sections": [
+        "Wayfarer's Catalogue"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$99.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 99.99,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-01T16:10:24Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2137986": {
+      "key": "p:2137986",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "diablo-immortal-wayfarers-chest",
+      "title": "Wayfarer's Chest",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2137986,
+      "productIds": [
+        2137986
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/diablo-immortal/items/2137986/wayfarers-chest",
+      "image": "//catalog.blzstatic.com//7b/2363895ce2bb2ba8cb9569913b4be9e2-DIA_DI_NA_EmergencyBundle_AllIcons_1920x1080_enus_EE011.png",
+      "sections": [
+        "Wayfarer's Catalogue"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$19.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 19.99,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-01T16:10:24Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2137985": {
+      "key": "p:2137985",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "diablo-immortal-wayfarers-crate",
+      "title": "Wayfarer's Crate",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2137985,
+      "productIds": [
+        2137985
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/diablo-immortal/items/2137985/wayfarers-crate",
+      "image": "//catalog.blzstatic.com//4e/645c74261208c2c686fff17e5fc9f0ae-WayfarersCrate_BundleUpdate_1920x10801.png",
+      "sections": [
+        "Wayfarer's Catalogue"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$9.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 9.99,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-01T16:10:24Z",
+      "status": "listed",
+      "misses": 0
     }
   },
-  "suspect": true
+  "suspect": false
 }
