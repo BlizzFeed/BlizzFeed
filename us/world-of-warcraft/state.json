@@ -208,7 +208,7 @@
         "discountAmount": null,
         "discountPercentage": null,
         "currency": "USD",
-        "raw": 24.99,
+        "raw": 49.99,
         "labelFormat": "From {0}",
         "discountId": null
       },
@@ -5204,7 +5204,7 @@
       ],
       "first_seen": "2026-10-21T18:20:24Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "blt05242be8b86fb740": {
       "key": "blt05242be8b86fb740",
