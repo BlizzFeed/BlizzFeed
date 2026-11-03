@@ -1634,7 +1634,7 @@
       ],
       "first_seen": "2026-10-21T18:15:24Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "blt05242be8b86fb740": {
       "key": "blt05242be8b86fb740",
@@ -1678,15 +1678,5 @@
       "misses": 0
     }
   },
-  "suspect": false,
-  "campaigns": {
-    "02ff17c4-6bf0-470a-9640-7ff45b109e60": {
-      "status": "active",
-      "members": [
-        "blta2d8bd8a05c7c620",
-        "blt293f3b01dca48c3a"
-      ],
-      "started": "2026-10-21T23:27:23Z"
-    }
-  }
+  "suspect": false
 }
