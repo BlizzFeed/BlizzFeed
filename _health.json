@@ -4,11 +4,11 @@
     "since": "2026-11-03T13:26:43Z"
   },
   "wow-news": {
-    "failures": 1,
+    "failures": 2,
     "since": "2026-11-03T20:26:37Z"
   },
   "wow-news-us": {
-    "failures": 1,
+    "failures": 2,
     "since": "2026-11-03T20:26:37Z"
   }
 }
