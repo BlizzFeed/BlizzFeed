@@ -196,5 +196,104 @@
       "[\"feed\",\"overwatch-news\"]",
       "[\"shop\",null]"
     ]
+  },
+  {
+    "type": "back",
+    "family": "overwatch",
+    "key": "p:2131869",
+    "slug": "overwatch-dokiwatch-20-mega-bundle",
+    "seen": "2026-11-03T20:08:31Z",
+    "changes": {
+      "eu": {
+        "type": "back",
+        "key": "p:2131869",
+        "kind": "item",
+        "slug": "overwatch-dokiwatch-20-mega-bundle",
+        "title": "Dokiwatch 2.0 Mega Bundle",
+        "destination": "/family/overwatch/items/2131869/dokiwatch-20-mega-bundle",
+        "seen": "2026-11-03T20:08:31Z",
+        "price": {
+          "fullAmount": "15,800 Coins",
+          "discountAmount": "7,600 Coins",
+          "discountPercentage": 51,
+          "currency": "XWC",
+          "raw": 7600,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3c0d12608f155e40175ccdb0ead472453ea3d05c"
+      }
+    },
+    "at": "2026-11-03T20:09:09Z",
+    "digested": [
+      "[\"feed\",\"overwatch-news\"]",
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "back",
+    "family": "overwatch",
+    "key": "p:2131873",
+    "slug": "overwatch-malus-ramattra-bundle",
+    "seen": "2026-11-03T20:08:31Z",
+    "changes": {
+      "eu": {
+        "type": "back",
+        "key": "p:2131873",
+        "kind": "item",
+        "slug": "overwatch-malus-ramattra-bundle",
+        "title": "Malus Ramattra Bundle",
+        "destination": "/family/overwatch/items/2131873/malus-ramattra-bundle",
+        "seen": "2026-11-03T20:08:31Z",
+        "price": {
+          "fullAmount": "4,500 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 4500,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3c0d12608f155e40175ccdb0ead472453ea3d05c"
+      }
+    },
+    "at": "2026-11-03T20:09:09Z",
+    "digested": [
+      "[\"feed\",\"overwatch-news\"]",
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "back",
+    "family": "overwatch",
+    "key": "p:2126628",
+    "slug": "overwatch-eclypse",
+    "seen": "2026-11-03T20:08:31Z",
+    "changes": {
+      "eu": {
+        "type": "back",
+        "key": "p:2126628",
+        "kind": "item",
+        "slug": "overwatch-eclypse",
+        "title": "Eclypse",
+        "destination": "/family/overwatch/items/2126628/eclypse",
+        "seen": "2026-11-03T20:08:31Z",
+        "price": {
+          "fullAmount": "1,900 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 1900,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3c0d12608f155e40175ccdb0ead472453ea3d05c"
+      }
+    },
+    "at": "2026-11-03T20:09:09Z",
+    "digested": [
+      "[\"feed\",\"overwatch-news\"]",
+      "[\"shop\",null]"
+    ]
   }
 ]
