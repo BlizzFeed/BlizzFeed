@@ -586,6 +586,20 @@
       "ended": null,
       "thumbnail": "https://i.ytimg.com/vi/n2Wg46fwmb0/maxresdefault.jpg",
       "first_seen": "2026-11-02T23:18:44Z"
+    },
+    "vdBL7uNEeXI": {
+      "title": "Aw, they look so peaceful 😴",
+      "description": "Too bad we need to wake them up…",
+      "published": "2026-11-03T00:00:32Z",
+      "kind": "video",
+      "premiere": false,
+      "duration": 22,
+      "live": "none",
+      "scheduled": null,
+      "started": null,
+      "ended": null,
+      "thumbnail": "https://i.ytimg.com/vi/vdBL7uNEeXI/maxresdefault.jpg",
+      "first_seen": "2026-11-03T00:02:29Z"
     }
   }
 }
