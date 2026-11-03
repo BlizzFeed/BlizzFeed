@@ -1502,12 +1502,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€60.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€40.20",
+        "discountPercentage": 33,
         "currency": "EUR",
-        "raw": 60,
+        "raw": 40.2,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1516,9 +1516,9 @@
       "settle": {
         "from": {
           "fullAmount": "€60.00",
-          "discountAmount": "€40.20"
+          "discountAmount": null
         },
-        "until": "2026-11-03T18:42:24.000Z"
+        "until": "2026-11-03T18:48:21.000Z"
       }
     },
     "blt293f3b01dca48c3a": {
@@ -1544,12 +1544,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€10.00",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€7.00",
+        "discountPercentage": 30,
         "currency": "EUR",
-        "raw": 10,
+        "raw": 7,
         "labelFormat": "From {0}",
-        "discountId": null
+        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -1558,9 +1558,9 @@
       "settle": {
         "from": {
           "fullAmount": "€10.00",
-          "discountAmount": "€7.00"
+          "discountAmount": null
         },
-        "until": "2026-11-03T18:42:24.000Z"
+        "until": "2026-11-03T18:48:21.000Z"
       }
     },
     "blt6361d134cce4bfcc": {
@@ -1634,7 +1634,7 @@
       ],
       "first_seen": "2026-10-21T18:15:24Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "blt05242be8b86fb740": {
       "key": "blt05242be8b86fb740",
@@ -1686,7 +1686,7 @@
         "blta2d8bd8a05c7c620",
         "blt293f3b01dca48c3a"
       ],
-      "started": "2026-10-21T23:27:23Z"
+      "started": "2026-11-03T18:18:21Z"
     }
   }
 }
