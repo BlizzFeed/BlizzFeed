@@ -1249,12 +1249,26 @@
         "product": "EVE Protocol Mega Bundle",
         "what": "added",
         "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "banner",
+        "key": "blt5dc3fd86ade9c9cb",
+        "kind": "banner",
+        "slug": null,
+        "title": "Protocol Engaged: Suit up with the Mega Bundle from our newest sci-fi collab.",
+        "destination": "/family/overwatch/items/2145338",
+        "seen": "2026-11-03T19:13:45Z",
+        "button": "Buy Now",
+        "product": "EVE Protocol Mega Bundle",
+        "what": "added",
+        "commit": "7730ddd401b142f05fee32bba34b8299e86bea63"
       }
     },
     "at": "2026-11-03T19:09:46Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "banner",
@@ -1275,12 +1289,26 @@
         "product": "Taking Reign - Premium Event Pass",
         "what": "added",
         "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "banner",
+        "key": "bltb9394563e69b665d",
+        "kind": "banner",
+        "slug": null,
+        "title": "Get the Taking Reign Premium Event Pass today!",
+        "destination": "/family/overwatch/items/2136810",
+        "seen": "2026-11-03T19:13:45Z",
+        "button": "Buy Now",
+        "product": "Taking Reign - Premium Event Pass",
+        "what": "added",
+        "commit": "7730ddd401b142f05fee32bba34b8299e86bea63"
       }
     },
     "at": "2026-11-03T19:09:46Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "banner",
@@ -1433,5 +1461,80 @@
     "at": "2026-11-03T19:09:46Z",
     "digested": [],
     "paired": true
+  },
+  {
+    "type": "badge",
+    "family": "overwatch",
+    "key": "blt8e8034df7b91d08c",
+    "slug": "2136810",
+    "seen": "2026-11-03T19:13:45Z",
+    "changes": {
+      "us": {
+        "type": "badge",
+        "key": "blt8e8034df7b91d08c",
+        "kind": "item",
+        "slug": "2136810",
+        "title": "Taking Reign - Premium Event Pass",
+        "destination": "/family/overwatch/items/2136810",
+        "seen": "2026-11-03T19:13:45Z",
+        "price": {
+          "fullAmount": "1,000 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 1000,
+          "labelFormat": "",
+          "discountId": null
+        },
+        "from": null,
+        "to": "New",
+        "maybe_new": true,
+        "commit": "7730ddd401b142f05fee32bba34b8299e86bea63"
+      }
+    },
+    "at": "2026-11-03T19:14:22Z",
+    "digested": []
+  },
+  {
+    "type": "details",
+    "family": "overwatch",
+    "key": "blt8e8034df7b91d08c",
+    "slug": "2136810",
+    "seen": "2026-11-03T19:13:45Z",
+    "changes": {
+      "us": {
+        "type": "details",
+        "key": "blt8e8034df7b91d08c",
+        "kind": "item",
+        "slug": "2136810",
+        "title": "Taking Reign - Premium Event Pass",
+        "destination": "/family/overwatch/items/2136810",
+        "seen": "2026-11-03T19:13:45Z",
+        "price": {
+          "fullAmount": "1,000 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 1000,
+          "labelFormat": "",
+          "discountId": null
+        },
+        "changed": [
+          "description",
+          "image"
+        ],
+        "from": {
+          "description": "",
+          "image": "//catalog.blzstatic.com//fbb/62f67497c8186a385684b173c3a9a8f1-S25M_Event_PremiumPass_Web_1920x1080_v1_ux1.png"
+        },
+        "to": {
+          "description": "Seasonal Packs",
+          "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt4f52ea28423b50dc/6ae23337626f24ba59fb150f/S25M_Event_PremiumPass_Web_1920x1080_v1_ux1.png"
+        },
+        "commit": "7730ddd401b142f05fee32bba34b8299e86bea63"
+      }
+    },
+    "at": "2026-11-03T19:14:22Z",
+    "digested": []
   }
 ]
