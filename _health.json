@@ -1,1 +1,14 @@
-{}
+{
+  "diablo-immortal-news": {
+    "failures": 1,
+    "since": "2026-11-03T13:26:43Z"
+  },
+  "wow-news": {
+    "failures": 1,
+    "since": "2026-11-03T13:26:43Z"
+  },
+  "wow-news-us": {
+    "failures": 1,
+    "since": "2026-11-03T13:26:43Z"
+  }
+}
