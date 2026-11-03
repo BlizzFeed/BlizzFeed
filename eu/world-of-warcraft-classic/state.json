@@ -1679,15 +1679,5 @@
       "misses": 0
     }
   },
-  "suspect": false,
-  "campaigns": {
-    "02ff17c4-6bf0-470a-9640-7ff45b109e60": {
-      "status": "active",
-      "members": [
-        "blta2d8bd8a05c7c620",
-        "blt293f3b01dca48c3a"
-      ],
-      "started": "2026-11-03T18:18:21Z"
-    }
-  }
+  "suspect": false
 }
