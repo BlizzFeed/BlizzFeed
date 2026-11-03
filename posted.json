@@ -1,1 +1,1437 @@
-[]
+[
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "blt8e8034df7b91d08c",
+    "slug": "2136810",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "blt8e8034df7b91d08c",
+        "kind": "item",
+        "slug": "2136810",
+        "title": "Taking Reign - Premium Event Pass",
+        "destination": "/family/overwatch/items/2136810",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,000 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 1000,
+          "labelFormat": "",
+          "discountId": null
+        },
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ]
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2120801",
+    "slug": "overwatch-roadhog-complete-mythic-skin-bundle",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2120801",
+        "kind": "item",
+        "slug": "overwatch-roadhog-complete-mythic-skin-bundle",
+        "title": "Roadhog - Complete Mythic Skin Bundle",
+        "destination": "/family/overwatch/items/2120801/roadhog-complete-mythic-skin-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "€39.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 39.99,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2120801",
+        "kind": "item",
+        "slug": "overwatch-roadhog-complete-mythic-skin-bundle",
+        "title": "Roadhog - Complete Mythic Skin Bundle",
+        "destination": "/family/overwatch/items/2120801/roadhog-complete-mythic-skin-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "$39.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 39.99,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2145338",
+    "slug": "overwatch-eve-protocol-mega-bundle",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2145338",
+        "kind": "item",
+        "slug": "overwatch-eve-protocol-mega-bundle",
+        "title": "EVE Protocol Mega Bundle",
+        "destination": "/family/overwatch/items/2145338/eve-protocol-mega-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "20,200 Coins",
+          "discountAmount": "6,900 Coins",
+          "discountPercentage": 65,
+          "currency": "XWC",
+          "raw": 6900,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2145338",
+        "kind": "item",
+        "slug": "overwatch-eve-protocol-mega-bundle",
+        "title": "EVE Protocol Mega Bundle",
+        "destination": "/family/overwatch/items/2145338/eve-protocol-mega-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "20,200 Coins",
+          "discountAmount": "6,900 Coins",
+          "discountPercentage": 65,
+          "currency": "XWC",
+          "raw": 6900,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2145340",
+    "slug": "overwatch-lily-providence-dva-bundle",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2145340",
+        "kind": "item",
+        "slug": "overwatch-lily-providence-dva-bundle",
+        "title": "Lily & Providence D.Va Bundle",
+        "destination": "/family/overwatch/items/2145340/lily-providence-dva-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "4,500 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 4500,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2145340",
+        "kind": "item",
+        "slug": "overwatch-lily-providence-dva-bundle",
+        "title": "Lily & Providence D.Va Bundle",
+        "destination": "/family/overwatch/items/2145340/lily-providence-dva-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "4,500 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 4500,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2145343",
+    "slug": "overwatch-eve-widowmaker-bundle",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2145343",
+        "kind": "item",
+        "slug": "overwatch-eve-widowmaker-bundle",
+        "title": "EVE Widowmaker Bundle",
+        "destination": "/family/overwatch/items/2145343/eve-widowmaker-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "2,800 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 2800,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2145343",
+        "kind": "item",
+        "slug": "overwatch-eve-widowmaker-bundle",
+        "title": "EVE Widowmaker Bundle",
+        "destination": "/family/overwatch/items/2145343/eve-widowmaker-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "2,800 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 2800,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2145339",
+    "slug": "overwatch-raven-freja-bundle",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2145339",
+        "kind": "item",
+        "slug": "overwatch-raven-freja-bundle",
+        "title": "Raven Freja Bundle",
+        "destination": "/family/overwatch/items/2145339/raven-freja-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "2,800 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 2800,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2145339",
+        "kind": "item",
+        "slug": "overwatch-raven-freja-bundle",
+        "title": "Raven Freja Bundle",
+        "destination": "/family/overwatch/items/2145339/raven-freja-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "2,800 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 2800,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2145341",
+    "slug": "overwatch-adam-soldier-76-bundle",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2145341",
+        "kind": "item",
+        "slug": "overwatch-adam-soldier-76-bundle",
+        "title": "Adam Soldier: 76 Bundle",
+        "destination": "/family/overwatch/items/2145341/adam-soldier-76-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "2,800 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 2800,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2145341",
+        "kind": "item",
+        "slug": "overwatch-adam-soldier-76-bundle",
+        "title": "Adam Soldier: 76 Bundle",
+        "destination": "/family/overwatch/items/2145341/adam-soldier-76-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "2,800 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 2800,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2145342",
+    "slug": "overwatch-tachy-vendetta-bundle",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2145342",
+        "kind": "item",
+        "slug": "overwatch-tachy-vendetta-bundle",
+        "title": "Tachy Vendetta Bundle",
+        "destination": "/family/overwatch/items/2145342/tachy-vendetta-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "2,800 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 2800,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2145342",
+        "kind": "item",
+        "slug": "overwatch-tachy-vendetta-bundle",
+        "title": "Tachy Vendetta Bundle",
+        "destination": "/family/overwatch/items/2145342/tachy-vendetta-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "2,800 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 2800,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:1996244",
+    "slug": "overwatch-neo-noir-mega-bundle",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:1996244",
+        "kind": "item",
+        "slug": "overwatch-neo-noir-mega-bundle",
+        "title": "Neo-Noir Mega Bundle",
+        "destination": "/family/overwatch/items/1996244/neo-noir-mega-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "5,500 Coins",
+          "discountAmount": "3,400 Coins",
+          "discountPercentage": 38,
+          "currency": "XWC",
+          "raw": 3400,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:1996244",
+        "kind": "item",
+        "slug": "overwatch-neo-noir-mega-bundle",
+        "title": "Neo-Noir Mega Bundle",
+        "destination": "/family/overwatch/items/1996244/neo-noir-mega-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "5,500 Coins",
+          "discountAmount": "3,400 Coins",
+          "discountPercentage": 38,
+          "currency": "XWC",
+          "raw": 3400,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2145425",
+    "slug": "overwatch-crazy-raccoon-owcs-2026-partner-team-supporter-bundle",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2145425",
+        "kind": "item",
+        "slug": "overwatch-crazy-raccoon-owcs-2026-partner-team-supporter-bundle",
+        "title": "Crazy Raccoon OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145425/crazy-raccoon-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2145425",
+        "kind": "item",
+        "slug": "overwatch-crazy-raccoon-owcs-2026-partner-team-supporter-bundle",
+        "title": "Crazy Raccoon OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145425/crazy-raccoon-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2145428",
+    "slug": "overwatch-zeta-division-owcs-2026-partner-team-supporter-bundle",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2145428",
+        "kind": "item",
+        "slug": "overwatch-zeta-division-owcs-2026-partner-team-supporter-bundle",
+        "title": "Zeta Division OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145428/zeta-division-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2145428",
+        "kind": "item",
+        "slug": "overwatch-zeta-division-owcs-2026-partner-team-supporter-bundle",
+        "title": "Zeta Division OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145428/zeta-division-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2145429",
+    "slug": "overwatch-team-falcons-owcs-2026-partner-team-supporter-bundle",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2145429",
+        "kind": "item",
+        "slug": "overwatch-team-falcons-owcs-2026-partner-team-supporter-bundle",
+        "title": "Team Falcons OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145429/team-falcons-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2145429",
+        "kind": "item",
+        "slug": "overwatch-team-falcons-owcs-2026-partner-team-supporter-bundle",
+        "title": "Team Falcons OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145429/team-falcons-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2145430",
+    "slug": "overwatch-t1-owcs-2026-partner-team-supporter-bundle",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2145430",
+        "kind": "item",
+        "slug": "overwatch-t1-owcs-2026-partner-team-supporter-bundle",
+        "title": "T1 OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145430/t1-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2145430",
+        "kind": "item",
+        "slug": "overwatch-t1-owcs-2026-partner-team-supporter-bundle",
+        "title": "T1 OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145430/t1-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2145431",
+    "slug": "overwatch-twisted-minds-owcs-2026-partner-team-supporter-bundle",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2145431",
+        "kind": "item",
+        "slug": "overwatch-twisted-minds-owcs-2026-partner-team-supporter-bundle",
+        "title": "Twisted Minds OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145431/twisted-minds-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2145431",
+        "kind": "item",
+        "slug": "overwatch-twisted-minds-owcs-2026-partner-team-supporter-bundle",
+        "title": "Twisted Minds OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145431/twisted-minds-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2145396",
+    "slug": "overwatch-virtuspro-owcs-2026-partner-team-supporter-bundle",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2145396",
+        "kind": "item",
+        "slug": "overwatch-virtuspro-owcs-2026-partner-team-supporter-bundle",
+        "title": "Virtus.pro OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145396/virtuspro-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2145396",
+        "kind": "item",
+        "slug": "overwatch-virtuspro-owcs-2026-partner-team-supporter-bundle",
+        "title": "Virtus.pro OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145396/virtuspro-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2145397",
+    "slug": "overwatch-team-peps-owcs-2026-partner-team-supporter-bundle",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2145397",
+        "kind": "item",
+        "slug": "overwatch-team-peps-owcs-2026-partner-team-supporter-bundle",
+        "title": "Team Peps OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145397/team-peps-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2145397",
+        "kind": "item",
+        "slug": "overwatch-team-peps-owcs-2026-partner-team-supporter-bundle",
+        "title": "Team Peps OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145397/team-peps-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2145438",
+    "slug": "overwatch-spacestation-gaming-owcs-2026-partner-team-supporter-bundle",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2145438",
+        "kind": "item",
+        "slug": "overwatch-spacestation-gaming-owcs-2026-partner-team-supporter-bundle",
+        "title": "Spacestation Gaming OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145438/spacestation-gaming-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2145438",
+        "kind": "item",
+        "slug": "overwatch-spacestation-gaming-owcs-2026-partner-team-supporter-bundle",
+        "title": "Spacestation Gaming OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145438/spacestation-gaming-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2145439",
+    "slug": "overwatch-team-liquid-owcs-2026-partner-team-supporter-bundle",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2145439",
+        "kind": "item",
+        "slug": "overwatch-team-liquid-owcs-2026-partner-team-supporter-bundle",
+        "title": "Team Liquid OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145439/team-liquid-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2145439",
+        "kind": "item",
+        "slug": "overwatch-team-liquid-owcs-2026-partner-team-supporter-bundle",
+        "title": "Team Liquid OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145439/team-liquid-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2145398",
+    "slug": "overwatch-dallas-fuel-owcs-2026-partner-team-supporter-bundle",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2145398",
+        "kind": "item",
+        "slug": "overwatch-dallas-fuel-owcs-2026-partner-team-supporter-bundle",
+        "title": "Dallas Fuel OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145398/dallas-fuel-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2145398",
+        "kind": "item",
+        "slug": "overwatch-dallas-fuel-owcs-2026-partner-team-supporter-bundle",
+        "title": "Dallas Fuel OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145398/dallas-fuel-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2145440",
+    "slug": "overwatch-disguised-owcs-2026-partner-team-supporter-bundle",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2145440",
+        "kind": "item",
+        "slug": "overwatch-disguised-owcs-2026-partner-team-supporter-bundle",
+        "title": "Disguised OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145440/disguised-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2145440",
+        "kind": "item",
+        "slug": "overwatch-disguised-owcs-2026-partner-team-supporter-bundle",
+        "title": "Disguised OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145440/disguised-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2145399",
+    "slug": "overwatch-weibo-gaming-owcs-2026-partner-team-supporter-bundle",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2145399",
+        "kind": "item",
+        "slug": "overwatch-weibo-gaming-owcs-2026-partner-team-supporter-bundle",
+        "title": "Weibo Gaming OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145399/weibo-gaming-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2145399",
+        "kind": "item",
+        "slug": "overwatch-weibo-gaming-owcs-2026-partner-team-supporter-bundle",
+        "title": "Weibo Gaming OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145399/weibo-gaming-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2145400",
+    "slug": "overwatch-all-gamers-owcs-2026-partner-team-supporter-bundle",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2145400",
+        "kind": "item",
+        "slug": "overwatch-all-gamers-owcs-2026-partner-team-supporter-bundle",
+        "title": "All Gamers OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145400/all-gamers-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2145400",
+        "kind": "item",
+        "slug": "overwatch-all-gamers-owcs-2026-partner-team-supporter-bundle",
+        "title": "All Gamers OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145400/all-gamers-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2145441",
+    "slug": "overwatch-jdg-owcs-2026-partner-team-supporter-bundle",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "p:2145441",
+        "kind": "item",
+        "slug": "overwatch-jdg-owcs-2026-partner-team-supporter-bundle",
+        "title": "JDG OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145441/jdg-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2145441",
+        "kind": "item",
+        "slug": "overwatch-jdg-owcs-2026-partner-team-supporter-bundle",
+        "title": "JDG OWCS 2026 Partner Team Supporter Bundle",
+        "destination": "/family/overwatch/items/2145441/jdg-owcs-2026-partner-team-supporter-bundle",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,200 Coins",
+          "discountAmount": "700 Coins",
+          "discountPercentage": 41,
+          "currency": "XWC",
+          "raw": 700,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "overwatch",
+    "key": "p:2136810",
+    "slug": "overwatch-taking-reign-premium-event-pass",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "us": {
+        "type": "new",
+        "key": "p:2136810",
+        "kind": "item",
+        "slug": "overwatch-taking-reign-premium-event-pass",
+        "title": "Taking Reign - Premium Event Pass",
+        "destination": "/family/overwatch/items/2136810/taking-reign-premium-event-pass",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": "1,000 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 1000,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "banner",
+    "family": "overwatch",
+    "key": "blt5dc3fd86ade9c9cb",
+    "slug": null,
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "banner",
+        "key": "blt5dc3fd86ade9c9cb",
+        "kind": "banner",
+        "slug": null,
+        "title": "Protocol Engaged: Suit up with the Mega Bundle from our newest sci-fi collab.",
+        "destination": "/family/overwatch/items/2145338",
+        "seen": "2026-11-03T19:09:00Z",
+        "button": "Buy Now",
+        "product": "EVE Protocol Mega Bundle",
+        "what": "added",
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "banner",
+    "family": "overwatch",
+    "key": "bltb9394563e69b665d",
+    "slug": null,
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "banner",
+        "key": "bltb9394563e69b665d",
+        "kind": "banner",
+        "slug": null,
+        "title": "Get the Taking Reign Premium Event Pass today!",
+        "destination": "/family/overwatch/items/2136810",
+        "seen": "2026-11-03T19:09:00Z",
+        "button": "Buy Now",
+        "product": "Taking Reign - Premium Event Pass",
+        "what": "added",
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "banner",
+    "family": "overwatch",
+    "key": "blt7002d93d259e8fdf",
+    "slug": null,
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "banner",
+        "key": "blt7002d93d259e8fdf",
+        "kind": "banner",
+        "slug": null,
+        "title": "Get the complete Mythic Necrotic Knight Roadhog Hero Skin!",
+        "destination": "/family/overwatch/items/2120801",
+        "seen": "2026-11-03T19:09:00Z",
+        "button": "Buy Now",
+        "product": "Roadhog - Complete Mythic Skin Bundle",
+        "what": "added",
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "banner",
+        "key": "blt7002d93d259e8fdf",
+        "kind": "banner",
+        "slug": null,
+        "title": "Get the complete Mythic Necrotic Knight Roadhog Hero Skin!",
+        "destination": "/family/overwatch/items/2120801",
+        "seen": "2026-11-03T19:09:00Z",
+        "button": "Buy Now",
+        "product": "Roadhog - Complete Mythic Skin Bundle",
+        "what": "added",
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [
+      "[\"shop\",null]"
+    ],
+    "paired": true
+  },
+  {
+    "type": "badge",
+    "family": "overwatch",
+    "key": "bltfb92efc84283a2a5",
+    "slug": "overwatch-battle-pass",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "badge",
+        "key": "bltfb92efc84283a2a5",
+        "kind": "item",
+        "slug": "overwatch-battle-pass",
+        "title": "Overwatch® Premium Battle Pass: Season 5",
+        "destination": "/product/overwatch-battle-pass?p=2129810",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": null,
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": null,
+          "raw": 0,
+          "labelFormat": "Learn More",
+          "discountId": null
+        },
+        "from": "New",
+        "to": null,
+        "maybe_new": false,
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "badge",
+        "key": "bltfb92efc84283a2a5",
+        "kind": "item",
+        "slug": "overwatch-battle-pass",
+        "title": "Overwatch® Premium Battle Pass: Season 5",
+        "destination": "/product/overwatch-battle-pass?p=2129810",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": null,
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": null,
+          "raw": 0,
+          "labelFormat": "Learn More",
+          "discountId": null
+        },
+        "from": "New",
+        "to": null,
+        "maybe_new": false,
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [],
+    "paired": true
+  },
+  {
+    "type": "badge",
+    "family": "overwatch",
+    "key": "blt282829ef6f5dc22e",
+    "slug": "overwatch-battle-pass",
+    "seen": "2026-11-03T19:09:00Z",
+    "changes": {
+      "eu": {
+        "type": "badge",
+        "key": "blt282829ef6f5dc22e",
+        "kind": "item",
+        "slug": "overwatch-battle-pass",
+        "title": "Premium Battle Pass 2026: Season 5 + 20 Tier Skips",
+        "destination": "/product/overwatch-battle-pass?p=2131879",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": null,
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": null,
+          "raw": 0,
+          "labelFormat": "Learn More",
+          "discountId": null
+        },
+        "from": "New",
+        "to": null,
+        "maybe_new": false,
+        "commit": "70e595ba5ddcd66b468616221e8e6a6d4375b9d2"
+      },
+      "us": {
+        "type": "badge",
+        "key": "blt282829ef6f5dc22e",
+        "kind": "item",
+        "slug": "overwatch-battle-pass",
+        "title": "Premium Battle Pass 2026: Season 5 + 20 Tier Skips",
+        "destination": "/product/overwatch-battle-pass?p=2131879",
+        "seen": "2026-11-03T19:09:00Z",
+        "price": {
+          "fullAmount": null,
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": null,
+          "raw": 0,
+          "labelFormat": "Learn More",
+          "discountId": null
+        },
+        "from": "New",
+        "to": null,
+        "maybe_new": false,
+        "commit": "d7657426466f1c7dced15799c0b4524cddf37620"
+      }
+    },
+    "at": "2026-11-03T19:09:46Z",
+    "digested": [],
+    "paired": true
+  }
+]
