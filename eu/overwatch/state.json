@@ -312,7 +312,7 @@
       "sections": [
         "Seasonal Offers"
       ],
-      "badge": "New",
+      "badge": null,
       "price": {
         "fullAmount": null,
         "discountAmount": null,
@@ -412,7 +412,7 @@
       "sections": [
         "Seasonal Offers"
       ],
-      "badge": "New",
+      "badge": null,
       "price": {
         "fullAmount": null,
         "discountAmount": null,
@@ -1912,8 +1912,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:17:27Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2132886": {
       "key": "p:2132886",
@@ -1948,8 +1948,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:17:27Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2132887": {
       "key": "p:2132887",
@@ -1985,8 +1985,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:17:27Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2126622": {
       "key": "p:2126622",
@@ -2018,8 +2018,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:17:27Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2126626": {
       "key": "p:2126626",
@@ -2051,8 +2051,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:17:27Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2132889": {
       "key": "p:2132889",
@@ -2089,8 +2089,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:17:27Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:209611": {
       "key": "p:209611",
@@ -2122,8 +2122,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:17:27Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:1262576": {
       "key": "p:1262576",
@@ -2155,8 +2155,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:17:27Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:1092160": {
       "key": "p:1092160",
@@ -2188,8 +2188,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:17:27Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2132890": {
       "key": "p:2132890",
@@ -2263,8 +2263,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:05:33Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2131869": {
       "key": "p:2131869",
@@ -2317,8 +2317,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:05:33Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2131873": {
       "key": "p:2131873",
@@ -2354,8 +2354,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:05:33Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2131872": {
       "key": "p:2131872",
@@ -2390,8 +2390,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:05:33Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2126628": {
       "key": "p:2126628",
@@ -2423,8 +2423,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:05:33Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2131871": {
       "key": "p:2131871",
@@ -2459,8 +2459,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:05:33Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2126036": {
       "key": "p:2126036",
@@ -2492,8 +2492,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:05:33Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2126041": {
       "key": "p:2126041",
@@ -2525,8 +2525,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:05:33Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:1935740": {
       "key": "p:1935740",
@@ -2577,8 +2577,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:05:33Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2027259": {
       "key": "p:2027259",
@@ -2626,7 +2626,944 @@
       "first_seen": "2026-10-27T18:13:31Z",
       "status": "listed",
       "misses": 0
+    },
+    "blt5dc3fd86ade9c9cb": {
+      "key": "blt5dc3fd86ade9c9cb",
+      "kind": "banner",
+      "cmsId": "blt5dc3fd86ade9c9cb",
+      "slug": null,
+      "itemId": 2145338,
+      "title": "Protocol Engaged: Suit up with the Mega Bundle from our newest sci-fi collab.",
+      "productPageName": null,
+      "headline": "",
+      "subHeadline": "Protocol Engaged: Suit up with the Mega Bundle from our newest sci-fi collab.",
+      "buttonText": "Buy Now",
+      "destination": "/family/overwatch/items/2145338",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt0984c2b5bb5537aa/6ae8db77079ae3e6ca8f464c/shop_carousel_ow_26_s5_bladebundle_desktop.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "bltb9394563e69b665d": {
+      "key": "bltb9394563e69b665d",
+      "kind": "banner",
+      "cmsId": "bltb9394563e69b665d",
+      "slug": null,
+      "itemId": 2136810,
+      "title": "Get the Taking Reign Premium Event Pass today!",
+      "productPageName": null,
+      "headline": "",
+      "subHeadline": "Get the Taking Reign Premium Event Pass today!",
+      "buttonText": "Buy Now",
+      "destination": "/family/overwatch/items/2136810",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt5f8859a29e2d8acb/6ae8e003be953f56aea78ad5/shop_carousel_ow_26_s5_vendettaproduct_desktop.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt7002d93d259e8fdf": {
+      "key": "blt7002d93d259e8fdf",
+      "kind": "banner",
+      "cmsId": "blt7002d93d259e8fdf",
+      "slug": null,
+      "itemId": 2120801,
+      "title": "Get the complete Mythic Necrotic Knight Roadhog Hero Skin!",
+      "productPageName": null,
+      "headline": "",
+      "subHeadline": "Get the complete Mythic Necrotic Knight Roadhog Hero Skin!",
+      "buttonText": "Buy Now",
+      "destination": "/family/overwatch/items/2120801",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt3bfe60eb16c0756b/6ae8e089583f742c933f3c68/shop_carousel_ow_26_s5_mythic_desktop.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt8e8034df7b91d08c": {
+      "key": "blt8e8034df7b91d08c",
+      "kind": "item",
+      "cmsId": "blt8e8034df7b91d08c",
+      "slug": "2136810",
+      "title": "Taking Reign - Premium Event Pass",
+      "description": "Seasonal Packs",
+      "categoryId": "battle-pass",
+      "itemId": 2136810,
+      "productIds": [
+        2136810
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2136810",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt4f52ea28423b50dc/6ae23337626f24ba59fb150f/S25M_Event_PremiumPass_Web_1920x1080_v1_ux1.png",
+      "sections": [
+        "Featured",
+        "Seasonal Offers"
+      ],
+      "badge": "New",
+      "price": {
+        "fullAmount": "1,000 Coins",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XWC",
+        "raw": 1000,
+        "labelFormat": "",
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2120801": {
+      "key": "p:2120801",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-roadhog-complete-mythic-skin-bundle",
+      "title": "Roadhog - Complete Mythic Skin Bundle",
+      "description": "Mythic | Skin",
+      "categoryId": null,
+      "itemId": 2120801,
+      "productIds": [
+        809988
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2120801/roadhog-complete-mythic-skin-bundle",
+      "image": "//catalog.blzstatic.com//ffb/9bf747ebe6d00bfd92fafdde5318f598-S25M_RMT_Roadhog_Mythic_Skin_web_ux.png",
+      "sections": [
+        "Featured",
+        "Seasonal Offers"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€39.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 39.99,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145338": {
+      "key": "p:2145338",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-eve-protocol-mega-bundle",
+      "title": "EVE Protocol Mega Bundle",
+      "description": "Ultra | Bundle (36 items)",
+      "categoryId": null,
+      "itemId": 2145338,
+      "productIds": [
+        2145350,
+        2145349,
+        2145331,
+        2142770,
+        2145334,
+        2145333,
+        2145352,
+        2145351,
+        2145346,
+        2145345,
+        2145330,
+        2145344,
+        2139847,
+        2142771,
+        2145348,
+        2145347,
+        2145361,
+        2145360,
+        2145359,
+        2145335,
+        2145329,
+        2145328,
+        2142772,
+        2145327,
+        2145354,
+        2145326,
+        2145325,
+        2142769,
+        2145358,
+        2145357,
+        2145356,
+        2145355,
+        2145324,
+        2142768,
+        2145332,
+        2145353
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2145338/eve-protocol-mega-bundle",
+      "image": "//catalog.blzstatic.com//67/977600e4700047b9a0799a1cd0c5202a-WEB_1920x1080_S25M_Blade_MegaBundle_Base_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "20,200 Coins",
+        "discountAmount": "6,900 Coins",
+        "discountPercentage": 65,
+        "currency": "XWC",
+        "raw": 6900,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145340": {
+      "key": "p:2145340",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-lily-providence-dva-bundle",
+      "title": "Lily & Providence D.Va Bundle",
+      "description": "Ultra | Bundle (9 items)",
+      "categoryId": null,
+      "itemId": 2145340,
+      "productIds": [
+        2145359,
+        2145335,
+        2145354,
+        2145325,
+        2145331,
+        2139847,
+        2145345,
+        2145327,
+        2145332
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2145340/lily-providence-dva-bundle",
+      "image": "//catalog.blzstatic.com//30/676a0482146f6aaab1be800c813fe4da-WEB_1920x1080_S25M_Blade_Dva_Ultra_Base_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "4,500 Coins",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XWC",
+        "raw": 4500,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145343": {
+      "key": "p:2145343",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-eve-widowmaker-bundle",
+      "title": "EVE Widowmaker Bundle",
+      "description": "Legendary | Bundle (9 items)",
+      "categoryId": null,
+      "itemId": 2145343,
+      "productIds": [
+        2145358,
+        2145326,
+        2145348,
+        2145344,
+        2145361,
+        2145360,
+        2145353,
+        2145351,
+        2142770
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2145343/eve-widowmaker-bundle",
+      "image": "//catalog.blzstatic.com//32/7fe3069349c9168443c14c4596588809-WEB_1920x1080_S25M_Blade_Widow_Base_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "2,800 Coins",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XWC",
+        "raw": 2800,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145339": {
+      "key": "p:2145339",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-raven-freja-bundle",
+      "title": "Raven Freja Bundle",
+      "description": "Legendary | Bundle (6 items)",
+      "categoryId": null,
+      "itemId": 2145339,
+      "productIds": [
+        2145347,
+        2145329,
+        2145357,
+        2142768,
+        2145334,
+        2145350
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2145339/raven-freja-bundle",
+      "image": "//catalog.blzstatic.com//f99/644c7fbb8afedb2613ea9b7332a80449-WEB_1920x1080_S25M_Blade_Freja_Base_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "2,800 Coins",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XWC",
+        "raw": 2800,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145341": {
+      "key": "p:2145341",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-adam-soldier-76-bundle",
+      "title": "Adam Soldier: 76 Bundle",
+      "description": "Legendary | Bundle (6 items)",
+      "categoryId": null,
+      "itemId": 2145341,
+      "productIds": [
+        2145333,
+        2145324,
+        2142771,
+        2145330,
+        2142772,
+        2145355
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2145341/adam-soldier-76-bundle",
+      "image": "//catalog.blzstatic.com//feb/608c6555a0bb0752682a83159a3fa581-WEB_1920x1080_S25M_Blade_Soldier_Base_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "2,800 Coins",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XWC",
+        "raw": 2800,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145342": {
+      "key": "p:2145342",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-tachy-vendetta-bundle",
+      "title": "Tachy Vendetta Bundle",
+      "description": "Legendary | Bundle (6 items)",
+      "categoryId": null,
+      "itemId": 2145342,
+      "productIds": [
+        2145356,
+        2142769,
+        2145352,
+        2145349,
+        2145346,
+        2145328
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2145342/tachy-vendetta-bundle",
+      "image": "//catalog.blzstatic.com//fac/1d2ac65f4a306eb2b07a4c8dc8c60515-WEB_1920x1080_S25M_Blade_Vendetta_Base_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "2,800 Coins",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XWC",
+        "raw": 2800,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:1996244": {
+      "key": "p:1996244",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-neo-noir-mega-bundle",
+      "title": "Neo-Noir Mega Bundle",
+      "description": "Legendary | Bundle (9 items)",
+      "categoryId": null,
+      "itemId": 1996244,
+      "productIds": [
+        1996048,
+        1996093,
+        1996156,
+        1996157,
+        1996117,
+        1996110,
+        1996155,
+        1996047,
+        2013340
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/1996244/neo-noir-mega-bundle",
+      "image": "//catalog.blzstatic.com//6a/b03a425625508e8cda01ce0551b49871-S19_NoirBundle_1920x1080__ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "5,500 Coins",
+        "discountAmount": "3,400 Coins",
+        "discountPercentage": 38,
+        "currency": "XWC",
+        "raw": 3400,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145425": {
+      "key": "p:2145425",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-crazy-raccoon-owcs-2026-partner-team-supporter-bundle",
+      "title": "Crazy Raccoon OWCS 2026 Partner Team Supporter Bundle",
+      "description": "Epic | Bundle (4 items)",
+      "categoryId": null,
+      "itemId": 2145425,
+      "productIds": [
+        2114989,
+        2114950,
+        2115018,
+        2115062
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2145425/crazy-raccoon-owcs-2026-partner-team-supporter-bundle",
+      "image": "//catalog.blzstatic.com//fd6/e3ad6a52bd440c0cf575902f2a22f0a0-S24_OWCS_CrazyRaccoon_Megabundle_1920x1080_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,200 Coins",
+        "discountAmount": "700 Coins",
+        "discountPercentage": 41,
+        "currency": "XWC",
+        "raw": 700,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145428": {
+      "key": "p:2145428",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-zeta-division-owcs-2026-partner-team-supporter-bundle",
+      "title": "Zeta Division OWCS 2026 Partner Team Supporter Bundle",
+      "description": "Epic | Bundle (4 items)",
+      "categoryId": null,
+      "itemId": 2145428,
+      "productIds": [
+        2115002,
+        2114983,
+        2114953,
+        2115053
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2145428/zeta-division-owcs-2026-partner-team-supporter-bundle",
+      "image": "//catalog.blzstatic.com//0/9ffeda8a2adacaf820d9eb7e61df84b4-S24_OWCS_ZetaDivision_Megabundle_1920x1080_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,200 Coins",
+        "discountAmount": "700 Coins",
+        "discountPercentage": 41,
+        "currency": "XWC",
+        "raw": 700,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145429": {
+      "key": "p:2145429",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-team-falcons-owcs-2026-partner-team-supporter-bundle",
+      "title": "Team Falcons OWCS 2026 Partner Team Supporter Bundle",
+      "description": "Epic | Bundle (4 items)",
+      "categoryId": null,
+      "itemId": 2145429,
+      "productIds": [
+        2114974,
+        2115046,
+        2115008,
+        2114997
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2145429/team-falcons-owcs-2026-partner-team-supporter-bundle",
+      "image": "//catalog.blzstatic.com//fb8/75d1808bb6aedbaa596d4c8149a11276-S24_OWCS_TeamFalcons_Megabundle_1920x1080_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,200 Coins",
+        "discountAmount": "700 Coins",
+        "discountPercentage": 41,
+        "currency": "XWC",
+        "raw": 700,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145430": {
+      "key": "p:2145430",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-t1-owcs-2026-partner-team-supporter-bundle",
+      "title": "T1 OWCS 2026 Partner Team Supporter Bundle",
+      "description": "Epic | Bundle (4 items)",
+      "categoryId": null,
+      "itemId": 2145430,
+      "productIds": [
+        2114975,
+        2115047,
+        2115007,
+        2114996
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2145430/t1-owcs-2026-partner-team-supporter-bundle",
+      "image": "//catalog.blzstatic.com//ffc/d2983b2a1dbff5d5537d74bff31ba12c-S24_OWCS_T1_Megabundle_1920x1080_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,200 Coins",
+        "discountAmount": "700 Coins",
+        "discountPercentage": 41,
+        "currency": "XWC",
+        "raw": 700,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145431": {
+      "key": "p:2145431",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-twisted-minds-owcs-2026-partner-team-supporter-bundle",
+      "title": "Twisted Minds OWCS 2026 Partner Team Supporter Bundle",
+      "description": "Epic | Bundle (4 items)",
+      "categoryId": null,
+      "itemId": 2145431,
+      "productIds": [
+        2115011,
+        2114977,
+        2115050,
+        2115000
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2145431/twisted-minds-owcs-2026-partner-team-supporter-bundle",
+      "image": "//catalog.blzstatic.com//2b/3dd324f22c13a71c7e3549a8ec3dc60a-S24_OWCS_TwistedMinds_Megabundle_1920x1080_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,200 Coins",
+        "discountAmount": "700 Coins",
+        "discountPercentage": 41,
+        "currency": "XWC",
+        "raw": 700,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145396": {
+      "key": "p:2145396",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-virtuspro-owcs-2026-partner-team-supporter-bundle",
+      "title": "Virtus.pro OWCS 2026 Partner Team Supporter Bundle",
+      "description": "Epic | Bundle (4 items)",
+      "categoryId": null,
+      "itemId": 2145396,
+      "productIds": [
+        2115012,
+        2114978,
+        2115051,
+        2115001
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2145396/virtuspro-owcs-2026-partner-team-supporter-bundle",
+      "image": "//catalog.blzstatic.com//e/7cb5edb2665e86274f603b3c5fd19334-S24_OWCS_VirtuosPro_Megabundle_1920x1080_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,200 Coins",
+        "discountAmount": "700 Coins",
+        "discountPercentage": 41,
+        "currency": "XWC",
+        "raw": 700,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145397": {
+      "key": "p:2145397",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-team-peps-owcs-2026-partner-team-supporter-bundle",
+      "title": "Team Peps OWCS 2026 Partner Team Supporter Bundle",
+      "description": "Epic | Bundle (4 items)",
+      "categoryId": null,
+      "itemId": 2145397,
+      "productIds": [
+        2115010,
+        2114976,
+        2114999,
+        2115048
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2145397/team-peps-owcs-2026-partner-team-supporter-bundle",
+      "image": "//catalog.blzstatic.com//3b/9e8cd46c958c0a1556354a92412c649d-S24_OWCS_TeamPeps_Megabundle_1920x1080_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,200 Coins",
+        "discountAmount": "700 Coins",
+        "discountPercentage": 41,
+        "currency": "XWC",
+        "raw": 700,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145438": {
+      "key": "p:2145438",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-spacestation-gaming-owcs-2026-partner-team-supporter-bundle",
+      "title": "Spacestation Gaming OWCS 2026 Partner Team Supporter Bundle",
+      "description": "Epic | Bundle (4 items)",
+      "categoryId": null,
+      "itemId": 2145438,
+      "productIds": [
+        2115058,
+        2114952,
+        2115014,
+        2114984
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2145438/spacestation-gaming-owcs-2026-partner-team-supporter-bundle",
+      "image": "//catalog.blzstatic.com//f81/7ea0cef6a9cb683ee835cfafdd44ac86-S24_OWCS_Spacestation_Megabundle_1920x1080_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,200 Coins",
+        "discountAmount": "700 Coins",
+        "discountPercentage": 41,
+        "currency": "XWC",
+        "raw": 700,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145439": {
+      "key": "p:2145439",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-team-liquid-owcs-2026-partner-team-supporter-bundle",
+      "title": "Team Liquid OWCS 2026 Partner Team Supporter Bundle",
+      "description": "Epic | Bundle (4 items)",
+      "categoryId": null,
+      "itemId": 2145439,
+      "productIds": [
+        2114973,
+        2115049,
+        2114998,
+        2115009
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2145439/team-liquid-owcs-2026-partner-team-supporter-bundle",
+      "image": "//catalog.blzstatic.com//6b/db5cadb5cb109c553582bb2436d07c61-S24_OWCS_TeamLiquid_Megabundle_1920x1080_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,200 Coins",
+        "discountAmount": "700 Coins",
+        "discountPercentage": 41,
+        "currency": "XWC",
+        "raw": 700,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145398": {
+      "key": "p:2145398",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-dallas-fuel-owcs-2026-partner-team-supporter-bundle",
+      "title": "Dallas Fuel OWCS 2026 Partner Team Supporter Bundle",
+      "description": "Epic | Bundle (4 items)",
+      "categoryId": null,
+      "itemId": 2145398,
+      "productIds": [
+        2115017,
+        2114990,
+        2114987,
+        2115061
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2145398/dallas-fuel-owcs-2026-partner-team-supporter-bundle",
+      "image": "//catalog.blzstatic.com//18/a487cbe5eb9a8e8199f9bfd518332481-S24_OWCS_DallasFuel_Megabundle_1920x1080_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,200 Coins",
+        "discountAmount": "700 Coins",
+        "discountPercentage": 41,
+        "currency": "XWC",
+        "raw": 700,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145440": {
+      "key": "p:2145440",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-disguised-owcs-2026-partner-team-supporter-bundle",
+      "title": "Disguised OWCS 2026 Partner Team Supporter Bundle",
+      "description": "Epic | Bundle (4 items)",
+      "categoryId": null,
+      "itemId": 2145440,
+      "productIds": [
+        2114986,
+        2114993,
+        2115060,
+        2115016
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2145440/disguised-owcs-2026-partner-team-supporter-bundle",
+      "image": "//catalog.blzstatic.com//c/bf3075db24813102ec118310ccf3c36d-S24_OWCS_Disguised_Megabundle_1920x1080_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,200 Coins",
+        "discountAmount": "700 Coins",
+        "discountPercentage": 41,
+        "currency": "XWC",
+        "raw": 700,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145399": {
+      "key": "p:2145399",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-weibo-gaming-owcs-2026-partner-team-supporter-bundle",
+      "title": "Weibo Gaming OWCS 2026 Partner Team Supporter Bundle",
+      "description": "Epic | Bundle (4 items)",
+      "categoryId": null,
+      "itemId": 2145399,
+      "productIds": [
+        2107976,
+        2107020,
+        2108514,
+        2114951
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2145399/weibo-gaming-owcs-2026-partner-team-supporter-bundle",
+      "image": "//catalog.blzstatic.com//fc3/1051ed31f621494a1a06fc372e122f42-S24_OWCS_Weibo_Megabundle_1920x1080_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,200 Coins",
+        "discountAmount": "700 Coins",
+        "discountPercentage": 41,
+        "currency": "XWC",
+        "raw": 700,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145400": {
+      "key": "p:2145400",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-all-gamers-owcs-2026-partner-team-supporter-bundle",
+      "title": "All Gamers OWCS 2026 Partner Team Supporter Bundle",
+      "description": "Epic | Bundle (4 items)",
+      "categoryId": null,
+      "itemId": 2145400,
+      "productIds": [
+        2107974,
+        2107948,
+        2114992,
+        2108016
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2145400/all-gamers-owcs-2026-partner-team-supporter-bundle",
+      "image": "//catalog.blzstatic.com//3e/a6f2cea9157fe831ac524999c7a0a2de-S24_OWCS_AllGamers_Megabundle_1920x1080_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,200 Coins",
+        "discountAmount": "700 Coins",
+        "discountPercentage": 41,
+        "currency": "XWC",
+        "raw": 700,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2145441": {
+      "key": "p:2145441",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-jdg-owcs-2026-partner-team-supporter-bundle",
+      "title": "JDG OWCS 2026 Partner Team Supporter Bundle",
+      "description": "Epic | Bundle (4 items)",
+      "categoryId": null,
+      "itemId": 2145441,
+      "productIds": [
+        2107949,
+        2114994,
+        2108489,
+        2107975
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2145441/jdg-owcs-2026-partner-team-supporter-bundle",
+      "image": "//catalog.blzstatic.com//14/ea50ac64ce8422ce6631e0f7ceaacfd5-S24_OWCS_JDG_Megabundle_1920x1080_ux.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,200 Coins",
+        "discountAmount": "700 Coins",
+        "discountPercentage": 41,
+        "currency": "XWC",
+        "raw": 700,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
     }
   },
-  "suspect": true
+  "suspect": false
 }
