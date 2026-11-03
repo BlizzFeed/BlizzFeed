@@ -4037,8 +4037,34 @@
       "price": null,
       "expiresAtMs": null,
       "first_seen": "2026-10-27T17:03:27Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-03T18:12:24Z"
+    },
+    "p:2136773": {
+      "key": "p:2136773",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "hearthstone-free-battlenet-shop-gift",
+      "title": "Free Battle.net® Shop Gift!",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2136773,
+      "productIds": [
+        2136773
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/hearthstone/items/2136773/free-battlenet-shop-gift",
+      "image": "//catalog.blzstatic.com//fa9/f7132e66ef33dd5ff81b16f62904140d-HS_37p0_BNet_SpecialOffers_FreeWeeklyRewards_BattleNet_Shop_Product_Cards_RandomEpic-1920X1080_.png",
+      "sections": [
+        "Web Offers"
+      ],
+      "badge": null,
+      "price": null,
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T18:12:24Z",
+      "status": "listed",
+      "misses": 0
     }
   },
   "suspect": false
