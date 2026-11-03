@@ -205,17 +205,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€49.99",
-        "discountAmount": "€24.99",
-        "discountPercentage": 50,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
-        "raw": 24.99,
+        "raw": 49.99,
         "labelFormat": "From {0}",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€49.99",
+          "discountAmount": "€24.99"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "blt457589be15ce3dd7": {
       "key": "blt457589be15ce3dd7",
@@ -372,17 +379,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€35.00",
-        "discountAmount": "€17.50",
-        "discountPercentage": 50,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
         "raw": 17.5,
         "labelFormat": "",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€35.00",
+          "discountAmount": "€17.50"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "bltad6d580fcefaa54c": {
       "key": "bltad6d580fcefaa54c",
@@ -405,17 +419,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€25.00",
-        "discountAmount": "€12.50",
-        "discountPercentage": 50,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
         "raw": 12.5,
         "labelFormat": "",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€25.00",
+          "discountAmount": "€12.50"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "blte8e11bfb894010cf": {
       "key": "blte8e11bfb894010cf",
@@ -1808,17 +1829,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€20.00",
-        "discountAmount": "€14.00",
-        "discountPercentage": 30,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
         "raw": 14,
         "labelFormat": "From {0}",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€20.00",
+          "discountAmount": "€14.00"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "blt5c565694d77a7838": {
       "key": "blt5c565694d77a7838",
@@ -1841,17 +1869,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€20.00",
-        "discountAmount": "€14.00",
-        "discountPercentage": 30,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
         "raw": 14,
         "labelFormat": "",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€20.00",
+          "discountAmount": "€14.00"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "bltec442faf62951573": {
       "key": "bltec442faf62951573",
@@ -1874,17 +1909,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€20.00",
-        "discountAmount": "€10.00",
-        "discountPercentage": 50,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
         "raw": 10,
         "labelFormat": "",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€20.00",
+          "discountAmount": "€10.00"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "blt48610d16197268cf": {
       "key": "blt48610d16197268cf",
@@ -1940,17 +1982,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€25.00",
-        "discountAmount": "€15.00",
-        "discountPercentage": 40,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
         "raw": 15,
         "labelFormat": "",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€25.00",
+          "discountAmount": "€15.00"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "blt8b9037243a8cc1f2": {
       "key": "blt8b9037243a8cc1f2",
@@ -1973,17 +2022,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€20.00",
-        "discountAmount": "€10.00",
-        "discountPercentage": 50,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
         "raw": 10,
         "labelFormat": "",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€20.00",
+          "discountAmount": "€10.00"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "bltdb2cbc052e308628": {
       "key": "bltdb2cbc052e308628",
@@ -2006,17 +2062,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€20.00",
-        "discountAmount": "€10.00",
-        "discountPercentage": 50,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
         "raw": 10,
         "labelFormat": "",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€20.00",
+          "discountAmount": "€10.00"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "blt38bc4028e8ac3e23": {
       "key": "blt38bc4028e8ac3e23",
@@ -2039,17 +2102,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€8.00",
-        "discountAmount": "€4.00",
-        "discountPercentage": 50,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
         "raw": 4,
         "labelFormat": "",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€8.00",
+          "discountAmount": "€4.00"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "bltf23f4602e46440b5": {
       "key": "bltf23f4602e46440b5",
@@ -2072,17 +2142,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€15.00",
-        "discountAmount": "€7.50",
-        "discountPercentage": 50,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
         "raw": 7.5,
         "labelFormat": "",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€15.00",
+          "discountAmount": "€7.50"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "bltf976865edfcf1e87": {
       "key": "bltf976865edfcf1e87",
@@ -2105,17 +2182,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€20.00",
-        "discountAmount": "€10.00",
-        "discountPercentage": 50,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
         "raw": 10,
         "labelFormat": "",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€20.00",
+          "discountAmount": "€10.00"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "bltc00d4f8688cab261": {
       "key": "bltc00d4f8688cab261",
@@ -2138,17 +2222,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€20.00",
-        "discountAmount": "€10.00",
-        "discountPercentage": 50,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
         "raw": 10,
         "labelFormat": "",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€20.00",
+          "discountAmount": "€10.00"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "blt46ecac8b6b8d56cf": {
       "key": "blt46ecac8b6b8d56cf",
@@ -2171,17 +2262,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€20.00",
-        "discountAmount": "€10.00",
-        "discountPercentage": 50,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
         "raw": 10,
         "labelFormat": "",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€20.00",
+          "discountAmount": "€10.00"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "blt89c73f83bd996d24": {
       "key": "blt89c73f83bd996d24",
@@ -2204,17 +2302,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€15.00",
-        "discountAmount": "€7.50",
-        "discountPercentage": 50,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
         "raw": 7.5,
         "labelFormat": "",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€15.00",
+          "discountAmount": "€7.50"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "blteab825d5d503a792": {
       "key": "blteab825d5d503a792",
@@ -2237,17 +2342,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€20.00",
-        "discountAmount": "€10.00",
-        "discountPercentage": 50,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
         "raw": 10,
         "labelFormat": "",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€20.00",
+          "discountAmount": "€10.00"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "blta9c4dbfe03e20420": {
       "key": "blta9c4dbfe03e20420",
@@ -3133,17 +3245,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€10.00",
-        "discountAmount": "€5.00",
-        "discountPercentage": 50,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
-        "raw": 5,
+        "raw": 10,
         "labelFormat": "",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€10.00",
+          "discountAmount": "€5.00"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "bltd8f325973824e7ca": {
       "key": "bltd8f325973824e7ca",
@@ -3166,17 +3285,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€5.00",
-        "discountAmount": "€2.50",
-        "discountPercentage": 50,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
-        "raw": 2.5,
+        "raw": 5,
         "labelFormat": "",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€5.00",
+          "discountAmount": "€2.50"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "bltcc2d72d2f7c94641": {
       "key": "bltcc2d72d2f7c94641",
@@ -3199,17 +3325,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€10.00",
-        "discountAmount": "€5.00",
-        "discountPercentage": 50,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
-        "raw": 5,
+        "raw": 10,
         "labelFormat": "",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€10.00",
+          "discountAmount": "€5.00"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "bltc4ff87cfb556a68c": {
       "key": "bltc4ff87cfb556a68c",
@@ -3232,17 +3365,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€5.00",
-        "discountAmount": "€2.50",
-        "discountPercentage": 50,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
-        "raw": 2.5,
+        "raw": 5,
         "labelFormat": "",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€5.00",
+          "discountAmount": "€2.50"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "blt666aea471d0ec98d": {
       "key": "blt666aea471d0ec98d",
@@ -3265,17 +3405,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€5.00",
-        "discountAmount": "€2.50",
-        "discountPercentage": 50,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
-        "raw": 2.5,
+        "raw": 5,
         "labelFormat": "",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€5.00",
+          "discountAmount": "€2.50"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "blt09b8c9c3f3650d5c": {
       "key": "blt09b8c9c3f3650d5c",
@@ -3298,17 +3445,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€10.00",
-        "discountAmount": "€5.00",
-        "discountPercentage": 50,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
-        "raw": 5,
+        "raw": 10,
         "labelFormat": "",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€10.00",
+          "discountAmount": "€5.00"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "blt772547cf6f4b3142": {
       "key": "blt772547cf6f4b3142",
@@ -3332,17 +3486,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€60.00",
-        "discountAmount": "€40.20",
-        "discountPercentage": 33,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
-        "raw": 40.2,
+        "raw": 60,
         "labelFormat": "From {0}",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€60.00",
+          "discountAmount": "€40.20"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "blt0610899f846ba36d": {
       "key": "blt0610899f846ba36d",
@@ -3367,17 +3528,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€25.00",
-        "discountAmount": "€17.50",
-        "discountPercentage": 30,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
         "raw": 17.5,
         "labelFormat": "From {0}",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€25.00",
+          "discountAmount": "€17.50"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "blt01ffc87a96c04fb1": {
       "key": "blt01ffc87a96c04fb1",
@@ -3402,17 +3570,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€30.00",
-        "discountAmount": "€21.00",
-        "discountPercentage": 30,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
-        "raw": 21,
+        "raw": 30,
         "labelFormat": "From {0}",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€30.00",
+          "discountAmount": "€21.00"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "blt0c12d595a37ead0c": {
       "key": "blt0c12d595a37ead0c",
@@ -3437,17 +3612,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€25.00",
-        "discountAmount": "€17.50",
-        "discountPercentage": 30,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
         "raw": 17.5,
         "labelFormat": "From {0}",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€25.00",
+          "discountAmount": "€17.50"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "blt77976f6c60f9b8b7": {
       "key": "blt77976f6c60f9b8b7",
@@ -3472,17 +3654,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€10.00",
-        "discountAmount": "€7.00",
-        "discountPercentage": 30,
+        "discountAmount": null,
+        "discountPercentage": null,
         "currency": "EUR",
-        "raw": 7,
+        "raw": 10,
         "labelFormat": "From {0}",
-        "discountId": "02ff17c4-6bf0-470a-9640-7ff45b109e60"
+        "discountId": null
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€10.00",
+          "discountAmount": "€7.00"
+        },
+        "until": "2026-11-03T18:42:24.000Z"
+      }
     },
     "bltbb21426aee60e098": {
       "key": "bltbb21426aee60e098",
@@ -5014,8 +5203,8 @@
         "Banner"
       ],
       "first_seen": "2026-10-21T18:25:26Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "blt05242be8b86fb740": {
       "key": "blt05242be8b86fb740",
@@ -5914,7 +6103,7 @@
   "suspect": false,
   "campaigns": {
     "02ff17c4-6bf0-470a-9640-7ff45b109e60": {
-      "status": "active",
+      "status": "ended",
       "members": [
         "blt76278791b674c4a2",
         "blt2245f40198551963",
@@ -5944,7 +6133,8 @@
         "blt0c12d595a37ead0c",
         "blt77976f6c60f9b8b7"
       ],
-      "started": "2026-10-21T23:27:23Z"
+      "started": "2026-10-21T23:27:23Z",
+      "ended": "2026-11-03T18:12:24Z"
     }
   }
 }
