@@ -215,14 +215,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$49.99",
-          "discountAmount": "$24.99"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "blt457589be15ce3dd7": {
       "key": "blt457589be15ce3dd7",
@@ -389,14 +382,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$35.00",
-          "discountAmount": "$17.50"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "bltad6d580fcefaa54c": {
       "key": "bltad6d580fcefaa54c",
@@ -429,14 +415,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$25.00",
-          "discountAmount": "$12.50"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "blte8e11bfb894010cf": {
       "key": "blte8e11bfb894010cf",
@@ -1839,14 +1818,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$20.00",
-          "discountAmount": "$14.00"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "blt5c565694d77a7838": {
       "key": "blt5c565694d77a7838",
@@ -1879,14 +1851,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$20.00",
-          "discountAmount": "$14.00"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "bltec442faf62951573": {
       "key": "bltec442faf62951573",
@@ -1919,14 +1884,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$20.00",
-          "discountAmount": "$10.00"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "blt48610d16197268cf": {
       "key": "blt48610d16197268cf",
@@ -1992,14 +1950,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$25.00",
-          "discountAmount": "$15.00"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "blt8b9037243a8cc1f2": {
       "key": "blt8b9037243a8cc1f2",
@@ -2032,14 +1983,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$20.00",
-          "discountAmount": "$10.00"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "bltdb2cbc052e308628": {
       "key": "bltdb2cbc052e308628",
@@ -2072,14 +2016,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$20.00",
-          "discountAmount": "$10.00"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "blt38bc4028e8ac3e23": {
       "key": "blt38bc4028e8ac3e23",
@@ -2112,14 +2049,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$8.00",
-          "discountAmount": "$4.00"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "bltf23f4602e46440b5": {
       "key": "bltf23f4602e46440b5",
@@ -2152,14 +2082,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$15.00",
-          "discountAmount": "$7.50"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "bltf976865edfcf1e87": {
       "key": "bltf976865edfcf1e87",
@@ -2192,14 +2115,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$20.00",
-          "discountAmount": "$10.00"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "bltc00d4f8688cab261": {
       "key": "bltc00d4f8688cab261",
@@ -2232,14 +2148,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$20.00",
-          "discountAmount": "$10.00"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "blt46ecac8b6b8d56cf": {
       "key": "blt46ecac8b6b8d56cf",
@@ -2272,14 +2181,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$20.00",
-          "discountAmount": "$10.00"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "blt89c73f83bd996d24": {
       "key": "blt89c73f83bd996d24",
@@ -2312,14 +2214,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$15.00",
-          "discountAmount": "$7.50"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "blteab825d5d503a792": {
       "key": "blteab825d5d503a792",
@@ -2352,14 +2247,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$20.00",
-          "discountAmount": "$10.00"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "blta9c4dbfe03e20420": {
       "key": "blta9c4dbfe03e20420",
@@ -3255,14 +3143,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$10.00",
-          "discountAmount": "$5.00"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "bltd8f325973824e7ca": {
       "key": "bltd8f325973824e7ca",
@@ -3295,14 +3176,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$5.00",
-          "discountAmount": "$2.50"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "bltcc2d72d2f7c94641": {
       "key": "bltcc2d72d2f7c94641",
@@ -3335,14 +3209,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$10.00",
-          "discountAmount": "$5.00"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "bltc4ff87cfb556a68c": {
       "key": "bltc4ff87cfb556a68c",
@@ -3375,14 +3242,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$5.00",
-          "discountAmount": "$2.50"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "blt666aea471d0ec98d": {
       "key": "blt666aea471d0ec98d",
@@ -3415,14 +3275,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$5.00",
-          "discountAmount": "$2.50"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "blt09b8c9c3f3650d5c": {
       "key": "blt09b8c9c3f3650d5c",
@@ -3455,14 +3308,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$10.00",
-          "discountAmount": "$5.00"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "blt772547cf6f4b3142": {
       "key": "blt772547cf6f4b3142",
@@ -3496,14 +3342,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$60.00",
-          "discountAmount": "$40.20"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "blt0610899f846ba36d": {
       "key": "blt0610899f846ba36d",
@@ -3538,14 +3377,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$25.00",
-          "discountAmount": "$17.50"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "blt01ffc87a96c04fb1": {
       "key": "blt01ffc87a96c04fb1",
@@ -3580,14 +3412,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$30.00",
-          "discountAmount": "$21.00"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "blt0c12d595a37ead0c": {
       "key": "blt0c12d595a37ead0c",
@@ -3622,14 +3447,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$25.00",
-          "discountAmount": "$17.50"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "blt77976f6c60f9b8b7": {
       "key": "blt77976f6c60f9b8b7",
@@ -3664,14 +3482,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$10.00",
-          "discountAmount": "$7.00"
-        },
-        "until": "2026-11-03T18:42:24.000Z"
-      }
+      "misses": 0
     },
     "bltbb21426aee60e098": {
       "key": "bltbb21426aee60e098",
@@ -6229,41 +6040,5 @@
       "misses": 0
     }
   },
-  "suspect": false,
-  "campaigns": {
-    "02ff17c4-6bf0-470a-9640-7ff45b109e60": {
-      "status": "ended",
-      "members": [
-        "blt76278791b674c4a2",
-        "blt2245f40198551963",
-        "bltad6d580fcefaa54c",
-        "blt655c0eac76c59e1d",
-        "blt5c565694d77a7838",
-        "bltec442faf62951573",
-        "blt2cee8c8f40f88a6c",
-        "blt8b9037243a8cc1f2",
-        "bltdb2cbc052e308628",
-        "blt38bc4028e8ac3e23",
-        "bltf23f4602e46440b5",
-        "bltf976865edfcf1e87",
-        "bltc00d4f8688cab261",
-        "blt46ecac8b6b8d56cf",
-        "blt89c73f83bd996d24",
-        "blteab825d5d503a792",
-        "bltcd8c97c6094de246",
-        "bltd8f325973824e7ca",
-        "bltcc2d72d2f7c94641",
-        "bltc4ff87cfb556a68c",
-        "blt666aea471d0ec98d",
-        "blt09b8c9c3f3650d5c",
-        "blt772547cf6f4b3142",
-        "blt0610899f846ba36d",
-        "blt01ffc87a96c04fb1",
-        "blt0c12d595a37ead0c",
-        "blt77976f6c60f9b8b7"
-      ],
-      "started": "2026-10-21T23:27:23Z",
-      "ended": "2026-11-03T18:12:24Z"
-    }
-  }
+  "suspect": false
 }
