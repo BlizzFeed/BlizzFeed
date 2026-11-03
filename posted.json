@@ -1634,5 +1634,67 @@
     },
     "at": "2026-11-03T18:19:07Z",
     "digested": []
+  },
+  {
+    "type": "banner",
+    "family": "world-of-warcraft",
+    "key": "blt58777451ef9d0cda",
+    "slug": null,
+    "seen": "2026-11-03T18:23:07Z",
+    "changes": {
+      "eu": {
+        "type": "banner",
+        "key": "blt58777451ef9d0cda",
+        "kind": "banner",
+        "slug": null,
+        "title": "Save up to 50% on Midnight, transmogs, and more through November 2",
+        "destination": null,
+        "seen": "2026-11-03T18:23:07Z",
+        "button": null,
+        "product": null,
+        "what": "removed",
+        "commit": "9da962b61bd83f6617dd5378d01fb9bbf5be27eb"
+      },
+      "us": {
+        "type": "banner",
+        "key": "blt58777451ef9d0cda",
+        "kind": "banner",
+        "slug": null,
+        "title": "Save up to 50% on Midnight, transmogs, and more through November 2",
+        "destination": null,
+        "seen": "2026-11-03T18:23:07Z",
+        "button": null,
+        "product": null,
+        "what": "removed",
+        "commit": "70e1a34a3bacebbb0686b5336a5fa7c8b6c06f30"
+      }
+    },
+    "at": "2026-11-03T18:23:58Z",
+    "digested": [],
+    "paired": true
+  },
+  {
+    "type": "banner",
+    "family": "world-of-warcraft-classic",
+    "key": "blt3b7be63073ed441a",
+    "slug": null,
+    "seen": "2026-11-03T18:23:07Z",
+    "changes": {
+      "eu": {
+        "type": "banner",
+        "key": "blt3b7be63073ed441a",
+        "kind": "banner",
+        "slug": null,
+        "title": "Save big on name change and the Level 58 Boost through November 2!",
+        "destination": "/family/world-of-warcraft-classic#anniversary-game-services",
+        "seen": "2026-11-03T18:23:07Z",
+        "button": "Shop Now",
+        "product": null,
+        "what": "removed",
+        "commit": "d75c397b9c533e4df29c14b652aab8e62aa6819c"
+      }
+    },
+    "at": "2026-11-03T18:23:58Z",
+    "digested": []
   }
 ]
