@@ -1983,7 +1983,10 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "misses": 1
+      }
     },
     "bltdb2cbc052e308628": {
       "key": "bltdb2cbc052e308628",
@@ -2181,7 +2184,10 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "misses": 1
+      }
     },
     "blt89c73f83bd996d24": {
       "key": "blt89c73f83bd996d24",
