@@ -1913,7 +1913,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:06:35Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:2132886": {
       "key": "p:2132886",
@@ -1949,7 +1949,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:06:35Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:2132887": {
       "key": "p:2132887",
@@ -1986,7 +1986,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:06:35Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:2126622": {
       "key": "p:2126622",
@@ -2019,7 +2019,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:06:35Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:2126626": {
       "key": "p:2126626",
@@ -2052,7 +2052,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:06:35Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:2132889": {
       "key": "p:2132889",
@@ -2090,7 +2090,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:06:35Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:209611": {
       "key": "p:209611",
@@ -2123,7 +2123,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:06:35Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:1262576": {
       "key": "p:1262576",
@@ -2156,7 +2156,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:06:35Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:1092160": {
       "key": "p:1092160",
@@ -2189,7 +2189,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-13T18:06:35Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:2132890": {
       "key": "p:2132890",
@@ -2264,7 +2264,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:00:29Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:2131869": {
       "key": "p:2131869",
@@ -2318,7 +2318,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:00:29Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:2131873": {
       "key": "p:2131873",
@@ -2355,7 +2355,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:00:29Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:2131872": {
       "key": "p:2131872",
@@ -2391,7 +2391,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:00:29Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:2126628": {
       "key": "p:2126628",
@@ -2424,7 +2424,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:00:29Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:2131871": {
       "key": "p:2131871",
@@ -2460,7 +2460,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:00:29Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:2126036": {
       "key": "p:2126036",
@@ -2493,7 +2493,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:00:29Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:2126041": {
       "key": "p:2126041",
@@ -2526,7 +2526,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:00:29Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:1935740": {
       "key": "p:1935740",
@@ -2578,7 +2578,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:00:29Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:2027259": {
       "key": "p:2027259",
@@ -2643,40 +2643,6 @@
       "sections": [
         "Banner"
       ],
-      "first_seen": "2026-11-03T19:09:00Z",
-      "status": "listed",
-      "misses": 0
-    },
-    "p:2136810": {
-      "key": "p:2136810",
-      "kind": "item",
-      "cmsId": null,
-      "slug": "overwatch-taking-reign-premium-event-pass",
-      "title": "Taking Reign - Premium Event Pass",
-      "description": "",
-      "categoryId": null,
-      "itemId": 2136810,
-      "productIds": [
-        2136810
-      ],
-      "subscriptionIds": [],
-      "destination": "/family/overwatch/items/2136810/taking-reign-premium-event-pass",
-      "image": "//catalog.blzstatic.com//fbb/62f67497c8186a385684b173c3a9a8f1-S25M_Event_PremiumPass_Web_1920x1080_v1_ux1.png",
-      "sections": [
-        "Featured",
-        "Seasonal Offers"
-      ],
-      "badge": null,
-      "price": {
-        "fullAmount": "1,000 Coins",
-        "discountAmount": null,
-        "discountPercentage": null,
-        "currency": "XWC",
-        "raw": 1000,
-        "labelFormat": null,
-        "discountId": null
-      },
-      "expiresAtMs": null,
       "first_seen": "2026-11-03T19:09:00Z",
       "status": "listed",
       "misses": 0
@@ -3521,6 +3487,80 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt8e8034df7b91d08c": {
+      "key": "blt8e8034df7b91d08c",
+      "kind": "item",
+      "cmsId": "blt8e8034df7b91d08c",
+      "slug": "2136810",
+      "title": "Taking Reign - Premium Event Pass",
+      "description": "Seasonal Packs",
+      "categoryId": "battle-pass",
+      "itemId": 2136810,
+      "productIds": [
+        2136810
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2136810",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt4f52ea28423b50dc/6ae23337626f24ba59fb150f/S25M_Event_PremiumPass_Web_1920x1080_v1_ux1.png",
+      "sections": [
+        "Featured",
+        "Seasonal Offers"
+      ],
+      "badge": "New",
+      "price": {
+        "fullAmount": "1,000 Coins",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XWC",
+        "raw": 1000,
+        "labelFormat": "",
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-03T19:09:00Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt5dc3fd86ade9c9cb": {
+      "key": "blt5dc3fd86ade9c9cb",
+      "kind": "banner",
+      "cmsId": "blt5dc3fd86ade9c9cb",
+      "slug": null,
+      "itemId": 2145338,
+      "title": "Protocol Engaged: Suit up with the Mega Bundle from our newest sci-fi collab.",
+      "productPageName": null,
+      "headline": "",
+      "subHeadline": "Protocol Engaged: Suit up with the Mega Bundle from our newest sci-fi collab.",
+      "buttonText": "Buy Now",
+      "destination": "/family/overwatch/items/2145338",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt0984c2b5bb5537aa/6ae8db77079ae3e6ca8f464c/shop_carousel_ow_26_s5_bladebundle_desktop.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-11-03T19:13:45Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "bltb9394563e69b665d": {
+      "key": "bltb9394563e69b665d",
+      "kind": "banner",
+      "cmsId": "bltb9394563e69b665d",
+      "slug": null,
+      "itemId": 2136810,
+      "title": "Get the Taking Reign Premium Event Pass today!",
+      "productPageName": null,
+      "headline": "",
+      "subHeadline": "Get the Taking Reign Premium Event Pass today!",
+      "buttonText": "Buy Now",
+      "destination": "/family/overwatch/items/2136810",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt5f8859a29e2d8acb/6ae8e003be953f56aea78ad5/shop_carousel_ow_26_s5_vendettaproduct_desktop.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-11-03T19:13:45Z",
       "status": "listed",
       "misses": 0
     }
