@@ -382,7 +382,7 @@
         "discountAmount": null,
         "discountPercentage": null,
         "currency": "EUR",
-        "raw": 17.5,
+        "raw": 35,
         "labelFormat": "",
         "discountId": null
       },
@@ -422,7 +422,7 @@
         "discountAmount": null,
         "discountPercentage": null,
         "currency": "EUR",
-        "raw": 12.5,
+        "raw": 25,
         "labelFormat": "",
         "discountId": null
       },
@@ -1832,7 +1832,7 @@
         "discountAmount": null,
         "discountPercentage": null,
         "currency": "EUR",
-        "raw": 14,
+        "raw": 20,
         "labelFormat": "From {0}",
         "discountId": null
       },
@@ -1912,7 +1912,7 @@
         "discountAmount": null,
         "discountPercentage": null,
         "currency": "EUR",
-        "raw": 10,
+        "raw": 20,
         "labelFormat": "",
         "discountId": null
       },
@@ -2025,7 +2025,7 @@
         "discountAmount": null,
         "discountPercentage": null,
         "currency": "EUR",
-        "raw": 10,
+        "raw": 20,
         "labelFormat": "",
         "discountId": null
       },
@@ -2105,7 +2105,7 @@
         "discountAmount": null,
         "discountPercentage": null,
         "currency": "EUR",
-        "raw": 4,
+        "raw": 8,
         "labelFormat": "",
         "discountId": null
       },
@@ -2145,7 +2145,7 @@
         "discountAmount": null,
         "discountPercentage": null,
         "currency": "EUR",
-        "raw": 7.5,
+        "raw": 15,
         "labelFormat": "",
         "discountId": null
       },
@@ -2265,7 +2265,7 @@
         "discountAmount": null,
         "discountPercentage": null,
         "currency": "EUR",
-        "raw": 10,
+        "raw": 20,
         "labelFormat": "",
         "discountId": null
       },
@@ -2305,7 +2305,7 @@
         "discountAmount": null,
         "discountPercentage": null,
         "currency": "EUR",
-        "raw": 7.5,
+        "raw": 15,
         "labelFormat": "",
         "discountId": null
       },
@@ -3531,7 +3531,7 @@
         "discountAmount": null,
         "discountPercentage": null,
         "currency": "EUR",
-        "raw": 17.5,
+        "raw": 25,
         "labelFormat": "From {0}",
         "discountId": null
       },
@@ -3615,7 +3615,7 @@
         "discountAmount": null,
         "discountPercentage": null,
         "currency": "EUR",
-        "raw": 17.5,
+        "raw": 25,
         "labelFormat": "From {0}",
         "discountId": null
       },
@@ -5204,7 +5204,7 @@
       ],
       "first_seen": "2026-10-21T18:25:26Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "blt05242be8b86fb740": {
       "key": "blt05242be8b86fb740",
