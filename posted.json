@@ -24,12 +24,33 @@
           "discountId": null
         },
         "commit": "c8d0d6c5cd16edfa96ef44a048dc880090317ee5"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2151642",
+        "kind": "item",
+        "slug": "diablo-immortal-rift-delvers-hoard",
+        "title": "Rift Delver's Hoard",
+        "destination": "/family/diablo-immortal/items/2151642/rift-delvers-hoard",
+        "seen": "2026-11-04T16:20:23Z",
+        "price": {
+          "fullAmount": "€187.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 187.99,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "5cd857b83b25f0dbb7d9061c0614a9ada7818596"
       }
     },
     "at": "2026-11-04T16:11:07Z",
     "digested": [
-      "[\"shop\",null]"
-    ]
+      "[\"shop\",null]",
+      "[\"feed\",\"diablo-immortal-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -56,12 +77,33 @@
           "discountId": null
         },
         "commit": "c8d0d6c5cd16edfa96ef44a048dc880090317ee5"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2151629",
+        "kind": "item",
+        "slug": "diablo-immortal-rift-delvers-cache",
+        "title": "Rift Delver's Cache",
+        "destination": "/family/diablo-immortal/items/2151629/rift-delvers-cache",
+        "seen": "2026-11-04T16:20:23Z",
+        "price": {
+          "fullAmount": "€93.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 93.99,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "5cd857b83b25f0dbb7d9061c0614a9ada7818596"
       }
     },
     "at": "2026-11-04T16:11:07Z",
     "digested": [
-      "[\"shop\",null]"
-    ]
+      "[\"shop\",null]",
+      "[\"feed\",\"diablo-immortal-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -88,12 +130,33 @@
           "discountId": null
         },
         "commit": "c8d0d6c5cd16edfa96ef44a048dc880090317ee5"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2151628",
+        "kind": "item",
+        "slug": "diablo-immortal-rift-delvers-chest",
+        "title": "Rift Delver's Chest",
+        "destination": "/family/diablo-immortal/items/2151628/rift-delvers-chest",
+        "seen": "2026-11-04T16:20:23Z",
+        "price": {
+          "fullAmount": "€46.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 46.99,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "5cd857b83b25f0dbb7d9061c0614a9ada7818596"
       }
     },
     "at": "2026-11-04T16:11:07Z",
     "digested": [
-      "[\"shop\",null]"
-    ]
+      "[\"shop\",null]",
+      "[\"feed\",\"diablo-immortal-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "gone",
