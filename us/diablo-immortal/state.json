@@ -943,8 +943,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-21T15:00:26Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-04T16:10:31Z"
     },
     "p:2137981": {
       "key": "p:2137981",
@@ -976,8 +977,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-21T15:00:26Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-04T16:10:31Z"
     },
     "p:2137980": {
       "key": "p:2137980",
@@ -1009,8 +1011,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-21T15:00:26Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-04T16:10:31Z"
     },
     "p:2137983": {
       "key": "p:2137983",
@@ -1192,6 +1195,105 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-01T16:10:24Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2151642": {
+      "key": "p:2151642",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "diablo-immortal-rift-delvers-hoard",
+      "title": "Rift Delver's Hoard",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2151642,
+      "productIds": [
+        2151642
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/diablo-immortal/items/2151642/rift-delvers-hoard",
+      "image": "//catalog.blzstatic.com//60/bc6dc9e32cb00382ccd4008cf4de8a3c-RiftDelversHoard_v1_1920x1080.png",
+      "sections": [
+        "Exclusive Bundles"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$199.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 199.99,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-04T16:10:31Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2151629": {
+      "key": "p:2151629",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "diablo-immortal-rift-delvers-cache",
+      "title": "Rift Delver's Cache",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2151629,
+      "productIds": [
+        2151629
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/diablo-immortal/items/2151629/rift-delvers-cache",
+      "image": "//catalog.blzstatic.com//fb4/84bb76f06e80636865a2ccdb7f0ea3e1-RiftDelversCache_v1_1920x10801.png",
+      "sections": [
+        "Exclusive Bundles"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$99.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 99.99,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-04T16:10:31Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2151628": {
+      "key": "p:2151628",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "diablo-immortal-rift-delvers-chest",
+      "title": "Rift Delver's Chest",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2151628,
+      "productIds": [
+        2151628
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/diablo-immortal/items/2151628/rift-delvers-chest",
+      "image": "//catalog.blzstatic.com//7a/06453c25470bcef3f058e1839792f7f7-DIA_DI_NA_RiftDelversChest_MidJuly2025Bundle_AllIcons_1920x1080_enus_EE02.png",
+      "sections": [
+        "Exclusive Bundles"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$49.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "USD",
+        "raw": 49.99,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-04T16:10:31Z",
       "status": "listed",
       "misses": 0
     }
