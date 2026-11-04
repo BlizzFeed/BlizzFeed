@@ -1816,8 +1816,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 1
+      "status": "listed",
+      "misses": 0
     },
     "blt5c565694d77a7838": {
       "key": "blt5c565694d77a7838",
@@ -5928,8 +5928,8 @@
         "Banner"
       ],
       "first_seen": "2026-11-04T19:30:27Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "bltb8de298c16fdd208": {
       "key": "bltb8de298c16fdd208",
@@ -5969,6 +5969,26 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-04T23:29:33Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "bltcca36c6fbda4e4bd": {
+      "key": "bltcca36c6fbda4e4bd",
+      "kind": "banner",
+      "cmsId": "bltcca36c6fbda4e4bd",
+      "slug": "world-of-warcraft-subscription",
+      "itemId": null,
+      "title": "World of Warcraft®: Subscription",
+      "productPageName": "World of Warcraft®: Subscription",
+      "headline": "",
+      "subHeadline": "The countless adventures of Azeroth await! Subscribe now to begin your Forever journey today. ",
+      "buttonText": "Subscribe and Play Now",
+      "destination": "/product/world-of-warcraft-subscription",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt7a67556b42493038/6aea1f8c0e233551f7e637b2/WoW_Forever_Campfire_LaunchKeyartSupport_BnetShop_HeaderDesktop_1600x500.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-11-04T23:34:25Z",
       "status": "listed",
       "misses": 0
     }
