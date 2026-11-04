@@ -442,8 +442,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 1
+      "status": "listed",
+      "misses": 0
     },
     "blt9bd788a40c9d3a67": {
       "key": "blt9bd788a40c9d3a67",
