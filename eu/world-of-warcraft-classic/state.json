@@ -376,8 +376,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "blt3c7921902c83fc75": {
       "key": "blt3c7921902c83fc75",
