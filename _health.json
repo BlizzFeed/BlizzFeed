@@ -1,23 +1,7 @@
 {
-  "eu/diablo-ii": {
-    "failures": 1,
-    "since": "2026-11-04T23:00:59Z"
-  },
-  "eu/diablo-immortal": {
-    "failures": 1,
-    "since": "2026-11-04T23:01:24Z"
-  },
   "eu/starcraft-ii": {
     "failures": 3,
     "since": "2026-10-14T19:02:45Z"
-  },
-  "eu/world-of-warcraft": {
-    "failures": 1,
-    "since": "2026-11-04T23:00:53Z"
-  },
-  "eu/world-of-warcraft-classic": {
-    "failures": 1,
-    "since": "2026-11-04T23:00:54Z"
   },
   "us/starcraft-ii": {
     "failures": 3,
