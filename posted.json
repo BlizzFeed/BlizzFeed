@@ -183,12 +183,32 @@
           "discountId": null
         },
         "commit": "c8d0d6c5cd16edfa96ef44a048dc880090317ee5"
+      },
+      "eu": {
+        "type": "gone",
+        "key": "p:2137982",
+        "kind": "item",
+        "slug": "diablo-immortal-gemologists-hoard",
+        "title": "Gemologist's Hoard",
+        "destination": "/family/diablo-immortal/items/2137982/gemologists-hoard",
+        "seen": "2026-11-04T16:30:25Z",
+        "price": {
+          "fullAmount": "€187.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 187.99,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "94919cdfbefb6a9f80a903729a9d5f544b54486e"
       }
     },
     "at": "2026-11-04T16:11:07Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "gone",
@@ -215,12 +235,32 @@
           "discountId": null
         },
         "commit": "c8d0d6c5cd16edfa96ef44a048dc880090317ee5"
+      },
+      "eu": {
+        "type": "gone",
+        "key": "p:2137981",
+        "kind": "item",
+        "slug": "diablo-immortal-gemologists-cache",
+        "title": "Gemologist's Cache",
+        "destination": "/family/diablo-immortal/items/2137981/gemologists-cache",
+        "seen": "2026-11-04T16:30:25Z",
+        "price": {
+          "fullAmount": "€93.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 93.99,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "94919cdfbefb6a9f80a903729a9d5f544b54486e"
       }
     },
     "at": "2026-11-04T16:11:07Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "gone",
@@ -247,11 +287,31 @@
           "discountId": null
         },
         "commit": "c8d0d6c5cd16edfa96ef44a048dc880090317ee5"
+      },
+      "eu": {
+        "type": "gone",
+        "key": "p:2137980",
+        "kind": "item",
+        "slug": "diablo-immortal-gemologists-chest",
+        "title": "Gemologist's Chest",
+        "destination": "/family/diablo-immortal/items/2137980/gemologists-chest",
+        "seen": "2026-11-04T16:30:25Z",
+        "price": {
+          "fullAmount": "€46.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 46.99,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "94919cdfbefb6a9f80a903729a9d5f544b54486e"
       }
     },
     "at": "2026-11-04T16:11:07Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   }
 ]
