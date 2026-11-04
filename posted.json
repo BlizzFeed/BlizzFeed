@@ -1,1 +1,194 @@
-[]
+[
+  {
+    "type": "new",
+    "family": "diablo-immortal",
+    "key": "p:2151642",
+    "slug": "diablo-immortal-rift-delvers-hoard",
+    "seen": "2026-11-04T16:10:31Z",
+    "changes": {
+      "us": {
+        "type": "new",
+        "key": "p:2151642",
+        "kind": "item",
+        "slug": "diablo-immortal-rift-delvers-hoard",
+        "title": "Rift Delver's Hoard",
+        "destination": "/family/diablo-immortal/items/2151642/rift-delvers-hoard",
+        "seen": "2026-11-04T16:10:31Z",
+        "price": {
+          "fullAmount": "$199.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 199.99,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "c8d0d6c5cd16edfa96ef44a048dc880090317ee5"
+      }
+    },
+    "at": "2026-11-04T16:11:07Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "new",
+    "family": "diablo-immortal",
+    "key": "p:2151629",
+    "slug": "diablo-immortal-rift-delvers-cache",
+    "seen": "2026-11-04T16:10:31Z",
+    "changes": {
+      "us": {
+        "type": "new",
+        "key": "p:2151629",
+        "kind": "item",
+        "slug": "diablo-immortal-rift-delvers-cache",
+        "title": "Rift Delver's Cache",
+        "destination": "/family/diablo-immortal/items/2151629/rift-delvers-cache",
+        "seen": "2026-11-04T16:10:31Z",
+        "price": {
+          "fullAmount": "$99.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 99.99,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "c8d0d6c5cd16edfa96ef44a048dc880090317ee5"
+      }
+    },
+    "at": "2026-11-04T16:11:07Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "new",
+    "family": "diablo-immortal",
+    "key": "p:2151628",
+    "slug": "diablo-immortal-rift-delvers-chest",
+    "seen": "2026-11-04T16:10:31Z",
+    "changes": {
+      "us": {
+        "type": "new",
+        "key": "p:2151628",
+        "kind": "item",
+        "slug": "diablo-immortal-rift-delvers-chest",
+        "title": "Rift Delver's Chest",
+        "destination": "/family/diablo-immortal/items/2151628/rift-delvers-chest",
+        "seen": "2026-11-04T16:10:31Z",
+        "price": {
+          "fullAmount": "$49.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 49.99,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "c8d0d6c5cd16edfa96ef44a048dc880090317ee5"
+      }
+    },
+    "at": "2026-11-04T16:11:07Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "gone",
+    "family": "diablo-immortal",
+    "key": "p:2137982",
+    "slug": "diablo-immortal-gemologists-hoard",
+    "seen": "2026-11-04T16:10:31Z",
+    "changes": {
+      "us": {
+        "type": "gone",
+        "key": "p:2137982",
+        "kind": "item",
+        "slug": "diablo-immortal-gemologists-hoard",
+        "title": "Gemologist's Hoard",
+        "destination": "/family/diablo-immortal/items/2137982/gemologists-hoard",
+        "seen": "2026-11-04T16:10:31Z",
+        "price": {
+          "fullAmount": "$199.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 199.99,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "c8d0d6c5cd16edfa96ef44a048dc880090317ee5"
+      }
+    },
+    "at": "2026-11-04T16:11:07Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "gone",
+    "family": "diablo-immortal",
+    "key": "p:2137981",
+    "slug": "diablo-immortal-gemologists-cache",
+    "seen": "2026-11-04T16:10:31Z",
+    "changes": {
+      "us": {
+        "type": "gone",
+        "key": "p:2137981",
+        "kind": "item",
+        "slug": "diablo-immortal-gemologists-cache",
+        "title": "Gemologist's Cache",
+        "destination": "/family/diablo-immortal/items/2137981/gemologists-cache",
+        "seen": "2026-11-04T16:10:31Z",
+        "price": {
+          "fullAmount": "$99.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 99.99,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "c8d0d6c5cd16edfa96ef44a048dc880090317ee5"
+      }
+    },
+    "at": "2026-11-04T16:11:07Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "gone",
+    "family": "diablo-immortal",
+    "key": "p:2137980",
+    "slug": "diablo-immortal-gemologists-chest",
+    "seen": "2026-11-04T16:10:31Z",
+    "changes": {
+      "us": {
+        "type": "gone",
+        "key": "p:2137980",
+        "kind": "item",
+        "slug": "diablo-immortal-gemologists-chest",
+        "title": "Gemologist's Chest",
+        "destination": "/family/diablo-immortal/items/2137980/gemologists-chest",
+        "seen": "2026-11-04T16:10:31Z",
+        "price": {
+          "fullAmount": "$49.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 49.99,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "c8d0d6c5cd16edfa96ef44a048dc880090317ee5"
+      }
+    },
+    "at": "2026-11-04T16:11:07Z",
+    "digested": [
+      "[\"shop\",null]"
+    ]
+  }
+]
