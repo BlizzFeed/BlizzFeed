@@ -161,9 +161,8 @@
         2091256
       ],
       "destination": "/product/world-of-warcraft-subscription",
-      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt443dfb53bc66c15a/696fc0a7a4d899787cea5d89/Midnight_Shop_THumb_ProductAssetGallery_NoLogos_1920x1080_zhTW.png",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltb44d996a7f3b3e78/6adfd6d796e0990f86df4393/WoW_Camelot_Subscription_ProductAssetGallery_1920x1080_NoLogos.png",
       "sections": [
-        "Great for New Players",
         "Subscriptions"
       ],
       "badge": null,
@@ -6057,6 +6056,67 @@
         "Banner"
       ],
       "first_seen": "2026-11-04T19:30:27Z",
+      "status": "missing",
+      "misses": 1
+    },
+    "bltcca36c6fbda4e4bd": {
+      "key": "bltcca36c6fbda4e4bd",
+      "kind": "banner",
+      "cmsId": "bltcca36c6fbda4e4bd",
+      "slug": "world-of-warcraft-subscription",
+      "itemId": null,
+      "title": "World of Warcraft®: Subscription",
+      "productPageName": "World of Warcraft®: Subscription",
+      "headline": "",
+      "subHeadline": "The countless adventures of Azeroth await! Subscribe now to begin your Forever journey today. ",
+      "buttonText": "Subscribe and Play Now",
+      "destination": "/product/world-of-warcraft-subscription",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt7a67556b42493038/6aea1f8c0e233551f7e637b2/WoW_Forever_Campfire_LaunchKeyartSupport_BnetShop_HeaderDesktop_1600x500.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-11-04T23:29:33Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "bltb8de298c16fdd208": {
+      "key": "bltb8de298c16fdd208",
+      "kind": "item",
+      "cmsId": "bltb8de298c16fdd208",
+      "slug": "world-of-warcraft-subscription",
+      "title": "World of Warcraft®: Subscription",
+      "description": "Subscriptions",
+      "categoryId": "subscriptions",
+      "itemId": null,
+      "productIds": [
+        1914324,
+        1914315,
+        2091255,
+        2080506
+      ],
+      "subscriptionIds": [
+        1914317,
+        1914325,
+        2140486,
+        2091256
+      ],
+      "destination": "/product/world-of-warcraft-subscription",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltb44d996a7f3b3e78/6adfd6d796e0990f86df4393/WoW_Camelot_Subscription_ProductAssetGallery_1920x1080_NoLogos.png",
+      "sections": [
+        "Great for New Players"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "$12.99/month",
+        "discountAmount": null,
+        "discountPercentage": 13.34,
+        "currency": "USD",
+        "raw": 77.94,
+        "labelFormat": "From {0}",
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-04T23:29:33Z",
       "status": "listed",
       "misses": 0
     }
