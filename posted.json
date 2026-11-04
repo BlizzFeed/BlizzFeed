@@ -185,7 +185,7 @@
         "slug": "world-of-warcraft-subscription",
         "title": "World of Warcraft®: Subscription",
         "destination": "/product/world-of-warcraft-subscription",
-        "seen": "2026-11-04T23:34:25Z",
+        "seen": "2026-11-04T23:39:29Z",
         "price": {
           "fullAmount": null,
           "discountAmount": null,
@@ -199,12 +199,12 @@
           "image"
         ],
         "from": {
-          "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltb44d996a7f3b3e78/6adfd6d796e0990f86df4393/WoW_Camelot_Subscription_ProductAssetGallery_1920x1080_NoLogos.png"
-        },
-        "to": {
           "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt443dfb53bc66c15a/696fc0a7a4d899787cea5d89/Midnight_Shop_THumb_ProductAssetGallery_NoLogos_1920x1080_zhTW.png"
         },
-        "commit": "99e84094d04ac1da4f5b815141f82d8a6a3f3773"
+        "to": {
+          "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltb44d996a7f3b3e78/6adfd6d796e0990f86df4393/WoW_Camelot_Subscription_ProductAssetGallery_1920x1080_NoLogos.png"
+        },
+        "commit": "ba65900ab9536636fc7c13012dd0bcf873393948"
       },
       "us": {
         "type": "details",
@@ -213,7 +213,7 @@
         "slug": "world-of-warcraft-subscription",
         "title": "World of Warcraft®: Subscription",
         "destination": "/product/world-of-warcraft-subscription",
-        "seen": "2026-11-04T23:29:33Z",
+        "seen": "2026-11-04T23:39:29Z",
         "price": {
           "fullAmount": null,
           "discountAmount": null,
@@ -227,12 +227,12 @@
           "image"
         ],
         "from": {
-          "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt443dfb53bc66c15a/696fc0a7a4d899787cea5d89/Midnight_Shop_THumb_ProductAssetGallery_NoLogos_1920x1080_zhTW.png"
-        },
-        "to": {
           "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltb44d996a7f3b3e78/6adfd6d796e0990f86df4393/WoW_Camelot_Subscription_ProductAssetGallery_1920x1080_NoLogos.png"
         },
-        "commit": "6af9ed6bf79ead8350fc034e126a85dba9c0e022"
+        "to": {
+          "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt443dfb53bc66c15a/696fc0a7a4d899787cea5d89/Midnight_Shop_THumb_ProductAssetGallery_NoLogos_1920x1080_zhTW.png"
+        },
+        "commit": "9530fa52058d8490331bfc9457b11dd3cea41b1d"
       }
     },
     "at": "2026-11-04T23:30:08Z",
@@ -332,7 +332,92 @@
             "commit": "99e84094d04ac1da4f5b815141f82d8a6a3f3773"
           }
         }
+      },
+      {
+        "seen": "2026-11-04T23:39:29Z",
+        "changes": {
+          "eu": {
+            "type": "details",
+            "key": "blta8d0e146eb12dc05",
+            "kind": "item",
+            "slug": "world-of-warcraft-subscription",
+            "title": "World of Warcraft®: Subscription",
+            "destination": "/product/world-of-warcraft-subscription",
+            "seen": "2026-11-04T23:39:29Z",
+            "price": {
+              "fullAmount": null,
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": null,
+              "raw": 0,
+              "labelFormat": "Learn More",
+              "discountId": null
+            },
+            "changed": [
+              "image"
+            ],
+            "from": {
+              "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt443dfb53bc66c15a/696fc0a7a4d899787cea5d89/Midnight_Shop_THumb_ProductAssetGallery_NoLogos_1920x1080_zhTW.png"
+            },
+            "to": {
+              "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltb44d996a7f3b3e78/6adfd6d796e0990f86df4393/WoW_Camelot_Subscription_ProductAssetGallery_1920x1080_NoLogos.png"
+            },
+            "commit": "ba65900ab9536636fc7c13012dd0bcf873393948"
+          },
+          "us": {
+            "type": "details",
+            "key": "blta8d0e146eb12dc05",
+            "kind": "item",
+            "slug": "world-of-warcraft-subscription",
+            "title": "World of Warcraft®: Subscription",
+            "destination": "/product/world-of-warcraft-subscription",
+            "seen": "2026-11-04T23:39:29Z",
+            "price": {
+              "fullAmount": null,
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": null,
+              "raw": 0,
+              "labelFormat": "Learn More",
+              "discountId": null
+            },
+            "changed": [
+              "image"
+            ],
+            "from": {
+              "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltb44d996a7f3b3e78/6adfd6d796e0990f86df4393/WoW_Camelot_Subscription_ProductAssetGallery_1920x1080_NoLogos.png"
+            },
+            "to": {
+              "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt443dfb53bc66c15a/696fc0a7a4d899787cea5d89/Midnight_Shop_THumb_ProductAssetGallery_NoLogos_1920x1080_zhTW.png"
+            },
+            "commit": "9530fa52058d8490331bfc9457b11dd3cea41b1d"
+          }
+        }
       }
     ]
+  },
+  {
+    "type": "banner",
+    "family": "world-of-warcraft",
+    "key": "bltce651d6800f0a484",
+    "slug": "world-of-warcraft-forever",
+    "seen": "2026-11-04T23:39:29Z",
+    "changes": {
+      "us": {
+        "type": "banner",
+        "key": "bltce651d6800f0a484",
+        "kind": "banner",
+        "slug": "world-of-warcraft-forever",
+        "title": "World of Warcraft®: Forever ",
+        "destination": "/product/world-of-warcraft-forever",
+        "seen": "2026-11-04T23:39:29Z",
+        "button": "Pre-purchase Now",
+        "product": "World of Warcraft®: Forever",
+        "what": "removed",
+        "commit": "ce5f0ee149f1fbe886bb38e877dbc957faa4600a"
+      }
+    },
+    "at": "2026-11-04T23:40:05Z",
+    "digested": []
   }
 ]
