@@ -943,9 +943,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-21T15:10:28Z",
-      "status": "gone",
-      "misses": 3,
-      "gone_since": "2026-11-04T16:30:25Z"
+      "status": "listed",
+      "misses": 0
     },
     "p:2137981": {
       "key": "p:2137981",
@@ -977,9 +976,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-21T15:10:28Z",
-      "status": "gone",
-      "misses": 3,
-      "gone_since": "2026-11-04T16:30:25Z"
+      "status": "listed",
+      "misses": 0
     },
     "p:2137980": {
       "key": "p:2137980",
@@ -1011,9 +1009,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-21T15:10:28Z",
-      "status": "gone",
-      "misses": 3,
-      "gone_since": "2026-11-04T16:30:25Z"
+      "status": "listed",
+      "misses": 0
     },
     "p:2137983": {
       "key": "p:2137983",
@@ -1228,8 +1225,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-04T16:20:23Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2151629": {
       "key": "p:2151629",
@@ -1261,8 +1258,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-04T16:20:23Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2151628": {
       "key": "p:2151628",
@@ -1294,8 +1291,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-04T16:20:23Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     }
   },
   "suspect": false
