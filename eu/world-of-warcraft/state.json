@@ -5928,8 +5928,9 @@
         "Banner"
       ],
       "first_seen": "2026-11-04T19:30:27Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-04T23:44:46Z"
     },
     "bltb8de298c16fdd208": {
       "key": "bltb8de298c16fdd208",
