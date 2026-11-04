@@ -185,7 +185,7 @@
         "slug": "world-of-warcraft-subscription",
         "title": "World of Warcraft®: Subscription",
         "destination": "/product/world-of-warcraft-subscription",
-        "seen": "2026-11-04T23:29:33Z",
+        "seen": "2026-11-04T23:34:25Z",
         "price": {
           "fullAmount": null,
           "discountAmount": null,
@@ -199,12 +199,12 @@
           "image"
         ],
         "from": {
-          "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt443dfb53bc66c15a/696fc0a7a4d899787cea5d89/Midnight_Shop_THumb_ProductAssetGallery_NoLogos_1920x1080_zhTW.png"
-        },
-        "to": {
           "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltb44d996a7f3b3e78/6adfd6d796e0990f86df4393/WoW_Camelot_Subscription_ProductAssetGallery_1920x1080_NoLogos.png"
         },
-        "commit": "b04e7fce55fcb06529914c4d0fac573a200ae84b"
+        "to": {
+          "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt443dfb53bc66c15a/696fc0a7a4d899787cea5d89/Midnight_Shop_THumb_ProductAssetGallery_NoLogos_1920x1080_zhTW.png"
+        },
+        "commit": "99e84094d04ac1da4f5b815141f82d8a6a3f3773"
       },
       "us": {
         "type": "details",
@@ -237,6 +237,102 @@
     },
     "at": "2026-11-04T23:30:08Z",
     "digested": [],
-    "paired": true
+    "paired": true,
+    "lines": [
+      {
+        "seen": "2026-11-04T23:29:33Z",
+        "changes": {
+          "eu": {
+            "type": "details",
+            "key": "blta8d0e146eb12dc05",
+            "kind": "item",
+            "slug": "world-of-warcraft-subscription",
+            "title": "World of Warcraft®: Subscription",
+            "destination": "/product/world-of-warcraft-subscription",
+            "seen": "2026-11-04T23:29:33Z",
+            "price": {
+              "fullAmount": null,
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": null,
+              "raw": 0,
+              "labelFormat": "Learn More",
+              "discountId": null
+            },
+            "changed": [
+              "image"
+            ],
+            "from": {
+              "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt443dfb53bc66c15a/696fc0a7a4d899787cea5d89/Midnight_Shop_THumb_ProductAssetGallery_NoLogos_1920x1080_zhTW.png"
+            },
+            "to": {
+              "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltb44d996a7f3b3e78/6adfd6d796e0990f86df4393/WoW_Camelot_Subscription_ProductAssetGallery_1920x1080_NoLogos.png"
+            },
+            "commit": "b04e7fce55fcb06529914c4d0fac573a200ae84b"
+          },
+          "us": {
+            "type": "details",
+            "key": "blta8d0e146eb12dc05",
+            "kind": "item",
+            "slug": "world-of-warcraft-subscription",
+            "title": "World of Warcraft®: Subscription",
+            "destination": "/product/world-of-warcraft-subscription",
+            "seen": "2026-11-04T23:29:33Z",
+            "price": {
+              "fullAmount": null,
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": null,
+              "raw": 0,
+              "labelFormat": "Learn More",
+              "discountId": null
+            },
+            "changed": [
+              "image"
+            ],
+            "from": {
+              "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt443dfb53bc66c15a/696fc0a7a4d899787cea5d89/Midnight_Shop_THumb_ProductAssetGallery_NoLogos_1920x1080_zhTW.png"
+            },
+            "to": {
+              "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltb44d996a7f3b3e78/6adfd6d796e0990f86df4393/WoW_Camelot_Subscription_ProductAssetGallery_1920x1080_NoLogos.png"
+            },
+            "commit": "6af9ed6bf79ead8350fc034e126a85dba9c0e022"
+          }
+        }
+      },
+      {
+        "seen": "2026-11-04T23:34:25Z",
+        "changes": {
+          "eu": {
+            "type": "details",
+            "key": "blta8d0e146eb12dc05",
+            "kind": "item",
+            "slug": "world-of-warcraft-subscription",
+            "title": "World of Warcraft®: Subscription",
+            "destination": "/product/world-of-warcraft-subscription",
+            "seen": "2026-11-04T23:34:25Z",
+            "price": {
+              "fullAmount": null,
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": null,
+              "raw": 0,
+              "labelFormat": "Learn More",
+              "discountId": null
+            },
+            "changed": [
+              "image"
+            ],
+            "from": {
+              "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltb44d996a7f3b3e78/6adfd6d796e0990f86df4393/WoW_Camelot_Subscription_ProductAssetGallery_1920x1080_NoLogos.png"
+            },
+            "to": {
+              "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt443dfb53bc66c15a/696fc0a7a4d899787cea5d89/Midnight_Shop_THumb_ProductAssetGallery_NoLogos_1920x1080_zhTW.png"
+            },
+            "commit": "99e84094d04ac1da4f5b815141f82d8a6a3f3773"
+          }
+        }
+      }
+    ]
   }
 ]
