@@ -1,54 +1,66 @@
 {
   "blizzard-news": {
-    "failures": 1,
+    "failures": 2,
     "since": "2026-11-04T23:04:30Z"
+  },
+  "diablo-2-resurrected-news": {
+    "failures": 1,
+    "since": "2026-11-04T23:09:05Z"
   },
   "diablo-3-news": {
-    "failures": 1,
+    "failures": 2,
     "since": "2026-11-04T23:04:30Z"
   },
-  "diablo-immortal-news": {
+  "diablo-4-news": {
     "failures": 1,
+    "since": "2026-11-04T23:09:05Z"
+  },
+  "diablo-5-news": {
+    "failures": 1,
+    "since": "2026-11-04T23:09:05Z"
+  },
+  "diablo-immortal-news": {
+    "failures": 2,
     "since": "2026-11-04T23:04:30Z"
   },
   "hearthstone-news": {
-    "failures": 1,
+    "failures": 2,
     "since": "2026-11-04T23:04:30Z"
   },
   "hots-news": {
-    "failures": 1,
+    "failures": 2,
     "since": "2026-11-04T23:04:30Z"
   },
   "overwatch-news": {
-    "failures": 1,
+    "failures": 2,
     "since": "2026-11-04T23:04:30Z"
   },
   "starcraft-2-news": {
-    "failures": 1,
+    "failures": 2,
     "since": "2026-11-04T23:04:30Z"
   },
   "starcraft-news": {
-    "failures": 1,
+    "failures": 2,
     "since": "2026-11-04T23:04:30Z"
   },
   "starcraft-remastered-news": {
-    "failures": 1,
+    "failures": 2,
     "since": "2026-11-04T23:04:30Z"
   },
   "warcraft-3-news": {
-    "failures": 1,
+    "failures": 2,
     "since": "2026-11-04T23:04:30Z"
   },
   "warcraft-rumble-news": {
-    "failures": 1,
+    "failures": 2,
     "since": "2026-11-04T23:04:30Z"
   },
   "wow-news": {
-    "failures": 1,
+    "failures": 2,
     "since": "2026-11-04T23:04:30Z"
   },
   "wow-news-us": {
-    "failures": 1,
+    "failures": 2,
     "since": "2026-11-04T23:04:30Z"
   }
 }
