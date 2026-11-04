@@ -1661,6 +1661,27 @@
         "Banner"
       ],
       "first_seen": "2026-10-28T00:24:26Z",
+      "status": "gone",
+      "misses": 0,
+      "gone_since": "2026-11-04T19:30:27Z"
+    },
+    "bltce651d6800f0a484": {
+      "key": "bltce651d6800f0a484",
+      "kind": "banner",
+      "cmsId": "bltce651d6800f0a484",
+      "slug": "world-of-warcraft-forever",
+      "itemId": null,
+      "title": "World of Warcraft®: Forever ",
+      "productPageName": "World of Warcraft®: Forever",
+      "headline": "",
+      "subHeadline": "Venture forth with the Warcraft Forever Collection, and play WoW: Forever starting November 4",
+      "buttonText": "Pre-purchase Now",
+      "destination": "/product/world-of-warcraft-forever",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blte309492f2ca43c81/6a91efc02437ed3b63d486c0/WoW_Camelot_AnnounceSupport_Alliance_BnetShop_HeaderDesktop_1600x500.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-11-04T19:30:27Z",
       "status": "listed",
       "misses": 0
     }
