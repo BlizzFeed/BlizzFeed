@@ -1,1 +1,58 @@
-[]
+[
+  {
+    "type": "banner",
+    "family": "world-of-warcraft",
+    "key": "bltcca36c6fbda4e4bd",
+    "slug": "world-of-warcraft-forever",
+    "seen": "2026-11-05T02:39:28Z",
+    "changes": {
+      "eu": {
+        "type": "banner",
+        "key": "bltcca36c6fbda4e4bd",
+        "kind": "banner",
+        "slug": "world-of-warcraft-forever",
+        "title": "World of Warcraft®: Forever ",
+        "destination": "/product/world-of-warcraft-forever",
+        "seen": "2026-11-05T02:39:28Z",
+        "button": "Subscribe and Play Now",
+        "product": "World of Warcraft®: Forever",
+        "what": "changed",
+        "changed": [
+          "destination"
+        ],
+        "from": {
+          "destination": "/product/world-of-warcraft-subscription"
+        },
+        "to": {
+          "destination": "/product/world-of-warcraft-forever"
+        },
+        "commit": "7a6379a13e2bd22b990958bf62f5118ee9f60f50"
+      },
+      "us": {
+        "type": "banner",
+        "key": "bltcca36c6fbda4e4bd",
+        "kind": "banner",
+        "slug": "world-of-warcraft-forever",
+        "title": "World of Warcraft®: Forever ",
+        "destination": "/product/world-of-warcraft-forever",
+        "seen": "2026-11-05T02:39:28Z",
+        "button": "Subscribe and Play Now",
+        "product": "World of Warcraft®: Forever",
+        "what": "changed",
+        "changed": [
+          "destination"
+        ],
+        "from": {
+          "destination": "/product/world-of-warcraft-subscription"
+        },
+        "to": {
+          "destination": "/product/world-of-warcraft-forever"
+        },
+        "commit": "e499851d41b833b6e356cfe37f0fcebfb0939327"
+      }
+    },
+    "at": "2026-11-05T02:40:02Z",
+    "digested": [],
+    "paired": true
+  }
+]
