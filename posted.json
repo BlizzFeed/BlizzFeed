@@ -1000,5 +1000,467 @@
       "[\"feed\",\"hearthstone-news\"]",
       "[\"shop\",null]"
     ]
+  },
+  {
+    "type": "back",
+    "family": "warcraft-rumble",
+    "key": "bltd51f3d98f4f1e331",
+    "slug": "warcraft-rumble-coin-packs",
+    "seen": "2026-11-05T21:16:38Z",
+    "changes": {
+      "eu": {
+        "type": "back",
+        "key": "bltd51f3d98f4f1e331",
+        "kind": "item",
+        "slug": "warcraft-rumble-coin-packs",
+        "title": "12600 Coins",
+        "destination": "/product/warcraft-rumble-coin-packs?p=1599689",
+        "seen": "2026-11-05T21:16:38Z",
+        "price": {
+          "fullAmount": "€99.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 99.99,
+          "labelFormat": "From {0}",
+          "discountId": null
+        },
+        "commit": "d6fae6af8b8fdec057c1f08c529149494346b1a5"
+      }
+    },
+    "at": "2026-11-05T21:17:13Z",
+    "digested": [
+      "[\"feed\",\"warcraft-rumble-news\"]",
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "back",
+    "family": "warcraft-rumble",
+    "key": "blt236393c7dfd616ed",
+    "slug": "warcraft-rumble-coin-packs",
+    "seen": "2026-11-05T21:16:38Z",
+    "changes": {
+      "eu": {
+        "type": "back",
+        "key": "blt236393c7dfd616ed",
+        "kind": "item",
+        "slug": "warcraft-rumble-coin-packs",
+        "title": "6300 Coins",
+        "destination": "/product/warcraft-rumble-coin-packs?p=1599690",
+        "seen": "2026-11-05T21:16:38Z",
+        "price": {
+          "fullAmount": "€49.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 49.99,
+          "labelFormat": "From {0}",
+          "discountId": null
+        },
+        "commit": "d6fae6af8b8fdec057c1f08c529149494346b1a5"
+      }
+    },
+    "at": "2026-11-05T21:17:13Z",
+    "digested": [
+      "[\"feed\",\"warcraft-rumble-news\"]",
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "back",
+    "family": "warcraft-rumble",
+    "key": "blta09df630b0615aaf",
+    "slug": "warcraft-rumble-coin-packs",
+    "seen": "2026-11-05T21:16:38Z",
+    "changes": {
+      "eu": {
+        "type": "back",
+        "key": "blta09df630b0615aaf",
+        "kind": "item",
+        "slug": "warcraft-rumble-coin-packs",
+        "title": "3150 Coins",
+        "destination": "/product/warcraft-rumble-coin-packs?p=1599692",
+        "seen": "2026-11-05T21:16:38Z",
+        "price": {
+          "fullAmount": "€24.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 24.99,
+          "labelFormat": "From {0}",
+          "discountId": null
+        },
+        "commit": "d6fae6af8b8fdec057c1f08c529149494346b1a5"
+      }
+    },
+    "at": "2026-11-05T21:17:13Z",
+    "digested": [
+      "[\"feed\",\"warcraft-rumble-news\"]",
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "back",
+    "family": "warcraft-rumble",
+    "key": "blt1a25bc503c9f0301",
+    "slug": "warcraft-rumble-coin-packs",
+    "seen": "2026-11-05T21:16:38Z",
+    "changes": {
+      "eu": {
+        "type": "back",
+        "key": "blt1a25bc503c9f0301",
+        "kind": "item",
+        "slug": "warcraft-rumble-coin-packs",
+        "title": "1260 Coins",
+        "destination": "/product/warcraft-rumble-coin-packs?p=1599688",
+        "seen": "2026-11-05T21:16:38Z",
+        "price": {
+          "fullAmount": "€9.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 9.99,
+          "labelFormat": "From {0}",
+          "discountId": null
+        },
+        "commit": "d6fae6af8b8fdec057c1f08c529149494346b1a5"
+      }
+    },
+    "at": "2026-11-05T21:17:13Z",
+    "digested": [
+      "[\"feed\",\"warcraft-rumble-news\"]",
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "back",
+    "family": "warcraft-rumble",
+    "key": "bltde4253a11d02e53b",
+    "slug": "warcraft-rumble-coin-packs",
+    "seen": "2026-11-05T21:16:38Z",
+    "changes": {
+      "eu": {
+        "type": "back",
+        "key": "bltde4253a11d02e53b",
+        "kind": "item",
+        "slug": "warcraft-rumble-coin-packs",
+        "title": "525 Coins",
+        "destination": "/product/warcraft-rumble-coin-packs?p=1599687",
+        "seen": "2026-11-05T21:16:38Z",
+        "price": {
+          "fullAmount": "€4.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 4.99,
+          "labelFormat": "From {0}",
+          "discountId": null
+        },
+        "commit": "d6fae6af8b8fdec057c1f08c529149494346b1a5"
+      }
+    },
+    "at": "2026-11-05T21:17:13Z",
+    "digested": [
+      "[\"feed\",\"warcraft-rumble-news\"]",
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "back",
+    "family": "warcraft-rumble",
+    "key": "blta6a7736ea2bea722",
+    "slug": "warcraft-rumble-coin-packs",
+    "seen": "2026-11-05T21:16:38Z",
+    "changes": {
+      "eu": {
+        "type": "back",
+        "key": "blta6a7736ea2bea722",
+        "kind": "item",
+        "slug": "warcraft-rumble-coin-packs",
+        "title": "95 Coins",
+        "destination": "/product/warcraft-rumble-coin-packs?p=1599691",
+        "seen": "2026-11-05T21:16:38Z",
+        "price": {
+          "fullAmount": "€0.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 0.99,
+          "labelFormat": "From {0}",
+          "discountId": null
+        },
+        "commit": "d6fae6af8b8fdec057c1f08c529149494346b1a5"
+      }
+    },
+    "at": "2026-11-05T21:17:13Z",
+    "digested": [
+      "[\"feed\",\"warcraft-rumble-news\"]",
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "back",
+    "family": "warcraft-rumble",
+    "key": "blta8464c6e8d080df8",
+    "slug": "warcraft-rumble-coin-packs",
+    "seen": "2026-11-05T21:16:38Z",
+    "changes": {
+      "eu": {
+        "type": "back",
+        "key": "blta8464c6e8d080df8",
+        "kind": "item",
+        "slug": "warcraft-rumble-coin-packs",
+        "title": "Coin Packs",
+        "destination": "/product/warcraft-rumble-coin-packs",
+        "seen": "2026-11-05T21:16:38Z",
+        "price": {
+          "fullAmount": "€0.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 0.99,
+          "labelFormat": "From {0}",
+          "discountId": null
+        },
+        "commit": "d6fae6af8b8fdec057c1f08c529149494346b1a5"
+      }
+    },
+    "at": "2026-11-05T21:17:13Z",
+    "digested": [
+      "[\"feed\",\"warcraft-rumble-news\"]",
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "back",
+    "family": "hearthstone",
+    "key": "p:2137294",
+    "slug": "hearthstone-welcome-inn-card-back",
+    "seen": "2026-11-05T21:16:38Z",
+    "changes": {
+      "eu": {
+        "type": "back",
+        "key": "p:2137294",
+        "kind": "item",
+        "slug": "hearthstone-welcome-inn-card-back",
+        "title": "Hearthstone®: Welcome Inn Card Back",
+        "destination": "/family/hearthstone/items/2137294/welcome-inn-card-back",
+        "seen": "2026-11-05T21:16:38Z",
+        "price": {
+          "fullAmount": "2,500 Tavern Tender",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVW",
+          "raw": 2500,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "731c77bef541fdadbedf9faf367a8da9caa13d8b"
+      }
+    },
+    "at": "2026-11-05T21:17:13Z",
+    "digested": [
+      "[\"feed\",\"hearthstone-news\"]",
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "back",
+    "family": "hearthstone",
+    "key": "p:2137305",
+    "slug": "hearthstone-1-random-signature-legendary-standard-card",
+    "seen": "2026-11-05T21:16:38Z",
+    "changes": {
+      "eu": {
+        "type": "back",
+        "key": "p:2137305",
+        "kind": "item",
+        "slug": "hearthstone-1-random-signature-legendary-standard-card",
+        "title": "Hearthstone®: 1 Random Signature Legendary Standard Card",
+        "destination": "/family/hearthstone/items/2137305/1-random-signature-legendary-standard-card",
+        "seen": "2026-11-05T21:16:38Z",
+        "price": {
+          "fullAmount": "3,000 Tavern Tender",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVW",
+          "raw": 3000,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "731c77bef541fdadbedf9faf367a8da9caa13d8b"
+      }
+    },
+    "at": "2026-11-05T21:17:13Z",
+    "digested": [
+      "[\"feed\",\"hearthstone-news\"]",
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "back",
+    "family": "hearthstone",
+    "key": "p:2137306",
+    "slug": "hearthstone-wild-god-omen",
+    "seen": "2026-11-05T21:16:38Z",
+    "changes": {
+      "eu": {
+        "type": "back",
+        "key": "p:2137306",
+        "kind": "item",
+        "slug": "hearthstone-wild-god-omen",
+        "title": "Wild God Omen",
+        "destination": "/family/hearthstone/items/2137306/wild-god-omen",
+        "seen": "2026-11-05T21:16:38Z",
+        "price": {
+          "fullAmount": "1,500 Tavern Tender",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVW",
+          "raw": 1500,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "731c77bef541fdadbedf9faf367a8da9caa13d8b"
+      }
+    },
+    "at": "2026-11-05T21:17:13Z",
+    "digested": [
+      "[\"feed\",\"hearthstone-news\"]",
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "back",
+    "family": "hearthstone",
+    "key": "p:2137307",
+    "slug": "hearthstone-af-kitsune",
+    "seen": "2026-11-05T21:16:38Z",
+    "changes": {
+      "eu": {
+        "type": "back",
+        "key": "p:2137307",
+        "kind": "item",
+        "slug": "hearthstone-af-kitsune",
+        "title": "A.F. Kitsune",
+        "destination": "/family/hearthstone/items/2137307/af-kitsune",
+        "seen": "2026-11-05T21:16:38Z",
+        "price": {
+          "fullAmount": "1,000 Tavern Tender",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVW",
+          "raw": 1000,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "731c77bef541fdadbedf9faf367a8da9caa13d8b"
+      }
+    },
+    "at": "2026-11-05T21:17:13Z",
+    "digested": [
+      "[\"feed\",\"hearthstone-news\"]",
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "back",
+    "family": "hearthstone",
+    "key": "p:2137295",
+    "slug": "hearthstone-annhylde-hero-set",
+    "seen": "2026-11-05T21:16:38Z",
+    "changes": {
+      "eu": {
+        "type": "back",
+        "key": "p:2137295",
+        "kind": "item",
+        "slug": "hearthstone-annhylde-hero-set",
+        "title": "Annhylde Hero Set",
+        "destination": "/family/hearthstone/items/2137295/annhylde-hero-set",
+        "seen": "2026-11-05T21:16:38Z",
+        "price": {
+          "fullAmount": "1,000 Tavern Tender",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVW",
+          "raw": 1000,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "731c77bef541fdadbedf9faf367a8da9caa13d8b"
+      }
+    },
+    "at": "2026-11-05T21:17:13Z",
+    "digested": [
+      "[\"feed\",\"hearthstone-news\"]",
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "back",
+    "family": "hearthstone",
+    "key": "p:2137296",
+    "slug": "hearthstone-ice-lord-malfurion",
+    "seen": "2026-11-05T21:16:38Z",
+    "changes": {
+      "eu": {
+        "type": "back",
+        "key": "p:2137296",
+        "kind": "item",
+        "slug": "hearthstone-ice-lord-malfurion",
+        "title": "Ice Lord Malfurion",
+        "destination": "/family/hearthstone/items/2137296/ice-lord-malfurion",
+        "seen": "2026-11-05T21:16:38Z",
+        "price": {
+          "fullAmount": "800 Tavern Tender",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVW",
+          "raw": 800,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "731c77bef541fdadbedf9faf367a8da9caa13d8b"
+      }
+    },
+    "at": "2026-11-05T21:17:13Z",
+    "digested": [
+      "[\"feed\",\"hearthstone-news\"]",
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "back",
+    "family": "hearthstone",
+    "key": "p:2137297",
+    "slug": "hearthstone-5-reign-of-the-black-empire-packs",
+    "seen": "2026-11-05T21:16:38Z",
+    "changes": {
+      "eu": {
+        "type": "back",
+        "key": "p:2137297",
+        "kind": "item",
+        "slug": "hearthstone-5-reign-of-the-black-empire-packs",
+        "title": "Hearthstone®: 5 Reign of the Black Empire Packs",
+        "destination": "/family/hearthstone/items/2137297/5-reign-of-the-black-empire-packs",
+        "seen": "2026-11-05T21:16:38Z",
+        "price": {
+          "fullAmount": "1,200 Tavern Tender",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XVW",
+          "raw": 1200,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "731c77bef541fdadbedf9faf367a8da9caa13d8b"
+      }
+    },
+    "at": "2026-11-05T21:17:13Z",
+    "digested": [
+      "[\"feed\",\"hearthstone-news\"]",
+      "[\"shop\",null]"
+    ]
   }
 ]
