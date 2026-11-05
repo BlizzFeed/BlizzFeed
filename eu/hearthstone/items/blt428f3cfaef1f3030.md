@@ -2,7 +2,7 @@
 
 - Key: blt428f3cfaef1f3030
 - Status: listed
-- Sections: Standard Cards, Web Offers
+- Sections: Standard Cards
 - First seen: 2026-10-20T17:09:34Z
 - Badge: New
 - Price: €2.99
