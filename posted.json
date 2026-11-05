@@ -188,9 +188,32 @@
           "destination": "/product/world-of-warcraft-forever"
         },
         "commit": "5fc775da6748d6a17273b8ad983feaf95c809ddb"
+      },
+      "eu": {
+        "type": "banner",
+        "key": "bltcca36c6fbda4e4bd",
+        "kind": "banner",
+        "slug": "world-of-warcraft-forever",
+        "title": "World of Warcraft®: Forever ",
+        "destination": "/product/world-of-warcraft-forever",
+        "seen": "2026-11-05T02:54:22Z",
+        "button": "Subscribe and Play Now",
+        "product": "World of Warcraft®: Forever",
+        "what": "changed",
+        "changed": [
+          "destination"
+        ],
+        "from": {
+          "destination": "/product/world-of-warcraft-subscription"
+        },
+        "to": {
+          "destination": "/product/world-of-warcraft-forever"
+        },
+        "commit": "88a85f031080bdca01d92d80b3b5716aa2a80e4e"
       }
     },
     "at": "2026-11-05T02:44:55Z",
-    "digested": []
+    "digested": [],
+    "paired": true
   }
 ]
