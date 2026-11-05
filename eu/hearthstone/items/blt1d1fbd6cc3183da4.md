@@ -1,7 +1,7 @@
 # Hearthstone®: Kayn's Runestone Bundle
 
 - Key: blt1d1fbd6cc3183da4
-- Status: listed
+- Status: gone
 - Sections: Web Offers
 - First seen: 2026-10-09T03:10:55Z
 - Badge: Great Deal

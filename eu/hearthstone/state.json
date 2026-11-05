@@ -3500,8 +3500,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-05T21:06:29Z"
     },
     "p:2121953": {
       "key": "p:2121953",
@@ -3639,8 +3640,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T17:02:36Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-05T21:06:29Z"
     },
     "p:2137305": {
       "key": "p:2137305",
@@ -3672,8 +3674,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T17:02:36Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-05T21:06:29Z"
     },
     "p:2137306": {
       "key": "p:2137306",
@@ -3705,8 +3708,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T17:02:36Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-05T21:06:29Z"
     },
     "p:2137307": {
       "key": "p:2137307",
@@ -3738,8 +3742,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T17:02:36Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-05T21:06:29Z"
     },
     "p:2137295": {
       "key": "p:2137295",
@@ -3771,8 +3776,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T17:02:36Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-05T21:06:29Z"
     },
     "p:2137296": {
       "key": "p:2137296",
@@ -3804,8 +3810,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T17:02:36Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-05T21:06:29Z"
     },
     "p:2137297": {
       "key": "p:2137297",
@@ -3837,8 +3844,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T17:02:36Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-05T21:06:29Z"
     },
     "blt428f3cfaef1f3030": {
       "key": "blt428f3cfaef1f3030",
@@ -4009,8 +4017,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:35:35Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-05T21:06:29Z"
     },
     "p:2136772": {
       "key": "p:2136772",
@@ -4060,8 +4069,9 @@
       "price": null,
       "expiresAtMs": null,
       "first_seen": "2026-11-03T18:12:24Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-05T21:06:29Z"
     }
   },
   "suspect": false
