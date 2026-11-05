@@ -13,7 +13,7 @@
         "slug": "hearthstone-reign-of-the-black-empire-tavern-pass",
         "title": "Reign of the Black Empire Tavern Pass",
         "destination": "/product/hearthstone-reign-of-the-black-empire-tavern-pass?p=2122698",
-        "seen": "2026-11-05T20:55:52Z",
+        "seen": "2026-11-05T21:11:27Z",
         "price": {
           "fullAmount": "€19.99",
           "discountAmount": null,
@@ -28,22 +28,101 @@
         ],
         "from": {
           "sections": [
-            "Limited Time Bundles",
-            "Web Offers"
+            "Limited Time Bundles"
           ]
         },
         "to": {
           "sections": [
-            "Limited Time Bundles"
+            "Limited Time Bundles",
+            "Web Offers"
           ]
         },
-        "commit": "b108dd8a61f061f9f1b2c9e715c38b5b8ef63a12"
+        "commit": "26b4ca6c834d275ba544a605c7c262771b841be2"
       }
     },
     "at": "2026-11-05T20:56:27Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "lines": [
+      {
+        "seen": "2026-11-05T20:55:52Z",
+        "changes": {
+          "eu": {
+            "type": "details",
+            "key": "blt9095a4f2d568180c",
+            "kind": "item",
+            "slug": "hearthstone-reign-of-the-black-empire-tavern-pass",
+            "title": "Reign of the Black Empire Tavern Pass",
+            "destination": "/product/hearthstone-reign-of-the-black-empire-tavern-pass?p=2122698",
+            "seen": "2026-11-05T20:55:52Z",
+            "price": {
+              "fullAmount": "€19.99",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "EUR",
+              "raw": 19.99,
+              "labelFormat": "",
+              "discountId": null
+            },
+            "changed": [
+              "sections"
+            ],
+            "from": {
+              "sections": [
+                "Limited Time Bundles",
+                "Web Offers"
+              ]
+            },
+            "to": {
+              "sections": [
+                "Limited Time Bundles"
+              ]
+            },
+            "commit": "b108dd8a61f061f9f1b2c9e715c38b5b8ef63a12"
+          }
+        }
+      },
+      {
+        "seen": "2026-11-05T21:11:27Z",
+        "changes": {
+          "eu": {
+            "type": "details",
+            "key": "blt9095a4f2d568180c",
+            "kind": "item",
+            "slug": "hearthstone-reign-of-the-black-empire-tavern-pass",
+            "title": "Reign of the Black Empire Tavern Pass",
+            "destination": "/product/hearthstone-reign-of-the-black-empire-tavern-pass?p=2122698",
+            "seen": "2026-11-05T21:11:27Z",
+            "price": {
+              "fullAmount": "€19.99",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "EUR",
+              "raw": 19.99,
+              "labelFormat": "",
+              "discountId": null
+            },
+            "changed": [
+              "sections"
+            ],
+            "from": {
+              "sections": [
+                "Limited Time Bundles"
+              ]
+            },
+            "to": {
+              "sections": [
+                "Limited Time Bundles",
+                "Web Offers"
+              ]
+            },
+            "commit": "26b4ca6c834d275ba544a605c7c262771b841be2"
+          }
+        }
+      }
+    ],
+    "paired": true
   },
   {
     "type": "details",
@@ -59,7 +138,7 @@
         "slug": "hearthstone-reign-of-the-black-empire-packs",
         "title": "Reign of the Black Empire Packs",
         "destination": "/product/hearthstone-reign-of-the-black-empire-packs",
-        "seen": "2026-11-05T20:55:52Z",
+        "seen": "2026-11-05T21:11:27Z",
         "price": {
           "fullAmount": "€2.99",
           "discountAmount": null,
@@ -74,22 +153,101 @@
         ],
         "from": {
           "sections": [
-            "Standard Cards",
-            "Web Offers"
+            "Standard Cards"
           ]
         },
         "to": {
           "sections": [
-            "Standard Cards"
+            "Standard Cards",
+            "Web Offers"
           ]
         },
-        "commit": "b108dd8a61f061f9f1b2c9e715c38b5b8ef63a12"
+        "commit": "26b4ca6c834d275ba544a605c7c262771b841be2"
       }
     },
     "at": "2026-11-05T20:56:27Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "lines": [
+      {
+        "seen": "2026-11-05T20:55:52Z",
+        "changes": {
+          "eu": {
+            "type": "details",
+            "key": "blt428f3cfaef1f3030",
+            "kind": "item",
+            "slug": "hearthstone-reign-of-the-black-empire-packs",
+            "title": "Reign of the Black Empire Packs",
+            "destination": "/product/hearthstone-reign-of-the-black-empire-packs",
+            "seen": "2026-11-05T20:55:52Z",
+            "price": {
+              "fullAmount": "€2.99",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "EUR",
+              "raw": 2.99,
+              "labelFormat": "From {0}",
+              "discountId": null
+            },
+            "changed": [
+              "sections"
+            ],
+            "from": {
+              "sections": [
+                "Standard Cards",
+                "Web Offers"
+              ]
+            },
+            "to": {
+              "sections": [
+                "Standard Cards"
+              ]
+            },
+            "commit": "b108dd8a61f061f9f1b2c9e715c38b5b8ef63a12"
+          }
+        }
+      },
+      {
+        "seen": "2026-11-05T21:11:27Z",
+        "changes": {
+          "eu": {
+            "type": "details",
+            "key": "blt428f3cfaef1f3030",
+            "kind": "item",
+            "slug": "hearthstone-reign-of-the-black-empire-packs",
+            "title": "Reign of the Black Empire Packs",
+            "destination": "/product/hearthstone-reign-of-the-black-empire-packs",
+            "seen": "2026-11-05T21:11:27Z",
+            "price": {
+              "fullAmount": "€2.99",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "EUR",
+              "raw": 2.99,
+              "labelFormat": "From {0}",
+              "discountId": null
+            },
+            "changed": [
+              "sections"
+            ],
+            "from": {
+              "sections": [
+                "Standard Cards"
+              ]
+            },
+            "to": {
+              "sections": [
+                "Standard Cards",
+                "Web Offers"
+              ]
+            },
+            "commit": "26b4ca6c834d275ba544a605c7c262771b841be2"
+          }
+        }
+      }
+    ],
+    "paired": true
   },
   {
     "type": "details",
@@ -105,7 +263,7 @@
         "slug": "hearthstone-golden-reign-of-the-black-empire-packs",
         "title": "Golden Reign of the Black Empire Packs",
         "destination": "/product/hearthstone-golden-reign-of-the-black-empire-packs",
-        "seen": "2026-11-05T20:55:52Z",
+        "seen": "2026-11-05T21:11:27Z",
         "price": {
           "fullAmount": "€19.99",
           "discountAmount": null,
@@ -120,22 +278,101 @@
         ],
         "from": {
           "sections": [
-            "Standard Cards",
-            "Web Offers"
+            "Standard Cards"
           ]
         },
         "to": {
           "sections": [
-            "Standard Cards"
+            "Standard Cards",
+            "Web Offers"
           ]
         },
-        "commit": "b108dd8a61f061f9f1b2c9e715c38b5b8ef63a12"
+        "commit": "26b4ca6c834d275ba544a605c7c262771b841be2"
       }
     },
     "at": "2026-11-05T20:56:27Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "lines": [
+      {
+        "seen": "2026-11-05T20:55:52Z",
+        "changes": {
+          "eu": {
+            "type": "details",
+            "key": "blt86a654a339a47809",
+            "kind": "item",
+            "slug": "hearthstone-golden-reign-of-the-black-empire-packs",
+            "title": "Golden Reign of the Black Empire Packs",
+            "destination": "/product/hearthstone-golden-reign-of-the-black-empire-packs",
+            "seen": "2026-11-05T20:55:52Z",
+            "price": {
+              "fullAmount": "€19.99",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "EUR",
+              "raw": 19.99,
+              "labelFormat": "From {0}",
+              "discountId": null
+            },
+            "changed": [
+              "sections"
+            ],
+            "from": {
+              "sections": [
+                "Standard Cards",
+                "Web Offers"
+              ]
+            },
+            "to": {
+              "sections": [
+                "Standard Cards"
+              ]
+            },
+            "commit": "b108dd8a61f061f9f1b2c9e715c38b5b8ef63a12"
+          }
+        }
+      },
+      {
+        "seen": "2026-11-05T21:11:27Z",
+        "changes": {
+          "eu": {
+            "type": "details",
+            "key": "blt86a654a339a47809",
+            "kind": "item",
+            "slug": "hearthstone-golden-reign-of-the-black-empire-packs",
+            "title": "Golden Reign of the Black Empire Packs",
+            "destination": "/product/hearthstone-golden-reign-of-the-black-empire-packs",
+            "seen": "2026-11-05T21:11:27Z",
+            "price": {
+              "fullAmount": "€19.99",
+              "discountAmount": null,
+              "discountPercentage": null,
+              "currency": "EUR",
+              "raw": 19.99,
+              "labelFormat": "From {0}",
+              "discountId": null
+            },
+            "changed": [
+              "sections"
+            ],
+            "from": {
+              "sections": [
+                "Standard Cards"
+              ]
+            },
+            "to": {
+              "sections": [
+                "Standard Cards",
+                "Web Offers"
+              ]
+            },
+            "commit": "26b4ca6c834d275ba544a605c7c262771b841be2"
+          }
+        }
+      }
+    ],
+    "paired": true
   },
   {
     "type": "gone",
@@ -670,6 +907,97 @@
     },
     "at": "2026-11-05T21:07:07Z",
     "digested": [
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "back",
+    "family": "hearthstone",
+    "key": "p:2122670",
+    "slug": "hearthstone-chronicles-of-cataclysm-violet-hold-bundle",
+    "seen": "2026-11-05T21:11:27Z",
+    "changes": {
+      "eu": {
+        "type": "back",
+        "key": "p:2122670",
+        "kind": "item",
+        "slug": "hearthstone-chronicles-of-cataclysm-violet-hold-bundle",
+        "title": "Hearthstone®: Chronicles of CATACLYSM & Violet Hold Bundle",
+        "destination": "/family/hearthstone/items/2122670/chronicles-of-cataclysm-violet-hold-bundle",
+        "seen": "2026-11-05T21:11:27Z",
+        "price": {
+          "fullAmount": "€19.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 19.99,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "26b4ca6c834d275ba544a605c7c262771b841be2"
+      }
+    },
+    "at": "2026-11-05T21:12:02Z",
+    "digested": [
+      "[\"feed\",\"hearthstone-news\"]",
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "back",
+    "family": "hearthstone",
+    "key": "blt1d1fbd6cc3183da4",
+    "slug": "2073449",
+    "seen": "2026-11-05T21:11:27Z",
+    "changes": {
+      "eu": {
+        "type": "back",
+        "key": "blt1d1fbd6cc3183da4",
+        "kind": "item",
+        "slug": "2073449",
+        "title": "Hearthstone®: Kayn's Runestone Bundle",
+        "destination": "/family/hearthstone/items/2073449",
+        "seen": "2026-11-05T21:11:27Z",
+        "price": {
+          "fullAmount": "€49.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 49.99,
+          "labelFormat": "",
+          "discountId": null
+        },
+        "commit": "26b4ca6c834d275ba544a605c7c262771b841be2"
+      }
+    },
+    "at": "2026-11-05T21:12:02Z",
+    "digested": [
+      "[\"feed\",\"hearthstone-news\"]",
+      "[\"shop\",null]"
+    ]
+  },
+  {
+    "type": "back",
+    "family": "hearthstone",
+    "key": "p:2136773",
+    "slug": "hearthstone-free-battlenet-shop-gift",
+    "seen": "2026-11-05T21:11:27Z",
+    "changes": {
+      "eu": {
+        "type": "back",
+        "key": "p:2136773",
+        "kind": "item",
+        "slug": "hearthstone-free-battlenet-shop-gift",
+        "title": "Free Battle.net® Shop Gift!",
+        "destination": "/family/hearthstone/items/2136773/free-battlenet-shop-gift",
+        "seen": "2026-11-05T21:11:27Z",
+        "price": null,
+        "commit": "26b4ca6c834d275ba544a605c7c262771b841be2"
+      }
+    },
+    "at": "2026-11-05T21:12:02Z",
+    "digested": [
+      "[\"feed\",\"hearthstone-news\"]",
       "[\"shop\",null]"
     ]
   }
