@@ -13,15 +13,54 @@
         "slug": "world-of-warcraft-forever",
         "title": "World of Warcraft®: Forever ",
         "destination": "/product/world-of-warcraft-forever",
-        "seen": "2026-11-05T00:19:21Z",
+        "seen": "2026-11-05T00:34:24Z",
         "button": "Pre-purchase Now",
         "product": "World of Warcraft®: Forever",
-        "what": "back",
-        "commit": "c9d8f11e3f6a9d61f76394e8557427aa6f97a9fa"
+        "what": "removed",
+        "commit": "c2aee2d2ab94d7c35fe1a53d95f8bea426a3e010"
       }
     },
     "at": "2026-11-05T00:19:55Z",
-    "digested": []
+    "digested": [],
+    "lines": [
+      {
+        "seen": "2026-11-05T00:19:21Z",
+        "changes": {
+          "eu": {
+            "type": "banner",
+            "key": "bltce651d6800f0a484",
+            "kind": "banner",
+            "slug": "world-of-warcraft-forever",
+            "title": "World of Warcraft®: Forever ",
+            "destination": "/product/world-of-warcraft-forever",
+            "seen": "2026-11-05T00:19:21Z",
+            "button": "Pre-purchase Now",
+            "product": "World of Warcraft®: Forever",
+            "what": "back",
+            "commit": "c9d8f11e3f6a9d61f76394e8557427aa6f97a9fa"
+          }
+        }
+      },
+      {
+        "seen": "2026-11-05T00:34:24Z",
+        "changes": {
+          "eu": {
+            "type": "banner",
+            "key": "bltce651d6800f0a484",
+            "kind": "banner",
+            "slug": "world-of-warcraft-forever",
+            "title": "World of Warcraft®: Forever ",
+            "destination": "/product/world-of-warcraft-forever",
+            "seen": "2026-11-05T00:34:24Z",
+            "button": "Pre-purchase Now",
+            "product": "World of Warcraft®: Forever",
+            "what": "removed",
+            "commit": "c2aee2d2ab94d7c35fe1a53d95f8bea426a3e010"
+          }
+        }
+      }
+    ],
+    "paired": true
   },
   {
     "type": "details",
