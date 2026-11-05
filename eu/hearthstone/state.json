@@ -3500,9 +3500,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "gone",
-      "misses": 3,
-      "gone_since": "2026-11-05T21:06:29Z"
+      "status": "listed",
+      "misses": 0
     },
     "p:2121953": {
       "key": "p:2121953",
@@ -3593,7 +3592,8 @@
       "destination": "/product/hearthstone-reign-of-the-black-empire-tavern-pass?p=2122698",
       "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt74062f9cbaf520d1/6ac9230a3f72c3229027fe0b/HS_37p0_TavernPass_BattleNet_Shop_BrowsingCard_1920x1080_01A.png",
       "sections": [
-        "Limited Time Bundles"
+        "Limited Time Bundles",
+        "Web Offers"
       ],
       "badge": "New",
       "price": {
@@ -3868,7 +3868,8 @@
       "destination": "/product/hearthstone-reign-of-the-black-empire-packs",
       "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt6b20a7c4638daf02/6ac91b02ad9209161d562f81/HS_37p0_RBE_StandardPack_BattleNet_Shop_BrowsingCard_1920x1080_LZO01.png",
       "sections": [
-        "Standard Cards"
+        "Standard Cards",
+        "Web Offers"
       ],
       "badge": "New",
       "price": {
@@ -3904,7 +3905,8 @@
       "destination": "/product/hearthstone-golden-reign-of-the-black-empire-packs",
       "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt7e42f297e0f5f938/6ac91de87ec8fe7e28000e24/HS_37p0_RBE_GoldenPack_BattleNet_Shop_BrowsingCard_1920x1080_LZO01.png",
       "sections": [
-        "Standard Cards"
+        "Standard Cards",
+        "Web Offers"
       ],
       "badge": "New",
       "price": {
@@ -4017,9 +4019,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T18:35:35Z",
-      "status": "gone",
-      "misses": 3,
-      "gone_since": "2026-11-05T21:06:29Z"
+      "status": "listed",
+      "misses": 0
     },
     "p:2136772": {
       "key": "p:2136772",
@@ -4069,9 +4070,8 @@
       "price": null,
       "expiresAtMs": null,
       "first_seen": "2026-11-03T18:12:24Z",
-      "status": "gone",
-      "misses": 3,
-      "gone_since": "2026-11-05T21:06:29Z"
+      "status": "listed",
+      "misses": 0
     }
   },
   "suspect": false
