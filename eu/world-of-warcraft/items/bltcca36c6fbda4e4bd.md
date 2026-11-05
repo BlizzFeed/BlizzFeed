@@ -1,4 +1,4 @@
-# World of Warcraft®: Forever 
+# World of Warcraft®: Subscription
 
 - Key: bltcca36c6fbda4e4bd
 - Status: listed
