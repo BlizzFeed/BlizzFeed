@@ -10,23 +10,23 @@
         "type": "banner",
         "key": "bltcca36c6fbda4e4bd",
         "kind": "banner",
-        "slug": "world-of-warcraft-forever",
-        "title": "World of Warcraft®: Forever ",
-        "destination": "/product/world-of-warcraft-forever",
-        "seen": "2026-11-05T04:39:21Z",
+        "slug": "world-of-warcraft-subscription",
+        "title": "World of Warcraft®: Subscription",
+        "destination": "/product/world-of-warcraft-subscription",
+        "seen": "2026-11-05T04:44:22Z",
         "button": "Subscribe and Play Now",
-        "product": "World of Warcraft®: Forever",
+        "product": "World of Warcraft®: Subscription",
         "what": "changed",
         "changed": [
           "destination"
         ],
         "from": {
-          "destination": "/product/world-of-warcraft-subscription"
-        },
-        "to": {
           "destination": "/product/world-of-warcraft-forever"
         },
-        "commit": "f14d3e8550374646390f448603cca52dd8fbe3f6"
+        "to": {
+          "destination": "/product/world-of-warcraft-subscription"
+        },
+        "commit": "8e6e0b16fc60812d9ab69560fe204cf9b6fe6745"
       }
     },
     "at": "2026-11-05T04:35:02Z",
@@ -83,6 +83,33 @@
               "destination": "/product/world-of-warcraft-forever"
             },
             "commit": "f14d3e8550374646390f448603cca52dd8fbe3f6"
+          }
+        }
+      },
+      {
+        "seen": "2026-11-05T04:44:22Z",
+        "changes": {
+          "eu": {
+            "type": "banner",
+            "key": "bltcca36c6fbda4e4bd",
+            "kind": "banner",
+            "slug": "world-of-warcraft-subscription",
+            "title": "World of Warcraft®: Subscription",
+            "destination": "/product/world-of-warcraft-subscription",
+            "seen": "2026-11-05T04:44:22Z",
+            "button": "Subscribe and Play Now",
+            "product": "World of Warcraft®: Subscription",
+            "what": "changed",
+            "changed": [
+              "destination"
+            ],
+            "from": {
+              "destination": "/product/world-of-warcraft-forever"
+            },
+            "to": {
+              "destination": "/product/world-of-warcraft-subscription"
+            },
+            "commit": "8e6e0b16fc60812d9ab69560fe204cf9b6fe6745"
           }
         }
       }
