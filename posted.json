@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "type": "banner",
+    "family": "world-of-warcraft-classic",
+    "key": "bltcca36c6fbda4e4bd",
+    "slug": "world-of-warcraft-forever",
+    "seen": "2026-11-05T03:59:23Z",
+    "changes": {
+      "eu": {
+        "type": "banner",
+        "key": "bltcca36c6fbda4e4bd",
+        "kind": "banner",
+        "slug": "world-of-warcraft-forever",
+        "title": "World of Warcraft®: Forever ",
+        "destination": "/product/world-of-warcraft-forever",
+        "seen": "2026-11-05T03:59:23Z",
+        "button": "Subscribe and Play Now",
+        "product": "World of Warcraft®: Forever",
+        "what": "changed",
+        "changed": [
+          "destination"
+        ],
+        "from": {
+          "destination": "/product/world-of-warcraft-subscription"
+        },
+        "to": {
+          "destination": "/product/world-of-warcraft-forever"
+        },
+        "commit": "87e01cea1df7a3c6c06964ac7c552f8b3e535bae"
+      }
+    },
+    "at": "2026-11-05T03:59:57Z",
+    "digested": []
+  }
+]
