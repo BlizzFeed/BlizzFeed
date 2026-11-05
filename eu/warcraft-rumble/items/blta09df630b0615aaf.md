@@ -1,7 +1,7 @@
 # 3150 Coins
 
 - Key: blta09df630b0615aaf
-- Status: gone
+- Status: listed
 - Sections: Coin Packs
 - First seen: 2026-10-09T03:10:55Z
 - Price: €24.99
