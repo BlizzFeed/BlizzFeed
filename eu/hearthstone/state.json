@@ -3640,9 +3640,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T17:02:36Z",
-      "status": "gone",
-      "misses": 3,
-      "gone_since": "2026-11-05T21:06:29Z"
+      "status": "listed",
+      "misses": 0
     },
     "p:2137305": {
       "key": "p:2137305",
@@ -3674,9 +3673,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T17:02:36Z",
-      "status": "gone",
-      "misses": 3,
-      "gone_since": "2026-11-05T21:06:29Z"
+      "status": "listed",
+      "misses": 0
     },
     "p:2137306": {
       "key": "p:2137306",
@@ -3708,9 +3706,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T17:02:36Z",
-      "status": "gone",
-      "misses": 3,
-      "gone_since": "2026-11-05T21:06:29Z"
+      "status": "listed",
+      "misses": 0
     },
     "p:2137307": {
       "key": "p:2137307",
@@ -3742,9 +3739,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T17:02:36Z",
-      "status": "gone",
-      "misses": 3,
-      "gone_since": "2026-11-05T21:06:29Z"
+      "status": "listed",
+      "misses": 0
     },
     "p:2137295": {
       "key": "p:2137295",
@@ -3776,9 +3772,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T17:02:36Z",
-      "status": "gone",
-      "misses": 3,
-      "gone_since": "2026-11-05T21:06:29Z"
+      "status": "listed",
+      "misses": 0
     },
     "p:2137296": {
       "key": "p:2137296",
@@ -3810,9 +3805,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T17:02:36Z",
-      "status": "gone",
-      "misses": 3,
-      "gone_since": "2026-11-05T21:06:29Z"
+      "status": "listed",
+      "misses": 0
     },
     "p:2137297": {
       "key": "p:2137297",
@@ -3844,9 +3838,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-20T17:02:36Z",
-      "status": "gone",
-      "misses": 3,
-      "gone_since": "2026-11-05T21:06:29Z"
+      "status": "listed",
+      "misses": 0
     },
     "blt428f3cfaef1f3030": {
       "key": "blt428f3cfaef1f3030",
