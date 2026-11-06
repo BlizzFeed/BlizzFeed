@@ -1,1 +1,41 @@
-[]
+[
+  {
+    "type": "details",
+    "family": "world-of-warcraft-classic",
+    "key": "bltabc113510da12b57",
+    "slug": "",
+    "seen": "2026-11-06T05:06:23Z",
+    "changes": {
+      "us": {
+        "type": "details",
+        "key": "bltabc113510da12b57",
+        "kind": "item",
+        "slug": "",
+        "title": "",
+        "destination": "",
+        "seen": "2026-11-06T05:06:23Z",
+        "price": {
+          "fullAmount": "$60.00",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 60,
+          "labelFormat": "",
+          "discountId": null
+        },
+        "changed": [
+          "title"
+        ],
+        "from": {
+          "title": "Level 85 Character Boost (Progression)"
+        },
+        "to": {
+          "title": ""
+        },
+        "commit": "84b1fc3782a7ab4628f3e65d566e6719c3495c25"
+      }
+    },
+    "at": "2026-11-06T05:06:57Z",
+    "digested": []
+  }
+]
