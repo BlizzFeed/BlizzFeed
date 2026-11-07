@@ -1,4 +1,8 @@
 {
+  "eu/diablo-iii": {
+    "failures": 1,
+    "since": "2026-11-07T02:17:51Z"
+  },
   "eu/starcraft-ii": {
     "failures": 3,
     "since": "2026-10-14T19:02:45Z"
