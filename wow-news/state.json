@@ -17319,11 +17319,17 @@
   },
   {
     "id": "24315281",
-    "title": "WoW: Forever Hotfixes - November 5, 2026",
-    "url": "https://worldofwarcraft.blizzard.com/en-gb/news/24315281/wow-forever-hotfixes-november-5-2026",
-    "date": "2026-11-06T02:31:00Z",
+    "title": "WoW: Forever Hotfixes - November 6, 2026",
+    "url": "https://worldofwarcraft.blizzard.com/en-gb/news/24315281/wow-forever-hotfixes-november-6-2026",
+    "date": "2026-11-07T01:01:01Z",
     "summary": "Here you will find a list of hotfixes that address various issues related to World of Warcraft: Forever.",
-    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ji/JIBF1BNWRKSE1789963404849.png"
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ji/JIBF1BNWRKSE1789963404849.png",
+    "replaced": {
+      "title": "WoW: Forever Hotfixes - November 5, 2026",
+      "summary": "Here you will find a list of hotfixes that address various issues related to World of Warcraft: Forever.",
+      "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/ji/JIBF1BNWRKSE1789963404849.png",
+      "at": "2026-11-07T01:03:14Z"
+    }
   },
   {
     "id": "24315643",
