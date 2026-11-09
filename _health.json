@@ -3,6 +3,10 @@
     "failures": 3,
     "since": "2026-10-14T19:02:45Z"
   },
+  "eu/starcraft-remastered": {
+    "failures": 1,
+    "since": "2026-11-09T01:42:59Z"
+  },
   "us/starcraft-ii": {
     "failures": 3,
     "since": "2026-10-14T19:03:02Z"
