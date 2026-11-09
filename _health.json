@@ -1,4 +1,8 @@
 {
+  "eu/overwatch": {
+    "failures": 1,
+    "since": "2026-11-09T10:38:03Z"
+  },
   "eu/starcraft-ii": {
     "failures": 3,
     "since": "2026-10-14T19:02:45Z"
