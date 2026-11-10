@@ -572,6 +572,20 @@
       "ended": null,
       "thumbnail": "https://i.ytimg.com/vi/tJ0II19DitA/maxresdefault.jpg",
       "first_seen": "2026-11-09T19:01:27Z"
+    },
+    "0RJzviFMJmQ": {
+      "title": "Can you spot Doctrine? 🔎",
+      "description": "",
+      "published": "2026-11-10T19:16:02Z",
+      "kind": "short",
+      "premiere": false,
+      "duration": 54,
+      "live": "none",
+      "scheduled": null,
+      "started": null,
+      "ended": null,
+      "thumbnail": "https://i.ytimg.com/vi/0RJzviFMJmQ/maxresdefault.jpg",
+      "first_seen": "2026-11-10T19:16:26Z"
     }
   }
 }
