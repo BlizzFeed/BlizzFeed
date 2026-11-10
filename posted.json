@@ -1,1 +1,36 @@
-[]
+[
+  {
+    "type": "gone",
+    "family": "hearthstone",
+    "key": "p:2136773",
+    "slug": "hearthstone-free-battlenet-shop-gift",
+    "seen": "2026-11-10T18:10:25Z",
+    "changes": {
+      "eu": {
+        "type": "gone",
+        "key": "p:2136773",
+        "kind": "item",
+        "slug": "hearthstone-free-battlenet-shop-gift",
+        "title": "Free Battle.net® Shop Gift!",
+        "destination": "/family/hearthstone/items/2136773/free-battlenet-shop-gift",
+        "seen": "2026-11-10T18:10:25Z",
+        "price": null,
+        "commit": "e843c69ad4c5abc6d6343316de9a7b1f4f2167e3"
+      },
+      "us": {
+        "type": "gone",
+        "key": "p:2136773",
+        "kind": "item",
+        "slug": "hearthstone-free-battlenet-shop-gift",
+        "title": "Free Battle.net® Shop Gift!",
+        "destination": "/family/hearthstone/items/2136773/free-battlenet-shop-gift",
+        "seen": "2026-11-10T18:10:25Z",
+        "price": null,
+        "commit": "65cd4c07174c28f5bbb6cd0cec4e4b5b6f423c2e"
+      }
+    },
+    "at": "2026-11-10T18:11:02Z",
+    "digested": [],
+    "paired": true
+  }
+]
