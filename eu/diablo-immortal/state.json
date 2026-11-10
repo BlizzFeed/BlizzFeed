@@ -6,8 +6,8 @@
       "cmsId": "blt78268322659e3738",
       "slug": "diablo-immortal",
       "itemId": null,
-      "title": "Diablo Immortal™",
-      "productPageName": "Diablo Immortal™",
+      "title": "New dangers await in Made to Suffer",
+      "productPageName": null,
       "headline": "",
       "subHeadline": "New dangers await in Made to Suffer",
       "buttonText": "Play Free Now",
@@ -351,8 +351,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2136846": {
       "key": "p:2136846",
