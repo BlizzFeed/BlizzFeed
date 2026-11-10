@@ -4066,6 +4066,64 @@
       "status": "gone",
       "misses": 3,
       "gone_since": "2026-11-10T18:10:25Z"
+    },
+    "p:2122674": {
+      "key": "p:2122674",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "hearthstone-diablo-lord-of-terror-bundle",
+      "title": "Hearthstone®: Diamond Diablo®, Lord of Terror Bundle",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2122674,
+      "productIds": [
+        2122674
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/hearthstone/items/2122674/diablo-lord-of-terror-bundle",
+      "image": "//catalog.blzstatic.com//6e/aa3c016cf88df98243b4b4209bb7157c-HS_37p0_DiamondDiabloBundle_BattleNet_Shop_FeatureLZO01E.png",
+      "sections": [
+        "Web Offers"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€49.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 49.99,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-10T18:20:26Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2136774": {
+      "key": "p:2136774",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "hearthstone-free-battlenet-shop-gift",
+      "title": "Free Battle.net® Shop Gift!",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2136774,
+      "productIds": [
+        2136774
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/hearthstone/items/2136774/free-battlenet-shop-gift",
+      "image": "//catalog.blzstatic.com//fb4/a61332c8dc25665a73f24b41d25ad74b-HS_37p0_BNet_SpecialOffers_FreeWeeklyRewards_BattleNet_Shop_Product_Cards_RandomRare-1920X1080_.png",
+      "sections": [
+        "Web Offers"
+      ],
+      "badge": null,
+      "price": null,
+      "expiresAtMs": null,
+      "first_seen": "2026-11-10T18:20:26Z",
+      "status": "listed",
+      "misses": 0
     }
   },
   "suspect": false
