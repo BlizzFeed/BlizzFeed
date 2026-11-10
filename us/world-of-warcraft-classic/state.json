@@ -578,8 +578,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "blte05a14b74f928bd8": {
       "key": "blte05a14b74f928bd8",
