@@ -90,6 +90,7 @@ shop:
   families:                      # shop family slug -> its name and feed sources. Only these are tracked.
     world-of-warcraft: {name: World of Warcraft, sources: [wow-news, wow-news-us]}
     world-of-warcraft-classic: {name: World of Warcraft Classic, sources: [wow-news, wow-news-us]}
+    world-of-warcraft-forever: {name: World of Warcraft Forever, sources: [wow-news, wow-news-us]}
     warcraft-rts: {name: Warcraft (RTS), sources: [warcraft-3-news]}
     warcraft-rumble: {name: Warcraft Rumble, sources: [warcraft-rumble-news]}
     diablo-ii: {name: Diablo II, sources: [diablo-2-resurrected-news]}
