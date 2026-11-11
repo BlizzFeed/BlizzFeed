@@ -318,5 +318,43 @@
       "[\"shop\",null]"
     ],
     "paired": true
+  },
+  {
+    "type": "banner",
+    "family": "overwatch",
+    "key": "blteeb8de5403f88b28",
+    "slug": null,
+    "seen": "2026-11-11T19:16:48Z",
+    "changes": {
+      "eu": {
+        "type": "banner",
+        "key": "blteeb8de5403f88b28",
+        "kind": "banner",
+        "slug": null,
+        "title": "Don't miss out on these epic Black Friday savings!",
+        "destination": "/family/overwatch#black-friday-sale",
+        "seen": "2026-11-11T19:16:48Z",
+        "button": "Shop Now",
+        "product": null,
+        "what": "added",
+        "commit": "abe0ff594cdb2a4302d572b3623d5d572befb2db"
+      },
+      "us": {
+        "type": "banner",
+        "key": "blteeb8de5403f88b28",
+        "kind": "banner",
+        "slug": null,
+        "title": "Don't miss out on these epic Black Friday savings!",
+        "destination": "/family/overwatch#black-friday-sale",
+        "seen": "2026-11-11T19:16:48Z",
+        "button": "Shop Now",
+        "product": null,
+        "what": "added",
+        "commit": "7230211356941638382189fa8f61debfd1b31192"
+      }
+    },
+    "at": "2026-11-11T19:17:23Z",
+    "digested": [],
+    "paired": true
   }
 ]
