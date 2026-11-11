@@ -52,14 +52,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "€39.99",
-          "discountAmount": null
-        },
-        "until": "2026-11-11T18:40:30.000Z"
-      }
+      "misses": 0
     },
     "bltb4b9a9494b1b49ef": {
       "key": "bltb4b9a9494b1b49ef",
