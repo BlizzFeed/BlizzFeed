@@ -234,9 +234,23 @@
         "product": null,
         "what": "removed",
         "commit": "4956e25b5632b6ecd97e77cb9abe05ebe01060f9"
+      },
+      "us": {
+        "type": "banner",
+        "key": "bltf33244d318692b63",
+        "kind": "banner",
+        "slug": null,
+        "title": "Banner",
+        "destination": null,
+        "seen": "2026-11-11T18:20:31Z",
+        "button": null,
+        "product": null,
+        "what": "removed",
+        "commit": "2fc68aa20fe724ac1470d46c4318ae2f3183172a"
       }
     },
     "at": "2026-11-11T18:15:58Z",
-    "digested": []
+    "digested": [],
+    "paired": true
   }
 ]
