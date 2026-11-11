@@ -3935,6 +3935,26 @@
       "first_seen": "2026-11-10T19:05:26Z",
       "status": "listed",
       "misses": 0
+    },
+    "blteeb8de5403f88b28": {
+      "key": "blteeb8de5403f88b28",
+      "kind": "banner",
+      "cmsId": "blteeb8de5403f88b28",
+      "slug": null,
+      "itemId": null,
+      "title": "Don't miss out on these epic Black Friday savings!",
+      "productPageName": null,
+      "headline": "",
+      "subHeadline": "Don't miss out on these epic Black Friday savings!",
+      "buttonText": "Shop Now",
+      "destination": "/family/overwatch#black-friday-sale",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt4a1659165ced1f0d/6aecd03e3d86bd60dc165363/shop_carousel_ow_26_s5_blackfriday_desktop.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-11-11T19:16:48Z",
+      "status": "listed",
+      "misses": 0
     }
   },
   "suspect": false,
