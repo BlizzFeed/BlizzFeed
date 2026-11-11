@@ -1,1 +1,10 @@
-{}
+{
+  "wow-news": {
+    "failures": 1,
+    "since": "2026-11-11T22:27:28Z"
+  },
+  "wow-news-us": {
+    "failures": 1,
+    "since": "2026-11-11T22:27:28Z"
+  }
+}
