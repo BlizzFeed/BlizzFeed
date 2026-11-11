@@ -17,8 +17,8 @@
         "Banner"
       ],
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "blt440c88521abbd787": {
       "key": "blt440c88521abbd787",
@@ -41,17 +41,24 @@
       "badge": null,
       "price": {
         "fullAmount": "$39.99",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "$25.99",
+        "discountPercentage": 35,
         "currency": "USD",
-        "raw": 39.99,
+        "raw": 25.99,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "fb12178f-4965-4b10-aae4-fd5cc0b6ad50"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "$39.99",
+          "discountAmount": null
+        },
+        "until": "2026-11-11T18:40:30.000Z"
+      }
     },
     "bltb4b9a9494b1b49ef": {
       "key": "bltb4b9a9494b1b49ef",
@@ -182,7 +189,36 @@
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
       "misses": 0
+    },
+    "blt926e973685d43d40": {
+      "key": "blt926e973685d43d40",
+      "kind": "banner",
+      "cmsId": "blt926e973685d43d40",
+      "slug": "diablo_ii_resurrected",
+      "itemId": null,
+      "title": "Stand against the forces of Hell with up to 35% off!",
+      "productPageName": null,
+      "headline": "",
+      "subHeadline": "Stand against the forces of Hell with up to 35% off!",
+      "buttonText": "Purchase Now",
+      "destination": "/product/diablo_ii_resurrected",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt2bb92aebbc147929/6aecd469dc4e93000eac2b67/DIA_DIV_Garden_Bundle_Bnet_Product_Page_Banners_Bnet_Desktop-1600x500_GG01.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-11-11T18:10:30Z",
+      "status": "listed",
+      "misses": 0
     }
   },
-  "suspect": false
+  "suspect": false,
+  "campaigns": {
+    "fb12178f-4965-4b10-aae4-fd5cc0b6ad50": {
+      "status": "active",
+      "members": [
+        "blt440c88521abbd787"
+      ],
+      "started": "2026-11-11T18:10:30Z"
+    }
+  }
 }
