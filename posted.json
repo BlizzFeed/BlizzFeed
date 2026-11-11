@@ -112,12 +112,33 @@
           "discountId": "aab526ba-3b93-45b7-a1a9-164f85138576"
         },
         "commit": "4ef9ccf02c9ed4cc242b1b7355e7dbf35101fb79"
+      },
+      "eu": {
+        "type": "sale_start",
+        "key": "p:2115729",
+        "kind": "item",
+        "slug": "overwatch-classic-divinity-mega-bundle",
+        "title": "Classic Divinity Mega Bundle",
+        "destination": "/family/overwatch/items/2115729/classic-divinity-mega-bundle",
+        "seen": "2026-11-11T18:25:29Z",
+        "price": {
+          "fullAmount": "€39.99",
+          "discountAmount": "€31.99",
+          "discountPercentage": 20,
+          "currency": "EUR",
+          "raw": 31.99,
+          "labelFormat": null,
+          "discountId": "aab526ba-3b93-45b7-a1a9-164f85138576"
+        },
+        "commit": "fb11af6e8ce8b7bf0eed57c13786bfcfa1b1fa45"
       }
     },
     "at": "2026-11-11T18:11:05Z",
     "digested": [
-      "[\"shop\",null]"
-    ]
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "sale_start",
@@ -144,12 +165,33 @@
           "discountId": "aab526ba-3b93-45b7-a1a9-164f85138576"
         },
         "commit": "4ef9ccf02c9ed4cc242b1b7355e7dbf35101fb79"
+      },
+      "eu": {
+        "type": "sale_start",
+        "key": "p:2115738",
+        "kind": "item",
+        "slug": "overwatch-sweet-brigitte-bundle",
+        "title": "Sweet Brigitte Bundle",
+        "destination": "/family/overwatch/items/2115738/sweet-brigitte-bundle",
+        "seen": "2026-11-11T18:25:29Z",
+        "price": {
+          "fullAmount": "€9.99",
+          "discountAmount": "€7.99",
+          "discountPercentage": 20,
+          "currency": "EUR",
+          "raw": 7.99,
+          "labelFormat": null,
+          "discountId": "aab526ba-3b93-45b7-a1a9-164f85138576"
+        },
+        "commit": "fb11af6e8ce8b7bf0eed57c13786bfcfa1b1fa45"
       }
     },
     "at": "2026-11-11T18:11:05Z",
     "digested": [
-      "[\"shop\",null]"
-    ]
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "sale_start",
@@ -176,12 +218,33 @@
           "discountId": "aab526ba-3b93-45b7-a1a9-164f85138576"
         },
         "commit": "4ef9ccf02c9ed4cc242b1b7355e7dbf35101fb79"
+      },
+      "eu": {
+        "type": "sale_start",
+        "key": "p:2115737",
+        "kind": "item",
+        "slug": "overwatch-spooky-winston-bundle",
+        "title": "Spooky Winston Bundle",
+        "destination": "/family/overwatch/items/2115737/spooky-winston-bundle",
+        "seen": "2026-11-11T18:25:29Z",
+        "price": {
+          "fullAmount": "€19.99",
+          "discountAmount": "€15.99",
+          "discountPercentage": 20,
+          "currency": "EUR",
+          "raw": 15.99,
+          "labelFormat": null,
+          "discountId": "aab526ba-3b93-45b7-a1a9-164f85138576"
+        },
+        "commit": "fb11af6e8ce8b7bf0eed57c13786bfcfa1b1fa45"
       }
     },
     "at": "2026-11-11T18:11:05Z",
     "digested": [
-      "[\"shop\",null]"
-    ]
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "sale_start",
@@ -208,12 +271,33 @@
           "discountId": "aab526ba-3b93-45b7-a1a9-164f85138576"
         },
         "commit": "4ef9ccf02c9ed4cc242b1b7355e7dbf35101fb79"
+      },
+      "eu": {
+        "type": "sale_start",
+        "key": "p:2115730",
+        "kind": "item",
+        "slug": "overwatch-starter-pack-collection",
+        "title": "Starter Pack Collection",
+        "destination": "/family/overwatch/items/2115730/starter-pack-collection",
+        "seen": "2026-11-11T18:25:29Z",
+        "price": {
+          "fullAmount": "€39.99",
+          "discountAmount": "€31.99",
+          "discountPercentage": 20,
+          "currency": "EUR",
+          "raw": 31.99,
+          "labelFormat": null,
+          "discountId": "aab526ba-3b93-45b7-a1a9-164f85138576"
+        },
+        "commit": "fb11af6e8ce8b7bf0eed57c13786bfcfa1b1fa45"
       }
     },
     "at": "2026-11-11T18:11:05Z",
     "digested": [
-      "[\"shop\",null]"
-    ]
+      "[\"shop\",null]",
+      "[\"feed\",\"overwatch-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "banner",
