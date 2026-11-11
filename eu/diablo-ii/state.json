@@ -18,7 +18,7 @@
       ],
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "blt440c88521abbd787": {
       "key": "blt440c88521abbd787",
@@ -41,17 +41,24 @@
       "badge": null,
       "price": {
         "fullAmount": "€39.99",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€25.99",
+        "discountPercentage": 35,
         "currency": "EUR",
-        "raw": 39.99,
+        "raw": 25.99,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "fb12178f-4965-4b10-aae4-fd5cc0b6ad50"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "€39.99",
+          "discountAmount": null
+        },
+        "until": "2026-11-11T18:40:30.000Z"
+      }
     },
     "bltb4b9a9494b1b49ef": {
       "key": "bltb4b9a9494b1b49ef",
@@ -204,5 +211,14 @@
       "misses": 0
     }
   },
-  "suspect": false
+  "suspect": false,
+  "campaigns": {
+    "fb12178f-4965-4b10-aae4-fd5cc0b6ad50": {
+      "status": "active",
+      "members": [
+        "blt440c88521abbd787"
+      ],
+      "started": "2026-11-11T18:10:30Z"
+    }
+  }
 }
