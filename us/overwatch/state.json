@@ -462,14 +462,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$39.99",
-          "discountAmount": null
-        },
-        "until": "2026-11-11T18:40:30.000Z"
-      }
+      "misses": 0
     },
     "p:2115729": {
       "key": "p:2115729",
@@ -507,14 +500,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$39.99",
-          "discountAmount": null
-        },
-        "until": "2026-11-11T18:40:30.000Z"
-      }
+      "misses": 0
     },
     "p:2115738": {
       "key": "p:2115738",
@@ -549,14 +535,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$9.99",
-          "discountAmount": null
-        },
-        "until": "2026-11-11T18:40:30.000Z"
-      }
+      "misses": 0
     },
     "p:2115737": {
       "key": "p:2115737",
@@ -593,14 +572,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0,
-      "settle": {
-        "from": {
-          "fullAmount": "$19.99",
-          "discountAmount": null
-        },
-        "until": "2026-11-11T18:40:30.000Z"
-      }
+      "misses": 0
     },
     "blt6ba8925b6fb5d816": {
       "key": "blt6ba8925b6fb5d816",
