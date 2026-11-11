@@ -214,5 +214,29 @@
     "digested": [
       "[\"shop\",null]"
     ]
+  },
+  {
+    "type": "banner",
+    "family": "diablo-ii",
+    "key": "bltf33244d318692b63",
+    "slug": null,
+    "seen": "2026-11-11T18:15:23Z",
+    "changes": {
+      "eu": {
+        "type": "banner",
+        "key": "bltf33244d318692b63",
+        "kind": "banner",
+        "slug": null,
+        "title": "Banner",
+        "destination": null,
+        "seen": "2026-11-11T18:15:23Z",
+        "button": null,
+        "product": null,
+        "what": "removed",
+        "commit": "4956e25b5632b6ecd97e77cb9abe05ebe01060f9"
+      }
+    },
+    "at": "2026-11-11T18:15:58Z",
+    "digested": []
   }
 ]
