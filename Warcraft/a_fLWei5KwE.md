@@ -1,4 +1,4 @@
-# Turbo Nerds Lore-ing Out | Episode 6 - The WoW: Forever Podcast
+# Turbo Nerds Lore-ing Out | Episode 7 - The WoW: Forever Podcast
 
 *STORY SPOILERS AHEAD* 
 
