@@ -1,26 +1,10 @@
 {
-  "eu/diablo-iii": {
-    "failures": 2,
-    "since": "2026-11-12T18:06:38Z"
-  },
-  "eu/overwatch": {
-    "failures": 2,
-    "since": "2026-11-12T18:07:52Z"
-  },
   "eu/starcraft-ii": {
     "failures": 3,
     "since": "2026-10-14T19:02:45Z"
   },
-  "eu/starcraft-remastered": {
-    "failures": 2,
-    "since": "2026-11-12T18:08:15Z"
-  },
-  "eu/warcraft-rumble": {
-    "failures": 2,
-    "since": "2026-11-12T18:06:11Z"
-  },
   "eu/world-of-warcraft": {
-    "failures": 2,
+    "failures": 3,
     "since": "2026-11-12T18:04:46Z"
   },
   "us/starcraft-ii": {
