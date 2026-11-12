@@ -18,3 +18,13 @@ Learn more at: https://worldofwarcraft.blizzard.com/forever
 ► Follow Warcraft on Twitter: https://twitter.com/warcraft  
 ► Follow Warcraft on Instagram: https://instagram.com/warcraft  
 ► Like Warcraft on Facebook: https://facebook.com/warcraft
+
+00:00 Intros
+1:46 Balance Updates
+7:27 Where Does Lore Begin?
+27:03 Lore Philosophy
+42:16 Riverglades
+47:32 Skyborne Lore
+54:10 “What If” Scenarios
+59:22 Undead Paladins
+1:01:33 Race and Class Combos
