@@ -1,7 +1,47 @@
 {
+  "eu/diablo-iii": {
+    "failures": 1,
+    "since": "2026-11-12T18:06:38Z"
+  },
+  "eu/diablo-immortal": {
+    "failures": 1,
+    "since": "2026-11-12T18:07:20Z"
+  },
+  "eu/diablo-iv": {
+    "failures": 1,
+    "since": "2026-11-12T18:06:59Z"
+  },
+  "eu/overwatch": {
+    "failures": 1,
+    "since": "2026-11-12T18:07:52Z"
+  },
   "eu/starcraft-ii": {
     "failures": 3,
     "since": "2026-10-14T19:02:45Z"
+  },
+  "eu/starcraft-remastered": {
+    "failures": 1,
+    "since": "2026-11-12T18:08:15Z"
+  },
+  "eu/warcraft-rts": {
+    "failures": 1,
+    "since": "2026-11-12T18:05:50Z"
+  },
+  "eu/warcraft-rumble": {
+    "failures": 1,
+    "since": "2026-11-12T18:06:11Z"
+  },
+  "eu/world-of-warcraft": {
+    "failures": 1,
+    "since": "2026-11-12T18:04:46Z"
+  },
+  "eu/world-of-warcraft-classic": {
+    "failures": 1,
+    "since": "2026-11-12T18:05:08Z"
+  },
+  "eu/world-of-warcraft-forever": {
+    "failures": 1,
+    "since": "2026-11-12T18:05:29Z"
   },
   "us/starcraft-ii": {
     "failures": 3,
