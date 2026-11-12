@@ -9,6 +9,8 @@ export class HttpError extends Error {
 	constructor(response, body = '') {
 		super(`${response.status} ${response.statusText} for ${response.url}`);
 		this.status = response.status;
+		this.url = response.url;
+		this.location = response.headers.get('location');
 		this.body = body;
 	}
 }

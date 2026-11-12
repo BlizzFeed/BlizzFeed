@@ -36,6 +36,21 @@ test('a 5xx is tried once more, and only once', async (t) => {
 	assert.equal(fetch.mock.callCount(), 2);
 });
 
+test('a redirect fetch gave up on (doubled Location) is followed by hand', async (t) => {
+	const page = '<article class="Content"><section class="blog"><p>Hi</p></section></article>';
+	const bad = new Response('', { status: 307, headers: { location: '/en-gb/article/1/new, /en-gb/article/1/new' } });
+	Object.defineProperty(bad, 'url', { value: 'https://news.blizzard.com/en-gb/article/1/old' });
+	const replies = [bad, new Response(page)];
+	const fetch = t.mock.method(globalThis, 'fetch', async () => replies.shift());
+	assert.equal(await article.fetchBody('en-gb', '1', SELECTOR, 0), '<section class="blog"><p>Hi</p></section>');
+	assert.equal(String(fetch.mock.calls[1].arguments[0]), 'https://news.blizzard.com/en-gb/article/1/new');
+});
+
+test('a 3xx with no Location still fails', async (t) => {
+	answer(t, 307);
+	await assert.rejects(article.fetchBody('en-gb', '1', SELECTOR, 0), HttpError);
+});
+
 test('a missing or empty body is not found', async (t) => {
 	for (const page of ['<p>no body</p>', '<article class="Content"><section class="blog"> </section></article>']) {
 		answer(t, 200, page);
