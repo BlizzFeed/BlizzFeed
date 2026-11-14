@@ -428,9 +428,9 @@
       "kind": "stream",
       "premiere": false,
       "duration": 0,
-      "live": "upcoming",
+      "live": "live",
       "scheduled": "2026-11-14T19:00:00Z",
-      "started": null,
+      "started": "2026-11-14T18:53:28Z",
       "ended": null,
       "thumbnail": "https://i.ytimg.com/vi/0lfhKhBauEQ/maxresdefault.jpg?v=6af7a7b6",
       "first_seen": "2026-11-14T00:14:29Z"
