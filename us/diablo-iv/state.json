@@ -677,6 +677,26 @@
       "status": "gone",
       "misses": 3,
       "gone_since": "2026-10-13T19:19:31Z"
+    },
+    "blt1d87a71908c97908": {
+      "key": "blt1d87a71908c97908",
+      "kind": "banner",
+      "cmsId": "blt1d87a71908c97908",
+      "slug": "diablo-iv",
+      "itemId": null,
+      "title": "Stand against the forces of Hell with up to 25% off",
+      "productPageName": null,
+      "headline": "",
+      "subHeadline": "Stand against the forces of Hell with up to 25% off",
+      "buttonText": "Purchase Now",
+      "destination": "/product/diablo-iv",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt2110c5c97b225fb7/6aecd6afd8a6349b80039bf7/DIA_DIV_Helix_Bnet_Product_Page_Banners_Bnet_AoH_Desktop-1600x500_GG01.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-11-16T18:50:41Z",
+      "status": "listed",
+      "misses": 0
     }
   },
   "suspect": false,
