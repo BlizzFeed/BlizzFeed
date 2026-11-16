@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "type": "banner",
+    "family": "diablo-iv",
+    "key": "blt1d87a71908c97908",
+    "slug": "diablo-iv",
+    "seen": "2026-11-16T18:46:02Z",
+    "changes": {
+      "eu": {
+        "type": "banner",
+        "key": "blt1d87a71908c97908",
+        "kind": "banner",
+        "slug": "diablo-iv",
+        "title": "Stand against the forces of Hell with up to 25% off",
+        "destination": "/product/diablo-iv",
+        "seen": "2026-11-16T18:46:02Z",
+        "button": "Purchase Now",
+        "product": "Diablo® IV - Standard Edition",
+        "what": "added",
+        "commit": "ae1f12eede6d4363f9ef4b759320a880184acd3f"
+      }
+    },
+    "at": "2026-11-16T18:46:37Z",
+    "digested": []
+  }
+]
