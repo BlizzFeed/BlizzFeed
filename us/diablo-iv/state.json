@@ -213,17 +213,24 @@
       "badge": null,
       "price": {
         "fullAmount": "$69.99",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "$52.49",
+        "discountPercentage": 25,
         "currency": "USD",
-        "raw": 69.99,
+        "raw": 52.49,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "db34302d-7144-4169-a515-581b8944f78c"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
       "status": "listed",
-      "misses": 0
+      "misses": 0,
+      "settle": {
+        "from": {
+          "fullAmount": "$69.99",
+          "discountAmount": null
+        },
+        "until": "2026-11-16T18:25:44.000Z"
+      }
     },
     "blt09b0524ff3a750dd": {
       "key": "blt09b0524ff3a750dd",
@@ -679,5 +686,14 @@
       "gone_since": "2026-10-13T19:19:31Z"
     }
   },
-  "suspect": false
+  "suspect": false,
+  "campaigns": {
+    "db34302d-7144-4169-a515-581b8944f78c": {
+      "status": "active",
+      "members": [
+        "blt5d94c1c0d75f49c8"
+      ],
+      "started": "2026-11-16T17:55:44Z"
+    }
+  }
 }
