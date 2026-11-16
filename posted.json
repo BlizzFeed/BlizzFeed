@@ -18,9 +18,23 @@
         "product": "Diablo® IV - Standard Edition",
         "what": "added",
         "commit": "ae1f12eede6d4363f9ef4b759320a880184acd3f"
+      },
+      "us": {
+        "type": "banner",
+        "key": "blt1d87a71908c97908",
+        "kind": "banner",
+        "slug": "diablo-iv",
+        "title": "Stand against the forces of Hell with up to 25% off",
+        "destination": "/product/diablo-iv",
+        "seen": "2026-11-16T18:50:41Z",
+        "button": "Purchase Now",
+        "product": "Diablo® IV - Standard Edition",
+        "what": "added",
+        "commit": "875c28c34c1e6c51d0139fb976e0e99b1cd22717"
       }
     },
     "at": "2026-11-16T18:46:37Z",
-    "digested": []
+    "digested": [],
+    "paired": true
   }
 ]
