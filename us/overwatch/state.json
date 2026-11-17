@@ -2646,8 +2646,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-27T18:03:32Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "blt7002d93d259e8fdf": {
       "key": "blt7002d93d259e8fdf",
@@ -2685,7 +2685,6 @@
       "destination": "/family/overwatch/items/2120801/roadhog-complete-mythic-skin-bundle",
       "image": "//catalog.blzstatic.com//ffb/9bf747ebe6d00bfd92fafdde5318f598-S25M_RMT_Roadhog_Mythic_Skin_web_ux.png",
       "sections": [
-        "Featured",
         "Seasonal Offers"
       ],
       "badge": null,
@@ -2768,8 +2767,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-03T19:09:00Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2145340": {
       "key": "p:2145340",
@@ -2809,8 +2808,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-03T19:09:00Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2145343": {
       "key": "p:2145343",
@@ -2850,8 +2849,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-03T19:09:00Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2145339": {
       "key": "p:2145339",
@@ -2888,8 +2887,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-03T19:09:00Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2145341": {
       "key": "p:2145341",
@@ -2926,8 +2925,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-03T19:09:00Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2145342": {
       "key": "p:2145342",
@@ -2964,8 +2963,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-03T19:09:00Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:1996244": {
       "key": "p:1996244",
@@ -3528,7 +3527,6 @@
       "destination": "/family/overwatch/items/2136810",
       "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt4f52ea28423b50dc/6ae23337626f24ba59fb150f/S25M_Event_PremiumPass_Web_1920x1080_v1_ux1.png",
       "sections": [
-        "Featured",
         "Seasonal Offers"
       ],
       "badge": "New",
@@ -3953,6 +3951,271 @@
         "Banner"
       ],
       "first_seen": "2026-11-11T19:16:48Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2142767": {
+      "key": "p:2142767",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-owcs-world-finals-forged-champion-collection",
+      "title": "OWCS World Finals: Forged Champion Collection",
+      "description": "Legendary | Bundle (15 items)",
+      "categoryId": null,
+      "itemId": 2142767,
+      "productIds": [
+        2139879,
+        2139880,
+        2139843,
+        2134698,
+        2134697,
+        2130949,
+        2130948,
+        2139896,
+        2139844,
+        2139934,
+        2134699,
+        2139857,
+        2139919,
+        2139921,
+        2139927
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2142767/owcs-world-finals-forged-champion-collection",
+      "image": "//catalog.blzstatic.com//37/418f6d0c9e27e5891acb027029ce8af7-Web_1920x1080_S25MOWCSCrowdfundingMegabundle.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "9,500 Coins",
+        "discountAmount": "6,900 Coins",
+        "discountPercentage": 27,
+        "currency": "XWC",
+        "raw": 6900,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-17T19:01:47Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2139879": {
+      "key": "p:2139879",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-forged-champion",
+      "title": "Forged Champion",
+      "description": "Legendary | Skins | Kiriko",
+      "categoryId": null,
+      "itemId": 2139879,
+      "productIds": [
+        2139879
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2139879/forged-champion",
+      "image": "//catalog.blzstatic.com//fda/42013ca8cb7077fdbc2c069d71fd56c2-Web_1920x1080_S25MOWCSCrowdfundingKiriko.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,900 Coins",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XWC",
+        "raw": 1900,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-17T19:01:47Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2139844": {
+      "key": "p:2139844",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-forged-champion",
+      "title": "Forged Champion",
+      "description": "Legendary | Skins | Ashe",
+      "categoryId": null,
+      "itemId": 2139844,
+      "productIds": [
+        2139844
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2139844/forged-champion",
+      "image": "//catalog.blzstatic.com//42/880131dfe00c5b3a34f218a996f59feb-Web_1920x1080_S25MOWCSCrowdfundingAshe.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,900 Coins",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XWC",
+        "raw": 1900,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-17T19:01:47Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2139896": {
+      "key": "p:2139896",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-forged-champion",
+      "title": "Forged Champion",
+      "description": "Legendary | Skins | Anran",
+      "categoryId": null,
+      "itemId": 2139896,
+      "productIds": [
+        2139896
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2139896/forged-champion",
+      "image": "//catalog.blzstatic.com//67/ebbd51b83ccf772a45f67e28775039cf-Web_1920x1080_S25MOWCSCrowdfundingAnran.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,900 Coins",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XWC",
+        "raw": 1900,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-17T19:01:47Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2139880": {
+      "key": "p:2139880",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-forged-champion",
+      "title": "Forged Champion",
+      "description": "Legendary | Skins | Baptiste",
+      "categoryId": null,
+      "itemId": 2139880,
+      "productIds": [
+        2139880
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2139880/forged-champion",
+      "image": "//catalog.blzstatic.com//a/3be1fd389d0703069517b8def4fe61c9-Web_1920x1080_S25MOWCSCrowdfundingBaptiste.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,900 Coins",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XWC",
+        "raw": 1900,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-17T19:01:47Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2139843": {
+      "key": "p:2139843",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-forged-champion",
+      "title": "Forged Champion",
+      "description": "Legendary | Skins | Zarya",
+      "categoryId": null,
+      "itemId": 2139843,
+      "productIds": [
+        2139843
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2139843/forged-champion",
+      "image": "//catalog.blzstatic.com//60/c2993930adbe1342e74c472cf09f6a91-Web_1920x1080_S25MOWCSCrowdfundingZarya.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "1,900 Coins",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "XWC",
+        "raw": 1900,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-17T19:01:47Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2027213": {
+      "key": "p:2027213",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "overwatch-cozy-mega-bundle",
+      "title": "Cozy Mega Bundle",
+      "description": "Legendary | Bundle (21 items)",
+      "categoryId": null,
+      "itemId": 2027213,
+      "productIds": [
+        2026643,
+        2026634,
+        2026638,
+        2026501,
+        2026637,
+        2026645,
+        2027155,
+        2026646,
+        2027136,
+        2026633,
+        2027135,
+        2026642,
+        2027151,
+        2026451,
+        2026649,
+        2026500,
+        2027148,
+        2026499,
+        2027144,
+        2026498,
+        2027159
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/overwatch/items/2027213/cozy-mega-bundle",
+      "image": "//catalog.blzstatic.com//ff9/25d7fbe71ed852a20ca113d0b406d5fa-Web_1920x1080_S20_CosyMegaBundle.png",
+      "sections": [
+        "Featured"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "14,600 Coins",
+        "discountAmount": "5,900 Coins",
+        "discountPercentage": 59,
+        "currency": "XWC",
+        "raw": 5900,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-17T19:01:47Z",
       "status": "listed",
       "misses": 0
     }
