@@ -41,12 +41,12 @@
       "badge": null,
       "price": {
         "fullAmount": "€39.99",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "€25.99",
+        "discountPercentage": 35,
         "currency": "EUR",
-        "raw": 39.99,
+        "raw": 25.99,
         "labelFormat": "",
-        "discountId": null
+        "discountId": "fb12178f-4965-4b10-aae4-fd5cc0b6ad50"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -55,9 +55,9 @@
       "settle": {
         "from": {
           "fullAmount": "€39.99",
-          "discountAmount": "€25.99"
+          "discountAmount": null
         },
-        "until": "2026-11-17T18:36:43.000Z"
+        "until": "2026-11-17T18:41:39.000Z"
       }
     },
     "bltb4b9a9494b1b49ef": {
@@ -208,7 +208,7 @@
       ],
       "first_seen": "2026-11-11T18:05:25Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     }
   },
   "suspect": false,
@@ -218,7 +218,7 @@
       "members": [
         "blt440c88521abbd787"
       ],
-      "started": "2026-11-11T18:10:30Z"
+      "started": "2026-11-17T18:11:39Z"
     }
   }
 }
