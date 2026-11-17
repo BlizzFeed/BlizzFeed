@@ -207,18 +207,10 @@
         "Banner"
       ],
       "first_seen": "2026-11-11T18:10:30Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-17T18:21:45Z"
     }
   },
-  "suspect": false,
-  "campaigns": {
-    "fb12178f-4965-4b10-aae4-fd5cc0b6ad50": {
-      "status": "active",
-      "members": [
-        "blt440c88521abbd787"
-      ],
-      "started": "2026-11-11T18:10:30Z"
-    }
-  }
+  "suspect": false
 }
