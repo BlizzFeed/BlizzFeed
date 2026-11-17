@@ -17,9 +17,8 @@
         "Banner"
       ],
       "first_seen": "2026-10-09T03:10:55Z",
-      "status": "gone",
-      "misses": 3,
-      "gone_since": "2026-11-11T18:20:31Z"
+      "status": "listed",
+      "misses": 0
     },
     "blt440c88521abbd787": {
       "key": "blt440c88521abbd787",
@@ -201,8 +200,8 @@
         "Banner"
       ],
       "first_seen": "2026-11-11T18:10:30Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     }
   },
   "suspect": false,
