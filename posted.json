@@ -1062,9 +1062,23 @@
         "product": "Diablo II: Resurrected™ – Infernal Edition ",
         "what": "removed",
         "commit": "3f38dbd4b63524f97fb803dfc8e100e46b387f54"
+      },
+      "us": {
+        "type": "banner",
+        "key": "blt926e973685d43d40",
+        "kind": "banner",
+        "slug": "diablo_ii_resurrected",
+        "title": "Stand against the forces of Hell with up to 35% off!",
+        "destination": "/product/diablo_ii_resurrected",
+        "seen": "2026-11-17T18:21:45Z",
+        "button": "Purchase Now",
+        "product": "Diablo II: Resurrected™ – Infernal Edition ",
+        "what": "removed",
+        "commit": "2e256d160b47358656f7c310a1eedfa1386460fa"
       }
     },
     "at": "2026-11-17T18:17:23Z",
-    "digested": []
+    "digested": [],
+    "paired": true
   }
 ]
