@@ -447,7 +447,6 @@
       "destination": "/family/overwatch/items/2115730/starter-pack-collection",
       "image": "//catalog.blzstatic.com//fc4/d6af967fd699c9edd5b33276d6f25c96-Web_1920x1080_S24M_Starter_Bundle.png",
       "sections": [
-        "(untitled)",
         "Seasonal Offers"
       ],
       "badge": null,
@@ -486,7 +485,6 @@
       "destination": "/family/overwatch/items/2115729/classic-divinity-mega-bundle",
       "image": "//catalog.blzstatic.com//18/c8339a87698a274eea2110f9ebf30eaf-Web_1920x1080_S24M_Goddess_Bundle.png",
       "sections": [
-        "(untitled)",
         "Seasonal Offers"
       ],
       "badge": null,
@@ -522,7 +520,6 @@
       "destination": "/family/overwatch/items/2115738/sweet-brigitte-bundle",
       "image": "//catalog.blzstatic.com//5d/6804fb55ac0b25d0336fc29d964a0446-Web_1920x1080_S24.1_Sweet_Brigitte.png",
       "sections": [
-        "(untitled)",
         "Seasonal Offers"
       ],
       "badge": null,
@@ -560,7 +557,6 @@
       "destination": "/family/overwatch/items/2115737/spooky-winston-bundle",
       "image": "//catalog.blzstatic.com//39/b7c3c3a4f366210e3b742c10e4441c18-Web_1920x1080_S24.1_Spooky_Winston.png",
       "sections": [
-        "(untitled)",
         "Seasonal Offers"
       ],
       "badge": null,
@@ -2647,7 +2643,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-10-27T18:03:32Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "blt7002d93d259e8fdf": {
       "key": "blt7002d93d259e8fdf",
@@ -2768,7 +2764,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-11-03T19:09:00Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:2145340": {
       "key": "p:2145340",
@@ -2809,7 +2805,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-11-03T19:09:00Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:2145343": {
       "key": "p:2145343",
@@ -2850,7 +2846,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-11-03T19:09:00Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:2145339": {
       "key": "p:2145339",
@@ -2888,7 +2884,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-11-03T19:09:00Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:2145341": {
       "key": "p:2145341",
@@ -2926,7 +2922,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-11-03T19:09:00Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:2145342": {
       "key": "p:2145342",
@@ -2964,7 +2960,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-11-03T19:09:00Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     },
     "p:1996244": {
       "key": "p:1996244",
