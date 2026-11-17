@@ -3564,8 +3564,9 @@
         "Banner"
       ],
       "first_seen": "2026-11-03T19:13:45Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-17T19:21:48Z"
     },
     "bltb9394563e69b665d": {
       "key": "bltb9394563e69b665d",
@@ -3954,8 +3955,9 @@
         "Banner"
       ],
       "first_seen": "2026-11-11T19:16:48Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-17T19:21:48Z"
     },
     "p:2142767": {
       "key": "p:2142767",
