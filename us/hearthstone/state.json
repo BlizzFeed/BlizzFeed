@@ -3595,7 +3595,7 @@
         "Limited Time Bundles",
         "Web Offers"
       ],
-      "badge": "New",
+      "badge": null,
       "price": {
         "fullAmount": "$19.99",
         "discountAmount": null,
@@ -3633,7 +3633,7 @@
         "Standard Cards",
         "Web Offers"
       ],
-      "badge": "New",
+      "badge": null,
       "price": {
         "fullAmount": "$2.99",
         "discountAmount": null,
@@ -3670,7 +3670,7 @@
         "Standard Cards",
         "Web Offers"
       ],
-      "badge": "New",
+      "badge": null,
       "price": {
         "fullAmount": "$19.99",
         "discountAmount": null,
@@ -4123,7 +4123,7 @@
       "expiresAtMs": null,
       "first_seen": "2026-11-10T18:20:26Z",
       "status": "missing",
-      "misses": 1
+      "misses": 2
     }
   },
   "suspect": false
