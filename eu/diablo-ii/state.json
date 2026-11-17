@@ -212,14 +212,5 @@
       "gone_since": "2026-11-17T18:16:41Z"
     }
   },
-  "suspect": false,
-  "campaigns": {
-    "fb12178f-4965-4b10-aae4-fd5cc0b6ad50": {
-      "status": "active",
-      "members": [
-        "blt440c88521abbd787"
-      ],
-      "started": "2026-11-17T18:11:39Z"
-    }
-  }
+  "suspect": false
 }
