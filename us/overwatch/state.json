@@ -2642,8 +2642,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-27T18:03:32Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-17T19:11:32Z"
     },
     "blt7002d93d259e8fdf": {
       "key": "blt7002d93d259e8fdf",
@@ -2763,8 +2764,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-03T19:09:00Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-17T19:11:32Z"
     },
     "p:2145340": {
       "key": "p:2145340",
@@ -2804,8 +2806,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-03T19:09:00Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-17T19:11:32Z"
     },
     "p:2145343": {
       "key": "p:2145343",
@@ -2845,8 +2848,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-03T19:09:00Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-17T19:11:32Z"
     },
     "p:2145339": {
       "key": "p:2145339",
@@ -2883,8 +2887,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-03T19:09:00Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-17T19:11:32Z"
     },
     "p:2145341": {
       "key": "p:2145341",
@@ -2921,8 +2926,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-03T19:09:00Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-17T19:11:32Z"
     },
     "p:2145342": {
       "key": "p:2145342",
@@ -2959,8 +2965,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-03T19:09:00Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-17T19:11:32Z"
     },
     "p:1996244": {
       "key": "p:1996244",
@@ -3557,8 +3564,8 @@
         "Banner"
       ],
       "first_seen": "2026-11-03T19:13:45Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "bltb9394563e69b665d": {
       "key": "bltb9394563e69b665d",
@@ -3947,8 +3954,8 @@
         "Banner"
       ],
       "first_seen": "2026-11-11T19:16:48Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2142767": {
       "key": "p:2142767",
