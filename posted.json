@@ -1,1 +1,26 @@
-[]
+[
+  {
+    "type": "banner",
+    "family": "diablo-iv",
+    "key": "blt7c33d386f0e58dee",
+    "slug": "diablo-iv",
+    "seen": "2026-11-17T23:36:24Z",
+    "changes": {
+      "us": {
+        "type": "banner",
+        "key": "blt7c33d386f0e58dee",
+        "kind": "banner",
+        "slug": "diablo-iv",
+        "title": "Evil awaits in the Age of Hatred Collection",
+        "destination": "/product/diablo-iv",
+        "seen": "2026-11-17T23:36:24Z",
+        "button": "Purchase Now",
+        "product": "Diablo® IV - Standard Edition",
+        "what": "removed",
+        "commit": "7fc936ebd02c937bb791f7e2cb30f354c807e2f2"
+      }
+    },
+    "at": "2026-11-17T23:37:02Z",
+    "digested": []
+  }
+]
