@@ -453,12 +453,12 @@
       "badge": null,
       "price": {
         "fullAmount": "$39.99",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "$31.99",
+        "discountPercentage": 20,
         "currency": "USD",
-        "raw": 39.99,
+        "raw": 31.99,
         "labelFormat": null,
-        "discountId": null
+        "discountId": "aab526ba-3b93-45b7-a1a9-164f85138576"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -467,9 +467,9 @@
       "settle": {
         "from": {
           "fullAmount": "$39.99",
-          "discountAmount": "$31.99"
+          "discountAmount": null
         },
-        "until": "2026-11-17T18:36:43.000Z"
+        "until": "2026-11-17T18:41:39.000Z"
       }
     },
     "p:2115729": {
@@ -499,12 +499,12 @@
       "badge": null,
       "price": {
         "fullAmount": "$39.99",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "$31.99",
+        "discountPercentage": 20,
         "currency": "USD",
-        "raw": 39.99,
+        "raw": 31.99,
         "labelFormat": null,
-        "discountId": null
+        "discountId": "aab526ba-3b93-45b7-a1a9-164f85138576"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -513,9 +513,9 @@
       "settle": {
         "from": {
           "fullAmount": "$39.99",
-          "discountAmount": "$31.99"
+          "discountAmount": null
         },
-        "until": "2026-11-17T18:36:43.000Z"
+        "until": "2026-11-17T18:41:39.000Z"
       }
     },
     "p:2115738": {
@@ -542,12 +542,12 @@
       "badge": null,
       "price": {
         "fullAmount": "$9.99",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "$7.99",
+        "discountPercentage": 20,
         "currency": "USD",
-        "raw": 9.99,
+        "raw": 7.99,
         "labelFormat": null,
-        "discountId": null
+        "discountId": "aab526ba-3b93-45b7-a1a9-164f85138576"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -556,9 +556,9 @@
       "settle": {
         "from": {
           "fullAmount": "$9.99",
-          "discountAmount": "$7.99"
+          "discountAmount": null
         },
-        "until": "2026-11-17T18:36:43.000Z"
+        "until": "2026-11-17T18:41:39.000Z"
       }
     },
     "p:2115737": {
@@ -587,12 +587,12 @@
       "badge": null,
       "price": {
         "fullAmount": "$19.99",
-        "discountAmount": null,
-        "discountPercentage": null,
+        "discountAmount": "$15.99",
+        "discountPercentage": 20,
         "currency": "USD",
-        "raw": 19.99,
+        "raw": 15.99,
         "labelFormat": null,
-        "discountId": null
+        "discountId": "aab526ba-3b93-45b7-a1a9-164f85138576"
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
@@ -601,9 +601,9 @@
       "settle": {
         "from": {
           "fullAmount": "$19.99",
-          "discountAmount": "$15.99"
+          "discountAmount": null
         },
-        "until": "2026-11-17T18:36:43.000Z"
+        "until": "2026-11-17T18:41:39.000Z"
       }
     },
     "blt6ba8925b6fb5d816": {
@@ -3988,15 +3988,14 @@
   "suspect": false,
   "campaigns": {
     "aab526ba-3b93-45b7-a1a9-164f85138576": {
-      "status": "ended",
+      "status": "active",
       "members": [
         "p:2115729",
         "p:2115738",
         "p:2115737",
         "p:2115730"
       ],
-      "started": "2026-11-11T18:10:30Z",
-      "ended": "2026-11-17T18:06:43Z"
+      "started": "2026-11-11T18:10:30Z"
     }
   }
 }
