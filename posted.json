@@ -24,12 +24,33 @@
           "discountId": null
         },
         "commit": "6ca85d8b232b18abd3665537ff8d38abef6cced6"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2160004",
+        "kind": "item",
+        "slug": "diablo-immortal-trailblazers-might",
+        "title": "Trailblazer’s Might",
+        "destination": "/family/diablo-immortal/items/2160004/trailblazers-might",
+        "seen": "2026-11-18T16:06:33Z",
+        "price": {
+          "fullAmount": "€187.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 187.99,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3f05d380f2b951d1cc9cfa5580de007a02c23aef"
       }
     },
     "at": "2026-11-18T16:02:40Z",
     "digested": [
-      "[\"shop\",null]"
-    ]
+      "[\"shop\",null]",
+      "[\"feed\",\"diablo-immortal-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -56,12 +77,33 @@
           "discountId": null
         },
         "commit": "6ca85d8b232b18abd3665537ff8d38abef6cced6"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2160003",
+        "kind": "item",
+        "slug": "diablo-immortal-trailblazers-charge",
+        "title": "Trailblazer’s Charge",
+        "destination": "/family/diablo-immortal/items/2160003/trailblazers-charge",
+        "seen": "2026-11-18T16:06:33Z",
+        "price": {
+          "fullAmount": "€93.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 93.99,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3f05d380f2b951d1cc9cfa5580de007a02c23aef"
       }
     },
     "at": "2026-11-18T16:02:40Z",
     "digested": [
-      "[\"shop\",null]"
-    ]
+      "[\"shop\",null]",
+      "[\"feed\",\"diablo-immortal-news\"]"
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -88,11 +130,32 @@
           "discountId": null
         },
         "commit": "6ca85d8b232b18abd3665537ff8d38abef6cced6"
+      },
+      "eu": {
+        "type": "new",
+        "key": "p:2160243",
+        "kind": "item",
+        "slug": "diablo-immortal-trailblazers-edge",
+        "title": "Trailblazer’s Edge",
+        "destination": "/family/diablo-immortal/items/2160243/trailblazers-edge",
+        "seen": "2026-11-18T16:06:33Z",
+        "price": {
+          "fullAmount": "€46.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 46.99,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "3f05d380f2b951d1cc9cfa5580de007a02c23aef"
       }
     },
     "at": "2026-11-18T16:02:40Z",
     "digested": [
-      "[\"shop\",null]"
-    ]
+      "[\"shop\",null]",
+      "[\"feed\",\"diablo-immortal-news\"]"
+    ],
+    "paired": true
   }
 ]
