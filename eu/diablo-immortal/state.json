@@ -1229,8 +1229,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-04T16:20:23Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2151629": {
       "key": "p:2151629",
@@ -1262,8 +1262,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-04T16:20:23Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2151628": {
       "key": "p:2151628",
@@ -1295,8 +1295,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-04T16:20:23Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2151630": {
       "key": "p:2151630",
