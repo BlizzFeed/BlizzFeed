@@ -1351,6 +1351,105 @@
       "first_seen": "2026-11-12T16:14:27Z",
       "status": "listed",
       "misses": 0
+    },
+    "p:2160004": {
+      "key": "p:2160004",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "diablo-immortal-trailblazers-might",
+      "title": "Trailblazer’s Might",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2160004,
+      "productIds": [
+        2160004
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/diablo-immortal/items/2160004/trailblazers-might",
+      "image": "//catalog.blzstatic.com//fde/1d3d87a219a66306d254d22ba59078f2-DIA_DI_NA_Patch5.0.1_BNETBundles_TrailblazersMightTest_enus_EE02.png",
+      "sections": [
+        "Exclusive Bundles"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€187.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 187.99,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-18T16:06:33Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2160003": {
+      "key": "p:2160003",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "diablo-immortal-trailblazers-charge",
+      "title": "Trailblazer’s Charge",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2160003,
+      "productIds": [
+        2160003
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/diablo-immortal/items/2160003/trailblazers-charge",
+      "image": "//catalog.blzstatic.com//48/1c6097fbd39cda6b3898330a454168fd-DIA_DI_NA_Patch5.0.1_BNETBundles_TrailblazersChargeTest_enus_EE02.png",
+      "sections": [
+        "Exclusive Bundles"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€93.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 93.99,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-18T16:06:33Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2160243": {
+      "key": "p:2160243",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "diablo-immortal-trailblazers-edge",
+      "title": "Trailblazer’s Edge",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2160243,
+      "productIds": [
+        2160243
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/diablo-immortal/items/2160243/trailblazers-edge",
+      "image": "//catalog.blzstatic.com//6e/d5bab569061dd3eb8761243e37f380fb-DIA_DI_NA_Patch5.0.1_BNETBundles_TrailblazersEdgeTest_enus_EE02.png",
+      "sections": [
+        "Exclusive Bundles"
+      ],
+      "badge": null,
+      "price": {
+        "fullAmount": "€46.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 46.99,
+        "labelFormat": null,
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-18T16:06:33Z",
+      "status": "listed",
+      "misses": 0
     }
   },
   "suspect": false
