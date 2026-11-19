@@ -1349,8 +1349,8 @@
       "price": null,
       "expiresAtMs": null,
       "first_seen": "2026-11-12T16:14:27Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2160004": {
       "key": "p:2160004",
@@ -1448,6 +1448,31 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-18T16:06:33Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2160005": {
+      "key": "p:2160005",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "diablo-immortal-champions-bounty-bound-gem-fragment",
+      "title": "Champion's Bounty - Bound Gem Fragment",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2160005,
+      "productIds": [
+        2160005
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/diablo-immortal/items/2160005/champions-bounty-bound-gem-fragment",
+      "image": "//catalog.blzstatic.com//4e/ab1468a790c9366324c042966e3538de-DIA_DI_NA_Patch4.3.1_FreeBundle_1920x1080_enus_EE011.png",
+      "sections": [
+        "Free Gift"
+      ],
+      "badge": null,
+      "price": null,
+      "expiresAtMs": null,
+      "first_seen": "2026-11-19T16:04:33Z",
       "status": "listed",
       "misses": 0
     }
