@@ -32,5 +32,39 @@
     "at": "2026-11-19T16:05:09Z",
     "digested": [],
     "paired": true
+  },
+  {
+    "type": "gone",
+    "family": "diablo-immortal",
+    "key": "p:2151643",
+    "slug": "diablo-immortal-champions-bounty-random-set-item",
+    "seen": "2026-11-19T16:14:43Z",
+    "changes": {
+      "eu": {
+        "type": "gone",
+        "key": "p:2151643",
+        "kind": "item",
+        "slug": "diablo-immortal-champions-bounty-random-set-item",
+        "title": "Champion's Bounty - Random Set Item",
+        "destination": "/family/diablo-immortal/items/2151643/champions-bounty-random-set-item",
+        "seen": "2026-11-19T16:14:43Z",
+        "price": null,
+        "commit": "e8fd0b91e4eca63678a854fad933765f59d6421f"
+      },
+      "us": {
+        "type": "gone",
+        "key": "p:2151643",
+        "kind": "item",
+        "slug": "diablo-immortal-champions-bounty-random-set-item",
+        "title": "Champion's Bounty - Random Set Item",
+        "destination": "/family/diablo-immortal/items/2151643/champions-bounty-random-set-item",
+        "seen": "2026-11-19T16:14:43Z",
+        "price": null,
+        "commit": "4e59e960f4c6ac2ac619ecff98d48e44b7af8642"
+      }
+    },
+    "at": "2026-11-19T16:15:20Z",
+    "digested": [],
+    "paired": true
   }
 ]
