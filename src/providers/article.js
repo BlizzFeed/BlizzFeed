@@ -12,11 +12,12 @@ export class BodyNotFound extends Error {}
 /** Blizzard redirects this slug-less URL to the full one, for every game's articles. */
 export const articleUrl = (locale, articleId) => `https://news.blizzard.com/${locale}/article/${articleId}`;
 
-/** One more try after a short pause on a 5xx. A 3xx fetch gave up on (Blizzard sometimes sends a doubled Location) is followed once by hand. */
+/** One more try after a short pause on a 5xx. A 3xx fetch gave up on (a doubled or missing Location) is followed by hand, twice at most. */
 export async function fetchBody(locale, articleId, selector, retryMs = 2000) {
 	let response;
 	let url = articleUrl(locale, articleId);
 	let retried = false;
+	let hops = 0;
 	while (!response) {
 		try {
 			response = await get(url);
@@ -25,7 +26,7 @@ export async function fetchBody(locale, articleId, selector, retryMs = 2000) {
 				throw new ArticleGone(articleId);
 			}
 			const next = error instanceof HttpError && error.status < 400 && error.location?.split(',')[0].trim();
-			if (next && url === articleUrl(locale, articleId)) {
+			if (next && hops++ < 2) {
 				url = new URL(next, error.url).href;
 			} else if (error instanceof HttpError && error.status >= 500 && !retried) {
 				retried = true;

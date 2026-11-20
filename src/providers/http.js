@@ -35,7 +35,11 @@ export async function get(url, { headers = {}, params } = {}) {
 		response = await send();
 	}
 	if (!response.ok) {
-		throw new HttpError(response, (await response.text().catch(() => '')).slice(0, 2000));
+		const text = await response.text().catch(() => '');
+		const error = new HttpError(response, text.slice(0, 2000));
+		// A Next.js redirect can arrive without a usable Location header, but its page still names the target.
+		error.location ||= text.match(/NEXT_REDIRECT;\w+;([^;"\\]+);/)?.[1] ?? null;
+		throw error;
 	}
 	return response;
 }

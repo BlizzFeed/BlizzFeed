@@ -46,6 +46,16 @@ test('a redirect fetch gave up on (doubled Location) is followed by hand', async
 	assert.equal(String(fetch.mock.calls[1].arguments[0]), 'https://news.blizzard.com/en-gb/article/1/new');
 });
 
+test('a redirect with no Location header is followed by the target in its page', async (t) => {
+	const page = '<article class="Content"><section class="blog"><p>Hi</p></section></article>';
+	const bare = new Response('x NEXT_REDIRECT;replace;/en-gb/article/1/new;308;\\"}', { status: 308 });
+	Object.defineProperty(bare, 'url', { value: 'https://news.blizzard.com/en-gb/article/1' });
+	const replies = [bare, new Response(page)];
+	const fetch = t.mock.method(globalThis, 'fetch', async () => replies.shift());
+	assert.equal(await article.fetchBody('en-gb', '1', SELECTOR, 0), '<section class="blog"><p>Hi</p></section>');
+	assert.match(String(fetch.mock.calls[1].arguments[0]), /\/en-gb\/article\/1\/new$/);
+});
+
 test('a 3xx with no Location still fails', async (t) => {
 	answer(t, 307);
 	await assert.rejects(article.fetchBody('en-gb', '1', SELECTOR, 0), HttpError);
