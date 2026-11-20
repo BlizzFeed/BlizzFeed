@@ -2,6 +2,7 @@
 
 Join Host ‪@countdowntoclassic, Senior Game Designer Aidan Moon, and Principal Designer Kris Zierhut for a wide-ranging conversation on Class design, itemization, and more! 
 
+Spotify: https://open.spotify.com/episode/5AHSaXyM5X9nr3iKtQEGlL?si=PP7wyTKoTVuocHxOvizkUA
 
 Learn more at: https://worldofwarcraft.blizzard.com/forever
 
