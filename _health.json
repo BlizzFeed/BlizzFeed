@@ -6,5 +6,9 @@
   "us/starcraft-ii": {
     "failures": 3,
     "since": "2026-10-14T19:03:02Z"
+  },
+  "us/world-of-warcraft-classic": {
+    "failures": 1,
+    "since": "2026-11-22T14:50:14Z"
   }
 }
