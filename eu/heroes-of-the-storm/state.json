@@ -111,8 +111,8 @@
       "key": "bltcb3e47b4547602f5",
       "kind": "item",
       "cmsId": "bltcb3e47b4547602f5",
-      "slug": "",
-      "title": "",
+      "slug": "heroes-of-the-storm-gems",
+      "title": "Heroes of the Storm™ Gems",
       "description": "In-Game Content",
       "categoryId": "in-game-content",
       "itemId": null,
@@ -124,7 +124,7 @@
         1955720
       ],
       "subscriptionIds": [],
-      "destination": "",
+      "destination": "/product/heroes-of-the-storm-gems",
       "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltd8e46087b6bdcbf9/682e1b2c00c48efc2c7798b5/Heroes_Gems.png",
       "sections": [
         "In-Game Content"
