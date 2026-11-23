@@ -4,14 +4,14 @@
       "key": "blt71aea9249b580b60",
       "kind": "banner",
       "cmsId": "blt71aea9249b580b60",
-      "slug": "heroes-of-the-storm-xalatath-bundle",
+      "slug": "heroes-of-the-storm-xalatath",
       "itemId": null,
       "title": "The Harbinger of the Void has descended upon the Nexus",
       "productPageName": null,
       "headline": "",
       "subHeadline": "The Harbinger of the Void has descended upon the Nexus",
       "buttonText": "Purchase Now",
-      "destination": "/product/heroes-of-the-storm-xalatath-bundle",
+      "destination": "/product/heroes-of-the-storm-xalatath",
       "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blte4853646218cbddf/6aa5a3e73f72c3981a27f7ad/PROJECT_SNOW_BNET_1600x720_BATTLE_NET_WEB_SHOP_BANNER_(1).png",
       "sections": [
         "Banner"
@@ -77,17 +77,17 @@
       "key": "bltd902fe872eaed3e1",
       "kind": "item",
       "cmsId": "bltd902fe872eaed3e1",
-      "slug": "heroes-of-the-storm-xalatath-bundle",
+      "slug": "heroes-of-the-storm-xalatath",
       "title": "Xal'atath",
       "description": "In-Game Content",
       "categoryId": "in-game-content",
       "itemId": null,
       "productIds": [
         2059598,
-        2121975
+        2072999
       ],
       "subscriptionIds": [],
-      "destination": "/product/heroes-of-the-storm-xalatath-bundle",
+      "destination": "/product/heroes-of-the-storm-xalatath",
       "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt74f65de276133d39/6a8cd9333ad39275946f8d0a/PROJECT_SNOW_BNET_1920X1080_PHX_FRANCHISE_CARD.png",
       "sections": [
         "In-Game Content"
@@ -273,8 +273,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-23T18:03:36Z",
-      "status": "missing",
-      "misses": 1
+      "status": "listed",
+      "misses": 0
     }
   },
   "suspect": false
