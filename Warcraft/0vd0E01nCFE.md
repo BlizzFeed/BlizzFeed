@@ -16,3 +16,14 @@ Learn more at: https://worldofwarcraft.blizzard.com/forever
 ► Follow Warcraft on Twitter: https://twitter.com/warcraft  
 ► Follow Warcraft on Instagram: https://instagram.com/warcraft  
 ► Like Warcraft on Facebook: https://facebook.com/warcraft
+
+Intro 00:00
+Mage  1:57
+Rogue 2:38
+Warlock 3:11
+Druid 4:00
+Paladin 4:58
+Warrior 5:41
+Shaman 6:11
+Priest 6:59
+Hunter 7:39
