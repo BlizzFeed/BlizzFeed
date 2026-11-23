@@ -10,10 +10,10 @@
         "type": "banner",
         "key": "blt71aea9249b580b60",
         "kind": "banner",
-        "slug": "heroes-of-the-storm-xalatath-bundle",
+        "slug": "heroes-of-the-storm-xalatath",
         "title": "The Harbinger of the Void has descended upon the Nexus",
-        "destination": "/product/heroes-of-the-storm-xalatath-bundle",
-        "seen": "2026-11-23T18:18:38Z",
+        "destination": "/product/heroes-of-the-storm-xalatath",
+        "seen": "2026-11-23T18:23:46Z",
         "button": "Purchase Now",
         "product": "Xal'atath",
         "what": "changed",
@@ -21,12 +21,12 @@
           "destination"
         ],
         "from": {
-          "destination": "/product/heroes-of-the-storm-xalatath"
-        },
-        "to": {
           "destination": "/product/heroes-of-the-storm-xalatath-bundle"
         },
-        "commit": "f5d415b03d5be52cf34e9801f25a10548725f0d8"
+        "to": {
+          "destination": "/product/heroes-of-the-storm-xalatath"
+        },
+        "commit": "a62e980808a7fdac95d1ba9e40dbcd9d0ea434df"
       },
       "us": {
         "type": "banner",
@@ -128,6 +128,33 @@
               "destination": "/product/heroes-of-the-storm-xalatath-bundle"
             },
             "commit": "f5d415b03d5be52cf34e9801f25a10548725f0d8"
+          }
+        }
+      },
+      {
+        "seen": "2026-11-23T18:23:46Z",
+        "changes": {
+          "eu": {
+            "type": "banner",
+            "key": "blt71aea9249b580b60",
+            "kind": "banner",
+            "slug": "heroes-of-the-storm-xalatath",
+            "title": "The Harbinger of the Void has descended upon the Nexus",
+            "destination": "/product/heroes-of-the-storm-xalatath",
+            "seen": "2026-11-23T18:23:46Z",
+            "button": "Purchase Now",
+            "product": "Xal'atath",
+            "what": "changed",
+            "changed": [
+              "destination"
+            ],
+            "from": {
+              "destination": "/product/heroes-of-the-storm-xalatath-bundle"
+            },
+            "to": {
+              "destination": "/product/heroes-of-the-storm-xalatath"
+            },
+            "commit": "a62e980808a7fdac95d1ba9e40dbcd9d0ea434df"
           }
         }
       }
