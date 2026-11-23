@@ -77,17 +77,17 @@
       "key": "bltd902fe872eaed3e1",
       "kind": "item",
       "cmsId": "bltd902fe872eaed3e1",
-      "slug": "heroes-of-the-storm-xalatath-bundle",
+      "slug": "heroes-of-the-storm-xalatath",
       "title": "Xal'atath",
       "description": "In-Game Content",
       "categoryId": "in-game-content",
       "itemId": null,
       "productIds": [
         2059598,
-        2121975
+        2072999
       ],
       "subscriptionIds": [],
-      "destination": "/product/heroes-of-the-storm-xalatath-bundle",
+      "destination": "/product/heroes-of-the-storm-xalatath",
       "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt74f65de276133d39/6a8cd9333ad39275946f8d0a/PROJECT_SNOW_BNET_1920X1080_PHX_FRANCHISE_CARD.png",
       "sections": [
         "In-Game Content"
@@ -111,8 +111,8 @@
       "key": "bltcb3e47b4547602f5",
       "kind": "item",
       "cmsId": "bltcb3e47b4547602f5",
-      "slug": "heroes-of-the-storm-gems",
-      "title": "Heroes of the Storm™ Gems",
+      "slug": "",
+      "title": "",
       "description": "In-Game Content",
       "categoryId": "in-game-content",
       "itemId": null,
@@ -124,7 +124,7 @@
         1955720
       ],
       "subscriptionIds": [],
-      "destination": "/product/heroes-of-the-storm-gems",
+      "destination": "",
       "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/bltd8e46087b6bdcbf9/682e1b2c00c48efc2c7798b5/Heroes_Gems.png",
       "sections": [
         "In-Game Content"
@@ -240,6 +240,39 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-10-09T03:10:55Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "blt78485e50ea29367f": {
+      "key": "blt78485e50ea29367f",
+      "kind": "item",
+      "cmsId": "blt78485e50ea29367f",
+      "slug": "heroes-of-the-storm-moophisto",
+      "title": "Moophisto",
+      "description": "Bundle",
+      "categoryId": "bundle",
+      "itemId": null,
+      "productIds": [
+        2162043
+      ],
+      "subscriptionIds": [],
+      "destination": "/product/heroes-of-the-storm-moophisto?p=2162043",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt2e0626bc3f50dff9/6afc900d3d86bd48b51653ef/HOS_Moophisto_Skin_1920x1080_GG01.jpg",
+      "sections": [
+        "In-Game Content"
+      ],
+      "badge": "New",
+      "price": {
+        "fullAmount": "€19.99",
+        "discountAmount": null,
+        "discountPercentage": null,
+        "currency": "EUR",
+        "raw": 19.99,
+        "labelFormat": "",
+        "discountId": null
+      },
+      "expiresAtMs": null,
+      "first_seen": "2026-11-23T18:03:36Z",
       "status": "listed",
       "misses": 0
     }
