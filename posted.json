@@ -27,9 +27,121 @@
           "destination": "/product/heroes-of-the-storm-xalatath"
         },
         "commit": "3482a267d546fc95ed687b987aad1c601f7d2f01"
+      },
+      "us": {
+        "type": "banner",
+        "key": "blt71aea9249b580b60",
+        "kind": "banner",
+        "slug": "heroes-of-the-storm-xalatath",
+        "title": "The Harbinger of the Void has descended upon the Nexus",
+        "destination": "/product/heroes-of-the-storm-xalatath",
+        "seen": "2026-11-23T18:03:36Z",
+        "button": "Purchase Now",
+        "product": "Xal'atath",
+        "what": "changed",
+        "changed": [
+          "destination"
+        ],
+        "from": {
+          "destination": "/product/heroes-of-the-storm-xalatath-bundle"
+        },
+        "to": {
+          "destination": "/product/heroes-of-the-storm-xalatath"
+        },
+        "commit": "257c2b03e79e474f6376dc92ea98718757e4311a"
       }
     },
     "at": "2026-11-23T17:59:06Z",
+    "digested": [],
+    "paired": true
+  },
+  {
+    "type": "new",
+    "family": "heroes-of-the-storm",
+    "key": "blt78485e50ea29367f",
+    "slug": "heroes-of-the-storm-moophisto",
+    "seen": "2026-11-23T18:03:36Z",
+    "changes": {
+      "eu": {
+        "type": "new",
+        "key": "blt78485e50ea29367f",
+        "kind": "item",
+        "slug": "heroes-of-the-storm-moophisto",
+        "title": "Moophisto",
+        "destination": "/product/heroes-of-the-storm-moophisto?p=2162043",
+        "seen": "2026-11-23T18:03:36Z",
+        "price": {
+          "fullAmount": "€19.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 19.99,
+          "labelFormat": "",
+          "discountId": null
+        },
+        "commit": "a64d4d120bf85c84a20c7cef4a6af4b53cdd639b"
+      },
+      "us": {
+        "type": "new",
+        "key": "blt78485e50ea29367f",
+        "kind": "item",
+        "slug": "heroes-of-the-storm-moophisto",
+        "title": "Moophisto",
+        "destination": "/product/heroes-of-the-storm-moophisto?p=2162043",
+        "seen": "2026-11-23T18:03:36Z",
+        "price": {
+          "fullAmount": "$19.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 19.99,
+          "labelFormat": "",
+          "discountId": null
+        },
+        "commit": "257c2b03e79e474f6376dc92ea98718757e4311a"
+      }
+    },
+    "at": "2026-11-23T18:04:13Z",
+    "digested": [],
+    "paired": true
+  },
+  {
+    "type": "details",
+    "family": "heroes-of-the-storm",
+    "key": "bltcb3e47b4547602f5",
+    "slug": "",
+    "seen": "2026-11-23T18:03:36Z",
+    "changes": {
+      "eu": {
+        "type": "details",
+        "key": "bltcb3e47b4547602f5",
+        "kind": "item",
+        "slug": "",
+        "title": "",
+        "destination": "",
+        "seen": "2026-11-23T18:03:36Z",
+        "price": {
+          "fullAmount": "€2.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "EUR",
+          "raw": 2.99,
+          "labelFormat": "From {0}",
+          "discountId": null
+        },
+        "changed": [
+          "title"
+        ],
+        "from": {
+          "title": "Heroes of the Storm™ Gems"
+        },
+        "to": {
+          "title": ""
+        },
+        "commit": "a64d4d120bf85c84a20c7cef4a6af4b53cdd639b"
+      }
+    },
+    "at": "2026-11-23T18:04:13Z",
     "digested": []
   }
 ]
