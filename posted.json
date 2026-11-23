@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "type": "banner",
+    "family": "heroes-of-the-storm",
+    "key": "blt71aea9249b580b60",
+    "slug": "heroes-of-the-storm-xalatath",
+    "seen": "2026-11-23T17:58:31Z",
+    "changes": {
+      "eu": {
+        "type": "banner",
+        "key": "blt71aea9249b580b60",
+        "kind": "banner",
+        "slug": "heroes-of-the-storm-xalatath",
+        "title": "The Harbinger of the Void has descended upon the Nexus",
+        "destination": "/product/heroes-of-the-storm-xalatath",
+        "seen": "2026-11-23T17:58:31Z",
+        "button": "Purchase Now",
+        "product": null,
+        "what": "changed",
+        "changed": [
+          "destination"
+        ],
+        "from": {
+          "destination": "/product/heroes-of-the-storm-xalatath-bundle"
+        },
+        "to": {
+          "destination": "/product/heroes-of-the-storm-xalatath"
+        },
+        "commit": "3482a267d546fc95ed687b987aad1c601f7d2f01"
+      }
+    },
+    "at": "2026-11-23T17:59:06Z",
+    "digested": []
+  }
+]
