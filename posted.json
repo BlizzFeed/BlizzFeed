@@ -10,23 +10,23 @@
         "type": "banner",
         "key": "blt71aea9249b580b60",
         "kind": "banner",
-        "slug": "heroes-of-the-storm-xalatath",
+        "slug": "heroes-of-the-storm-xalatath-bundle",
         "title": "The Harbinger of the Void has descended upon the Nexus",
-        "destination": "/product/heroes-of-the-storm-xalatath",
-        "seen": "2026-11-23T17:58:31Z",
+        "destination": "/product/heroes-of-the-storm-xalatath-bundle",
+        "seen": "2026-11-23T18:18:38Z",
         "button": "Purchase Now",
-        "product": null,
+        "product": "Xal'atath",
         "what": "changed",
         "changed": [
           "destination"
         ],
         "from": {
-          "destination": "/product/heroes-of-the-storm-xalatath-bundle"
-        },
-        "to": {
           "destination": "/product/heroes-of-the-storm-xalatath"
         },
-        "commit": "3482a267d546fc95ed687b987aad1c601f7d2f01"
+        "to": {
+          "destination": "/product/heroes-of-the-storm-xalatath-bundle"
+        },
+        "commit": "f5d415b03d5be52cf34e9801f25a10548725f0d8"
       },
       "us": {
         "type": "banner",
@@ -53,7 +53,85 @@
     },
     "at": "2026-11-23T17:59:06Z",
     "digested": [],
-    "paired": true
+    "paired": true,
+    "lines": [
+      {
+        "seen": "2026-11-23T17:58:31Z",
+        "changes": {
+          "eu": {
+            "type": "banner",
+            "key": "blt71aea9249b580b60",
+            "kind": "banner",
+            "slug": "heroes-of-the-storm-xalatath",
+            "title": "The Harbinger of the Void has descended upon the Nexus",
+            "destination": "/product/heroes-of-the-storm-xalatath",
+            "seen": "2026-11-23T17:58:31Z",
+            "button": "Purchase Now",
+            "product": null,
+            "what": "changed",
+            "changed": [
+              "destination"
+            ],
+            "from": {
+              "destination": "/product/heroes-of-the-storm-xalatath-bundle"
+            },
+            "to": {
+              "destination": "/product/heroes-of-the-storm-xalatath"
+            },
+            "commit": "3482a267d546fc95ed687b987aad1c601f7d2f01"
+          },
+          "us": {
+            "type": "banner",
+            "key": "blt71aea9249b580b60",
+            "kind": "banner",
+            "slug": "heroes-of-the-storm-xalatath",
+            "title": "The Harbinger of the Void has descended upon the Nexus",
+            "destination": "/product/heroes-of-the-storm-xalatath",
+            "seen": "2026-11-23T18:03:36Z",
+            "button": "Purchase Now",
+            "product": "Xal'atath",
+            "what": "changed",
+            "changed": [
+              "destination"
+            ],
+            "from": {
+              "destination": "/product/heroes-of-the-storm-xalatath-bundle"
+            },
+            "to": {
+              "destination": "/product/heroes-of-the-storm-xalatath"
+            },
+            "commit": "257c2b03e79e474f6376dc92ea98718757e4311a"
+          }
+        }
+      },
+      {
+        "seen": "2026-11-23T18:18:38Z",
+        "changes": {
+          "eu": {
+            "type": "banner",
+            "key": "blt71aea9249b580b60",
+            "kind": "banner",
+            "slug": "heroes-of-the-storm-xalatath-bundle",
+            "title": "The Harbinger of the Void has descended upon the Nexus",
+            "destination": "/product/heroes-of-the-storm-xalatath-bundle",
+            "seen": "2026-11-23T18:18:38Z",
+            "button": "Purchase Now",
+            "product": "Xal'atath",
+            "what": "changed",
+            "changed": [
+              "destination"
+            ],
+            "from": {
+              "destination": "/product/heroes-of-the-storm-xalatath"
+            },
+            "to": {
+              "destination": "/product/heroes-of-the-storm-xalatath-bundle"
+            },
+            "commit": "f5d415b03d5be52cf34e9801f25a10548725f0d8"
+          }
+        }
+      }
+    ]
   },
   {
     "type": "new",
