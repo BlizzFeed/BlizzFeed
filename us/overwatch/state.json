@@ -3007,8 +3007,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-03T19:09:00Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-24T19:14:45Z"
     },
     "p:2145425": {
       "key": "p:2145425",
@@ -3618,8 +3619,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-10T19:00:38Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-24T19:14:45Z"
     },
     "p:2114044": {
       "key": "p:2114044",
@@ -3651,8 +3653,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-10T19:00:38Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-24T19:14:45Z"
     },
     "p:2114035": {
       "key": "p:2114035",
@@ -3684,8 +3687,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-10T19:00:38Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-24T19:14:45Z"
     },
     "p:2114042": {
       "key": "p:2114042",
@@ -3717,8 +3721,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-10T19:00:38Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-24T19:14:45Z"
     },
     "p:2114053": {
       "key": "p:2114053",
@@ -3750,8 +3755,9 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-10T19:00:38Z",
-      "status": "missing",
-      "misses": 2
+      "status": "gone",
+      "misses": 3,
+      "gone_since": "2026-11-24T19:14:45Z"
     },
     "p:2132888": {
       "key": "p:2132888",
