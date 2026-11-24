@@ -32,5 +32,27 @@
     "at": "2026-11-24T18:05:17Z",
     "digested": [],
     "paired": true
+  },
+  {
+    "type": "gone",
+    "family": "hearthstone",
+    "key": "p:2136775",
+    "slug": "hearthstone-free-battlenet-shop-gift",
+    "seen": "2026-11-24T18:09:39Z",
+    "changes": {
+      "us": {
+        "type": "gone",
+        "key": "p:2136775",
+        "kind": "item",
+        "slug": "hearthstone-free-battlenet-shop-gift",
+        "title": "Free Battle.net® Shop Gift!",
+        "destination": "/family/hearthstone/items/2136775/free-battlenet-shop-gift",
+        "seen": "2026-11-24T18:09:39Z",
+        "price": null,
+        "commit": "537c4a69a6bddfebade4ba58feda81b9ee17b501"
+      }
+    },
+    "at": "2026-11-24T18:10:15Z",
+    "digested": []
   }
 ]
