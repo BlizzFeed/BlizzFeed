@@ -4148,8 +4148,8 @@
       "price": null,
       "expiresAtMs": null,
       "first_seen": "2026-11-17T18:11:39Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     }
   },
   "suspect": false
