@@ -24,12 +24,32 @@
           "discountId": null
         },
         "commit": "68dd3de113880e495e28d670b0ab5aa03d51cf0f"
+      },
+      "eu": {
+        "type": "gone",
+        "key": "p:1996244",
+        "kind": "item",
+        "slug": "overwatch-neo-noir-mega-bundle",
+        "title": "Neo-Noir Mega Bundle",
+        "destination": "/family/overwatch/items/1996244/neo-noir-mega-bundle",
+        "seen": "2026-11-24T19:19:25Z",
+        "price": {
+          "fullAmount": "5,500 Coins",
+          "discountAmount": "3,400 Coins",
+          "discountPercentage": 38,
+          "currency": "XWC",
+          "raw": 3400,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "7bdfa3b8c6f359cf5ee1cab79d16b3d66d514bd2"
       }
     },
     "at": "2026-11-24T19:15:24Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "gone",
@@ -56,12 +76,32 @@
           "discountId": null
         },
         "commit": "68dd3de113880e495e28d670b0ab5aa03d51cf0f"
+      },
+      "eu": {
+        "type": "gone",
+        "key": "p:2114056",
+        "kind": "item",
+        "slug": "overwatch-code-exec",
+        "title": "Code: EXEC",
+        "destination": "/family/overwatch/items/2114056/code-exec",
+        "seen": "2026-11-24T19:19:25Z",
+        "price": {
+          "fullAmount": "1,900 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 1900,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "7bdfa3b8c6f359cf5ee1cab79d16b3d66d514bd2"
       }
     },
     "at": "2026-11-24T19:15:24Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "gone",
@@ -88,12 +128,32 @@
           "discountId": null
         },
         "commit": "68dd3de113880e495e28d670b0ab5aa03d51cf0f"
+      },
+      "eu": {
+        "type": "gone",
+        "key": "p:2114044",
+        "kind": "item",
+        "slug": "overwatch-code-life",
+        "title": "Code: LIFE",
+        "destination": "/family/overwatch/items/2114044/code-life",
+        "seen": "2026-11-24T19:19:25Z",
+        "price": {
+          "fullAmount": "1,900 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 1900,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "7bdfa3b8c6f359cf5ee1cab79d16b3d66d514bd2"
       }
     },
     "at": "2026-11-24T19:15:24Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "gone",
@@ -120,12 +180,32 @@
           "discountId": null
         },
         "commit": "68dd3de113880e495e28d670b0ab5aa03d51cf0f"
+      },
+      "eu": {
+        "type": "gone",
+        "key": "p:2114035",
+        "kind": "item",
+        "slug": "overwatch-code-tech",
+        "title": "Code: TECH",
+        "destination": "/family/overwatch/items/2114035/code-tech",
+        "seen": "2026-11-24T19:19:25Z",
+        "price": {
+          "fullAmount": "1,900 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 1900,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "7bdfa3b8c6f359cf5ee1cab79d16b3d66d514bd2"
       }
     },
     "at": "2026-11-24T19:15:24Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "gone",
@@ -152,12 +232,32 @@
           "discountId": null
         },
         "commit": "68dd3de113880e495e28d670b0ab5aa03d51cf0f"
+      },
+      "eu": {
+        "type": "gone",
+        "key": "p:2114042",
+        "kind": "item",
+        "slug": "overwatch-code-hack",
+        "title": "Code: HACK",
+        "destination": "/family/overwatch/items/2114042/code-hack",
+        "seen": "2026-11-24T19:19:25Z",
+        "price": {
+          "fullAmount": "1,900 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 1900,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "7bdfa3b8c6f359cf5ee1cab79d16b3d66d514bd2"
       }
     },
     "at": "2026-11-24T19:15:24Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "gone",
@@ -184,11 +284,31 @@
           "discountId": null
         },
         "commit": "68dd3de113880e495e28d670b0ab5aa03d51cf0f"
+      },
+      "eu": {
+        "type": "gone",
+        "key": "p:2114053",
+        "kind": "item",
+        "slug": "overwatch-code-lite",
+        "title": "Code: LITE",
+        "destination": "/family/overwatch/items/2114053/code-lite",
+        "seen": "2026-11-24T19:19:25Z",
+        "price": {
+          "fullAmount": "1,900 Coins",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "XWC",
+          "raw": 1900,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "7bdfa3b8c6f359cf5ee1cab79d16b3d66d514bd2"
       }
     },
     "at": "2026-11-24T19:15:24Z",
     "digested": [
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   }
 ]
