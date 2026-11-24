@@ -1,4 +1,4 @@
-# “Al’Aketh Rising” | World of Warcraft: Forever
+# “Al’Aketh Rising” Motion Comic | World of Warcraft: Forever
 
 Follow Constable Aonda of the Skyborne in the World of Warcraft: Forever Comic, “Al'Aketh Rising”
 
