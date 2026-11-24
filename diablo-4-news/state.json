@@ -1361,11 +1361,17 @@
   },
   {
     "id": "24295395",
-    "title": "Diablo IV Patch Notes",
-    "url": "https://news.blizzard.com/en-gb/article/24295395/diablo-iv-patch-notes",
+    "title": "Diablo IV Patch Notes (3.2)",
+    "url": "https://news.blizzard.com/en-gb/article/24295395/diablo-iv-patch-notes-3-2",
     "date": "2026-09-25T17:00:00Z",
     "summary": "We will continually update this article with all patches the development team implements for Diablo IV.",
-    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/iz/IZ13LN5425JN1789665078440.png"
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/iz/IZ13LN5425JN1789665078440.png",
+    "replaced": {
+      "title": "Diablo IV Patch Notes",
+      "summary": "We will continually update this article with all patches the development team implements for Diablo IV.",
+      "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/iz/IZ13LN5425JN1789665078440.png",
+      "at": "2026-11-24T18:27:17Z"
+    }
   },
   {
     "id": "24297203",
