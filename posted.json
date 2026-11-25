@@ -1,1 +1,64 @@
-[]
+[
+  {
+    "type": "banner",
+    "family": "world-of-warcraft-classic",
+    "key": "blt9824bee996a449de",
+    "slug": "world-of-warcraft-celebration-pass",
+    "seen": "2026-11-25T18:06:36Z",
+    "changes": {
+      "eu": {
+        "type": "banner",
+        "key": "blt9824bee996a449de",
+        "kind": "banner",
+        "slug": "world-of-warcraft-celebration-pass",
+        "title": "Celebrate WoW: Forever with a special price on 365 days of WoW Game Time!",
+        "destination": "/product/world-of-warcraft-celebration-pass",
+        "seen": "2026-11-25T18:06:36Z",
+        "button": "Buy Now",
+        "product": null,
+        "what": "added",
+        "commit": "a80dd2b08e78119c355e8bcf0ccd6ffee46dfb85"
+      }
+    },
+    "at": "2026-11-25T18:07:13Z",
+    "digested": []
+  },
+  {
+    "type": "banner",
+    "family": "world-of-warcraft-forever",
+    "key": "bltcca36c6fbda4e4bd",
+    "slug": "world-of-warcraft-forever",
+    "seen": "2026-11-25T18:06:36Z",
+    "changes": {
+      "eu": {
+        "type": "banner",
+        "key": "bltcca36c6fbda4e4bd",
+        "kind": "banner",
+        "slug": "world-of-warcraft-forever",
+        "title": "The countless adventures of Azeroth await! Subscribe now to begin your Forever journey today. ",
+        "destination": "/product/world-of-warcraft-forever",
+        "seen": "2026-11-25T18:06:36Z",
+        "button": "Subscribe and Play Now",
+        "product": "World of Warcraft®: Forever ",
+        "what": "added",
+        "commit": "598a3eba76dce431fae08029ee8d7547ce279f73"
+      },
+      "us": {
+        "type": "banner",
+        "key": "bltcca36c6fbda4e4bd",
+        "kind": "banner",
+        "slug": "world-of-warcraft-forever",
+        "title": "The countless adventures of Azeroth await! Subscribe now to begin your Forever journey today. ",
+        "destination": "/product/world-of-warcraft-forever",
+        "seen": "2026-11-25T18:06:36Z",
+        "button": "Subscribe and Play Now",
+        "product": "World of Warcraft®: Forever ",
+        "what": "added",
+        "commit": "f14c500ac2ceafc59e48c725dc4e827afd976096"
+      }
+    },
+    "at": "2026-11-25T18:07:13Z",
+    "digested": [],
+    "paired": true
+  }
+]
