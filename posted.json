@@ -18,10 +18,24 @@
         "product": null,
         "what": "added",
         "commit": "a80dd2b08e78119c355e8bcf0ccd6ffee46dfb85"
+      },
+      "us": {
+        "type": "banner",
+        "key": "blt9824bee996a449de",
+        "kind": "banner",
+        "slug": "world-of-warcraft-celebration-pass",
+        "title": "Celebrate WoW: Forever with a special price on 365 days of WoW Game Time!",
+        "destination": "/product/world-of-warcraft-celebration-pass",
+        "seen": "2026-11-25T18:21:30Z",
+        "button": "Buy Now",
+        "product": null,
+        "what": "added",
+        "commit": "4be5380abb3d13652e49fd43d646e131b7f896f3"
       }
     },
     "at": "2026-11-25T18:07:13Z",
-    "digested": []
+    "digested": [],
+    "paired": true
   },
   {
     "type": "banner",
