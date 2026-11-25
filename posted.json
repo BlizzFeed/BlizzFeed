@@ -24,13 +24,33 @@
           "discountId": null
         },
         "commit": "b3bee140f7a8a65ddb127fb0f25d2884861941cf"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2160251",
+        "kind": "item",
+        "slug": "diablo-immortal-flower-of-autumn",
+        "title": "Flower of Autumn",
+        "destination": "/family/diablo-immortal/items/2160251/flower-of-autumn",
+        "seen": "2026-11-25T16:14:55Z",
+        "price": {
+          "fullAmount": "$199.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 199.99,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70b320800489ff2e48f456f8b5908aa834eb2db6"
       }
     },
     "at": "2026-11-25T16:06:04Z",
     "digested": [
       "[\"feed\",\"diablo-immortal-news\"]",
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -57,13 +77,33 @@
           "discountId": null
         },
         "commit": "b3bee140f7a8a65ddb127fb0f25d2884861941cf"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2160250",
+        "kind": "item",
+        "slug": "diablo-immortal-bud-of-autumn",
+        "title": "Bud of Autumn",
+        "destination": "/family/diablo-immortal/items/2160250/bud-of-autumn",
+        "seen": "2026-11-25T16:14:55Z",
+        "price": {
+          "fullAmount": "$99.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 99.99,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70b320800489ff2e48f456f8b5908aa834eb2db6"
       }
     },
     "at": "2026-11-25T16:06:04Z",
     "digested": [
       "[\"feed\",\"diablo-immortal-news\"]",
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -90,13 +130,33 @@
           "discountId": null
         },
         "commit": "b3bee140f7a8a65ddb127fb0f25d2884861941cf"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2160249",
+        "kind": "item",
+        "slug": "diablo-immortal-sprout-of-autumn",
+        "title": "Sprout of Autumn",
+        "destination": "/family/diablo-immortal/items/2160249/sprout-of-autumn",
+        "seen": "2026-11-25T16:14:55Z",
+        "price": {
+          "fullAmount": "$49.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 49.99,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70b320800489ff2e48f456f8b5908aa834eb2db6"
       }
     },
     "at": "2026-11-25T16:06:04Z",
     "digested": [
       "[\"feed\",\"diablo-immortal-news\"]",
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   },
   {
     "type": "new",
@@ -123,12 +183,32 @@
           "discountId": null
         },
         "commit": "b3bee140f7a8a65ddb127fb0f25d2884861941cf"
+      },
+      "us": {
+        "type": "new",
+        "key": "p:2160248",
+        "kind": "item",
+        "slug": "diablo-immortal-seed-of-autumn",
+        "title": "Seed of Autumn",
+        "destination": "/family/diablo-immortal/items/2160248/seed-of-autumn",
+        "seen": "2026-11-25T16:14:55Z",
+        "price": {
+          "fullAmount": "$24.99",
+          "discountAmount": null,
+          "discountPercentage": null,
+          "currency": "USD",
+          "raw": 24.99,
+          "labelFormat": null,
+          "discountId": null
+        },
+        "commit": "70b320800489ff2e48f456f8b5908aa834eb2db6"
       }
     },
     "at": "2026-11-25T16:06:04Z",
     "digested": [
       "[\"feed\",\"diablo-immortal-news\"]",
       "[\"shop\",null]"
-    ]
+    ],
+    "paired": true
   }
 ]
