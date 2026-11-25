@@ -106,6 +106,46 @@
       "first_seen": "2026-11-11T23:09:38Z",
       "status": "listed",
       "misses": 0
+    },
+    "blt9824bee996a449de": {
+      "key": "blt9824bee996a449de",
+      "kind": "banner",
+      "cmsId": "blt9824bee996a449de",
+      "slug": "world-of-warcraft-celebration-pass",
+      "itemId": null,
+      "title": "Celebrate WoW: Forever with a special price on 365 days of WoW Game Time!",
+      "productPageName": null,
+      "headline": "",
+      "subHeadline": "Celebrate WoW: Forever with a special price on 365 days of WoW Game Time!",
+      "buttonText": "Buy Now",
+      "destination": "/product/world-of-warcraft-celebration-pass",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt6bfc22267ffbdee1/6b008d5a58c18df97e9e2e57/WoW_Camelot_DwarfShaman_LaunchSupportAssets_BnetShop_HeaderDesktop_1600x500.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-11-25T18:06:36Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "bltcca36c6fbda4e4bd": {
+      "key": "bltcca36c6fbda4e4bd",
+      "kind": "banner",
+      "cmsId": "bltcca36c6fbda4e4bd",
+      "slug": "world-of-warcraft-forever",
+      "itemId": null,
+      "title": "The countless adventures of Azeroth await! Subscribe now to begin your Forever journey today. ",
+      "productPageName": null,
+      "headline": "",
+      "subHeadline": "The countless adventures of Azeroth await! Subscribe now to begin your Forever journey today. ",
+      "buttonText": "Subscribe and Play Now",
+      "destination": "/product/world-of-warcraft-forever",
+      "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt7a67556b42493038/6aea1f8c0e233551f7e637b2/WoW_Forever_Campfire_LaunchKeyartSupport_BnetShop_HeaderDesktop_1600x500.png",
+      "sections": [
+        "Banner"
+      ],
+      "first_seen": "2026-11-25T18:06:36Z",
+      "status": "listed",
+      "misses": 0
     }
   },
   "suspect": false
