@@ -1723,8 +1723,8 @@
         "Banner"
       ],
       "first_seen": "2026-11-25T18:06:36Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     }
   },
   "suspect": false
