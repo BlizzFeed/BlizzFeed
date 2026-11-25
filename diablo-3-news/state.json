@@ -1601,10 +1601,16 @@
   },
   {
     "id": "24301510",
-    "title": "Season 40: Light’s Calling - Preview",
-    "url": "https://news.blizzard.com/en-gb/article/24301510/season-40-lights-calling-preview",
+    "title": "Season 40: Light’s Calling",
+    "url": "https://news.blizzard.com/en-gb/article/24301510/season-40-lights-calling",
     "date": "2026-09-12T00:00:00Z",
     "summary": "Diablo III Season 40 begins on October 2. Eradicate Hell’s emissaries using powerful boons granted by the season theme, and more.",
-    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/34/34KEJZF69PBG1788904450822.png"
+    "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/34/34KEJZF69PBG1788904450822.png",
+    "replaced": {
+      "title": "Season 40: Light’s Calling - Preview",
+      "summary": "Diablo III Season 40 begins on October 2. Eradicate Hell’s emissaries using powerful boons granted by the season theme, and more.",
+      "image": "https://bnetcmsus-a.akamaihd.net/cms/blog_thumbnail/34/34KEJZF69PBG1788904450822.png",
+      "at": "2026-11-25T19:57:27Z"
+    }
   }
 ]
