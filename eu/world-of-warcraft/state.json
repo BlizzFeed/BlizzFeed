@@ -121,8 +121,7 @@
       "destination": "/product/world-of-warcraft-free-trial?p=76095",
       "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt93346401021ec3a8/61254c5bf864a3414c8bb207/20760-76095.png",
       "sections": [
-        "Games",
-        "Great for New Players"
+        "Games"
       ],
       "badge": null,
       "price": {
@@ -198,8 +197,7 @@
       "destination": "/product/world-of-warcraft-midnight",
       "image": "https://blz-contentstack-images.akamaized.net/v3/assets/bltf408a0557f4e4998/blt80af93933ab07df3/68b8bf2d804a9776216cd63e/Midnight_keyart.png",
       "sections": [
-        "Games",
-        "Great for New Players"
+        "Games"
       ],
       "badge": null,
       "price": {
@@ -5972,8 +5970,8 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-04T23:29:33Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "bltcca36c6fbda4e4bd": {
       "key": "bltcca36c6fbda4e4bd",
