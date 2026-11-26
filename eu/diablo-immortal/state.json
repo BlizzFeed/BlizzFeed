@@ -1474,8 +1474,8 @@
       "price": null,
       "expiresAtMs": null,
       "first_seen": "2026-11-19T16:04:33Z",
-      "status": "listed",
-      "misses": 0
+      "status": "missing",
+      "misses": 1
     },
     "p:2160251": {
       "key": "p:2160251",
@@ -1606,6 +1606,31 @@
       },
       "expiresAtMs": null,
       "first_seen": "2026-11-25T16:05:19Z",
+      "status": "listed",
+      "misses": 0
+    },
+    "p:2160244": {
+      "key": "p:2160244",
+      "kind": "item",
+      "cmsId": null,
+      "slug": "diablo-immortal-champions-bounty-telluric-pearl",
+      "title": "Champion's Bounty - Telluric Pearl",
+      "description": "",
+      "categoryId": null,
+      "itemId": 2160244,
+      "productIds": [
+        2160244
+      ],
+      "subscriptionIds": [],
+      "destination": "/family/diablo-immortal/items/2160244/champions-bounty-telluric-pearl",
+      "image": "//catalog.blzstatic.com//f88/88537a0c1489f656c1f6fc0debe684f5-DIA_Immortal_Free_Bundle_Asset_V2.png",
+      "sections": [
+        "Free Gift"
+      ],
+      "badge": null,
+      "price": null,
+      "expiresAtMs": null,
+      "first_seen": "2026-11-26T16:06:32Z",
       "status": "listed",
       "misses": 0
     }
